@@ -204,7 +204,7 @@ The four readings below are the assigned readings for Week 11. You should read a
 
 - @hayek1945, "The Use of Knowledge in Society." Short and influential. Read for the central argument and the application to economic organization.
 - A short selection from @demski2008 on decentralization, responsibility centers, and transfer pricing (chapter assignment to be specified on Canvas). The most useful single textbook treatment of the topic.
-- A short selection from @fkz on internal information and decision-making (chapter assignment to be specified on Canvas).
+- A short selection from @nissim2010 on internal information and decision-making (chapter assignment to be specified on Canvas).
 - *Optional, for those who want more:* @andersonbankerjanakiraman2003 on cost stickiness. A short and accessible empirical paper that makes the variable-fixed distinction concrete.
 
 ::: {.callout-tip}

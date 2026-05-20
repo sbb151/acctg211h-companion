@@ -45,8 +45,9 @@ data-local/
 /.quarto/
 **/*.quarto_ipynb
 
-# Bibliography audit working folders
+# Bibliography audit working folders and backups
 bibcheck_*/
+*.pre-bibcheck-bak
 
 # Quarto intermediate TeX/PDF artifacts at project root
 /index.tex
