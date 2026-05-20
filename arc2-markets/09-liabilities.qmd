@@ -1,5 +1,4 @@
 ---
-title: "Liabilities, Debt Covenants, and Conservatism"
 description: "Why debt contracts condition on accounting numbers. Smith and Warner's covenant typology, Watts on conservatism, bond mechanics, ASC 842 leases, pensions and OPEB, and contingencies."
 ---
 

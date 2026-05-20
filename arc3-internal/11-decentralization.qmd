@@ -1,5 +1,4 @@
 ---
-title: "Decentralization, Cost Behavior, and Cost Allocation"
 description: "Why firms decentralize, and how cost behavior, cost allocation, responsibility accounting, and transfer pricing support decentralized decision-making."
 ---
 

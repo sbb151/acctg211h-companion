@@ -1,5 +1,4 @@
 ---
-title: "The Accrual Anomaly and Earnings Quality"
 description: "Sloan's accrual anomaly. The cash flow component vs. the accrual component of earnings, and what investors do with the distinction."
 ---
 

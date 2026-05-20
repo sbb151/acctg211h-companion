@@ -1,5 +1,4 @@
 ---
-title: "Signaling and the Income Statement"
 description: "Voluntary disclosure as a costly signal. The income statement and the signaling content of accruals."
 ---
 

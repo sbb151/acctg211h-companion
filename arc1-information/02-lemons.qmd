@@ -1,5 +1,4 @@
 ---
-title: "The Lemons Problem and the Demand for Disclosure"
 description: "Akerlof's adverse selection model and its implications for accounting. The balance sheet as a credible report."
 ---
 

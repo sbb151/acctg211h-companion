@@ -1,5 +1,4 @@
 ---
-title: "Synthesis: The Capstone Debates"
 description: "Four contested questions in financial reporting, the debate format, and a course retrospective."
 ---
 

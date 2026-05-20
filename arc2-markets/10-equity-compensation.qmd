@@ -1,5 +1,4 @@
 ---
-title: "Equity Compensation"
 description: "Stock options, restricted stock units, and performance shares. The FAS 123R fight, the mechanics of grant-date fair value, and the empirical literature on equity pay and misreporting incentives."
 ---
 

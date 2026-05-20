@@ -1,5 +1,4 @@
 ---
-title: "Standard Setting and the Conceptual Framework"
 description: "Why do we have a FASB? The political economy of standard setting and the role of the FASB Conceptual Framework."
 ---
 

@@ -1,5 +1,4 @@
 ---
-title: "Capital Budgeting Under Asymmetric Information"
 description: "How firms choose which long-term investments to fund, and the agency problems that arise when project information is held by divisional managers."
 ---
 

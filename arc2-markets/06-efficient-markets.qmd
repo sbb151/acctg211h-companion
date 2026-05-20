@@ -1,5 +1,4 @@
 ---
-title: "Efficient Markets and the Information Content of Earnings"
 description: "Do earnings announcements convey information that capital markets actually use? The Fama efficient-markets taxonomy, the Ball-Brown (1968) event study, and the post-earnings-announcement drift."
 ---
 

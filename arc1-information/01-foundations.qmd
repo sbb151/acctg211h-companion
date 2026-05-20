@@ -1,5 +1,4 @@
 ---
-title: "Foundations: The Separation of Ownership and Control"
 description: "Why does accounting exist at all? An introduction to the economic problem that gives the rest of the course its structure."
 ---
 

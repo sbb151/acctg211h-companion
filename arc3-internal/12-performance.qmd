@@ -1,5 +1,4 @@
 ---
-title: "Performance Measurement as Agency"
 description: "Why every performance metric induces some distortion. Multitasking, ROI vs. residual income vs. EVA, and the balanced scorecard."
 ---
 

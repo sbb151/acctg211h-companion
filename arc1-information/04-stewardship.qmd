@@ -1,5 +1,4 @@
 ---
-title: "Stewardship and Moral Hazard"
 description: "The principal-agent problem, the Holmstrom informativeness principle, and the role of accounting in executive compensation contracts."
 ---
 

@@ -1,5 +1,4 @@
 ---
-title: "Long-Term Assets and Measurement Choice"
 description: "How should we measure assets the firm holds for years? PP&E, depreciation, impairment, intangibles, and the relevance vs. faithful representation trade-off."
 ---
 
