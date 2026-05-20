@@ -76,7 +76,7 @@ format:
     fig-cap-location: bottom
     tbl-cap-location: top
     number-sections: true
-    number-depth: 2
+    number-depth: 1
     highlight-style: github
   pdf:
     documentclass: scrbook
@@ -91,6 +91,7 @@ format:
     toc: true
     toc-depth: 2
     number-sections: true
+    number-depth: 1
     keep-tex: true
 
 execute:
