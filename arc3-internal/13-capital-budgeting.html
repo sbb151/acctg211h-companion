@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="How firms choose which long-term investments to fund, and the agency problems that arise when project information is held by divisional managers.">
+
+<title>13&nbsp; Capital Budgeting Under Asymmetric Information – ACCTG 211H Companion</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../arc4-synthesis/14-debates.html" rel="next">
+<link href="../arc3-internal/12-performance.html" rel="prev">
+<link href="../favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc3-internal/11-decentralization.html">Arc III — Contracting and Internal Information</a></li><li class="breadcrumb-item"><a href="../arc3-internal/13-capital-budgeting.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">ACCTG 211H Companion</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/sbb151/acctg211h-companion" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: How This Book Is Organized</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc I — The Information Problem</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/01-foundations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foundations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/02-lemons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Lemons Problem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/03-signaling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Signaling and the Income Statement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/04-stewardship.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stewardship and Moral Hazard</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/05-standards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Standard Setting and the Conceptual Framework</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc II — Markets and Measurement</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/06-efficient-markets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Efficient Markets and the Information Content of Earnings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/07-accruals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Accrual Anomaly and Earnings Quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/08-long-term-assets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Long-Term Assets and Measurement Choice</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/09-liabilities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/10-equity-compensation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Equity Compensation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc III — Contracting and Internal Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/11-decentralization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Decentralization and Cost Behavior</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/12-performance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Performance Measurement as Agency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/13-capital-budgeting.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc IV — Synthesis</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc4-synthesis/14-debates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Synthesis: The Capstone Debates</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a01-fset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">A1. The Financial Statement Effects Template (FSET)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a02-python-wrds-colab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">A2. Python + WRDS in Google Colab Quickstart</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a03-debits-credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">A3. Debits and Credits Cheat Sheet</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#opening-question" id="toc-opening-question" class="nav-link active" data-scroll-target="#opening-question"><span class="header-section-number">13.1</span> Opening question</a></li>
+  <li><a href="#the-npv-framework" id="toc-the-npv-framework" class="nav-link" data-scroll-target="#the-npv-framework"><span class="header-section-number">13.2</span> The NPV framework</a></li>
+  <li><a href="#irr-payback-and-the-profitability-index" id="toc-irr-payback-and-the-profitability-index" class="nav-link" data-scroll-target="#irr-payback-and-the-profitability-index"><span class="header-section-number">13.3</span> IRR, payback, and the profitability index</a></li>
+  <li><a href="#mechanics-an-extended-worked-example" id="toc-mechanics-an-extended-worked-example" class="nav-link" data-scroll-target="#mechanics-an-extended-worked-example"><span class="header-section-number">13.4</span> Mechanics: an extended worked example</a></li>
+  <li><a href="#antle-eppen-capital-rationing-and-organizational-slack" id="toc-antle-eppen-capital-rationing-and-organizational-slack" class="nav-link" data-scroll-target="#antle-eppen-capital-rationing-and-organizational-slack"><span class="header-section-number">13.5</span> Antle-Eppen: capital rationing and organizational slack</a></li>
+  <li><a href="#influence-costs-and-internal-capital-markets" id="toc-influence-costs-and-internal-capital-markets" class="nav-link" data-scroll-target="#influence-costs-and-internal-capital-markets"><span class="header-section-number">13.6</span> Influence costs and internal capital markets</a></li>
+  <li><a href="#real-options" id="toc-real-options" class="nav-link" data-scroll-target="#real-options"><span class="header-section-number">13.7</span> Real options</a></li>
+  <li><a href="#empirical-evidence" id="toc-empirical-evidence" class="nav-link" data-scroll-target="#empirical-evidence"><span class="header-section-number">13.8</span> Empirical evidence</a></li>
+  <li><a href="#discussion-questions" id="toc-discussion-questions" class="nav-link" data-scroll-target="#discussion-questions"><span class="header-section-number">13.9</span> Discussion questions</a></li>
+  <li><a href="#problems" id="toc-problems" class="nav-link" data-scroll-target="#problems"><span class="header-section-number">13.10</span> Problems</a></li>
+  <li><a href="#lab" id="toc-lab" class="nav-link" data-scroll-target="#lab"><span class="header-section-number">13.11</span> Lab</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">13.12</span> Further reading</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc3-internal/13-capital-budgeting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc3-internal/11-decentralization.html">Arc III — Contracting and Internal Information</a></li><li class="breadcrumb-item"><a href="../arc3-internal/13-capital-budgeting.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-capbudget" class="quarto-section-identifier"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="opening-question" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="opening-question"><span class="header-section-number">13.1</span> Opening question</h2>
+<p>In the late 1990s, <span class="citation" data-cites="grahamharvey2001">Graham and Harvey (<a href="../references.html#ref-grahamharvey2001" role="doc-biblioref">2001</a>)</span> surveyed the chief financial officers of nearly four hundred U.S. firms about the capital budgeting techniques they actually used. The textbook answer, taught in every introductory corporate finance course, is that firms should compute the <em>net present value</em> (NPV, i.e., the discounted sum of a project’s future cash flows minus its initial cost) of each candidate project and accept those with positive NPV. The survey found something more interesting. Approximately seventy-five percent of CFOs reported using NPV, but approximately seventy-five percent also reported using <em>internal rate of return</em> (IRR, i.e., the discount rate at which a project’s NPV equals zero). Approximately fifty-seven percent reported using <em>payback period</em> (i.e., the time required to recover the initial investment), the simplest and theoretically least defensible technique. A substantial fraction of firms reported using all three simultaneously.</p>
+<p>The pattern poses a puzzle for the textbook view. If NPV is the theoretically correct technique, why do firms layer other techniques on top of it — and why, in particular, do they continue to use payback, which discards information about distant cash flows and ignores the time value of money entirely? The straightforward answer is that the textbook framework is correct only under a specific set of assumptions about the information environment in which the capital budgeting decision is made. When those assumptions fail — when project cash flows are uncertain, when divisional managers have private information about project quality, when capital is rationed at the corporate level, when lobbying for resources is costly to the firm — alternative techniques may serve functions that NPV alone cannot.</p>
+<p>This chapter develops the framework. It opens with the standard NPV machinery and the related techniques (IRR, payback, the profitability index) commonly taught in introductory finance, and works a single five-year project example through each of them. It then introduces the asymmetric-information complication that has occupied the academic literature on capital budgeting for forty years: in the modern multidivisional firm, project-specific information is held principally by divisional managers, not by the corporate headquarters that ultimately allocates capital. Capital budgeting is, in this framing, a mechanism-design problem of the kind we have studied throughout Arc III: corporate headquarters wishes to make value-maximizing capital allocation decisions but lacks direct access to the information needed to do so, and divisional managers have incentives that diverge from headquarters’ interests in ways that the budgeting process must accommodate. The classic analytical treatments are (i) <span class="citation" data-cites="antleeppen1985">Antle and Eppen (<a href="../references.html#ref-antleeppen1985" role="doc-biblioref">1985</a>)</span>, who showed that capital rationing is an optimal response to managers’ incentive to overstate project quality, (ii) <span class="citation" data-cites="milgrom1988">Milgrom (<a href="../references.html#ref-milgrom1988" role="doc-biblioref">1988</a>)</span>, who showed that centralized investment decisions generate <em>influence costs</em> — the wasteful expenditure of managerial effort on lobbying — and (iii) <span class="citation" data-cites="stein1997">Stein (<a href="../references.html#ref-stein1997" role="doc-biblioref">1997</a>)</span>, who developed the <em>winner-picking</em> view of internal capital markets and the conditions under which corporate headquarters allocates capital better than the external market would.</p>
+<p>The chapter closes Arc III’s substantive content. After this chapter, only the synthesis Chapter 14 and the capstone debates remain.</p>
+</section>
+<section id="the-npv-framework" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="the-npv-framework"><span class="header-section-number">13.2</span> The NPV framework</h2>
+<p>Net present value is the standard analytical tool for evaluating long-term investment projects. The technique computes the present value of the project’s expected future cash flows, discounted at a rate that reflects the project’s risk and the time value of money, and subtracts the project’s initial cost. A project with positive NPV creates value for the firm and should be accepted; a project with negative NPV destroys value and should be rejected.</p>
+<p>The mechanical structure is:</p>
+<p><span class="math display">\[
+\text{NPV} = -C_0 + \sum_{t=1}^{T} \frac{E[CF_t]}{(1 + r)^t},
+\]</span></p>
+<p>where <span class="math inline">\(C_0\)</span> is the initial cost (typically incurred at <span class="math inline">\(t = 0\)</span>), <span class="math inline">\(E[CF_t]\)</span> is the expected cash flow in period <span class="math inline">\(t\)</span>, <span class="math inline">\(T\)</span> is the project horizon, and <span class="math inline">\(r\)</span> is the project’s discount rate.</p>
+<p>The discount rate is, in principle, the project’s risk-adjusted required return — the return an investor with comparable risk preferences and a comparable opportunity set would require to bear the project’s risk. In practice, firms commonly use the firm’s <em>weighted-average cost of capital</em> (WACC, i.e., the blended cost of equity and debt financing, weighted by their respective shares in the firm’s capital structure) as the discount rate for projects within the firm’s existing line of business, with project-specific adjustments for projects of materially different risk. The choice of discount rate is among the most consequential single inputs to the NPV calculation; small changes in <span class="math inline">\(r\)</span> can flip a project from positive to negative NPV.</p>
+<p>The NPV technique has theoretical appeal. It is consistent with the firm-value-maximization objective, it accommodates risk through the discount rate, it weights cash flows by the time at which they occur, and it produces a single decision-relevant number. The textbook treatment of NPV is rigorous and the criticisms of NPV in the academic literature are typically not about the framework itself but about specific applications — the choice of discount rate, the estimation of cash flows, and the treatment of embedded option value (developed in Section 13.6).</p>
+</section>
+<section id="irr-payback-and-the-profitability-index" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="irr-payback-and-the-profitability-index"><span class="header-section-number">13.3</span> IRR, payback, and the profitability index</h2>
+<p>Three alternatives to NPV are widely used in practice. We develop each in turn.</p>
+<p>The <em>internal rate of return</em> is the discount rate at which a project’s NPV equals zero. A project with an IRR above the firm’s cost of capital has positive NPV at the cost-of-capital discount rate; a project with an IRR below the cost of capital has negative NPV. The IRR decision rule — accept projects with IRR above the cost of capital — is, in most cases, equivalent to the NPV rule. Two well-known exceptions, however, deserve attention. First, projects with <em>non-conventional cash flow patterns</em> (i.e., cash flow streams with multiple sign changes, such as a mining project that requires a large remediation outlay at the end) may have multiple IRRs, with no single rate that the IRR rule sensibly identifies as “the” rate of return; the NPV framework handles such projects cleanly, while the IRR framework requires careful supplemental analysis. Second, the IRR rule can produce incorrect <em>rankings</em> of mutually exclusive projects of different scales. A small project with a 30 percent IRR may have a lower NPV than a large project with a 15 percent IRR, because IRR measures the rate of return per dollar invested while NPV measures the total dollar value created. When the firm must choose one project or the other, NPV is the appropriate criterion.</p>
+<p>The <em>payback period</em> is the time required for a project’s cumulative cash flows to equal its initial investment. A project with an initial cost of $1{,}000{,}000 and annual cash flows of $250{,}000 has a payback period of four years. The payback rule — accept projects whose payback period is below some threshold — is the simplest of the capital budgeting techniques. It is also the most theoretically suspect: payback ignores cash flows beyond the threshold, ignores the time value of money, and provides no straightforward connection to firm value.</p>
+<p>Yet payback persists in widespread use. The Graham-Harvey survey suggests several explanations. Payback is simple to explain and compute. It is a natural metric of <em>capital recovery</em> — the speed with which the firm gets its money back, which matters for liquidity-constrained firms. It is, in some interpretations, a rough proxy for risk, since shorter-payback projects are less exposed to the uncertainty of cash flows in the distant future. And it serves as a <em>screening</em> mechanism in firms with many candidate projects: a payback threshold can rapidly eliminate projects that fall well below the firm’s standards, leaving more careful NPV analysis for the projects that survive the screen. The framework of this chapter qualifies the standard textbook critique of payback. Payback is theoretically inferior to NPV under symmetric information and unconstrained capital, but it is defensible — and sometimes optimal — when information is asymmetric and capital is rationed, conditions that prevail in most actual firms.</p>
+<p>The <em>profitability index</em> (PI) is the ratio of a project’s present value of future cash flows to its initial investment:</p>
+<p><span class="math display">\[
+\text{PI} = \frac{\sum_{t=1}^{T} E[CF_t]/(1+r)^t}{C_0} = 1 + \frac{\text{NPV}}{C_0}.
+\]</span></p>
+<p>A profitability index above one corresponds to a positive NPV. The PI’s primary use is <em>capital rationing</em>: when the firm has a fixed budget that does not permit acceptance of every positive-NPV project, ranking projects by PI rather than by NPV identifies the combination of projects that produces the largest aggregate NPV per dollar of constrained capital. We illustrate the rationing application in Problem 2 of Section 13.10.</p>
+</section>
+<section id="mechanics-an-extended-worked-example" class="level2" data-number="13.4">
+<h2 data-number="13.4" class="anchored" data-anchor-id="mechanics-an-extended-worked-example"><span class="header-section-number">13.4</span> Mechanics: an extended worked example</h2>
+<p>To make the four techniques concrete, consider an extended Acme Corp.&nbsp;example. Acme is evaluating a five-year capital project to expand its production capacity. The project requires an initial investment of $1{,}500{,}000 at <span class="math inline">\(t = 0\)</span>, is expected to produce after-tax operating cash flows over five years, and is expected to generate a terminal value of $300{,}000 at the end of year 5 from the sale of residual equipment and the release of working capital. Acme’s cost of capital is 10 percent. The cash-flow profile is as follows.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 13%">
+<col style="width: 18%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 22%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Capital outlay</th>
+<th>Operating cash flow</th>
+<th>Terminal value</th>
+<th>Net cash flow</th>
+<th>Discount factor (at 10%)</th>
+<th>Present value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td><span class="math inline">\((1{,}500{,}000)\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\((1{,}500{,}000)\)</span></td>
+<td><span class="math inline">\(1.0000\)</span></td>
+<td><span class="math inline">\((1{,}500{,}000)\)</span></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(400{,}000\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(400{,}000\)</span></td>
+<td><span class="math inline">\(0.9091\)</span></td>
+<td><span class="math inline">\(363{,}636\)</span></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(500{,}000\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(500{,}000\)</span></td>
+<td><span class="math inline">\(0.8264\)</span></td>
+<td><span class="math inline">\(413{,}223\)</span></td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(500{,}000\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(500{,}000\)</span></td>
+<td><span class="math inline">\(0.7513\)</span></td>
+<td><span class="math inline">\(375{,}657\)</span></td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(400{,}000\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(400{,}000\)</span></td>
+<td><span class="math inline">\(0.6830\)</span></td>
+<td><span class="math inline">\(273{,}205\)</span></td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(300{,}000\)</span></td>
+<td><span class="math inline">\(300{,}000\)</span></td>
+<td><span class="math inline">\(600{,}000\)</span></td>
+<td><span class="math inline">\(0.6209\)</span></td>
+<td><span class="math inline">\(372{,}553\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Summing the present values gives a project NPV of approximately $298{,}274. The project has a positive NPV at Acme’s cost of capital and, under the textbook decision rule, should be accepted.</p>
+<p>The IRR is the discount rate at which the project’s NPV equals zero. Trial-and-error narrows the IRR for this project to approximately 17.0 percent. At a 15 percent discount rate the NPV is approximately $63{,}000 (positive); at a 20 percent rate the NPV is approximately $(140{,}000) (negative). Linear interpolation between the two points gives an estimate near 16.5 percent; a finer computation places the rate closer to 17.0 percent. The IRR comfortably exceeds Acme’s 10 percent cost of capital, consistent with the positive NPV.</p>
+<p>The (undiscounted) payback period is the time required for cumulative net cash flows to equal the initial investment. The cumulative cash inflows after years 1, 2, 3, 4, and 5 are $400{,}000, $900{,}000, $1{,}400{,}000, $1{,}800{,}000, and $2{,}400{,}000 respectively. The investment is recovered between years 3 and 4: the project has recovered $1{,}400{,}000 of the $1{,}500{,}000 investment by the end of year 3, and recovers the remaining $100{,}000 from the year-4 inflow of $400{,}000. Linear interpolation within year 4 gives a payback period of approximately <span class="math inline">\(3 + (100{,}000 / 400{,}000) = 3.25\)</span> years. If Acme uses a four-year payback threshold, the project passes; if it uses a three-year threshold, the project fails despite its positive NPV.</p>
+<p>The profitability index is <span class="math inline">\(1 + (298{,}274 / 1{,}500{,}000) \approx 1.199\)</span>. The project produces approximately $1.20 of present value per dollar of initial investment.</p>
+<p>The four computations agree on the qualitative recommendation (accept), but they differ in the strength of the signal. NPV is comfortably positive but not large in relation to the investment. IRR is approximately 700 basis points above the cost of capital, providing a reasonable margin for estimation error. Payback at 3.25 years is short enough to clear most firm thresholds but not dramatically so. PI of 1.20 gives Acme a useful number for comparing this project against alternatives competing for the same capital. The Acme CFO, faced with this set of metrics, has more information than NPV alone would provide — exactly the pattern the Graham-Harvey survey documented.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+NPV-IRR conflicts on mutually exclusive projects
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Consider two mutually exclusive variants of the Acme project. Project A is the project just analyzed: $1{,}500{,}000 initial investment, NPV of $298{,}274 at 10 percent, IRR of approximately 17 percent. Project B is a smaller variant: $400{,}000 initial investment, expected cash flows that produce an NPV of $120{,}000 at 10 percent and an IRR of approximately 25 percent. Project B has the higher IRR; Project A has the higher NPV. The IRR rule, applied naively, would select Project B; the NPV rule selects Project A. The NPV rule is the appropriate criterion for the choice between mutually exclusive projects, because firm value is increased by the dollar amount of NPV created, not by the rate of return per dollar invested. The IRR ranking confounds project scale with project profitability, and the firm that ranks mutually exclusive projects by IRR will systematically underinvest in large, value-creating projects in favor of small, high-return ones.</p>
+<p>Non-conventional cash-flow patterns produce a related complication. A project that requires $100{,}000 at <span class="math inline">\(t = 0\)</span>, returns $400{,}000 at <span class="math inline">\(t = 1\)</span>, and requires a $400{,}000 remediation outlay at <span class="math inline">\(t = 2\)</span> has two IRRs — one near 25 percent and another near 400 percent — because the NPV function changes sign twice. The IRR rule cannot identify “the” rate of return; the analyst who relies on a single IRR will reach incorrect conclusions. NPV, applied at the firm’s cost of capital, gives an unambiguous answer.</p>
+</div>
+</div>
+</section>
+<section id="antle-eppen-capital-rationing-and-organizational-slack" class="level2" data-number="13.5">
+<h2 data-number="13.5" class="anchored" data-anchor-id="antle-eppen-capital-rationing-and-organizational-slack"><span class="header-section-number">13.5</span> Antle-Eppen: capital rationing and organizational slack</h2>
+<p><span class="citation" data-cites="antleeppen1985">Antle and Eppen (<a href="../references.html#ref-antleeppen1985" role="doc-biblioref">1985</a>)</span> developed an analytical model of capital budgeting under asymmetric information that connects directly to the framework Arc III has developed. The model considers a corporate headquarters allocating capital across divisions, where each division has private information about the productivity of its investment opportunities. Headquarters cannot directly observe divisional productivity; it can observe only the project proposals divisions submit, and divisions have incentives to overstate the productivity of their proposals to obtain more capital than they truly need. Antle and Eppen showed that, under a wide class of information conditions, the optimal capital allocation policy involves <em>capital rationing</em>: corporate headquarters provides each division with a capital budget below the level that the division’s reported productivity would justify. The rationing serves a screening function: divisions with truly high-productivity projects will, on the margin, prefer to receive smaller capital allocations on terms that prevent overstatement, while divisions with low-productivity projects will be unable to extract excessive capital because the rationing constraint binds.</p>
+<p>The Antle-Eppen framework also explains why firms often impose <em>hurdle rates</em> (i.e., the minimum return a project must promise to receive funding) that exceed the firm’s cost of capital. A divisional manager who must convince headquarters that her project clears a hurdle rate of, say, fifteen percent — even though the firm’s cost of capital is only ten percent — will have less ability to obtain capital for projects of marginal quality. The hurdle-rate-above-cost-of-capital pattern, widely observed in U.S. firms, is, on this analysis, a rational response to the asymmetric-information environment of capital allocation, not a textbook error.</p>
+<p>The Antle-Eppen analysis has implications that extend beyond the model’s specific structure. The deeper point is that the capital budgeting process is a mechanism-design problem: corporate headquarters is designing the rules under which divisions submit project proposals, and the rules must accommodate the divisions’ incentives to misrepresent project information. The textbook NPV framework, taken in isolation, ignores this dimension. The actual capital budgeting practices of firms — capital rationing, hurdle rates above cost of capital, formal post-completion audits, multi-stage approval processes — are, in important respects, the institutional response to the mechanism-design problem.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Why this matters
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Antle-Eppen framework links capital budgeting to the broader Arc III theme. Internal accounting is the institutional response to information asymmetry between corporate headquarters and decentralized operating units, and the framework applies to capital budgeting as much as it applies to performance measurement. The capital allocation process is one of the most important single decisions the modern firm makes, and the analytical framework for thinking about it is the same framework we have used for cost behavior, performance measurement, and (in Arc I) external reporting.</p>
+</div>
+</div>
+</section>
+<section id="influence-costs-and-internal-capital-markets" class="level2" data-number="13.6">
+<h2 data-number="13.6" class="anchored" data-anchor-id="influence-costs-and-internal-capital-markets"><span class="header-section-number">13.6</span> Influence costs and internal capital markets</h2>
+<p>The Antle-Eppen model treats divisional managers as informationally private but otherwise non-strategic. A separate strand of the literature emphasizes that managers spend real resources lobbying for capital — preparing slide decks, building political coalitions, cultivating relationships with corporate officers — and that the lobbying activity itself is costly to the firm.</p>
+<p>The classic statement is <span class="citation" data-cites="milgrom1988">Milgrom (<a href="../references.html#ref-milgrom1988" role="doc-biblioref">1988</a>)</span>, “Employment Contracts, Influence Activities, and Efficient Organization Design,” which analyzed <em>influence activities</em> (i.e., effort that an employee expends to alter a decision in her favor, rather than to produce value for the firm) as a central organizational problem. Milgrom’s point is structural. Whenever a central decision maker exercises discretion over the allocation of valuable resources — capital budgets, promotions, project authority — the parties affected by the decision have an incentive to expend effort attempting to influence the decision in their favor. The effort is, from the firm’s perspective, pure waste: the manager who spends a week building a deck designed to make a marginal project look attractive is not spending that week producing value. The firm bears the influence cost twice — once in the direct effort the manager diverts from productive work, and again in the distortion the lobbying introduces into the eventual capital allocation.</p>
+<p>Milgrom’s framework predicts that firms will adopt <em>organizational rules that limit discretion</em> precisely to reduce influence costs. Bright-line hurdle rates, formal capital-budgeting committees with documented criteria, requirements that projects be supported by external benchmarks rather than divisional advocacy, and even the deliberate use of capital rationing all serve to constrain headquarters’ discretion and thereby reduce the marginal payoff to influence activity. The textbook NPV framework, on this view, is not just an analytical tool but an institutional commitment device: by binding itself to a relatively mechanical procedure, headquarters reduces the incentive for divisional managers to invest in lobbying.</p>
+<p><span class="citation" data-cites="stein1997">Stein (<a href="../references.html#ref-stein1997" role="doc-biblioref">1997</a>)</span>, “Internal Capital Markets and the Competition for Corporate Resources,” extended the analysis to the question of whether <em>internal capital markets</em> (i.e., the corporate-headquarters process by which capital is allocated across divisions of a multidivisional firm) function better or worse than the external capital market. Stein developed a model in which corporate headquarters’ active role generates two offsetting effects. The bright-side effect is <em>winner-picking</em>: headquarters has authority to reallocate capital from low-productivity divisions to high-productivity ones, an authority the external market lacks because external investors cannot force one firm to redirect capital to another. When headquarters has good information about relative project quality across divisions, the winner-picking advantage of internal capital markets is real. The dark-side effect — developed more fully in <span class="citation" data-cites="scharfsteinstein2000">Scharfstein and Stein (<a href="../references.html#ref-scharfsteinstein2000" role="doc-biblioref">2000</a>)</span>, “The Dark Side of Internal Capital Markets” — is that the same allocation authority creates the influence-cost problem Milgrom identified. Divisional managers lobby for capital they do not deserve, and weak headquarters (perhaps under pressure to maintain peace among divisions, perhaps facing political constraints) ends up cross-subsidizing low-productivity divisions at the expense of high-productivity ones. Scharfstein and Stein described this pattern as <em>corporate socialism</em>: capital flows toward the divisions that lobby hardest rather than toward the divisions that would generate the most value.</p>
+<p>The empirical literature on diversified firms has provided evidence that speaks to both effects. <span class="citation" data-cites="bergerofek1995">Berger and Ofek (<a href="../references.html#ref-bergerofek1995" role="doc-biblioref">1995</a>)</span> documented a <em>diversification discount</em> — diversified firms trade at approximately 13 to 15 percent below the sum of the imputed values of their stand-alone segments — consistent with internal capital markets that, on average, destroy value rather than create it. <span class="citation" data-cites="lamont1997">Lamont (<a href="../references.html#ref-lamont1997" role="doc-biblioref">1997</a>)</span> showed, using the 1986 oil-price collapse as a shock to oil-company cash flows, that diversified oil firms cut investment in their non-oil divisions when oil prices fell, suggesting that internal capital markets in those firms were less effective than external markets would have been. <span class="citation" data-cites="rajanservaeszingales2000">Rajan, Servaes, and Zingales (<a href="../references.html#ref-rajanservaeszingales2000" role="doc-biblioref">2000</a>)</span> documented that the diversification discount is larger in firms whose divisions have more dispersed investment opportunities, consistent with the prediction that the influence-cost problem is most severe when divisions differ substantially in true productivity. The combined evidence is consistent with the Scharfstein-Stein dark-side mechanism: in many diversified firms, the internal capital market appears to socialize capital across divisions rather than to pick winners.</p>
+<p>The interpretation is, however, contested. <span class="citation" data-cites="maksimovicphillips2002">Maksimovic and Phillips (<a href="../references.html#ref-maksimovicphillips2002" role="doc-biblioref">2002</a>)</span> argued that the diversification discount partly reflects selection — the kinds of firms that diversify differ in unobservable ways from the kinds that do not — and showed that, in plant-level data, diversified firms transfer assets toward their more productive divisions in patterns broadly consistent with winner-picking. The empirical literature has not converged on a single verdict on whether internal capital markets, on average, create or destroy value, and the most defensible reading is that the answer depends on the firm: well-governed diversified firms with strong corporate finance functions appear to allocate capital reasonably, while diversified firms with weak governance and strong divisional politics exhibit the cross-subsidization pattern.</p>
+<p>Two concrete examples illustrate the range. <em>General Electric under Jack Welch</em> (CEO 1981–2001) was widely cited in business literature as an example of an effective internal capital market: the firm’s “Session C” reviews, in which each division’s investment proposals were stress-tested against firm-wide alternatives, and the explicit policy of exiting any business that could not credibly target a top-two position in its industry, were designed (whether or not they fully succeeded) to combat the cross-subsidization tendency by binding headquarters to allocation criteria divisions could not easily lobby around. <em>Berkshire Hathaway under Warren Buffett</em> exemplifies a different model: the holding company allocates capital from operating subsidiaries to wholly new investments based on Buffett’s centralized judgment, deliberately keeping the operating subsidiaries’ role in the allocation process minimal. Both arrangements are responses to the same underlying problem — the influence-cost and winner-picking trade-off — but they resolve the problem in different ways.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The winner-picking / socialism trade-off in one sentence
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Stein’s model captures the central tension: corporate headquarters has the <em>authority</em> to pick winners across divisions, an authority the external market lacks, but the same authority creates the <em>opportunity</em> for divisional managers to lobby for capital they do not deserve, and the empirical question is whether headquarters uses the authority to pick winners or is captured by the lobbying.</p>
+</div>
+</div>
+</section>
+<section id="real-options" class="level2" data-number="13.7">
+<h2 data-number="13.7" class="anchored" data-anchor-id="real-options"><span class="header-section-number">13.7</span> Real options</h2>
+<p>A separate qualification to the standard NPV framework concerns the treatment of <em>flexibility</em> in long-term investments. The standard NPV computation assumes a fixed cash flow profile to which the firm commits at the time of the investment. Real-world projects often have substantial flexibility: the firm can scale up if early results are favorable, scale down or abandon if they are unfavorable, defer the project to a later date, or modify the project’s scope in response to new information. The standard NPV technique fails to capture this flexibility, and projects with substantial flexibility are often undervalued by NPV alone.</p>
+<p>The <em>real options</em> framework — developed in <span class="citation" data-cites="mcdonaldsiegel1986">McDonald and Siegel (<a href="../references.html#ref-mcdonaldsiegel1986" role="doc-biblioref">1986</a>)</span> on the value of waiting and synthesized in <span class="citation" data-cites="dixitpindyck1994">Dixit and Pindyck (<a href="../references.html#ref-dixitpindyck1994" role="doc-biblioref">1994</a>)</span> — addresses the concern by treating embedded flexibility as a financial option. Three option types recur. An <em>option to delay</em> allows the firm to postpone a project until uncertainty about its value resolves; when the project is irreversible and information will arrive over time, the option to delay has positive value, and a project with positive NPV today may rationally be deferred. An <em>abandonment option</em> allows the firm to discontinue a project and recover residual value if conditions turn unfavorable; the option limits downside losses and raises the project’s true value above its NPV-as-committed estimate. An <em>expansion option</em> allows the firm to make a small initial investment that creates the right (but not the obligation) to make a larger follow-on investment if early results are favorable; such projects have characteristic call-option payoffs and are systematically undervalued by NPV.</p>
+<p>Consider a stylized pharmaceutical example. A drug-development firm is considering a Phase II clinical trial that costs $50 million and is expected to fail with probability 0.6 (producing no further cash flows) and succeed with probability 0.4 (allowing the firm to invest $400 million in Phase III, after which the expected discounted value of commercialization is $1.2 billion conditional on success). The standalone NPV of the Phase II trial, computed mechanically, treats Phase III as a planned outlay: expected total investment of $50M + 0.4 $400M = $210M against expected payoff of $0.4 $1.2B = $480M, for an expected NPV of $270M (ignoring discounting for simplicity). The mechanical NPV is positive but understates the project’s value. The correct framing is that Phase II purchases an <em>option</em> to invest in Phase III. The firm will exercise the option only if Phase II succeeds, in which case the Phase III investment has positive NPV. If Phase II fails, the firm abandons the project and avoids the Phase III outlay entirely. The optionality is what makes drug development economically viable in the face of high failure rates: each early-stage trial purchases the right, not the obligation, to continue. NPV treatments that ignore the optionality systematically undervalue R&amp;D-intensive investments and partly explain why R&amp;D-intensive firms maintain looser capital allocation processes than the standard textbook framework would prescribe.</p>
+<p>The mechanical computation of real-option values is, in general, more complex than the standard NPV computation. The valuation of a real option requires assumptions about the volatility of the project’s underlying cash flows, the timing of available decisions, and the cost of the option’s exercise. In practice, firms often use simplified rules of thumb (e.g., adding a fixed premium to NPV for projects with substantial flexibility, or applying decision-tree analysis with explicit branch probabilities) rather than full option-pricing computations. The conceptual framework, however, is correct: flexibility has value, and NPV alone undervalues flexible projects.</p>
+<p>The real-options framework intersects with the influence-cost framework in interesting ways. A capital-rationing constraint that prevents a division from undertaking a real-option-rich project is more costly than a constraint that prevents an inflexible project of the same NPV: the option value, which the rationing constraint forecloses, is part of the cost of the constraint. The empirical literature has documented patterns consistent with this reasoning, with firms in industries where real options are particularly important (e.g., R&amp;D-intensive industries, resource-extraction industries, industries exposed to commodity-price volatility) maintaining looser capital allocation processes than firms in less option-rich industries.</p>
+</section>
+<section id="empirical-evidence" class="level2" data-number="13.8">
+<h2 data-number="13.8" class="anchored" data-anchor-id="empirical-evidence"><span class="header-section-number">13.8</span> Empirical evidence</h2>
+<p>The empirical literature on capital budgeting has grown substantially since the Graham-Harvey survey. Four findings are particularly relevant.</p>
+<p>First, the <em>use of multiple techniques</em> documented by <span class="citation" data-cites="grahamharvey2001">Graham and Harvey (<a href="../references.html#ref-grahamharvey2001" role="doc-biblioref">2001</a>)</span> has been replicated in subsequent surveys and across other countries. Firms continue to use NPV alongside IRR and payback, and the use of multiple techniques is positively associated with firm size, sophistication of the finance function, and the complexity of the firm’s investment opportunities. The pattern is consistent with the framework of Section 13.5: the techniques serve different functions, and using multiple techniques captures information that any single technique would miss.</p>
+<p>Second, the <em>use of hurdle rates above cost of capital</em> is widely documented. <span class="citation" data-cites="grahamharvey2001">Graham and Harvey (<a href="../references.html#ref-grahamharvey2001" role="doc-biblioref">2001</a>)</span> and the subsequent literature have found that the typical large U.S. firm uses a hurdle rate that exceeds its cost of capital by approximately three to five percentage points, with substantial variation across firms and industries. The pattern is broadly consistent with the Antle-Eppen analysis: hurdle rates serve a screening function in environments with asymmetric information, and the optimal screening intensity depends on the firm’s information environment.</p>
+<p>Third, the <em>diversification discount</em> documented by <span class="citation" data-cites="bergerofek1995">Berger and Ofek (<a href="../references.html#ref-bergerofek1995" role="doc-biblioref">1995</a>)</span> — diversified firms trade at approximately 13 to 15 percent below the sum of the imputed values of their stand-alone segments — has been replicated and extended in numerous subsequent studies. <span class="citation" data-cites="lamont1997">Lamont (<a href="../references.html#ref-lamont1997" role="doc-biblioref">1997</a>)</span> provided complementary evidence using the 1986 oil-price shock, and <span class="citation" data-cites="rajanservaeszingales2000">Rajan, Servaes, and Zingales (<a href="../references.html#ref-rajanservaeszingales2000" role="doc-biblioref">2000</a>)</span> showed that the discount is larger in firms with greater dispersion in divisional investment opportunities. The pattern is consistent with the Scharfstein-Stein dark-side mechanism of internal capital markets, though the <span class="citation" data-cites="maksimovicphillips2002">Maksimovic and Phillips (<a href="../references.html#ref-maksimovicphillips2002" role="doc-biblioref">2002</a>)</span> evidence using plant-level transfers suggests that the average effect masks substantial heterogeneity, with some firms allocating capital well and others poorly.</p>
+<p>Fourth, the <em>capital allocation process</em> in multidivisional firms has been extensively studied in the empirical literature. The literature has documented that capital allocations within firms are systematically related to divisional performance metrics and to the strategic priorities of corporate headquarters, but also that allocations frequently deviate from what the textbook NPV framework would prescribe. Some of the deviation reflects the asymmetric-information environment of the Antle-Eppen analysis; some reflects the political economy of capital allocation within firms (i.e., managerial influence and the relative bargaining position of divisions, in the sense of <span class="citation" data-cites="milgrom1988">Milgrom (<a href="../references.html#ref-milgrom1988" role="doc-biblioref">1988</a>)</span>); and some reflects the explicit consideration of real-option value that NPV alone undervalues.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key takeaways
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>NPV is theoretically correct but practically incomplete.</strong> The technique is appropriate under symmetric information and frictionless capital, conditions that approximate few real firms; the supplementary techniques firms actually use respond to features of the practical environment that NPV alone ignores.</li>
+<li><strong>IRR and payback survive because they are informative on dimensions NPV omits.</strong> IRR conveys a margin-of-safety relative to the cost of capital, payback conveys a liquidity recovery time, and the profitability index conveys value created per dollar of constrained capital — each useful when the textbook NPV assumptions fail.</li>
+<li><strong>Capital rationing and hurdle rates above the cost of capital are not textbook errors.</strong> Consistent with <span class="citation" data-cites="antleeppen1985">Antle and Eppen (<a href="../references.html#ref-antleeppen1985" role="doc-biblioref">1985</a>)</span>, they are optimal screening devices in environments where divisional managers have private information and incentives to overstate project quality.</li>
+<li><strong>Influence costs make centralized capital allocation expensive even when headquarters is well-intentioned.</strong> Consistent with <span class="citation" data-cites="milgrom1988">Milgrom (<a href="../references.html#ref-milgrom1988" role="doc-biblioref">1988</a>)</span>, the lobbying effort divisional managers expend on capital is, from the firm’s perspective, a real social cost — both directly and through the distortions it introduces into the allocation.</li>
+<li><strong>Internal capital markets pick winners or cross-subsidize losers depending on governance.</strong> Consistent with <span class="citation" data-cites="stein1997">Stein (<a href="../references.html#ref-stein1997" role="doc-biblioref">1997</a>)</span> and <span class="citation" data-cites="scharfsteinstein2000">Scharfstein and Stein (<a href="../references.html#ref-scharfsteinstein2000" role="doc-biblioref">2000</a>)</span>, the same allocation authority that enables winner-picking creates the opportunity for socialism, and the empirical evidence on the diversification discount suggests that, on average, the dark side is non-trivial.</li>
+<li><strong>Real options raise the value of flexibility above the NPV baseline.</strong> Projects with embedded options to delay, abandon, or expand are systematically undervalued by mechanical NPV, and the practical capital-budgeting processes of R&amp;D-intensive and resource-extraction firms reflect the importance of preserving optionality.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="discussion-questions" class="level2" data-number="13.9">
+<h2 data-number="13.9" class="anchored" data-anchor-id="discussion-questions"><span class="header-section-number">13.9</span> Discussion questions</h2>
+<ol type="1">
+<li>The Graham-Harvey survey found that approximately seventy-five percent of CFOs use IRR and roughly the same percentage use NPV — even though the two techniques are theoretically equivalent for projects with conventional cash flows. Why might a CFO use both? What information does each technique provide that the other does not?</li>
+<li>Payback period ignores cash flows beyond the payback horizon and ignores the time value of money. Yet it remains in widespread use. Identify three plausible reasons for its persistence and rank them by which you find most compelling.</li>
+<li>The Antle-Eppen framework predicts that hurdle rates above cost of capital are an optimal response to asymmetric information about project quality. Suppose a firm uses a hurdle rate ten percentage points above its cost of capital. What does the choice imply about the firm’s information environment and about the productivity of its divisional managers? Be specific.</li>
+<li>The Milgrom (1988) framework predicts that firms will adopt rules limiting headquarters’ discretion in order to reduce influence costs. Identify a specific capital-budgeting rule that a real firm uses (e.g., a published hurdle rate, a requirement for external benchmarking, a multi-stage gating process) and explain how it constrains influence activities.</li>
+<li>The Scharfstein-Stein “corporate socialism” mechanism predicts that internal capital markets in diversified firms cross-subsidize low-productivity divisions at the expense of high-productivity ones. The Maksimovic-Phillips evidence suggests that, in plant-level data, diversified firms transfer assets toward more productive divisions. How would you reconcile the two findings, and what would you want to see in additional evidence to take a stronger position?</li>
+<li>The real-options framework predicts that firms in R&amp;D-intensive industries should maintain looser capital allocation processes than firms in less option-rich industries. Suppose you observe a pharmaceutical firm with a strict payback-based capital allocation rule. What does the choice suggest, and what would you advise the firm to consider?</li>
+</ol>
+</section>
+<section id="problems" class="level2" data-number="13.10">
+<h2 data-number="13.10" class="anchored" data-anchor-id="problems"><span class="header-section-number">13.10</span> Problems</h2>
+<ol type="1">
+<li><em>(Numerical, NPV and IRR.)</em> A five-year project requires an initial investment of $1{,}200{,}000 and is expected to produce after-tax cash flows of $250{,}000, $350{,}000, $400{,}000, $400{,}000, and $300{,}000 in years 1 through 5, plus a terminal value of $200{,}000 received at the end of year 5. The firm’s cost of capital is 9 percent. (a) Compute the project’s NPV. (b) Compute the project’s IRR using trial-and-error or a spreadsheet’s IRR function. (c) Compute the project’s undiscounted payback period. (d) Compute the profitability index. (e) Apply each of the four decision rules — NPV, IRR (with hurdle equal to cost of capital), payback (with a three-year threshold), and PI — and discuss whether they agree.</li>
+<li><em>(Numerical, capital rationing with PI.)</em> A division of Acme Corp.&nbsp;has identified five candidate projects with the following NPVs and capital requirements: Project A, NPV $80{,}000, capital $200{,}000; Project B, NPV $60{,}000, capital $150{,}000; Project C, NPV $50{,}000, capital $100{,}000; Project D, NPV $40{,}000, capital $200{,}000; Project E, NPV $20{,}000, capital $50{,}000. The division’s capital budget is $400{,}000. (a) Compute the profitability index for each project. (b) Identify the value-maximizing combination of projects subject to the capital constraint, using the PI ranking as a starting point and confirming the result by checking the aggregate NPV of each feasible combination. (c) Compute the opportunity cost of capital for the marginal accepted project and compare it to the firm’s nominal cost of capital. Discuss the implications for the divisional hurdle rate.</li>
+<li><em>(Numerical, real options — the option to wait.)</em> A firm is considering a project that requires an immediate $10 million investment. If undertaken today, the project produces a perpetual after-tax cash flow whose present value is, with probability 0.5, $14 million (favorable state) and, with probability 0.5, $8 million (unfavorable state). The state will be revealed in one year if the firm waits; the $10 million investment can be made then if the state is favorable, or not made at all if the state is unfavorable. The risk-free rate is 5 percent. (a) Compute the project’s NPV if undertaken immediately. (b) Compute the expected NPV if the firm waits one year and invests only in the favorable state (treat the cash flows as risk-neutral for simplicity, and discount all year-1 values at the risk-free rate). (c) Compute the value of the option to wait and explain what it represents.</li>
+<li><em>(Numerical, NPV-IRR conflict on mutually exclusive projects.)</em> A firm must choose between two mutually exclusive projects of different scale. Project Small requires $100{,}000 and produces a single year-1 cash flow of $130{,}000. Project Large requires $1{,}000{,}000 and produces a single year-1 cash flow of $1{,}200{,}000. The firm’s cost of capital is 10 percent. (a) Compute each project’s NPV and IRR. (b) Identify the project the IRR rule selects and the project the NPV rule selects. (c) Explain which rule is correct and why.</li>
+<li><em>(Conceptual, influence costs.)</em> Read <span class="citation" data-cites="milgrom1988">Milgrom (<a href="../references.html#ref-milgrom1988" role="doc-biblioref">1988</a>)</span>, focusing on the introduction and the central definition of influence activities. In approximately 350 words, summarize the central argument and apply the framework to a specific internal-capital-market setting (e.g., capital budgeting at a large multidivisional firm, faculty hiring at a research university, project funding at a federal agency). Identify two specific organizational rules that would, on Milgrom’s framework, reduce the influence costs in your chosen setting.</li>
+<li><em>(Conceptual, diversification discount.)</em> Read the introductions and central results of <span class="citation" data-cites="bergerofek1995">Berger and Ofek (<a href="../references.html#ref-bergerofek1995" role="doc-biblioref">1995</a>)</span>, <span class="citation" data-cites="lamont1997">Lamont (<a href="../references.html#ref-lamont1997" role="doc-biblioref">1997</a>)</span>, and <span class="citation" data-cites="rajanservaeszingales2000">Rajan, Servaes, and Zingales (<a href="../references.html#ref-rajanservaeszingales2000" role="doc-biblioref">2000</a>)</span>. In approximately 500 words, evaluate the empirical case for the proposition that internal capital markets, on average, destroy value. What is the evidence’s strongest piece, what is the weakest, and what additional evidence would you want before forming a confident view? Consider in particular the selection-based critique in <span class="citation" data-cites="maksimovicphillips2002">Maksimovic and Phillips (<a href="../references.html#ref-maksimovicphillips2002" role="doc-biblioref">2002</a>)</span>.</li>
+<li><em>(Conceptual, winner-picking vs.&nbsp;socialism.)</em> The chapter contrasted GE under Jack Welch with Berkshire Hathaway as two responses to the winner-picking / socialism trade-off. Identify a third public company whose capital-allocation arrangements are publicly documented (in annual reports, investor presentations, or business journalism). Describe the firm’s approach, classify it relative to the GE and Berkshire models, and assess whether the approach appears to address the influence-cost problem.</li>
+<li><em>(Writing exercise.)</em> In approximately 600 words, take a position on the following claim: <em>“The widespread practice of using hurdle rates substantially above the firm’s cost of capital is an institutional error that destroys value by causing firms to reject positive-NPV projects.”</em> Marshal evidence from this chapter — including the Antle-Eppen, Milgrom, and Stein analyses — and from your own reading. Acknowledge the strongest counterargument and respond to it. Your essay should take a position rather than survey the literature.</li>
+</ol>
+</section>
+<section id="lab" class="level2" data-number="13.11">
+<h2 data-number="13.11" class="anchored" data-anchor-id="lab"><span class="header-section-number">13.11</span> Lab</h2>
+<p>The in-class activity for this week is a <strong>capital budgeting simulation</strong> in which students play roles as divisional managers proposing projects to a corporate headquarters that must allocate a fixed capital budget across competing proposals. Each project proposal embeds private information about the project’s true productivity that the divisional manager knows but corporate headquarters does not. Divisional managers may also invest “lobbying effort” — a costly action that increases the probability headquarters funds the project but produces no value for the firm — capturing the influence-cost mechanism of <span class="citation" data-cites="milgrom1988">Milgrom (<a href="../references.html#ref-milgrom1988" role="doc-biblioref">1988</a>)</span>. The simulation makes the mechanism-design framework concrete: students experience, in real time, the trade-off between providing capital to high-productivity projects, avoiding overpayment to managers who overstate their project quality, and limiting the wasteful expenditure of effort on internal politics.</p>
+<p><strong>Quiz 4 (covering Chapters 10–12 of the Companion) is administered at the start of the second class meeting this week.</strong> The quiz covers earnings management, the equity and compensation framework, decentralization and cost behavior, and performance measurement. Bring a writing implement, a calculator, and the willingness to apply the framework to questions you have not seen before.</p>
+<p>There is no out-of-class lab for this week. The Lab 6 group empirical project has been ongoing through Arc III; preliminary findings are due in Week 14.</p>
+</section>
+<section id="further-reading" class="level2" data-number="13.12">
+<h2 data-number="13.12" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">13.12</span> Further reading</h2>
+<p>The readings below are the assigned readings for Week 13. You should read all of them.</p>
+<ul>
+<li><span class="citation" data-cites="antleeppen1985">Antle and Eppen (<a href="../references.html#ref-antleeppen1985" role="doc-biblioref">1985</a>)</span>, “Capital Rationing and Organizational Slack in Capital Budgeting.” Read for the model setup and the central result on capital rationing as an optimal screening device. The proofs can be skimmed.</li>
+<li><span class="citation" data-cites="grahamharvey2001">Graham and Harvey (<a href="../references.html#ref-grahamharvey2001" role="doc-biblioref">2001</a>)</span>, “The Theory and Practice of Corporate Finance: Evidence from the Field.” Read for the survey methodology and the findings on capital budgeting practice. The other sections of the paper (capital structure, dividends, etc.) are useful background.</li>
+<li><span class="citation" data-cites="milgrom1988">Milgrom (<a href="../references.html#ref-milgrom1988" role="doc-biblioref">1988</a>)</span>, “Employment Contracts, Influence Activities, and Efficient Organization Design.” Read for the central definition of influence activities and the implications for organizational design. The model section can be skimmed.</li>
+<li><span class="citation" data-cites="stein1997">Stein (<a href="../references.html#ref-stein1997" role="doc-biblioref">1997</a>)</span>, “Internal Capital Markets and the Competition for Corporate Resources.” Read for the winner-picking mechanism. The companion <span class="citation" data-cites="scharfsteinstein2000">Scharfstein and Stein (<a href="../references.html#ref-scharfsteinstein2000" role="doc-biblioref">2000</a>)</span> develops the dark-side complement and is worth skimming.</li>
+<li>A short selection from <span class="citation" data-cites="demski2008">Demski (<a href="../references.html#ref-demski2008" role="doc-biblioref">2008</a>)</span> on capital budgeting and decentralized decision-making (chapter assignment to be specified on Canvas).</li>
+<li><em>Optional, for those who want more:</em> <span class="citation" data-cites="bergerofek1995">Berger and Ofek (<a href="../references.html#ref-bergerofek1995" role="doc-biblioref">1995</a>)</span>, <span class="citation" data-cites="lamont1997">Lamont (<a href="../references.html#ref-lamont1997" role="doc-biblioref">1997</a>)</span>, and <span class="citation" data-cites="rajanservaeszingales2000">Rajan, Servaes, and Zingales (<a href="../references.html#ref-rajanservaeszingales2000" role="doc-biblioref">2000</a>)</span> on the diversification discount; <span class="citation" data-cites="maksimovicphillips2002">Maksimovic and Phillips (<a href="../references.html#ref-maksimovicphillips2002" role="doc-biblioref">2002</a>)</span> on the selection-based critique; and <span class="citation" data-cites="dixitpindyck1994">Dixit and Pindyck (<a href="../references.html#ref-dixitpindyck1994" role="doc-biblioref">1994</a>)</span> (book-length) for a thorough treatment of real options.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Closing Arc III
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Chapter 13 closes the substantive content of Arc III. Across three chapters we have moved from the abstract framework of decentralization (Chapter 11), through the design of performance metrics (Chapter 12), to the mechanism-design problem of capital allocation (Chapter 13). The thread connecting all three chapters is that internal accounting is the institutional infrastructure through which firms manage the trade-off between local information advantages and corporate-level coordination — the same framework Arc I and Arc II developed for external reporting, applied inside the firm. Chapter 14 closes the course by returning to a small set of contested conceptual questions and asking you to argue both sides of each.</p>
+</div>
+</div>
+
+
+<!-- -->
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-antleeppen1985" class="csl-entry" role="listitem">
+Antle, Rick, and Gary D. Eppen. 1985. <span>“Capital Rationing and Organizational Slack in Capital Budgeting.”</span> <em>Management Science</em> 31 (2): 163–74.
+</div>
+<div id="ref-bergerofek1995" class="csl-entry" role="listitem">
+Berger, Philip G., and Eli Ofek. 1995. <span>“Diversification’s Effect on Firm Value.”</span> <em>Journal of Financial Economics</em> 37 (1): 39–65.
+</div>
+<div id="ref-demski2008" class="csl-entry" role="listitem">
+Demski, Joel S. 2008. <em>Managerial Uses of Accounting Information</em>. 2nd ed. New York: Springer.
+</div>
+<div id="ref-dixitpindyck1994" class="csl-entry" role="listitem">
+Dixit, Avinash K., and Robert S. Pindyck. 1994. <em>Investment Under Uncertainty</em>. Princeton, NJ: Princeton University Press.
+</div>
+<div id="ref-grahamharvey2001" class="csl-entry" role="listitem">
+Graham, John R., and Campbell R. Harvey. 2001. <span>“The Theory and Practice of Corporate Finance: Evidence from the Field.”</span> <em>Journal of Financial Economics</em> 60 (2–3): 187–243.
+</div>
+<div id="ref-lamont1997" class="csl-entry" role="listitem">
+Lamont, Owen. 1997. <span>“Cash Flow and Investment: Evidence from Internal Capital Markets.”</span> <em>Journal of Finance</em> 52 (1): 83–109.
+</div>
+<div id="ref-maksimovicphillips2002" class="csl-entry" role="listitem">
+Maksimovic, Vojislav, and Gordon Phillips. 2002. <span>“Do Conglomerate Firms Allocate Resources Inefficiently Across Industries? <span>T</span>heory and Evidence.”</span> <em>The Journal of Finance</em> 57 (2): 721–67. <a href="https://doi.org/10.1111/1540-6261.00440">https://doi.org/10.1111/1540-6261.00440</a>.
+</div>
+<div id="ref-mcdonaldsiegel1986" class="csl-entry" role="listitem">
+McDonald, Robert, and Daniel Siegel. 1986. <span>“The Value of Waiting to Invest.”</span> <em>Quarterly Journal of Economics</em> 101 (4): 707–27.
+</div>
+<div id="ref-milgrom1988" class="csl-entry" role="listitem">
+Milgrom, Paul. 1988. <span>“Employment Contracts, Influence Activities, and Efficient Organization Design.”</span> <em>Journal of Political Economy</em> 96 (1): 42–60.
+</div>
+<div id="ref-rajanservaeszingales2000" class="csl-entry" role="listitem">
+Rajan, Raghuram, Henri Servaes, and Luigi Zingales. 2000. <span>“The Cost of Diversity: The Diversification Discount and Inefficient Investment.”</span> <em>Journal of Finance</em> 55 (1): 35–80.
+</div>
+<div id="ref-scharfsteinstein2000" class="csl-entry" role="listitem">
+Scharfstein, David S., and Jeremy C. Stein. 2000. <span>“The Dark Side of Internal Capital Markets: Divisional Rent-Seeking and Inefficient Investment.”</span> <em>Journal of Finance</em> 55 (6): 2537–64.
+</div>
+<div id="ref-stein1997" class="csl-entry" role="listitem">
+Stein, Jeremy C. 1997. <span>“Internal Capital Markets and the Competition for Corporate Resources.”</span> <em>Journal of Finance</em> 52 (1): 111–33.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/acctg211h\.psu\.edu\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../arc3-internal/12-performance.html" class="pagination-link" aria-label="Performance Measurement as Agency">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Performance Measurement as Agency</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../arc4-synthesis/14-debates.html" class="pagination-link" aria-label="Synthesis: The Capstone Debates">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Synthesis: The Capstone Debates</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "How firms choose which long-term investments to fund, and the agency problems that arise when project information is held by divisional managers."</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># Capital Budgeting Under Asymmetric Information {#sec-capbudget}</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Opening question</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>In the late 1990s, @grahamharvey2001 surveyed the chief financial officers of nearly four hundred U.S. firms about the capital budgeting techniques they actually used. The textbook answer, taught in every introductory corporate finance course, is that firms should compute the *net present value* (NPV, i.e., the discounted sum of a project's future cash flows minus its initial cost) of each candidate project and accept those with positive NPV. The survey found something more interesting. Approximately seventy-five percent of CFOs reported using NPV, but approximately seventy-five percent also reported using *internal rate of return* (IRR, i.e., the discount rate at which a project's NPV equals zero). Approximately fifty-seven percent reported using *payback period* (i.e., the time required to recover the initial investment), the simplest and theoretically least defensible technique. A substantial fraction of firms reported using all three simultaneously.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>The pattern poses a puzzle for the textbook view. If NPV is the theoretically correct technique, why do firms layer other techniques on top of it — and why, in particular, do they continue to use payback, which discards information about distant cash flows and ignores the time value of money entirely? The straightforward answer is that the textbook framework is correct only under a specific set of assumptions about the information environment in which the capital budgeting decision is made. When those assumptions fail — when project cash flows are uncertain, when divisional managers have private information about project quality, when capital is rationed at the corporate level, when lobbying for resources is costly to the firm — alternative techniques may serve functions that NPV alone cannot.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>This chapter develops the framework. It opens with the standard NPV machinery and the related techniques (IRR, payback, the profitability index) commonly taught in introductory finance, and works a single five-year project example through each of them. It then introduces the asymmetric-information complication that has occupied the academic literature on capital budgeting for forty years: in the modern multidivisional firm, project-specific information is held principally by divisional managers, not by the corporate headquarters that ultimately allocates capital. Capital budgeting is, in this framing, a mechanism-design problem of the kind we have studied throughout Arc III: corporate headquarters wishes to make value-maximizing capital allocation decisions but lacks direct access to the information needed to do so, and divisional managers have incentives that diverge from headquarters' interests in ways that the budgeting process must accommodate. The classic analytical treatments are (i) @antleeppen1985, who showed that capital rationing is an optimal response to managers' incentive to overstate project quality, (ii) @milgrom1988, who showed that centralized investment decisions generate *influence costs* — the wasteful expenditure of managerial effort on lobbying — and (iii) @stein1997, who developed the *winner-picking* view of internal capital markets and the conditions under which corporate headquarters allocates capital better than the external market would.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>The chapter closes Arc III's substantive content. After this chapter, only the synthesis Chapter 14 and the capstone debates remain.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## The NPV framework</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Net present value is the standard analytical tool for evaluating long-term investment projects. The technique computes the present value of the project's expected future cash flows, discounted at a rate that reflects the project's risk and the time value of money, and subtracts the project's initial cost. A project with positive NPV creates value for the firm and should be accepted; a project with negative NPV destroys value and should be rejected.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>The mechanical structure is:</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>\text{NPV} = -C_0 + \sum_{t=1}^{T} \frac{E<span class="co">[</span><span class="ot">CF_t</span><span class="co">]</span>}{(1 + r)^t},</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>where $C_0$ is the initial cost (typically incurred at $t = 0$), $E<span class="co">[</span><span class="ot">CF_t</span><span class="co">]</span>$ is the expected cash flow in period $t$, $T$ is the project horizon, and $r$ is the project's discount rate.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>The discount rate is, in principle, the project's risk-adjusted required return — the return an investor with comparable risk preferences and a comparable opportunity set would require to bear the project's risk. In practice, firms commonly use the firm's *weighted-average cost of capital* (WACC, i.e., the blended cost of equity and debt financing, weighted by their respective shares in the firm's capital structure) as the discount rate for projects within the firm's existing line of business, with project-specific adjustments for projects of materially different risk. The choice of discount rate is among the most consequential single inputs to the NPV calculation; small changes in $r$ can flip a project from positive to negative NPV.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>The NPV technique has theoretical appeal. It is consistent with the firm-value-maximization objective, it accommodates risk through the discount rate, it weights cash flows by the time at which they occur, and it produces a single decision-relevant number. The textbook treatment of NPV is rigorous and the criticisms of NPV in the academic literature are typically not about the framework itself but about specific applications — the choice of discount rate, the estimation of cash flows, and the treatment of embedded option value (developed in Section 13.6).</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## IRR, payback, and the profitability index</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>Three alternatives to NPV are widely used in practice. We develop each in turn.</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>The *internal rate of return* is the discount rate at which a project's NPV equals zero. A project with an IRR above the firm's cost of capital has positive NPV at the cost-of-capital discount rate; a project with an IRR below the cost of capital has negative NPV. The IRR decision rule — accept projects with IRR above the cost of capital — is, in most cases, equivalent to the NPV rule. Two well-known exceptions, however, deserve attention. First, projects with *non-conventional cash flow patterns* (i.e., cash flow streams with multiple sign changes, such as a mining project that requires a large remediation outlay at the end) may have multiple IRRs, with no single rate that the IRR rule sensibly identifies as "the" rate of return; the NPV framework handles such projects cleanly, while the IRR framework requires careful supplemental analysis. Second, the IRR rule can produce incorrect *rankings* of mutually exclusive projects of different scales. A small project with a 30 percent IRR may have a lower NPV than a large project with a 15 percent IRR, because IRR measures the rate of return per dollar invested while NPV measures the total dollar value created. When the firm must choose one project or the other, NPV is the appropriate criterion.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>The *payback period* is the time required for a project's cumulative cash flows to equal its initial investment. A project with an initial cost of $1{,}000{,}000 and annual cash flows of $250{,}000 has a payback period of four years. The payback rule — accept projects whose payback period is below some threshold — is the simplest of the capital budgeting techniques. It is also the most theoretically suspect: payback ignores cash flows beyond the threshold, ignores the time value of money, and provides no straightforward connection to firm value.</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>Yet payback persists in widespread use. The Graham-Harvey survey suggests several explanations. Payback is simple to explain and compute. It is a natural metric of *capital recovery* — the speed with which the firm gets its money back, which matters for liquidity-constrained firms. It is, in some interpretations, a rough proxy for risk, since shorter-payback projects are less exposed to the uncertainty of cash flows in the distant future. And it serves as a *screening* mechanism in firms with many candidate projects: a payback threshold can rapidly eliminate projects that fall well below the firm's standards, leaving more careful NPV analysis for the projects that survive the screen. The framework of this chapter qualifies the standard textbook critique of payback. Payback is theoretically inferior to NPV under symmetric information and unconstrained capital, but it is defensible — and sometimes optimal — when information is asymmetric and capital is rationed, conditions that prevail in most actual firms.</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>The *profitability index* (PI) is the ratio of a project's present value of future cash flows to its initial investment:</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>\text{PI} = \frac{\sum_{t=1}^{T} E<span class="co">[</span><span class="ot">CF_t</span><span class="co">]</span>/(1+r)^t}{C_0} = 1 + \frac{\text{NPV}}{C_0}.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>A profitability index above one corresponds to a positive NPV. The PI's primary use is *capital rationing*: when the firm has a fixed budget that does not permit acceptance of every positive-NPV project, ranking projects by PI rather than by NPV identifies the combination of projects that produces the largest aggregate NPV per dollar of constrained capital. We illustrate the rationing application in Problem 2 of Section 13.10.</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mechanics: an extended worked example</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>To make the four techniques concrete, consider an extended Acme Corp. example. Acme is evaluating a five-year capital project to expand its production capacity. The project requires an initial investment of $1{,}500{,}000 at $t = 0$, is expected to produce after-tax operating cash flows over five years, and is expected to generate a terminal value of $300{,}000 at the end of year 5 from the sale of residual equipment and the release of working capital. Acme's cost of capital is 10 percent. The cash-flow profile is as follows.</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>| Year | Capital outlay | Operating cash flow | Terminal value | Net cash flow | Discount factor (at 10%) | Present value |</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>|------|----------------|---------------------|----------------|---------------|--------------------------|---------------|</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>| 0    | $(1{,}500{,}000)$ | $0$              | $0$            | $(1{,}500{,}000)$ | $1.0000$              | $(1{,}500{,}000)$ |</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>| 1    | $0$               | $400{,}000$       | $0$            | $400{,}000$       | $0.9091$              | $363{,}636$       |</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>| 2    | $0$               | $500{,}000$       | $0$            | $500{,}000$       | $0.8264$              | $413{,}223$       |</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>| 3    | $0$               | $500{,}000$       | $0$            | $500{,}000$       | $0.7513$              | $375{,}657$       |</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>| 4    | $0$               | $400{,}000$       | $0$            | $400{,}000$       | $0.6830$              | $273{,}205$       |</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>| 5    | $0$               | $300{,}000$       | $300{,}000$    | $600{,}000$       | $0.6209$              | $372{,}553$       |</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>Summing the present values gives a project NPV of approximately $298{,}274. The project has a positive NPV at Acme's cost of capital and, under the textbook decision rule, should be accepted.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>The IRR is the discount rate at which the project's NPV equals zero. Trial-and-error narrows the IRR for this project to approximately 17.0 percent. At a 15 percent discount rate the NPV is approximately $63{,}000 (positive); at a 20 percent rate the NPV is approximately $(140{,}000) (negative). Linear interpolation between the two points gives an estimate near 16.5 percent; a finer computation places the rate closer to 17.0 percent. The IRR comfortably exceeds Acme's 10 percent cost of capital, consistent with the positive NPV.</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>The (undiscounted) payback period is the time required for cumulative net cash flows to equal the initial investment. The cumulative cash inflows after years 1, 2, 3, 4, and 5 are $400{,}000, $900{,}000, $1{,}400{,}000, $1{,}800{,}000, and $2{,}400{,}000 respectively. The investment is recovered between years 3 and 4: the project has recovered $1{,}400{,}000 of the $1{,}500{,}000 investment by the end of year 3, and recovers the remaining $100{,}000 from the year-4 inflow of $400{,}000. Linear interpolation within year 4 gives a payback period of approximately $3 + (100{,}000 / 400{,}000) = 3.25$ years. If Acme uses a four-year payback threshold, the project passes; if it uses a three-year threshold, the project fails despite its positive NPV.</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>The profitability index is $1 + (298{,}274 / 1{,}500{,}000) \approx 1.199$. The project produces approximately $1.20 of present value per dollar of initial investment.</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>The four computations agree on the qualitative recommendation (accept), but they differ in the strength of the signal. NPV is comfortably positive but not large in relation to the investment. IRR is approximately 700 basis points above the cost of capital, providing a reasonable margin for estimation error. Payback at 3.25 years is short enough to clear most firm thresholds but not dramatically so. PI of 1.20 gives Acme a useful number for comparing this project against alternatives competing for the same capital. The Acme CFO, faced with this set of metrics, has more information than NPV alone would provide — exactly the pattern the Graham-Harvey survey documented.</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="fu">## NPV-IRR conflicts on mutually exclusive projects</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>Consider two mutually exclusive variants of the Acme project. Project A is the project just analyzed: $1{,}500{,}000 initial investment, NPV of $298{,}274 at 10 percent, IRR of approximately 17 percent. Project B is a smaller variant: $400{,}000 initial investment, expected cash flows that produce an NPV of $120{,}000 at 10 percent and an IRR of approximately 25 percent. Project B has the higher IRR; Project A has the higher NPV. The IRR rule, applied naively, would select Project B; the NPV rule selects Project A. The NPV rule is the appropriate criterion for the choice between mutually exclusive projects, because firm value is increased by the dollar amount of NPV created, not by the rate of return per dollar invested. The IRR ranking confounds project scale with project profitability, and the firm that ranks mutually exclusive projects by IRR will systematically underinvest in large, value-creating projects in favor of small, high-return ones.</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>Non-conventional cash-flow patterns produce a related complication. A project that requires $100{,}000 at $t = 0$, returns $400{,}000 at $t = 1$, and requires a $400{,}000 remediation outlay at $t = 2$ has two IRRs — one near 25 percent and another near 400 percent — because the NPV function changes sign twice. The IRR rule cannot identify "the" rate of return; the analyst who relies on a single IRR will reach incorrect conclusions. NPV, applied at the firm's cost of capital, gives an unambiguous answer.</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="fu">## Antle-Eppen: capital rationing and organizational slack</span></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>@antleeppen1985 developed an analytical model of capital budgeting under asymmetric information that connects directly to the framework Arc III has developed. The model considers a corporate headquarters allocating capital across divisions, where each division has private information about the productivity of its investment opportunities. Headquarters cannot directly observe divisional productivity; it can observe only the project proposals divisions submit, and divisions have incentives to overstate the productivity of their proposals to obtain more capital than they truly need. Antle and Eppen showed that, under a wide class of information conditions, the optimal capital allocation policy involves *capital rationing*: corporate headquarters provides each division with a capital budget below the level that the division's reported productivity would justify. The rationing serves a screening function: divisions with truly high-productivity projects will, on the margin, prefer to receive smaller capital allocations on terms that prevent overstatement, while divisions with low-productivity projects will be unable to extract excessive capital because the rationing constraint binds.</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>The Antle-Eppen framework also explains why firms often impose *hurdle rates* (i.e., the minimum return a project must promise to receive funding) that exceed the firm's cost of capital. A divisional manager who must convince headquarters that her project clears a hurdle rate of, say, fifteen percent — even though the firm's cost of capital is only ten percent — will have less ability to obtain capital for projects of marginal quality. The hurdle-rate-above-cost-of-capital pattern, widely observed in U.S. firms, is, on this analysis, a rational response to the asymmetric-information environment of capital allocation, not a textbook error.</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>The Antle-Eppen analysis has implications that extend beyond the model's specific structure. The deeper point is that the capital budgeting process is a mechanism-design problem: corporate headquarters is designing the rules under which divisions submit project proposals, and the rules must accommodate the divisions' incentives to misrepresent project information. The textbook NPV framework, taken in isolation, ignores this dimension. The actual capital budgeting practices of firms — capital rationing, hurdle rates above cost of capital, formal post-completion audits, multi-stage approval processes — are, in important respects, the institutional response to the mechanism-design problem.</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why this matters</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>The Antle-Eppen framework links capital budgeting to the broader Arc III theme. Internal accounting is the institutional response to information asymmetry between corporate headquarters and decentralized operating units, and the framework applies to capital budgeting as much as it applies to performance measurement. The capital allocation process is one of the most important single decisions the modern firm makes, and the analytical framework for thinking about it is the same framework we have used for cost behavior, performance measurement, and (in Arc I) external reporting.</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="fu">## Influence costs and internal capital markets</span></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>The Antle-Eppen model treats divisional managers as informationally private but otherwise non-strategic. A separate strand of the literature emphasizes that managers spend real resources lobbying for capital — preparing slide decks, building political coalitions, cultivating relationships with corporate officers — and that the lobbying activity itself is costly to the firm.</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>The classic statement is @milgrom1988, "Employment Contracts, Influence Activities, and Efficient Organization Design," which analyzed *influence activities* (i.e., effort that an employee expends to alter a decision in her favor, rather than to produce value for the firm) as a central organizational problem. Milgrom's point is structural. Whenever a central decision maker exercises discretion over the allocation of valuable resources — capital budgets, promotions, project authority — the parties affected by the decision have an incentive to expend effort attempting to influence the decision in their favor. The effort is, from the firm's perspective, pure waste: the manager who spends a week building a deck designed to make a marginal project look attractive is not spending that week producing value. The firm bears the influence cost twice — once in the direct effort the manager diverts from productive work, and again in the distortion the lobbying introduces into the eventual capital allocation.</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>Milgrom's framework predicts that firms will adopt *organizational rules that limit discretion* precisely to reduce influence costs. Bright-line hurdle rates, formal capital-budgeting committees with documented criteria, requirements that projects be supported by external benchmarks rather than divisional advocacy, and even the deliberate use of capital rationing all serve to constrain headquarters' discretion and thereby reduce the marginal payoff to influence activity. The textbook NPV framework, on this view, is not just an analytical tool but an institutional commitment device: by binding itself to a relatively mechanical procedure, headquarters reduces the incentive for divisional managers to invest in lobbying.</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>@stein1997, "Internal Capital Markets and the Competition for Corporate Resources," extended the analysis to the question of whether *internal capital markets* (i.e., the corporate-headquarters process by which capital is allocated across divisions of a multidivisional firm) function better or worse than the external capital market. Stein developed a model in which corporate headquarters' active role generates two offsetting effects. The bright-side effect is *winner-picking*: headquarters has authority to reallocate capital from low-productivity divisions to high-productivity ones, an authority the external market lacks because external investors cannot force one firm to redirect capital to another. When headquarters has good information about relative project quality across divisions, the winner-picking advantage of internal capital markets is real. The dark-side effect — developed more fully in @scharfsteinstein2000, "The Dark Side of Internal Capital Markets" — is that the same allocation authority creates the influence-cost problem Milgrom identified. Divisional managers lobby for capital they do not deserve, and weak headquarters (perhaps under pressure to maintain peace among divisions, perhaps facing political constraints) ends up cross-subsidizing low-productivity divisions at the expense of high-productivity ones. Scharfstein and Stein described this pattern as *corporate socialism*: capital flows toward the divisions that lobby hardest rather than toward the divisions that would generate the most value.</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>The empirical literature on diversified firms has provided evidence that speaks to both effects. @bergerofek1995 documented a *diversification discount* — diversified firms trade at approximately 13 to 15 percent below the sum of the imputed values of their stand-alone segments — consistent with internal capital markets that, on average, destroy value rather than create it. @lamont1997 showed, using the 1986 oil-price collapse as a shock to oil-company cash flows, that diversified oil firms cut investment in their non-oil divisions when oil prices fell, suggesting that internal capital markets in those firms were less effective than external markets would have been. @rajanservaeszingales2000 documented that the diversification discount is larger in firms whose divisions have more dispersed investment opportunities, consistent with the prediction that the influence-cost problem is most severe when divisions differ substantially in true productivity. The combined evidence is consistent with the Scharfstein-Stein dark-side mechanism: in many diversified firms, the internal capital market appears to socialize capital across divisions rather than to pick winners.</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>The interpretation is, however, contested. @maksimovicphillips2002 argued that the diversification discount partly reflects selection — the kinds of firms that diversify differ in unobservable ways from the kinds that do not — and showed that, in plant-level data, diversified firms transfer assets toward their more productive divisions in patterns broadly consistent with winner-picking. The empirical literature has not converged on a single verdict on whether internal capital markets, on average, create or destroy value, and the most defensible reading is that the answer depends on the firm: well-governed diversified firms with strong corporate finance functions appear to allocate capital reasonably, while diversified firms with weak governance and strong divisional politics exhibit the cross-subsidization pattern.</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>Two concrete examples illustrate the range. *General Electric under Jack Welch* (CEO 1981--2001) was widely cited in business literature as an example of an effective internal capital market: the firm's "Session C" reviews, in which each division's investment proposals were stress-tested against firm-wide alternatives, and the explicit policy of exiting any business that could not credibly target a top-two position in its industry, were designed (whether or not they fully succeeded) to combat the cross-subsidization tendency by binding headquarters to allocation criteria divisions could not easily lobby around. *Berkshire Hathaway under Warren Buffett* exemplifies a different model: the holding company allocates capital from operating subsidiaries to wholly new investments based on Buffett's centralized judgment, deliberately keeping the operating subsidiaries' role in the allocation process minimal. Both arrangements are responses to the same underlying problem — the influence-cost and winner-picking trade-off — but they resolve the problem in different ways.</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="fu">## The winner-picking / socialism trade-off in one sentence</span></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>Stein's model captures the central tension: corporate headquarters has the *authority* to pick winners across divisions, an authority the external market lacks, but the same authority creates the *opportunity* for divisional managers to lobby for capital they do not deserve, and the empirical question is whether headquarters uses the authority to pick winners or is captured by the lobbying.</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="fu">## Real options</span></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>A separate qualification to the standard NPV framework concerns the treatment of *flexibility* in long-term investments. The standard NPV computation assumes a fixed cash flow profile to which the firm commits at the time of the investment. Real-world projects often have substantial flexibility: the firm can scale up if early results are favorable, scale down or abandon if they are unfavorable, defer the project to a later date, or modify the project's scope in response to new information. The standard NPV technique fails to capture this flexibility, and projects with substantial flexibility are often undervalued by NPV alone.</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>The *real options* framework — developed in @mcdonaldsiegel1986 on the value of waiting and synthesized in @dixitpindyck1994 — addresses the concern by treating embedded flexibility as a financial option. Three option types recur. An *option to delay* allows the firm to postpone a project until uncertainty about its value resolves; when the project is irreversible and information will arrive over time, the option to delay has positive value, and a project with positive NPV today may rationally be deferred. An *abandonment option* allows the firm to discontinue a project and recover residual value if conditions turn unfavorable; the option limits downside losses and raises the project's true value above its NPV-as-committed estimate. An *expansion option* allows the firm to make a small initial investment that creates the right (but not the obligation) to make a larger follow-on investment if early results are favorable; such projects have characteristic call-option payoffs and are systematically undervalued by NPV.</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>Consider a stylized pharmaceutical example. A drug-development firm is considering a Phase II clinical trial that costs $50 million and is expected to fail with probability 0.6 (producing no further cash flows) and succeed with probability 0.4 (allowing the firm to invest $400 million in Phase III, after which the expected discounted value of commercialization is $1.2 billion conditional on success). The standalone NPV of the Phase II trial, computed mechanically, treats Phase III as a planned outlay: expected total investment of $50M + 0.4 \times $400M = $210M against expected payoff of $0.4 \times $1.2B = $480M, for an expected NPV of $270M (ignoring discounting for simplicity). The mechanical NPV is positive but understates the project's value. The correct framing is that Phase II purchases an *option* to invest in Phase III. The firm will exercise the option only if Phase II succeeds, in which case the Phase III investment has positive NPV. If Phase II fails, the firm abandons the project and avoids the Phase III outlay entirely. The optionality is what makes drug development economically viable in the face of high failure rates: each early-stage trial purchases the right, not the obligation, to continue. NPV treatments that ignore the optionality systematically undervalue R&amp;D-intensive investments and partly explain why R&amp;D-intensive firms maintain looser capital allocation processes than the standard textbook framework would prescribe.</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>The mechanical computation of real-option values is, in general, more complex than the standard NPV computation. The valuation of a real option requires assumptions about the volatility of the project's underlying cash flows, the timing of available decisions, and the cost of the option's exercise. In practice, firms often use simplified rules of thumb (e.g., adding a fixed premium to NPV for projects with substantial flexibility, or applying decision-tree analysis with explicit branch probabilities) rather than full option-pricing computations. The conceptual framework, however, is correct: flexibility has value, and NPV alone undervalues flexible projects.</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>The real-options framework intersects with the influence-cost framework in interesting ways. A capital-rationing constraint that prevents a division from undertaking a real-option-rich project is more costly than a constraint that prevents an inflexible project of the same NPV: the option value, which the rationing constraint forecloses, is part of the cost of the constraint. The empirical literature has documented patterns consistent with this reasoning, with firms in industries where real options are particularly important (e.g., R&amp;D-intensive industries, resource-extraction industries, industries exposed to commodity-price volatility) maintaining looser capital allocation processes than firms in less option-rich industries.</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="fu">## Empirical evidence</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>The empirical literature on capital budgeting has grown substantially since the Graham-Harvey survey. Four findings are particularly relevant.</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>First, the *use of multiple techniques* documented by @grahamharvey2001 has been replicated in subsequent surveys and across other countries. Firms continue to use NPV alongside IRR and payback, and the use of multiple techniques is positively associated with firm size, sophistication of the finance function, and the complexity of the firm's investment opportunities. The pattern is consistent with the framework of Section 13.5: the techniques serve different functions, and using multiple techniques captures information that any single technique would miss.</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>Second, the *use of hurdle rates above cost of capital* is widely documented. @grahamharvey2001 and the subsequent literature have found that the typical large U.S. firm uses a hurdle rate that exceeds its cost of capital by approximately three to five percentage points, with substantial variation across firms and industries. The pattern is broadly consistent with the Antle-Eppen analysis: hurdle rates serve a screening function in environments with asymmetric information, and the optimal screening intensity depends on the firm's information environment.</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>Third, the *diversification discount* documented by @bergerofek1995 — diversified firms trade at approximately 13 to 15 percent below the sum of the imputed values of their stand-alone segments — has been replicated and extended in numerous subsequent studies. @lamont1997 provided complementary evidence using the 1986 oil-price shock, and @rajanservaeszingales2000 showed that the discount is larger in firms with greater dispersion in divisional investment opportunities. The pattern is consistent with the Scharfstein-Stein dark-side mechanism of internal capital markets, though the @maksimovicphillips2002 evidence using plant-level transfers suggests that the average effect masks substantial heterogeneity, with some firms allocating capital well and others poorly.</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>Fourth, the *capital allocation process* in multidivisional firms has been extensively studied in the empirical literature. The literature has documented that capital allocations within firms are systematically related to divisional performance metrics and to the strategic priorities of corporate headquarters, but also that allocations frequently deviate from what the textbook NPV framework would prescribe. Some of the deviation reflects the asymmetric-information environment of the Antle-Eppen analysis; some reflects the political economy of capital allocation within firms (i.e., managerial influence and the relative bargaining position of divisions, in the sense of @milgrom1988); and some reflects the explicit consideration of real-option value that NPV alone undervalues.</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key takeaways</span></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**NPV is theoretically correct but practically incomplete.** The technique is appropriate under symmetric information and frictionless capital, conditions that approximate few real firms; the supplementary techniques firms actually use respond to features of the practical environment that NPV alone ignores.</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**IRR and payback survive because they are informative on dimensions NPV omits.** IRR conveys a margin-of-safety relative to the cost of capital, payback conveys a liquidity recovery time, and the profitability index conveys value created per dollar of constrained capital — each useful when the textbook NPV assumptions fail.</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Capital rationing and hurdle rates above the cost of capital are not textbook errors.** Consistent with @antleeppen1985, they are optimal screening devices in environments where divisional managers have private information and incentives to overstate project quality.</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Influence costs make centralized capital allocation expensive even when headquarters is well-intentioned.** Consistent with @milgrom1988, the lobbying effort divisional managers expend on capital is, from the firm's perspective, a real social cost — both directly and through the distortions it introduces into the allocation.</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Internal capital markets pick winners or cross-subsidize losers depending on governance.** Consistent with @stein1997 and @scharfsteinstein2000, the same allocation authority that enables winner-picking creates the opportunity for socialism, and the empirical evidence on the diversification discount suggests that, on average, the dark side is non-trivial.</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Real options raise the value of flexibility above the NPV baseline.** Projects with embedded options to delay, abandon, or expand are systematically undervalued by mechanical NPV, and the practical capital-budgeting processes of R&amp;D-intensive and resource-extraction firms reflect the importance of preserving optionality.</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="fu">## Discussion questions</span></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>The Graham-Harvey survey found that approximately seventy-five percent of CFOs use IRR and roughly the same percentage use NPV — even though the two techniques are theoretically equivalent for projects with conventional cash flows. Why might a CFO use both? What information does each technique provide that the other does not?</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Payback period ignores cash flows beyond the payback horizon and ignores the time value of money. Yet it remains in widespread use. Identify three plausible reasons for its persistence and rank them by which you find most compelling.</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>The Antle-Eppen framework predicts that hurdle rates above cost of capital are an optimal response to asymmetric information about project quality. Suppose a firm uses a hurdle rate ten percentage points above its cost of capital. What does the choice imply about the firm's information environment and about the productivity of its divisional managers? Be specific.</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>The Milgrom (1988) framework predicts that firms will adopt rules limiting headquarters' discretion in order to reduce influence costs. Identify a specific capital-budgeting rule that a real firm uses (e.g., a published hurdle rate, a requirement for external benchmarking, a multi-stage gating process) and explain how it constrains influence activities.</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>The Scharfstein-Stein "corporate socialism" mechanism predicts that internal capital markets in diversified firms cross-subsidize low-productivity divisions at the expense of high-productivity ones. The Maksimovic-Phillips evidence suggests that, in plant-level data, diversified firms transfer assets toward more productive divisions. How would you reconcile the two findings, and what would you want to see in additional evidence to take a stronger position?</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>The real-options framework predicts that firms in R&amp;D-intensive industries should maintain looser capital allocation processes than firms in less option-rich industries. Suppose you observe a pharmaceutical firm with a strict payback-based capital allocation rule. What does the choice suggest, and what would you advise the firm to consider?</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="fu">## Problems</span></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>*(Numerical, NPV and IRR.)* A five-year project requires an initial investment of $1{,}200{,}000 and is expected to produce after-tax cash flows of $250{,}000, $350{,}000, $400{,}000, $400{,}000, and $300{,}000 in years 1 through 5, plus a terminal value of $200{,}000 received at the end of year 5. The firm's cost of capital is 9 percent. (a) Compute the project's NPV. (b) Compute the project's IRR using trial-and-error or a spreadsheet's IRR function. (c) Compute the project's undiscounted payback period. (d) Compute the profitability index. (e) Apply each of the four decision rules — NPV, IRR (with hurdle equal to cost of capital), payback (with a three-year threshold), and PI — and discuss whether they agree.</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>*(Numerical, capital rationing with PI.)* A division of Acme Corp. has identified five candidate projects with the following NPVs and capital requirements: Project A, NPV $80{,}000, capital $200{,}000; Project B, NPV $60{,}000, capital $150{,}000; Project C, NPV $50{,}000, capital $100{,}000; Project D, NPV $40{,}000, capital $200{,}000; Project E, NPV $20{,}000, capital $50{,}000. The division's capital budget is $400{,}000. (a) Compute the profitability index for each project. (b) Identify the value-maximizing combination of projects subject to the capital constraint, using the PI ranking as a starting point and confirming the result by checking the aggregate NPV of each feasible combination. (c) Compute the opportunity cost of capital for the marginal accepted project and compare it to the firm's nominal cost of capital. Discuss the implications for the divisional hurdle rate.</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>*(Numerical, real options — the option to wait.)* A firm is considering a project that requires an immediate $10 million investment. If undertaken today, the project produces a perpetual after-tax cash flow whose present value is, with probability 0.5, $14 million (favorable state) and, with probability 0.5, $8 million (unfavorable state). The state will be revealed in one year if the firm waits; the $10 million investment can be made then if the state is favorable, or not made at all if the state is unfavorable. The risk-free rate is 5 percent. (a) Compute the project's NPV if undertaken immediately. (b) Compute the expected NPV if the firm waits one year and invests only in the favorable state (treat the cash flows as risk-neutral for simplicity, and discount all year-1 values at the risk-free rate). (c) Compute the value of the option to wait and explain what it represents.</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>*(Numerical, NPV-IRR conflict on mutually exclusive projects.)* A firm must choose between two mutually exclusive projects of different scale. Project Small requires $100{,}000 and produces a single year-1 cash flow of $130{,}000. Project Large requires $1{,}000{,}000 and produces a single year-1 cash flow of $1{,}200{,}000. The firm's cost of capital is 10 percent. (a) Compute each project's NPV and IRR. (b) Identify the project the IRR rule selects and the project the NPV rule selects. (c) Explain which rule is correct and why.</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>*(Conceptual, influence costs.)* Read @milgrom1988, focusing on the introduction and the central definition of influence activities. In approximately 350 words, summarize the central argument and apply the framework to a specific internal-capital-market setting (e.g., capital budgeting at a large multidivisional firm, faculty hiring at a research university, project funding at a federal agency). Identify two specific organizational rules that would, on Milgrom's framework, reduce the influence costs in your chosen setting.</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>*(Conceptual, diversification discount.)* Read the introductions and central results of @bergerofek1995, @lamont1997, and @rajanservaeszingales2000. In approximately 500 words, evaluate the empirical case for the proposition that internal capital markets, on average, destroy value. What is the evidence's strongest piece, what is the weakest, and what additional evidence would you want before forming a confident view? Consider in particular the selection-based critique in @maksimovicphillips2002.</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>*(Conceptual, winner-picking vs. socialism.)* The chapter contrasted GE under Jack Welch with Berkshire Hathaway as two responses to the winner-picking / socialism trade-off. Identify a third public company whose capital-allocation arrangements are publicly documented (in annual reports, investor presentations, or business journalism). Describe the firm's approach, classify it relative to the GE and Berkshire models, and assess whether the approach appears to address the influence-cost problem.</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>*(Writing exercise.)* In approximately 600 words, take a position on the following claim: *"The widespread practice of using hurdle rates substantially above the firm's cost of capital is an institutional error that destroys value by causing firms to reject positive-NPV projects."* Marshal evidence from this chapter — including the Antle-Eppen, Milgrom, and Stein analyses — and from your own reading. Acknowledge the strongest counterargument and respond to it. Your essay should take a position rather than survey the literature.</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="fu">## Lab</span></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>The in-class activity for this week is a **capital budgeting simulation** in which students play roles as divisional managers proposing projects to a corporate headquarters that must allocate a fixed capital budget across competing proposals. Each project proposal embeds private information about the project's true productivity that the divisional manager knows but corporate headquarters does not. Divisional managers may also invest "lobbying effort" — a costly action that increases the probability headquarters funds the project but produces no value for the firm — capturing the influence-cost mechanism of @milgrom1988. The simulation makes the mechanism-design framework concrete: students experience, in real time, the trade-off between providing capital to high-productivity projects, avoiding overpayment to managers who overstate their project quality, and limiting the wasteful expenditure of effort on internal politics.</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>**Quiz 4 (covering Chapters 10--12 of the Companion) is administered at the start of the second class meeting this week.** The quiz covers earnings management, the equity and compensation framework, decentralization and cost behavior, and performance measurement. Bring a writing implement, a calculator, and the willingness to apply the framework to questions you have not seen before.</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>There is no out-of-class lab for this week. The Lab 6 group empirical project has been ongoing through Arc III; preliminary findings are due in Week 14.</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="fu">## Further reading</span></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>The readings below are the assigned readings for Week 13. You should read all of them.</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@antleeppen1985, "Capital Rationing and Organizational Slack in Capital Budgeting." Read for the model setup and the central result on capital rationing as an optimal screening device. The proofs can be skimmed.</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@grahamharvey2001, "The Theory and Practice of Corporate Finance: Evidence from the Field." Read for the survey methodology and the findings on capital budgeting practice. The other sections of the paper (capital structure, dividends, etc.) are useful background.</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@milgrom1988, "Employment Contracts, Influence Activities, and Efficient Organization Design." Read for the central definition of influence activities and the implications for organizational design. The model section can be skimmed.</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@stein1997, "Internal Capital Markets and the Competition for Corporate Resources." Read for the winner-picking mechanism. The companion @scharfsteinstein2000 develops the dark-side complement and is worth skimming.</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A short selection from @demski2008 on capital budgeting and decentralized decision-making (chapter assignment to be specified on Canvas).</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>*Optional, for those who want more:* @bergerofek1995, @lamont1997, and @rajanservaeszingales2000 on the diversification discount; @maksimovicphillips2002 on the selection-based critique; and @dixitpindyck1994 (book-length) for a thorough treatment of real options.</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="fu">## Closing Arc III</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>Chapter 13 closes the substantive content of Arc III. Across three chapters we have moved from the abstract framework of decentralization (Chapter 11), through the design of performance metrics (Chapter 12), to the mechanism-design problem of capital allocation (Chapter 13). The thread connecting all three chapters is that internal accounting is the institutional infrastructure through which firms manage the trade-off between local information advantages and corporate-level coordination — the same framework Arc I and Arc II developed for external reporting, applied inside the firm. Chapter 14 closes the course by returning to a small set of contested conceptual questions and asking you to argue both sides of each.</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc3-internal/13-capital-budgeting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

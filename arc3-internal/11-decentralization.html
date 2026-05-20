@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Why firms decentralize, and how cost behavior, cost allocation, responsibility accounting, and transfer pricing support decentralized decision-making.">
+
+<title>11&nbsp; Decentralization and Cost Behavior – ACCTG 211H Companion</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../arc3-internal/12-performance.html" rel="next">
+<link href="../arc2-markets/10-equity-compensation.html" rel="prev">
+<link href="../favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc3-internal/11-decentralization.html">Arc III — Contracting and Internal Information</a></li><li class="breadcrumb-item"><a href="../arc3-internal/11-decentralization.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Decentralization and Cost Behavior</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">ACCTG 211H Companion</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/sbb151/acctg211h-companion" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: How This Book Is Organized</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc I — The Information Problem</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/01-foundations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foundations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/02-lemons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Lemons Problem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/03-signaling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Signaling and the Income Statement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/04-stewardship.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stewardship and Moral Hazard</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/05-standards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Standard Setting and the Conceptual Framework</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc II — Markets and Measurement</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/06-efficient-markets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Efficient Markets and the Information Content of Earnings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/07-accruals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Accrual Anomaly and Earnings Quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/08-long-term-assets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Long-Term Assets and Measurement Choice</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/09-liabilities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/10-equity-compensation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Equity Compensation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc III — Contracting and Internal Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/11-decentralization.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Decentralization and Cost Behavior</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/12-performance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Performance Measurement as Agency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/13-capital-budgeting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc IV — Synthesis</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc4-synthesis/14-debates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Synthesis: The Capstone Debates</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a01-fset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">A1. The Financial Statement Effects Template (FSET)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a02-python-wrds-colab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">A2. Python + WRDS in Google Colab Quickstart</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a03-debits-credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">A3. Debits and Credits Cheat Sheet</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#opening-question" id="toc-opening-question" class="nav-link active" data-scroll-target="#opening-question"><span class="header-section-number">11.1</span> Opening question</a></li>
+  <li><a href="#the-hayek-argument-and-the-agency-counterargument" id="toc-the-hayek-argument-and-the-agency-counterargument" class="nav-link" data-scroll-target="#the-hayek-argument-and-the-agency-counterargument"><span class="header-section-number">11.2</span> The Hayek argument and the agency counterargument</a></li>
+  <li><a href="#the-institutional-response" id="toc-the-institutional-response" class="nav-link" data-scroll-target="#the-institutional-response"><span class="header-section-number">11.3</span> The institutional response</a></li>
+  <li><a href="#cost-behavior" id="toc-cost-behavior" class="nav-link" data-scroll-target="#cost-behavior"><span class="header-section-number">11.4</span> Cost behavior</a></li>
+  <li><a href="#cost-allocation-a-worked-example" id="toc-cost-allocation-a-worked-example" class="nav-link" data-scroll-target="#cost-allocation-a-worked-example"><span class="header-section-number">11.5</span> Cost allocation: a worked example</a></li>
+  <li><a href="#the-contribution-margin-income-statement-and-cvp" id="toc-the-contribution-margin-income-statement-and-cvp" class="nav-link" data-scroll-target="#the-contribution-margin-income-statement-and-cvp"><span class="header-section-number">11.6</span> The contribution-margin income statement and CVP</a></li>
+  <li><a href="#transfer-pricing-and-the-boeing-operating-leverage-case" id="toc-transfer-pricing-and-the-boeing-operating-leverage-case" class="nav-link" data-scroll-target="#transfer-pricing-and-the-boeing-operating-leverage-case"><span class="header-section-number">11.7</span> Transfer pricing and the Boeing operating-leverage case</a></li>
+  <li><a href="#discussion-questions" id="toc-discussion-questions" class="nav-link" data-scroll-target="#discussion-questions"><span class="header-section-number">11.8</span> Discussion questions</a></li>
+  <li><a href="#problems" id="toc-problems" class="nav-link" data-scroll-target="#problems"><span class="header-section-number">11.9</span> Problems</a></li>
+  <li><a href="#lab" id="toc-lab" class="nav-link" data-scroll-target="#lab"><span class="header-section-number">11.10</span> Lab</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">11.11</span> Further reading</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc3-internal/11-decentralization.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc3-internal/11-decentralization.html">Arc III — Contracting and Internal Information</a></li><li class="breadcrumb-item"><a href="../arc3-internal/11-decentralization.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Decentralization and Cost Behavior</span></a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-decentralization" class="quarto-section-identifier"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Decentralization and Cost Behavior</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="opening-question" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="opening-question"><span class="header-section-number">11.1</span> Opening question</h2>
+<p>Berkshire Hathaway owns roughly ninety wholly-owned operating subsidiaries spanning railroads, insurance, energy, retail, candy, paint, and underwear. The Omaha headquarters employs about thirty people. The thirty people do not run those businesses. They are run by the executives Berkshire acquired with each subsidiary, who make essentially all decisions about pricing, product mix, capital expenditure, hiring, and operations. Buffett’s standing instruction to subsidiary CEOs is to manage the business well and remit excess cash to the parent for capital allocation.</p>
+<p>The structure is unusual in its extremity but not in its general orientation. Almost every large U.S. firm decentralizes substantial decision authority to operating units below the corporate level — divisions, subsidiaries, business units, regional groups — that report up through layered structures of accountability. Pricing, hiring, operational, and most investment decisions are made not by a single central authority but by an array of subordinate units.</p>
+<p>The prevalence of decentralization raises a question Arc III takes up. Why do firms decentralize, and what role does accounting play in supporting decentralized decisions? The economic case for decentralization is articulated in <span class="citation" data-cites="hayek1945">Hayek (<a href="../references.html#ref-hayek1945" role="doc-biblioref">1945</a>)</span>, who argued that the knowledge needed to make economic decisions is dispersed across the people who interact with local conditions and is difficult to aggregate at a central authority. The countervailing case for centralization comes from agency theory <span class="citation" data-cites="jensenmeckling1976">(<a href="../references.html#ref-jensenmeckling1976" role="doc-biblioref">Jensen and Meckling 1976</a>, who modeled the firm as a nexus of contracts among parties with conflicting interests)</span>: decentralized managers may not act in the principal’s interest, and the costs of monitoring them can be substantial. The accounting system is the institutional infrastructure that makes the decentralization-versus-centralization trade-off workable. It supplies (i) local managers with the cost and revenue information they need to make decisions and (ii) the principal with monitoring information about the local managers.</p>
+<p>This chapter introduces the conceptual frame and the workhorse mechanics. Section 11.2 develops the Hayek argument and pairs it with the agency-cost counterargument. Section 11.3 describes the institutional response: responsibility centers, cost allocation, and transfer pricing. Section 11.4 introduces cost behavior. Section 11.5 develops cost allocation through a worked numerical example. Section 11.6 introduces the contribution-margin income statement and cost-volume-profit analysis. Section 11.7 examines transfer pricing in detail and the Boeing operating-leverage case study.</p>
+</section>
+<section id="the-hayek-argument-and-the-agency-counterargument" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="the-hayek-argument-and-the-agency-counterargument"><span class="header-section-number">11.2</span> The Hayek argument and the agency counterargument</h2>
+<p><span class="citation" data-cites="hayek1945">Hayek (<a href="../references.html#ref-hayek1945" role="doc-biblioref">1945</a>)</span>, in “The Use of Knowledge in Society,” articulated the central informational case for decentralized decision-making. The paper was framed as a contribution to the debate over centrally planned versus market-based economies, but its logic applies equally to the internal organization of firms.</p>
+<p>Hayek’s central observation was that the knowledge needed to make economic decisions is dispersed. The price of a particular good in a particular location at a particular time depends on local supply and demand conditions observable to the people who interact with the market directly. The technical possibilities for production depend on the specific equipment, materials, and workforce available at a particular site. The opportunities for cost reduction depend on the detailed operational knowledge of the people who do the work. None of this knowledge is, in any formal sense, secret. Its aggregation into a single picture a central authority could act on is itself a costly undertaking, and the cost grows rapidly with the volume of decisions and the geographic dispersion of the activity.</p>
+<p>Hayek’s response was the price system. Markets, in his framing, are an information-aggregation mechanism (i.e., prices summarize the distributed knowledge of buyers and sellers in a form everyone can act on, even though no individual participant has access to the underlying information directly). The central planner who tries to replace prices with administrative directives faces the impossible task of aggregating the dispersed information without the help of the mechanism markets use to do the work.</p>
+<p>The Hayek argument applies directly to the internal organization of firms. A corporate CEO faces the same dispersed-knowledge problem as a central economic planner. The information needed to make local decisions is available to the local managers but is costly to communicate completely upward. A firm that centralizes too many decisions sacrifices the local information advantage of the people closest to the work. This is the affirmative case for decentralization.</p>
+<p>The counterargument is the agency problem introduced in Chapter 4. Decentralized decision-makers have private information and private preferences that may not align with the principal’s. A local manager may pursue empire-building, may shade reported results, may consume perquisites the principal would not approve, or may simply exert less effort than the principal would prefer. These are not hypothetical concerns: prior research <span class="citation" data-cites="jensenmeckling1976">(<a href="../references.html#ref-jensenmeckling1976" role="doc-biblioref">Jensen and Meckling 1976</a>, who decomposed agency cost into monitoring, bonding, and residual loss)</span> suggests that the deadweight loss from imperfect monitoring can be economically meaningful, particularly when local managers’ actions are difficult to observe.</p>
+<p>The trade-off is the central problem of organizational design. Decentralization permits decisions to be made with better local information but creates agency problems. Centralization mitigates the agency problems but imposes information losses that may exceed the agency cost savings. The optimal organizational structure depends on the relative magnitudes of these two effects, which vary across firms and across types of decisions.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Why accounting sits at the center of the trade-off
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Internal accounting is the institutional infrastructure that lets a firm decentralize without giving up the principal’s monitoring claim. The system performs two functions at once: (i) it supplies local managers with the cost, revenue, and performance information they need to make decisions on the principal’s behalf, and (ii) it supplies the principal with comparable measures of how each local manager is performing. The two functions can come into conflict — information designed to inform a local decision may not be the right information for monitoring the manager who made it — and the design of internal accounting systems is, in important respects, the management of that conflict.</p>
+</div>
+</div>
+<p>The classic illustration is General Electric under Jack Welch (CEO from 1981 to 2001). Welch operated GE as a portfolio of more than a dozen large business units in disparate industries — aircraft engines, medical imaging, financial services, lighting, plastics — and gave each unit’s CEO substantial decision authority over its operations. The corporate parent set the strategic frame (“number one or number two in every business”), provided capital, and enforced an aggressive performance-evaluation system that ranked managers and divisions against one another. The structure was Hayekian in its delegation of operating decisions to people with local knowledge, and it was simultaneously agency-theoretic in its insistence on quantitative performance reporting against corporate-set standards. The combination is not unique to GE, but the Welch-era GE is a useful reference point for how the trade-off can be operationalized.</p>
+</section>
+<section id="the-institutional-response" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="the-institutional-response"><span class="header-section-number">11.3</span> The institutional response</h2>
+<p>The institutional response to the decentralization problem has three principal components, all of which are realized through the firm’s internal accounting system.</p>
+<p>The first is the <em>responsibility center</em>: an organizational unit with defined boundaries within which a single manager has authority and is held accountable for performance. The literature distinguishes four types.</p>
+<p>A <em>cost center</em> is a unit whose manager is responsible for the costs of operating the unit but not for revenues or capital. Production departments, central administrative functions, and shared service centers (e.g., a payroll department or a corporate IT group) are commonly organized as cost centers. The performance metric is typically a comparison of actual costs to a budget or to a flexible standard.</p>
+<p>A <em>revenue center</em> is a unit whose manager is responsible for the revenues generated by the unit but not for the costs of producing what the unit sells. Sales territories and individual store locations within a retail chain are commonly organized as revenue centers. The performance metric is typically a comparison of actual revenues to a budget or to prior-period results.</p>
+<p>A <em>profit center</em> is a unit whose manager is responsible for both revenues and costs but not for the capital deployed in the unit. Product divisions within a multidivisional firm are commonly organized as profit centers. The performance metric is operating profit, often presented in a contribution-margin format.</p>
+<p>An <em>investment center</em> is a unit whose manager is responsible for revenues, costs, and the capital deployed in the unit. The operating subsidiaries of Berkshire Hathaway, for example, are commonly organized as investment centers. The performance metric is some form of return on capital, such as ROI, residual income, or EVA, all of which we examine in Chapter 12.</p>
+<p>The choice among these four forms is itself a Hayekian decision. A firm decentralizes more decision authority by establishing investment centers; it centralizes more by relying on cost centers. The choice depends on (i) the firm’s information environment, (ii) the heterogeneity of its operating units, and (iii) the costs of monitoring at different levels. The optimal mix typically varies across the firm — some functions are more naturally centralized, others more naturally decentralized — and the firm’s organizational chart is, in this sense, a snapshot of how the trade-off has been resolved across the firm’s activities.</p>
+<p>The second component is <em>cost allocation</em>: the assignment of indirect costs (i.e., costs that cannot be traced directly to a specific product, service, or unit) to the responsibility centers or products that consume them. Section 11.5 develops cost allocation through a worked example. The general issue is that any allocation method requires choosing an <em>allocation base</em> (e.g., direct labor hours, machine hours, square footage), and the choice of base affects both the reported profitability of the receiving unit and the incentives of the manager who runs it.</p>
+<p>The third component is <em>transfer pricing</em>: the price at which goods and services are exchanged between divisions of the same firm. Transfer prices serve two functions simultaneously. They provide divisional buyers with cost information that should influence their sourcing decisions, and they provide divisional sellers with revenue information that should influence their production and pricing decisions. The two functions can come into conflict. Section 11.7 develops transfer pricing in detail.</p>
+</section>
+<section id="cost-behavior" class="level2" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="cost-behavior"><span class="header-section-number">11.4</span> Cost behavior</h2>
+<p>The mechanical workhorse of internal accounting is <em>cost behavior</em>: the way costs change as the firm’s activity level changes. Most internal-accounting analyses begin with a classification of costs into three categories.</p>
+<p>A <em>variable cost</em> is one that changes proportionally with activity. The cost of raw materials in a manufacturing setting is the canonical example: producing twice as many units requires twice as much material, and the raw material cost per unit is roughly constant across activity levels. At an automotive assembly plant, the steel, aluminum, glass, and purchased components that go into each vehicle are variable: each additional Ford F-150 rolling off the Dearborn line consumes a roughly constant bill of materials.</p>
+<p>A <em>fixed cost</em> is one that does not change with activity within a relevant range. The rent on a factory building is the canonical example: the rent is the same whether the factory operates at fifty percent capacity or ninety percent. The depreciation on an automotive stamping press is fixed: the press’s annual cost is the same whether it stamps one shift or three. Fixed costs are not strictly fixed in the long run — a firm that consistently operates at fifty percent capacity might choose to relocate to a smaller building — but within the time horizon of most internal-accounting analyses, the cost is invariant to short-run activity changes.</p>
+<p>A <em>mixed cost</em> (or <em>semi-variable cost</em>) is one that has both fixed and variable components. The total electricity bill of a factory typically includes a fixed monthly service fee plus a variable component proportional to consumption. The total compensation of a salesperson on a base-plus-commission contract is fixed in the base portion and variable in the commission portion.</p>
+<p>The three-fold classification is a simplification. Many costs that appear fixed within a narrow range exhibit <em>step</em> behavior — they jump up to a new level at a particular activity threshold and remain constant within the next range. The cost of supervisors in a manufacturing facility is often step-fixed: one supervisor per fifteen workers, with the count jumping up as the workforce grows. The classification framework is sufficient for most analytical purposes; the step-cost refinement is introduced where it is operationally relevant.</p>
+<p>A separate empirical observation worth noting is <em>cost stickiness</em>: the tendency of selling, general, and administrative costs to fall less in response to revenue declines than they rise in response to revenue increases. <span class="citation" data-cites="andersonbankerjanakiraman2003">Anderson, Banker, and Janakiraman (<a href="../references.html#ref-andersonbankerjanakiraman2003" role="doc-biblioref">2003</a>)</span> documented this asymmetry in a large U.S. sample and found that the empirical pattern is robust across industries and time periods. The standard interpretation is that cost-cutting decisions are themselves costly (e.g., terminating employees, breaking leases, disposing of equipment), so managers delay cost reductions in the hope that revenue declines are temporary. The cost-stickiness pattern qualifies the simple variable-fixed dichotomy by suggesting that the distinction may be asymmetric in the direction of revenue change.</p>
+</section>
+<section id="cost-allocation-a-worked-example" class="level2" data-number="11.5">
+<h2 data-number="11.5" class="anchored" data-anchor-id="cost-allocation-a-worked-example"><span class="header-section-number">11.5</span> Cost allocation: a worked example</h2>
+<p>Indirect costs — costs that benefit more than one product, division, or activity but cannot be traced directly to any one of them — are pervasive in multi-product and multi-divisional firms. Corporate headquarters expense, central IT, the CEO’s salary, the cost of the legal department, and depreciation on a shared manufacturing facility are all indirect from the perspective of the operating units that benefit from them. Internal accounting allocates these costs to the units that consume them using an <em>allocation base</em>: an observable quantity, such as direct labor hours or square footage, that is taken to proxy for the unit’s consumption of the indirect resource.</p>
+<p>The choice of allocation base matters. Different bases produce different reported profitability for the same underlying operations, and the manager whose unit absorbs a larger share of overhead may face different incentives than the manager whose unit absorbs a smaller share.</p>
+<p>Consider a stylized example. Apex Manufacturing operates two divisions, Consumer and Industrial. Each division generates its own revenue, incurs its own direct costs, and is supported by a shared corporate office that incurs $4,000,000 of overhead per year. The two divisions report:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 21%">
+<col style="width: 20%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Consumer</th>
+<th>Industrial</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Revenue</td>
+<td>$30,000,000</td>
+<td>$20,000,000</td>
+<td>$50,000,000</td>
+</tr>
+<tr class="even">
+<td>Direct variable costs</td>
+<td>$18,000,000</td>
+<td>$10,000,000</td>
+<td>$28,000,000</td>
+</tr>
+<tr class="odd">
+<td>Direct fixed costs</td>
+<td>$4,000,000</td>
+<td>$3,000,000</td>
+<td>$7,000,000</td>
+</tr>
+<tr class="even">
+<td>Direct labor hours</td>
+<td>200,000</td>
+<td>100,000</td>
+<td>300,000</td>
+</tr>
+<tr class="odd">
+<td>Floor space (sq. ft.)</td>
+<td>50,000</td>
+<td>150,000</td>
+<td>200,000</td>
+</tr>
+</tbody>
+</table>
+<p>Apex must allocate the $4,000,000 of corporate overhead to the two divisions. Three commonly used allocation bases would produce three different results.</p>
+<p><em>Allocation by revenue.</em> The Consumer division generates 60 percent of total revenue, the Industrial division 40 percent. Allocating overhead in proportion to revenue assigns $2,400,000 to Consumer and $1,600,000 to Industrial.</p>
+<p><em>Allocation by direct labor hours.</em> The Consumer division uses two-thirds of total direct labor hours, the Industrial division one-third. Allocating overhead in proportion to direct labor hours assigns $2,666,667 to Consumer and $1,333,333 to Industrial.</p>
+<p><em>Allocation by floor space.</em> The Consumer division occupies 25 percent of total floor space, the Industrial division 75 percent. Allocating overhead in proportion to floor space assigns $1,000,000 to Consumer and $3,000,000 to Industrial.</p>
+<p>The three methods yield the same total ($4,000,000) but very different divisional results. Under revenue-based allocation, the Industrial division’s operating profit is $5,400,000 ($20,000,000 − $10,000,000 − $3,000,000 − $1,600,000). Under floor-space-based allocation, the Industrial division’s operating profit is $4,000,000. The choice of allocation base shifts $1,400,000 of reported profitability between the two divisions, without changing anything about their underlying operations.</p>
+<p>The example illustrates two general points. First, an allocation base is defensible to the extent that it proxies for the receiving unit’s <em>causal</em> consumption of the indirect resource — the resource that drives the cost (e.g., a factory’s shared utilities are arguably caused by floor space; corporate legal expense is arguably caused by transaction volume; the CEO’s time is arguably caused by managerial attention rather than by any easily observed input). The choice is rarely clean. Second, the allocation choice has incentive consequences. A division manager who is evaluated on operating profit after allocation has an incentive to influence the choice of base in a direction that reduces the unit’s allocated overhead, and the firm’s senior management may face lobbying that has little to do with the true causal structure of cost.</p>
+<p>The widely discussed alternative, <em>activity-based costing</em> (ABC), attempts to mitigate the distortion by identifying a separate allocation base for each activity that consumes the indirect resource — machine setups, purchase orders, customer service calls, engineering change requests — and allocating cost in proportion to each unit’s consumption of each activity. ABC produces more disaggregated and arguably more causally defensible allocations, but it is also costly to implement and to maintain, and the additional information value is not always worth the cost. The choice between traditional allocation and ABC is itself an instance of the broader cost-benefit calculation that pervades internal accounting design.</p>
+</section>
+<section id="the-contribution-margin-income-statement-and-cvp" class="level2" data-number="11.6">
+<h2 data-number="11.6" class="anchored" data-anchor-id="the-contribution-margin-income-statement-and-cvp"><span class="header-section-number">11.6</span> The contribution-margin income statement and CVP</h2>
+<p>The income statement format taught in Chapter 3 — revenues less expenses, with expenses organized by their financial-reporting category — is the <em>external</em> income statement format used in financial reports. For internal decision-making purposes, a different format is usually more useful. The <em>contribution-margin income statement</em> organizes expenses by their behavior (variable versus fixed) rather than by their reporting category, and produces a measure called the <em>contribution margin</em> that is central to internal-accounting analysis.</p>
+<p>The structure is:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Line</th>
+<th>Computation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Revenue</td>
+<td>Sales price × Quantity</td>
+</tr>
+<tr class="even">
+<td>Variable costs</td>
+<td>Variable cost per unit × Quantity</td>
+</tr>
+<tr class="odd">
+<td><strong>Contribution margin</strong></td>
+<td>Revenue − Variable costs</td>
+</tr>
+<tr class="even">
+<td>Fixed costs</td>
+<td>(constant within the relevant range)</td>
+</tr>
+<tr class="odd">
+<td><strong>Operating profit</strong></td>
+<td>Contribution margin − Fixed costs</td>
+</tr>
+</tbody>
+</table>
+<p>The contribution margin is the revenue available to cover fixed costs and contribute to profit after the variable costs of production have been paid. It is a measure of the <em>marginal</em> profitability of the firm’s activity: an additional unit of sales adds the contribution margin to operating profit, because the variable cost of production is paid out of the additional revenue and the fixed costs do not change. The contribution margin per unit (revenue per unit minus variable cost per unit) and the contribution-margin ratio (contribution margin divided by revenue) are the workhorse metrics for thinking about pricing, product mix, and capacity decisions.</p>
+<p>The contribution-margin framework supports a particular form of analysis called <em>cost-volume-profit</em> (CVP) analysis, which examines how operating profit responds to changes in volume, prices, variable costs, and fixed costs, holding the rest of the firm’s operations constant. The central CVP equation is:</p>
+<p><span class="math display">\[
+\text{Operating profit} = (\text{Contribution margin per unit}) \times \text{Quantity} - \text{Fixed costs}.
+\]</span></p>
+<p>Setting operating profit equal to zero and solving for quantity yields the <em>break-even quantity</em>: the level of activity at which the firm’s revenues exactly cover its costs.</p>
+<p><span class="math display">\[
+\text{Break-even quantity} = \frac{\text{Fixed costs}}{\text{Contribution margin per unit}}.
+\]</span></p>
+<p>Consider an example. Acme Corp.&nbsp;operates a subscription software business with revenue of $200 per subscription per year, variable cost of $40 per subscription (server, payment processing, support), and fixed costs of $4,000,000 per year (headquarters, R&amp;D, marketing). The contribution margin per subscription is $160 ($200 − $40). The break-even quantity is $4,000,000 / $160 = 25,000 subscriptions. At 25,000 subscriptions Acme exactly covers its costs; at higher volumes it earns operating profit at the rate of $160 per additional subscription; at lower volumes it operates at a loss at the same rate.</p>
+<p>CVP analysis can be extended in several directions: (i) <em>target-profit analysis</em> computes the volume needed to achieve a specified operating profit, (ii) <em>price-sensitivity analysis</em> asks how break-even volume changes as the firm raises or lowers prices, (iii) <em>cost-sensitivity analysis</em> asks the analogous question for changes in variable or fixed costs, and (iv) <em>multi-product analysis</em> extends the framework to firms with multiple product lines using a weighted-average contribution margin based on the firm’s product mix.</p>
+<p>The CVP framework also provides the right tool for thinking about <em>operating leverage</em>: the sensitivity of operating profit to changes in revenue. A firm with a high fraction of fixed costs has high operating leverage, so a one-percent change in revenue produces a more-than-one-percent change in operating profit. The formal measure is:</p>
+<p><span class="math display">\[
+\text{Degree of operating leverage} = \frac{\text{Contribution margin}}{\text{Operating profit}}.
+\]</span></p>
+<p>A firm whose contribution margin equals five times its operating profit has a degree of operating leverage of five: each one-percent change in revenue produces an approximately five-percent change in operating profit, holding the cost structure constant.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Common pitfall
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The external (GAAP) income statement and the internal (contribution-margin) income statement do not, in general, agree on operating profit. Under GAAP, fixed manufacturing overhead is allocated to inventory and recognized only when the inventory is sold — an <em>absorption costing</em> treatment that cuts against the variable-fixed distinction the internal format requires. A firm that produces more than it sells in a period absorbs some of its fixed manufacturing costs into ending inventory, so the GAAP cost of goods sold is lower (and operating profit higher) than the contribution-margin operating profit would be. The discrepancy is one of the well-known sources of confusion between external and internal accounting.</p>
+</div>
+</div>
+</section>
+<section id="transfer-pricing-and-the-boeing-operating-leverage-case" class="level2" data-number="11.7">
+<h2 data-number="11.7" class="anchored" data-anchor-id="transfer-pricing-and-the-boeing-operating-leverage-case"><span class="header-section-number">11.7</span> Transfer pricing and the Boeing operating-leverage case</h2>
+<p>When a firm is decentralized into investment or profit centers, goods and services routinely move from one division to another. The price at which an internal transfer is recorded — the <em>transfer price</em> — is consequential. It allocates revenue between the selling and buying divisions, influences each manager’s reported performance, shapes each manager’s incentive to source internally rather than externally, and (for multinational firms) determines how taxable income is split across jurisdictions. The standard approaches are three.</p>
+<p>A <em>market-based transfer price</em> sets the internal price equal to the price the selling division could obtain in an arms-length external market for the same good or service. The approach is defensible when a competitive external market exists: it puts each division on the same footing as an external counterparty and gives the buying division the right “make-or-buy” incentive. The approach is harder to apply when the transferred good has no clean external equivalent, as is common for specialized intermediate components.</p>
+<p>A <em>cost-based transfer price</em> sets the internal price equal to some measure of the selling division’s cost — variable cost, full absorption cost, or full cost plus a markup. Cost-based pricing is administratively simple and is used widely when no external market price exists. The well-known distortion is that pricing at full cost gives the selling division no margin and a weak incentive to supply, while pricing at variable cost shifts all of the contribution to the buying division and gives the buying division no incentive to economize on the internally supplied input.</p>
+<p>A <em>negotiated transfer price</em> is one the two divisions bargain over directly, with corporate headquarters intervening only when they cannot agree. Negotiation can in principle find a price that respects both divisions’ incentives, but it absorbs managerial time and can produce outcomes that depend on the divisions’ relative bargaining power rather than on the underlying economics.</p>
+<p>Each method has known distortions, and the literature is consistent that no transfer-pricing system is uniformly first-best <span class="citation" data-cites="demski2008">(<a href="../references.html#ref-demski2008" role="doc-biblioref">Demski 2008</a>, who develops the formal trade-offs in detail)</span>. Two further considerations sharpen the choice. First, <em>incentive alignment</em>: the transfer price should give both the buying and selling divisions decisions that the principal would endorse if she could see the underlying information. Second, <em>taxation</em>: for multinational firms, the transfer price determines how income is allocated across tax jurisdictions, and tax authorities (e.g., the U.S. Internal Revenue Service under Section 482, and the OECD’s transfer-pricing guidelines) require that intercompany prices approximate arms-length terms. Firms therefore face a constraint that the transfer prices they use for internal decision-making must also be defensible to tax authorities, which can pull the choice toward market-based prices even when other considerations point elsewhere.</p>
+<p>A concrete illustration of operating leverage in a decentralized setting is Boeing. The firm’s commercial-aircraft business has enormous fixed costs — research and development, manufacturing infrastructure, supply-chain investments, certifications — that must be absorbed regardless of demand. Variable costs (raw materials, direct labor on individual aircraft) are smaller. The cost structure produces a high degree of operating leverage: when commercial aviation is robust and Boeing’s order book is full, the firm earns substantial operating profit; when commercial aviation contracts and orders fall, operating profit falls disproportionately fast — and, in extreme cases, becomes substantially negative. The 737 MAX grounding in 2019 and the COVID-19 pandemic in 2020 produced consecutive operating losses at Boeing of historic magnitude, despite revenue declines that, by industrial-firm standards, were not particularly large. The amplification of those revenue declines into substantial losses is consistent with what a high-operating-leverage cost structure predicts.</p>
+<p>The in-class activity for the second meeting of this week works through Boeing’s cost structure using the contribution-margin format, computes the degree of operating leverage at different revenue levels, and assesses what the high operating leverage implies for the volatility of Boeing’s reported earnings.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key takeaways
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Decentralization rests on dispersed knowledge.</strong> <span class="citation" data-cites="hayek1945">Hayek (<a href="../references.html#ref-hayek1945" role="doc-biblioref">1945</a>)</span> argued that the information needed to make economic decisions is held by the people who interact with local conditions, and a central authority cannot easily aggregate it.</li>
+<li><strong>Agency theory provides the counterweight.</strong> Decentralized managers may not act in the principal’s interest, suggesting that decentralization works only when the firm can also monitor what local managers do <span class="citation" data-cites="jensenmeckling1976">(<a href="../references.html#ref-jensenmeckling1976" role="doc-biblioref">Jensen and Meckling 1976</a>)</span>.</li>
+<li><strong>Accounting makes the trade-off workable.</strong> Internal accounting simultaneously gives local managers the information they need to decide and gives the principal the information she needs to evaluate them.</li>
+<li><strong>Cost behavior is the mechanical foundation.</strong> Variable, fixed, and mixed costs, organized in a contribution-margin format, support pricing, product-mix, and break-even analyses through CVP.</li>
+<li><strong>Cost allocation is consequential.</strong> The choice of allocation base shifts reported profitability across units without changing the underlying operations, and the choice has incentive consequences for the managers being evaluated.</li>
+<li><strong>Transfer pricing has no uniformly first-best solution.</strong> Market-based, cost-based, and negotiated transfer prices each carry known distortions, and the choice is further constrained by tax-authority requirements for multinational firms.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="discussion-questions" class="level2" data-number="11.8">
+<h2 data-number="11.8" class="anchored" data-anchor-id="discussion-questions"><span class="header-section-number">11.8</span> Discussion questions</h2>
+<ol type="1">
+<li>The Hayek argument for decentralization rests on the dispersed-knowledge claim — that local information is held by people who interact with local conditions and is costly to aggregate. Identify a category of business decision in which the dispersed-knowledge advantage is largest, and another in which it is smallest. What does the comparison imply about the optimal locus of decision authority?</li>
+<li>The chapter described four types of responsibility centers (cost, revenue, profit, investment). Suppose a multinational consumer-products company is considering reorganizing its U.S. operations. Identify a function within the firm that is best organized as a cost center, one as a revenue center, one as a profit center, and one as an investment center. Defend each choice.</li>
+<li><span class="citation" data-cites="andersonbankerjanakiraman2003">Anderson, Banker, and Janakiraman (<a href="../references.html#ref-andersonbankerjanakiraman2003" role="doc-biblioref">2003</a>)</span> documented that SG&amp;A costs are sticky — they fall less in response to revenue declines than they rise in response to revenue increases. Is this empirical pattern consistent with agency costs, with optimal cost-management behavior, or with something else? Defend your interpretation.</li>
+<li>Section 11.5 illustrated that the choice of overhead allocation base can shift reported profitability across divisions without changing the underlying operations. If the choice is, in this sense, partly arbitrary, why do firms allocate corporate overhead at all rather than report divisional profit before allocation?</li>
+<li>Boeing’s high operating leverage produces a particular pattern of earnings volatility. Suppose Boeing’s CFO proposes shifting toward a more variable cost structure (e.g., outsourcing more components, using more flexible labor arrangements). What are the costs and benefits of the proposed shift? Use the framework of Chapter 4 (moral hazard) and the framework of this chapter (cost behavior) to defend a position.</li>
+</ol>
+</section>
+<section id="problems" class="level2" data-number="11.9">
+<h2 data-number="11.9" class="anchored" data-anchor-id="problems"><span class="header-section-number">11.9</span> Problems</h2>
+<ol type="1">
+<li><em>(Mechanical, overhead allocation.)</em> Apex Manufacturing operates two divisions, Consumer and Industrial, with the data in Section 11.5. Corporate overhead is $4,000,000. (a) Compute each division’s operating profit under revenue-based allocation, direct-labor-hour-based allocation, and floor-space-based allocation. (b) Identify the division and base under which divisional operating profit is highest, and the combination under which it is lowest. (c) In one short paragraph, identify which allocation base you would defend and explain why.</li>
+<li><em>(Mechanical, contribution margin and CVP.)</em> Acme Corp.&nbsp;operates a subscription-based software business with the following cost structure: $300 revenue per subscription per year, $60 variable cost per subscription per year, and $6,000,000 of fixed costs per year. (a) Compute the contribution margin per subscription. (b) Compute the break-even quantity. (c) Compute the operating profit at 30,000 subscriptions. (d) Suppose Acme is considering raising its price to $350 per subscription, which the marketing team estimates will reduce subscriptions by 10 percent from current levels. Compute the change in operating profit at the current and proposed prices, and recommend whether Acme should raise the price.</li>
+<li><em>(Mechanical, operating leverage.)</em> Continuing Problem 2 at the original $300 price and 30,000 subscriptions: (a) Compute Acme’s degree of operating leverage. (b) Suppose revenue increases by 20 percent (to 36,000 subscriptions). Compute the resulting change in operating profit and verify that the percentage change is approximately the degree of operating leverage times the revenue percentage change. (c) Repeat the analysis for a 20 percent revenue decline.</li>
+<li><em>(Mechanical, transfer pricing.)</em> Beta Industries has two divisions. The Components division produces a part with variable cost of $40, fixed cost allocation of $15 per unit, and an external market price of $70. The Assembly division uses one part per finished product and sells the finished product for $130; its other variable costs are $50 per finished product. Components has spare capacity. (a) Identify the transfer price that gives Assembly the right make-or-buy incentive (i.e., the price that leads Assembly to source internally if and only if it is value-creating for Beta as a whole). (b) Compute Beta’s consolidated profit per finished product under (i) a market-based transfer price of $70, (ii) a full-cost transfer price of $55, and (iii) a variable-cost transfer price of $40. (c) In one short paragraph, explain why divisional incentives can differ across the three methods even though consolidated profit is the same.</li>
+<li><em>(Conceptual, responsibility-center design.)</em> Consider a hypothetical multidivisional firm — a U.S. food-and-beverage company with (i) a packaged-foods division, (ii) a beverages division, (iii) a centralized procurement function that buys agricultural inputs for both divisions, (iv) a centralized IT function that runs the firm’s ERP system, and (v) a corporate R&amp;D group that develops new products for both divisions. Propose a responsibility-center classification for each of the five units (cost, revenue, profit, or investment center), and defend each choice. Where you see a unit that could be classified more than one way, identify the trade-off.</li>
+<li><em>(Conceptual, transfer-pricing distortion.)</em> A vertically integrated U.S. oil company refines crude oil in its Upstream division and sells refined gasoline through its Downstream division. The Upstream division is evaluated on operating profit per barrel. Suppose the firm uses a full-absorption-cost transfer price for crude transferred from Upstream to Downstream, and suppose Upstream has unused refining capacity. Identify the incentive distortion this arrangement creates for the Upstream manager, the Downstream manager, and the firm as a whole. Recommend an alternative transfer-pricing arrangement and explain why it is better.</li>
+<li><em>(Short writing exercise.)</em> Read <span class="citation" data-cites="hayek1945">Hayek (<a href="../references.html#ref-hayek1945" role="doc-biblioref">1945</a>)</span> (it is short, approximately 12 pages). In approximately 250 words, summarize the central argument and explain how it applies to the internal organization of a multidivisional firm. Be specific about which Hayekian observations carry over from markets to firms and which do not.</li>
+</ol>
+</section>
+<section id="lab" class="level2" data-number="11.10">
+<h2 data-number="11.10" class="anchored" data-anchor-id="lab"><span class="header-section-number">11.10</span> Lab</h2>
+<p>The in-class activity for the second meeting of this week is the <strong>Boeing operating-leverage case</strong> (<code>activities/cost-volume-profit/</code>). You will work through Boeing’s cost structure using the contribution-margin format on a recent set of financial statements, compute the firm’s degree of operating leverage at different revenue levels, and discuss what the analysis implies for the volatility of Boeing’s reported earnings under alternative demand scenarios.</p>
+<p>There is no out-of-class lab for this week. The Lab 6 group empirical project (the WRDS project track of your choice) launches in Week 11 with the project proposal deliverable.</p>
+</section>
+<section id="further-reading" class="level2" data-number="11.11">
+<h2 data-number="11.11" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">11.11</span> Further reading</h2>
+<p>The four readings below are the assigned readings for Week 11. You should read all of them.</p>
+<ul>
+<li><span class="citation" data-cites="hayek1945">Hayek (<a href="../references.html#ref-hayek1945" role="doc-biblioref">1945</a>)</span>, “The Use of Knowledge in Society.” Short and influential. Read for the central argument and the application to economic organization.</li>
+<li>A short selection from <span class="citation" data-cites="demski2008">Demski (<a href="../references.html#ref-demski2008" role="doc-biblioref">2008</a>)</span> on decentralization, responsibility centers, and transfer pricing (chapter assignment to be specified on Canvas). The most useful single textbook treatment of the topic.</li>
+<li>A short selection from <span class="citation" data-cites="nissim2010">Nissim (<a href="../references.html#ref-nissim2010" role="doc-biblioref">2010</a>)</span> on internal information and decision-making (chapter assignment to be specified on Canvas).</li>
+<li><em>Optional, for those who want more:</em> <span class="citation" data-cites="andersonbankerjanakiraman2003">Anderson, Banker, and Janakiraman (<a href="../references.html#ref-andersonbankerjanakiraman2003" role="doc-biblioref">2003</a>)</span> on cost stickiness. A short and accessible empirical paper that makes the variable-fixed distinction concrete.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Where Arc III goes from here
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Chapter 11 has introduced the decentralization framework and the cost-behavior, cost-allocation, and transfer-pricing tools that support internal financial analysis. Chapter 12 turns to the performance-measurement question that arises whenever a central authority delegates decision authority to a local unit: how should the local unit’s performance be evaluated? The framework of Chapter 4 (moral hazard and the LEN model) returns explicitly, with the additional refinement that performance measures are themselves design choices that produce predictable distortions in managerial behavior.</p>
+</div>
+</div>
+
+
+<!-- -->
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-andersonbankerjanakiraman2003" class="csl-entry" role="listitem">
+Anderson, Mark C., Rajiv D. Banker, and Surya N. Janakiraman. 2003. <span>“Are Selling, General, and Administrative Costs <span>‘Sticky’</span>?”</span> <em>Journal of Accounting Research</em> 41 (1): 47–63.
+</div>
+<div id="ref-demski2008" class="csl-entry" role="listitem">
+Demski, Joel S. 2008. <em>Managerial Uses of Accounting Information</em>. 2nd ed. New York: Springer.
+</div>
+<div id="ref-hayek1945" class="csl-entry" role="listitem">
+Hayek, Friedrich A. 1945. <span>“The Use of Knowledge in Society.”</span> <em>American Economic Review</em> 35 (4): 519–30.
+</div>
+<div id="ref-jensenmeckling1976" class="csl-entry" role="listitem">
+Jensen, Michael C., and William H. Meckling. 1976. <span>“Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure.”</span> <em>Journal of Financial Economics</em> 3 (4): 305–60.
+</div>
+<div id="ref-nissim2010" class="csl-entry" role="listitem">
+Nissim, Doron. 2010. <em>Analysis and Valuation of Insurance Companies</em>. New York: Center for Excellence in Accounting; Security Analysis, Columbia Business School.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/acctg211h\.psu\.edu\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../arc2-markets/10-equity-compensation.html" class="pagination-link" aria-label="Equity Compensation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Equity Compensation</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../arc3-internal/12-performance.html" class="pagination-link" aria-label="Performance Measurement as Agency">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Performance Measurement as Agency</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Why firms decentralize, and how cost behavior, cost allocation, responsibility accounting, and transfer pricing support decentralized decision-making."</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># Decentralization and Cost Behavior {#sec-decentralization}</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Opening question</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Berkshire Hathaway owns roughly ninety wholly-owned operating subsidiaries spanning railroads, insurance, energy, retail, candy, paint, and underwear. The Omaha headquarters employs about thirty people. The thirty people do not run those businesses. They are run by the executives Berkshire acquired with each subsidiary, who make essentially all decisions about pricing, product mix, capital expenditure, hiring, and operations. Buffett's standing instruction to subsidiary CEOs is to manage the business well and remit excess cash to the parent for capital allocation.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>The structure is unusual in its extremity but not in its general orientation. Almost every large U.S. firm decentralizes substantial decision authority to operating units below the corporate level — divisions, subsidiaries, business units, regional groups — that report up through layered structures of accountability. Pricing, hiring, operational, and most investment decisions are made not by a single central authority but by an array of subordinate units.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>The prevalence of decentralization raises a question Arc III takes up. Why do firms decentralize, and what role does accounting play in supporting decentralized decisions? The economic case for decentralization is articulated in @hayek1945, who argued that the knowledge needed to make economic decisions is dispersed across the people who interact with local conditions and is difficult to aggregate at a central authority. The countervailing case for centralization comes from agency theory <span class="co">[</span><span class="ot">@jensenmeckling1976, who modeled the firm as a nexus of contracts among parties with conflicting interests</span><span class="co">]</span>: decentralized managers may not act in the principal's interest, and the costs of monitoring them can be substantial. The accounting system is the institutional infrastructure that makes the decentralization-versus-centralization trade-off workable. It supplies (i) local managers with the cost and revenue information they need to make decisions and (ii) the principal with monitoring information about the local managers.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>This chapter introduces the conceptual frame and the workhorse mechanics. Section 11.2 develops the Hayek argument and pairs it with the agency-cost counterargument. Section 11.3 describes the institutional response: responsibility centers, cost allocation, and transfer pricing. Section 11.4 introduces cost behavior. Section 11.5 develops cost allocation through a worked numerical example. Section 11.6 introduces the contribution-margin income statement and cost-volume-profit analysis. Section 11.7 examines transfer pricing in detail and the Boeing operating-leverage case study.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Hayek argument and the agency counterargument</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>@hayek1945, in "The Use of Knowledge in Society," articulated the central informational case for decentralized decision-making. The paper was framed as a contribution to the debate over centrally planned versus market-based economies, but its logic applies equally to the internal organization of firms.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Hayek's central observation was that the knowledge needed to make economic decisions is dispersed. The price of a particular good in a particular location at a particular time depends on local supply and demand conditions observable to the people who interact with the market directly. The technical possibilities for production depend on the specific equipment, materials, and workforce available at a particular site. The opportunities for cost reduction depend on the detailed operational knowledge of the people who do the work. None of this knowledge is, in any formal sense, secret. Its aggregation into a single picture a central authority could act on is itself a costly undertaking, and the cost grows rapidly with the volume of decisions and the geographic dispersion of the activity.</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>Hayek's response was the price system. Markets, in his framing, are an information-aggregation mechanism (i.e., prices summarize the distributed knowledge of buyers and sellers in a form everyone can act on, even though no individual participant has access to the underlying information directly). The central planner who tries to replace prices with administrative directives faces the impossible task of aggregating the dispersed information without the help of the mechanism markets use to do the work.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>The Hayek argument applies directly to the internal organization of firms. A corporate CEO faces the same dispersed-knowledge problem as a central economic planner. The information needed to make local decisions is available to the local managers but is costly to communicate completely upward. A firm that centralizes too many decisions sacrifices the local information advantage of the people closest to the work. This is the affirmative case for decentralization.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>The counterargument is the agency problem introduced in Chapter 4. Decentralized decision-makers have private information and private preferences that may not align with the principal's. A local manager may pursue empire-building, may shade reported results, may consume perquisites the principal would not approve, or may simply exert less effort than the principal would prefer. These are not hypothetical concerns: prior research <span class="co">[</span><span class="ot">@jensenmeckling1976, who decomposed agency cost into monitoring, bonding, and residual loss</span><span class="co">]</span> suggests that the deadweight loss from imperfect monitoring can be economically meaningful, particularly when local managers' actions are difficult to observe.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>The trade-off is the central problem of organizational design. Decentralization permits decisions to be made with better local information but creates agency problems. Centralization mitigates the agency problems but imposes information losses that may exceed the agency cost savings. The optimal organizational structure depends on the relative magnitudes of these two effects, which vary across firms and across types of decisions.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why accounting sits at the center of the trade-off</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Internal accounting is the institutional infrastructure that lets a firm decentralize without giving up the principal's monitoring claim. The system performs two functions at once: (i) it supplies local managers with the cost, revenue, and performance information they need to make decisions on the principal's behalf, and (ii) it supplies the principal with comparable measures of how each local manager is performing. The two functions can come into conflict — information designed to inform a local decision may not be the right information for monitoring the manager who made it — and the design of internal accounting systems is, in important respects, the management of that conflict.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>The classic illustration is General Electric under Jack Welch (CEO from 1981 to 2001). Welch operated GE as a portfolio of more than a dozen large business units in disparate industries — aircraft engines, medical imaging, financial services, lighting, plastics — and gave each unit's CEO substantial decision authority over its operations. The corporate parent set the strategic frame ("number one or number two in every business"), provided capital, and enforced an aggressive performance-evaluation system that ranked managers and divisions against one another. The structure was Hayekian in its delegation of operating decisions to people with local knowledge, and it was simultaneously agency-theoretic in its insistence on quantitative performance reporting against corporate-set standards. The combination is not unique to GE, but the Welch-era GE is a useful reference point for how the trade-off can be operationalized.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## The institutional response</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>The institutional response to the decentralization problem has three principal components, all of which are realized through the firm's internal accounting system.</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>The first is the *responsibility center*: an organizational unit with defined boundaries within which a single manager has authority and is held accountable for performance. The literature distinguishes four types.</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>A *cost center* is a unit whose manager is responsible for the costs of operating the unit but not for revenues or capital. Production departments, central administrative functions, and shared service centers (e.g., a payroll department or a corporate IT group) are commonly organized as cost centers. The performance metric is typically a comparison of actual costs to a budget or to a flexible standard.</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>A *revenue center* is a unit whose manager is responsible for the revenues generated by the unit but not for the costs of producing what the unit sells. Sales territories and individual store locations within a retail chain are commonly organized as revenue centers. The performance metric is typically a comparison of actual revenues to a budget or to prior-period results.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>A *profit center* is a unit whose manager is responsible for both revenues and costs but not for the capital deployed in the unit. Product divisions within a multidivisional firm are commonly organized as profit centers. The performance metric is operating profit, often presented in a contribution-margin format.</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>An *investment center* is a unit whose manager is responsible for revenues, costs, and the capital deployed in the unit. The operating subsidiaries of Berkshire Hathaway, for example, are commonly organized as investment centers. The performance metric is some form of return on capital, such as ROI, residual income, or EVA, all of which we examine in Chapter 12.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>The choice among these four forms is itself a Hayekian decision. A firm decentralizes more decision authority by establishing investment centers; it centralizes more by relying on cost centers. The choice depends on (i) the firm's information environment, (ii) the heterogeneity of its operating units, and (iii) the costs of monitoring at different levels. The optimal mix typically varies across the firm — some functions are more naturally centralized, others more naturally decentralized — and the firm's organizational chart is, in this sense, a snapshot of how the trade-off has been resolved across the firm's activities.</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>The second component is *cost allocation*: the assignment of indirect costs (i.e., costs that cannot be traced directly to a specific product, service, or unit) to the responsibility centers or products that consume them. Section 11.5 develops cost allocation through a worked example. The general issue is that any allocation method requires choosing an *allocation base* (e.g., direct labor hours, machine hours, square footage), and the choice of base affects both the reported profitability of the receiving unit and the incentives of the manager who runs it.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>The third component is *transfer pricing*: the price at which goods and services are exchanged between divisions of the same firm. Transfer prices serve two functions simultaneously. They provide divisional buyers with cost information that should influence their sourcing decisions, and they provide divisional sellers with revenue information that should influence their production and pricing decisions. The two functions can come into conflict. Section 11.7 develops transfer pricing in detail.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cost behavior</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>The mechanical workhorse of internal accounting is *cost behavior*: the way costs change as the firm's activity level changes. Most internal-accounting analyses begin with a classification of costs into three categories.</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>A *variable cost* is one that changes proportionally with activity. The cost of raw materials in a manufacturing setting is the canonical example: producing twice as many units requires twice as much material, and the raw material cost per unit is roughly constant across activity levels. At an automotive assembly plant, the steel, aluminum, glass, and purchased components that go into each vehicle are variable: each additional Ford F-150 rolling off the Dearborn line consumes a roughly constant bill of materials.</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>A *fixed cost* is one that does not change with activity within a relevant range. The rent on a factory building is the canonical example: the rent is the same whether the factory operates at fifty percent capacity or ninety percent. The depreciation on an automotive stamping press is fixed: the press's annual cost is the same whether it stamps one shift or three. Fixed costs are not strictly fixed in the long run — a firm that consistently operates at fifty percent capacity might choose to relocate to a smaller building — but within the time horizon of most internal-accounting analyses, the cost is invariant to short-run activity changes.</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>A *mixed cost* (or *semi-variable cost*) is one that has both fixed and variable components. The total electricity bill of a factory typically includes a fixed monthly service fee plus a variable component proportional to consumption. The total compensation of a salesperson on a base-plus-commission contract is fixed in the base portion and variable in the commission portion.</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>The three-fold classification is a simplification. Many costs that appear fixed within a narrow range exhibit *step* behavior — they jump up to a new level at a particular activity threshold and remain constant within the next range. The cost of supervisors in a manufacturing facility is often step-fixed: one supervisor per fifteen workers, with the count jumping up as the workforce grows. The classification framework is sufficient for most analytical purposes; the step-cost refinement is introduced where it is operationally relevant.</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>A separate empirical observation worth noting is *cost stickiness*: the tendency of selling, general, and administrative costs to fall less in response to revenue declines than they rise in response to revenue increases. @andersonbankerjanakiraman2003 documented this asymmetry in a large U.S. sample and found that the empirical pattern is robust across industries and time periods. The standard interpretation is that cost-cutting decisions are themselves costly (e.g., terminating employees, breaking leases, disposing of equipment), so managers delay cost reductions in the hope that revenue declines are temporary. The cost-stickiness pattern qualifies the simple variable-fixed dichotomy by suggesting that the distinction may be asymmetric in the direction of revenue change.</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cost allocation: a worked example</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>Indirect costs — costs that benefit more than one product, division, or activity but cannot be traced directly to any one of them — are pervasive in multi-product and multi-divisional firms. Corporate headquarters expense, central IT, the CEO's salary, the cost of the legal department, and depreciation on a shared manufacturing facility are all indirect from the perspective of the operating units that benefit from them. Internal accounting allocates these costs to the units that consume them using an *allocation base*: an observable quantity, such as direct labor hours or square footage, that is taken to proxy for the unit's consumption of the indirect resource.</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>The choice of allocation base matters. Different bases produce different reported profitability for the same underlying operations, and the manager whose unit absorbs a larger share of overhead may face different incentives than the manager whose unit absorbs a smaller share.</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>Consider a stylized example. Apex Manufacturing operates two divisions, Consumer and Industrial. Each division generates its own revenue, incurs its own direct costs, and is supported by a shared corporate office that incurs $4,000,000 of overhead per year. The two divisions report:</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>| Item                     | Consumer       | Industrial    | Total          |</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>|--------------------------|----------------|---------------|----------------|</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>| Revenue                  | \$30,000,000   | \$20,000,000  | \$50,000,000   |</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>| Direct variable costs    | \$18,000,000   | \$10,000,000  | \$28,000,000   |</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>| Direct fixed costs       | \$4,000,000    | \$3,000,000   | \$7,000,000    |</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>| Direct labor hours       | 200,000        | 100,000       | 300,000        |</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>| Floor space (sq. ft.)    | 50,000         | 150,000       | 200,000        |</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>Apex must allocate the $4,000,000 of corporate overhead to the two divisions. Three commonly used allocation bases would produce three different results.</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>*Allocation by revenue.* The Consumer division generates 60 percent of total revenue, the Industrial division 40 percent. Allocating overhead in proportion to revenue assigns \$2,400,000 to Consumer and \$1,600,000 to Industrial.</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>*Allocation by direct labor hours.* The Consumer division uses two-thirds of total direct labor hours, the Industrial division one-third. Allocating overhead in proportion to direct labor hours assigns \$2,666,667 to Consumer and \$1,333,333 to Industrial.</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>*Allocation by floor space.* The Consumer division occupies 25 percent of total floor space, the Industrial division 75 percent. Allocating overhead in proportion to floor space assigns \$1,000,000 to Consumer and \$3,000,000 to Industrial.</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>The three methods yield the same total ($4,000,000) but very different divisional results. Under revenue-based allocation, the Industrial division's operating profit is \$5,400,000 (\$20,000,000 − \$10,000,000 − \$3,000,000 − \$1,600,000). Under floor-space-based allocation, the Industrial division's operating profit is \$4,000,000. The choice of allocation base shifts \$1,400,000 of reported profitability between the two divisions, without changing anything about their underlying operations.</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>The example illustrates two general points. First, an allocation base is defensible to the extent that it proxies for the receiving unit's *causal* consumption of the indirect resource — the resource that drives the cost (e.g., a factory's shared utilities are arguably caused by floor space; corporate legal expense is arguably caused by transaction volume; the CEO's time is arguably caused by managerial attention rather than by any easily observed input). The choice is rarely clean. Second, the allocation choice has incentive consequences. A division manager who is evaluated on operating profit after allocation has an incentive to influence the choice of base in a direction that reduces the unit's allocated overhead, and the firm's senior management may face lobbying that has little to do with the true causal structure of cost.</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>The widely discussed alternative, *activity-based costing* (ABC), attempts to mitigate the distortion by identifying a separate allocation base for each activity that consumes the indirect resource — machine setups, purchase orders, customer service calls, engineering change requests — and allocating cost in proportion to each unit's consumption of each activity. ABC produces more disaggregated and arguably more causally defensible allocations, but it is also costly to implement and to maintain, and the additional information value is not always worth the cost. The choice between traditional allocation and ABC is itself an instance of the broader cost-benefit calculation that pervades internal accounting design.</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="fu">## The contribution-margin income statement and CVP</span></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>The income statement format taught in Chapter 3 — revenues less expenses, with expenses organized by their financial-reporting category — is the *external* income statement format used in financial reports. For internal decision-making purposes, a different format is usually more useful. The *contribution-margin income statement* organizes expenses by their behavior (variable versus fixed) rather than by their reporting category, and produces a measure called the *contribution margin* that is central to internal-accounting analysis.</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>The structure is:</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>| Line                    | Computation                              |</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>|-------------------------|------------------------------------------|</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>| Revenue                 | Sales price × Quantity                   |</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>| Variable costs          | Variable cost per unit × Quantity        |</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>| **Contribution margin** | Revenue − Variable costs                 |</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>| Fixed costs             | (constant within the relevant range)     |</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>| **Operating profit**    | Contribution margin − Fixed costs        |</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>The contribution margin is the revenue available to cover fixed costs and contribute to profit after the variable costs of production have been paid. It is a measure of the *marginal* profitability of the firm's activity: an additional unit of sales adds the contribution margin to operating profit, because the variable cost of production is paid out of the additional revenue and the fixed costs do not change. The contribution margin per unit (revenue per unit minus variable cost per unit) and the contribution-margin ratio (contribution margin divided by revenue) are the workhorse metrics for thinking about pricing, product mix, and capacity decisions.</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>The contribution-margin framework supports a particular form of analysis called *cost-volume-profit* (CVP) analysis, which examines how operating profit responds to changes in volume, prices, variable costs, and fixed costs, holding the rest of the firm's operations constant. The central CVP equation is:</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>\text{Operating profit} = (\text{Contribution margin per unit}) \times \text{Quantity} - \text{Fixed costs}.</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>Setting operating profit equal to zero and solving for quantity yields the *break-even quantity*: the level of activity at which the firm's revenues exactly cover its costs.</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>\text{Break-even quantity} = \frac{\text{Fixed costs}}{\text{Contribution margin per unit}}.</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>Consider an example. Acme Corp. operates a subscription software business with revenue of \$200 per subscription per year, variable cost of \$40 per subscription (server, payment processing, support), and fixed costs of \$4,000,000 per year (headquarters, R&amp;D, marketing). The contribution margin per subscription is \$160 (\$200 − \$40). The break-even quantity is \$4,000,000 / \$160 = 25,000 subscriptions. At 25,000 subscriptions Acme exactly covers its costs; at higher volumes it earns operating profit at the rate of \$160 per additional subscription; at lower volumes it operates at a loss at the same rate.</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>CVP analysis can be extended in several directions: (i) *target-profit analysis* computes the volume needed to achieve a specified operating profit, (ii) *price-sensitivity analysis* asks how break-even volume changes as the firm raises or lowers prices, (iii) *cost-sensitivity analysis* asks the analogous question for changes in variable or fixed costs, and (iv) *multi-product analysis* extends the framework to firms with multiple product lines using a weighted-average contribution margin based on the firm's product mix.</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>The CVP framework also provides the right tool for thinking about *operating leverage*: the sensitivity of operating profit to changes in revenue. A firm with a high fraction of fixed costs has high operating leverage, so a one-percent change in revenue produces a more-than-one-percent change in operating profit. The formal measure is:</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>\text{Degree of operating leverage} = \frac{\text{Contribution margin}}{\text{Operating profit}}.</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>A firm whose contribution margin equals five times its operating profit has a degree of operating leverage of five: each one-percent change in revenue produces an approximately five-percent change in operating profit, holding the cost structure constant.</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common pitfall</span></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>The external (GAAP) income statement and the internal (contribution-margin) income statement do not, in general, agree on operating profit. Under GAAP, fixed manufacturing overhead is allocated to inventory and recognized only when the inventory is sold — an *absorption costing* treatment that cuts against the variable-fixed distinction the internal format requires. A firm that produces more than it sells in a period absorbs some of its fixed manufacturing costs into ending inventory, so the GAAP cost of goods sold is lower (and operating profit higher) than the contribution-margin operating profit would be. The discrepancy is one of the well-known sources of confusion between external and internal accounting.</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="fu">## Transfer pricing and the Boeing operating-leverage case</span></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>When a firm is decentralized into investment or profit centers, goods and services routinely move from one division to another. The price at which an internal transfer is recorded — the *transfer price* — is consequential. It allocates revenue between the selling and buying divisions, influences each manager's reported performance, shapes each manager's incentive to source internally rather than externally, and (for multinational firms) determines how taxable income is split across jurisdictions. The standard approaches are three.</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>A *market-based transfer price* sets the internal price equal to the price the selling division could obtain in an arms-length external market for the same good or service. The approach is defensible when a competitive external market exists: it puts each division on the same footing as an external counterparty and gives the buying division the right "make-or-buy" incentive. The approach is harder to apply when the transferred good has no clean external equivalent, as is common for specialized intermediate components.</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>A *cost-based transfer price* sets the internal price equal to some measure of the selling division's cost — variable cost, full absorption cost, or full cost plus a markup. Cost-based pricing is administratively simple and is used widely when no external market price exists. The well-known distortion is that pricing at full cost gives the selling division no margin and a weak incentive to supply, while pricing at variable cost shifts all of the contribution to the buying division and gives the buying division no incentive to economize on the internally supplied input.</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>A *negotiated transfer price* is one the two divisions bargain over directly, with corporate headquarters intervening only when they cannot agree. Negotiation can in principle find a price that respects both divisions' incentives, but it absorbs managerial time and can produce outcomes that depend on the divisions' relative bargaining power rather than on the underlying economics.</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>Each method has known distortions, and the literature is consistent that no transfer-pricing system is uniformly first-best <span class="co">[</span><span class="ot">@demski2008, who develops the formal trade-offs in detail</span><span class="co">]</span>. Two further considerations sharpen the choice. First, *incentive alignment*: the transfer price should give both the buying and selling divisions decisions that the principal would endorse if she could see the underlying information. Second, *taxation*: for multinational firms, the transfer price determines how income is allocated across tax jurisdictions, and tax authorities (e.g., the U.S. Internal Revenue Service under Section 482, and the OECD's transfer-pricing guidelines) require that intercompany prices approximate arms-length terms. Firms therefore face a constraint that the transfer prices they use for internal decision-making must also be defensible to tax authorities, which can pull the choice toward market-based prices even when other considerations point elsewhere.</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>A concrete illustration of operating leverage in a decentralized setting is Boeing. The firm's commercial-aircraft business has enormous fixed costs — research and development, manufacturing infrastructure, supply-chain investments, certifications — that must be absorbed regardless of demand. Variable costs (raw materials, direct labor on individual aircraft) are smaller. The cost structure produces a high degree of operating leverage: when commercial aviation is robust and Boeing's order book is full, the firm earns substantial operating profit; when commercial aviation contracts and orders fall, operating profit falls disproportionately fast — and, in extreme cases, becomes substantially negative. The 737 MAX grounding in 2019 and the COVID-19 pandemic in 2020 produced consecutive operating losses at Boeing of historic magnitude, despite revenue declines that, by industrial-firm standards, were not particularly large. The amplification of those revenue declines into substantial losses is consistent with what a high-operating-leverage cost structure predicts.</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>The in-class activity for the second meeting of this week works through Boeing's cost structure using the contribution-margin format, computes the degree of operating leverage at different revenue levels, and assesses what the high operating leverage implies for the volatility of Boeing's reported earnings.</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key takeaways</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Decentralization rests on dispersed knowledge.** @hayek1945 argued that the information needed to make economic decisions is held by the people who interact with local conditions, and a central authority cannot easily aggregate it.</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Agency theory provides the counterweight.** Decentralized managers may not act in the principal's interest, suggesting that decentralization works only when the firm can also monitor what local managers do <span class="co">[</span><span class="ot">@jensenmeckling1976</span><span class="co">]</span>.</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Accounting makes the trade-off workable.** Internal accounting simultaneously gives local managers the information they need to decide and gives the principal the information she needs to evaluate them.</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Cost behavior is the mechanical foundation.** Variable, fixed, and mixed costs, organized in a contribution-margin format, support pricing, product-mix, and break-even analyses through CVP.</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Cost allocation is consequential.** The choice of allocation base shifts reported profitability across units without changing the underlying operations, and the choice has incentive consequences for the managers being evaluated.</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Transfer pricing has no uniformly first-best solution.** Market-based, cost-based, and negotiated transfer prices each carry known distortions, and the choice is further constrained by tax-authority requirements for multinational firms.</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="fu">## Discussion questions</span></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>The Hayek argument for decentralization rests on the dispersed-knowledge claim — that local information is held by people who interact with local conditions and is costly to aggregate. Identify a category of business decision in which the dispersed-knowledge advantage is largest, and another in which it is smallest. What does the comparison imply about the optimal locus of decision authority?</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The chapter described four types of responsibility centers (cost, revenue, profit, investment). Suppose a multinational consumer-products company is considering reorganizing its U.S. operations. Identify a function within the firm that is best organized as a cost center, one as a revenue center, one as a profit center, and one as an investment center. Defend each choice.</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>@andersonbankerjanakiraman2003 documented that SG&amp;A costs are sticky — they fall less in response to revenue declines than they rise in response to revenue increases. Is this empirical pattern consistent with agency costs, with optimal cost-management behavior, or with something else? Defend your interpretation.</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Section 11.5 illustrated that the choice of overhead allocation base can shift reported profitability across divisions without changing the underlying operations. If the choice is, in this sense, partly arbitrary, why do firms allocate corporate overhead at all rather than report divisional profit before allocation?</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Boeing's high operating leverage produces a particular pattern of earnings volatility. Suppose Boeing's CFO proposes shifting toward a more variable cost structure (e.g., outsourcing more components, using more flexible labor arrangements). What are the costs and benefits of the proposed shift? Use the framework of Chapter 4 (moral hazard) and the framework of this chapter (cost behavior) to defend a position.</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="fu">## Problems</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>*(Mechanical, overhead allocation.)* Apex Manufacturing operates two divisions, Consumer and Industrial, with the data in Section 11.5. Corporate overhead is \$4,000,000. (a) Compute each division's operating profit under revenue-based allocation, direct-labor-hour-based allocation, and floor-space-based allocation. (b) Identify the division and base under which divisional operating profit is highest, and the combination under which it is lowest. (c) In one short paragraph, identify which allocation base you would defend and explain why.</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>*(Mechanical, contribution margin and CVP.)* Acme Corp. operates a subscription-based software business with the following cost structure: \$300 revenue per subscription per year, \$60 variable cost per subscription per year, and \$6,000,000 of fixed costs per year. (a) Compute the contribution margin per subscription. (b) Compute the break-even quantity. (c) Compute the operating profit at 30,000 subscriptions. (d) Suppose Acme is considering raising its price to \$350 per subscription, which the marketing team estimates will reduce subscriptions by 10 percent from current levels. Compute the change in operating profit at the current and proposed prices, and recommend whether Acme should raise the price.</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>*(Mechanical, operating leverage.)* Continuing Problem 2 at the original \$300 price and 30,000 subscriptions: (a) Compute Acme's degree of operating leverage. (b) Suppose revenue increases by 20 percent (to 36,000 subscriptions). Compute the resulting change in operating profit and verify that the percentage change is approximately the degree of operating leverage times the revenue percentage change. (c) Repeat the analysis for a 20 percent revenue decline.</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>*(Mechanical, transfer pricing.)* Beta Industries has two divisions. The Components division produces a part with variable cost of \$40, fixed cost allocation of \$15 per unit, and an external market price of \$70. The Assembly division uses one part per finished product and sells the finished product for \$130; its other variable costs are \$50 per finished product. Components has spare capacity. (a) Identify the transfer price that gives Assembly the right make-or-buy incentive (i.e., the price that leads Assembly to source internally if and only if it is value-creating for Beta as a whole). (b) Compute Beta's consolidated profit per finished product under (i) a market-based transfer price of \$70, (ii) a full-cost transfer price of \$55, and (iii) a variable-cost transfer price of \$40. (c) In one short paragraph, explain why divisional incentives can differ across the three methods even though consolidated profit is the same.</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>*(Conceptual, responsibility-center design.)* Consider a hypothetical multidivisional firm — a U.S. food-and-beverage company with (i) a packaged-foods division, (ii) a beverages division, (iii) a centralized procurement function that buys agricultural inputs for both divisions, (iv) a centralized IT function that runs the firm's ERP system, and (v) a corporate R&amp;D group that develops new products for both divisions. Propose a responsibility-center classification for each of the five units (cost, revenue, profit, or investment center), and defend each choice. Where you see a unit that could be classified more than one way, identify the trade-off.</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>*(Conceptual, transfer-pricing distortion.)* A vertically integrated U.S. oil company refines crude oil in its Upstream division and sells refined gasoline through its Downstream division. The Upstream division is evaluated on operating profit per barrel. Suppose the firm uses a full-absorption-cost transfer price for crude transferred from Upstream to Downstream, and suppose Upstream has unused refining capacity. Identify the incentive distortion this arrangement creates for the Upstream manager, the Downstream manager, and the firm as a whole. Recommend an alternative transfer-pricing arrangement and explain why it is better.</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>*(Short writing exercise.)* Read @hayek1945 (it is short, approximately 12 pages). In approximately 250 words, summarize the central argument and explain how it applies to the internal organization of a multidivisional firm. Be specific about which Hayekian observations carry over from markets to firms and which do not.</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="fu">## Lab</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>The in-class activity for the second meeting of this week is the **Boeing operating-leverage case** (<span class="in">`activities/cost-volume-profit/`</span>). You will work through Boeing's cost structure using the contribution-margin format on a recent set of financial statements, compute the firm's degree of operating leverage at different revenue levels, and discuss what the analysis implies for the volatility of Boeing's reported earnings under alternative demand scenarios.</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>There is no out-of-class lab for this week. The Lab 6 group empirical project (the WRDS project track of your choice) launches in Week 11 with the project proposal deliverable.</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="fu">## Further reading</span></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>The four readings below are the assigned readings for Week 11. You should read all of them.</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@hayek1945, "The Use of Knowledge in Society." Short and influential. Read for the central argument and the application to economic organization.</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A short selection from @demski2008 on decentralization, responsibility centers, and transfer pricing (chapter assignment to be specified on Canvas). The most useful single textbook treatment of the topic.</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A short selection from @nissim2010 on internal information and decision-making (chapter assignment to be specified on Canvas).</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>*Optional, for those who want more:* @andersonbankerjanakiraman2003 on cost stickiness. A short and accessible empirical paper that makes the variable-fixed distinction concrete.</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="fu">## Where Arc III goes from here</span></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>Chapter 11 has introduced the decentralization framework and the cost-behavior, cost-allocation, and transfer-pricing tools that support internal financial analysis. Chapter 12 turns to the performance-measurement question that arises whenever a central authority delegates decision authority to a local unit: how should the local unit's performance be evaluated? The framework of Chapter 4 (moral hazard and the LEN model) returns explicitly, with the additional refinement that performance measures are themselves design choices that produce predictable distortions in managerial behavior.</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc3-internal/11-decentralization.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

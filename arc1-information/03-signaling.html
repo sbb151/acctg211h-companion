@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Voluntary disclosure as a costly signal. The income statement and the signaling content of accruals.">
+
+<title>3&nbsp; Signaling and the Income Statement – ACCTG 211H Companion</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../arc1-information/04-stewardship.html" rel="next">
+<link href="../arc1-information/02-lemons.html" rel="prev">
+<link href="../favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc1-information/01-foundations.html">Arc I — The Information Problem</a></li><li class="breadcrumb-item"><a href="../arc1-information/03-signaling.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Signaling and the Income Statement</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">ACCTG 211H Companion</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/sbb151/acctg211h-companion" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: How This Book Is Organized</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc I — The Information Problem</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/01-foundations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foundations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/02-lemons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Lemons Problem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/03-signaling.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Signaling and the Income Statement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/04-stewardship.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stewardship and Moral Hazard</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/05-standards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Standard Setting and the Conceptual Framework</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc II — Markets and Measurement</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/06-efficient-markets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Efficient Markets and the Information Content of Earnings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/07-accruals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Accrual Anomaly and Earnings Quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/08-long-term-assets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Long-Term Assets and Measurement Choice</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/09-liabilities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/10-equity-compensation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Equity Compensation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc III — Contracting and Internal Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/11-decentralization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Decentralization and Cost Behavior</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/12-performance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Performance Measurement as Agency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/13-capital-budgeting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc IV — Synthesis</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc4-synthesis/14-debates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Synthesis: The Capstone Debates</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a01-fset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">A1. The Financial Statement Effects Template (FSET)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a02-python-wrds-colab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">A2. Python + WRDS in Google Colab Quickstart</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a03-debits-credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">A3. Debits and Credits Cheat Sheet</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#opening-question" id="toc-opening-question" class="nav-link active" data-scroll-target="#opening-question"><span class="header-section-number">3.1</span> Opening question</a></li>
+  <li><a href="#the-spence-setup" id="toc-the-spence-setup" class="nav-link" data-scroll-target="#the-spence-setup"><span class="header-section-number">3.2</span> The Spence setup</a>
+  <ul class="collapse">
+  <li><a href="#a-concrete-numerical-example" id="toc-a-concrete-numerical-example" class="nav-link" data-scroll-target="#a-concrete-numerical-example">A concrete numerical example</a></li>
+  </ul></li>
+  <li><a href="#the-unraveling-result-and-the-verrecchia-threshold" id="toc-the-unraveling-result-and-the-verrecchia-threshold" class="nav-link" data-scroll-target="#the-unraveling-result-and-the-verrecchia-threshold"><span class="header-section-number">3.3</span> The unraveling result and the Verrecchia threshold</a>
+  <ul class="collapse">
+  <li><a href="#full-unraveling-grossman-and-milgrom" id="toc-full-unraveling-grossman-and-milgrom" class="nav-link" data-scroll-target="#full-unraveling-grossman-and-milgrom">Full unraveling: Grossman and Milgrom</a></li>
+  <li><a href="#partial-unraveling-the-verrecchia-threshold" id="toc-partial-unraveling-the-verrecchia-threshold" class="nav-link" data-scroll-target="#partial-unraveling-the-verrecchia-threshold">Partial unraveling: the Verrecchia threshold</a></li>
+  </ul></li>
+  <li><a href="#concrete-examples-of-signaling-in-capital-markets" id="toc-concrete-examples-of-signaling-in-capital-markets" class="nav-link" data-scroll-target="#concrete-examples-of-signaling-in-capital-markets"><span class="header-section-number">3.4</span> Concrete examples of signaling in capital markets</a>
+  <ul class="collapse">
+  <li><a href="#ipo-underpricing-as-a-signal" id="toc-ipo-underpricing-as-a-signal" class="nav-link" data-scroll-target="#ipo-underpricing-as-a-signal">IPO underpricing as a signal</a></li>
+  <li><a href="#management-earnings-guidance" id="toc-management-earnings-guidance" class="nav-link" data-scroll-target="#management-earnings-guidance">Management earnings guidance</a></li>
+  <li><a href="#voluntary-segment-disclosure" id="toc-voluntary-segment-disclosure" class="nav-link" data-scroll-target="#voluntary-segment-disclosure">Voluntary segment disclosure</a></li>
+  <li><a href="#dividend-signaling" id="toc-dividend-signaling" class="nav-link" data-scroll-target="#dividend-signaling">Dividend signaling</a></li>
+  </ul></li>
+  <li><a href="#accruals-as-a-signal" id="toc-accruals-as-a-signal" class="nav-link" data-scroll-target="#accruals-as-a-signal"><span class="header-section-number">3.5</span> Accruals as a signal</a></li>
+  <li><a href="#the-institutional-response-voluntary-disclosure-mechanisms" id="toc-the-institutional-response-voluntary-disclosure-mechanisms" class="nav-link" data-scroll-target="#the-institutional-response-voluntary-disclosure-mechanisms"><span class="header-section-number">3.6</span> The institutional response: voluntary disclosure mechanisms</a></li>
+  <li><a href="#mechanics-the-income-statement-and-the-accrual-basis" id="toc-mechanics-the-income-statement-and-the-accrual-basis" class="nav-link" data-scroll-target="#mechanics-the-income-statement-and-the-accrual-basis"><span class="header-section-number">3.7</span> Mechanics: the income statement and the accrual basis</a></li>
+  <li><a href="#empirical-evidence" id="toc-empirical-evidence" class="nav-link" data-scroll-target="#empirical-evidence"><span class="header-section-number">3.8</span> Empirical evidence</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">3.9</span> Key takeaways</a></li>
+  <li><a href="#discussion-questions" id="toc-discussion-questions" class="nav-link" data-scroll-target="#discussion-questions"><span class="header-section-number">3.10</span> Discussion questions</a></li>
+  <li><a href="#problems" id="toc-problems" class="nav-link" data-scroll-target="#problems"><span class="header-section-number">3.11</span> Problems</a>
+  <ul class="collapse">
+  <li><a href="#mechanical-problems" id="toc-mechanical-problems" class="nav-link" data-scroll-target="#mechanical-problems">Mechanical problems</a></li>
+  <li><a href="#conceptual-problems" id="toc-conceptual-problems" class="nav-link" data-scroll-target="#conceptual-problems">Conceptual problems</a></li>
+  <li><a href="#short-writing-exercise" id="toc-short-writing-exercise" class="nav-link" data-scroll-target="#short-writing-exercise">Short writing exercise</a></li>
+  </ul></li>
+  <li><a href="#lab" id="toc-lab" class="nav-link" data-scroll-target="#lab"><span class="header-section-number">3.12</span> Lab</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">3.13</span> Further reading</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc1-information/03-signaling.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc1-information/01-foundations.html">Arc I — The Information Problem</a></li><li class="breadcrumb-item"><a href="../arc1-information/03-signaling.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Signaling and the Income Statement</span></a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-signaling" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Signaling and the Income Statement</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="opening-question" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="opening-question"><span class="header-section-number">3.1</span> Opening question</h2>
+<p>In April 2015, Amazon disclosed for the first time the operating results of its cloud-computing business, Amazon Web Services. AWS had been operating since 2006, but for nine years its revenue and operating income had been bundled into Amazon’s “Other” segment alongside a miscellany of smaller businesses. The Q1 2015 earnings release revealed that AWS was, on its own, a five-billion-dollar annual revenue business growing at forty-nine percent year-over-year, with operating margins of approximately seventeen percent. Amazon’s stock price gained roughly fifteen percent over the next two trading days. Equity analysts spent the following weeks revaluing AWS as a stand-alone business and, by extension, the rest of Amazon at substantially higher levels.</p>
+<p>The Amazon disclosure raises a question Chapter 2 left open. The lemons argument of <span class="citation" data-cites="akerlof1970">Akerlof (<a href="../references.html#ref-akerlof1970" role="doc-biblioref">1970</a>)</span>, who showed that asymmetric information about quality can collapse a market entirely, explained why investors will demand a discount in markets where issuers know more than they do. It also explained why mandatory disclosure can reduce that discount. But the AWS disclosure was not mandatory. The Financial Accounting Standards Board (i.e., the private body that writes U.S. GAAP) does not require segment-level disclosure at the granularity Amazon provided in 2015. Amazon disclosed because Amazon chose to. Why?</p>
+<p>This chapter develops the framework for thinking about <em>voluntary</em> disclosure. The mandatory regime sets a floor. Almost every U.S. public company chooses to clear that floor by a wide margin, releasing management earnings forecasts, conference calls with analysts, expansive Management’s Discussion and Analysis sections, segment disaggregations, sustainability reports, and investor day presentations. The economic logic was sharpened by <span class="citation" data-cites="spence1973">Spence (<a href="../references.html#ref-spence1973" role="doc-biblioref">1973</a>)</span>, who modeled costly education as a credible signal of worker productivity, and adapted to the accounting setting by <span class="citation" data-cites="verrecchia1983">Verrecchia (<a href="../references.html#ref-verrecchia1983" role="doc-biblioref">1983</a>)</span>, who showed that managers with sufficiently favorable private information voluntarily disclose, and by <span class="citation" data-cites="dye1985">Dye (<a href="../references.html#ref-dye1985" role="doc-biblioref">1985</a>)</span>, who showed that the unraveling is partial when investors are uncertain whether the manager has any information at all. The argument, in shortest form, is that voluntary disclosure is a <em>costly signal</em>: a disclosure is informative precisely because it is costly, and the cost is what discourages low-quality issuers from imitating high-quality ones.</p>
+<p>Chapter 2 also left a structural gap. The balance sheet, introduced there, is a credibly verifiable summary of the firm’s <em>stocks</em> at a point in time. It does not, by itself, tell investors what the firm did between two balance-sheet dates. This chapter introduces the income statement as the structure through which the firm reports its economic <em>performance</em> over an interval — and, more subtly, as the structure through which the manager communicates her private information about the firm’s prospects via the choice of accrual estimates. The mechanics are introduced here at the level needed to support the framework of this chapter; the deeper measurement issues will be revisited in Arc II.</p>
+</section>
+<section id="the-spence-setup" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="the-spence-setup"><span class="header-section-number">3.2</span> The Spence setup</h2>
+<p>Spence’s model is the canonical reference for <em>signaling</em> (i.e., a costly action a more-informed party takes to credibly reveal her type to a less-informed party). Consider, in the spirit of <span class="citation" data-cites="spence1973">Spence (<a href="../references.html#ref-spence1973" role="doc-biblioref">1973</a>)</span>, a labor market with two worker types — high productivity (<span class="math inline">\(H\)</span>) and low productivity (<span class="math inline">\(L\)</span>) — and a population of risk-neutral employers who cannot observe a worker’s type. Let the employer’s productivity from a type-<span class="math inline">\(H\)</span> worker be <span class="math inline">\(w_H\)</span> and from a type-<span class="math inline">\(L\)</span> worker be <span class="math inline">\(w_L\)</span>, with <span class="math inline">\(w_H &gt; w_L\)</span>. Let the share of high types in the population be <span class="math inline">\(\lambda\)</span>.</p>
+<p>Under symmetric information, each type is paid her marginal product. Under asymmetric information with no signal available, the employer offers a single wage equal to the population’s expected productivity, <span class="math inline">\(\lambda w_H + (1 - \lambda) w_L\)</span>. This is the <em>pooling equilibrium</em> (i.e., the equilibrium in which both types receive the same contract because the employer cannot tell them apart). High types are undercompensated; low types are overcompensated. The market sets a single price, and the gain from sorting workers to wages is lost.</p>
+<p>A <em>signal</em> is an observable action a worker can take before applying for a job. Let workers acquire education in some quantity <span class="math inline">\(e \geq 0\)</span> at a personal cost <span class="math inline">\(c_H(e)\)</span> for high types and <span class="math inline">\(c_L(e)\)</span> for low types. The substantive assumption is that high types find education less costly at every margin:</p>
+<p><span class="math display">\[
+c_L'(e) &gt; c_H'(e) \quad \text{for all } e \geq 0.
+\]</span></p>
+<p>This is the <em>single-crossing property</em> (i.e., the indifference curves of the two types cross exactly once in education–wage space). It is the heart of the Spence argument and worth dwelling on. The property does not require education to be cheap for <span class="math inline">\(H\)</span> in absolute terms; it requires only that <em>each additional unit</em> of education costs the low type more than it costs the high type. Whatever the source of the differential cost — greater academic aptitude, lower opportunity cost of time, higher tolerance for tedious coursework — the marginal cost is lower for the type the employer wants to identify.</p>
+<section id="a-concrete-numerical-example" class="level3">
+<h3 class="anchored" data-anchor-id="a-concrete-numerical-example">A concrete numerical example</h3>
+<p>Suppose <span class="math inline">\(w_H = 100\)</span>, <span class="math inline">\(w_L = 60\)</span>, <span class="math inline">\(c_H(e) = e\)</span>, and <span class="math inline">\(c_L(e) = 2e\)</span>. Employers offer wage <span class="math inline">\(w_H\)</span> to any worker with education <span class="math inline">\(\geq e^*\)</span> and wage <span class="math inline">\(w_L\)</span> otherwise. A <em>separating equilibrium</em> (i.e., one in which the two types take different actions and are correctly identified) requires that (i) high types prefer to acquire <span class="math inline">\(e^*\)</span> rather than zero, and (ii) low types prefer to acquire zero rather than <span class="math inline">\(e^*\)</span>. Algebraically:</p>
+<p><span class="math display">\[
+\underbrace{w_H - c_H(e^*)}_{\text{H's payoff from signaling}} \geq \underbrace{w_L - c_H(0)}_{\text{H's payoff from pooling at } w_L},
+\qquad
+\underbrace{w_L - c_L(0)}_{\text{L's payoff from pooling}} \geq \underbrace{w_H - c_L(e^*)}_{\text{L's payoff from mimicking}}.
+\]</span></p>
+<p>Substituting, the first condition gives <span class="math inline">\(100 - e^* \geq 60\)</span>, or <span class="math inline">\(e^* \leq 40\)</span>. The second condition gives <span class="math inline">\(60 \geq 100 - 2 e^*\)</span>, or <span class="math inline">\(e^* \geq 20\)</span>. Any <span class="math inline">\(e^* \in [20, 40]\)</span> supports a separating equilibrium. The smallest such <span class="math inline">\(e^*\)</span> is the <em>least-cost separating equilibrium</em>, at <span class="math inline">\(e^* = 20\)</span>. At that signal level, the high type’s net payoff is <span class="math inline">\(100 - 20 = 80\)</span> and the low type’s net payoff is <span class="math inline">\(60 - 0 = 60\)</span>, both above what they would receive under pooling at the population average.</p>
+<p>Two features of this calculation recur throughout the disclosure literature. First, the signal is <em>wasteful in absolute terms</em>: the education itself is assumed to be unproductive, yet <span class="math inline">\(20\)</span> units are acquired in equilibrium. The signal is socially costly but privately rational, because the alternative — pooling — is worse for the high type. Second, the signal level is pinned down by the <em>low type’s incentive constraint</em>, not the high type’s. Low types must find imitation unprofitable, and that condition determines how much signaling the high type must do.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Single-crossing in one sentence
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For a costly action to credibly reveal type, the marginal cost of the action must be lower for the type the receiver wants to identify; otherwise the low type would imitate the high type and the separating equilibrium would collapse.</p>
+</div>
+</div>
+<p>The Spence model is stylized in a number of respects. The strict separating equilibrium it predicts is robust only under specific assumptions about cost structure and information sets; richer models permit pooling equilibria, partially separating equilibria, and noisy signals. The deeper point, however, is robust: when one party knows more than another, the more-informed party may incur costly actions whose function is to credibly convey that information, and those actions can move the market away from the pooling outcome that asymmetric information would otherwise produce.</p>
+</section>
+</section>
+<section id="the-unraveling-result-and-the-verrecchia-threshold" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="the-unraveling-result-and-the-verrecchia-threshold"><span class="header-section-number">3.3</span> The unraveling result and the Verrecchia threshold</h2>
+<p>The Spence model takes the cost differential as primitive. The disclosure literature pushes one step further by asking whether, when the firm can simply <em>reveal</em> its private information at zero cost, asymmetric information unravels on the supply side without any need for a costly signal at all.</p>
+<section id="full-unraveling-grossman-and-milgrom" class="level3">
+<h3 class="anchored" data-anchor-id="full-unraveling-grossman-and-milgrom">Full unraveling: Grossman and Milgrom</h3>
+<p>Consider a manager who has observed a value <span class="math inline">\(v\)</span> drawn from a known distribution on <span class="math inline">\([0, 1]\)</span> and who can choose to disclose <span class="math inline">\(v\)</span> truthfully and costlessly, or to remain silent. Investors are rational and price the firm at the expected value conditional on what they observe. Suppose investors initially believe <span class="math inline">\(v\)</span> is uniformly distributed. The argument runs as follows. The highest type, <span class="math inline">\(v = 1\)</span>, strictly prefers to disclose; silence would pool him with everyone else at <span class="math inline">\(E[v] = 1/2\)</span>. Anticipating this, investors who observe silence rationally update: silence cannot have come from <span class="math inline">\(v = 1\)</span>, so the silent pool is now drawn from <span class="math inline">\([0, 1)\)</span> with mean approximately <span class="math inline">\(1/2\)</span> still. But then the highest <em>remaining</em> type, just below <span class="math inline">\(1\)</span>, has the same incentive to disclose. Iterating, the silent pool shrinks toward the bottom of the distribution, and in the limit <em>every</em> type discloses except possibly <span class="math inline">\(v = 0\)</span>.</p>
+<p>This is the <em>full-disclosure result</em>, due independently to <span class="citation" data-cites="grossman1981">Grossman (<a href="../references.html#ref-grossman1981" role="doc-biblioref">1981</a>)</span> and <span class="citation" data-cites="milgrom1981">Milgrom (<a href="../references.html#ref-milgrom1981" role="doc-biblioref">1981</a>)</span>. It is striking because it is the supply-side counterpart to Akerlof’s demand-side unraveling. In Akerlof, the buyer’s rational discounting unravels the market by driving out high-quality sellers. In Grossman–Milgrom, the seller’s incentive to separate unravels the silence by driving out high-quality non-disclosers. The two results share a common logic: when one side of the market cannot distinguish types, the equilibrium pressure runs toward separation, and silence becomes informative whether or not the silent party intends it to be.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+A useful contrast
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Chapter 2’s unraveling collapses <em>trade</em>: with asymmetric information, the market clears at <span class="math inline">\(p = 0\)</span> and no transactions occur. This chapter’s unraveling collapses <em>silence</em>: with rational investors and costless disclosure, every type above the bottom discloses, and silence becomes a perfect signal of the worst type. The two results are mirror images. Both rest on the same insight: rational agents update against the party they cannot observe.</p>
+</div>
+</div>
+</section>
+<section id="partial-unraveling-the-verrecchia-threshold" class="level3">
+<h3 class="anchored" data-anchor-id="partial-unraveling-the-verrecchia-threshold">Partial unraveling: the Verrecchia threshold</h3>
+<p>Full unraveling is a knife-edge prediction. It requires that disclosure be costless, that investors know the manager has information, and that disclosed information be costlessly verifiable. Relax any of these and the unraveling becomes partial.</p>
+<p><span class="citation" data-cites="verrecchia1983">Verrecchia (<a href="../references.html#ref-verrecchia1983" role="doc-biblioref">1983</a>)</span> introduced a fixed <em>proprietary cost</em> <span class="math inline">\(c &gt; 0\)</span> of disclosure — for example, the cost of revealing competitively sensitive information that rivals will exploit, or the cost of preparing and auditing the disclosure itself. The manager discloses if and only if the price-impact gain from disclosure exceeds <span class="math inline">\(c\)</span>. The equilibrium is characterized by a <em>threshold</em> <span class="math inline">\(\theta^*\)</span>: managers with <span class="math inline">\(v \geq \theta^*\)</span> disclose; managers with <span class="math inline">\(v &lt; \theta^*\)</span> stay silent. Investors who observe silence price the firm at the conditional expectation <span class="math inline">\(E[v \mid v &lt; \theta^*]\)</span>, which lies below the unconditional mean. The marginal type is indifferent: the price improvement from being known to be of type <span class="math inline">\(\theta^*\)</span> rather than pooled at <span class="math inline">\(E[v \mid v &lt; \theta^*]\)</span> equals the cost <span class="math inline">\(c\)</span>.</p>
+<p>As <span class="math inline">\(c \to 0\)</span>, the threshold <span class="math inline">\(\theta^* \to 0\)</span> and the Verrecchia equilibrium approaches the Grossman–Milgrom full-disclosure outcome. As <span class="math inline">\(c\)</span> rises, <span class="math inline">\(\theta^*\)</span> rises, more types pool at silence, and the disclosure regime degrades toward complete pooling. The Verrecchia model thus nests both the Grossman–Milgrom benchmark and the Akerlof-style pooling outcome as limiting cases.</p>
+<p><span class="citation" data-cites="dye1985">Dye (<a href="../references.html#ref-dye1985" role="doc-biblioref">1985</a>)</span> made a second relaxation. In Dye’s setup, the manager either has information <span class="math inline">\(v\)</span> or has no information at all, and investors do not know which case applies. The equilibrium continues to feature partial unraveling, but for a different reason: when investors observe silence, they cannot distinguish a manager who has bad information from one who has none, so silence is less damning than in Verrecchia. The Dye assumption is empirically more relevant in many disclosure settings, because the assumption that managers always have information of known precision is implausible.</p>
+<p>You will recognize this pattern from the Lemons simulation in Chapter 2. The Phase 3 voluntary-disclosure scenario plays out the Verrecchia equilibrium: students who chose to disclose did so for high values of their car’s quality, while students with low quality preferred to pool. The synthetic-population summary reported a disclosure rate of approximately ninety-three percent and a clear separation between disclosed and silent average qualities — partial unraveling, observed in real time.</p>
+</section>
+</section>
+<section id="concrete-examples-of-signaling-in-capital-markets" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="concrete-examples-of-signaling-in-capital-markets"><span class="header-section-number">3.4</span> Concrete examples of signaling in capital markets</h2>
+<p>The signaling framework illuminates a number of patterns in real capital markets that are otherwise difficult to rationalize. We consider four.</p>
+<section id="ipo-underpricing-as-a-signal" class="level3">
+<h3 class="anchored" data-anchor-id="ipo-underpricing-as-a-signal">IPO underpricing as a signal</h3>
+<p>Initial public offerings in the United States are systematically underpriced. The average first-day return on an IPO has been about fifteen to twenty percent over the post-1980 period, meaning the issuer leaves a substantial fraction of the offering proceeds on the table. One signaling explanation, developed by a literature beginning with <span class="citation" data-cites="allenfaulhaber1989">Allen and Faulhaber (<a href="../references.html#ref-allenfaulhaber1989" role="doc-biblioref">1989</a>)</span>, <span class="citation" data-cites="grinblatthwang1989">Grinblatt and Hwang (<a href="../references.html#ref-grinblatthwang1989" role="doc-biblioref">1989</a>)</span>, and <span class="citation" data-cites="welch1989">Welch (<a href="../references.html#ref-welch1989" role="doc-biblioref">1989</a>)</span> — each of whom models underpricing as a costly signal whose burden falls most heavily on low-quality issuers — is that high-quality issuers deliberately underprice the offering to signal confidence in the firm’s prospects: a firm that expects to return to the equity market in the future can recoup the underpricing on subsequent offerings, while a low-quality issuer that expects to be unmasked before any follow-on offering cannot. The single-crossing property holds because the cost of underpricing — foregone proceeds on the IPO — is recouped only by issuers who realistically expect to issue again, and that expectation is correlated with quality.</p>
+<p>The signaling interpretation of underpricing is not the only candidate. The asymmetric-information story of <span class="citation" data-cites="rock1986">Rock (<a href="../references.html#ref-rock1986" role="doc-biblioref">1986</a>)</span>, in which informed investors crowd out uninformed ones unless the offering is discounted enough to compensate the uninformed for adverse selection, is a different mechanism that operates on the demand side. Both stories are consistent with the observed underpricing, and the empirical literature has had difficulty distinguishing them sharply.</p>
+</section>
+<section id="management-earnings-guidance" class="level3">
+<h3 class="anchored" data-anchor-id="management-earnings-guidance">Management earnings guidance</h3>
+<p>A firm that issues a management earnings forecast for the upcoming quarter commits publicly to a number. If the realization falls materially short of the forecast, the firm bears legal exposure (e.g., shareholder securities litigation) and reputational damage (e.g., reduced credibility on future forecasts). Issuing a forecast is therefore costly, and the cost is plausibly higher for managers whose private information is less favorable: a manager who expects to miss has more to lose from committing publicly than a manager who expects to meet or beat. The single-crossing property holds, and the act of issuing guidance is a credible signal even before the content of the guidance is examined.</p>
+<p>The empirical literature, surveyed in <span class="citation" data-cites="beyer2010">Beyer et al. (<a href="../references.html#ref-beyer2010" role="doc-biblioref">2010</a>)</span>, documents that firms that issue management forecasts have lower bid-ask spreads, higher analyst following, and lower implied costs of equity capital than otherwise comparable firms that do not. The average forecast is approximately unbiased and is more accurate than the analyst consensus for the same period, consistent with managers communicating private information through the disclosure choice.</p>
+</section>
+<section id="voluntary-segment-disclosure" class="level3">
+<h3 class="anchored" data-anchor-id="voluntary-segment-disclosure">Voluntary segment disclosure</h3>
+<p>The Amazon AWS disclosure is the canonical example. U.S. GAAP under ASC 280 requires segment disclosure only to the extent that the chief operating decision maker (i.e., the senior executive who allocates capital across the firm’s business units) views the segments as discrete reporting units. The reporting boundary is, in important respects, at management’s discretion. A firm that disaggregates a high-margin, high-growth segment from a lower-margin parent reveals favorable private information; a firm that keeps the segment buried in “Other” pools with the parent. Amazon, in keeping AWS bundled from 2006 to 2015, was pooling. The 2015 unbundling was, in effect, a Verrecchia-style threshold disclosure: when the segment’s economics became favorable enough that the price-impact gain exceeded the proprietary cost of revealing growth and margin information to competitors (Microsoft, Google, IBM), Amazon disclosed.</p>
+<p>The proprietary-cost dimension is not academic. After the 2015 disclosure, competitors invested aggressively in cloud-computing infrastructure, and AWS faced sharper competition from Microsoft Azure and Google Cloud Platform than it had during the bundled period. The disclosure cost was real; Amazon paid it because the price-impact gain was larger.</p>
+</section>
+<section id="dividend-signaling" class="level3">
+<h3 class="anchored" data-anchor-id="dividend-signaling">Dividend signaling</h3>
+<p>A firm that initiates or raises its dividend commits to a recurring cash outflow. Cutting the dividend in a subsequent period imposes substantial reputational and price costs — the empirical literature documents announcement returns of negative five to ten percent on dividend cuts. Initiating or raising a dividend is therefore costly to a manager whose private information about future cash flows is unfavorable, because she is committing to outflows she may not be able to sustain. The single-crossing property holds, and dividend changes have been argued to function as signals at least since <span class="citation" data-cites="bhattacharya1979">Bhattacharya (<a href="../references.html#ref-bhattacharya1979" role="doc-biblioref">1979</a>)</span> and <span class="citation" data-cites="millerrock1985">Miller and Rock (<a href="../references.html#ref-millerrock1985" role="doc-biblioref">1985</a>)</span>, both of whom model dividend commitments as costly information transfer about future earnings.</p>
+<p>Empirically, dividend initiations and increases are associated with positive announcement returns; dividend cuts and omissions are associated with negative announcement returns. The signaling interpretation is one of several candidates — free-cash-flow disgorgement and tax-clientele effects are alternatives — but the qualitative pattern is consistent with the framework.</p>
+</section>
+</section>
+<section id="accruals-as-a-signal" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="accruals-as-a-signal"><span class="header-section-number">3.5</span> Accruals as a signal</h2>
+<p>The signaling framework provides a useful interpretation of one of the most contested elements of financial accounting: the <em>accruals</em> (i.e., the non-cash components of earnings that distinguish accrual-basis income from operating cash flow). Under accrual accounting, the firm recognizes revenues when they are earned (which need not coincide with cash collection) and expenses when they are incurred (which need not coincide with cash payment). The wedge between accrual income and operating cash flow is <em>total accruals</em>, and it embeds the manager’s projections about the timing and ultimate realization of the firm’s economic activity.</p>
+<p>Consider a software company that signs a three-year service contract on January 1 and collects the full three-year fee in cash on the day of signing. Under cash-basis accounting, the firm would report a large positive cash inflow on January 1 and zero revenue thereafter. Under accrual-basis accounting, the firm would record the cash receipt as a liability (deferred revenue) on January 1 and recognize revenue ratably over the three-year service period. The accrual treatment moves the timing of revenue recognition away from the timing of cash and toward the timing of the underlying economic performance.</p>
+<p>Each accrual estimate is the manager’s projection of an unobservable quantity: when is the service “earned,” what fraction of the contract has been performed at any given balance-sheet date, what portion of the receivable is collectible, what portion of the inventory remains saleable. Each projection embeds the manager’s private information about the firm’s prospects, and each is, in principle, a signal.</p>
+<p>A manager who believes future cash flows will be strong has an incentive to recognize revenue earlier and at higher amounts. A manager who believes future cash flows will be weak has an incentive to defer. Investors observing the accrual choices learn something about what the manager believes that the cash flow statement, by itself, would not have communicated.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+A subtle point
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The accrual choice is a signal in two senses. First, the <em>amount</em> of accruals is informative — high accruals relative to cash flows convey one kind of information, low accruals another. Second, the <em>consistency</em> of accrual choices over time is informative — a firm whose accrual estimates are systematically validated by subsequent cash collections is sending a different signal from a firm whose estimates are systematically reversed. The accrual quality literature, which we will examine in Chapter 7, takes this consistency dimension as a primary object of study.</p>
+</div>
+</div>
+<p>A complication runs alongside this story. Because accruals embed the manager’s private information, they also create the opportunity for <em>manipulation</em>. A manager who would benefit from reporting higher earnings has the means at her disposal to do so by adjusting accrual estimates upward; a manager who would benefit from reporting lower earnings can adjust them downward. The earnings-management literature <span class="citation" data-cites="healy1985 burgstahlerdichev1997 roychowdhury2006">(<a href="../references.html#ref-healy1985" role="doc-biblioref">Healy 1985</a>; <a href="../references.html#ref-burgstahlerdichev1997" role="doc-biblioref">Burgstahler and Dichev 1997</a>; <a href="../references.html#ref-roychowdhury2006" role="doc-biblioref">Roychowdhury 2006</a>)</span>, which we will examine in detail in Chapter 10, takes seriously the possibility that the signaling content of accruals is contaminated by managerial discretion. The empirical question is whether, on average, the signal content dominates the manipulation content. The answer, on most evidence, is yes, but the contamination is real.</p>
+</section>
+<section id="the-institutional-response-voluntary-disclosure-mechanisms" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="the-institutional-response-voluntary-disclosure-mechanisms"><span class="header-section-number">3.6</span> The institutional response: voluntary disclosure mechanisms</h2>
+<p>U.S. public companies make use of a wide variety of voluntary disclosure mechanisms beyond the mandatory floor of the 10-K, the 10-Q, and the 8-K. Four are particularly worth highlighting.</p>
+<p>The first is <em>management earnings forecasts</em>, discussed in Section 3.4. A management forecast is a public announcement, typically issued through a press release or as part of an earnings call, in which the firm provides forward-looking expectations about earnings, revenue, or other key financial metrics. Forecasts are not required by U.S. GAAP or SEC regulation. The decision to issue one is a costly commitment: by publicly anchoring on a number, the manager creates legal and reputational liability if the realization diverges materially.</p>
+<p>The second is the <em>conference call</em> and the broader practice of management–investor dialogue. The quarterly earnings call, in which management discusses results with analysts and answers their questions in real time, is essentially universal among U.S. public companies although it is not legally required. The disclosure that occurs on the call is voluntary in a strong sense: questions are unscripted, answers are extemporaneous, and the procedural safeguards that govern formal SEC filings do not apply with the same force.</p>
+<p>The third is the <em>Management’s Discussion and Analysis</em> (MD&amp;A) section of the 10-K. The MD&amp;A is required by SEC regulation, but its content is largely at management’s discretion. The MD&amp;A is the primary venue through which management explains the period’s results in narrative form, identifies the major drivers of the reported numbers, and provides forward-looking commentary on the firm’s prospects. The level of detail and candor varies enormously across firms; the variation is itself observable and is interpreted by sophisticated readers as a signal.</p>
+<p>The fourth, increasingly important, is <em>voluntary non-financial disclosure</em> — segment disaggregations, sustainability reports, climate-related disclosures, human capital metrics, and the like. Some of this is now mandatory under SEC and international regulation, but a great deal remains voluntary, and firms vary in what they choose to disclose. The framework of this chapter applies: firms with favorable underlying performance on these dimensions have an incentive to disclose; firms with unfavorable performance have an incentive to remain silent; investors learn to read the absence of disclosure as informative.</p>
+</section>
+<section id="mechanics-the-income-statement-and-the-accrual-basis" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="mechanics-the-income-statement-and-the-accrual-basis"><span class="header-section-number">3.7</span> Mechanics: the income statement and the accrual basis</h2>
+<p>The income statement is the canonical accounting representation of the firm’s economic performance over an interval — typically a quarter or a year. Its central organizing identity is, in stylized form:</p>
+<p><span class="math display">\[
+\text{Net Income} = \text{Revenue} - \text{Expenses}.
+\]</span></p>
+<p>The revenue and expense figures aggregate transactions, accruals, and adjusting entries that, taken together, reflect the firm’s economic activity for the period. Net income flows through to the equity section of the balance sheet, increasing retained earnings by the period’s earnings (less any dividends declared). The income statement thus connects two consecutive balance sheets: the change in retained earnings over the interval equals net income for the interval, less any dividends paid.</p>
+<p>Consider, in extension of the Acme Corp.&nbsp;example from Chapter 2, a small set of transactions occurring during the firm’s first month of operations.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Transaction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Jan 5</td>
+<td>Acme provides $20{,}000 of services to a customer who pays in cash.</td>
+</tr>
+<tr class="even">
+<td>Jan 10</td>
+<td>Acme provides $30{,}000 of services to a customer on account, payable in 30 days.</td>
+</tr>
+<tr class="odd">
+<td>Jan 15</td>
+<td>Acme pays $8{,}000 in wages to its employees for the month so far.</td>
+</tr>
+<tr class="even">
+<td>Jan 20</td>
+<td>Acme pays $6{,}000 for one year of insurance coverage beginning January 1.</td>
+</tr>
+<tr class="odd">
+<td>Jan 31</td>
+<td>Acme owes its employees $4{,}000 in additional wages earned in the second half of January but not yet paid.</td>
+</tr>
+</tbody>
+</table>
+<p>The income statement and balance sheet for January under the accrual basis would be:</p>
+<p><strong>Income Statement, Month of January</strong></p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>Revenue</td>
+<td>$50,000</td>
+</tr>
+<tr class="even">
+<td>Wage expense</td>
+<td>(12,000)</td>
+</tr>
+<tr class="odd">
+<td>Insurance expense</td>
+<td>(500)</td>
+</tr>
+<tr class="even">
+<td><strong>Net income</strong></td>
+<td><strong>$37,500</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Balance Sheet, January 31</strong> (immediately following the operations above plus the January 1–4 entries from Chapter 2)</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Assets</strong></th>
+<th></th>
+<th><strong>Liabilities and Equity</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cash</td>
+<td>$109,000</td>
+<td>Note payable</td>
+<td>$50,000</td>
+</tr>
+<tr class="even">
+<td>Accounts receivable</td>
+<td>$30,000</td>
+<td>Wages payable</td>
+<td>$4,000</td>
+</tr>
+<tr class="odd">
+<td>Prepaid insurance</td>
+<td>$5,500</td>
+<td>Common stock</td>
+<td>$100,000</td>
+</tr>
+<tr class="even">
+<td>Truck</td>
+<td>$50,000</td>
+<td>Retained earnings</td>
+<td>$40,500</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>$194,500</strong></td>
+<td><strong>Total</strong></td>
+<td><strong>$194,500</strong></td>
+</tr>
+</tbody>
+</table>
+<p>(The retained-earnings figure reflects the $37{,}500 in January net income plus a $3{,}000 adjustment from a transaction not introduced in the table; it appears here for arithmetic completeness. The simpler example in Chapter 2 had no operating activity and zero retained earnings.)</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Common pitfall
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A common stumbling block on first encounter with the income statement is the timing question: when is revenue “earned” if it does not coincide with cash collection? The answer in U.S. GAAP, codified in ASC 606, is governed by a five-step model that asks (i) what contract exists, (ii) what performance obligations the contract contains, (iii) what the transaction price is, (iv) how the transaction price is allocated across the obligations, and (v) when each obligation is satisfied. We will return to the five-step model in Chapter 6, where it is the core mechanic of the discussion of revenue recognition.</p>
+</div>
+</div>
+<p>The accrual basis differs from the cash basis in two specific ways visible in the example. First, on January 10 Acme recognizes $30{,}000 of revenue even though no cash has been collected; the cash collection occurs in February but the economic activity — the rendering of services — occurred in January. Second, on January 20 Acme pays $6{,}000 in cash for insurance but recognizes only $500 of insurance expense for January; the remaining $5{,}500 sits on the balance sheet as a prepaid asset, to be expensed over the eleven remaining months of coverage.</p>
+<p>The consequence is that net income and operating cash flow can differ — sometimes substantially — for any given period. The wedge between them is exactly the total accruals discussed in Section 3.5. The income statement reports the manager’s view of economic activity; the statement of cash flows reports the verifiable cash record. Both are required precisely because each contains information the other suppresses: the income statement contains the manager’s signal, the cash flow statement contains the verifiable check. We return to whether investors price the wedge correctly in Chapter 7.</p>
+</section>
+<section id="empirical-evidence" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="empirical-evidence"><span class="header-section-number">3.8</span> Empirical evidence</h2>
+<p>The empirical literature on voluntary disclosure is large. <span class="citation" data-cites="beyer2010">Beyer et al. (<a href="../references.html#ref-beyer2010" role="doc-biblioref">2010</a>)</span> provides a useful survey, building on the earlier review by <span class="citation" data-cites="healypalepu2001">Healy and Palepu (<a href="../references.html#ref-healypalepu2001" role="doc-biblioref">2001</a>)</span>. Three findings are particularly relevant to the framework of this chapter.</p>
+<p>The first finding concerns the relationship between voluntary disclosure and the cost of capital. Firms that issue management earnings forecasts, hold conference calls, and provide expansive MD&amp;A discussion have, on average, narrower bid-ask spreads, higher analyst following, and lower implied costs of equity capital than otherwise comparable firms with sparser voluntary disclosure. The estimated magnitudes are modest but consistent across studies; a typical estimate places the effect on the cost of equity at twenty to fifty basis points. The interpretation is that voluntary disclosure reduces the adverse-selection premium investors demand, consistent with the lemons argument of Chapter 2.</p>
+<p>The second finding concerns the <em>content</em> of voluntary disclosures relative to managers’ private information. Studies of management forecasts document that the average forecast is approximately unbiased and that forecasts are systematically more accurate than analyst consensus forecasts of the same period <span class="citation" data-cites="beyer2010">(<a href="../references.html#ref-beyer2010" role="doc-biblioref">Beyer et al. 2010</a>, who reviews the relevant evidence)</span>. Studies of disclosure tone — the fraction of optimistic and pessimistic words in the MD&amp;A, conference calls, and press releases — document that tone is informative about future cash flows even after controlling for the underlying numerical disclosures. Both findings are consistent with the signaling story: managers communicate their private information through the disclosure choices they make, and the market learns to read the disclosure for content.</p>
+<p>The third finding concerns the <em>unraveling</em> dynamic itself. The empirical literature has documented that bad news is, on average, disclosed more slowly than good news — an asymmetry consistent with the Verrecchia and Dye predictions and confirmed in studies of management forecasts, restatements, and disclosure of negative events <span class="citation" data-cites="beyer2010">(<a href="../references.html#ref-beyer2010" role="doc-biblioref">Beyer et al. 2010</a>)</span>. Firms with stronger governance and more sophisticated analyst followings tend to disclose more rapidly, suggesting that the partial-unraveling equilibrium is sensitive to the institutional context.</p>
+<p>The literature does not, of course, claim that voluntary disclosure is always informative or always efficient. A substantial side literature on <em>strategic disclosure</em> documents that managers can and do use voluntary disclosure to manipulate investor expectations, to shape the timing of price reactions, and to advance personal incentives that diverge from firm value. The signaling framework is the right starting point, but it is not the whole story; the strategic-manipulation literature complements it and we return to that material in Chapter 10.</p>
+</section>
+<section id="key-takeaways" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">3.9</span> Key takeaways</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key takeaways
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Signaling is the supply-side response to adverse selection.</strong> Chapter 2 explained why investors demand disclosure; this chapter explains why managers supply it, sometimes at substantial private cost.</li>
+<li><strong>Single-crossing is the engine of separation.</strong> A signal is credible only when the marginal cost of producing it is lower for the type the receiver wants to identify; otherwise the low type imitates and separation collapses.</li>
+<li><strong>The unraveling result has two faces.</strong> Akerlof’s demand-side unraveling collapses trade; Grossman–Milgrom’s supply-side unraveling collapses silence. The two results share the logic that rational agents update against the party they cannot observe.</li>
+<li><strong>Real disclosure is partial unraveling.</strong> Proprietary costs (Verrecchia) and uncertainty about whether the manager has information (Dye) keep the silent pool from emptying entirely, producing a threshold equilibrium consistent with what we observe in practice.</li>
+<li><strong>Accruals are a signal.</strong> The wedge between accrual income and operating cash flow embeds the manager’s private information about the firm’s prospects, which is why the income statement and the cash flow statement are both required.</li>
+<li><strong>Signals can be contaminated.</strong> Because accrual estimates are discretionary, the signaling content of earnings can be manipulated; whether the signal dominates the manipulation is an empirical question taken up in Chapter 10.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="discussion-questions" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="discussion-questions"><span class="header-section-number">3.10</span> Discussion questions</h2>
+<ol type="1">
+<li>Amazon disclosed AWS segment results in 2015 and was rewarded with a substantial price increase. Why did the disclosure produce a fifteen-percent jump when, in principle, the same information was already implicit in Amazon’s consolidated financial statements? What does this tell us about the cost–benefit trade-off of segment-level disclosure?</li>
+<li>The Spence model predicts that high types signal and low types do not. The Verrecchia threshold model predicts that types above a threshold disclose and types below pool at silence. Reconcile the two — when would we expect a Spence-style separating equilibrium, and when would we expect a Verrecchia-style threshold equilibrium?</li>
+<li>Conservative accounting practices — for example, expensing research and development costs in the period incurred rather than capitalizing them — are sometimes characterized as “signaling integrity”: the firm leaves information on the table to demonstrate it is not trying to inflate the numbers. Is this argument coherent within the signaling framework of this chapter?</li>
+<li>The income statement under U.S. GAAP follows accrual accounting; the cash flow statement follows cash accounting. Both are required disclosures. Explain, using the framework of this chapter, why we need both rather than one or the other.</li>
+<li>A firm announces that, going forward, it will no longer provide quarterly earnings guidance. What signal does the announcement send to investors? Under what circumstances might this be the optimal policy for the firm?</li>
+</ol>
+</section>
+<section id="problems" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="problems"><span class="header-section-number">3.11</span> Problems</h2>
+<section id="mechanical-problems" class="level3">
+<h3 class="anchored" data-anchor-id="mechanical-problems">Mechanical problems</h3>
+<ol type="1">
+<li><em>(Single-crossing and the separating equilibrium.)</em> Two types of workers, <span class="math inline">\(H\)</span> and <span class="math inline">\(L\)</span>, exist in equal proportion. Type-<span class="math inline">\(H\)</span> productivity is <span class="math inline">\(w_H = 120\)</span> and type-<span class="math inline">\(L\)</span> productivity is <span class="math inline">\(w_L = 80\)</span>. The cost of acquiring <span class="math inline">\(e\)</span> units of education is <span class="math inline">\(c_H(e) = e\)</span> for high types and <span class="math inline">\(c_L(e) = 3e\)</span> for low types. (a) Confirm that the single-crossing property holds. (b) Find the range of <span class="math inline">\(e^*\)</span> for which a separating equilibrium exists. (c) Identify the least-cost separating equilibrium. (d) Compute the net payoffs of each type in the least-cost separating equilibrium and compare to the pooling outcome.</li>
+<li><em>(Signaling with auditing.)</em> High-quality firms are worth $200 to investors; low-quality firms are worth $100. The two types exist in equal proportion. A firm can issue an audited management forecast at a cost <span class="math inline">\(c\)</span> that credibly reveals its type. (a) If <span class="math inline">\(c = 0\)</span> for both types, what is the equilibrium? (b) If <span class="math inline">\(c = 30\)</span> for both types, is there a separating equilibrium? Justify with the incentive constraints. (c) Now suppose the cost is <span class="math inline">\(c_H = 5\)</span> for high types and <span class="math inline">\(c_L = 60\)</span> for low types. Compute the high-type and low-type payoffs in the separating equilibrium and confirm both incentive constraints hold. (d) What value of <span class="math inline">\(c_L\)</span>, holding <span class="math inline">\(c_H = 5\)</span> fixed, makes the low type exactly indifferent between disclosing and pooling?</li>
+<li><em>(Verrecchia threshold.)</em> Manager type <span class="math inline">\(v\)</span> is uniformly distributed on <span class="math inline">\([0, 1]\)</span>. Investors who observe silence price the firm at <span class="math inline">\(E[v \mid v &lt; \theta^*]\)</span>. Disclosure has a fixed proprietary cost <span class="math inline">\(c = 0.05\)</span>. The marginal type <span class="math inline">\(\theta^*\)</span> satisfies <span class="math inline">\(\theta^* - E[v \mid v &lt; \theta^*] = c\)</span>. (a) Compute the threshold <span class="math inline">\(\theta^*\)</span>. (b) What fraction of managers disclose? (c) How does <span class="math inline">\(\theta^*\)</span> change if <span class="math inline">\(c\)</span> rises to <span class="math inline">\(0.10\)</span>? Explain the comparative statics in one sentence.</li>
+<li><em>(Accrual-basis income statement.)</em> Continue the Acme Corp.&nbsp;example from Section 3.7 into a second month. In February: Acme collects the $30{,}000 receivable from January 10; provides $25{,}000 in additional services on account; pays $13{,}000 in wages (covering the $4{,}000 owed from January and $9{,}000 for February labor); and on February 28, Acme owes its employees $5{,}000 in additional wages earned but not paid. Construct the February income statement, the February 28 balance sheet, and a reconciliation between accrual net income and operating cash flow for the month.</li>
+</ol>
+</section>
+<section id="conceptual-problems" class="level3">
+<h3 class="anchored" data-anchor-id="conceptual-problems">Conceptual problems</h3>
+<ol start="5" type="1">
+<li><em>(Applying unraveling to a new setting.)</em> Consider the market for executive labor. Candidates for CEO positions know their own quality; boards do not. Suppose candidates can voluntarily release a detailed track record from prior positions, including specific performance metrics and references. Using the Grossman–Milgrom logic, argue whether the market should unravel to full disclosure. Identify two frictions that, in practice, prevent full unraveling. Be specific about which assumption of the full-disclosure model each friction violates.</li>
+<li><em>(Voluntary disclosure with proprietary costs.)</em> A pharmaceutical firm is conducting Phase II clinical trials of a new drug. Interim results are known to the firm but not yet required to be publicly disclosed. Discuss the disclosure decision through the lens of the Verrecchia model. What is the private benefit of disclosure? What is the proprietary cost? Under what circumstances would the firm voluntarily disclose interim results? Under what circumstances would the firm remain silent?</li>
+<li><em>(Reading the absence of disclosure.)</em> Two firms in the same industry release their annual reports on the same day. Firm A includes a detailed segment breakdown showing the operating margins of each of its three business lines. Firm B reports only consolidated results and states that “the company operates as a single integrated business.” Using the framework of this chapter, what would a sophisticated investor infer from the contrast? What additional information would the investor want before drawing a strong conclusion?</li>
+</ol>
+</section>
+<section id="short-writing-exercise" class="level3">
+<h3 class="anchored" data-anchor-id="short-writing-exercise">Short writing exercise</h3>
+<ol start="8" type="1">
+<li><em>(Short writing exercise, ~400 words.)</em> Choose a U.S. public company. Identify one specific voluntary disclosure the company makes that is not required by U.S. GAAP or SEC regulation — a management forecast, a non-GAAP metric, a sustainability report, an investor day presentation, segment disaggregation beyond ASC 280 minimums, or any other example you can document. In approximately 400 words, argue why the company makes this disclosure using the framework of this chapter. Be specific about (i) what private information the disclosure conveys, (ii) what the cost of the disclosure is (including proprietary costs to competitors, legal exposure, and preparation costs), (iii) what the company gains from making it, and (iv) whether the disclosure is consistent with a Spence-style separating equilibrium, a Verrecchia-style threshold equilibrium, or a Grossman–Milgrom-style full-unraveling equilibrium.</li>
+</ol>
+</section>
+</section>
+<section id="lab" class="level2" data-number="3.12">
+<h2 data-number="3.12" class="anchored" data-anchor-id="lab"><span class="header-section-number">3.12</span> Lab</h2>
+<p>The in-class activity for this week is the <strong>Campus Curb FSET activity</strong> (<code>activities/Campus Curb*</code>), in which you will use the financial statement effects template to record a sequence of transactions for a small startup and observe how the income statement, balance sheet, and statement of cash flows interact. The activity makes the signaling content of accruals concrete: as you record the transactions, you will see the wedge between cash flow and accrual income emerge in real time, and you will be asked to reflect on what an external investor would learn from the resulting statements.</p>
+<p>The activity is graded as part of participation. Bring your laptop and a copy of the FSET template to the second class meeting this week.</p>
+</section>
+<section id="further-reading" class="level2" data-number="3.13">
+<h2 data-number="3.13" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">3.13</span> Further reading</h2>
+<p>The four readings below are the assigned readings for Week 3. You should read all of them.</p>
+<ul>
+<li><span class="citation" data-cites="spence1973">Spence (<a href="../references.html#ref-spence1973" role="doc-biblioref">1973</a>)</span>, “Job Market Signaling.” A short paper. Read for the central argument and the structure of the separating equilibrium; the formal apparatus can be skimmed on a first pass.</li>
+<li><span class="citation" data-cites="verrecchia1983">Verrecchia (<a href="../references.html#ref-verrecchia1983" role="doc-biblioref">1983</a>)</span>, “Discretionary Disclosure.” Read for the threshold result and the comparative statics on the disclosure cost.</li>
+<li><span class="citation" data-cites="dye1985">Dye (<a href="../references.html#ref-dye1985" role="doc-biblioref">1985</a>)</span>, “Disclosure of Nonproprietary Information.” Read for the contrast with Verrecchia (1983) and for the role of investor uncertainty about whether the manager has information.</li>
+<li><span class="citation" data-cites="coffee1984">Coffee (<a href="../references.html#ref-coffee1984" role="doc-biblioref">1984</a>)</span>, “Market Failure and the Economic Case for a Mandatory Disclosure System.” A legal-economic paper that frames the disclosure problem as a market failure and discusses the case for mandatory regulation. Read for the framework and the argument; the legal citations can be skimmed.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Connecting Chapter 3 to the rest of the course
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Chapter 3 closes the supply side of disclosure: we now have a framework for both why investors demand disclosure (Chapter 2) and why and how managers supply it (Chapter 3). Chapter 4 turns to the second of the two foundational information-economics problems — moral hazard — and develops the principal-agent model that has structured much of the contracting literature in accounting. The signaling framework introduced here will return in Chapter 10, where we examine earnings management as a contaminated form of the signal, and again in Chapter 12, where we examine performance measures as signals about managerial effort.</p>
+</div>
+</div>
+
+
+<!-- -->
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-akerlof1970" class="csl-entry" role="listitem">
+Akerlof, George A. 1970. <span>“The Market for <span>‘Lemons’</span>: Quality Uncertainty and the Market Mechanism.”</span> <em>Quarterly Journal of Economics</em> 84 (3): 488–500.
+</div>
+<div id="ref-allenfaulhaber1989" class="csl-entry" role="listitem">
+Allen, Franklin, and Gerald R. Faulhaber. 1989. <span>“Signalling by Underpricing in the <span>IPO</span> Market.”</span> <em>Journal of Financial Economics</em> 23 (2): 303–23.
+</div>
+<div id="ref-beyer2010" class="csl-entry" role="listitem">
+Beyer, Anne, Daniel A. Cohen, Thomas Z. Lys, and Beverly R. Walther. 2010. <span>“The Financial Reporting Environment: Review of the Recent Literature.”</span> <em>Journal of Accounting and Economics</em> 50 (2–3): 296–343.
+</div>
+<div id="ref-bhattacharya1979" class="csl-entry" role="listitem">
+Bhattacharya, Sudipto. 1979. <span>“Imperfect Information, Dividend Policy, and <span>‘the Bird in the Hand’</span> Fallacy.”</span> <em>Bell Journal of Economics</em> 10 (1): 259–70.
+</div>
+<div id="ref-burgstahlerdichev1997" class="csl-entry" role="listitem">
+Burgstahler, David, and Ilia Dichev. 1997. <span>“Earnings Management to Avoid Earnings Decreases and Losses.”</span> <em>Journal of Accounting and Economics</em> 24 (1): 99–126.
+</div>
+<div id="ref-coffee1984" class="csl-entry" role="listitem">
+Coffee, John C., Jr. 1984. <span>“Market Failure and the Economic Case for a Mandatory Disclosure System.”</span> <em>Virginia Law Review</em> 70 (4): 717–53.
+</div>
+<div id="ref-dye1985" class="csl-entry" role="listitem">
+Dye, Ronald A. 1985. <span>“Disclosure of Nonproprietary Information.”</span> <em>Journal of Accounting Research</em> 23 (1): 123–45.
+</div>
+<div id="ref-grinblatthwang1989" class="csl-entry" role="listitem">
+Grinblatt, Mark, and Chuan-Yang Hwang. 1989. <span>“Signalling and the Pricing of New Issues.”</span> <em>Journal of Finance</em> 44 (2): 393–420. <a href="https://doi.org/10.1111/j.1540-6261.1989.tb05063.x">https://doi.org/10.1111/j.1540-6261.1989.tb05063.x</a>.
+</div>
+<div id="ref-grossman1981" class="csl-entry" role="listitem">
+Grossman, Sanford J. 1981. <span>“The Informational Role of Warranties and Private Disclosure about Product Quality.”</span> <em>Journal of Law and Economics</em> 24 (3): 461–83.
+</div>
+<div id="ref-healy1985" class="csl-entry" role="listitem">
+Healy, Paul M. 1985. <span>“The Effect of Bonus Schemes on Accounting Decisions.”</span> <em>Journal of Accounting and Economics</em> 7 (1–3): 85–107.
+</div>
+<div id="ref-healypalepu2001" class="csl-entry" role="listitem">
+Healy, Paul M., and Krishna G. Palepu. 2001. <span>“Information Asymmetry, Corporate Disclosure, and the Capital Markets: A Review of the Empirical Disclosure Literature.”</span> <em>Journal of Accounting and Economics</em> 31 (1–3): 405–40.
+</div>
+<div id="ref-milgrom1981" class="csl-entry" role="listitem">
+Milgrom, Paul R. 1981. <span>“Good News and Bad News: Representation Theorems and Applications.”</span> <em>Bell Journal of Economics</em> 12 (2): 380–91.
+</div>
+<div id="ref-millerrock1985" class="csl-entry" role="listitem">
+Miller, Merton H., and Kevin Rock. 1985. <span>“Dividend Policy Under Asymmetric Information.”</span> <em>Journal of Finance</em> 40 (4): 1031–51.
+</div>
+<div id="ref-rock1986" class="csl-entry" role="listitem">
+Rock, Kevin. 1986. <span>“Why New Issues Are Underpriced.”</span> <em>Journal of Financial Economics</em> 15 (1–2): 187–212.
+</div>
+<div id="ref-roychowdhury2006" class="csl-entry" role="listitem">
+Roychowdhury, Sugata. 2006. <span>“Earnings Management Through Real Activities Manipulation.”</span> <em>Journal of Accounting and Economics</em> 42 (3): 335–70.
+</div>
+<div id="ref-spence1973" class="csl-entry" role="listitem">
+Spence, A. Michael. 1973. <span>“Job Market Signaling.”</span> <em>Quarterly Journal of Economics</em> 87 (3): 355–74.
+</div>
+<div id="ref-verrecchia1983" class="csl-entry" role="listitem">
+Verrecchia, Robert E. 1983. <span>“Discretionary Disclosure.”</span> <em>Journal of Accounting and Economics</em> 5: 179–94.
+</div>
+<div id="ref-welch1989" class="csl-entry" role="listitem">
+Welch, Ivo. 1989. <span>“Seasoned Offerings, Imitation Costs, and the Underpricing of Initial Public Offerings.”</span> <em>Journal of Finance</em> 44 (2): 421–49.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/acctg211h\.psu\.edu\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../arc1-information/02-lemons.html" class="pagination-link" aria-label="The Lemons Problem">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Lemons Problem</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../arc1-information/04-stewardship.html" class="pagination-link" aria-label="Stewardship and Moral Hazard">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stewardship and Moral Hazard</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Voluntary disclosure as a costly signal. The income statement and the signaling content of accruals."</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># Signaling and the Income Statement {#sec-signaling}</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Opening question</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>In April 2015, Amazon disclosed for the first time the operating results of its cloud-computing business, Amazon Web Services. AWS had been operating since 2006, but for nine years its revenue and operating income had been bundled into Amazon's "Other" segment alongside a miscellany of smaller businesses. The Q1 2015 earnings release revealed that AWS was, on its own, a five-billion-dollar annual revenue business growing at forty-nine percent year-over-year, with operating margins of approximately seventeen percent. Amazon's stock price gained roughly fifteen percent over the next two trading days. Equity analysts spent the following weeks revaluing AWS as a stand-alone business and, by extension, the rest of Amazon at substantially higher levels.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>The Amazon disclosure raises a question Chapter 2 left open. The lemons argument of @akerlof1970, who showed that asymmetric information about quality can collapse a market entirely, explained why investors will demand a discount in markets where issuers know more than they do. It also explained why mandatory disclosure can reduce that discount. But the AWS disclosure was not mandatory. The Financial Accounting Standards Board (i.e., the private body that writes U.S. GAAP) does not require segment-level disclosure at the granularity Amazon provided in 2015. Amazon disclosed because Amazon chose to. Why?</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>This chapter develops the framework for thinking about *voluntary* disclosure. The mandatory regime sets a floor. Almost every U.S. public company chooses to clear that floor by a wide margin, releasing management earnings forecasts, conference calls with analysts, expansive Management's Discussion and Analysis sections, segment disaggregations, sustainability reports, and investor day presentations. The economic logic was sharpened by @spence1973, who modeled costly education as a credible signal of worker productivity, and adapted to the accounting setting by @verrecchia1983, who showed that managers with sufficiently favorable private information voluntarily disclose, and by @dye1985, who showed that the unraveling is partial when investors are uncertain whether the manager has any information at all. The argument, in shortest form, is that voluntary disclosure is a *costly signal*: a disclosure is informative precisely because it is costly, and the cost is what discourages low-quality issuers from imitating high-quality ones.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Chapter 2 also left a structural gap. The balance sheet, introduced there, is a credibly verifiable summary of the firm's *stocks* at a point in time. It does not, by itself, tell investors what the firm did between two balance-sheet dates. This chapter introduces the income statement as the structure through which the firm reports its economic *performance* over an interval — and, more subtly, as the structure through which the manager communicates her private information about the firm's prospects via the choice of accrual estimates. The mechanics are introduced here at the level needed to support the framework of this chapter; the deeper measurement issues will be revisited in Arc II.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Spence setup</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Spence's model is the canonical reference for *signaling* (i.e., a costly action a more-informed party takes to credibly reveal her type to a less-informed party). Consider, in the spirit of @spence1973, a labor market with two worker types — high productivity ($H$) and low productivity ($L$) — and a population of risk-neutral employers who cannot observe a worker's type. Let the employer's productivity from a type-$H$ worker be $w_H$ and from a type-$L$ worker be $w_L$, with $w_H &gt; w_L$. Let the share of high types in the population be $\lambda$.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Under symmetric information, each type is paid her marginal product. Under asymmetric information with no signal available, the employer offers a single wage equal to the population's expected productivity, $\lambda w_H + (1 - \lambda) w_L$. This is the *pooling equilibrium* (i.e., the equilibrium in which both types receive the same contract because the employer cannot tell them apart). High types are undercompensated; low types are overcompensated. The market sets a single price, and the gain from sorting workers to wages is lost.</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>A *signal* is an observable action a worker can take before applying for a job. Let workers acquire education in some quantity $e \geq 0$ at a personal cost $c_H(e)$ for high types and $c_L(e)$ for low types. The substantive assumption is that high types find education less costly at every margin:</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>c_L'(e) &gt; c_H'(e) \quad \text{for all } e \geq 0.</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>This is the *single-crossing property* (i.e., the indifference curves of the two types cross exactly once in education–wage space). It is the heart of the Spence argument and worth dwelling on. The property does not require education to be cheap for $H$ in absolute terms; it requires only that *each additional unit* of education costs the low type more than it costs the high type. Whatever the source of the differential cost — greater academic aptitude, lower opportunity cost of time, higher tolerance for tedious coursework — the marginal cost is lower for the type the employer wants to identify.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">### A concrete numerical example</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>Suppose $w_H = 100$, $w_L = 60$, $c_H(e) = e$, and $c_L(e) = 2e$. Employers offer wage $w_H$ to any worker with education $\geq e^*$ and wage $w_L$ otherwise. A *separating equilibrium* (i.e., one in which the two types take different actions and are correctly identified) requires that (i) high types prefer to acquire $e^*$ rather than zero, and (ii) low types prefer to acquire zero rather than $e^*$. Algebraically:</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>\underbrace{w_H - c_H(e^*)}_{\text{H's payoff from signaling}} \geq \underbrace{w_L - c_H(0)}_{\text{H's payoff from pooling at } w_L},</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>\qquad</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>\underbrace{w_L - c_L(0)}_{\text{L's payoff from pooling}} \geq \underbrace{w_H - c_L(e^*)}_{\text{L's payoff from mimicking}}.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>Substituting, the first condition gives $100 - e^* \geq 60$, or $e^* \leq 40$. The second condition gives $60 \geq 100 - 2 e^*$, or $e^* \geq 20$. Any $e^* \in [20, 40]$ supports a separating equilibrium. The smallest such $e^*$ is the *least-cost separating equilibrium*, at $e^* = 20$. At that signal level, the high type's net payoff is $100 - 20 = 80$ and the low type's net payoff is $60 - 0 = 60$, both above what they would receive under pooling at the population average.</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>Two features of this calculation recur throughout the disclosure literature. First, the signal is *wasteful in absolute terms*: the education itself is assumed to be unproductive, yet $20$ units are acquired in equilibrium. The signal is socially costly but privately rational, because the alternative — pooling — is worse for the high type. Second, the signal level is pinned down by the *low type's incentive constraint*, not the high type's. Low types must find imitation unprofitable, and that condition determines how much signaling the high type must do.</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="fu">## Single-crossing in one sentence</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>For a costly action to credibly reveal type, the marginal cost of the action must be lower for the type the receiver wants to identify; otherwise the low type would imitate the high type and the separating equilibrium would collapse.</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>The Spence model is stylized in a number of respects. The strict separating equilibrium it predicts is robust only under specific assumptions about cost structure and information sets; richer models permit pooling equilibria, partially separating equilibria, and noisy signals. The deeper point, however, is robust: when one party knows more than another, the more-informed party may incur costly actions whose function is to credibly convey that information, and those actions can move the market away from the pooling outcome that asymmetric information would otherwise produce.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="fu">## The unraveling result and the Verrecchia threshold</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>The Spence model takes the cost differential as primitive. The disclosure literature pushes one step further by asking whether, when the firm can simply *reveal* its private information at zero cost, asymmetric information unravels on the supply side without any need for a costly signal at all.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="fu">### Full unraveling: Grossman and Milgrom</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Consider a manager who has observed a value $v$ drawn from a known distribution on $<span class="co">[</span><span class="ot">0, 1</span><span class="co">]</span>$ and who can choose to disclose $v$ truthfully and costlessly, or to remain silent. Investors are rational and price the firm at the expected value conditional on what they observe. Suppose investors initially believe $v$ is uniformly distributed. The argument runs as follows. The highest type, $v = 1$, strictly prefers to disclose; silence would pool him with everyone else at $E<span class="co">[</span><span class="ot">v</span><span class="co">]</span> = 1/2$. Anticipating this, investors who observe silence rationally update: silence cannot have come from $v = 1$, so the silent pool is now drawn from $[0, 1)$ with mean approximately $1/2$ still. But then the highest *remaining* type, just below $1$, has the same incentive to disclose. Iterating, the silent pool shrinks toward the bottom of the distribution, and in the limit *every* type discloses except possibly $v = 0$.</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>This is the *full-disclosure result*, due independently to @grossman1981 and @milgrom1981. It is striking because it is the supply-side counterpart to Akerlof's demand-side unraveling. In Akerlof, the buyer's rational discounting unravels the market by driving out high-quality sellers. In Grossman–Milgrom, the seller's incentive to separate unravels the silence by driving out high-quality non-disclosers. The two results share a common logic: when one side of the market cannot distinguish types, the equilibrium pressure runs toward separation, and silence becomes informative whether or not the silent party intends it to be.</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="fu">## A useful contrast</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>Chapter 2's unraveling collapses *trade*: with asymmetric information, the market clears at $p = 0$ and no transactions occur. This chapter's unraveling collapses *silence*: with rational investors and costless disclosure, every type above the bottom discloses, and silence becomes a perfect signal of the worst type. The two results are mirror images. Both rest on the same insight: rational agents update against the party they cannot observe.</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="fu">### Partial unraveling: the Verrecchia threshold</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>Full unraveling is a knife-edge prediction. It requires that disclosure be costless, that investors know the manager has information, and that disclosed information be costlessly verifiable. Relax any of these and the unraveling becomes partial.</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>@verrecchia1983 introduced a fixed *proprietary cost* $c &gt; 0$ of disclosure — for example, the cost of revealing competitively sensitive information that rivals will exploit, or the cost of preparing and auditing the disclosure itself. The manager discloses if and only if the price-impact gain from disclosure exceeds $c$. The equilibrium is characterized by a *threshold* $\theta^*$: managers with $v \geq \theta^*$ disclose; managers with $v &lt; \theta^*$ stay silent. Investors who observe silence price the firm at the conditional expectation $E[v \mid v &lt; \theta^*]$, which lies below the unconditional mean. The marginal type is indifferent: the price improvement from being known to be of type $\theta^*$ rather than pooled at $E[v \mid v &lt; \theta^*]$ equals the cost $c$.</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>As $c \to 0$, the threshold $\theta^* \to 0$ and the Verrecchia equilibrium approaches the Grossman–Milgrom full-disclosure outcome. As $c$ rises, $\theta^*$ rises, more types pool at silence, and the disclosure regime degrades toward complete pooling. The Verrecchia model thus nests both the Grossman–Milgrom benchmark and the Akerlof-style pooling outcome as limiting cases.</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>@dye1985 made a second relaxation. In Dye's setup, the manager either has information $v$ or has no information at all, and investors do not know which case applies. The equilibrium continues to feature partial unraveling, but for a different reason: when investors observe silence, they cannot distinguish a manager who has bad information from one who has none, so silence is less damning than in Verrecchia. The Dye assumption is empirically more relevant in many disclosure settings, because the assumption that managers always have information of known precision is implausible.</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>You will recognize this pattern from the Lemons simulation in Chapter 2. The Phase 3 voluntary-disclosure scenario plays out the Verrecchia equilibrium: students who chose to disclose did so for high values of their car's quality, while students with low quality preferred to pool. The synthetic-population summary reported a disclosure rate of approximately ninety-three percent and a clear separation between disclosed and silent average qualities — partial unraveling, observed in real time.</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="fu">## Concrete examples of signaling in capital markets</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>The signaling framework illuminates a number of patterns in real capital markets that are otherwise difficult to rationalize. We consider four.</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="fu">### IPO underpricing as a signal</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>Initial public offerings in the United States are systematically underpriced. The average first-day return on an IPO has been about fifteen to twenty percent over the post-1980 period, meaning the issuer leaves a substantial fraction of the offering proceeds on the table. One signaling explanation, developed by a literature beginning with @allenfaulhaber1989, @grinblatthwang1989, and @welch1989 — each of whom models underpricing as a costly signal whose burden falls most heavily on low-quality issuers — is that high-quality issuers deliberately underprice the offering to signal confidence in the firm's prospects: a firm that expects to return to the equity market in the future can recoup the underpricing on subsequent offerings, while a low-quality issuer that expects to be unmasked before any follow-on offering cannot. The single-crossing property holds because the cost of underpricing — foregone proceeds on the IPO — is recouped only by issuers who realistically expect to issue again, and that expectation is correlated with quality.</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>The signaling interpretation of underpricing is not the only candidate. The asymmetric-information story of @rock1986, in which informed investors crowd out uninformed ones unless the offering is discounted enough to compensate the uninformed for adverse selection, is a different mechanism that operates on the demand side. Both stories are consistent with the observed underpricing, and the empirical literature has had difficulty distinguishing them sharply.</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="fu">### Management earnings guidance</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>A firm that issues a management earnings forecast for the upcoming quarter commits publicly to a number. If the realization falls materially short of the forecast, the firm bears legal exposure (e.g., shareholder securities litigation) and reputational damage (e.g., reduced credibility on future forecasts). Issuing a forecast is therefore costly, and the cost is plausibly higher for managers whose private information is less favorable: a manager who expects to miss has more to lose from committing publicly than a manager who expects to meet or beat. The single-crossing property holds, and the act of issuing guidance is a credible signal even before the content of the guidance is examined.</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>The empirical literature, surveyed in @beyer2010, documents that firms that issue management forecasts have lower bid-ask spreads, higher analyst following, and lower implied costs of equity capital than otherwise comparable firms that do not. The average forecast is approximately unbiased and is more accurate than the analyst consensus for the same period, consistent with managers communicating private information through the disclosure choice.</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="fu">### Voluntary segment disclosure</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>The Amazon AWS disclosure is the canonical example. U.S. GAAP under ASC 280 requires segment disclosure only to the extent that the chief operating decision maker (i.e., the senior executive who allocates capital across the firm's business units) views the segments as discrete reporting units. The reporting boundary is, in important respects, at management's discretion. A firm that disaggregates a high-margin, high-growth segment from a lower-margin parent reveals favorable private information; a firm that keeps the segment buried in "Other" pools with the parent. Amazon, in keeping AWS bundled from 2006 to 2015, was pooling. The 2015 unbundling was, in effect, a Verrecchia-style threshold disclosure: when the segment's economics became favorable enough that the price-impact gain exceeded the proprietary cost of revealing growth and margin information to competitors (Microsoft, Google, IBM), Amazon disclosed.</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>The proprietary-cost dimension is not academic. After the 2015 disclosure, competitors invested aggressively in cloud-computing infrastructure, and AWS faced sharper competition from Microsoft Azure and Google Cloud Platform than it had during the bundled period. The disclosure cost was real; Amazon paid it because the price-impact gain was larger.</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dividend signaling</span></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>A firm that initiates or raises its dividend commits to a recurring cash outflow. Cutting the dividend in a subsequent period imposes substantial reputational and price costs — the empirical literature documents announcement returns of negative five to ten percent on dividend cuts. Initiating or raising a dividend is therefore costly to a manager whose private information about future cash flows is unfavorable, because she is committing to outflows she may not be able to sustain. The single-crossing property holds, and dividend changes have been argued to function as signals at least since @bhattacharya1979 and @millerrock1985, both of whom model dividend commitments as costly information transfer about future earnings.</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>Empirically, dividend initiations and increases are associated with positive announcement returns; dividend cuts and omissions are associated with negative announcement returns. The signaling interpretation is one of several candidates — free-cash-flow disgorgement and tax-clientele effects are alternatives — but the qualitative pattern is consistent with the framework.</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="fu">## Accruals as a signal</span></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>The signaling framework provides a useful interpretation of one of the most contested elements of financial accounting: the *accruals* (i.e., the non-cash components of earnings that distinguish accrual-basis income from operating cash flow). Under accrual accounting, the firm recognizes revenues when they are earned (which need not coincide with cash collection) and expenses when they are incurred (which need not coincide with cash payment). The wedge between accrual income and operating cash flow is *total accruals*, and it embeds the manager's projections about the timing and ultimate realization of the firm's economic activity.</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>Consider a software company that signs a three-year service contract on January 1 and collects the full three-year fee in cash on the day of signing. Under cash-basis accounting, the firm would report a large positive cash inflow on January 1 and zero revenue thereafter. Under accrual-basis accounting, the firm would record the cash receipt as a liability (deferred revenue) on January 1 and recognize revenue ratably over the three-year service period. The accrual treatment moves the timing of revenue recognition away from the timing of cash and toward the timing of the underlying economic performance.</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>Each accrual estimate is the manager's projection of an unobservable quantity: when is the service "earned," what fraction of the contract has been performed at any given balance-sheet date, what portion of the receivable is collectible, what portion of the inventory remains saleable. Each projection embeds the manager's private information about the firm's prospects, and each is, in principle, a signal.</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>A manager who believes future cash flows will be strong has an incentive to recognize revenue earlier and at higher amounts. A manager who believes future cash flows will be weak has an incentive to defer. Investors observing the accrual choices learn something about what the manager believes that the cash flow statement, by itself, would not have communicated.</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="fu">## A subtle point</span></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>The accrual choice is a signal in two senses. First, the *amount* of accruals is informative — high accruals relative to cash flows convey one kind of information, low accruals another. Second, the *consistency* of accrual choices over time is informative — a firm whose accrual estimates are systematically validated by subsequent cash collections is sending a different signal from a firm whose estimates are systematically reversed. The accrual quality literature, which we will examine in Chapter 7, takes this consistency dimension as a primary object of study.</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>A complication runs alongside this story. Because accruals embed the manager's private information, they also create the opportunity for *manipulation*. A manager who would benefit from reporting higher earnings has the means at her disposal to do so by adjusting accrual estimates upward; a manager who would benefit from reporting lower earnings can adjust them downward. The earnings-management literature <span class="co">[</span><span class="ot">@healy1985; @burgstahlerdichev1997; @roychowdhury2006</span><span class="co">]</span>, which we will examine in detail in Chapter 10, takes seriously the possibility that the signaling content of accruals is contaminated by managerial discretion. The empirical question is whether, on average, the signal content dominates the manipulation content. The answer, on most evidence, is yes, but the contamination is real.</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="fu">## The institutional response: voluntary disclosure mechanisms</span></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>U.S. public companies make use of a wide variety of voluntary disclosure mechanisms beyond the mandatory floor of the 10-K, the 10-Q, and the 8-K. Four are particularly worth highlighting.</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>The first is *management earnings forecasts*, discussed in Section 3.4. A management forecast is a public announcement, typically issued through a press release or as part of an earnings call, in which the firm provides forward-looking expectations about earnings, revenue, or other key financial metrics. Forecasts are not required by U.S. GAAP or SEC regulation. The decision to issue one is a costly commitment: by publicly anchoring on a number, the manager creates legal and reputational liability if the realization diverges materially.</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>The second is the *conference call* and the broader practice of management–investor dialogue. The quarterly earnings call, in which management discusses results with analysts and answers their questions in real time, is essentially universal among U.S. public companies although it is not legally required. The disclosure that occurs on the call is voluntary in a strong sense: questions are unscripted, answers are extemporaneous, and the procedural safeguards that govern formal SEC filings do not apply with the same force.</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>The third is the *Management's Discussion and Analysis* (MD&amp;A) section of the 10-K. The MD&amp;A is required by SEC regulation, but its content is largely at management's discretion. The MD&amp;A is the primary venue through which management explains the period's results in narrative form, identifies the major drivers of the reported numbers, and provides forward-looking commentary on the firm's prospects. The level of detail and candor varies enormously across firms; the variation is itself observable and is interpreted by sophisticated readers as a signal.</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>The fourth, increasingly important, is *voluntary non-financial disclosure* — segment disaggregations, sustainability reports, climate-related disclosures, human capital metrics, and the like. Some of this is now mandatory under SEC and international regulation, but a great deal remains voluntary, and firms vary in what they choose to disclose. The framework of this chapter applies: firms with favorable underlying performance on these dimensions have an incentive to disclose; firms with unfavorable performance have an incentive to remain silent; investors learn to read the absence of disclosure as informative.</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mechanics: the income statement and the accrual basis</span></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>The income statement is the canonical accounting representation of the firm's economic performance over an interval — typically a quarter or a year. Its central organizing identity is, in stylized form:</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>\text{Net Income} = \text{Revenue} - \text{Expenses}.</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>The revenue and expense figures aggregate transactions, accruals, and adjusting entries that, taken together, reflect the firm's economic activity for the period. Net income flows through to the equity section of the balance sheet, increasing retained earnings by the period's earnings (less any dividends declared). The income statement thus connects two consecutive balance sheets: the change in retained earnings over the interval equals net income for the interval, less any dividends paid.</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>Consider, in extension of the Acme Corp. example from Chapter 2, a small set of transactions occurring during the firm's first month of operations.</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>| Date | Transaction |</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>|------|-------------|</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>| Jan 5 | Acme provides $20{,}000 of services to a customer who pays in cash. |</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>| Jan 10 | Acme provides $30{,}000 of services to a customer on account, payable in 30 days. |</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>| Jan 15 | Acme pays $8{,}000 in wages to its employees for the month so far. |</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>| Jan 20 | Acme pays $6{,}000 for one year of insurance coverage beginning January 1. |</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>| Jan 31 | Acme owes its employees $4{,}000 in additional wages earned in the second half of January but not yet paid. |</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>The income statement and balance sheet for January under the accrual basis would be:</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>**Income Statement, Month of January**</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>|  |  |</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>|--|--|</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>| Revenue | $50,000 |</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>| Wage expense | (12,000) |</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>| Insurance expense | (500) |</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>| **Net income** | **$37,500** |</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>**Balance Sheet, January 31** (immediately following the operations above plus the January 1–4 entries from Chapter 2)</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>| **Assets** |  | **Liabilities and Equity** |  |</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>|------------|------|----------------------------|------|</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>| Cash       | $109,000 | Note payable               | $50,000 |</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>| Accounts receivable | $30,000 | Wages payable | $4,000 |</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>| Prepaid insurance | $5,500 | Common stock | $100,000 |</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>| Truck | $50,000 | Retained earnings | $40,500 |</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>| **Total**  | **$194,500** | **Total** | **$194,500** |</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>(The retained-earnings figure reflects the $37{,}500 in January net income plus a $3{,}000 adjustment from a transaction not introduced in the table; it appears here for arithmetic completeness. The simpler example in Chapter 2 had no operating activity and zero retained earnings.)</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common pitfall</span></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>A common stumbling block on first encounter with the income statement is the timing question: when is revenue "earned" if it does not coincide with cash collection? The answer in U.S. GAAP, codified in ASC 606, is governed by a five-step model that asks (i) what contract exists, (ii) what performance obligations the contract contains, (iii) what the transaction price is, (iv) how the transaction price is allocated across the obligations, and (v) when each obligation is satisfied. We will return to the five-step model in Chapter 6, where it is the core mechanic of the discussion of revenue recognition.</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>The accrual basis differs from the cash basis in two specific ways visible in the example. First, on January 10 Acme recognizes $30{,}000 of revenue even though no cash has been collected; the cash collection occurs in February but the economic activity — the rendering of services — occurred in January. Second, on January 20 Acme pays $6{,}000 in cash for insurance but recognizes only $500 of insurance expense for January; the remaining $5{,}500 sits on the balance sheet as a prepaid asset, to be expensed over the eleven remaining months of coverage.</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>The consequence is that net income and operating cash flow can differ — sometimes substantially — for any given period. The wedge between them is exactly the total accruals discussed in Section 3.5. The income statement reports the manager's view of economic activity; the statement of cash flows reports the verifiable cash record. Both are required precisely because each contains information the other suppresses: the income statement contains the manager's signal, the cash flow statement contains the verifiable check. We return to whether investors price the wedge correctly in Chapter 7.</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="fu">## Empirical evidence</span></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>The empirical literature on voluntary disclosure is large. @beyer2010 provides a useful survey, building on the earlier review by @healypalepu2001. Three findings are particularly relevant to the framework of this chapter.</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>The first finding concerns the relationship between voluntary disclosure and the cost of capital. Firms that issue management earnings forecasts, hold conference calls, and provide expansive MD&amp;A discussion have, on average, narrower bid-ask spreads, higher analyst following, and lower implied costs of equity capital than otherwise comparable firms with sparser voluntary disclosure. The estimated magnitudes are modest but consistent across studies; a typical estimate places the effect on the cost of equity at twenty to fifty basis points. The interpretation is that voluntary disclosure reduces the adverse-selection premium investors demand, consistent with the lemons argument of Chapter 2.</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>The second finding concerns the *content* of voluntary disclosures relative to managers' private information. Studies of management forecasts document that the average forecast is approximately unbiased and that forecasts are systematically more accurate than analyst consensus forecasts of the same period <span class="co">[</span><span class="ot">@beyer2010, who reviews the relevant evidence</span><span class="co">]</span>. Studies of disclosure tone — the fraction of optimistic and pessimistic words in the MD&amp;A, conference calls, and press releases — document that tone is informative about future cash flows even after controlling for the underlying numerical disclosures. Both findings are consistent with the signaling story: managers communicate their private information through the disclosure choices they make, and the market learns to read the disclosure for content.</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>The third finding concerns the *unraveling* dynamic itself. The empirical literature has documented that bad news is, on average, disclosed more slowly than good news — an asymmetry consistent with the Verrecchia and Dye predictions and confirmed in studies of management forecasts, restatements, and disclosure of negative events <span class="co">[</span><span class="ot">@beyer2010</span><span class="co">]</span>. Firms with stronger governance and more sophisticated analyst followings tend to disclose more rapidly, suggesting that the partial-unraveling equilibrium is sensitive to the institutional context.</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>The literature does not, of course, claim that voluntary disclosure is always informative or always efficient. A substantial side literature on *strategic disclosure* documents that managers can and do use voluntary disclosure to manipulate investor expectations, to shape the timing of price reactions, and to advance personal incentives that diverge from firm value. The signaling framework is the right starting point, but it is not the whole story; the strategic-manipulation literature complements it and we return to that material in Chapter 10.</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key takeaways</span></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key takeaways</span></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Signaling is the supply-side response to adverse selection.** Chapter 2 explained why investors demand disclosure; this chapter explains why managers supply it, sometimes at substantial private cost.</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Single-crossing is the engine of separation.** A signal is credible only when the marginal cost of producing it is lower for the type the receiver wants to identify; otherwise the low type imitates and separation collapses.</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**The unraveling result has two faces.** Akerlof's demand-side unraveling collapses trade; Grossman–Milgrom's supply-side unraveling collapses silence. The two results share the logic that rational agents update against the party they cannot observe.</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Real disclosure is partial unraveling.** Proprietary costs (Verrecchia) and uncertainty about whether the manager has information (Dye) keep the silent pool from emptying entirely, producing a threshold equilibrium consistent with what we observe in practice.</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Accruals are a signal.** The wedge between accrual income and operating cash flow embeds the manager's private information about the firm's prospects, which is why the income statement and the cash flow statement are both required.</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Signals can be contaminated.** Because accrual estimates are discretionary, the signaling content of earnings can be manipulated; whether the signal dominates the manipulation is an empirical question taken up in Chapter 10.</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="fu">## Discussion questions</span></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Amazon disclosed AWS segment results in 2015 and was rewarded with a substantial price increase. Why did the disclosure produce a fifteen-percent jump when, in principle, the same information was already implicit in Amazon's consolidated financial statements? What does this tell us about the cost–benefit trade-off of segment-level disclosure?</span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The Spence model predicts that high types signal and low types do not. The Verrecchia threshold model predicts that types above a threshold disclose and types below pool at silence. Reconcile the two — when would we expect a Spence-style separating equilibrium, and when would we expect a Verrecchia-style threshold equilibrium?</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Conservative accounting practices — for example, expensing research and development costs in the period incurred rather than capitalizing them — are sometimes characterized as "signaling integrity": the firm leaves information on the table to demonstrate it is not trying to inflate the numbers. Is this argument coherent within the signaling framework of this chapter?</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>The income statement under U.S. GAAP follows accrual accounting; the cash flow statement follows cash accounting. Both are required disclosures. Explain, using the framework of this chapter, why we need both rather than one or the other.</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>A firm announces that, going forward, it will no longer provide quarterly earnings guidance. What signal does the announcement send to investors? Under what circumstances might this be the optimal policy for the firm?</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="fu">## Problems</span></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="fu">### Mechanical problems</span></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>*(Single-crossing and the separating equilibrium.)* Two types of workers, $H$ and $L$, exist in equal proportion. Type-$H$ productivity is $w_H = 120$ and type-$L$ productivity is $w_L = 80$. The cost of acquiring $e$ units of education is $c_H(e) = e$ for high types and $c_L(e) = 3e$ for low types. (a) Confirm that the single-crossing property holds. (b) Find the range of $e^*$ for which a separating equilibrium exists. (c) Identify the least-cost separating equilibrium. (d) Compute the net payoffs of each type in the least-cost separating equilibrium and compare to the pooling outcome.</span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>*(Signaling with auditing.)* High-quality firms are worth $200 to investors; low-quality firms are worth $100. The two types exist in equal proportion. A firm can issue an audited management forecast at a cost $c$ that credibly reveals its type. (a) If $c = 0$ for both types, what is the equilibrium? (b) If $c = 30$ for both types, is there a separating equilibrium? Justify with the incentive constraints. (c) Now suppose the cost is $c_H = 5$ for high types and $c_L = 60$ for low types. Compute the high-type and low-type payoffs in the separating equilibrium and confirm both incentive constraints hold. (d) What value of $c_L$, holding $c_H = 5$ fixed, makes the low type exactly indifferent between disclosing and pooling?</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>*(Verrecchia threshold.)* Manager type $v$ is uniformly distributed on $[0, 1]$. Investors who observe silence price the firm at $E[v \mid v &lt; \theta^*]$. Disclosure has a fixed proprietary cost $c = 0.05$. The marginal type $\theta^*$ satisfies $\theta^* - E[v \mid v &lt; \theta^*] = c$. (a) Compute the threshold $\theta^*$. (b) What fraction of managers disclose? (c) How does $\theta^*$ change if $c$ rises to $0.10$? Explain the comparative statics in one sentence.</span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>*(Accrual-basis income statement.)* Continue the Acme Corp. example from Section 3.7 into a second month. In February: Acme collects the $30{,}000 receivable from January 10; provides $25{,}000 in additional services on account; pays $13{,}000 in wages (covering the $4{,}000 owed from January and $9{,}000 for February labor); and on February 28, Acme owes its employees $5{,}000 in additional wages earned but not paid. Construct the February income statement, the February 28 balance sheet, and a reconciliation between accrual net income and operating cash flow for the month.</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="fu">### Conceptual problems</span></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>*(Applying unraveling to a new setting.)* Consider the market for executive labor. Candidates for CEO positions know their own quality; boards do not. Suppose candidates can voluntarily release a detailed track record from prior positions, including specific performance metrics and references. Using the Grossman–Milgrom logic, argue whether the market should unravel to full disclosure. Identify two frictions that, in practice, prevent full unraveling. Be specific about which assumption of the full-disclosure model each friction violates.</span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>*(Voluntary disclosure with proprietary costs.)* A pharmaceutical firm is conducting Phase II clinical trials of a new drug. Interim results are known to the firm but not yet required to be publicly disclosed. Discuss the disclosure decision through the lens of the Verrecchia model. What is the private benefit of disclosure? What is the proprietary cost? Under what circumstances would the firm voluntarily disclose interim results? Under what circumstances would the firm remain silent?</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>*(Reading the absence of disclosure.)* Two firms in the same industry release their annual reports on the same day. Firm A includes a detailed segment breakdown showing the operating margins of each of its three business lines. Firm B reports only consolidated results and states that "the company operates as a single integrated business." Using the framework of this chapter, what would a sophisticated investor infer from the contrast? What additional information would the investor want before drawing a strong conclusion?</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="fu">### Short writing exercise</span></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>*(Short writing exercise, ~400 words.)* Choose a U.S. public company. Identify one specific voluntary disclosure the company makes that is not required by U.S. GAAP or SEC regulation — a management forecast, a non-GAAP metric, a sustainability report, an investor day presentation, segment disaggregation beyond ASC 280 minimums, or any other example you can document. In approximately 400 words, argue why the company makes this disclosure using the framework of this chapter. Be specific about (i) what private information the disclosure conveys, (ii) what the cost of the disclosure is (including proprietary costs to competitors, legal exposure, and preparation costs), (iii) what the company gains from making it, and (iv) whether the disclosure is consistent with a Spence-style separating equilibrium, a Verrecchia-style threshold equilibrium, or a Grossman–Milgrom-style full-unraveling equilibrium.</span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="fu">## Lab</span></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>The in-class activity for this week is the **Campus Curb FSET activity** (<span class="in">`activities/Campus Curb*`</span>), in which you will use the financial statement effects template to record a sequence of transactions for a small startup and observe how the income statement, balance sheet, and statement of cash flows interact. The activity makes the signaling content of accruals concrete: as you record the transactions, you will see the wedge between cash flow and accrual income emerge in real time, and you will be asked to reflect on what an external investor would learn from the resulting statements.</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>The activity is graded as part of participation. Bring your laptop and a copy of the FSET template to the second class meeting this week.</span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a><span class="fu">## Further reading</span></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>The four readings below are the assigned readings for Week 3. You should read all of them.</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@spence1973, "Job Market Signaling." A short paper. Read for the central argument and the structure of the separating equilibrium; the formal apparatus can be skimmed on a first pass.</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@verrecchia1983, "Discretionary Disclosure." Read for the threshold result and the comparative statics on the disclosure cost.</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@dye1985, "Disclosure of Nonproprietary Information." Read for the contrast with Verrecchia (1983) and for the role of investor uncertainty about whether the manager has information.</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@coffee1984, "Market Failure and the Economic Case for a Mandatory Disclosure System." A legal-economic paper that frames the disclosure problem as a market failure and discusses the case for mandatory regulation. Read for the framework and the argument; the legal citations can be skimmed.</span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a><span class="fu">## Connecting Chapter 3 to the rest of the course</span></span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>Chapter 3 closes the supply side of disclosure: we now have a framework for both why investors demand disclosure (Chapter 2) and why and how managers supply it (Chapter 3). Chapter 4 turns to the second of the two foundational information-economics problems — moral hazard — and develops the principal-agent model that has structured much of the contracting literature in accounting. The signaling framework introduced here will return in Chapter 10, where we examine earnings management as a contaminated form of the signal, and again in Chapter 12, where we examine performance measures as signals about managerial effort.</span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc1-information/03-signaling.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

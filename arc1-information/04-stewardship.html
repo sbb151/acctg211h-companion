@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="The principal-agent problem, the Holmstrom informativeness principle, and the role of accounting in executive compensation contracts.">
+
+<title>4&nbsp; Stewardship and Moral Hazard – ACCTG 211H Companion</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../arc1-information/05-standards.html" rel="next">
+<link href="../arc1-information/03-signaling.html" rel="prev">
+<link href="../favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc1-information/01-foundations.html">Arc I — The Information Problem</a></li><li class="breadcrumb-item"><a href="../arc1-information/04-stewardship.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stewardship and Moral Hazard</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">ACCTG 211H Companion</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/sbb151/acctg211h-companion" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: How This Book Is Organized</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc I — The Information Problem</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/01-foundations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foundations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/02-lemons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Lemons Problem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/03-signaling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Signaling and the Income Statement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/04-stewardship.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stewardship and Moral Hazard</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/05-standards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Standard Setting and the Conceptual Framework</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc II — Markets and Measurement</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/06-efficient-markets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Efficient Markets and the Information Content of Earnings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/07-accruals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Accrual Anomaly and Earnings Quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/08-long-term-assets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Long-Term Assets and Measurement Choice</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/09-liabilities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/10-equity-compensation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Equity Compensation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc III — Contracting and Internal Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/11-decentralization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Decentralization and Cost Behavior</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/12-performance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Performance Measurement as Agency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/13-capital-budgeting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc IV — Synthesis</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc4-synthesis/14-debates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Synthesis: The Capstone Debates</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a01-fset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">A1. The Financial Statement Effects Template (FSET)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a02-python-wrds-colab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">A2. Python + WRDS in Google Colab Quickstart</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a03-debits-credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">A3. Debits and Credits Cheat Sheet</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#opening-question" id="toc-opening-question" class="nav-link active" data-scroll-target="#opening-question"><span class="header-section-number">4.1</span> Opening question</a></li>
+  <li><a href="#the-principal-agent-problem" id="toc-the-principal-agent-problem" class="nav-link" data-scroll-target="#the-principal-agent-problem"><span class="header-section-number">4.2</span> The principal-agent problem</a></li>
+  <li><a href="#the-holmstrom-informativeness-principle" id="toc-the-holmstrom-informativeness-principle" class="nav-link" data-scroll-target="#the-holmstrom-informativeness-principle"><span class="header-section-number">4.3</span> The Holmstrom informativeness principle</a>
+  <ul class="collapse">
+  <li><a href="#a-stylized-two-signal-example" id="toc-a-stylized-two-signal-example" class="nav-link" data-scroll-target="#a-stylized-two-signal-example">A stylized two-signal example</a></li>
+  <li><a href="#why-earnings-remain-in-ceo-contracts-alongside-stock-returns" id="toc-why-earnings-remain-in-ceo-contracts-alongside-stock-returns" class="nav-link" data-scroll-target="#why-earnings-remain-in-ceo-contracts-alongside-stock-returns">Why earnings remain in CEO contracts alongside stock returns</a></li>
+  </ul></li>
+  <li><a href="#the-institutional-response-executive-compensation-contracts" id="toc-the-institutional-response-executive-compensation-contracts" class="nav-link" data-scroll-target="#the-institutional-response-executive-compensation-contracts"><span class="header-section-number">4.4</span> The institutional response: executive compensation contracts</a>
+  <ul class="collapse">
+  <li><a href="#the-role-of-audited-financial-statements" id="toc-the-role-of-audited-financial-statements" class="nav-link" data-scroll-target="#the-role-of-audited-financial-statements">The role of audited financial statements</a></li>
+  <li><a href="#accruals-inside-compensation-contracts" id="toc-accruals-inside-compensation-contracts" class="nav-link" data-scroll-target="#accruals-inside-compensation-contracts">Accruals inside compensation contracts</a></li>
+  </ul></li>
+  <li><a href="#mechanics-the-closing-process-and-the-trial-balance" id="toc-mechanics-the-closing-process-and-the-trial-balance" class="nav-link" data-scroll-target="#mechanics-the-closing-process-and-the-trial-balance"><span class="header-section-number">4.5</span> Mechanics: the closing process and the trial balance</a></li>
+  <li><a href="#empirical-evidence" id="toc-empirical-evidence" class="nav-link" data-scroll-target="#empirical-evidence"><span class="header-section-number">4.6</span> Empirical evidence</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">4.7</span> Key takeaways</a></li>
+  <li><a href="#discussion-questions" id="toc-discussion-questions" class="nav-link" data-scroll-target="#discussion-questions"><span class="header-section-number">4.8</span> Discussion questions</a></li>
+  <li><a href="#problems" id="toc-problems" class="nav-link" data-scroll-target="#problems"><span class="header-section-number">4.9</span> Problems</a></li>
+  <li><a href="#lab" id="toc-lab" class="nav-link" data-scroll-target="#lab"><span class="header-section-number">4.10</span> Lab</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">4.11</span> Further reading</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc1-information/04-stewardship.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc1-information/01-foundations.html">Arc I — The Information Problem</a></li><li class="breadcrumb-item"><a href="../arc1-information/04-stewardship.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stewardship and Moral Hazard</span></a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-stewardship" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stewardship and Moral Hazard</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="opening-question" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="opening-question"><span class="header-section-number">4.1</span> Opening question</h2>
+<p>In 2023, the median chief executive officer of an S&amp;P 500 firm received total compensation of roughly sixteen million dollars. Of that amount, approximately seventy percent was performance-contingent (i.e., tied to equity grants, performance shares, or annual cash bonuses keyed to financial or stock-price targets). The median worker at those same firms earned approximately eighty thousand dollars. The CEO-to-worker pay ratio has attracted attention as a moral object, as a political object, and as a problem in managerial economics <span class="citation" data-cites="halliebman1998 bebchukfried2003 frydmanjenter2010">(<a href="../references.html#ref-halliebman1998" role="doc-biblioref">Hall and Liebman 1998</a>; <a href="../references.html#ref-bebchukfried2003" role="doc-biblioref">Bebchuk and Fried 2003</a>; <a href="../references.html#ref-frydmanjenter2010" role="doc-biblioref">Frydman and Jenter 2010</a>, who collectively review the evolution of U.S. CEO pay since the 1980s and document the rising share of equity-based compensation)</span>.</p>
+<p>This chapter sets aside the moral and political questions and addresses a closely related analytical one: why is so much of CEO compensation made performance-contingent? A flat salary would shield the CEO from risk she presumably dislikes, and the diversified shareholders have a comparative advantage in absorbing risk. On a first pass, it appears inefficient to load risk onto the party who values diversification least.</p>
+<p>The literature has converged on a stylized answer. Performance-contingent compensation exists not because shareholders prefer to push risk onto the CEO, but because shareholders cannot directly observe what the CEO is doing. The CEO’s effort, judgment, and decision-making are at most partially observable from the outside; the firm’s reported earnings and stock price are observable but are noisy functions of the CEO’s actions and of forces outside her control. A flat salary would do nothing to encourage effort that cannot be verified. A contract that makes pay contingent on observable performance does encourage that effort, at the cost of imposing some risk on the CEO. The optimal contract balances the cost of risk-bearing against the benefit of effort-incentivization.</p>
+<p>This is the <em>moral hazard</em> problem (i.e., the agent’s incentive to take a hidden action the principal would not approve of) in its canonical form. It is the second of the two foundational information-economics problems we study in Arc I. The first was the adverse selection problem of Chapter 2. Both problems arise because one party in a relationship knows more than another. In adverse selection, the asymmetry concerns (i) <em>who</em> is in the market (high-quality versus low-quality types). In moral hazard, the asymmetry concerns (ii) <em>what action</em> the agent is taking (high effort versus low effort). The two problems have different formal structures, different institutional responses, and different accounting consequences. This chapter develops the moral hazard half of the framework. It also introduces the second-period mechanics of the income statement — adjusting entries, the closing process, and the trial balance — which exist in part because the principal needs a verification structure that can support a contractual relationship she cannot directly monitor.</p>
+</section>
+<section id="the-principal-agent-problem" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="the-principal-agent-problem"><span class="header-section-number">4.2</span> The principal-agent problem</h2>
+<p>Consider a stylized contracting setup that maps onto the relationship between a firm’s shareholders (the principal) and its CEO (the agent). The principal hires the agent to take an action <span class="math inline">\(e\)</span>, which we will call effort. The action is costly to the agent: exerting effort requires forgoing leisure or accepting a higher cognitive load. The action produces output for the firm, <span class="math inline">\(y\)</span>, which is a noisy function of effort:</p>
+<p><span class="math display">\[
+y = e + \varepsilon, \quad \varepsilon \sim N(0, \sigma^2).
+\]</span></p>
+<p>The output <span class="math inline">\(y\)</span> is observable to both parties, but the effort <span class="math inline">\(e\)</span> is observable only to the agent. The principal cannot tell, from any realization of <span class="math inline">\(y\)</span>, how much of the result is attributable to the agent’s effort and how much to the random component <span class="math inline">\(\varepsilon\)</span>. The cost of effort to the agent, <span class="math inline">\(c(e)\)</span>, is increasing and convex; we will use the simple quadratic form <span class="math inline">\(c(e) = ke^2/2\)</span>, where <span class="math inline">\(k &gt; 0\)</span> parameterizes the marginal cost of effort.</p>
+<p>The principal offers the agent a compensation contract that specifies a payment <span class="math inline">\(w\)</span> as a function of the observable output <span class="math inline">\(y\)</span>. We restrict attention to <em>linear</em> contracts of the form <span class="math inline">\(w(y) = a + \beta y\)</span>, where <span class="math inline">\(a\)</span> is the fixed component (i.e., a base salary) and <span class="math inline">\(\beta\)</span> is the slope on output (i.e., the agent’s pay-for-performance sensitivity). The agent has CARA preferences (i.e., constant absolute risk aversion) with risk-aversion parameter <span class="math inline">\(r &gt; 0\)</span>, and an outside option that delivers a reservation utility <span class="math inline">\(U_0\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The first-best benchmark
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If the principal could observe effort directly, the contract would simply specify the desired effort level and pay the agent a flat amount conditional on having taken it. The agent would face no risk; the principal, who is diversified, would absorb the entire variance of <span class="math inline">\(y\)</span>. The first-best level of effort is <span class="math inline">\(e^* = 1/k\)</span>. There is no agency cost because there is no information asymmetry to overcome.</p>
+</div>
+</div>
+<p>In the second-best world, where effort is unobservable, the principal must induce effort indirectly by making the agent’s compensation contingent on output. The agent, anticipating the contract, chooses <span class="math inline">\(e\)</span> to maximize her own certainty-equivalent payoff:</p>
+<p><span class="math display">\[
+CE = a + \beta e - \tfrac{1}{2} k e^2 - \tfrac{1}{2} r \beta^2 \sigma^2.
+\]</span></p>
+<p>The first term is the expected wage. The second, <span class="math inline">\(-\tfrac{1}{2} k e^2\)</span>, is the disutility of effort. The third, <span class="math inline">\(-\tfrac{1}{2} r \beta^2 \sigma^2\)</span>, is the risk premium the agent demands for bearing the variability in <span class="math inline">\(y\)</span> that the contract has loaded onto her compensation.</p>
+<p>Maximizing with respect to <span class="math inline">\(e\)</span> yields the agent’s optimal effort: <span class="math inline">\(e = \beta/k\)</span>. The agent supplies more effort when her pay-for-performance sensitivity <span class="math inline">\(\beta\)</span> is higher and less when her marginal cost of effort <span class="math inline">\(k\)</span> is higher. The principal, anticipating this response, chooses <span class="math inline">\(\beta\)</span> to maximize the joint surplus net of the risk premium. The resulting optimal slope is</p>
+<p><span class="math display">\[
+\beta^* = \frac{1}{1 + r k \sigma^2}.
+\]</span></p>
+<p>The formula carries the central intuition of the section. The slope <span class="math inline">\(\beta\)</span> is bounded above by one (i.e., full effort incentivization, in which the agent bears the entire residual risk and the contract reproduces the first-best effort level). The slope is reduced from this benchmark by the term <span class="math inline">\(r k \sigma^2\)</span>, which captures the joint cost of risk-bearing and effort-distortion. Three comparative statics follow:</p>
+<ul>
+<li><ol type="i">
+<li>higher agent risk-aversion (<span class="math inline">\(r\)</span>) reduces <span class="math inline">\(\beta^*\)</span>;</li>
+</ol></li>
+<li><ol start="2" type="i">
+<li>higher marginal cost of effort (<span class="math inline">\(k\)</span>) reduces <span class="math inline">\(\beta^*\)</span>;</li>
+</ol></li>
+<li><ol start="3" type="i">
+<li>higher variance of output (<span class="math inline">\(\sigma^2\)</span>) reduces <span class="math inline">\(\beta^*\)</span>.</li>
+</ol></li>
+</ul>
+<p>In the limit <span class="math inline">\(\sigma^2 \to 0\)</span> — output perfectly reveals effort — the slope approaches one. In the limit <span class="math inline">\(\sigma^2 \to \infty\)</span> — output is pure noise — the slope falls toward zero, and the contract reverts to a flat wage because pay-for-performance imposes risk without informative content.</p>
+<p>This stylized model is known in the contracting literature as the <em>LEN model</em> (i.e., Linear contract, Exponential utility, Normally distributed output). It is a workhorse rather than a definitive characterization of the agency problem. Its predictions are nonetheless informative: in richer models the same forces are at work, and pay-for-performance sensitivities are tempered by risk-aversion and noise even when the contract form is more complex <span class="citation" data-cites="holmstrommilgrom1991">(<a href="../references.html#ref-holmstrommilgrom1991" role="doc-biblioref">Holmstrom and Milgrom 1991</a>, who extend the framework to multitask settings and show that the same logic governs how a contract weights multiple performance measures)</span>.</p>
+</section>
+<section id="the-holmstrom-informativeness-principle" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="the-holmstrom-informativeness-principle"><span class="header-section-number">4.3</span> The Holmstrom informativeness principle</h2>
+<p>A central result in the agency literature, due to <span class="citation" data-cites="holmstrom1979">Holmstrom (<a href="../references.html#ref-holmstrom1979" role="doc-biblioref">1979</a>)</span>, generalizes the LEN intuition in a useful way. Suppose, in addition to output <span class="math inline">\(y\)</span>, the principal can also contract on a second observable signal <span class="math inline">\(s\)</span> (e.g., an audit report, an internal performance metric, or a peer-firm benchmark). Should the additional signal enter the optimal contract?</p>
+<p>Holmstrom’s answer is sharp. <em>Any signal that is incrementally informative about the agent’s action, conditional on the signals already in the contract, should enter the contract with non-zero weight.</em> The converse also holds: a signal that contains no information about the action beyond what is already conveyed by other signals adds nothing useful and should receive zero weight, however precise it may be in isolation. The right test for inclusion is incremental informativeness, not precision.</p>
+<p>The intuition runs as follows. If <span class="math inline">\(s\)</span> contains information about <span class="math inline">\(e\)</span> that is not already contained in <span class="math inline">\(y\)</span>, then conditioning compensation on both signals lets the principal filter some of the noise out of <span class="math inline">\(y\)</span>, reducing the risk premium the agent demands without weakening effort-incentivization. The agent is paid more accurately for what she did, and less for what the world did to her. If <span class="math inline">\(s\)</span> contains no incremental information, then conditioning on it imposes additional risk on the agent (i.e., <span class="math inline">\(s\)</span> has its own noise) without any offsetting reduction in noise from <span class="math inline">\(y\)</span>, and the principal does strictly better by excluding it.</p>
+<section id="a-stylized-two-signal-example" class="level3">
+<h3 class="anchored" data-anchor-id="a-stylized-two-signal-example">A stylized two-signal example</h3>
+<p>Consider a CEO whose effort <span class="math inline">\(e\)</span> affects two observable signals — accounting earnings <span class="math inline">\(y_1\)</span> and the firm’s stock return <span class="math inline">\(y_2\)</span>:</p>
+<p><span class="math display">\[
+y_1 = e + \varepsilon_1, \quad y_2 = e + \varepsilon_2,
+\]</span></p>
+<p>with <span class="math inline">\(\varepsilon_1 \sim N(0, \sigma_1^2)\)</span>, <span class="math inline">\(\varepsilon_2 \sim N(0, \sigma_2^2)\)</span>, and <span class="math inline">\(\text{Cov}(\varepsilon_1, \varepsilon_2) = 0\)</span>. The principal chooses weights <span class="math inline">\(\beta_1\)</span> and <span class="math inline">\(\beta_2\)</span> on the two signals to maximize joint surplus. The optimal weights are proportional to the <em>precisions</em> (i.e., inverse variances) of the signals:</p>
+<p><span class="math display">\[
+\frac{\beta_1^*}{\beta_2^*} = \frac{1/\sigma_1^2}{1/\sigma_2^2} = \frac{\sigma_2^2}{\sigma_1^2}.
+\]</span></p>
+<p>Three implications follow. First, both signals enter the contract with positive weight, consistent with Holmstrom’s principle. Second, the noisier signal receives a smaller weight: if earnings are five times noisier than the stock return (<span class="math inline">\(\sigma_1^2 = 5\sigma_2^2\)</span>), the optimal weight on earnings is one-fifth of the weight on returns. Third, neither weight is set to zero merely because the other signal exists. Each contributes incremental information about <span class="math inline">\(e\)</span>, and excluding either would force the principal to demand more effort from the remaining noisier metric.</p>
+<p>Now extend the example to a peer-firm benchmark. Suppose the CEO’s effort affects firm output, but firm output is also exposed to an industry shock <span class="math inline">\(\delta\)</span> that affects every firm in the sector:</p>
+<p><span class="math display">\[
+y_1 = e + \delta + \varepsilon_1, \quad \tilde{y} = \delta + \tilde{\varepsilon},
+\]</span></p>
+<p>where <span class="math inline">\(\tilde{y}\)</span> is the average performance of the firm’s peers, <span class="math inline">\(\delta\)</span> is the common industry shock, and <span class="math inline">\(\tilde{\varepsilon}\)</span> is independent noise in the peer benchmark. The peer signal <span class="math inline">\(\tilde{y}\)</span> contains no direct information about <span class="math inline">\(e\)</span>, but it contains information about <span class="math inline">\(\delta\)</span>. Conditioning on <span class="math inline">\(\tilde{y}\)</span> lets the principal <em>subtract</em> the industry shock from <span class="math inline">\(y_1\)</span>, sharpening the inference about effort. The optimal contract takes the form</p>
+<p><span class="math display">\[
+w = a + \beta \left( y_1 - \gamma \tilde{y} \right),
+\]</span></p>
+<p>where <span class="math inline">\(\gamma &gt; 0\)</span> is the optimal filtering weight on the peer benchmark. This is the formal logic behind <em>relative performance evaluation</em> (RPE): pay the CEO based on firm performance minus a peer-group benchmark, not on raw firm performance. The peer benchmark is informative about effort even though it does not respond to effort directly — it is incrementally informative because it isolates the component of firm performance that the CEO can be held accountable for.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+A subtle implication
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The informativeness principle does not say that a signal must be precise to enter the contract. A noisy but conditionally informative signal still adds value, just less of it. Conversely, a precise but already-redundant signal adds nothing, however precise it may be. The implication for compensation design is that signals should be evaluated jointly, not one at a time.</p>
+</div>
+</div>
+</section>
+<section id="why-earnings-remain-in-ceo-contracts-alongside-stock-returns" class="level3">
+<h3 class="anchored" data-anchor-id="why-earnings-remain-in-ceo-contracts-alongside-stock-returns">Why earnings remain in CEO contracts alongside stock returns</h3>
+<p>The informativeness principle illuminates a question often asked about accounting numbers: <em>should the CEO be compensated on accounting earnings, on stock returns, or on both?</em> The stock return is, in many respects, more comprehensive — it incorporates not only the period’s earnings but also forward-looking information about the firm’s prospects. Yet accounting earnings continue to play a substantial role in CEO compensation contracts.</p>
+<p>The Holmstrom logic supplies an answer consistent with the empirical pattern. Earnings and stock returns are imperfectly correlated. Each contains information about CEO effort that the other does not. Earnings reflect operational decisions that have not yet shown up in returns. Returns reflect investor expectations about future cash flows that the period’s earnings have not yet realized. Neither signal is redundant given the other, so both enter the contract with positive weight, with the weight on each scaled by its conditional informativeness about effort. <span class="citation" data-cites="halliebman1998">Hall and Liebman (<a href="../references.html#ref-halliebman1998" role="doc-biblioref">1998</a>)</span>, in their study of pay-for-performance sensitivities in U.S. firms, document that accounting-based and stock-based metrics each carry economically meaningful weight in CEO compensation, consistent with the joint-informativeness reading.</p>
+</section>
+</section>
+<section id="the-institutional-response-executive-compensation-contracts" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="the-institutional-response-executive-compensation-contracts"><span class="header-section-number">4.4</span> The institutional response: executive compensation contracts</h2>
+<p>The framework of Sections 4.2 and 4.3 explains the architecture of executive compensation at U.S. public firms. CEO pay at large firms typically has four components, each of which can be read as the institutional response to a feature of the agency problem.</p>
+<p><strong>Base salary</strong> is the fixed component <span class="math inline">\(a\)</span> in the LEN model. It typically accounts for ten to fifteen percent of total compensation at large U.S. firms. Its function is to satisfy the participation constraint — the CEO must be willing to take the job rather than her outside option — while imposing no incremental risk.</p>
+<p><strong>Annual cash bonus</strong> is tied to <em>accounting-based</em> metrics for the current fiscal year, most commonly earnings per share (EPS), operating income, return on equity (ROE), or EBITDA, evaluated against a target set at the beginning of the year. The bonus typically has a threshold (below which payout is zero), a target (at which the agreed-upon bonus is paid), and a cap (above which additional performance produces no incremental payout). The threshold-target-cap structure is the source of the bunching documented by <span class="citation" data-cites="healy1985">Healy (<a href="../references.html#ref-healy1985" role="doc-biblioref">1985</a>)</span>, discussed in Chapter 3 and again below.</p>
+<p><strong>Performance shares</strong> (sometimes called performance share units, or PSUs) are equity grants whose vesting is contingent on the firm meeting multi-year performance targets, typically over a three-year period. The performance metrics are usually <em>stock-based</em> — most commonly total shareholder return (TSR) relative to a peer group or a market index — and the structure is explicitly relative: the CEO earns the target share count if TSR falls at the median of the peer group, more if at the seventy-fifth percentile, less if at the twenty-fifth percentile, and zero if at the bottom. Performance shares are the dominant vehicle through which RPE is implemented at U.S. public firms.</p>
+<p><strong>Restricted stock (or restricted stock units, RSUs)</strong> are equity grants that vest with the passage of time, conditional on continued employment. They provide an undifferentiated exposure to the firm’s stock price and are intended in part to align the CEO’s wealth with the long-run value of the firm, in part to discourage short-tenure turnover. Restricted stock typically vests in equal installments over three to four years.</p>
+<p>A representative compensation mix for the CEO of a large U.S. firm in 2023 might be (i) ten percent base salary, (ii) fifteen percent annual cash bonus, (iii) thirty-five percent performance shares, and (iv) forty percent restricted stock, with the exact mix varying by firm size, industry, and governance practices.</p>
+<p>Three features of this architecture follow directly from the framework.</p>
+<p>First, the contract uses <em>multiple performance measures</em>, consistent with the informativeness principle. Accounting earnings enter via the annual cash bonus. Stock returns enter via performance shares and restricted stock. The two measures are conditionally informative about different aspects of CEO effort, and neither is redundant.</p>
+<p>Second, the most heavily weighted stock-based metric — TSR in performance shares — is typically evaluated <em>relative to a peer group</em>, not in absolute terms. This is the RPE structure of Section 4.3. Industry-wide shocks (e.g., a recession, a commodity price swing, a sector-wide regulatory change) are filtered out, so the CEO is rewarded for outperforming her peers rather than for riding a sector wave. The empirical literature documents that the use of explicit RPE in performance share plans has grown substantially since the early 2000s, consistent with the Holmstrom prescription.</p>
+<p>Third, the contract distinguishes between <em>accounting metrics</em> and <em>stock metrics</em> in their treatment. Accounting metrics are typically evaluated against an <em>absolute</em> internal target (i.e., a budgeted EPS or ROE figure), while stock metrics are typically evaluated on a <em>relative</em> basis (i.e., TSR versus a peer group). The pattern is consistent with the framework: accounting metrics are firm-specific outputs of operating decisions, so an absolute internal target measures the CEO against her own commitments; stock returns are exposed to systematic shocks that are not the CEO’s responsibility, so a relative benchmark filters those shocks out.</p>
+<section id="the-role-of-audited-financial-statements" class="level3">
+<h3 class="anchored" data-anchor-id="the-role-of-audited-financial-statements">The role of audited financial statements</h3>
+<p>Each of the accounting-based metrics in the contract is computed from the firm’s audited financial statements. The audit (i.e., independent third-party verification of the firm’s financial statements and, since SOX, of its internal controls over financial reporting) serves two functions in the framework of this chapter. It functions as a monitoring expenditure in the sense of <span class="citation" data-cites="jensenmeckling1976">Jensen and Meckling (<a href="../references.html#ref-jensenmeckling1976" role="doc-biblioref">1976</a>)</span>, who define monitoring costs as expenditures by the principal to verify the agent’s actions. It also functions as a Holmstrom-informative signal in its own right: the auditor’s report adds independent information about the reliability of the firm’s reported numbers, which can then enter the CEO’s compensation contract through clawback provisions, performance metric definitions, or board-discretionary adjustments.</p>
+<p>The system of <em>internal controls</em> sits beneath the audit. Internal controls are the policies, procedures, and infrastructure within the firm that ensure transactions are recorded properly, assets are safeguarded, and financial reports are reliable. The Committee of Sponsoring Organizations (i.e., COSO) framework, originally issued in 1992 and updated in 2013, is the dominant conceptual framework for internal controls in U.S. firms. It identifies five components — control environment, risk assessment, control activities, information and communication, and monitoring — that together are intended to produce a system in which the agent’s actions can be monitored at reasonable cost.</p>
+<p>The Sarbanes-Oxley Act of 2002, passed in the immediate aftermath of the Enron, WorldCom, and Tyco scandals, added a mandatory layer to the internal-controls structure for U.S. public companies. Section 404 of SOX requires management to assess and report on the effectiveness of internal control over financial reporting, and requires the firm’s external auditor to issue an opinion on the same matter. Compliance with SOX 404 is expensive — small public companies often report annual SOX-related compliance costs in the millions of dollars — and the academic literature has been mixed on whether the benefits in reporting reliability are commensurate with the costs. The Holmstrom framework supplies a tool for thinking about that question: SOX 404 creates an additional signal of management’s stewardship, valuable to the extent that the signal is incrementally informative about effort and not redundant with existing signals.</p>
+</section>
+<section id="accruals-inside-compensation-contracts" class="level3">
+<h3 class="anchored" data-anchor-id="accruals-inside-compensation-contracts">Accruals inside compensation contracts</h3>
+<p>The accruals discussed in Chapter 3 are embedded in the accounting metrics that drive the annual cash bonus. <span class="citation" data-cites="healy1985">Healy (<a href="../references.html#ref-healy1985" role="doc-biblioref">1985</a>)</span> documented in a foundational paper that managers respond to the structure of bonus plans by adjusting accruals. When a manager is below the lower threshold of her bonus plan, she takes an income-decreasing accrual to clean the slate (i.e., a “big bath”); when she is above the upper cap, she takes another income-decreasing accrual to bank earnings for future periods; when she is in the incentive-eligible range, she takes income-increasing accruals to maximize the bonus. The Healy result is the classic empirical demonstration that compensation contracts and accruals are mutually endogenous — the contract creates incentives that the agent responds to with the accounting tools at her disposal. We will return to the earnings-management literature in detail in Chapter 10.</p>
+<p>The Healy pattern is a cost of using accounting metrics in compensation, but it does not by itself imply that accounting metrics should be excluded. The informativeness principle compares signals jointly, and accounting metrics retain incremental content about effort even after accounting for managerial discretion. The institutional response has been to constrain the discretion (e.g., through audited statements, internal controls, clawback provisions, and audit-committee oversight) rather than to abandon the metric.</p>
+</section>
+</section>
+<section id="mechanics-the-closing-process-and-the-trial-balance" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="mechanics-the-closing-process-and-the-trial-balance"><span class="header-section-number">4.5</span> Mechanics: the closing process and the trial balance</h2>
+<p>The mechanics of the income statement and the balance sheet have, by this chapter, been introduced in pieces. Chapter 2 introduced the accounting equation and the structure of the balance sheet. Chapter 3 introduced the income statement and the accrual basis. This chapter introduces the operational machinery that takes a period’s transactions and adjusting entries and produces the audited financial statements that will eventually enter the CEO’s compensation contract. The machinery is the <em>closing process</em>.</p>
+<p>The closing process has three steps. First, <em>adjusting entries</em> are posted at the end of the period to bring revenue and expense accounts into line with the accrual basis. The adjustments include (i) revenues earned but not yet collected, (ii) expenses incurred but not yet paid, (iii) revenues collected but not yet earned, and (iv) expenses paid but not yet incurred. Each adjustment is an estimate the manager makes about the timing of economic activity; in aggregate, the adjustments determine the period’s accruals.</p>
+<p>Second, the <em>trial balance</em> is computed to verify that the total of all debits equals the total of all credits across all accounts. The trial balance is the verification step in the accounting system: if the equation <span class="math inline">\(\text{Assets} = \text{Liabilities} + \text{Equity}\)</span> does not hold, something is wrong. The trial balance is an internal check that the bookkeeping infrastructure is self-consistent. It does not verify that any individual entry is correct — only that the entries are mutually consistent. A firm whose trial balance does not tie has, at minimum, a bookkeeping error; it may have something worse.</p>
+<p>Third, the <em>closing entries</em> move the period’s revenues and expenses from the income-statement accounts into the equity section of the balance sheet via the retained-earnings account. After the closing entries are posted, the income-statement accounts have a zero balance and are ready to begin accumulating the next period’s activity. The balance-sheet accounts carry forward into the next period at their post-closing balances.</p>
+<p>The closing process is straightforward as a piece of mechanics, but it is worth pausing to note what it accomplishes from the perspective of this chapter. The process produces a structured, internally consistent set of financial statements that has been subjected to the verification discipline of the double-entry system. The output of the process — the period-end financial statements — is what the auditor reviews, what the SEC files contain, what the compensation committee uses to determine bonus payouts, what shareholders receive, and what enters the empirical literature as the firm’s reported earnings, assets, liabilities, and equity for the period. The closing process is, in an important sense, the bridge between the firm’s underlying economic activity and the public artifact that the rest of the institutional system acts upon.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Common pitfall
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is tempting on first encounter to treat the closing process as a clerical step — once the transactions have been recorded, the statements simply emerge. The framework of this chapter suggests a different view. The closing process is the moment at which the manager’s discretion, exercised through the choice of accruals and adjusting entries, gets baked into the period’s reported numbers. The verification structure of the trial balance ensures that the resulting numbers are arithmetically consistent. It does not ensure that the underlying estimates are unbiased. That is the auditor’s job.</p>
+</div>
+</div>
+</section>
+<section id="empirical-evidence" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="empirical-evidence"><span class="header-section-number">4.6</span> Empirical evidence</h2>
+<p>The empirical literature on the moral hazard problem in executive compensation is large; <span class="citation" data-cites="frydmanjenter2010">Frydman and Jenter (<a href="../references.html#ref-frydmanjenter2010" role="doc-biblioref">2010</a>)</span> provides a useful survey that documents the rise of equity-based pay since the 1980s and the shift toward performance-vesting structures. Three findings are particularly relevant to the framework of this chapter.</p>
+<p>The first concerns the magnitude of <em>pay-for-performance sensitivity</em> in U.S. CEO compensation contracts. <span class="citation" data-cites="halliebman1998">Hall and Liebman (<a href="../references.html#ref-halliebman1998" role="doc-biblioref">1998</a>)</span> documented that, accounting for the value of stock and option holdings, a CEO of a typical U.S. public firm in the 1990s gained or lost approximately twenty-five dollars in personal wealth for each thousand-dollar change in the firm’s market value. The figure has grown substantially since: with the rise of equity-based compensation in the 2000s and 2010s, modern estimates of the wealth-performance sensitivity for the median S&amp;P 500 CEO are an order of magnitude larger than the 1990s benchmark. The growth in sensitivity is consistent with the framework of this chapter — the contract is increasingly designed to load risk onto the CEO in exchange for effort-incentivization.</p>
+<p>The second finding concerns the <em>rent-extraction critique</em> of the standard model. <span class="citation" data-cites="bebchukfried2003">Bebchuk and Fried (<a href="../references.html#ref-bebchukfried2003" role="doc-biblioref">2003</a>)</span> argued, drawing on a substantial empirical literature, that the magnitude and structure of CEO compensation in U.S. firms cannot be explained by the standard agency model alone. They proposed a complementary view in which CEOs exercise managerial power over the compensation-setting process and extract rents that exceed what would be optimal in a clean principal-agent relationship. The Bebchuk-Fried view does not displace the standard model, but it qualifies it: the contracts we observe reflect a mixture of efficient incentive design and managerial influence, and the relative weight of the two channels remains a contested empirical question.</p>
+<p>The third finding concerns the <em>role of accounting numbers in compensation contracts</em>. Accounting-based performance metrics — earnings, ROE, EBITDA, growth rates — are nearly universal in CEO bonus plans, and the weight on accounting metrics relative to stock-price metrics varies systematically with firm characteristics. Smaller firms, firms in less-volatile industries, and firms with more-complex operations tend to put more weight on accounting metrics. The pattern is consistent with the informativeness principle: accounting metrics are most useful as performance signals when stock-price signals are noisy or slow to incorporate operational improvements <span class="citation" data-cites="ittnerlarcker2003 antleeppen1985">(<a href="../references.html#ref-ittnerlarcker2003" role="doc-biblioref">Ittner and Larcker 2003</a>, who document the role of non-financial measures in compensation and argue that firms select performance measures based on their informativeness about the actions the firm wishes to incentivize; <a href="../references.html#ref-antleeppen1985" role="doc-biblioref">Antle and Eppen 1985</a>, who study the role of accounting numbers in capital-budgeting and compensation settings)</span>.</p>
+<p>A separate empirical literature documents the prevalence of explicit RPE in performance share plans, particularly for TSR-based awards. Although RPE is the analytically clean implementation of the informativeness principle, the share of contracts that use it is smaller than the framework would naively predict. One reason, suggested in <span class="citation" data-cites="holmstrommilgrom1991">Holmstrom and Milgrom (<a href="../references.html#ref-holmstrommilgrom1991" role="doc-biblioref">1991</a>)</span>, is that adding metrics to a contract creates multitask distortions (i.e., the CEO may shift effort toward the measured dimension at the expense of unmeasured ones). The fact that the empirical adoption of RPE has nonetheless grown over the past two decades is consistent with the principle, even if the speed of adoption is slower than the framework would predict.</p>
+<p>Finally, managers respond to the structure of accounting-based incentives by adjusting accrual estimates, as <span class="citation" data-cites="healy1985">Healy (<a href="../references.html#ref-healy1985" role="doc-biblioref">1985</a>)</span> documented and as discussed in Section 4.4. The empirical regularity is strong enough that it has motivated a substantial literature on earnings management, which we will examine in Chapter 10.</p>
+</section>
+<section id="key-takeaways" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">4.7</span> Key takeaways</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key takeaways
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Moral hazard creates the demand for performance-contingent pay.</strong> When effort is unobservable, a flat salary cannot induce effort, so the contract loads risk onto the agent in exchange for incentivization, balancing risk-bearing cost against effort-incentivization benefit.</li>
+<li><strong>The LEN model identifies three forces that reduce the optimal pay-for-performance sensitivity.</strong> Higher agent risk-aversion, higher marginal cost of effort, and higher noise in output each push the optimal slope <span class="math inline">\(\beta^*\)</span> below one.</li>
+<li><strong>The Holmstrom informativeness principle is a test of incremental informativeness, not precision.</strong> A signal enters the optimal contract if and only if it contains information about the agent’s action that is not already conveyed by signals already in the contract.</li>
+<li><strong>Earnings and stock returns are jointly informative about CEO effort.</strong> Neither is redundant given the other, which is why CEO contracts include both an accounting-based annual bonus and stock-based performance shares and restricted stock.</li>
+<li><strong>Relative performance evaluation operationalizes the informativeness principle.</strong> Subtracting a peer-group benchmark filters out industry-wide shocks that are not attributable to the focal CEO’s effort, which is why TSR in performance share plans is typically evaluated relative to a peer group rather than in absolute terms.</li>
+<li><strong>Audited financial statements and internal controls support the contract.</strong> The audit, internal controls, and the closing process supply the verification infrastructure that makes accounting numbers usable as contractible signals in the first place.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="discussion-questions" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="discussion-questions"><span class="header-section-number">4.8</span> Discussion questions</h2>
+<ol type="1">
+<li>The chapter argues that CEO pay-for-performance sensitivity exists because shareholders cannot observe CEO effort. Yet many CEOs of large U.S. firms are also subject to substantial monitoring — boards meet regularly, audit committees oversee internal controls, and shareholders can vote on say-on-pay and other governance matters. Does the existence of these monitoring mechanisms reduce the optimal pay-for-performance sensitivity, increase it, or have an ambiguous effect? Defend your answer.</li>
+<li>The Holmstrom informativeness principle says that any signal informative about the agent’s effort should enter the contract. The principle is silent on the <em>weight</em> the signal should receive. Suppose two signals are both informative about effort; one is more precise than the other. Should the more-precise signal receive a larger weight? Why or why not?</li>
+<li>SOX 404 imposes substantial compliance costs on U.S. public firms. Some critics have argued that the cost is excessive and that firms would be better off if SOX 404 were repealed. Using the framework of this chapter, identify the channels through which SOX 404 produces benefits and the channels through which it produces costs. Under what conditions would the benefits dominate the costs?</li>
+<li>The Bebchuk-Fried managerial-power view holds that CEO compensation reflects, in part, the CEO’s ability to influence the compensation-setting process. The standard agency view holds that CEO compensation is the efficient outcome of an incentive-design problem. Suppose you were to test whether the managerial-power view contributes meaningfully to the explanation of observed pay levels. What would you measure, and what would you predict?</li>
+<li>The chapter described the closing process as the moment at which the manager’s discretion gets baked into the period’s reported numbers. Is this characterization fair? Could one argue that the manager’s discretion is actually exercised earlier — at the point at which transactions are originally recorded — and that the closing process is purely mechanical? Take a position and defend it.</li>
+</ol>
+</section>
+<section id="problems" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="problems"><span class="header-section-number">4.9</span> Problems</h2>
+<ol type="1">
+<li><p><em>(Numerical, LEN model.)</em> Consider the LEN model with <span class="math inline">\(k = 1\)</span>, <span class="math inline">\(r = 1\)</span>, and <span class="math inline">\(\sigma^2 = 1\)</span>. (a) Compute the optimal pay-for-performance sensitivity <span class="math inline">\(\beta^*\)</span>. (b) Compute the agent’s resulting effort, expected output, expected wage (given <span class="math inline">\(a\)</span> chosen to satisfy the participation constraint at <span class="math inline">\(U_0 = 0\)</span>), and certainty-equivalent payoff. (c) Now suppose the variance of output rises to <span class="math inline">\(\sigma^2 = 4\)</span>. Recompute <span class="math inline">\(\beta^*\)</span>, effort, expected output, and the agent’s certainty equivalent. Comment on the direction of the changes and reconcile them with the comparative statics in Section 4.2.</p></li>
+<li><p><em>(Numerical, informativeness principle, two signals.)</em> A CEO’s effort affects two observable signals: accounting earnings <span class="math inline">\(y_1 = e + \varepsilon_1\)</span> and stock return <span class="math inline">\(y_2 = e + \varepsilon_2\)</span>, with <span class="math inline">\(\varepsilon_1 \sim N(0, 4)\)</span>, <span class="math inline">\(\varepsilon_2 \sim N(0, 1)\)</span>, and <span class="math inline">\(\text{Cov}(\varepsilon_1, \varepsilon_2) = 0\)</span>. The principal uses a linear contract of the form <span class="math inline">\(w = a + \beta_1 y_1 + \beta_2 y_2\)</span>. (a) Using the precision-weighting result from Section 4.3, compute the ratio <span class="math inline">\(\beta_1^* / \beta_2^*\)</span>. (b) Suppose the principal proposes to drop earnings from the contract on the grounds that the stock return is the more precise signal. Argue, using the informativeness principle, whether dropping earnings improves or worsens the contract. (c) Now suppose <span class="math inline">\(\text{Cov}(\varepsilon_1, \varepsilon_2) = 1.8\)</span> (i.e., the two signals share noise from a common source). Argue qualitatively how the optimal weights change relative to part (a), and explain the intuition.</p></li>
+<li><p><em>(Numerical, relative performance evaluation.)</em> Continue the two-signal setup of Problem 2. Suppose firm output is exposed to an industry shock <span class="math inline">\(\delta \sim N(0, 9)\)</span> that also enters the firm’s stock return, so that <span class="math inline">\(y_2 = e + \delta + \tilde{\varepsilon}_2\)</span> with <span class="math inline">\(\tilde{\varepsilon}_2 \sim N(0, 1)\)</span>. The principal observes a peer-firm benchmark <span class="math inline">\(\tilde{y} = \delta + \tilde{\varepsilon}\)</span> with <span class="math inline">\(\tilde{\varepsilon} \sim N(0, 1)\)</span>, independent of all other noise terms. (a) Argue why the optimal contract subtracts a multiple of <span class="math inline">\(\tilde{y}\)</span> from <span class="math inline">\(y_2\)</span> before paying the CEO. (b) Sketch how the optimal weight on residual (filtered) stock performance compares to the optimal weight that would apply without the peer benchmark. Be specific about the direction. (c) Interpret the result in the language of performance share plans at large U.S. firms.</p></li>
+<li><p><em>(Conceptual, designing a CEO contract.)</em> You are advising the compensation committee of a mid-cap U.S. manufacturing firm. The firm operates in a single industry with three close peers, has stable operating margins, and is in the middle of a multi-year capital investment program whose payoff will not be reflected in earnings or stock price for at least two years. Design a compensation contract for the new CEO, specifying (i) the mix of base salary, annual cash bonus, performance shares, and restricted stock as percentages of total compensation; (ii) the performance metric(s) for the annual cash bonus and the rationale for choosing them; (iii) the performance metric(s) for the performance shares and whether they should be evaluated on an absolute or relative basis; and (iv) one feature of the contract designed specifically to address the multi-year capital investment program. Justify each choice using the framework of this chapter, approximately 400 words total.</p></li>
+<li><p><em>(Conceptual, whether a metric belongs in the bonus formula.)</em> A board is considering whether to add <em>customer satisfaction</em> (measured via a Net Promoter Score survey administered quarterly by an independent vendor) to the CEO’s annual cash bonus formula, currently based only on EPS. The CFO argues that customer satisfaction is a leading indicator of future earnings and therefore belongs in the contract; the CEO argues that it adds noise and exposes her to factors outside her control. Apply the Holmstrom informativeness principle to evaluate the proposal. What information would you want to see before recommending for or against? In approximately 300 words, identify (a) the empirical conditions under which the metric should be added, (b) the conditions under which it should not, and (c) one diagnostic the board could compute from existing data to discriminate between the two cases.</p></li>
+<li><p><em>(Conceptual.)</em> Read Section II of <span class="citation" data-cites="jensenmeckling1976">Jensen and Meckling (<a href="../references.html#ref-jensenmeckling1976" role="doc-biblioref">1976</a>)</span> (the formal development of agency costs). In approximately 250 words, summarize the three components of agency cost they identify and give one concrete example of each that connects to the institutional features discussed in Section 4.4 of this chapter.</p></li>
+<li><p><em>(Numerical, closing process.)</em> Continue the Acme Corp.&nbsp;example from the end of Chapter 3. Acme’s pre-closing trial balance at February 28 includes the following accounts (some balances are to be supplied by the student from the worked transactions of Section 3.6 plus February’s additional activity): cash, accounts receivable, prepaid insurance, truck, accumulated depreciation, accounts payable, wages payable, note payable, common stock, retained earnings, revenue, wage expense, insurance expense, and depreciation expense. (a) Construct the trial balance, ensuring debits and credits are equal. (b) Post the closing entries to move revenue and expenses into retained earnings. (c) Construct the post-closing balance sheet and verify that the accounting equation holds.</p></li>
+<li><p><em>(Short writing exercise.)</em> Locate the most recent proxy statement (DEF 14A) of a U.S. public company of your choice. In the Compensation Discussion and Analysis (CD&amp;A) section, identify (i) the performance metric(s) used in the annual cash bonus, (ii) the performance metric(s) used in the long-term incentive plan and whether each is evaluated on an absolute or relative basis, and (iii) the peer group used for any RPE-based metric. In approximately 400 words, evaluate the contract through the lens of the Holmstrom informativeness principle. Identify one feature of the contract that is consistent with the principle and one feature that is harder to reconcile with it. Be specific about what private information the contract is attempting to elicit and which signal is being used to elicit it.</p></li>
+</ol>
+</section>
+<section id="lab" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="lab"><span class="header-section-number">4.10</span> Lab</h2>
+<p>The in-class activity for this week is a <strong>principal-agent simulation</strong>. You will be assigned a role — either principal or agent — and will participate in a structured contracting exercise. Principals will design compensation contracts; agents will choose effort levels in response. The exercise will play out over several rounds, with the resulting outcomes (effort, output, wages, profits) tabulated and discussed in the second class meeting of the week.</p>
+<p><strong>Quiz 1 (covering Chapters 1–3 of the Companion) is administered at the start of the second class meeting this week.</strong> Bring a writing implement, your laptop or a calculator, and an analog watch if you have one — phones are not permitted during the quiz.</p>
+</section>
+<section id="further-reading" class="level2" data-number="4.11">
+<h2 data-number="4.11" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">4.11</span> Further reading</h2>
+<p>The four readings below are the assigned readings for Week 4. You should read all of them.</p>
+<ul>
+<li><span class="citation" data-cites="holmstrom1979">Holmstrom (<a href="../references.html#ref-holmstrom1979" role="doc-biblioref">1979</a>)</span>, “Moral Hazard and Observability.” A short paper. Read for the central result (i.e., the informativeness principle) and the framework; the formal proofs can be skimmed on a first pass.</li>
+<li><span class="citation" data-cites="holmstrommilgrom1991">Holmstrom and Milgrom (<a href="../references.html#ref-holmstrommilgrom1991" role="doc-biblioref">1991</a>)</span>, “Multitask Principal-Agent Analyses.” Read for the extension of the informativeness principle to settings where the agent allocates effort across multiple tasks, and for the implications regarding when to add performance measures to a contract.</li>
+<li><span class="citation" data-cites="jensenmeckling1976">Jensen and Meckling (<a href="../references.html#ref-jensenmeckling1976" role="doc-biblioref">1976</a>)</span>, Sections II and III on agency costs. (You will have read the introduction and Section II for Chapter 1; this week, focus on Section III’s discussion of the implications for outside equity and outside debt.)</li>
+<li>A short selection from <span class="citation" data-cites="demski2008">Demski (<a href="../references.html#ref-demski2008" role="doc-biblioref">2008</a>)</span> on stewardship and the role of accounting in performance measurement (chapter assignment to be specified on Canvas).</li>
+<li><em>Optional, for those who want more:</em> <span class="citation" data-cites="halliebman1998">Hall and Liebman (<a href="../references.html#ref-halliebman1998" role="doc-biblioref">1998</a>)</span> on the magnitude of CEO pay-for-performance sensitivity in U.S. public firms. The paper is accessible at the level of an honors freshman; the formal modeling is light.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Connecting Chapter 4 to the rest of the course
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Chapter 4 closes Arc I’s main theoretical content. We now have a framework for adverse selection (Chapter 2) and moral hazard (Chapter 4), the two foundational information-economics problems that accounting was developed to address; we have a framework for voluntary disclosure (Chapter 3) and for the institutional response — internal controls, audit, mandatory reporting — that has emerged around them. Chapter 5 closes Arc I by stepping up to the institutional level itself, asking why we have a FASB and what the conceptual framework is for. Arc II then turns to how capital markets actually use the accounting numbers we have spent Arc I learning to construct.</p>
+</div>
+</div>
+
+
+<!-- -->
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-antleeppen1985" class="csl-entry" role="listitem">
+Antle, Rick, and Gary D. Eppen. 1985. <span>“Capital Rationing and Organizational Slack in Capital Budgeting.”</span> <em>Management Science</em> 31 (2): 163–74.
+</div>
+<div id="ref-bebchukfried2003" class="csl-entry" role="listitem">
+Bebchuk, Lucian Arye, and Jesse M. Fried. 2003. <span>“Executive Compensation as an Agency Problem.”</span> <em>Journal of Economic Perspectives</em> 17 (3): 71–92.
+</div>
+<div id="ref-demski2008" class="csl-entry" role="listitem">
+Demski, Joel S. 2008. <em>Managerial Uses of Accounting Information</em>. 2nd ed. New York: Springer.
+</div>
+<div id="ref-frydmanjenter2010" class="csl-entry" role="listitem">
+Frydman, Carola, and Dirk Jenter. 2010. <span>“CEO Compensation.”</span> <em>Annual Review of Financial Economics</em> 2: 75–102.
+</div>
+<div id="ref-halliebman1998" class="csl-entry" role="listitem">
+Hall, Brian J., and Jeffrey B. Liebman. 1998. <span>“Are CEOs Really Paid Like Bureaucrats?”</span> <em>Quarterly Journal of Economics</em> 113 (3): 653–91.
+</div>
+<div id="ref-healy1985" class="csl-entry" role="listitem">
+Healy, Paul M. 1985. <span>“The Effect of Bonus Schemes on Accounting Decisions.”</span> <em>Journal of Accounting and Economics</em> 7 (1–3): 85–107.
+</div>
+<div id="ref-holmstrom1979" class="csl-entry" role="listitem">
+Holmstrom, Bengt. 1979. <span>“Moral Hazard and Observability.”</span> <em>Bell Journal of Economics</em> 10 (1): 74–91.
+</div>
+<div id="ref-holmstrommilgrom1991" class="csl-entry" role="listitem">
+Holmstrom, Bengt, and Paul Milgrom. 1991. <span>“Multitask Principal-Agent Analyses: Incentive Contracts, Asset Ownership, and Job Design.”</span> <em>Journal of Law, Economics, and Organization</em> 7: 24–52.
+</div>
+<div id="ref-ittnerlarcker2003" class="csl-entry" role="listitem">
+Ittner, Christopher D., and David F. Larcker. 2003. <span>“Coming up Short on Nonfinancial Performance Measurement.”</span> <em>Harvard Business Review</em> 81 (11): 88–95.
+</div>
+<div id="ref-jensenmeckling1976" class="csl-entry" role="listitem">
+Jensen, Michael C., and William H. Meckling. 1976. <span>“Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure.”</span> <em>Journal of Financial Economics</em> 3 (4): 305–60.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/acctg211h\.psu\.edu\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../arc1-information/03-signaling.html" class="pagination-link" aria-label="Signaling and the Income Statement">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Signaling and the Income Statement</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../arc1-information/05-standards.html" class="pagination-link" aria-label="Standard Setting and the Conceptual Framework">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Standard Setting and the Conceptual Framework</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "The principal-agent problem, the Holmstrom informativeness principle, and the role of accounting in executive compensation contracts."</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># Stewardship and Moral Hazard {#sec-stewardship}</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Opening question</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>In 2023, the median chief executive officer of an S&amp;P 500 firm received total compensation of roughly sixteen million dollars. Of that amount, approximately seventy percent was performance-contingent (i.e., tied to equity grants, performance shares, or annual cash bonuses keyed to financial or stock-price targets). The median worker at those same firms earned approximately eighty thousand dollars. The CEO-to-worker pay ratio has attracted attention as a moral object, as a political object, and as a problem in managerial economics <span class="co">[</span><span class="ot">@halliebman1998; @bebchukfried2003; @frydmanjenter2010, who collectively review the evolution of U.S. CEO pay since the 1980s and document the rising share of equity-based compensation</span><span class="co">]</span>.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>This chapter sets aside the moral and political questions and addresses a closely related analytical one: why is so much of CEO compensation made performance-contingent? A flat salary would shield the CEO from risk she presumably dislikes, and the diversified shareholders have a comparative advantage in absorbing risk. On a first pass, it appears inefficient to load risk onto the party who values diversification least.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>The literature has converged on a stylized answer. Performance-contingent compensation exists not because shareholders prefer to push risk onto the CEO, but because shareholders cannot directly observe what the CEO is doing. The CEO's effort, judgment, and decision-making are at most partially observable from the outside; the firm's reported earnings and stock price are observable but are noisy functions of the CEO's actions and of forces outside her control. A flat salary would do nothing to encourage effort that cannot be verified. A contract that makes pay contingent on observable performance does encourage that effort, at the cost of imposing some risk on the CEO. The optimal contract balances the cost of risk-bearing against the benefit of effort-incentivization.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>This is the *moral hazard* problem (i.e., the agent's incentive to take a hidden action the principal would not approve of) in its canonical form. It is the second of the two foundational information-economics problems we study in Arc I. The first was the adverse selection problem of Chapter 2. Both problems arise because one party in a relationship knows more than another. In adverse selection, the asymmetry concerns (i) *who* is in the market (high-quality versus low-quality types). In moral hazard, the asymmetry concerns (ii) *what action* the agent is taking (high effort versus low effort). The two problems have different formal structures, different institutional responses, and different accounting consequences. This chapter develops the moral hazard half of the framework. It also introduces the second-period mechanics of the income statement — adjusting entries, the closing process, and the trial balance — which exist in part because the principal needs a verification structure that can support a contractual relationship she cannot directly monitor.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## The principal-agent problem</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Consider a stylized contracting setup that maps onto the relationship between a firm's shareholders (the principal) and its CEO (the agent). The principal hires the agent to take an action $e$, which we will call effort. The action is costly to the agent: exerting effort requires forgoing leisure or accepting a higher cognitive load. The action produces output for the firm, $y$, which is a noisy function of effort:</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>y = e + \varepsilon, \quad \varepsilon \sim N(0, \sigma^2).</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>The output $y$ is observable to both parties, but the effort $e$ is observable only to the agent. The principal cannot tell, from any realization of $y$, how much of the result is attributable to the agent's effort and how much to the random component $\varepsilon$. The cost of effort to the agent, $c(e)$, is increasing and convex; we will use the simple quadratic form $c(e) = ke^2/2$, where $k &gt; 0$ parameterizes the marginal cost of effort.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>The principal offers the agent a compensation contract that specifies a payment $w$ as a function of the observable output $y$. We restrict attention to *linear* contracts of the form $w(y) = a + \beta y$, where $a$ is the fixed component (i.e., a base salary) and $\beta$ is the slope on output (i.e., the agent's pay-for-performance sensitivity). The agent has CARA preferences (i.e., constant absolute risk aversion) with risk-aversion parameter $r &gt; 0$, and an outside option that delivers a reservation utility $U_0$.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## The first-best benchmark</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>If the principal could observe effort directly, the contract would simply specify the desired effort level and pay the agent a flat amount conditional on having taken it. The agent would face no risk; the principal, who is diversified, would absorb the entire variance of $y$. The first-best level of effort is $e^* = 1/k$. There is no agency cost because there is no information asymmetry to overcome.</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>In the second-best world, where effort is unobservable, the principal must induce effort indirectly by making the agent's compensation contingent on output. The agent, anticipating the contract, chooses $e$ to maximize her own certainty-equivalent payoff:</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>CE = a + \beta e - \tfrac{1}{2} k e^2 - \tfrac{1}{2} r \beta^2 \sigma^2.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>The first term is the expected wage. The second, $-\tfrac{1}{2} k e^2$, is the disutility of effort. The third, $-\tfrac{1}{2} r \beta^2 \sigma^2$, is the risk premium the agent demands for bearing the variability in $y$ that the contract has loaded onto her compensation.</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>Maximizing with respect to $e$ yields the agent's optimal effort: $e = \beta/k$. The agent supplies more effort when her pay-for-performance sensitivity $\beta$ is higher and less when her marginal cost of effort $k$ is higher. The principal, anticipating this response, chooses $\beta$ to maximize the joint surplus net of the risk premium. The resulting optimal slope is</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>\beta^* = \frac{1}{1 + r k \sigma^2}.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>The formula carries the central intuition of the section. The slope $\beta$ is bounded above by one (i.e., full effort incentivization, in which the agent bears the entire residual risk and the contract reproduces the first-best effort level). The slope is reduced from this benchmark by the term $r k \sigma^2$, which captures the joint cost of risk-bearing and effort-distortion. Three comparative statics follow:</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>(i) higher agent risk-aversion ($r$) reduces $\beta^*$;</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>(ii) higher marginal cost of effort ($k$) reduces $\beta^*$;</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>(iii) higher variance of output ($\sigma^2$) reduces $\beta^*$.</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>In the limit $\sigma^2 \to 0$ — output perfectly reveals effort — the slope approaches one. In the limit $\sigma^2 \to \infty$ — output is pure noise — the slope falls toward zero, and the contract reverts to a flat wage because pay-for-performance imposes risk without informative content.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>This stylized model is known in the contracting literature as the *LEN model* (i.e., Linear contract, Exponential utility, Normally distributed output). It is a workhorse rather than a definitive characterization of the agency problem. Its predictions are nonetheless informative: in richer models the same forces are at work, and pay-for-performance sensitivities are tempered by risk-aversion and noise even when the contract form is more complex <span class="co">[</span><span class="ot">@holmstrommilgrom1991, who extend the framework to multitask settings and show that the same logic governs how a contract weights multiple performance measures</span><span class="co">]</span>.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Holmstrom informativeness principle</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>A central result in the agency literature, due to @holmstrom1979, generalizes the LEN intuition in a useful way. Suppose, in addition to output $y$, the principal can also contract on a second observable signal $s$ (e.g., an audit report, an internal performance metric, or a peer-firm benchmark). Should the additional signal enter the optimal contract?</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>Holmstrom's answer is sharp. *Any signal that is incrementally informative about the agent's action, conditional on the signals already in the contract, should enter the contract with non-zero weight.* The converse also holds: a signal that contains no information about the action beyond what is already conveyed by other signals adds nothing useful and should receive zero weight, however precise it may be in isolation. The right test for inclusion is incremental informativeness, not precision.</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>The intuition runs as follows. If $s$ contains information about $e$ that is not already contained in $y$, then conditioning compensation on both signals lets the principal filter some of the noise out of $y$, reducing the risk premium the agent demands without weakening effort-incentivization. The agent is paid more accurately for what she did, and less for what the world did to her. If $s$ contains no incremental information, then conditioning on it imposes additional risk on the agent (i.e., $s$ has its own noise) without any offsetting reduction in noise from $y$, and the principal does strictly better by excluding it.</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">### A stylized two-signal example</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>Consider a CEO whose effort $e$ affects two observable signals — accounting earnings $y_1$ and the firm's stock return $y_2$:</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>y_1 = e + \varepsilon_1, \quad y_2 = e + \varepsilon_2,</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>with $\varepsilon_1 \sim N(0, \sigma_1^2)$, $\varepsilon_2 \sim N(0, \sigma_2^2)$, and $\text{Cov}(\varepsilon_1, \varepsilon_2) = 0$. The principal chooses weights $\beta_1$ and $\beta_2$ on the two signals to maximize joint surplus. The optimal weights are proportional to the *precisions* (i.e., inverse variances) of the signals:</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>\frac{\beta_1^*}{\beta_2^*} = \frac{1/\sigma_1^2}{1/\sigma_2^2} = \frac{\sigma_2^2}{\sigma_1^2}.</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>Three implications follow. First, both signals enter the contract with positive weight, consistent with Holmstrom's principle. Second, the noisier signal receives a smaller weight: if earnings are five times noisier than the stock return ($\sigma_1^2 = 5\sigma_2^2$), the optimal weight on earnings is one-fifth of the weight on returns. Third, neither weight is set to zero merely because the other signal exists. Each contributes incremental information about $e$, and excluding either would force the principal to demand more effort from the remaining noisier metric.</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>Now extend the example to a peer-firm benchmark. Suppose the CEO's effort affects firm output, but firm output is also exposed to an industry shock $\delta$ that affects every firm in the sector:</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>y_1 = e + \delta + \varepsilon_1, \quad \tilde{y} = \delta + \tilde{\varepsilon},</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>where $\tilde{y}$ is the average performance of the firm's peers, $\delta$ is the common industry shock, and $\tilde{\varepsilon}$ is independent noise in the peer benchmark. The peer signal $\tilde{y}$ contains no direct information about $e$, but it contains information about $\delta$. Conditioning on $\tilde{y}$ lets the principal *subtract* the industry shock from $y_1$, sharpening the inference about effort. The optimal contract takes the form</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>w = a + \beta \left( y_1 - \gamma \tilde{y} \right),</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>where $\gamma &gt; 0$ is the optimal filtering weight on the peer benchmark. This is the formal logic behind *relative performance evaluation* (RPE): pay the CEO based on firm performance minus a peer-group benchmark, not on raw firm performance. The peer benchmark is informative about effort even though it does not respond to effort directly — it is incrementally informative because it isolates the component of firm performance that the CEO can be held accountable for.</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="fu">## A subtle implication</span></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>The informativeness principle does not say that a signal must be precise to enter the contract. A noisy but conditionally informative signal still adds value, just less of it. Conversely, a precise but already-redundant signal adds nothing, however precise it may be. The implication for compensation design is that signals should be evaluated jointly, not one at a time.</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="fu">### Why earnings remain in CEO contracts alongside stock returns</span></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>The informativeness principle illuminates a question often asked about accounting numbers: *should the CEO be compensated on accounting earnings, on stock returns, or on both?* The stock return is, in many respects, more comprehensive — it incorporates not only the period's earnings but also forward-looking information about the firm's prospects. Yet accounting earnings continue to play a substantial role in CEO compensation contracts.</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>The Holmstrom logic supplies an answer consistent with the empirical pattern. Earnings and stock returns are imperfectly correlated. Each contains information about CEO effort that the other does not. Earnings reflect operational decisions that have not yet shown up in returns. Returns reflect investor expectations about future cash flows that the period's earnings have not yet realized. Neither signal is redundant given the other, so both enter the contract with positive weight, with the weight on each scaled by its conditional informativeness about effort. @halliebman1998, in their study of pay-for-performance sensitivities in U.S. firms, document that accounting-based and stock-based metrics each carry economically meaningful weight in CEO compensation, consistent with the joint-informativeness reading.</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="fu">## The institutional response: executive compensation contracts</span></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>The framework of Sections 4.2 and 4.3 explains the architecture of executive compensation at U.S. public firms. CEO pay at large firms typically has four components, each of which can be read as the institutional response to a feature of the agency problem.</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>**Base salary** is the fixed component $a$ in the LEN model. It typically accounts for ten to fifteen percent of total compensation at large U.S. firms. Its function is to satisfy the participation constraint — the CEO must be willing to take the job rather than her outside option — while imposing no incremental risk.</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>**Annual cash bonus** is tied to *accounting-based* metrics for the current fiscal year, most commonly earnings per share (EPS), operating income, return on equity (ROE), or EBITDA, evaluated against a target set at the beginning of the year. The bonus typically has a threshold (below which payout is zero), a target (at which the agreed-upon bonus is paid), and a cap (above which additional performance produces no incremental payout). The threshold-target-cap structure is the source of the bunching documented by @healy1985, discussed in Chapter 3 and again below.</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>**Performance shares** (sometimes called performance share units, or PSUs) are equity grants whose vesting is contingent on the firm meeting multi-year performance targets, typically over a three-year period. The performance metrics are usually *stock-based* — most commonly total shareholder return (TSR) relative to a peer group or a market index — and the structure is explicitly relative: the CEO earns the target share count if TSR falls at the median of the peer group, more if at the seventy-fifth percentile, less if at the twenty-fifth percentile, and zero if at the bottom. Performance shares are the dominant vehicle through which RPE is implemented at U.S. public firms.</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>**Restricted stock (or restricted stock units, RSUs)** are equity grants that vest with the passage of time, conditional on continued employment. They provide an undifferentiated exposure to the firm's stock price and are intended in part to align the CEO's wealth with the long-run value of the firm, in part to discourage short-tenure turnover. Restricted stock typically vests in equal installments over three to four years.</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>A representative compensation mix for the CEO of a large U.S. firm in 2023 might be (i) ten percent base salary, (ii) fifteen percent annual cash bonus, (iii) thirty-five percent performance shares, and (iv) forty percent restricted stock, with the exact mix varying by firm size, industry, and governance practices.</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>Three features of this architecture follow directly from the framework.</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>First, the contract uses *multiple performance measures*, consistent with the informativeness principle. Accounting earnings enter via the annual cash bonus. Stock returns enter via performance shares and restricted stock. The two measures are conditionally informative about different aspects of CEO effort, and neither is redundant.</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>Second, the most heavily weighted stock-based metric — TSR in performance shares — is typically evaluated *relative to a peer group*, not in absolute terms. This is the RPE structure of Section 4.3. Industry-wide shocks (e.g., a recession, a commodity price swing, a sector-wide regulatory change) are filtered out, so the CEO is rewarded for outperforming her peers rather than for riding a sector wave. The empirical literature documents that the use of explicit RPE in performance share plans has grown substantially since the early 2000s, consistent with the Holmstrom prescription.</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>Third, the contract distinguishes between *accounting metrics* and *stock metrics* in their treatment. Accounting metrics are typically evaluated against an *absolute* internal target (i.e., a budgeted EPS or ROE figure), while stock metrics are typically evaluated on a *relative* basis (i.e., TSR versus a peer group). The pattern is consistent with the framework: accounting metrics are firm-specific outputs of operating decisions, so an absolute internal target measures the CEO against her own commitments; stock returns are exposed to systematic shocks that are not the CEO's responsibility, so a relative benchmark filters those shocks out.</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="fu">### The role of audited financial statements</span></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>Each of the accounting-based metrics in the contract is computed from the firm's audited financial statements. The audit (i.e., independent third-party verification of the firm's financial statements and, since SOX, of its internal controls over financial reporting) serves two functions in the framework of this chapter. It functions as a monitoring expenditure in the sense of @jensenmeckling1976, who define monitoring costs as expenditures by the principal to verify the agent's actions. It also functions as a Holmstrom-informative signal in its own right: the auditor's report adds independent information about the reliability of the firm's reported numbers, which can then enter the CEO's compensation contract through clawback provisions, performance metric definitions, or board-discretionary adjustments.</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>The system of *internal controls* sits beneath the audit. Internal controls are the policies, procedures, and infrastructure within the firm that ensure transactions are recorded properly, assets are safeguarded, and financial reports are reliable. The Committee of Sponsoring Organizations (i.e., COSO) framework, originally issued in 1992 and updated in 2013, is the dominant conceptual framework for internal controls in U.S. firms. It identifies five components — control environment, risk assessment, control activities, information and communication, and monitoring — that together are intended to produce a system in which the agent's actions can be monitored at reasonable cost.</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>The Sarbanes-Oxley Act of 2002, passed in the immediate aftermath of the Enron, WorldCom, and Tyco scandals, added a mandatory layer to the internal-controls structure for U.S. public companies. Section 404 of SOX requires management to assess and report on the effectiveness of internal control over financial reporting, and requires the firm's external auditor to issue an opinion on the same matter. Compliance with SOX 404 is expensive — small public companies often report annual SOX-related compliance costs in the millions of dollars — and the academic literature has been mixed on whether the benefits in reporting reliability are commensurate with the costs. The Holmstrom framework supplies a tool for thinking about that question: SOX 404 creates an additional signal of management's stewardship, valuable to the extent that the signal is incrementally informative about effort and not redundant with existing signals.</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="fu">### Accruals inside compensation contracts</span></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>The accruals discussed in Chapter 3 are embedded in the accounting metrics that drive the annual cash bonus. @healy1985 documented in a foundational paper that managers respond to the structure of bonus plans by adjusting accruals. When a manager is below the lower threshold of her bonus plan, she takes an income-decreasing accrual to clean the slate (i.e., a "big bath"); when she is above the upper cap, she takes another income-decreasing accrual to bank earnings for future periods; when she is in the incentive-eligible range, she takes income-increasing accruals to maximize the bonus. The Healy result is the classic empirical demonstration that compensation contracts and accruals are mutually endogenous — the contract creates incentives that the agent responds to with the accounting tools at her disposal. We will return to the earnings-management literature in detail in Chapter 10.</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>The Healy pattern is a cost of using accounting metrics in compensation, but it does not by itself imply that accounting metrics should be excluded. The informativeness principle compares signals jointly, and accounting metrics retain incremental content about effort even after accounting for managerial discretion. The institutional response has been to constrain the discretion (e.g., through audited statements, internal controls, clawback provisions, and audit-committee oversight) rather than to abandon the metric.</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mechanics: the closing process and the trial balance</span></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>The mechanics of the income statement and the balance sheet have, by this chapter, been introduced in pieces. Chapter 2 introduced the accounting equation and the structure of the balance sheet. Chapter 3 introduced the income statement and the accrual basis. This chapter introduces the operational machinery that takes a period's transactions and adjusting entries and produces the audited financial statements that will eventually enter the CEO's compensation contract. The machinery is the *closing process*.</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>The closing process has three steps. First, *adjusting entries* are posted at the end of the period to bring revenue and expense accounts into line with the accrual basis. The adjustments include (i) revenues earned but not yet collected, (ii) expenses incurred but not yet paid, (iii) revenues collected but not yet earned, and (iv) expenses paid but not yet incurred. Each adjustment is an estimate the manager makes about the timing of economic activity; in aggregate, the adjustments determine the period's accruals.</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>Second, the *trial balance* is computed to verify that the total of all debits equals the total of all credits across all accounts. The trial balance is the verification step in the accounting system: if the equation $\text{Assets} = \text{Liabilities} + \text{Equity}$ does not hold, something is wrong. The trial balance is an internal check that the bookkeeping infrastructure is self-consistent. It does not verify that any individual entry is correct — only that the entries are mutually consistent. A firm whose trial balance does not tie has, at minimum, a bookkeeping error; it may have something worse.</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>Third, the *closing entries* move the period's revenues and expenses from the income-statement accounts into the equity section of the balance sheet via the retained-earnings account. After the closing entries are posted, the income-statement accounts have a zero balance and are ready to begin accumulating the next period's activity. The balance-sheet accounts carry forward into the next period at their post-closing balances.</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>The closing process is straightforward as a piece of mechanics, but it is worth pausing to note what it accomplishes from the perspective of this chapter. The process produces a structured, internally consistent set of financial statements that has been subjected to the verification discipline of the double-entry system. The output of the process — the period-end financial statements — is what the auditor reviews, what the SEC files contain, what the compensation committee uses to determine bonus payouts, what shareholders receive, and what enters the empirical literature as the firm's reported earnings, assets, liabilities, and equity for the period. The closing process is, in an important sense, the bridge between the firm's underlying economic activity and the public artifact that the rest of the institutional system acts upon.</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common pitfall</span></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>It is tempting on first encounter to treat the closing process as a clerical step — once the transactions have been recorded, the statements simply emerge. The framework of this chapter suggests a different view. The closing process is the moment at which the manager's discretion, exercised through the choice of accruals and adjusting entries, gets baked into the period's reported numbers. The verification structure of the trial balance ensures that the resulting numbers are arithmetically consistent. It does not ensure that the underlying estimates are unbiased. That is the auditor's job.</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="fu">## Empirical evidence</span></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>The empirical literature on the moral hazard problem in executive compensation is large; @frydmanjenter2010 provides a useful survey that documents the rise of equity-based pay since the 1980s and the shift toward performance-vesting structures. Three findings are particularly relevant to the framework of this chapter.</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>The first concerns the magnitude of *pay-for-performance sensitivity* in U.S. CEO compensation contracts. @halliebman1998 documented that, accounting for the value of stock and option holdings, a CEO of a typical U.S. public firm in the 1990s gained or lost approximately twenty-five dollars in personal wealth for each thousand-dollar change in the firm's market value. The figure has grown substantially since: with the rise of equity-based compensation in the 2000s and 2010s, modern estimates of the wealth-performance sensitivity for the median S&amp;P 500 CEO are an order of magnitude larger than the 1990s benchmark. The growth in sensitivity is consistent with the framework of this chapter — the contract is increasingly designed to load risk onto the CEO in exchange for effort-incentivization.</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>The second finding concerns the *rent-extraction critique* of the standard model. @bebchukfried2003 argued, drawing on a substantial empirical literature, that the magnitude and structure of CEO compensation in U.S. firms cannot be explained by the standard agency model alone. They proposed a complementary view in which CEOs exercise managerial power over the compensation-setting process and extract rents that exceed what would be optimal in a clean principal-agent relationship. The Bebchuk-Fried view does not displace the standard model, but it qualifies it: the contracts we observe reflect a mixture of efficient incentive design and managerial influence, and the relative weight of the two channels remains a contested empirical question.</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>The third finding concerns the *role of accounting numbers in compensation contracts*. Accounting-based performance metrics — earnings, ROE, EBITDA, growth rates — are nearly universal in CEO bonus plans, and the weight on accounting metrics relative to stock-price metrics varies systematically with firm characteristics. Smaller firms, firms in less-volatile industries, and firms with more-complex operations tend to put more weight on accounting metrics. The pattern is consistent with the informativeness principle: accounting metrics are most useful as performance signals when stock-price signals are noisy or slow to incorporate operational improvements <span class="co">[</span><span class="ot">@ittnerlarcker2003, who document the role of non-financial measures in compensation and argue that firms select performance measures based on their informativeness about the actions the firm wishes to incentivize; @antleeppen1985, who study the role of accounting numbers in capital-budgeting and compensation settings</span><span class="co">]</span>.</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>A separate empirical literature documents the prevalence of explicit RPE in performance share plans, particularly for TSR-based awards. Although RPE is the analytically clean implementation of the informativeness principle, the share of contracts that use it is smaller than the framework would naively predict. One reason, suggested in @holmstrommilgrom1991, is that adding metrics to a contract creates multitask distortions (i.e., the CEO may shift effort toward the measured dimension at the expense of unmeasured ones). The fact that the empirical adoption of RPE has nonetheless grown over the past two decades is consistent with the principle, even if the speed of adoption is slower than the framework would predict.</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>Finally, managers respond to the structure of accounting-based incentives by adjusting accrual estimates, as @healy1985 documented and as discussed in Section 4.4. The empirical regularity is strong enough that it has motivated a substantial literature on earnings management, which we will examine in Chapter 10.</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key takeaways</span></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key takeaways</span></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Moral hazard creates the demand for performance-contingent pay.** When effort is unobservable, a flat salary cannot induce effort, so the contract loads risk onto the agent in exchange for incentivization, balancing risk-bearing cost against effort-incentivization benefit.</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**The LEN model identifies three forces that reduce the optimal pay-for-performance sensitivity.** Higher agent risk-aversion, higher marginal cost of effort, and higher noise in output each push the optimal slope $\beta^*$ below one.</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**The Holmstrom informativeness principle is a test of incremental informativeness, not precision.** A signal enters the optimal contract if and only if it contains information about the agent's action that is not already conveyed by signals already in the contract.</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Earnings and stock returns are jointly informative about CEO effort.** Neither is redundant given the other, which is why CEO contracts include both an accounting-based annual bonus and stock-based performance shares and restricted stock.</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Relative performance evaluation operationalizes the informativeness principle.** Subtracting a peer-group benchmark filters out industry-wide shocks that are not attributable to the focal CEO's effort, which is why TSR in performance share plans is typically evaluated relative to a peer group rather than in absolute terms.</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Audited financial statements and internal controls support the contract.** The audit, internal controls, and the closing process supply the verification infrastructure that makes accounting numbers usable as contractible signals in the first place.</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="fu">## Discussion questions</span></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>The chapter argues that CEO pay-for-performance sensitivity exists because shareholders cannot observe CEO effort. Yet many CEOs of large U.S. firms are also subject to substantial monitoring — boards meet regularly, audit committees oversee internal controls, and shareholders can vote on say-on-pay and other governance matters. Does the existence of these monitoring mechanisms reduce the optimal pay-for-performance sensitivity, increase it, or have an ambiguous effect? Defend your answer.</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The Holmstrom informativeness principle says that any signal informative about the agent's effort should enter the contract. The principle is silent on the *weight* the signal should receive. Suppose two signals are both informative about effort; one is more precise than the other. Should the more-precise signal receive a larger weight? Why or why not?</span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>SOX 404 imposes substantial compliance costs on U.S. public firms. Some critics have argued that the cost is excessive and that firms would be better off if SOX 404 were repealed. Using the framework of this chapter, identify the channels through which SOX 404 produces benefits and the channels through which it produces costs. Under what conditions would the benefits dominate the costs?</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>The Bebchuk-Fried managerial-power view holds that CEO compensation reflects, in part, the CEO's ability to influence the compensation-setting process. The standard agency view holds that CEO compensation is the efficient outcome of an incentive-design problem. Suppose you were to test whether the managerial-power view contributes meaningfully to the explanation of observed pay levels. What would you measure, and what would you predict?</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>The chapter described the closing process as the moment at which the manager's discretion gets baked into the period's reported numbers. Is this characterization fair? Could one argue that the manager's discretion is actually exercised earlier — at the point at which transactions are originally recorded — and that the closing process is purely mechanical? Take a position and defend it.</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="fu">## Problems</span></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>*(Numerical, LEN model.)* Consider the LEN model with $k = 1$, $r = 1$, and $\sigma^2 = 1$. (a) Compute the optimal pay-for-performance sensitivity $\beta^*$. (b) Compute the agent's resulting effort, expected output, expected wage (given $a$ chosen to satisfy the participation constraint at $U_0 = 0$), and certainty-equivalent payoff. (c) Now suppose the variance of output rises to $\sigma^2 = 4$. Recompute $\beta^*$, effort, expected output, and the agent's certainty equivalent. Comment on the direction of the changes and reconcile them with the comparative statics in Section 4.2.</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>*(Numerical, informativeness principle, two signals.)* A CEO's effort affects two observable signals: accounting earnings $y_1 = e + \varepsilon_1$ and stock return $y_2 = e + \varepsilon_2$, with $\varepsilon_1 \sim N(0, 4)$, $\varepsilon_2 \sim N(0, 1)$, and $\text{Cov}(\varepsilon_1, \varepsilon_2) = 0$. The principal uses a linear contract of the form $w = a + \beta_1 y_1 + \beta_2 y_2$. (a) Using the precision-weighting result from Section 4.3, compute the ratio $\beta_1^* / \beta_2^*$. (b) Suppose the principal proposes to drop earnings from the contract on the grounds that the stock return is the more precise signal. Argue, using the informativeness principle, whether dropping earnings improves or worsens the contract. (c) Now suppose $\text{Cov}(\varepsilon_1, \varepsilon_2) = 1.8$ (i.e., the two signals share noise from a common source). Argue qualitatively how the optimal weights change relative to part (a), and explain the intuition.</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>*(Numerical, relative performance evaluation.)* Continue the two-signal setup of Problem 2. Suppose firm output is exposed to an industry shock $\delta \sim N(0, 9)$ that also enters the firm's stock return, so that $y_2 = e + \delta + \tilde{\varepsilon}_2$ with $\tilde{\varepsilon}_2 \sim N(0, 1)$. The principal observes a peer-firm benchmark $\tilde{y} = \delta + \tilde{\varepsilon}$ with $\tilde{\varepsilon} \sim N(0, 1)$, independent of all other noise terms. (a) Argue why the optimal contract subtracts a multiple of $\tilde{y}$ from $y_2$ before paying the CEO. (b) Sketch how the optimal weight on residual (filtered) stock performance compares to the optimal weight that would apply without the peer benchmark. Be specific about the direction. (c) Interpret the result in the language of performance share plans at large U.S. firms.</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>*(Conceptual, designing a CEO contract.)* You are advising the compensation committee of a mid-cap U.S. manufacturing firm. The firm operates in a single industry with three close peers, has stable operating margins, and is in the middle of a multi-year capital investment program whose payoff will not be reflected in earnings or stock price for at least two years. Design a compensation contract for the new CEO, specifying (i) the mix of base salary, annual cash bonus, performance shares, and restricted stock as percentages of total compensation; (ii) the performance metric(s) for the annual cash bonus and the rationale for choosing them; (iii) the performance metric(s) for the performance shares and whether they should be evaluated on an absolute or relative basis; and (iv) one feature of the contract designed specifically to address the multi-year capital investment program. Justify each choice using the framework of this chapter, approximately 400 words total.</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>*(Conceptual, whether a metric belongs in the bonus formula.)* A board is considering whether to add *customer satisfaction* (measured via a Net Promoter Score survey administered quarterly by an independent vendor) to the CEO's annual cash bonus formula, currently based only on EPS. The CFO argues that customer satisfaction is a leading indicator of future earnings and therefore belongs in the contract; the CEO argues that it adds noise and exposes her to factors outside her control. Apply the Holmstrom informativeness principle to evaluate the proposal. What information would you want to see before recommending for or against? In approximately 300 words, identify (a) the empirical conditions under which the metric should be added, (b) the conditions under which it should not, and (c) one diagnostic the board could compute from existing data to discriminate between the two cases.</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>*(Conceptual.)* Read Section II of @jensenmeckling1976 (the formal development of agency costs). In approximately 250 words, summarize the three components of agency cost they identify and give one concrete example of each that connects to the institutional features discussed in Section 4.4 of this chapter.</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>*(Numerical, closing process.)* Continue the Acme Corp. example from the end of Chapter 3. Acme's pre-closing trial balance at February 28 includes the following accounts (some balances are to be supplied by the student from the worked transactions of Section 3.6 plus February's additional activity): cash, accounts receivable, prepaid insurance, truck, accumulated depreciation, accounts payable, wages payable, note payable, common stock, retained earnings, revenue, wage expense, insurance expense, and depreciation expense. (a) Construct the trial balance, ensuring debits and credits are equal. (b) Post the closing entries to move revenue and expenses into retained earnings. (c) Construct the post-closing balance sheet and verify that the accounting equation holds.</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>*(Short writing exercise.)* Locate the most recent proxy statement (DEF 14A) of a U.S. public company of your choice. In the Compensation Discussion and Analysis (CD&amp;A) section, identify (i) the performance metric(s) used in the annual cash bonus, (ii) the performance metric(s) used in the long-term incentive plan and whether each is evaluated on an absolute or relative basis, and (iii) the peer group used for any RPE-based metric. In approximately 400 words, evaluate the contract through the lens of the Holmstrom informativeness principle. Identify one feature of the contract that is consistent with the principle and one feature that is harder to reconcile with it. Be specific about what private information the contract is attempting to elicit and which signal is being used to elicit it.</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="fu">## Lab</span></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>The in-class activity for this week is a **principal-agent simulation**. You will be assigned a role — either principal or agent — and will participate in a structured contracting exercise. Principals will design compensation contracts; agents will choose effort levels in response. The exercise will play out over several rounds, with the resulting outcomes (effort, output, wages, profits) tabulated and discussed in the second class meeting of the week.</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>**Quiz 1 (covering Chapters 1–3 of the Companion) is administered at the start of the second class meeting this week.** Bring a writing implement, your laptop or a calculator, and an analog watch if you have one — phones are not permitted during the quiz.</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="fu">## Further reading</span></span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>The four readings below are the assigned readings for Week 4. You should read all of them.</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@holmstrom1979, "Moral Hazard and Observability." A short paper. Read for the central result (i.e., the informativeness principle) and the framework; the formal proofs can be skimmed on a first pass.</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@holmstrommilgrom1991, "Multitask Principal-Agent Analyses." Read for the extension of the informativeness principle to settings where the agent allocates effort across multiple tasks, and for the implications regarding when to add performance measures to a contract.</span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@jensenmeckling1976, Sections II and III on agency costs. (You will have read the introduction and Section II for Chapter 1; this week, focus on Section III's discussion of the implications for outside equity and outside debt.)</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A short selection from @demski2008 on stewardship and the role of accounting in performance measurement (chapter assignment to be specified on Canvas).</span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>*Optional, for those who want more:* @halliebman1998 on the magnitude of CEO pay-for-performance sensitivity in U.S. public firms. The paper is accessible at the level of an honors freshman; the formal modeling is light.</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a><span class="fu">## Connecting Chapter 4 to the rest of the course</span></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>Chapter 4 closes Arc I's main theoretical content. We now have a framework for adverse selection (Chapter 2) and moral hazard (Chapter 4), the two foundational information-economics problems that accounting was developed to address; we have a framework for voluntary disclosure (Chapter 3) and for the institutional response — internal controls, audit, mandatory reporting — that has emerged around them. Chapter 5 closes Arc I by stepping up to the institutional level itself, asking why we have a FASB and what the conceptual framework is for. Arc II then turns to how capital markets actually use the accounting numbers we have spent Arc I learning to construct.</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc1-information/04-stewardship.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

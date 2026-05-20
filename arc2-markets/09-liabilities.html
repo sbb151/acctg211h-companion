@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Why debt contracts condition on accounting numbers. Smith and Warner’s covenant typology, Watts on conservatism, bond mechanics, ASC 842 leases, pensions and OPEB, and contingencies.">
+
+<title>9&nbsp; Liabilities, Debt Covenants, and Conservatism – ACCTG 211H Companion</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../arc2-markets/10-equity-compensation.html" rel="next">
+<link href="../arc2-markets/08-long-term-assets.html" rel="prev">
+<link href="../favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc2-markets/06-efficient-markets.html">Arc II — Markets and Measurement</a></li><li class="breadcrumb-item"><a href="../arc2-markets/09-liabilities.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">ACCTG 211H Companion</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/sbb151/acctg211h-companion" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: How This Book Is Organized</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc I — The Information Problem</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/01-foundations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foundations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/02-lemons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Lemons Problem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/03-signaling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Signaling and the Income Statement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/04-stewardship.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stewardship and Moral Hazard</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/05-standards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Standard Setting and the Conceptual Framework</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc II — Markets and Measurement</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/06-efficient-markets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Efficient Markets and the Information Content of Earnings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/07-accruals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Accrual Anomaly and Earnings Quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/08-long-term-assets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Long-Term Assets and Measurement Choice</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/09-liabilities.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/10-equity-compensation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Equity Compensation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc III — Contracting and Internal Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/11-decentralization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Decentralization and Cost Behavior</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/12-performance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Performance Measurement as Agency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/13-capital-budgeting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc IV — Synthesis</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc4-synthesis/14-debates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Synthesis: The Capstone Debates</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a01-fset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">A1. The Financial Statement Effects Template (FSET)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a02-python-wrds-colab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">A2. Python + WRDS in Google Colab Quickstart</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a03-debits-credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">A3. Debits and Credits Cheat Sheet</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#opening-question" id="toc-opening-question" class="nav-link active" data-scroll-target="#opening-question"><span class="header-section-number">9.1</span> Opening question</a></li>
+  <li><a href="#the-bondholder-shareholder-conflict" id="toc-the-bondholder-shareholder-conflict" class="nav-link" data-scroll-target="#the-bondholder-shareholder-conflict"><span class="header-section-number">9.2</span> The bondholder-shareholder conflict</a></li>
+  <li><a href="#the-smith-and-warner-typology" id="toc-the-smith-and-warner-typology" class="nav-link" data-scroll-target="#the-smith-and-warner-typology"><span class="header-section-number">9.3</span> The Smith and Warner typology</a></li>
+  <li><a href="#conservatism-as-a-contracting-solution" id="toc-conservatism-as-a-contracting-solution" class="nav-link" data-scroll-target="#conservatism-as-a-contracting-solution"><span class="header-section-number">9.4</span> Conservatism as a contracting solution</a></li>
+  <li><a href="#mechanics-bonds-the-effective-interest-method-and-a-worked-example" id="toc-mechanics-bonds-the-effective-interest-method-and-a-worked-example" class="nav-link" data-scroll-target="#mechanics-bonds-the-effective-interest-method-and-a-worked-example"><span class="header-section-number">9.5</span> Mechanics: bonds, the effective-interest method, and a worked example</a>
+  <ul class="collapse">
+  <li><a href="#a-worked-example-100000-face-10-year-6-coupon-issued-to-yield-8" id="toc-a-worked-example-100000-face-10-year-6-coupon-issued-to-yield-8" class="nav-link" data-scroll-target="#a-worked-example-100000-face-10-year-6-coupon-issued-to-yield-8">A worked example: $100,000 face, 10-year, 6% coupon, issued to yield 8%</a></li>
+  </ul></li>
+  <li><a href="#mechanics-leases-under-asc-842" id="toc-mechanics-leases-under-asc-842" class="nav-link" data-scroll-target="#mechanics-leases-under-asc-842"><span class="header-section-number">9.6</span> Mechanics: leases under ASC 842</a>
+  <ul class="collapse">
+  <li><a href="#why-asc-842-was-a-big-deal" id="toc-why-asc-842-was-a-big-deal" class="nav-link" data-scroll-target="#why-asc-842-was-a-big-deal">Why ASC 842 was a big deal</a></li>
+  <li><a href="#a-concrete-example-boeing-in-the-737-max-era" id="toc-a-concrete-example-boeing-in-the-737-max-era" class="nav-link" data-scroll-target="#a-concrete-example-boeing-in-the-737-max-era">A concrete example: Boeing in the 737 MAX era</a></li>
+  </ul></li>
+  <li><a href="#mechanics-pensions-opeb-and-off-balance-sheet-history" id="toc-mechanics-pensions-opeb-and-off-balance-sheet-history" class="nav-link" data-scroll-target="#mechanics-pensions-opeb-and-off-balance-sheet-history"><span class="header-section-number">9.7</span> Mechanics: pensions, OPEB, and off-balance-sheet history</a>
+  <ul class="collapse">
+  <li><a href="#defined-benefit-versus-defined-contribution-plans" id="toc-defined-benefit-versus-defined-contribution-plans" class="nav-link" data-scroll-target="#defined-benefit-versus-defined-contribution-plans">Defined-benefit versus defined-contribution plans</a></li>
+  <li><a href="#the-gap-between-funded-status-and-pension-expense" id="toc-the-gap-between-funded-status-and-pension-expense" class="nav-link" data-scroll-target="#the-gap-between-funded-status-and-pension-expense">The gap between funded status and pension expense</a></li>
+  <li><a href="#the-legacy-pension-overhang-gm-and-ford" id="toc-the-legacy-pension-overhang-gm-and-ford" class="nav-link" data-scroll-target="#the-legacy-pension-overhang-gm-and-ford">The legacy-pension overhang: GM and Ford</a></li>
+  <li><a href="#special-purpose-entities-and-the-enron-episode" id="toc-special-purpose-entities-and-the-enron-episode" class="nav-link" data-scroll-target="#special-purpose-entities-and-the-enron-episode">Special-purpose entities and the Enron episode</a></li>
+  </ul></li>
+  <li><a href="#mechanics-contingent-liabilities" id="toc-mechanics-contingent-liabilities" class="nav-link" data-scroll-target="#mechanics-contingent-liabilities"><span class="header-section-number">9.8</span> Mechanics: contingent liabilities</a></li>
+  <li><a href="#empirical-evidence" id="toc-empirical-evidence" class="nav-link" data-scroll-target="#empirical-evidence"><span class="header-section-number">9.9</span> Empirical evidence</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">9.10</span> Key takeaways</a></li>
+  <li><a href="#discussion-questions" id="toc-discussion-questions" class="nav-link" data-scroll-target="#discussion-questions"><span class="header-section-number">9.11</span> Discussion questions</a></li>
+  <li><a href="#problems" id="toc-problems" class="nav-link" data-scroll-target="#problems"><span class="header-section-number">9.12</span> Problems</a>
+  <ul class="collapse">
+  <li><a href="#mechanical" id="toc-mechanical" class="nav-link" data-scroll-target="#mechanical">Mechanical</a></li>
+  <li><a href="#conceptual" id="toc-conceptual" class="nav-link" data-scroll-target="#conceptual">Conceptual</a></li>
+  <li><a href="#writing-exercise" id="toc-writing-exercise" class="nav-link" data-scroll-target="#writing-exercise">Writing exercise</a></li>
+  </ul></li>
+  <li><a href="#lab" id="toc-lab" class="nav-link" data-scroll-target="#lab"><span class="header-section-number">9.13</span> Lab</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">9.14</span> Further reading</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc2-markets/09-liabilities.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc2-markets/06-efficient-markets.html">Arc II — Markets and Measurement</a></li><li class="breadcrumb-item"><a href="../arc2-markets/09-liabilities.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-liabilities" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="opening-question" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="opening-question"><span class="header-section-number">9.1</span> Opening question</h2>
+<p>Hertz filed for Chapter 11 protection on May 22, 2020. The collapse of the rental-car business during the early months of the COVID-19 pandemic was the proximate trigger, but Hertz had been operating with elevated leverage for years, and the firm’s debt agreements — like those of most highly-leveraged firms — contained covenants (i.e., contractual side-conditions) tied to accounting numbers: minimum interest-coverage ratios, maximum debt-to-EBITDA ratios, restrictions on capital expenditures, and restrictions on asset dispositions. The COVID shock pushed Hertz’s accounting metrics through the relevant thresholds, the covenant violations cascaded, the lenders accelerated, and Hertz’s ability to operate independently was effectively over.</p>
+<p>The Hertz case is a predictable consequence of how modern debt contracts work. A creditor lending money to a firm has, in effect, sold an option that the firm will repay; the option is in the money when the firm is healthy and out of the money when the firm is distressed. The creditor faces the same information problem we have studied throughout Arc I: the manager knows more about the firm’s prospects than the creditor does, and the manager’s incentives in distress diverge sharply from the creditor’s. Debt covenants are the contractual response. They give the creditor a measurable trigger, typically tied to accounting numbers, that activates creditor rights — acceleration, renegotiation, or the installation of an outside controller — when the firm’s condition deteriorates.</p>
+<p>This chapter develops a framework for thinking about how liabilities are measured and how debt contracts use accounting numbers. We proceed in four steps. We begin with the bondholder-shareholder conflict articulated by <span class="citation" data-cites="smithwarner1979">Smith and Warner (<a href="../references.html#ref-smithwarner1979" role="doc-biblioref">1979</a>)</span>, who classified the covenants found in U.S. bond indentures into four categories that remain the standard reference forty-five years on. We then introduce conservatism — a long-recognized but contested feature of U.S. GAAP — as a contracting solution to that conflict, drawing on <span class="citation" data-cites="watts2003a">Watts (<a href="../references.html#ref-watts2003a" role="doc-biblioref">2003</a>)</span>, who argues that asymmetric measurement (i.e., requiring more evidence for gains than for losses) is functional in a creditor-protective accounting regime. We work through the mechanics of bond accounting, lease accounting under ASC 842, pension and other post-employment benefit (OPEB) accounting, and contingent liabilities. We close with the empirical literature on covenants, focusing on <span class="citation" data-cites="robertssufi2009">Roberts and Sufi (<a href="../references.html#ref-robertssufi2009" role="doc-biblioref">2009</a>)</span>, who document that covenant violations produce sharp reductions in subsequent investment.</p>
+<p>The chapter sits squarely in Arc II’s empirical investigation but leans toward the internal-information theme of Arc III. The contracting role of accounting — visible most clearly in debt covenants but also present in compensation, regulatory, and supplier-customer contracts — is the long-arc parallel to the capital-markets role developed in Chapters 6 and 7. Both roles motivate accounting standards and accounting practice, and the empirical literature on each role has independently documented that accounting numbers affect real corporate outcomes.</p>
+</section>
+<section id="the-bondholder-shareholder-conflict" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="the-bondholder-shareholder-conflict"><span class="header-section-number">9.2</span> The bondholder-shareholder conflict</h2>
+<p>Consider a stylized firm financed with a mix of debt and equity. The shareholders own the residual claim on the firm’s cash flows and receive whatever is left after the creditors are paid. The creditors own a fixed claim and receive their promised payments if the firm is solvent and a fraction of liquidation value if the firm is not. The two claims have very different sensitivities to the firm’s underlying decisions.</p>
+<p>Three particular conflicts have been identified. The first is the <em>asset substitution</em> problem (i.e., the post-debt incentive to take on riskier projects). After the debt is in place, the shareholders can increase the value of their claim by inducing the firm to substitute high-variance projects for low-variance projects: the upside accrues to them, while the downside falls disproportionately on the creditors. The second is the <em>underinvestment</em> problem (i.e., the debt-overhang incentive to forgo positive-NPV investment). The shareholders may decline to fund positive-NPV projects if much of the payoff would accrue to existing creditors rather than to the new equity invested. The third is the <em>claim dilution</em> problem (i.e., the post-debt incentive to issue further senior debt). The shareholders may increase the firm’s leverage by issuing additional debt, diluting the claim of existing creditors.</p>
+<p>Each of the three conflicts is a moral-hazard problem of the kind introduced in Chapter 4. The agent (i.e., the manager, acting on behalf of the shareholders) has private information about the firm’s investment opportunities and capital-structure choices, and the principal (i.e., the creditor) cannot directly observe the agent’s actions. Each conflict produces an ex-ante deadweight loss. Anticipating the shareholders’ incentives, creditors demand a higher coupon to compensate for the expected loss; anticipating the higher coupon, shareholders may forgo value-creating debt issuances.</p>
+<p>The contractual response is to condition the debt on observable measures that proxy for the underlying behaviors. Asset substitution can be partially controlled by covenants restricting investment in risky assets and by negative-pledge covenants (i.e., covenants that prevent the firm from collateralizing other debt with the firm’s existing assets). Underinvestment can be partially controlled by covenants permitting accelerated repayment if the firm’s measured capacity to invest is impaired. Claim dilution can be partially controlled by covenants restricting additional debt issuance, dividend payments, and stock repurchases.</p>
+<p>Accounting numbers enter the contracting framework because they are the most readily available and most credibly verifiable summary of the firm’s economic position. A creditor cannot easily observe the firm’s investment opportunities, the riskiness of its individual projects, or the manager’s private information. The creditor can observe — at low cost, with reasonable verification, and at standardized intervals — the firm’s reported earnings, leverage, liquidity, and operating cash flow. The covenant structure is the institutional response to the limited verifiability of the underlying economic conditions: the contract conditions on what is observable and verifiable, and the verifiable proxies are accounting numbers.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Why this matters for accounting
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The bondholder-shareholder framework gives accounting a role distinct from its capital-markets role. Capital markets use accounting numbers to value the firm’s residual claim (Arc II’s main theme so far). Debt contracts use accounting numbers to determine when contractual rights have been triggered. The two uses make different demands on the accounting numbers. Capital markets value information that is forward-looking and economically meaningful; debt contracts value information that is conservative, verifiable, and timely. The two demands sometimes pull in the same direction and sometimes in opposite directions, and FASB standard-setting decisions navigate the tension on a standard-by-standard basis.</p>
+</div>
+</div>
+</section>
+<section id="the-smith-and-warner-typology" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="the-smith-and-warner-typology"><span class="header-section-number">9.3</span> The Smith and Warner typology</h2>
+<p><span class="citation" data-cites="smithwarner1979">Smith and Warner (<a href="../references.html#ref-smithwarner1979" role="doc-biblioref">1979</a>)</span> classified the covenants found in U.S. bond indentures into four broad categories, organized by the type of behavior the covenant restricts. The classification has proven durable.</p>
+<p><em>Production-investment covenants</em> restrict the firm’s investment activity. Examples include (i) limits on capital expenditures, (ii) restrictions on asset sales, (iii) prohibitions on investments in unrelated businesses, and (iv) prohibitions on mergers and acquisitions absent creditor consent. These covenants address the asset-substitution and underinvestment problems by giving the creditor a direct say over the firm’s investment portfolio.</p>
+<p><em>Dividend covenants</em> restrict the firm’s distributions to shareholders. Examples include restrictions on dividend payments above a stated cumulative ceiling, restrictions on stock repurchases, and “payment-in-kind” provisions that limit the firm’s ability to redeem subordinated securities. These covenants address the claim-dilution problem by preventing the firm from withdrawing equity capital that protects the creditors.</p>
+<p><em>Financing covenants</em> restrict the firm’s capital-structure choices. Examples include limits on additional debt issuance, restrictions on liens that would subordinate the existing debt, and prohibitions on sale-leaseback transactions that would synthetically increase leverage. These covenants address the claim-dilution problem more comprehensively.</p>
+<p><em>Bonding covenants</em> require the firm to provide specific information or to take specific actions that signal the absence of opportunism. Examples include requirements to provide audited financial statements at stated intervals, requirements to maintain insurance coverage, and requirements to maintain particular financial ratios.</p>
+<p>The fourth category — bonding covenants — is the one that most directly conditions on accounting numbers. The financial-ratio covenants in this category impose constraints such as (i) a minimum interest-coverage ratio, (ii) a maximum debt-to-EBITDA ratio, (iii) a minimum current ratio, (iv) a maximum leverage ratio, or (v) a minimum tangible net worth. Each ratio is computed from the firm’s reported financial statements at the relevant measurement date. A covenant violation occurs when the ratio crosses the contractual threshold; the violation gives the creditor the right to accelerate the loan, to demand additional collateral, to renegotiate terms, or — in the most severe cases — to force the firm into bankruptcy.</p>
+<p>Bonding covenants in modern debt agreements are extensive. The typical leveraged loan in the U.S. private credit market contains a dozen or more financial-ratio covenants; the typical investment-grade bond contains a smaller but still substantive set. The number, structure, and tightness of covenants vary systematically with the borrower’s credit quality and with the lender’s information environment.</p>
+</section>
+<section id="conservatism-as-a-contracting-solution" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="conservatism-as-a-contracting-solution"><span class="header-section-number">9.4</span> Conservatism as a contracting solution</h2>
+<p><span class="citation" data-cites="watts2003a">Watts (<a href="../references.html#ref-watts2003a" role="doc-biblioref">2003</a>)</span> developed the argument that the conservative biases observable in U.S. GAAP are a contracting solution to the bondholder-shareholder conflict. The argument runs as follows. A creditor with a fixed claim cares more about downside risk than about upside potential — the creditor receives at most the promised payment and may receive less, but cannot receive more. Accounting that systematically biases toward conservative measurement — recognizing losses when they become probable but recognizing gains only when they become realized, carrying inventory at the lower of cost or market, requiring more verifiable evidence for income recognition than for loss recognition — produces accounting numbers that overstate the downside scenarios the creditor cares about while understating the upside scenarios that primarily benefit the shareholders.</p>
+<p>Conservatism, on this view, is asymmetric (i.e., more demanding of evidence for good news than for bad news). The asymmetry is contracting-functional in two distinct ways. First, conservative accounting produces numbers that tilt toward triggering the covenant earlier than they would under symmetric accounting, giving the creditor protection against the shareholder’s incentive to delay loss recognition. Second, conservative accounting reduces the manager’s discretion over the timing of loss recognition. A manager whose compensation depends on reported earnings has an incentive to delay losses; conservative standards reduce the scope for that delay by requiring the manager to recognize losses on triggered events rather than at discretionary times.</p>
+<p>The Watts argument has both empirical and conceptual implications. Empirically, it predicts that firms with more debt in their capital structure, with more covenants in their debt contracts, or with more concentrated creditors should have more conservative accounting; the prediction has been broadly supported. Conceptually, it suggests that the FASB’s reluctance to permit upward revaluations of long-lived assets, the lower-of-cost-or-market rule for inventory, the impairment-only goodwill model under ASC 350, and the asymmetric treatment of contingent gains and losses are not arbitrary holdovers from a less sophisticated era of accounting but are functional responses to the contracting environment.</p>
+<p>The argument is contested. The Conceptual Framework (Chapter 5) treats neutrality as an aspect of faithful representation and is wary of systematic biases in either direction. Critics argue that the contracting benefits of conservative accounting are smaller than its costs in distorting investor perceptions, particularly for firms with substantial public equity. Recent FASB decisions — the move from incurred-loss to expected-loss credit accounting under CECL, for example — have, on the margin, shifted some areas of GAAP toward more symmetric measurement. The Watts argument is best understood as a description of one role accounting plays, not a normative endorsement of conservatism in all settings.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+A subtle implication
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Conservatism is not synonymous with prudence in some general moral sense. Watts’s notion of conservatism is specifically asymmetric — it requires more evidence for good news than for bad news. A standard that requires equally rigorous evidence for both gains and losses is <em>neutral</em>, not conservative. The distinction matters in standard-setting deliberations because debates over neutrality versus conservatism are often confused with debates over rigor versus laxity.</p>
+</div>
+</div>
+</section>
+<section id="mechanics-bonds-the-effective-interest-method-and-a-worked-example" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="mechanics-bonds-the-effective-interest-method-and-a-worked-example"><span class="header-section-number">9.5</span> Mechanics: bonds, the effective-interest method, and a worked example</h2>
+<p>Bond accounting under U.S. GAAP follows the <em>amortized cost</em> model (i.e., a model in which the carrying amount is updated each period by accruing interest at the historical market rate, rather than by remeasuring to current market value) for most non-trading bond obligations. The structure sits at the heart of the financial reporting of corporate debt.</p>
+<p>When a firm issues a bond, the bond promises a stream of fixed cash payments — a periodic coupon and a principal repayment at maturity. The cash the issuer receives is determined by the <em>market</em> interest rate at issuance (i.e., the yield demanded by investors for bonds of comparable risk and duration), not by the bond’s stated coupon rate. Three issuance cases arise:</p>
+<ol type="1">
+<li><strong>At par.</strong> If the market rate equals the coupon rate, the bond issues at par, and the cash received equals the face value.</li>
+<li><strong>At a discount.</strong> If the market rate exceeds the coupon rate, the bond issues at a discount, and the cash received is less than the face value. The discount is prepaid interest that the issuer recognizes over the life of the bond.</li>
+<li><strong>At a premium.</strong> If the market rate is below the coupon rate, the bond issues at a premium, and the cash received exceeds the face value. The premium reduces interest expense recognized over the life of the bond.</li>
+</ol>
+<p>The discount or premium is amortized over the life of the bond using the <em>effective-interest method</em>. In any period, (i) interest expense equals the carrying amount at the start of the period multiplied by the market rate at issuance, (ii) the cash coupon payment equals the face value multiplied by the coupon rate, and (iii) the difference between interest expense and the coupon payment adjusts the discount or premium account, moving the carrying amount toward face value. At maturity, the carrying amount equals the face value, and the firm pays the face value to retire the bond.</p>
+<section id="a-worked-example-100000-face-10-year-6-coupon-issued-to-yield-8" class="level3">
+<h3 class="anchored" data-anchor-id="a-worked-example-100000-face-10-year-6-coupon-issued-to-yield-8">A worked example: $100,000 face, 10-year, 6% coupon, issued to yield 8%</h3>
+<p>Suppose Acme Corp.&nbsp;issues, on January 1, a ten-year bond with a face value of $100{,}000 and a coupon rate of 6% paid annually. The market rate for bonds of comparable risk and duration at issuance is 8%. The cash the bond will fetch — the present value of the bond’s cash flows discounted at 8% — is the sum of (i) the present value of a ten-year annuity of $6{,}000 (i.e., 6% of $100{,}000) and (ii) the present value of the $100{,}000 face repayment at the end of year 10:</p>
+<p><span class="math display">\[
+\text{Issue price} \;=\; \$6{,}000 \cdot \frac{1 - (1.08)^{-10}}{0.08} \;+\; \frac{\$100{,}000}{(1.08)^{10}} \;\approx\; \$40{,}260 + \$46{,}319 \;=\; \$86{,}580.
+\]</span></p>
+<p>The bond issues at a discount of approximately $13{,}420 ($100{,}000 − $86{,}580). The journal entry at issuance is:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Account</th>
+<th>Debit</th>
+<th>Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cash</td>
+<td>86,580</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Discount on bonds payable</td>
+<td>13,420</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Bonds payable (face)</td>
+<td></td>
+<td>100,000</td>
+</tr>
+</tbody>
+</table>
+<p>The discount on bonds payable is a contra-liability account (i.e., a balance-sheet account that reduces the gross face value of the bonds to the net carrying amount). The net liability presented on the balance sheet at issuance is $100{,}000 − $13{,}420 = $86{,}580.</p>
+<p>The amortization schedule for the first three periods is:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 18%">
+<col style="width: 23%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 18%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>Carrying amount, BOP</th>
+<th>Interest expense (8% × BOP)</th>
+<th>Coupon (6% × face)</th>
+<th>Discount amortized</th>
+<th>Carrying amount, EOP</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>$86,580</td>
+<td>$6,926</td>
+<td>$6,000</td>
+<td>$926</td>
+<td>$87,506</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>$87,506</td>
+<td>$7,000</td>
+<td>$6,000</td>
+<td>$1,000</td>
+<td>$88,506</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>$88,506</td>
+<td>$7,081</td>
+<td>$6,000</td>
+<td>$1,081</td>
+<td>$89,587</td>
+</tr>
+</tbody>
+</table>
+<p>(BOP and EOP denote beginning-of-period and end-of-period, respectively. Numbers are rounded to the nearest dollar.)</p>
+<p>The journal entry at the end of year 1 is:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Account</th>
+<th>Debit</th>
+<th>Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Interest expense</td>
+<td>6,926</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Discount on bonds payable</td>
+<td></td>
+<td>926</td>
+</tr>
+<tr class="odd">
+<td>Cash</td>
+<td></td>
+<td>6,000</td>
+</tr>
+</tbody>
+</table>
+<p>Interest expense ($6{,}926) is the economically meaningful charge — it equals the carrying amount at the start of the period times the market rate at issuance. Cash interest paid ($6{,}000) is smaller because the coupon rate is below the market rate. The difference ($926) reduces the discount account; the carrying amount rises to $87{,}506 and the bond moves closer to its face value. The pattern repeats with the carrying amount compounding upward each period until, at the end of year 10, the discount has been fully amortized and the carrying amount equals the face value of $100{,}000.</p>
+<p>At maturity, the firm retires the bond by paying the face value:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Account</th>
+<th>Debit</th>
+<th>Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bonds payable (face)</td>
+<td>100,000</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cash</td>
+<td></td>
+<td>100,000</td>
+</tr>
+</tbody>
+</table>
+<p>The amortized-cost model differs from a fair-value model in an important respect. If market interest rates change after issuance, the bond’s market price will change correspondingly — but the carrying amount on the issuer’s balance sheet does not move. The bond is reported at the historical issuance value, amortized toward face. The amortized-cost basis is an example of a measurement choice that prioritizes faithful representation (the carrying amount is verifiable from the original transaction) over relevance (the carrying amount may be a poor proxy for the bond’s current market value).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+An instructive case: Apple’s 2013 debut
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Apple held no public debt for nearly two decades before issuing $17 billion in bonds across six tranches on April 30, 2013 — at the time the largest non-bank corporate bond offering in history. The proceeds funded a share-repurchase and dividend program rather than operating investment, an example of how leverage decisions interact with shareholder distributions. The accounting was standard: each tranche was recorded at its issue price (with small discounts and premiums relative to par), and interest expense has been recognized at the effective yield in each period since. The case is a reminder that bond accounting mechanics apply equally to a firm with no operating need to borrow and to a firm in deep distress; the mechanics are silent on why the firm chose to issue.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="mechanics-leases-under-asc-842" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="mechanics-leases-under-asc-842"><span class="header-section-number">9.6</span> Mechanics: leases under ASC 842</h2>
+<p>The most consequential single change in U.S. liabilities accounting in the past decade was the FASB’s adoption of ASC 842, effective for U.S. public companies in 2019. The standard replaced a framework under which operating leases were essentially off-balance-sheet — the firm reported lease expense as a periodic operating cost but did not record any asset or liability associated with the lease — with a framework requiring all leases of more than twelve months to appear on the balance sheet.</p>
+<p>Under ASC 842, the lessee recognizes, at lease inception, (i) a <em>right-of-use</em> (ROU) asset (i.e., the lessee’s contractual right to use the leased asset over the lease term) and (ii) a corresponding <em>lease liability</em> (i.e., the lessee’s obligation to make the lease payments). Both are measured at the present value of the unavoidable lease payments, discounted at the lessee’s incremental borrowing rate (i.e., the rate the lessee would pay to borrow on a collateralized basis over a similar term) or the rate implicit in the lease, if determinable.</p>
+<p>ASC 842 distinguishes two categories of leases for income-statement purposes. <em>Finance leases</em> are those that transfer substantially all of the economic benefits and burdens of ownership to the lessee — for example, (i) leases that transfer title at the end of the term, (ii) leases with bargain purchase options, (iii) leases of substantially all of the asset’s useful life, and (iv) leases whose present value of payments equals substantially all of the asset’s fair value. Finance leases produce a depreciation expense on the ROU asset and a separately reported interest expense on the lease liability, just as if the lessee had purchased the asset and financed it with debt. <em>Operating leases</em> are all other leases. They produce a single straight-line lease expense over the lease term, preserving the income-statement pattern of the pre-2019 framework while introducing the balance-sheet recognition the prior framework lacked.</p>
+<section id="why-asc-842-was-a-big-deal" class="level3">
+<h3 class="anchored" data-anchor-id="why-asc-842-was-a-big-deal">Why ASC 842 was a big deal</h3>
+<p>The pre-2019 framework was widely understood — by sophisticated analysts and creditors — as an accounting fiction. A firm that leased a building had the same economic obligations as a firm that financed the building with debt and recorded depreciation, but only the latter showed up on the balance sheet. Analysts had for decades constructed adjusted leverage ratios that capitalized the discounted stream of footnoted operating-lease payments, but less sophisticated readers of financial statements — including some creditors writing covenants — relied on the unadjusted GAAP numbers.</p>
+<p>The 2019 transition moved approximately $2 trillion of operating-lease right-of-use assets and corresponding liabilities onto U.S. corporate balance sheets — the largest single change in U.S. financial reporting in a generation. The change was concentrated in industries with heavy reliance on operating leases: retail (store leases), airlines (aircraft and gate leases), restaurants (location leases), and shipping (vessel and container leases). It reduced the cross-firm variation in apparent leverage that had been driven by the choice between leasing and buying, and it produced an empirical natural experiment in the renegotiation of covenants that had been written before the change.</p>
+</section>
+<section id="a-concrete-example-boeing-in-the-737-max-era" class="level3">
+<h3 class="anchored" data-anchor-id="a-concrete-example-boeing-in-the-737-max-era">A concrete example: Boeing in the 737 MAX era</h3>
+<p>Boeing’s pre-2019 footnote disclosures showed substantial operating-lease commitments associated with its leased buildings, its aircraft-test infrastructure, and its supplier-financing arrangements. The 2019 adoption of ASC 842, coinciding with the 737 MAX grounding, brought these obligations onto the balance sheet as ROU assets and lease liabilities at the same time that Boeing’s underlying credit was deteriorating. The two changes are conceptually distinct — one is an accounting representation change, the other is a real-economic change — but both showed up in the same financial statements, and the resulting compounded effect on reported leverage produced a meaningful change in how creditors and rating agencies viewed the firm. The Boeing case is an instructive reminder that an accounting representation change, although not changing the underlying economics, can interact with concurrent real shocks in ways that affect contractual outcomes.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Common pitfall
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The lease accounting change did not change the underlying economics of leasing. A firm that leased a building before 2019 had the same economic obligations as a firm that leased the building after 2019. What changed was the accounting representation: the off-balance-sheet treatment under the prior framework was, on most analyses, an accounting fiction that the change merely corrected. Sophisticated investors and creditors had for decades adjusted for off-balance-sheet leases through footnote analysis. The institutional value of ASC 842 is that the adjustment is no longer required.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="mechanics-pensions-opeb-and-off-balance-sheet-history" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="mechanics-pensions-opeb-and-off-balance-sheet-history"><span class="header-section-number">9.7</span> Mechanics: pensions, OPEB, and off-balance-sheet history</h2>
+<section id="defined-benefit-versus-defined-contribution-plans" class="level3">
+<h3 class="anchored" data-anchor-id="defined-benefit-versus-defined-contribution-plans">Defined-benefit versus defined-contribution plans</h3>
+<p>Employer-sponsored retirement plans fall into two broad categories that differ sharply in who bears the residual risk. A <em>defined-contribution</em> plan (e.g., a 401(k)) specifies the employer’s periodic contribution; the employee bears the investment risk on the accumulated balance, and the employer’s accounting is simple — the contribution is an expense in the period made. A <em>defined-benefit</em> plan (e.g., a traditional corporate pension) specifies the retirement benefit the employee will receive — typically a function of years of service and final salary — and the employer bears the risk that the assets set aside to fund the obligation may or may not be sufficient when the benefits come due. Other post-employment benefits (OPEB), most notably retiree health care, are accounted for similarly to defined-benefit pensions.</p>
+<p>The accounting for defined-benefit plans is governed by ASC 715. The economic obligation — the <em>projected benefit obligation</em> (i.e., the present value of benefits earned to date, with future salary increases factored in) — is computed by an actuary using assumptions about (i) the discount rate, (ii) the expected long-term return on plan assets, (iii) future salary growth, (iv) employee turnover, and (v) mortality. The plan’s <em>funded status</em> is the difference between the fair value of plan assets and the projected benefit obligation. The funded status is reported on the balance sheet, and the period’s <em>pension expense</em> is reported on the income statement.</p>
+<p>The role of actuarial assumptions is consequential. A higher discount rate produces a lower obligation; a higher assumed return on plan assets produces a lower pension expense. Both assumptions are at the firm’s discretion, subject to broad professional-judgment standards and auditor review. The empirical literature has documented that firms appear to choose actuarial assumptions in ways correlated with the firm’s incentives — for example, raising the assumed return on plan assets in periods when pension expense pressure is binding (e.g., periods of weak earnings or near covenant thresholds).</p>
+</section>
+<section id="the-gap-between-funded-status-and-pension-expense" class="level3">
+<h3 class="anchored" data-anchor-id="the-gap-between-funded-status-and-pension-expense">The gap between funded status and pension expense</h3>
+<p>A distinctive feature of defined-benefit pension accounting is that the <em>funded status</em> reported on the balance sheet and the <em>pension expense</em> reported on the income statement are not tightly linked. The funded status reflects the current present-value gap between obligations and assets. The pension expense, by contrast, smooths several components — service cost, interest cost, expected return on plan assets, and amortization of prior gains and losses — across periods. Actuarial gains and losses (i.e., changes in the funded status from actual-versus-expected investment performance or assumption changes) are not flowed through the income statement in the period of change; they are deferred in accumulated other comprehensive income (AOCI) and amortized into pension expense over time using the “corridor” mechanism.</p>
+<p>The result is that a firm can carry a substantial underfunded pension liability on the balance sheet while reporting modest pension expense on the income statement. The smoothing was a deliberate FASB choice — actuarial estimates are noisy, and quarter-to-quarter remeasurement was viewed as producing more variation than information — but the smoothing produces a divergence between the cash-flow reality of the pension obligation and the period-by-period reported expense.</p>
+</section>
+<section id="the-legacy-pension-overhang-gm-and-ford" class="level3">
+<h3 class="anchored" data-anchor-id="the-legacy-pension-overhang-gm-and-ford">The legacy-pension overhang: GM and Ford</h3>
+<p>The U.S. auto industry has long carried defined-benefit pension and OPEB obligations of a magnitude that meaningfully affects firm value. General Motors and Ford each carried obligations measured in the tens of billions of dollars during the 2000s and 2010s, with funded-status gaps that varied with discount rates and asset performance. The 2009 GM bankruptcy was driven in substantial part by the unsustainability of legacy retiree benefits relative to the firm’s operating cash flows. The case is consistent with the broader point that off-balance-sheet or partially-smoothed obligations can mask leverage that becomes binding when business conditions deteriorate — a pattern with the same structural shape as the ASC 842 lease case, although the institutional response (smoothing versus capitalization) has been different.</p>
+</section>
+<section id="special-purpose-entities-and-the-enron-episode" class="level3">
+<h3 class="anchored" data-anchor-id="special-purpose-entities-and-the-enron-episode">Special-purpose entities and the Enron episode</h3>
+<p>A historical thread that ties together the chapter’s treatment of off-balance-sheet items is the history of <em>special-purpose entities</em> (SPEs) and <em>variable-interest entities</em> (VIEs). Before the 2003 issuance of FIN 46 (later codified as ASC 810), firms could sponsor SPEs — separately incorporated entities holding assets and liabilities — without consolidating the SPE’s balance sheet into the sponsor’s, provided that a small minority equity interest (3% under the prior guidance) was held by an outside party. Enron exploited the structure aggressively, using SPEs to hold assets at high carrying values and to hold liabilities off the sponsor’s balance sheet. The 2001 Enron collapse revealed that the consolidation threshold had become a mechanism for evasion rather than a substantive test of control.</p>
+<p>ASC 810 (i.e., the consolidation guidance issued in 2003 and revised subsequently) shifted the consolidation test from a quantitative equity threshold to a qualitative analysis of who bears the entity’s risks and rewards. Under the revised guidance, the <em>primary beneficiary</em> — the party with the power to direct the entity’s most significant activities and the obligation to absorb losses or right to receive benefits — consolidates the entity. The Enron-era SPE structures would not survive the ASC 810 test, and the broader pattern of using off-balance-sheet vehicles to disguise leverage has been substantially curtailed. The post-2003 environment is not friction-free — securitization structures and certain operating-lease and joint-venture arrangements remain analytically demanding — but the consolidation perimeter is now substantially broader than it was before the Enron episode.</p>
+</section>
+</section>
+<section id="mechanics-contingent-liabilities" class="level2" data-number="9.8">
+<h2 data-number="9.8" class="anchored" data-anchor-id="mechanics-contingent-liabilities"><span class="header-section-number">9.8</span> Mechanics: contingent liabilities</h2>
+<p>A <em>contingent liability</em> (i.e., a potential obligation that depends on the outcome of a future event) is accounted for under ASC 450 according to (i) the probability that the obligation will be confirmed and (ii) the firm’s ability to estimate the amount. The three-tier framework is:</p>
+<ol type="1">
+<li><strong>Probable and reasonably estimable.</strong> The firm recognizes a liability on the balance sheet and an expense on the income statement.</li>
+<li><strong>Reasonably possible but not probable.</strong> The firm does not recognize a liability but discloses the contingency in the footnotes, including the nature of the contingency and an estimate of the possible loss (or a statement that no estimate can be made).</li>
+<li><strong>Remote.</strong> The firm need not disclose the contingency at all.</li>
+</ol>
+<p>The framework is asymmetric in the same direction as the rest of conservatism: a contingent <em>gain</em> (e.g., a probable favorable outcome in pending litigation in which the firm is the plaintiff) is not recognized until the gain is realized, while a contingent loss is recognized once it is probable. The asymmetry is consistent with the Watts argument of Section 9.4.</p>
+<p>The probability thresholds are stated qualitatively, and the firm’s classification of a given contingency requires substantial judgment. Litigation contingencies, product warranties, environmental remediation obligations, and tax disputes are common settings in which the classification has been contested. The empirical literature on contingency disclosure has documented (i) that firms with binding accounting concerns tend to disclose less specifically than firms without such concerns, (ii) that the realized losses on disclosed contingencies are systematically larger than the disclosed estimates, and (iii) that the asymmetric treatment of gains and losses produces footnote disclosures that are useful but incomplete summaries of the firm’s exposure.</p>
+</section>
+<section id="empirical-evidence" class="level2" data-number="9.9">
+<h2 data-number="9.9" class="anchored" data-anchor-id="empirical-evidence"><span class="header-section-number">9.9</span> Empirical evidence</h2>
+<p>The empirical literature on liabilities and contracting is large; <span class="citation" data-cites="beyer2010">Beyer et al. (<a href="../references.html#ref-beyer2010" role="doc-biblioref">2010</a>)</span> review the financial-reporting environment broadly, and <span class="citation" data-cites="dechow2010">Dechow, Ge, and Schrand (<a href="../references.html#ref-dechow2010" role="doc-biblioref">2010</a>)</span> review earnings quality. Three findings are particularly relevant.</p>
+<p>First, the <em>contracting role of accounting</em> has been documented through natural-experiment designs. <span class="citation" data-cites="robertssufi2009">Roberts and Sufi (<a href="../references.html#ref-robertssufi2009" role="doc-biblioref">2009</a>)</span>, in a paper titled “Control Rights and Capital Structure,” document that covenant violations produce sharp reductions in subsequent investment by violating firms — investment falls by approximately 13% on average in the four quarters following a violation. The reduction is concentrated in firms with greater contracting flexibility (i.e., firms with single-lender relationships, where the lender can implement the covenant remedy directly) and is largest when the violation is the firm’s first. The result is consistent with the framework of Section 9.2: covenants are not merely passive performance metrics but active mechanisms through which creditors influence the firm’s real decisions. The Roberts-Sufi result has been replicated and extended, and it forms the empirical foundation of this week’s lab.</p>
+<p>Second, the <em>empirical literature on conservatism</em> has documented that conservative accounting is more prevalent in firms with more debt in their capital structure and with more concentrated creditors. The pattern is consistent with <span class="citation" data-cites="watts2003a">Watts (<a href="../references.html#ref-watts2003a" role="doc-biblioref">2003</a>)</span>, who argues that conservatism has a contracting function. The literature has also documented that conservatism has, on the margin, declined over time as the FASB has moved toward more neutral standards and as firms have become more equity-financed; the relative importance of the contracting role versus the capital-markets role has shifted.</p>
+<p>Third, the <em>empirical literature on the ASC 842 lease accounting change</em> is still developing, but early evidence suggests that the change has produced statistically significant changes in firms’ apparent leverage as measured by traditional ratios and corresponding changes in covenant slack. Renegotiations of debt covenants in response to the change have been substantial, suggesting that — even though sophisticated creditors had presumably already adjusted for off-balance-sheet leases — the formal change in measurement basis carried contractual weight.</p>
+<p>The literature does not claim that all aspects of GAAP liability accounting are well-designed. Specific concerns — around the measurement of complex derivatives, the recognition of contingent obligations, and the treatment of pension and OPEB obligations — remain contested. The general claim that emerges is that accounting numbers play an active role in the contracting environment of the modern firm, and that the design of the accounting standards has consequences for that environment.</p>
+</section>
+<section id="key-takeaways" class="level2" data-number="9.10">
+<h2 data-number="9.10" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">9.10</span> Key takeaways</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key takeaways
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Debt contracts condition on accounting numbers because direct economic conditions are not verifiable.</strong> Reported earnings, leverage, and cash-flow ratios are the most credibly verifiable summaries of the firm’s position, and covenants tie creditor rights to thresholds on those numbers.</li>
+<li><strong>The Smith-Warner typology organizes covenants by what they restrict.</strong> Production-investment, dividend, financing, and bonding covenants each address a specific component of the bondholder-shareholder conflict.</li>
+<li><strong>Conservatism is asymmetric, not merely prudent.</strong> Asymmetric measurement is functional in a creditor-protective regime by triggering covenants earlier and reducing the manager’s discretion over the timing of loss recognition.</li>
+<li><strong>The effective-interest method ties accounting interest expense to the market rate at issuance.</strong> Interest expense equals the carrying amount times the historical yield; the discount or premium is amortized so that the carrying amount converges to face value at maturity.</li>
+<li><strong>ASC 842 moved approximately $2 trillion of operating leases onto U.S. balance sheets without changing the underlying economics.</strong> The change replaced an accounting fiction with substantive recognition, with the largest effects concentrated in lease-intensive industries.</li>
+<li><strong>Pension and OPEB accounting smooths actuarial volatility through the corridor mechanism, producing a divergence between the funded status on the balance sheet and the pension expense on the income statement.</strong> The smoothing was a deliberate FASB choice but creates a gap between cash-flow reality and reported expense that is consequential for legacy-pension-heavy firms.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="discussion-questions" class="level2" data-number="9.11">
+<h2 data-number="9.11" class="anchored" data-anchor-id="discussion-questions"><span class="header-section-number">9.11</span> Discussion questions</h2>
+<ol type="1">
+<li>The chapter argued that conservative accounting can be understood as a contracting solution to the bondholder-shareholder conflict. The Conceptual Framework (Chapter 5) treats neutrality as an aspect of faithful representation. Are these positions in tension? If so, how should the FASB resolve the tension when designing a specific standard?</li>
+<li>The Smith and Warner typology classifies covenants by the type of behavior they restrict. Identify a covenant from each of the four categories that you would expect to see in a leveraged loan agreement, and explain briefly which of the bondholder-shareholder conflicts the covenant addresses.</li>
+<li>The 2019 lease accounting change moved approximately $2 trillion of operating-lease right-of-use assets and corresponding liabilities onto U.S. corporate balance sheets. Did the change produce more useful financial statements? Defend your answer using the relevance-versus-faithful-representation framework of Chapter 5.</li>
+<li><span class="citation" data-cites="robertssufi2009">Roberts and Sufi (<a href="../references.html#ref-robertssufi2009" role="doc-biblioref">2009</a>)</span> document that covenant violations produce sharp reductions in subsequent investment. Is this a case where accounting numbers are <em>causing</em> real corporate behavior, or a case where the accounting numbers are correlated with underlying economic conditions that themselves cause the behavior? How might one distinguish the two interpretations empirically?</li>
+<li>Suppose a creditor and a debtor are negotiating a new loan agreement. The creditor proposes a covenant requiring the debtor to maintain a minimum interest-coverage ratio of 3.0×. The debtor counters with a proposal to instead provide weekly cash-flow reports to the creditor. From the creditor’s perspective, which proposal is preferable? Use the framework of this chapter to defend your answer.</li>
+</ol>
+</section>
+<section id="problems" class="level2" data-number="9.12">
+<h2 data-number="9.12" class="anchored" data-anchor-id="problems"><span class="header-section-number">9.12</span> Problems</h2>
+<section id="mechanical" class="level3">
+<h3 class="anchored" data-anchor-id="mechanical">Mechanical</h3>
+<ol type="1">
+<li><p><em>(Bond issued at a discount; effective-interest amortization.)</em> Acme Corp.&nbsp;issues a four-year bond with a face value of $200{,}000 and a coupon rate of 5% paid semi-annually. The market interest rate at issuance is 6%. (a) Compute the cash received at issuance. (b) Construct an amortization schedule showing the carrying amount, interest expense, coupon payment, and discount amortization for each of the eight semi-annual periods. (c) Verify that the carrying amount at the end of period 8 equals the face value. (d) Record the journal entry at issuance, the journal entry at the end of period 1, and the journal entry at the retirement of the bond.</p></li>
+<li><p><em>(Bond issued at a premium; effective-interest amortization.)</em> Repeat Problem 1 under the assumption that the market interest rate at issuance is 4% (i.e., the bond issues at a premium). Show how the premium account behaves over the life of the bond, and contrast the income-statement pattern with that of Problem 1.</p></li>
+<li><p><em>(ASC 842 lease, operating classification.)</em> On January 1, Acme Corp.&nbsp;enters into a five-year lease of office space. The lease requires annual payments of $24{,}000 at the end of each year. Acme’s incremental borrowing rate is 7%. The lease is classified as an operating lease under ASC 842. (a) Compute the lease liability and right-of-use asset at lease inception. (b) Construct the journal entries for the first two years of the lease, separately reporting the components of the single straight-line lease expense (i.e., interest accretion on the liability and amortization of the ROU asset). (c) Compute the carrying amount of the ROU asset and the lease liability at the end of year 2.</p></li>
+<li><p><em>(Pension expense decomposition.)</em> Acme Corp.’s defined-benefit pension plan reports the following at the start of the year: projected benefit obligation $400{,}000; fair value of plan assets $360{,}000; discount rate 5%; expected long-term return on plan assets 7%; current-year service cost $30{,}000; benefits paid during the year $20{,}000; actual return on plan assets for the year $36{,}000. Assume no amortization of prior gains or losses. (a) Compute the components of pension expense (i.e., service cost, interest cost on the obligation, expected return on plan assets, and any amortization). (b) Compute the projected benefit obligation and fair value of plan assets at year-end. (c) Report the funded status at year-end and identify whether the plan is over- or under-funded.</p></li>
+</ol>
+</section>
+<section id="conceptual" class="level3">
+<h3 class="anchored" data-anchor-id="conceptual">Conceptual</h3>
+<ol start="5" type="1">
+<li><p><em>(On-balance-sheet versus off-balance-sheet judgment.)</em> A firm enters into a fifteen-year agreement to purchase 80% of the output of a specialized manufacturing facility being constructed by a counterparty. The agreement is structured so that the firm does not own the facility, does not bear residual value risk on the facility, and is not obligated to make payments if the counterparty fails to deliver. Should the agreement give rise to a recognized liability on the firm’s balance sheet? Apply the consolidation framework of ASC 810 and the lease framework of ASC 842, identify the relevant judgment calls, and defend your conclusion.</p></li>
+<li><p><em>(Evaluation of contingent-liability disclosure.)</em> Choose a publicly traded firm with substantial pending litigation disclosed in its most recent 10-K (large pharmaceutical firms and large industrial firms are usually good candidates). In approximately 400 words, evaluate the firm’s contingency disclosure. Address (i) the classification of the contingencies under ASC 450 (probable, reasonably possible, remote), (ii) whether the firm provides a numerical estimate of possible loss, (iii) what the disclosure conveys about the firm’s exposure relative to its market capitalization, and (iv) whether the disclosure is, in your view, useful to a reader trying to assess the firm’s economic position.</p></li>
+</ol>
+</section>
+<section id="writing-exercise" class="level3">
+<h3 class="anchored" data-anchor-id="writing-exercise">Writing exercise</h3>
+<ol start="7" type="1">
+<li><em>(Short writing exercise on conservatism and standard-setting trade-offs.)</em> In approximately 500 words, evaluate the following claim: “The FASB’s recent move toward expected-loss credit accounting under CECL is a retreat from conservatism that will, on net, produce less useful financial statements for creditors.” Engage the <span class="citation" data-cites="watts2003a">Watts (<a href="../references.html#ref-watts2003a" role="doc-biblioref">2003</a>)</span> contracting argument, the Conceptual Framework’s treatment of neutrality, and the empirical literature you have read. State your position and defend it; do not pretend the question has an obvious answer.</li>
+</ol>
+</section>
+</section>
+<section id="lab" class="level2" data-number="9.13">
+<h2 data-number="9.13" class="anchored" data-anchor-id="lab"><span class="header-section-number">9.13</span> Lab</h2>
+<p>The out-of-class lab for this week is <strong>WRDS Lab 4: Covenant Slack and Investment</strong>. The lab walks through the construction of standardized covenant-slack measures from Compustat for a sample of leveraged firms and the replication of the <span class="citation" data-cites="robertssufi2009">Roberts and Sufi (<a href="../references.html#ref-robertssufi2009" role="doc-biblioref">2009</a>)</span> finding that covenant violations predict reductions in subsequent investment. The lab is the most empirically intensive of the WRDS labs in this course and builds directly on the methodologies of Labs 1–3.</p>
+<p>The deliverable is a Colab notebook that produces (i) the cross-sectional distribution of covenant slack in your sample, (ii) a regression of subsequent investment on covenant slack and standard controls, and (iii) a brief written discussion of what the replication implies about the contracting role of accounting. The lab is due at the end of the week.</p>
+<p>The GenAI policy permits the use of AI coding assistants with disclosure. As with prior labs, the disclosure must specify what the tool was used for and whether any AI-generated text appears in the final submission.</p>
+</section>
+<section id="further-reading" class="level2" data-number="9.14">
+<h2 data-number="9.14" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">9.14</span> Further reading</h2>
+<p>The four readings below are the assigned readings for Week 9. Students should read all of them.</p>
+<ul>
+<li><span class="citation" data-cites="smithwarner1979">Smith and Warner (<a href="../references.html#ref-smithwarner1979" role="doc-biblioref">1979</a>)</span>, “On Financial Contracting.” The foundational paper, which articulates the bondholder-shareholder conflict and the four-category typology of covenants. Read for the conflict, the typology, and the contracting argument.</li>
+<li><span class="citation" data-cites="watts2003a">Watts (<a href="../references.html#ref-watts2003a" role="doc-biblioref">2003</a>)</span>, “Conservatism in Accounting Part I: Explanations and Implications.” Read for the contracting interpretation of conservatism and the four explanations the author offers. The companion paper “Part II” is optional.</li>
+<li><span class="citation" data-cites="robertssufi2009">Roberts and Sufi (<a href="../references.html#ref-robertssufi2009" role="doc-biblioref">2009</a>)</span>, “Control Rights and Capital Structure.” The empirical paper that documents that covenant violations sharply reduce subsequent investment. Read for the empirical design and the headline result; the technical appendix on covenant slack measures is useful for the lab.</li>
+<li><em>Optional, for those who want more:</em> The text of a real credit agreement from EDGAR. The agreements are dense and unfamiliar at first, but working through the financial-covenant section of one — for any leveraged firm whose 10-K incorporates its credit facility by reference — is one of the more useful exercises a student can do for understanding what bonding covenants actually look like in practice.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Where Arc II goes from here
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Chapter 9 has examined the liability side of the balance sheet and the contracting role of accounting numbers in debt agreements. Chapter 10 closes Arc II by turning to the equity side: stockholders’ equity, basic and diluted earnings per share, stock-based compensation, and the empirical literature on earnings management. The Chapter 4 framework on moral hazard returns explicitly: managers respond to the incentives created by their compensation contracts, and the accruals discussed in Chapter 7 are the workhorse mechanism through which the response is implemented.</p>
+</div>
+</div>
+
+
+<!-- -->
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-beyer2010" class="csl-entry" role="listitem">
+Beyer, Anne, Daniel A. Cohen, Thomas Z. Lys, and Beverly R. Walther. 2010. <span>“The Financial Reporting Environment: Review of the Recent Literature.”</span> <em>Journal of Accounting and Economics</em> 50 (2–3): 296–343.
+</div>
+<div id="ref-dechow2010" class="csl-entry" role="listitem">
+Dechow, Patricia, Weili Ge, and Catherine Schrand. 2010. <span>“Understanding Earnings Quality: A Review of the Proxies, Their Determinants and Their Consequences.”</span> <em>Journal of Accounting and Economics</em> 50 (2–3): 344–401.
+</div>
+<div id="ref-robertssufi2009" class="csl-entry" role="listitem">
+Roberts, Michael R., and Amir Sufi. 2009. <span>“Control Rights and Capital Structure: An Empirical Investigation.”</span> <em>Journal of Finance</em> 64 (4): 1657–95.
+</div>
+<div id="ref-smithwarner1979" class="csl-entry" role="listitem">
+Smith, Clifford W., and Jerold B. Warner. 1979. <span>“On Financial Contracting: An Analysis of Bond Covenants.”</span> <em>Journal of Financial Economics</em> 7 (2): 117–61.
+</div>
+<div id="ref-watts2003a" class="csl-entry" role="listitem">
+Watts, Ross L. 2003. <span>“Conservatism in Accounting Part i: Explanations and Implications.”</span> <em>Accounting Horizons</em> 17 (3): 207–21.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/acctg211h\.psu\.edu\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../arc2-markets/08-long-term-assets.html" class="pagination-link" aria-label="Long-Term Assets and Measurement Choice">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Long-Term Assets and Measurement Choice</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../arc2-markets/10-equity-compensation.html" class="pagination-link" aria-label="Equity Compensation">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Equity Compensation</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Why debt contracts condition on accounting numbers. Smith and Warner's covenant typology, Watts on conservatism, bond mechanics, ASC 842 leases, pensions and OPEB, and contingencies."</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># Liabilities, Debt Covenants, and Conservatism {#sec-liabilities}</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Opening question</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Hertz filed for Chapter 11 protection on May 22, 2020. The collapse of the rental-car business during the early months of the COVID-19 pandemic was the proximate trigger, but Hertz had been operating with elevated leverage for years, and the firm's debt agreements — like those of most highly-leveraged firms — contained covenants (i.e., contractual side-conditions) tied to accounting numbers: minimum interest-coverage ratios, maximum debt-to-EBITDA ratios, restrictions on capital expenditures, and restrictions on asset dispositions. The COVID shock pushed Hertz's accounting metrics through the relevant thresholds, the covenant violations cascaded, the lenders accelerated, and Hertz's ability to operate independently was effectively over.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>The Hertz case is a predictable consequence of how modern debt contracts work. A creditor lending money to a firm has, in effect, sold an option that the firm will repay; the option is in the money when the firm is healthy and out of the money when the firm is distressed. The creditor faces the same information problem we have studied throughout Arc I: the manager knows more about the firm's prospects than the creditor does, and the manager's incentives in distress diverge sharply from the creditor's. Debt covenants are the contractual response. They give the creditor a measurable trigger, typically tied to accounting numbers, that activates creditor rights — acceleration, renegotiation, or the installation of an outside controller — when the firm's condition deteriorates.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>This chapter develops a framework for thinking about how liabilities are measured and how debt contracts use accounting numbers. We proceed in four steps. We begin with the bondholder-shareholder conflict articulated by @smithwarner1979, who classified the covenants found in U.S. bond indentures into four categories that remain the standard reference forty-five years on. We then introduce conservatism — a long-recognized but contested feature of U.S. GAAP — as a contracting solution to that conflict, drawing on @watts2003a, who argues that asymmetric measurement (i.e., requiring more evidence for gains than for losses) is functional in a creditor-protective accounting regime. We work through the mechanics of bond accounting, lease accounting under ASC 842, pension and other post-employment benefit (OPEB) accounting, and contingent liabilities. We close with the empirical literature on covenants, focusing on @robertssufi2009, who document that covenant violations produce sharp reductions in subsequent investment.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>The chapter sits squarely in Arc II's empirical investigation but leans toward the internal-information theme of Arc III. The contracting role of accounting — visible most clearly in debt covenants but also present in compensation, regulatory, and supplier-customer contracts — is the long-arc parallel to the capital-markets role developed in Chapters 6 and 7. Both roles motivate accounting standards and accounting practice, and the empirical literature on each role has independently documented that accounting numbers affect real corporate outcomes.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## The bondholder-shareholder conflict</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Consider a stylized firm financed with a mix of debt and equity. The shareholders own the residual claim on the firm's cash flows and receive whatever is left after the creditors are paid. The creditors own a fixed claim and receive their promised payments if the firm is solvent and a fraction of liquidation value if the firm is not. The two claims have very different sensitivities to the firm's underlying decisions.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Three particular conflicts have been identified. The first is the *asset substitution* problem (i.e., the post-debt incentive to take on riskier projects). After the debt is in place, the shareholders can increase the value of their claim by inducing the firm to substitute high-variance projects for low-variance projects: the upside accrues to them, while the downside falls disproportionately on the creditors. The second is the *underinvestment* problem (i.e., the debt-overhang incentive to forgo positive-NPV investment). The shareholders may decline to fund positive-NPV projects if much of the payoff would accrue to existing creditors rather than to the new equity invested. The third is the *claim dilution* problem (i.e., the post-debt incentive to issue further senior debt). The shareholders may increase the firm's leverage by issuing additional debt, diluting the claim of existing creditors.</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>Each of the three conflicts is a moral-hazard problem of the kind introduced in Chapter 4. The agent (i.e., the manager, acting on behalf of the shareholders) has private information about the firm's investment opportunities and capital-structure choices, and the principal (i.e., the creditor) cannot directly observe the agent's actions. Each conflict produces an ex-ante deadweight loss. Anticipating the shareholders' incentives, creditors demand a higher coupon to compensate for the expected loss; anticipating the higher coupon, shareholders may forgo value-creating debt issuances.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>The contractual response is to condition the debt on observable measures that proxy for the underlying behaviors. Asset substitution can be partially controlled by covenants restricting investment in risky assets and by negative-pledge covenants (i.e., covenants that prevent the firm from collateralizing other debt with the firm's existing assets). Underinvestment can be partially controlled by covenants permitting accelerated repayment if the firm's measured capacity to invest is impaired. Claim dilution can be partially controlled by covenants restricting additional debt issuance, dividend payments, and stock repurchases.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>Accounting numbers enter the contracting framework because they are the most readily available and most credibly verifiable summary of the firm's economic position. A creditor cannot easily observe the firm's investment opportunities, the riskiness of its individual projects, or the manager's private information. The creditor can observe — at low cost, with reasonable verification, and at standardized intervals — the firm's reported earnings, leverage, liquidity, and operating cash flow. The covenant structure is the institutional response to the limited verifiability of the underlying economic conditions: the contract conditions on what is observable and verifiable, and the verifiable proxies are accounting numbers.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why this matters for accounting</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>The bondholder-shareholder framework gives accounting a role distinct from its capital-markets role. Capital markets use accounting numbers to value the firm's residual claim (Arc II's main theme so far). Debt contracts use accounting numbers to determine when contractual rights have been triggered. The two uses make different demands on the accounting numbers. Capital markets value information that is forward-looking and economically meaningful; debt contracts value information that is conservative, verifiable, and timely. The two demands sometimes pull in the same direction and sometimes in opposite directions, and FASB standard-setting decisions navigate the tension on a standard-by-standard basis.</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Smith and Warner typology</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>@smithwarner1979 classified the covenants found in U.S. bond indentures into four broad categories, organized by the type of behavior the covenant restricts. The classification has proven durable.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>*Production-investment covenants* restrict the firm's investment activity. Examples include (i) limits on capital expenditures, (ii) restrictions on asset sales, (iii) prohibitions on investments in unrelated businesses, and (iv) prohibitions on mergers and acquisitions absent creditor consent. These covenants address the asset-substitution and underinvestment problems by giving the creditor a direct say over the firm's investment portfolio.</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>*Dividend covenants* restrict the firm's distributions to shareholders. Examples include restrictions on dividend payments above a stated cumulative ceiling, restrictions on stock repurchases, and "payment-in-kind" provisions that limit the firm's ability to redeem subordinated securities. These covenants address the claim-dilution problem by preventing the firm from withdrawing equity capital that protects the creditors.</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>*Financing covenants* restrict the firm's capital-structure choices. Examples include limits on additional debt issuance, restrictions on liens that would subordinate the existing debt, and prohibitions on sale-leaseback transactions that would synthetically increase leverage. These covenants address the claim-dilution problem more comprehensively.</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>*Bonding covenants* require the firm to provide specific information or to take specific actions that signal the absence of opportunism. Examples include requirements to provide audited financial statements at stated intervals, requirements to maintain insurance coverage, and requirements to maintain particular financial ratios.</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>The fourth category — bonding covenants — is the one that most directly conditions on accounting numbers. The financial-ratio covenants in this category impose constraints such as (i) a minimum interest-coverage ratio, (ii) a maximum debt-to-EBITDA ratio, (iii) a minimum current ratio, (iv) a maximum leverage ratio, or (v) a minimum tangible net worth. Each ratio is computed from the firm's reported financial statements at the relevant measurement date. A covenant violation occurs when the ratio crosses the contractual threshold; the violation gives the creditor the right to accelerate the loan, to demand additional collateral, to renegotiate terms, or — in the most severe cases — to force the firm into bankruptcy.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>Bonding covenants in modern debt agreements are extensive. The typical leveraged loan in the U.S. private credit market contains a dozen or more financial-ratio covenants; the typical investment-grade bond contains a smaller but still substantive set. The number, structure, and tightness of covenants vary systematically with the borrower's credit quality and with the lender's information environment.</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conservatism as a contracting solution</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>@watts2003a developed the argument that the conservative biases observable in U.S. GAAP are a contracting solution to the bondholder-shareholder conflict. The argument runs as follows. A creditor with a fixed claim cares more about downside risk than about upside potential — the creditor receives at most the promised payment and may receive less, but cannot receive more. Accounting that systematically biases toward conservative measurement — recognizing losses when they become probable but recognizing gains only when they become realized, carrying inventory at the lower of cost or market, requiring more verifiable evidence for income recognition than for loss recognition — produces accounting numbers that overstate the downside scenarios the creditor cares about while understating the upside scenarios that primarily benefit the shareholders.</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>Conservatism, on this view, is asymmetric (i.e., more demanding of evidence for good news than for bad news). The asymmetry is contracting-functional in two distinct ways. First, conservative accounting produces numbers that tilt toward triggering the covenant earlier than they would under symmetric accounting, giving the creditor protection against the shareholder's incentive to delay loss recognition. Second, conservative accounting reduces the manager's discretion over the timing of loss recognition. A manager whose compensation depends on reported earnings has an incentive to delay losses; conservative standards reduce the scope for that delay by requiring the manager to recognize losses on triggered events rather than at discretionary times.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>The Watts argument has both empirical and conceptual implications. Empirically, it predicts that firms with more debt in their capital structure, with more covenants in their debt contracts, or with more concentrated creditors should have more conservative accounting; the prediction has been broadly supported. Conceptually, it suggests that the FASB's reluctance to permit upward revaluations of long-lived assets, the lower-of-cost-or-market rule for inventory, the impairment-only goodwill model under ASC 350, and the asymmetric treatment of contingent gains and losses are not arbitrary holdovers from a less sophisticated era of accounting but are functional responses to the contracting environment.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>The argument is contested. The Conceptual Framework (Chapter 5) treats neutrality as an aspect of faithful representation and is wary of systematic biases in either direction. Critics argue that the contracting benefits of conservative accounting are smaller than its costs in distorting investor perceptions, particularly for firms with substantial public equity. Recent FASB decisions — the move from incurred-loss to expected-loss credit accounting under CECL, for example — have, on the margin, shifted some areas of GAAP toward more symmetric measurement. The Watts argument is best understood as a description of one role accounting plays, not a normative endorsement of conservatism in all settings.</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="fu">## A subtle implication</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>Conservatism is not synonymous with prudence in some general moral sense. Watts's notion of conservatism is specifically asymmetric — it requires more evidence for good news than for bad news. A standard that requires equally rigorous evidence for both gains and losses is *neutral*, not conservative. The distinction matters in standard-setting deliberations because debates over neutrality versus conservatism are often confused with debates over rigor versus laxity.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mechanics: bonds, the effective-interest method, and a worked example</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>Bond accounting under U.S. GAAP follows the *amortized cost* model (i.e., a model in which the carrying amount is updated each period by accruing interest at the historical market rate, rather than by remeasuring to current market value) for most non-trading bond obligations. The structure sits at the heart of the financial reporting of corporate debt.</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>When a firm issues a bond, the bond promises a stream of fixed cash payments — a periodic coupon and a principal repayment at maturity. The cash the issuer receives is determined by the *market* interest rate at issuance (i.e., the yield demanded by investors for bonds of comparable risk and duration), not by the bond's stated coupon rate. Three issuance cases arise:</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**At par.** If the market rate equals the coupon rate, the bond issues at par, and the cash received equals the face value.</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**At a discount.** If the market rate exceeds the coupon rate, the bond issues at a discount, and the cash received is less than the face value. The discount is prepaid interest that the issuer recognizes over the life of the bond.</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**At a premium.** If the market rate is below the coupon rate, the bond issues at a premium, and the cash received exceeds the face value. The premium reduces interest expense recognized over the life of the bond.</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>The discount or premium is amortized over the life of the bond using the *effective-interest method*. In any period, (i) interest expense equals the carrying amount at the start of the period multiplied by the market rate at issuance, (ii) the cash coupon payment equals the face value multiplied by the coupon rate, and (iii) the difference between interest expense and the coupon payment adjusts the discount or premium account, moving the carrying amount toward face value. At maturity, the carrying amount equals the face value, and the firm pays the face value to retire the bond.</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="fu">### A worked example: $100,000 face, 10-year, 6% coupon, issued to yield 8%</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>Suppose Acme Corp. issues, on January 1, a ten-year bond with a face value of $100{,}000 and a coupon rate of 6% paid annually. The market rate for bonds of comparable risk and duration at issuance is 8%. The cash the bond will fetch — the present value of the bond's cash flows discounted at 8% — is the sum of (i) the present value of a ten-year annuity of $6{,}000 (i.e., 6% of $100{,}000) and (ii) the present value of the $100{,}000 face repayment at the end of year 10:</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>\text{Issue price} \;=\; \$6{,}000 \cdot \frac{1 - (1.08)^{-10}}{0.08} \;+\; \frac{\$100{,}000}{(1.08)^{10}} \;\approx\; \$40{,}260 + \$46{,}319 \;=\; \$86{,}580.</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>The bond issues at a discount of approximately $13{,}420 ($100{,}000 − $86{,}580). The journal entry at issuance is:</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>| Account              | Debit  | Credit  |</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>|----------------------|--------|---------|</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>| Cash                 | 86,580 |         |</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>| Discount on bonds payable | 13,420 |         |</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>| Bonds payable (face) |        | 100,000 |</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>The discount on bonds payable is a contra-liability account (i.e., a balance-sheet account that reduces the gross face value of the bonds to the net carrying amount). The net liability presented on the balance sheet at issuance is $100{,}000 − $13{,}420 = $86{,}580.</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>The amortization schedule for the first three periods is:</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>| Period | Carrying amount, BOP | Interest expense (8% × BOP) | Coupon (6% × face) | Discount amortized | Carrying amount, EOP |</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>|--------|----------------------|-----------------------------|--------------------|--------------------|----------------------|</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>| 1      | $86,580              | $6,926                      | $6,000             | $926               | $87,506              |</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>| 2      | $87,506              | $7,000                      | $6,000             | $1,000             | $88,506              |</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>| 3      | $88,506              | $7,081                      | $6,000             | $1,081             | $89,587              |</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>(BOP and EOP denote beginning-of-period and end-of-period, respectively. Numbers are rounded to the nearest dollar.)</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>The journal entry at the end of year 1 is:</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>| Account                  | Debit | Credit |</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>|--------------------------|-------|--------|</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>| Interest expense         | 6,926 |        |</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>| Discount on bonds payable |       | 926    |</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>| Cash                     |       | 6,000  |</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>Interest expense ($6{,}926) is the economically meaningful charge — it equals the carrying amount at the start of the period times the market rate at issuance. Cash interest paid ($6{,}000) is smaller because the coupon rate is below the market rate. The difference ($926) reduces the discount account; the carrying amount rises to $87{,}506 and the bond moves closer to its face value. The pattern repeats with the carrying amount compounding upward each period until, at the end of year 10, the discount has been fully amortized and the carrying amount equals the face value of $100{,}000.</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>At maturity, the firm retires the bond by paying the face value:</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>| Account             | Debit   | Credit  |</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>|---------------------|---------|---------|</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>| Bonds payable (face) | 100,000 |         |</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>| Cash                 |         | 100,000 |</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>The amortized-cost model differs from a fair-value model in an important respect. If market interest rates change after issuance, the bond's market price will change correspondingly — but the carrying amount on the issuer's balance sheet does not move. The bond is reported at the historical issuance value, amortized toward face. The amortized-cost basis is an example of a measurement choice that prioritizes faithful representation (the carrying amount is verifiable from the original transaction) over relevance (the carrying amount may be a poor proxy for the bond's current market value).</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="fu">## An instructive case: Apple's 2013 debut</span></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>Apple held no public debt for nearly two decades before issuing $17 billion in bonds across six tranches on April 30, 2013 — at the time the largest non-bank corporate bond offering in history. The proceeds funded a share-repurchase and dividend program rather than operating investment, an example of how leverage decisions interact with shareholder distributions. The accounting was standard: each tranche was recorded at its issue price (with small discounts and premiums relative to par), and interest expense has been recognized at the effective yield in each period since. The case is a reminder that bond accounting mechanics apply equally to a firm with no operating need to borrow and to a firm in deep distress; the mechanics are silent on why the firm chose to issue.</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mechanics: leases under ASC 842</span></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>The most consequential single change in U.S. liabilities accounting in the past decade was the FASB's adoption of ASC 842, effective for U.S. public companies in 2019. The standard replaced a framework under which operating leases were essentially off-balance-sheet — the firm reported lease expense as a periodic operating cost but did not record any asset or liability associated with the lease — with a framework requiring all leases of more than twelve months to appear on the balance sheet.</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>Under ASC 842, the lessee recognizes, at lease inception, (i) a *right-of-use* (ROU) asset (i.e., the lessee's contractual right to use the leased asset over the lease term) and (ii) a corresponding *lease liability* (i.e., the lessee's obligation to make the lease payments). Both are measured at the present value of the unavoidable lease payments, discounted at the lessee's incremental borrowing rate (i.e., the rate the lessee would pay to borrow on a collateralized basis over a similar term) or the rate implicit in the lease, if determinable.</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>ASC 842 distinguishes two categories of leases for income-statement purposes. *Finance leases* are those that transfer substantially all of the economic benefits and burdens of ownership to the lessee — for example, (i) leases that transfer title at the end of the term, (ii) leases with bargain purchase options, (iii) leases of substantially all of the asset's useful life, and (iv) leases whose present value of payments equals substantially all of the asset's fair value. Finance leases produce a depreciation expense on the ROU asset and a separately reported interest expense on the lease liability, just as if the lessee had purchased the asset and financed it with debt. *Operating leases* are all other leases. They produce a single straight-line lease expense over the lease term, preserving the income-statement pattern of the pre-2019 framework while introducing the balance-sheet recognition the prior framework lacked.</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="fu">### Why ASC 842 was a big deal</span></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>The pre-2019 framework was widely understood — by sophisticated analysts and creditors — as an accounting fiction. A firm that leased a building had the same economic obligations as a firm that financed the building with debt and recorded depreciation, but only the latter showed up on the balance sheet. Analysts had for decades constructed adjusted leverage ratios that capitalized the discounted stream of footnoted operating-lease payments, but less sophisticated readers of financial statements — including some creditors writing covenants — relied on the unadjusted GAAP numbers.</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>The 2019 transition moved approximately $2 trillion of operating-lease right-of-use assets and corresponding liabilities onto U.S. corporate balance sheets — the largest single change in U.S. financial reporting in a generation. The change was concentrated in industries with heavy reliance on operating leases: retail (store leases), airlines (aircraft and gate leases), restaurants (location leases), and shipping (vessel and container leases). It reduced the cross-firm variation in apparent leverage that had been driven by the choice between leasing and buying, and it produced an empirical natural experiment in the renegotiation of covenants that had been written before the change.</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="fu">### A concrete example: Boeing in the 737 MAX era</span></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>Boeing's pre-2019 footnote disclosures showed substantial operating-lease commitments associated with its leased buildings, its aircraft-test infrastructure, and its supplier-financing arrangements. The 2019 adoption of ASC 842, coinciding with the 737 MAX grounding, brought these obligations onto the balance sheet as ROU assets and lease liabilities at the same time that Boeing's underlying credit was deteriorating. The two changes are conceptually distinct — one is an accounting representation change, the other is a real-economic change — but both showed up in the same financial statements, and the resulting compounded effect on reported leverage produced a meaningful change in how creditors and rating agencies viewed the firm. The Boeing case is an instructive reminder that an accounting representation change, although not changing the underlying economics, can interact with concurrent real shocks in ways that affect contractual outcomes.</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common pitfall</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>The lease accounting change did not change the underlying economics of leasing. A firm that leased a building before 2019 had the same economic obligations as a firm that leased the building after 2019. What changed was the accounting representation: the off-balance-sheet treatment under the prior framework was, on most analyses, an accounting fiction that the change merely corrected. Sophisticated investors and creditors had for decades adjusted for off-balance-sheet leases through footnote analysis. The institutional value of ASC 842 is that the adjustment is no longer required.</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mechanics: pensions, OPEB, and off-balance-sheet history</span></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="fu">### Defined-benefit versus defined-contribution plans</span></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>Employer-sponsored retirement plans fall into two broad categories that differ sharply in who bears the residual risk. A *defined-contribution* plan (e.g., a 401(k)) specifies the employer's periodic contribution; the employee bears the investment risk on the accumulated balance, and the employer's accounting is simple — the contribution is an expense in the period made. A *defined-benefit* plan (e.g., a traditional corporate pension) specifies the retirement benefit the employee will receive — typically a function of years of service and final salary — and the employer bears the risk that the assets set aside to fund the obligation may or may not be sufficient when the benefits come due. Other post-employment benefits (OPEB), most notably retiree health care, are accounted for similarly to defined-benefit pensions.</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>The accounting for defined-benefit plans is governed by ASC 715. The economic obligation — the *projected benefit obligation* (i.e., the present value of benefits earned to date, with future salary increases factored in) — is computed by an actuary using assumptions about (i) the discount rate, (ii) the expected long-term return on plan assets, (iii) future salary growth, (iv) employee turnover, and (v) mortality. The plan's *funded status* is the difference between the fair value of plan assets and the projected benefit obligation. The funded status is reported on the balance sheet, and the period's *pension expense* is reported on the income statement.</span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>The role of actuarial assumptions is consequential. A higher discount rate produces a lower obligation; a higher assumed return on plan assets produces a lower pension expense. Both assumptions are at the firm's discretion, subject to broad professional-judgment standards and auditor review. The empirical literature has documented that firms appear to choose actuarial assumptions in ways correlated with the firm's incentives — for example, raising the assumed return on plan assets in periods when pension expense pressure is binding (e.g., periods of weak earnings or near covenant thresholds).</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="fu">### The gap between funded status and pension expense</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>A distinctive feature of defined-benefit pension accounting is that the *funded status* reported on the balance sheet and the *pension expense* reported on the income statement are not tightly linked. The funded status reflects the current present-value gap between obligations and assets. The pension expense, by contrast, smooths several components — service cost, interest cost, expected return on plan assets, and amortization of prior gains and losses — across periods. Actuarial gains and losses (i.e., changes in the funded status from actual-versus-expected investment performance or assumption changes) are not flowed through the income statement in the period of change; they are deferred in accumulated other comprehensive income (AOCI) and amortized into pension expense over time using the "corridor" mechanism.</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>The result is that a firm can carry a substantial underfunded pension liability on the balance sheet while reporting modest pension expense on the income statement. The smoothing was a deliberate FASB choice — actuarial estimates are noisy, and quarter-to-quarter remeasurement was viewed as producing more variation than information — but the smoothing produces a divergence between the cash-flow reality of the pension obligation and the period-by-period reported expense.</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a><span class="fu">### The legacy-pension overhang: GM and Ford</span></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>The U.S. auto industry has long carried defined-benefit pension and OPEB obligations of a magnitude that meaningfully affects firm value. General Motors and Ford each carried obligations measured in the tens of billions of dollars during the 2000s and 2010s, with funded-status gaps that varied with discount rates and asset performance. The 2009 GM bankruptcy was driven in substantial part by the unsustainability of legacy retiree benefits relative to the firm's operating cash flows. The case is consistent with the broader point that off-balance-sheet or partially-smoothed obligations can mask leverage that becomes binding when business conditions deteriorate — a pattern with the same structural shape as the ASC 842 lease case, although the institutional response (smoothing versus capitalization) has been different.</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="fu">### Special-purpose entities and the Enron episode</span></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>A historical thread that ties together the chapter's treatment of off-balance-sheet items is the history of *special-purpose entities* (SPEs) and *variable-interest entities* (VIEs). Before the 2003 issuance of FIN 46 (later codified as ASC 810), firms could sponsor SPEs — separately incorporated entities holding assets and liabilities — without consolidating the SPE's balance sheet into the sponsor's, provided that a small minority equity interest (3% under the prior guidance) was held by an outside party. Enron exploited the structure aggressively, using SPEs to hold assets at high carrying values and to hold liabilities off the sponsor's balance sheet. The 2001 Enron collapse revealed that the consolidation threshold had become a mechanism for evasion rather than a substantive test of control.</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>ASC 810 (i.e., the consolidation guidance issued in 2003 and revised subsequently) shifted the consolidation test from a quantitative equity threshold to a qualitative analysis of who bears the entity's risks and rewards. Under the revised guidance, the *primary beneficiary* — the party with the power to direct the entity's most significant activities and the obligation to absorb losses or right to receive benefits — consolidates the entity. The Enron-era SPE structures would not survive the ASC 810 test, and the broader pattern of using off-balance-sheet vehicles to disguise leverage has been substantially curtailed. The post-2003 environment is not friction-free — securitization structures and certain operating-lease and joint-venture arrangements remain analytically demanding — but the consolidation perimeter is now substantially broader than it was before the Enron episode.</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mechanics: contingent liabilities</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>A *contingent liability* (i.e., a potential obligation that depends on the outcome of a future event) is accounted for under ASC 450 according to (i) the probability that the obligation will be confirmed and (ii) the firm's ability to estimate the amount. The three-tier framework is:</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Probable and reasonably estimable.** The firm recognizes a liability on the balance sheet and an expense on the income statement.</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Reasonably possible but not probable.** The firm does not recognize a liability but discloses the contingency in the footnotes, including the nature of the contingency and an estimate of the possible loss (or a statement that no estimate can be made).</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Remote.** The firm need not disclose the contingency at all.</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>The framework is asymmetric in the same direction as the rest of conservatism: a contingent *gain* (e.g., a probable favorable outcome in pending litigation in which the firm is the plaintiff) is not recognized until the gain is realized, while a contingent loss is recognized once it is probable. The asymmetry is consistent with the Watts argument of Section 9.4.</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>The probability thresholds are stated qualitatively, and the firm's classification of a given contingency requires substantial judgment. Litigation contingencies, product warranties, environmental remediation obligations, and tax disputes are common settings in which the classification has been contested. The empirical literature on contingency disclosure has documented (i) that firms with binding accounting concerns tend to disclose less specifically than firms without such concerns, (ii) that the realized losses on disclosed contingencies are systematically larger than the disclosed estimates, and (iii) that the asymmetric treatment of gains and losses produces footnote disclosures that are useful but incomplete summaries of the firm's exposure.</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="fu">## Empirical evidence</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>The empirical literature on liabilities and contracting is large; @beyer2010 review the financial-reporting environment broadly, and @dechow2010 review earnings quality. Three findings are particularly relevant.</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>First, the *contracting role of accounting* has been documented through natural-experiment designs. @robertssufi2009, in a paper titled "Control Rights and Capital Structure," document that covenant violations produce sharp reductions in subsequent investment by violating firms — investment falls by approximately 13% on average in the four quarters following a violation. The reduction is concentrated in firms with greater contracting flexibility (i.e., firms with single-lender relationships, where the lender can implement the covenant remedy directly) and is largest when the violation is the firm's first. The result is consistent with the framework of Section 9.2: covenants are not merely passive performance metrics but active mechanisms through which creditors influence the firm's real decisions. The Roberts-Sufi result has been replicated and extended, and it forms the empirical foundation of this week's lab.</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>Second, the *empirical literature on conservatism* has documented that conservative accounting is more prevalent in firms with more debt in their capital structure and with more concentrated creditors. The pattern is consistent with @watts2003a, who argues that conservatism has a contracting function. The literature has also documented that conservatism has, on the margin, declined over time as the FASB has moved toward more neutral standards and as firms have become more equity-financed; the relative importance of the contracting role versus the capital-markets role has shifted.</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>Third, the *empirical literature on the ASC 842 lease accounting change* is still developing, but early evidence suggests that the change has produced statistically significant changes in firms' apparent leverage as measured by traditional ratios and corresponding changes in covenant slack. Renegotiations of debt covenants in response to the change have been substantial, suggesting that — even though sophisticated creditors had presumably already adjusted for off-balance-sheet leases — the formal change in measurement basis carried contractual weight.</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>The literature does not claim that all aspects of GAAP liability accounting are well-designed. Specific concerns — around the measurement of complex derivatives, the recognition of contingent obligations, and the treatment of pension and OPEB obligations — remain contested. The general claim that emerges is that accounting numbers play an active role in the contracting environment of the modern firm, and that the design of the accounting standards has consequences for that environment.</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key takeaways</span></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key takeaways</span></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Debt contracts condition on accounting numbers because direct economic conditions are not verifiable.** Reported earnings, leverage, and cash-flow ratios are the most credibly verifiable summaries of the firm's position, and covenants tie creditor rights to thresholds on those numbers.</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**The Smith-Warner typology organizes covenants by what they restrict.** Production-investment, dividend, financing, and bonding covenants each address a specific component of the bondholder-shareholder conflict.</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Conservatism is asymmetric, not merely prudent.** Asymmetric measurement is functional in a creditor-protective regime by triggering covenants earlier and reducing the manager's discretion over the timing of loss recognition.</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**The effective-interest method ties accounting interest expense to the market rate at issuance.** Interest expense equals the carrying amount times the historical yield; the discount or premium is amortized so that the carrying amount converges to face value at maturity.</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**ASC 842 moved approximately $2 trillion of operating leases onto U.S. balance sheets without changing the underlying economics.** The change replaced an accounting fiction with substantive recognition, with the largest effects concentrated in lease-intensive industries.</span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Pension and OPEB accounting smooths actuarial volatility through the corridor mechanism, producing a divergence between the funded status on the balance sheet and the pension expense on the income statement.** The smoothing was a deliberate FASB choice but creates a gap between cash-flow reality and reported expense that is consequential for legacy-pension-heavy firms.</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="fu">## Discussion questions</span></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>The chapter argued that conservative accounting can be understood as a contracting solution to the bondholder-shareholder conflict. The Conceptual Framework (Chapter 5) treats neutrality as an aspect of faithful representation. Are these positions in tension? If so, how should the FASB resolve the tension when designing a specific standard?</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The Smith and Warner typology classifies covenants by the type of behavior they restrict. Identify a covenant from each of the four categories that you would expect to see in a leveraged loan agreement, and explain briefly which of the bondholder-shareholder conflicts the covenant addresses.</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>The 2019 lease accounting change moved approximately $2 trillion of operating-lease right-of-use assets and corresponding liabilities onto U.S. corporate balance sheets. Did the change produce more useful financial statements? Defend your answer using the relevance-versus-faithful-representation framework of Chapter 5.</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>@robertssufi2009 document that covenant violations produce sharp reductions in subsequent investment. Is this a case where accounting numbers are *causing* real corporate behavior, or a case where the accounting numbers are correlated with underlying economic conditions that themselves cause the behavior? How might one distinguish the two interpretations empirically?</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Suppose a creditor and a debtor are negotiating a new loan agreement. The creditor proposes a covenant requiring the debtor to maintain a minimum interest-coverage ratio of 3.0×. The debtor counters with a proposal to instead provide weekly cash-flow reports to the creditor. From the creditor's perspective, which proposal is preferable? Use the framework of this chapter to defend your answer.</span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="fu">## Problems</span></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="fu">### Mechanical</span></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>*(Bond issued at a discount; effective-interest amortization.)* Acme Corp. issues a four-year bond with a face value of $200{,}000 and a coupon rate of 5% paid semi-annually. The market interest rate at issuance is 6%. (a) Compute the cash received at issuance. (b) Construct an amortization schedule showing the carrying amount, interest expense, coupon payment, and discount amortization for each of the eight semi-annual periods. (c) Verify that the carrying amount at the end of period 8 equals the face value. (d) Record the journal entry at issuance, the journal entry at the end of period 1, and the journal entry at the retirement of the bond.</span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>*(Bond issued at a premium; effective-interest amortization.)* Repeat Problem 1 under the assumption that the market interest rate at issuance is 4% (i.e., the bond issues at a premium). Show how the premium account behaves over the life of the bond, and contrast the income-statement pattern with that of Problem 1.</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>*(ASC 842 lease, operating classification.)* On January 1, Acme Corp. enters into a five-year lease of office space. The lease requires annual payments of $24{,}000 at the end of each year. Acme's incremental borrowing rate is 7%. The lease is classified as an operating lease under ASC 842. (a) Compute the lease liability and right-of-use asset at lease inception. (b) Construct the journal entries for the first two years of the lease, separately reporting the components of the single straight-line lease expense (i.e., interest accretion on the liability and amortization of the ROU asset). (c) Compute the carrying amount of the ROU asset and the lease liability at the end of year 2.</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>*(Pension expense decomposition.)* Acme Corp.'s defined-benefit pension plan reports the following at the start of the year: projected benefit obligation $400{,}000; fair value of plan assets $360{,}000; discount rate 5%; expected long-term return on plan assets 7%; current-year service cost $30{,}000; benefits paid during the year $20{,}000; actual return on plan assets for the year $36{,}000. Assume no amortization of prior gains or losses. (a) Compute the components of pension expense (i.e., service cost, interest cost on the obligation, expected return on plan assets, and any amortization). (b) Compute the projected benefit obligation and fair value of plan assets at year-end. (c) Report the funded status at year-end and identify whether the plan is over- or under-funded.</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a><span class="fu">### Conceptual</span></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>*(On-balance-sheet versus off-balance-sheet judgment.)* A firm enters into a fifteen-year agreement to purchase 80% of the output of a specialized manufacturing facility being constructed by a counterparty. The agreement is structured so that the firm does not own the facility, does not bear residual value risk on the facility, and is not obligated to make payments if the counterparty fails to deliver. Should the agreement give rise to a recognized liability on the firm's balance sheet? Apply the consolidation framework of ASC 810 and the lease framework of ASC 842, identify the relevant judgment calls, and defend your conclusion.</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>*(Evaluation of contingent-liability disclosure.)* Choose a publicly traded firm with substantial pending litigation disclosed in its most recent 10-K (large pharmaceutical firms and large industrial firms are usually good candidates). In approximately 400 words, evaluate the firm's contingency disclosure. Address (i) the classification of the contingencies under ASC 450 (probable, reasonably possible, remote), (ii) whether the firm provides a numerical estimate of possible loss, (iii) what the disclosure conveys about the firm's exposure relative to its market capitalization, and (iv) whether the disclosure is, in your view, useful to a reader trying to assess the firm's economic position.</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="fu">### Writing exercise</span></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>*(Short writing exercise on conservatism and standard-setting trade-offs.)* In approximately 500 words, evaluate the following claim: "The FASB's recent move toward expected-loss credit accounting under CECL is a retreat from conservatism that will, on net, produce less useful financial statements for creditors." Engage the @watts2003a contracting argument, the Conceptual Framework's treatment of neutrality, and the empirical literature you have read. State your position and defend it; do not pretend the question has an obvious answer.</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a><span class="fu">## Lab</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>The out-of-class lab for this week is **WRDS Lab 4: Covenant Slack and Investment**. The lab walks through the construction of standardized covenant-slack measures from Compustat for a sample of leveraged firms and the replication of the @robertssufi2009 finding that covenant violations predict reductions in subsequent investment. The lab is the most empirically intensive of the WRDS labs in this course and builds directly on the methodologies of Labs 1–3.</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>The deliverable is a Colab notebook that produces (i) the cross-sectional distribution of covenant slack in your sample, (ii) a regression of subsequent investment on covenant slack and standard controls, and (iii) a brief written discussion of what the replication implies about the contracting role of accounting. The lab is due at the end of the week.</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>The GenAI policy permits the use of AI coding assistants with disclosure. As with prior labs, the disclosure must specify what the tool was used for and whether any AI-generated text appears in the final submission.</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a><span class="fu">## Further reading</span></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>The four readings below are the assigned readings for Week 9. Students should read all of them.</span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@smithwarner1979, "On Financial Contracting." The foundational paper, which articulates the bondholder-shareholder conflict and the four-category typology of covenants. Read for the conflict, the typology, and the contracting argument.</span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@watts2003a, "Conservatism in Accounting Part I: Explanations and Implications." Read for the contracting interpretation of conservatism and the four explanations the author offers. The companion paper "Part II" is optional.</span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@robertssufi2009, "Control Rights and Capital Structure." The empirical paper that documents that covenant violations sharply reduce subsequent investment. Read for the empirical design and the headline result; the technical appendix on covenant slack measures is useful for the lab.</span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>*Optional, for those who want more:* The text of a real credit agreement from EDGAR. The agreements are dense and unfamiliar at first, but working through the financial-covenant section of one — for any leveraged firm whose 10-K incorporates its credit facility by reference — is one of the more useful exercises a student can do for understanding what bonding covenants actually look like in practice.</span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="fu">## Where Arc II goes from here</span></span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>Chapter 9 has examined the liability side of the balance sheet and the contracting role of accounting numbers in debt agreements. Chapter 10 closes Arc II by turning to the equity side: stockholders' equity, basic and diluted earnings per share, stock-based compensation, and the empirical literature on earnings management. The Chapter 4 framework on moral hazard returns explicitly: managers respond to the incentives created by their compensation contracts, and the accruals discussed in Chapter 7 are the workhorse mechanism through which the response is implemented.</span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc2-markets/09-liabilities.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
