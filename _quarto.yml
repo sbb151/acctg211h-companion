@@ -1,0 +1,102 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "ACCTG 211H Companion"
+  subtitle: "An Information-Economics Introduction to Financial and Managerial Accounting"
+  author:
+    - name: Samuel B. Bonsall, IV
+      affiliation: "Smeal College of Business, The Pennsylvania State University"
+      email: sbb151@psu.edu
+  date: today
+  date-format: "MMMM YYYY"
+  description: |
+    A modular online textbook for ACCTG 211H, the honors introduction to financial
+    and managerial accounting at the Smeal College of Business. The Companion
+    treats accounting as the institutional response to specific information-economics
+    problems and develops the relevant mechanics as students encounter the questions
+    those mechanics are designed to answer.
+  cover-image: cover.png
+  favicon: favicon.png
+  site-url: https://acctg211h.psu.edu/
+  repo-url: https://github.com/sbb151/acctg211h-companion
+  repo-actions: [edit, issue]
+  sharing: [twitter, linkedin]
+  search: true
+  page-navigation: true
+  back-to-top-navigation: true
+
+  chapters:
+    - index.qmd
+    - preface.qmd
+    - part: "Arc I — The Information Problem"
+      chapters:
+        - arc1-information/01-foundations.qmd
+        - arc1-information/02-lemons.qmd
+        - arc1-information/03-signaling.qmd
+        - arc1-information/04-stewardship.qmd
+        - arc1-information/05-standards.qmd
+    - part: "Arc II — Markets and Measurement"
+      chapters:
+        - arc2-markets/06-efficient-markets.qmd
+        - arc2-markets/07-accruals.qmd
+        - arc2-markets/08-long-term-assets.qmd
+        - arc2-markets/09-liabilities.qmd
+        - arc2-markets/10-equity-compensation.qmd
+    - part: "Arc III — Contracting and Internal Information"
+      chapters:
+        - arc3-internal/11-decentralization.qmd
+        - arc3-internal/12-performance.qmd
+        - arc3-internal/13-capital-budgeting.qmd
+    - part: "Arc IV — Synthesis"
+      chapters:
+        - arc4-synthesis/14-debates.qmd
+    - references.qmd
+
+  appendices:
+    - appendices/a01-fset.qmd
+    - appendices/a02-python-wrds-colab.qmd
+    - appendices/a03-debits-credits.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toc: true
+    toc-depth: 3
+    code-fold: false
+    code-tools: true
+    code-link: true
+    citations-hover: true
+    crossrefs-hover: true
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    number-sections: true
+    number-depth: 2
+    highlight-style: github
+  pdf:
+    documentclass: scrbook
+    papersize: letter
+    geometry:
+      - top=1in
+      - bottom=1in
+      - left=1.25in
+      - right=1.25in
+    fontsize: 11pt
+    fig-pos: "H"
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    keep-tex: true
+
+execute:
+  freeze: auto
+  echo: true
+  warning: false
+  message: false
+
+editor: source

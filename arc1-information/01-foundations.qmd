@@ -1,0 +1,153 @@
+---
+title: "Foundations: The Separation of Ownership and Control"
+description: "Why does accounting exist at all? An introduction to the economic problem that gives the rest of the course its structure."
+---
+
+# Foundations {#sec-foundations}
+
+## 1.1 Opening question
+
+The typical large U.S. public corporation is owned by people who have never met its managers. Apple has roughly fifteen billion shares outstanding, scattered across millions of brokerage accounts and retirement plans, and the firm is run day-to-day by a few dozen senior executives in Cupertino. A shareholder who buys one hundred shares of Apple on a Tuesday morning has, in legal terms, become a fractional owner of a half-trillion-dollar enterprise — and that same shareholder may, in practice, have no contact with the firm beyond a quarterly press release and a proxy ballot.
+
+This arrangement is so familiar that its strangeness is easy to miss. The residual claimants on the firm's profits do not run the firm. They have delegated control of an enormous pool of capital to a small group of agents whose interests are at most imperfectly aligned with their own. They cannot verify, day by day, that those agents are working hard, choosing prudently, or refraining from diverting resources to private benefit. They face, in short, an *information problem* (i.e., they have committed capital but cannot directly observe what is being done with it).
+
+This chapter takes the position that the modern system of financial accounting and reporting is, at its core, a response to that problem. The argument is not new — it can be traced at least to @berlemeans1933, who documented that ownership in the largest U.S. corporations had become dispersed across small shareholders while control had concentrated in professional management. The underlying logic was sharpened in the 1970s by @jensenmeckling1976, who modeled the firm as a nexus of contracts among parties with conflicting interests and imperfect information. The chapter develops the argument in a form the rest of the course can build on.
+
+By the end of the chapter, we hope you can articulate why a market economy with separated ownership and control creates a demand for credible periodic reporting — even before you know anything about debits, credits, GAAP, or any specific accounting rule. The chapter does not yet introduce mechanics. We will not discuss journal entries until Chapter 3, and we will not prepare a balance sheet until Chapter 2. Starting with the foundational economic problem ensures that, when we do reach the mechanics, you understand what those mechanics are *for*.
+
+## 1.2 A stylized setup: capital, control, and the cost of cooperation
+
+Consider a small thought experiment. Two people form a partnership to operate a single restaurant. One — call her the *owner* — supplies the capital, say $100 of equity to lease space, buy equipment, and stock the pantry. The other — call him the *manager* — supplies the labor and operational expertise: he hires the staff, sets the menu, and runs the kitchen. The two agree, in advance, that the manager will run the business and the owner will receive a share of the profits.
+
+If the owner can observe everything the manager does — every decision, every input, every output — the arrangement is straightforward. She can verify, at the end of each period, that the manager worked hard, chose sensibly, and reported honestly. The "accounting" of the operation is whatever she observed personally.
+
+This is not the world in which firms operate. The owner cannot watch the manager all day. She cannot independently verify whether a slow Tuesday was the result of poor menu choices or simply bad weather. She cannot separate the manager's effort from his competence, nor either from the realized state of the world. She can observe outputs — periodic measures of profit, cash, and net assets — but the *interpretation* of those outputs is at least partly ambiguous.
+
+::: {.callout-note}
+## Why this matters
+
+The owner faces two related but distinct problems. First, before contracting, she is uncertain whether the manager is in fact a good fit for the role — an *adverse selection* problem (i.e., one party knows more than the other about a relevant characteristic at the time of contracting; see Chapter 2). Second, after contracting, she cannot observe the manager's effort or the quality of his decisions — a *moral hazard* problem (i.e., one party's actions are imperfectly observable to the other after contracting; see Chapter 4). Each problem has its own information-economics literature, and each problem has its own characteristic accounting response.
+:::
+
+Consider what happens if the parties cannot reduce the owner's information disadvantage. The owner, anticipating that she cannot easily monitor the manager, will rationally demand a higher share of the surplus to compensate for the risk of shirking or self-dealing. The manager, anticipating that the owner will demand a higher share, may decline to enter the partnership at all — particularly if he can use his labor and expertise on a project he himself owns. @jensenmeckling1976 modeled this dynamic and showed that the *agency costs* of the relationship (i.e., the deadweight loss attributable to imperfect monitoring) can be large enough to prevent value-creating arrangements from forming. There is a real economic problem here, not merely a complaint about untrustworthy managers.
+
+What might mitigate the problem? One natural answer, and the one this course will develop in detail, is *credible periodic reporting*. If the manager can produce, at regular intervals, a report on the firm's economic activity that is detailed enough, comparable enough, and verified enough that the owner can use it to evaluate the manager's stewardship, the agency cost shrinks. Some risk remains — no report is perfect — but the wedge between what the owner would do herself and what the manager will do on her behalf is narrower than in the absence of the report.
+
+This is, in the broadest terms, what financial accounting is for. The income statement, the balance sheet, the statement of cash flows, the audit, the disclosure rules, the conceptual framework — none of these existed in their modern form three centuries ago. They emerged, slowly and sometimes painfully, as the institutional response to a particular problem: how owners can credibly delegate control of capital to managers without losing too much of the surplus to agency costs.
+
+## 1.3 The historical claim: Berle and Means
+
+@berlemeans1933, writing in the early 1930s, were the first to systematically document the separation of ownership and control in the modern American economy. By examining the share registries and proxy materials of the 200 largest non-financial corporations, they showed that a substantial fraction of American industrial capital was held in firms in which no single shareholder, or even small coalition of shareholders, owned a controlling stake. Control in these firms had passed, effectively, to professional management.
+
+Berle and Means were not the first to notice the phenomenon — earlier observers including Marshall and Veblen had remarked on it — but they provided what no one had: a systematic empirical accounting of how widespread it had become. They documented that the typical large firm of the early twentieth century was no longer a partnership-like entity in which the providers of capital exerted direct managerial control. It had become an institution in which capital and control were structurally separate.
+
+Their concerns were political-economic rather than narrowly accounting-focused. They worried about the consequences of dispersed ownership for corporate governance, for the regulation of monopoly, and for the distribution of economic power. But the empirical observation is the foundation on which the modern theory of the firm — and modern accounting — has been built.
+
+A century later, the pattern is, if anything, more pronounced. Index funds and pension trusts now hold large fractions of the float of firms such as Apple, Microsoft, and ExxonMobil, while the operational decisions at those firms are made by a handful of executives. The largest individual shareholder of Boeing is not a person but a fund family; the typical retail shareholder votes her shares (if at all) through a brokerage that passes her ballot to a proxy advisor. The separation Berle and Means described in 1932 has, in important respects, deepened.
+
+::: {.callout-note}
+## A point worth pausing on
+
+The separation of ownership and control is not a flaw of the modern corporation. It is, in important respects, a feature. It allows capital to be raised at scale from a vast number of small savers, each of whom would be unable to monitor a firm individually but who, in aggregate, can finance enterprises far larger than any single owner could fund. The cost of the separation is that each individual capital provider has limited ability to verify what is being done with the capital. The system of financial accounting is part of how we make the trade-off worthwhile.
+:::
+
+## 1.4 Coase, the firm, and the boundary problem
+
+If the firm is the institutional form within which the agency problem arises, a prior question follows: why do firms exist at all? Why is much of the economy organized as long-lived hierarchical institutions, rather than as a continuous sequence of arms-length market transactions among individual specialists?
+
+@coase1937 gave what remains the canonical answer. The market is not free. Conducting transactions through the price system requires discovering what the relevant prices are, negotiating contracts, monitoring compliance, and adjudicating disputes. These *transaction costs* (i.e., the costs of using the price mechanism) are substantial. The firm exists because some sets of activities can be organized more cheaply within an authority relationship than through repeated arms-length contracting.
+
+A simple example fixes the idea. Toyota could, in principle, purchase each component of a Camry from a separate independent supplier on the spot market, negotiating each transaction one by one. In practice, it does not. It maintains long-term relationships with a small set of suppliers, integrates some component production in-house, and coordinates the rest through hierarchical contracts that look nothing like spot-market exchange. The reason is precisely Coasean: the cost of using the market to coordinate thousands of interdependent activities — pricing each, contracting each, verifying each — would exceed the cost of coordinating them through internal authority.
+
+Coase's framework has implications for accounting that he himself did not pursue but that are central to this course. If the firm exists in part because internal organization is cheaper than market exchange when transaction costs are high, then the firm faces an *internal* information problem mirroring its external one. Inside Toyota, the manager who oversees a subordinate cannot directly observe everything the subordinate does, and the subordinate may have private information about the cost of his task. This internal information problem is the subject of managerial accounting (Arc III), where we will see that performance measurement, budgeting, and capital allocation are designed responses to the same underlying logic that motivates the financial reports the firm produces for its external owners.
+
+The boundary of the firm — what is done internally and what is purchased externally — is itself a function of the relative costs of internal versus external information. Where internal information is cheap and external information is dear, the firm expands; where external information is cheap and internal coordination is expensive, the firm contracts. The deep continuity between Coase and the modern theory of the firm is that both treat *information* as the friction that determines economic structure.
+
+## 1.5 The Jensen-Meckling synthesis
+
+@jensenmeckling1976 brought the Berle-Means observation and the Coasean framework into a unified analytical setting. Their contribution, which has structured roughly five decades of corporate finance and accounting research, was to model the firm explicitly as a *nexus of contracts* (i.e., a legal fiction within which shareholders, debtholders, managers, employees, customers, and suppliers interact under conditions of imperfect information).
+
+The central concept they formalized is *agency cost*: the deadweight loss that arises when one party (the principal) delegates decision authority to another (the agent) and cannot perfectly monitor the agent's actions. They decomposed agency cost into three components: (i) monitoring expenditures by the principal, (ii) bonding expenditures by the agent, and (iii) the residual loss left on the table even after monitoring and bonding have been undertaken at their cost-minimizing levels.
+
+::: {.callout-note}
+## The three components of agency cost
+
+1. **Monitoring expenditures.** Costs the principal incurs to observe and constrain the agent's behavior. Examples: audit fees paid to a firm such as Deloitte or PwC, board oversight, performance-evaluation systems.
+2. **Bonding expenditures.** Costs the agent incurs to commit to acting in the principal's interest. Examples: a CEO holding a meaningful equity stake in her own firm, contractual non-compete clauses, voluntary disclosure beyond what is mandated.
+3. **Residual loss.** The remaining shortfall between the principal's first-best outcome and the equilibrium outcome, after monitoring and bonding have been done. This is the welfare loss the system cannot eliminate.
+:::
+
+Two implications of the framework matter for the rest of the course. First, financial reporting is naturally understood as a *monitoring technology* — a costly activity undertaken by the principal (or mandated by regulation acting on behalf of the principal) to reduce the agency cost of the relationship. The audit is part of the monitoring expenditure. Voluntary disclosure beyond the mandatory minimum (e.g., a firm releasing detailed segment data not required by GAAP) is part of the bonding expenditure. The choice of accounting policy, where discretion exists, is a choice the manager makes that can either narrow or widen the residual loss.
+
+Second, the framework provides discipline for thinking about the *costs* of accounting. Mandatory disclosure rules are not free. The compliance costs of preparing financial reports are real, the audit costs are real, and the costs of complying with detailed standards are non-trivial — particularly for smaller firms. A defensible standard-setting process imposes a given mandatory cost only when the expected reduction in agency cost exceeds it. Whether the actual standard-setting process achieves that calibration is a separate empirical question, one we return to in Chapter 5.
+
+## 1.6 Recordkeeping is older than the corporation
+
+The joint-stock corporation is a relatively young institution. Recordkeeping itself is much older. @basuwaymire2006 argue that systematic recordkeeping has co-evolved with cooperative economic activity for several thousand years, predating the development of money, writing as we now understand it, and certainly the modern corporation. They cite archaeological evidence from the ancient Near East — clay envelopes and tokens recording grain consignments, cuneiform tablets documenting loans and partnerships, proto-cuneiform inventories of temple stores — as evidence that human cooperation at scale has always required some external mechanism to record claims, document obligations, and verify performance.
+
+Their claim is broader than the corporate context, but it is consistent with the framework of this chapter. Wherever cooperative economic activity exceeds the parties' ability to remember and verify, some form of external record becomes necessary. The corporation introduces a particular set of separations — between owner and manager, between manager and employee, between current and future periods — that intensify the underlying information problem. The basic demand for credible records is older and more general.
+
+This historical observation has a practical implication. It is sometimes argued that financial accounting is an artifact of recent regulation — that, but for the SEC and the FASB, firms would not bother to produce accounts. The Basu-Waymire evidence cuts against this view. Cooperative economic activity has produced accounts for at least five thousand years, often without state mandate. Mandatory financial reporting under U.S. securities law dates from 1934; cooperative recordkeeping dates from at least the third millennium BCE. The economic problem that gives rise to accounting is older and more durable than any particular regulatory regime.
+
+Even in the modern era, voluntary recordkeeping appears wherever cooperation exists. Family-owned firms that have no public shareholders still prepare internal financial statements. Privately held partnerships such as the major U.S. accounting firms maintain elaborate internal accounts that no securities regulator requires. Even households increasingly keep budgets, ledgers, and records of their financial activity through software such as Mint or YNAB. These observations are consistent with a demand for recordkeeping that arises from the structure of cooperation itself, not from the requirements of any regulator.
+
+## 1.7 What comes next
+
+The remainder of this book proceeds as follows. Chapter 2 gives the abstract argument of this chapter a sharp empirical edge through @akerlof1970's lemons model, which shows that markets with asymmetric information about quality can unravel and that credible disclosure can help keep them from doing so. Chapter 3 turns to the supply side: when and why do firms reveal their private information voluntarily, and what does the income statement do that the cash flow statement does not? Chapter 4 develops the moral hazard problem and shows how accounting reports become part of the contracting environment that aligns managerial incentives with owner interests. Chapter 5 closes Arc I at the institutional level — the FASB, the SEC, the conceptual framework — and asks why we have public accounting standards at all.
+
+The remaining arcs return to these themes at greater depth. Arc II (Chapters 6–10) examines how capital markets actually use accounting numbers: how prices respond to earnings news, why some accounting metrics appear to be mispriced, and what the empirical literature has found about the relevance of different measurement bases. Arc III (Chapters 11–13) turns inside the firm, where the same agency logic that motivates external reporting also motivates internal performance measurement, transfer pricing, and capital budgeting. Arc IV (Chapter 14) returns to a small set of contested questions and asks you to argue both sides.
+
+If the chapter is doing its work, you should leave with one specific intuition. Accounting exists because the modern economy requires owners to delegate control of capital to managers they cannot directly observe, and credible periodic reporting is part of how the parties can make that arrangement work. Everything that follows — the journal entry, the audit, the conceptual framework, the value-relevance literature — is in the service of that underlying problem.
+
+## 1.8 Key takeaways
+
+::: {.callout-important}
+## Key takeaways
+
+- **Ownership and control are structurally separate in the modern corporation.** Capital is supplied by dispersed shareholders, while operational decisions are made by professional managers the shareholders cannot directly observe.
+- **The separation creates an information problem, not merely a trust problem.** Owners can observe outputs (i.e., profit, cash, net assets) but cannot easily distinguish managerial effort from luck or competence, which gives rise to agency costs in the sense of @jensenmeckling1976.
+- **Financial accounting is best understood as an institutional response.** Periodic, comparable, and verified reporting reduces the wedge between what the owner would do herself and what the manager will do on her behalf.
+- **The framework integrates three traditions.** @berlemeans1933 documented the empirical separation, @coase1937 explained why firms exist as authority relationships in the first place, and @jensenmeckling1976 modeled the agency cost the separation produces.
+- **Agency cost has three components.** Monitoring expenditures by the principal, bonding expenditures by the agent, and an irreducible residual loss — a decomposition that organizes how we will think about audits, voluntary disclosure, and accounting-policy choice throughout the course.
+- **The demand for recordkeeping predates the corporation by millennia.** @basuwaymire2006 show that cooperative economic activity has produced accounts for thousands of years, suggesting that the underlying economic problem is more durable than any particular regulatory regime.
+:::
+
+## 1.9 Discussion questions
+
+1. @berlemeans1933 treated the separation of ownership and control as a problem. @jensenmeckling1976 treated it as a feature whose costs can be partially mitigated by monitoring and bonding. Are these two views in tension, or are they complementary? Defend your answer.
+2. The chapter argues that accounting is an institutional response to an information problem. What other institutions can you identify that respond to the same problem (e.g., credit rating agencies, financial analysts, the financial press, securities litigation)? How do they differ from accounting in what they offer the principal?
+3. @basuwaymire2006 argue that recordkeeping co-evolved with cooperative economic activity over several millennia. If accounting predates the modern corporation by thousands of years, what do you make of arguments that current financial accounting is "broken" or "outdated"? What standard would you use to evaluate such claims?
+4. Suppose a sole proprietor — someone who owns and runs her own small business — were not subject to any accounting requirements. Would she still keep some kind of accounts? Why or why not? What would her accounts look like, and how would they differ from those of a public company such as Starbucks?
+5. The chapter has not yet introduced any mechanics. Based on the framework presented here, what are the properties an accounting report would need to have to be useful in the agency context? Be as specific as you can, in your own words, before reading Chapter 5.
+
+## 1.10 Problems
+
+There are no mechanical problems associated with this chapter — those begin in Chapter 2. The problems below are short writing exercises intended to make the framework above concrete. Each is meant to be roughly one page, double-spaced, unless otherwise stated.
+
+1. **Mapping an agency relationship at a specific firm.** Choose one of the following public companies: Apple, Boeing, Disney, JPMorgan Chase, or Procter & Gamble. In approximately one page, do the following: (i) describe the agency relationship between its shareholders and its CEO using the Jensen-Meckling framework; (ii) identify one specific observable signal (e.g., a line item, ratio, or disclosure that appears in the firm's 10-K) that shareholders can use to evaluate the CEO's stewardship; (iii) identify one specific dimension of the CEO's behavior that shareholders cannot directly observe; and (iv) explain how the firm's mandatory financial reports help narrow the gap between (ii) and (iii). Cite the 10-K item or page on which your observable signal appears.
+2. **A non-corporate agency relationship.** Identify an example, from your own experience or reading, of an agency relationship that is *not* between shareholders and managers. Possibilities include a homeowner and a remodeling contractor, a patient and a primary-care physician, a citizen and an elected official, or a student-athlete and an NCAA coach. Describe (i) the principal, (ii) the agent, (iii) what the principal cannot directly observe, and (iv) at least two institutional mechanisms (other than financial accounting) that have evolved to mitigate the problem (e.g., licensing, malpractice litigation, performance ratings, elections). Then identify one feature financial accounting provides that those mechanisms do not.
+3. **Summarizing Jensen and Meckling.** Read Section II of @jensenmeckling1976 (the introduction to agency costs). In approximately 250 words, summarize the three components of agency cost and give one concrete example of each drawn from a real firm in the news within the past five years. Do not reuse the authors' examples, and do not reuse the examples given in the chapter callout.
+4. **Coase at the corporate boundary.** Pick one firm whose vertical-integration choices you find interesting — for example, Apple's decision to design its own silicon (the M-series chips) rather than purchase processors from Intel, or Tesla's decision to operate its own dealerships rather than franchise. In approximately one page, describe the *information* and *transaction-cost* considerations that, consistent with @coase1937, plausibly motivate the choice. Identify one specific way the firm's internal accounting system would need to differ under the integrated structure relative to the arms-length alternative.
+5. **A failure of credible reporting.** Choose a well-known case in which financial reporting failed to control the agency problem (e.g., Enron, WorldCom, Wells Fargo's account-opening scandal, Wirecard). In approximately one page, identify (i) the specific information the report should have conveyed but did not, (ii) which of the three components of agency cost in @jensenmeckling1976 was most clearly compromised, and (iii) what subsequent institutional response (regulatory, contractual, or market-based) emerged to address the failure. The point of the exercise is not to assign blame but to use a concrete failure to illuminate the framework.
+
+## 1.11 Lab
+
+The in-class activity for this week is the Information Game (`classroom games/information game/`), which we will play together in the second session of the week. Bring your laptop. The game is a coordination exercise designed to make tangible the cost that information asymmetry can impose on parties trying to cooperate.
+
+There is no out-of-class lab associated with this chapter. The first WRDS lab arrives in Week 6 (Chapter 6).
+
+## 1.12 Further reading
+
+The five readings below are the assigned readings for Week 1. You should read all five.
+
+- @berlemeans1933, Chapters 1 and 2. The classic statement of the separation of ownership and control. The authors document that the 200 largest U.S. non-financial corporations had become, by the early 1930s, institutions in which control had passed from dispersed shareholders to professional management.
+- @coase1937, "The Nature of the Firm." A short and remarkable paper. @coase1937 argues that firms exist because organizing certain activities within an authority relationship is cheaper than organizing them through repeated arms-length market exchange. Read it for the central question and the answer; the formal apparatus is light.
+- @jensenmeckling1976, the introduction (pp. 305–311) and Section II on agency costs. @jensenmeckling1976 model the firm as a nexus of contracts and decompose the agency cost of equity into monitoring, bonding, and residual loss. The paper is long, technical, and influential; read for the central concepts and skim the formal model on a first pass.
+- @basuwaymire2006. @basuwaymire2006 synthesize the archaeological evidence on the antiquity of recordkeeping and argue that systematic accounts co-evolved with cooperative economic activity for several thousand years before the modern corporation.
+- *Optional, for those who want more:* @hayek1945, on the use of knowledge in society. @hayek1945 argues that knowledge in an economy is dispersed across many individuals and that the price system is a mechanism for aggregating it. The argument is about prices rather than accounting, but the underlying point — that institutions exist in part to coordinate dispersed information — is foundational to the rest of this book and is brought back explicitly in Chapter 11.
+
+::: {.callout-tip}
+## Reading the assigned papers
+
+For each of the assigned papers, you should be able to write down — without looking — (i) the question, (ii) the method or argument, (iii) the headline finding, and (iv) what you believe differently after reading the paper than before. The pre-class reading questions on Canvas are designed to enforce this. If you cannot answer (iv), you have not yet finished reading the paper.
+:::

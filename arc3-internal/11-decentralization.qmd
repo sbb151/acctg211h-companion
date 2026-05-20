@@ -1,0 +1,214 @@
+---
+title: "Decentralization, Cost Behavior, and Cost Allocation"
+description: "Why firms decentralize, and how cost behavior, cost allocation, responsibility accounting, and transfer pricing support decentralized decision-making."
+---
+
+# Decentralization and Cost Behavior {#sec-decentralization}
+
+## 11.1 Opening question
+
+Berkshire Hathaway owns roughly ninety wholly-owned operating subsidiaries spanning railroads, insurance, energy, retail, candy, paint, and underwear. The Omaha headquarters employs about thirty people. The thirty people do not run those businesses. They are run by the executives Berkshire acquired with each subsidiary, who make essentially all decisions about pricing, product mix, capital expenditure, hiring, and operations. Buffett's standing instruction to subsidiary CEOs is to manage the business well and remit excess cash to the parent for capital allocation.
+
+The structure is unusual in its extremity but not in its general orientation. Almost every large U.S. firm decentralizes substantial decision authority to operating units below the corporate level — divisions, subsidiaries, business units, regional groups — that report up through layered structures of accountability. Pricing, hiring, operational, and most investment decisions are made not by a single central authority but by an array of subordinate units.
+
+The prevalence of decentralization raises a question Arc III takes up. Why do firms decentralize, and what role does accounting play in supporting decentralized decisions? The economic case for decentralization is articulated in @hayek1945, who argued that the knowledge needed to make economic decisions is dispersed across the people who interact with local conditions and is difficult to aggregate at a central authority. The countervailing case for centralization comes from agency theory [@jensenmeckling1976, who modeled the firm as a nexus of contracts among parties with conflicting interests]: decentralized managers may not act in the principal's interest, and the costs of monitoring them can be substantial. The accounting system is the institutional infrastructure that makes the decentralization-versus-centralization trade-off workable. It supplies (i) local managers with the cost and revenue information they need to make decisions and (ii) the principal with monitoring information about the local managers.
+
+This chapter introduces the conceptual frame and the workhorse mechanics. Section 11.2 develops the Hayek argument and pairs it with the agency-cost counterargument. Section 11.3 describes the institutional response: responsibility centers, cost allocation, and transfer pricing. Section 11.4 introduces cost behavior. Section 11.5 develops cost allocation through a worked numerical example. Section 11.6 introduces the contribution-margin income statement and cost-volume-profit analysis. Section 11.7 examines transfer pricing in detail and the Boeing operating-leverage case study.
+
+## 11.2 The Hayek argument and the agency counterargument
+
+@hayek1945, in "The Use of Knowledge in Society," articulated the central informational case for decentralized decision-making. The paper was framed as a contribution to the debate over centrally planned versus market-based economies, but its logic applies equally to the internal organization of firms.
+
+Hayek's central observation was that the knowledge needed to make economic decisions is dispersed. The price of a particular good in a particular location at a particular time depends on local supply and demand conditions observable to the people who interact with the market directly. The technical possibilities for production depend on the specific equipment, materials, and workforce available at a particular site. The opportunities for cost reduction depend on the detailed operational knowledge of the people who do the work. None of this knowledge is, in any formal sense, secret. Its aggregation into a single picture a central authority could act on is itself a costly undertaking, and the cost grows rapidly with the volume of decisions and the geographic dispersion of the activity.
+
+Hayek's response was the price system. Markets, in his framing, are an information-aggregation mechanism (i.e., prices summarize the distributed knowledge of buyers and sellers in a form everyone can act on, even though no individual participant has access to the underlying information directly). The central planner who tries to replace prices with administrative directives faces the impossible task of aggregating the dispersed information without the help of the mechanism markets use to do the work.
+
+The Hayek argument applies directly to the internal organization of firms. A corporate CEO faces the same dispersed-knowledge problem as a central economic planner. The information needed to make local decisions is available to the local managers but is costly to communicate completely upward. A firm that centralizes too many decisions sacrifices the local information advantage of the people closest to the work. This is the affirmative case for decentralization.
+
+The counterargument is the agency problem introduced in Chapter 4. Decentralized decision-makers have private information and private preferences that may not align with the principal's. A local manager may pursue empire-building, may shade reported results, may consume perquisites the principal would not approve, or may simply exert less effort than the principal would prefer. These are not hypothetical concerns: prior research [@jensenmeckling1976, who decomposed agency cost into monitoring, bonding, and residual loss] suggests that the deadweight loss from imperfect monitoring can be economically meaningful, particularly when local managers' actions are difficult to observe.
+
+The trade-off is the central problem of organizational design. Decentralization permits decisions to be made with better local information but creates agency problems. Centralization mitigates the agency problems but imposes information losses that may exceed the agency cost savings. The optimal organizational structure depends on the relative magnitudes of these two effects, which vary across firms and across types of decisions.
+
+::: {.callout-note}
+## Why accounting sits at the center of the trade-off
+
+Internal accounting is the institutional infrastructure that lets a firm decentralize without giving up the principal's monitoring claim. The system performs two functions at once: (i) it supplies local managers with the cost, revenue, and performance information they need to make decisions on the principal's behalf, and (ii) it supplies the principal with comparable measures of how each local manager is performing. The two functions can come into conflict — information designed to inform a local decision may not be the right information for monitoring the manager who made it — and the design of internal accounting systems is, in important respects, the management of that conflict.
+:::
+
+The classic illustration is General Electric under Jack Welch (CEO from 1981 to 2001). Welch operated GE as a portfolio of more than a dozen large business units in disparate industries — aircraft engines, medical imaging, financial services, lighting, plastics — and gave each unit's CEO substantial decision authority over its operations. The corporate parent set the strategic frame ("number one or number two in every business"), provided capital, and enforced an aggressive performance-evaluation system that ranked managers and divisions against one another. The structure was Hayekian in its delegation of operating decisions to people with local knowledge, and it was simultaneously agency-theoretic in its insistence on quantitative performance reporting against corporate-set standards. The combination is not unique to GE, but the Welch-era GE is a useful reference point for how the trade-off can be operationalized.
+
+## 11.3 The institutional response
+
+The institutional response to the decentralization problem has three principal components, all of which are realized through the firm's internal accounting system.
+
+The first is the *responsibility center*: an organizational unit with defined boundaries within which a single manager has authority and is held accountable for performance. The literature distinguishes four types.
+
+A *cost center* is a unit whose manager is responsible for the costs of operating the unit but not for revenues or capital. Production departments, central administrative functions, and shared service centers (e.g., a payroll department or a corporate IT group) are commonly organized as cost centers. The performance metric is typically a comparison of actual costs to a budget or to a flexible standard.
+
+A *revenue center* is a unit whose manager is responsible for the revenues generated by the unit but not for the costs of producing what the unit sells. Sales territories and individual store locations within a retail chain are commonly organized as revenue centers. The performance metric is typically a comparison of actual revenues to a budget or to prior-period results.
+
+A *profit center* is a unit whose manager is responsible for both revenues and costs but not for the capital deployed in the unit. Product divisions within a multidivisional firm are commonly organized as profit centers. The performance metric is operating profit, often presented in a contribution-margin format.
+
+An *investment center* is a unit whose manager is responsible for revenues, costs, and the capital deployed in the unit. The operating subsidiaries of Berkshire Hathaway, for example, are commonly organized as investment centers. The performance metric is some form of return on capital, such as ROI, residual income, or EVA, all of which we examine in Chapter 12.
+
+The choice among these four forms is itself a Hayekian decision. A firm decentralizes more decision authority by establishing investment centers; it centralizes more by relying on cost centers. The choice depends on (i) the firm's information environment, (ii) the heterogeneity of its operating units, and (iii) the costs of monitoring at different levels. The optimal mix typically varies across the firm — some functions are more naturally centralized, others more naturally decentralized — and the firm's organizational chart is, in this sense, a snapshot of how the trade-off has been resolved across the firm's activities.
+
+The second component is *cost allocation*: the assignment of indirect costs (i.e., costs that cannot be traced directly to a specific product, service, or unit) to the responsibility centers or products that consume them. Section 11.5 develops cost allocation through a worked example. The general issue is that any allocation method requires choosing an *allocation base* (e.g., direct labor hours, machine hours, square footage), and the choice of base affects both the reported profitability of the receiving unit and the incentives of the manager who runs it.
+
+The third component is *transfer pricing*: the price at which goods and services are exchanged between divisions of the same firm. Transfer prices serve two functions simultaneously. They provide divisional buyers with cost information that should influence their sourcing decisions, and they provide divisional sellers with revenue information that should influence their production and pricing decisions. The two functions can come into conflict. Section 11.7 develops transfer pricing in detail.
+
+## 11.4 Cost behavior
+
+The mechanical workhorse of internal accounting is *cost behavior*: the way costs change as the firm's activity level changes. Most internal-accounting analyses begin with a classification of costs into three categories.
+
+A *variable cost* is one that changes proportionally with activity. The cost of raw materials in a manufacturing setting is the canonical example: producing twice as many units requires twice as much material, and the raw material cost per unit is roughly constant across activity levels. At an automotive assembly plant, the steel, aluminum, glass, and purchased components that go into each vehicle are variable: each additional Ford F-150 rolling off the Dearborn line consumes a roughly constant bill of materials.
+
+A *fixed cost* is one that does not change with activity within a relevant range. The rent on a factory building is the canonical example: the rent is the same whether the factory operates at fifty percent capacity or ninety percent. The depreciation on an automotive stamping press is fixed: the press's annual cost is the same whether it stamps one shift or three. Fixed costs are not strictly fixed in the long run — a firm that consistently operates at fifty percent capacity might choose to relocate to a smaller building — but within the time horizon of most internal-accounting analyses, the cost is invariant to short-run activity changes.
+
+A *mixed cost* (or *semi-variable cost*) is one that has both fixed and variable components. The total electricity bill of a factory typically includes a fixed monthly service fee plus a variable component proportional to consumption. The total compensation of a salesperson on a base-plus-commission contract is fixed in the base portion and variable in the commission portion.
+
+The three-fold classification is a simplification. Many costs that appear fixed within a narrow range exhibit *step* behavior — they jump up to a new level at a particular activity threshold and remain constant within the next range. The cost of supervisors in a manufacturing facility is often step-fixed: one supervisor per fifteen workers, with the count jumping up as the workforce grows. The classification framework is sufficient for most analytical purposes; the step-cost refinement is introduced where it is operationally relevant.
+
+A separate empirical observation worth noting is *cost stickiness*: the tendency of selling, general, and administrative costs to fall less in response to revenue declines than they rise in response to revenue increases. @andersonbankerjanakiraman2003 documented this asymmetry in a large U.S. sample and found that the empirical pattern is robust across industries and time periods. The standard interpretation is that cost-cutting decisions are themselves costly (e.g., terminating employees, breaking leases, disposing of equipment), so managers delay cost reductions in the hope that revenue declines are temporary. The cost-stickiness pattern qualifies the simple variable-fixed dichotomy by suggesting that the distinction may be asymmetric in the direction of revenue change.
+
+## 11.5 Cost allocation: a worked example
+
+Indirect costs — costs that benefit more than one product, division, or activity but cannot be traced directly to any one of them — are pervasive in multi-product and multi-divisional firms. Corporate headquarters expense, central IT, the CEO's salary, the cost of the legal department, and depreciation on a shared manufacturing facility are all indirect from the perspective of the operating units that benefit from them. Internal accounting allocates these costs to the units that consume them using an *allocation base*: an observable quantity, such as direct labor hours or square footage, that is taken to proxy for the unit's consumption of the indirect resource.
+
+The choice of allocation base matters. Different bases produce different reported profitability for the same underlying operations, and the manager whose unit absorbs a larger share of overhead may face different incentives than the manager whose unit absorbs a smaller share.
+
+Consider a stylized example. Apex Manufacturing operates two divisions, Consumer and Industrial. Each division generates its own revenue, incurs its own direct costs, and is supported by a shared corporate office that incurs $4,000,000 of overhead per year. The two divisions report:
+
+| Item                     | Consumer       | Industrial    | Total          |
+|--------------------------|----------------|---------------|----------------|
+| Revenue                  | \$30,000,000   | \$20,000,000  | \$50,000,000   |
+| Direct variable costs    | \$18,000,000   | \$10,000,000  | \$28,000,000   |
+| Direct fixed costs       | \$4,000,000    | \$3,000,000   | \$7,000,000    |
+| Direct labor hours       | 200,000        | 100,000       | 300,000        |
+| Floor space (sq. ft.)    | 50,000         | 150,000       | 200,000        |
+
+Apex must allocate the $4,000,000 of corporate overhead to the two divisions. Three commonly used allocation bases would produce three different results.
+
+*Allocation by revenue.* The Consumer division generates 60 percent of total revenue, the Industrial division 40 percent. Allocating overhead in proportion to revenue assigns \$2,400,000 to Consumer and \$1,600,000 to Industrial.
+
+*Allocation by direct labor hours.* The Consumer division uses two-thirds of total direct labor hours, the Industrial division one-third. Allocating overhead in proportion to direct labor hours assigns \$2,666,667 to Consumer and \$1,333,333 to Industrial.
+
+*Allocation by floor space.* The Consumer division occupies 25 percent of total floor space, the Industrial division 75 percent. Allocating overhead in proportion to floor space assigns \$1,000,000 to Consumer and \$3,000,000 to Industrial.
+
+The three methods yield the same total ($4,000,000) but very different divisional results. Under revenue-based allocation, the Industrial division's operating profit is \$5,400,000 (\$20,000,000 − \$10,000,000 − \$3,000,000 − \$1,600,000). Under floor-space-based allocation, the Industrial division's operating profit is \$4,000,000. The choice of allocation base shifts \$1,400,000 of reported profitability between the two divisions, without changing anything about their underlying operations.
+
+The example illustrates two general points. First, an allocation base is defensible to the extent that it proxies for the receiving unit's *causal* consumption of the indirect resource — the resource that drives the cost (e.g., a factory's shared utilities are arguably caused by floor space; corporate legal expense is arguably caused by transaction volume; the CEO's time is arguably caused by managerial attention rather than by any easily observed input). The choice is rarely clean. Second, the allocation choice has incentive consequences. A division manager who is evaluated on operating profit after allocation has an incentive to influence the choice of base in a direction that reduces the unit's allocated overhead, and the firm's senior management may face lobbying that has little to do with the true causal structure of cost.
+
+The widely discussed alternative, *activity-based costing* (ABC), attempts to mitigate the distortion by identifying a separate allocation base for each activity that consumes the indirect resource — machine setups, purchase orders, customer service calls, engineering change requests — and allocating cost in proportion to each unit's consumption of each activity. ABC produces more disaggregated and arguably more causally defensible allocations, but it is also costly to implement and to maintain, and the additional information value is not always worth the cost. The choice between traditional allocation and ABC is itself an instance of the broader cost-benefit calculation that pervades internal accounting design.
+
+## 11.6 The contribution-margin income statement and CVP
+
+The income statement format taught in Chapter 3 — revenues less expenses, with expenses organized by their financial-reporting category — is the *external* income statement format used in financial reports. For internal decision-making purposes, a different format is usually more useful. The *contribution-margin income statement* organizes expenses by their behavior (variable versus fixed) rather than by their reporting category, and produces a measure called the *contribution margin* that is central to internal-accounting analysis.
+
+The structure is:
+
+| Line                    | Computation                              |
+|-------------------------|------------------------------------------|
+| Revenue                 | Sales price × Quantity                   |
+| Variable costs          | Variable cost per unit × Quantity        |
+| **Contribution margin** | Revenue − Variable costs                 |
+| Fixed costs             | (constant within the relevant range)     |
+| **Operating profit**    | Contribution margin − Fixed costs        |
+
+The contribution margin is the revenue available to cover fixed costs and contribute to profit after the variable costs of production have been paid. It is a measure of the *marginal* profitability of the firm's activity: an additional unit of sales adds the contribution margin to operating profit, because the variable cost of production is paid out of the additional revenue and the fixed costs do not change. The contribution margin per unit (revenue per unit minus variable cost per unit) and the contribution-margin ratio (contribution margin divided by revenue) are the workhorse metrics for thinking about pricing, product mix, and capacity decisions.
+
+The contribution-margin framework supports a particular form of analysis called *cost-volume-profit* (CVP) analysis, which examines how operating profit responds to changes in volume, prices, variable costs, and fixed costs, holding the rest of the firm's operations constant. The central CVP equation is:
+
+$$
+\text{Operating profit} = (\text{Contribution margin per unit}) \times \text{Quantity} - \text{Fixed costs}.
+$$
+
+Setting operating profit equal to zero and solving for quantity yields the *break-even quantity*: the level of activity at which the firm's revenues exactly cover its costs.
+
+$$
+\text{Break-even quantity} = \frac{\text{Fixed costs}}{\text{Contribution margin per unit}}.
+$$
+
+Consider an example. Acme Corp. operates a subscription software business with revenue of \$200 per subscription per year, variable cost of \$40 per subscription (server, payment processing, support), and fixed costs of \$4,000,000 per year (headquarters, R&D, marketing). The contribution margin per subscription is \$160 (\$200 − \$40). The break-even quantity is \$4,000,000 / \$160 = 25,000 subscriptions. At 25,000 subscriptions Acme exactly covers its costs; at higher volumes it earns operating profit at the rate of \$160 per additional subscription; at lower volumes it operates at a loss at the same rate.
+
+CVP analysis can be extended in several directions: (i) *target-profit analysis* computes the volume needed to achieve a specified operating profit, (ii) *price-sensitivity analysis* asks how break-even volume changes as the firm raises or lowers prices, (iii) *cost-sensitivity analysis* asks the analogous question for changes in variable or fixed costs, and (iv) *multi-product analysis* extends the framework to firms with multiple product lines using a weighted-average contribution margin based on the firm's product mix.
+
+The CVP framework also provides the right tool for thinking about *operating leverage*: the sensitivity of operating profit to changes in revenue. A firm with a high fraction of fixed costs has high operating leverage, so a one-percent change in revenue produces a more-than-one-percent change in operating profit. The formal measure is:
+
+$$
+\text{Degree of operating leverage} = \frac{\text{Contribution margin}}{\text{Operating profit}}.
+$$
+
+A firm whose contribution margin equals five times its operating profit has a degree of operating leverage of five: each one-percent change in revenue produces an approximately five-percent change in operating profit, holding the cost structure constant.
+
+::: {.callout-warning}
+## Common pitfall
+
+The external (GAAP) income statement and the internal (contribution-margin) income statement do not, in general, agree on operating profit. Under GAAP, fixed manufacturing overhead is allocated to inventory and recognized only when the inventory is sold — an *absorption costing* treatment that cuts against the variable-fixed distinction the internal format requires. A firm that produces more than it sells in a period absorbs some of its fixed manufacturing costs into ending inventory, so the GAAP cost of goods sold is lower (and operating profit higher) than the contribution-margin operating profit would be. The discrepancy is one of the well-known sources of confusion between external and internal accounting.
+:::
+
+## 11.7 Transfer pricing and the Boeing operating-leverage case
+
+When a firm is decentralized into investment or profit centers, goods and services routinely move from one division to another. The price at which an internal transfer is recorded — the *transfer price* — is consequential. It allocates revenue between the selling and buying divisions, influences each manager's reported performance, shapes each manager's incentive to source internally rather than externally, and (for multinational firms) determines how taxable income is split across jurisdictions. The standard approaches are three.
+
+A *market-based transfer price* sets the internal price equal to the price the selling division could obtain in an arms-length external market for the same good or service. The approach is defensible when a competitive external market exists: it puts each division on the same footing as an external counterparty and gives the buying division the right "make-or-buy" incentive. The approach is harder to apply when the transferred good has no clean external equivalent, as is common for specialized intermediate components.
+
+A *cost-based transfer price* sets the internal price equal to some measure of the selling division's cost — variable cost, full absorption cost, or full cost plus a markup. Cost-based pricing is administratively simple and is used widely when no external market price exists. The well-known distortion is that pricing at full cost gives the selling division no margin and a weak incentive to supply, while pricing at variable cost shifts all of the contribution to the buying division and gives the buying division no incentive to economize on the internally supplied input.
+
+A *negotiated transfer price* is one the two divisions bargain over directly, with corporate headquarters intervening only when they cannot agree. Negotiation can in principle find a price that respects both divisions' incentives, but it absorbs managerial time and can produce outcomes that depend on the divisions' relative bargaining power rather than on the underlying economics.
+
+Each method has known distortions, and the literature is consistent that no transfer-pricing system is uniformly first-best [@demski2008, who develops the formal trade-offs in detail]. Two further considerations sharpen the choice. First, *incentive alignment*: the transfer price should give both the buying and selling divisions decisions that the principal would endorse if she could see the underlying information. Second, *taxation*: for multinational firms, the transfer price determines how income is allocated across tax jurisdictions, and tax authorities (e.g., the U.S. Internal Revenue Service under Section 482, and the OECD's transfer-pricing guidelines) require that intercompany prices approximate arms-length terms. Firms therefore face a constraint that the transfer prices they use for internal decision-making must also be defensible to tax authorities, which can pull the choice toward market-based prices even when other considerations point elsewhere.
+
+A concrete illustration of operating leverage in a decentralized setting is Boeing. The firm's commercial-aircraft business has enormous fixed costs — research and development, manufacturing infrastructure, supply-chain investments, certifications — that must be absorbed regardless of demand. Variable costs (raw materials, direct labor on individual aircraft) are smaller. The cost structure produces a high degree of operating leverage: when commercial aviation is robust and Boeing's order book is full, the firm earns substantial operating profit; when commercial aviation contracts and orders fall, operating profit falls disproportionately fast — and, in extreme cases, becomes substantially negative. The 737 MAX grounding in 2019 and the COVID-19 pandemic in 2020 produced consecutive operating losses at Boeing of historic magnitude, despite revenue declines that, by industrial-firm standards, were not particularly large. The amplification of those revenue declines into substantial losses is consistent with what a high-operating-leverage cost structure predicts.
+
+The in-class activity for the second meeting of this week works through Boeing's cost structure using the contribution-margin format, computes the degree of operating leverage at different revenue levels, and assesses what the high operating leverage implies for the volatility of Boeing's reported earnings.
+
+::: {.callout-important}
+## Key takeaways
+
+- **Decentralization rests on dispersed knowledge.** @hayek1945 argued that the information needed to make economic decisions is held by the people who interact with local conditions, and a central authority cannot easily aggregate it.
+- **Agency theory provides the counterweight.** Decentralized managers may not act in the principal's interest, suggesting that decentralization works only when the firm can also monitor what local managers do [@jensenmeckling1976].
+- **Accounting makes the trade-off workable.** Internal accounting simultaneously gives local managers the information they need to decide and gives the principal the information she needs to evaluate them.
+- **Cost behavior is the mechanical foundation.** Variable, fixed, and mixed costs, organized in a contribution-margin format, support pricing, product-mix, and break-even analyses through CVP.
+- **Cost allocation is consequential.** The choice of allocation base shifts reported profitability across units without changing the underlying operations, and the choice has incentive consequences for the managers being evaluated.
+- **Transfer pricing has no uniformly first-best solution.** Market-based, cost-based, and negotiated transfer prices each carry known distortions, and the choice is further constrained by tax-authority requirements for multinational firms.
+:::
+
+## 11.8 Discussion questions
+
+1. The Hayek argument for decentralization rests on the dispersed-knowledge claim — that local information is held by people who interact with local conditions and is costly to aggregate. Identify a category of business decision in which the dispersed-knowledge advantage is largest, and another in which it is smallest. What does the comparison imply about the optimal locus of decision authority?
+2. The chapter described four types of responsibility centers (cost, revenue, profit, investment). Suppose a multinational consumer-products company is considering reorganizing its U.S. operations. Identify a function within the firm that is best organized as a cost center, one as a revenue center, one as a profit center, and one as an investment center. Defend each choice.
+3. @andersonbankerjanakiraman2003 documented that SG&A costs are sticky — they fall less in response to revenue declines than they rise in response to revenue increases. Is this empirical pattern consistent with agency costs, with optimal cost-management behavior, or with something else? Defend your interpretation.
+4. Section 11.5 illustrated that the choice of overhead allocation base can shift reported profitability across divisions without changing the underlying operations. If the choice is, in this sense, partly arbitrary, why do firms allocate corporate overhead at all rather than report divisional profit before allocation?
+5. Boeing's high operating leverage produces a particular pattern of earnings volatility. Suppose Boeing's CFO proposes shifting toward a more variable cost structure (e.g., outsourcing more components, using more flexible labor arrangements). What are the costs and benefits of the proposed shift? Use the framework of Chapter 4 (moral hazard) and the framework of this chapter (cost behavior) to defend a position.
+
+## 11.9 Problems
+
+1. *(Mechanical, overhead allocation.)* Apex Manufacturing operates two divisions, Consumer and Industrial, with the data in Section 11.5. Corporate overhead is \$4,000,000. (a) Compute each division's operating profit under revenue-based allocation, direct-labor-hour-based allocation, and floor-space-based allocation. (b) Identify the division and base under which divisional operating profit is highest, and the combination under which it is lowest. (c) In one short paragraph, identify which allocation base you would defend and explain why.
+2. *(Mechanical, contribution margin and CVP.)* Acme Corp. operates a subscription-based software business with the following cost structure: \$300 revenue per subscription per year, \$60 variable cost per subscription per year, and \$6,000,000 of fixed costs per year. (a) Compute the contribution margin per subscription. (b) Compute the break-even quantity. (c) Compute the operating profit at 30,000 subscriptions. (d) Suppose Acme is considering raising its price to \$350 per subscription, which the marketing team estimates will reduce subscriptions by 10 percent from current levels. Compute the change in operating profit at the current and proposed prices, and recommend whether Acme should raise the price.
+3. *(Mechanical, operating leverage.)* Continuing Problem 2 at the original \$300 price and 30,000 subscriptions: (a) Compute Acme's degree of operating leverage. (b) Suppose revenue increases by 20 percent (to 36,000 subscriptions). Compute the resulting change in operating profit and verify that the percentage change is approximately the degree of operating leverage times the revenue percentage change. (c) Repeat the analysis for a 20 percent revenue decline.
+4. *(Mechanical, transfer pricing.)* Beta Industries has two divisions. The Components division produces a part with variable cost of \$40, fixed cost allocation of \$15 per unit, and an external market price of \$70. The Assembly division uses one part per finished product and sells the finished product for \$130; its other variable costs are \$50 per finished product. Components has spare capacity. (a) Identify the transfer price that gives Assembly the right make-or-buy incentive (i.e., the price that leads Assembly to source internally if and only if it is value-creating for Beta as a whole). (b) Compute Beta's consolidated profit per finished product under (i) a market-based transfer price of \$70, (ii) a full-cost transfer price of \$55, and (iii) a variable-cost transfer price of \$40. (c) In one short paragraph, explain why divisional incentives can differ across the three methods even though consolidated profit is the same.
+5. *(Conceptual, responsibility-center design.)* Consider a hypothetical multidivisional firm — a U.S. food-and-beverage company with (i) a packaged-foods division, (ii) a beverages division, (iii) a centralized procurement function that buys agricultural inputs for both divisions, (iv) a centralized IT function that runs the firm's ERP system, and (v) a corporate R&D group that develops new products for both divisions. Propose a responsibility-center classification for each of the five units (cost, revenue, profit, or investment center), and defend each choice. Where you see a unit that could be classified more than one way, identify the trade-off.
+6. *(Conceptual, transfer-pricing distortion.)* A vertically integrated U.S. oil company refines crude oil in its Upstream division and sells refined gasoline through its Downstream division. The Upstream division is evaluated on operating profit per barrel. Suppose the firm uses a full-absorption-cost transfer price for crude transferred from Upstream to Downstream, and suppose Upstream has unused refining capacity. Identify the incentive distortion this arrangement creates for the Upstream manager, the Downstream manager, and the firm as a whole. Recommend an alternative transfer-pricing arrangement and explain why it is better.
+7. *(Short writing exercise.)* Read @hayek1945 (it is short, approximately 12 pages). In approximately 250 words, summarize the central argument and explain how it applies to the internal organization of a multidivisional firm. Be specific about which Hayekian observations carry over from markets to firms and which do not.
+
+## 11.10 Lab
+
+The in-class activity for the second meeting of this week is the **Boeing operating-leverage case** (`activities/cost-volume-profit/`). You will work through Boeing's cost structure using the contribution-margin format on a recent set of financial statements, compute the firm's degree of operating leverage at different revenue levels, and discuss what the analysis implies for the volatility of Boeing's reported earnings under alternative demand scenarios.
+
+There is no out-of-class lab for this week. The Lab 6 group empirical project (the WRDS project track of your choice) launches in Week 11 with the project proposal deliverable.
+
+## 11.11 Further reading
+
+The four readings below are the assigned readings for Week 11. You should read all of them.
+
+- @hayek1945, "The Use of Knowledge in Society." Short and influential. Read for the central argument and the application to economic organization.
+- A short selection from @demski2008 on decentralization, responsibility centers, and transfer pricing (chapter assignment to be specified on Canvas). The most useful single textbook treatment of the topic.
+- A short selection from @fkz on internal information and decision-making (chapter assignment to be specified on Canvas).
+- *Optional, for those who want more:* @andersonbankerjanakiraman2003 on cost stickiness. A short and accessible empirical paper that makes the variable-fixed distinction concrete.
+
+::: {.callout-tip}
+## Where Arc III goes from here
+
+Chapter 11 has introduced the decentralization framework and the cost-behavior, cost-allocation, and transfer-pricing tools that support internal financial analysis. Chapter 12 turns to the performance-measurement question that arises whenever a central authority delegates decision authority to a local unit: how should the local unit's performance be evaluated? The framework of Chapter 4 (moral hazard and the LEN model) returns explicitly, with the additional refinement that performance measures are themselves design choices that produce predictable distortions in managerial behavior.
+:::

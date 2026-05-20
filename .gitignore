@@ -1,0 +1,56 @@
+# Quarto build outputs
+_book/
+_freeze/
+.quarto/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Stata
+*.smcl
+*.gph
+
+# Local data (do not commit student-distributed datasets here)
+data-local/
+
+/.quarto/
+**/*.quarto_ipynb
+
+# Bibliography audit working folders
+bibcheck_*/
+
+# Quarto intermediate TeX/PDF artifacts at project root
+/index.tex
+/index.aux
+/index.log
+/index.toc
+/ACCTG-211H-Companion.tex

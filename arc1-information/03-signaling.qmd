@@ -1,0 +1,264 @@
+---
+title: "Signaling and the Income Statement"
+description: "Voluntary disclosure as a costly signal. The income statement and the signaling content of accruals."
+---
+
+# Signaling and the Income Statement {#sec-signaling}
+
+## 3.1 Opening question
+
+In April 2015, Amazon disclosed for the first time the operating results of its cloud-computing business, Amazon Web Services. AWS had been operating since 2006, but for nine years its revenue and operating income had been bundled into Amazon's "Other" segment alongside a miscellany of smaller businesses. The Q1 2015 earnings release revealed that AWS was, on its own, a five-billion-dollar annual revenue business growing at forty-nine percent year-over-year, with operating margins of approximately seventeen percent. Amazon's stock price gained roughly fifteen percent over the next two trading days. Equity analysts spent the following weeks revaluing AWS as a stand-alone business and, by extension, the rest of Amazon at substantially higher levels.
+
+The Amazon disclosure raises a question Chapter 2 left open. The lemons argument of @akerlof1970, who showed that asymmetric information about quality can collapse a market entirely, explained why investors will demand a discount in markets where issuers know more than they do. It also explained why mandatory disclosure can reduce that discount. But the AWS disclosure was not mandatory. The Financial Accounting Standards Board (i.e., the private body that writes U.S. GAAP) does not require segment-level disclosure at the granularity Amazon provided in 2015. Amazon disclosed because Amazon chose to. Why?
+
+This chapter develops the framework for thinking about *voluntary* disclosure. The mandatory regime sets a floor. Almost every U.S. public company chooses to clear that floor by a wide margin, releasing management earnings forecasts, conference calls with analysts, expansive Management's Discussion and Analysis sections, segment disaggregations, sustainability reports, and investor day presentations. The economic logic was sharpened by @spence1973, who modeled costly education as a credible signal of worker productivity, and adapted to the accounting setting by @verrecchia1983, who showed that managers with sufficiently favorable private information voluntarily disclose, and by @dye1985, who showed that the unraveling is partial when investors are uncertain whether the manager has any information at all. The argument, in shortest form, is that voluntary disclosure is a *costly signal*: a disclosure is informative precisely because it is costly, and the cost is what discourages low-quality issuers from imitating high-quality ones.
+
+Chapter 2 also left a structural gap. The balance sheet, introduced there, is a credibly verifiable summary of the firm's *stocks* at a point in time. It does not, by itself, tell investors what the firm did between two balance-sheet dates. This chapter introduces the income statement as the structure through which the firm reports its economic *performance* over an interval — and, more subtly, as the structure through which the manager communicates her private information about the firm's prospects via the choice of accrual estimates. The mechanics are introduced here at the level needed to support the framework of this chapter; the deeper measurement issues will be revisited in Arc II.
+
+## 3.2 The Spence setup
+
+Spence's model is the canonical reference for *signaling* (i.e., a costly action a more-informed party takes to credibly reveal her type to a less-informed party). Consider, in the spirit of @spence1973, a labor market with two worker types — high productivity ($H$) and low productivity ($L$) — and a population of risk-neutral employers who cannot observe a worker's type. Let the employer's productivity from a type-$H$ worker be $w_H$ and from a type-$L$ worker be $w_L$, with $w_H > w_L$. Let the share of high types in the population be $\lambda$.
+
+Under symmetric information, each type is paid her marginal product. Under asymmetric information with no signal available, the employer offers a single wage equal to the population's expected productivity, $\lambda w_H + (1 - \lambda) w_L$. This is the *pooling equilibrium* (i.e., the equilibrium in which both types receive the same contract because the employer cannot tell them apart). High types are undercompensated; low types are overcompensated. The market sets a single price, and the gain from sorting workers to wages is lost.
+
+A *signal* is an observable action a worker can take before applying for a job. Let workers acquire education in some quantity $e \geq 0$ at a personal cost $c_H(e)$ for high types and $c_L(e)$ for low types. The substantive assumption is that high types find education less costly at every margin:
+
+$$
+c_L'(e) > c_H'(e) \quad \text{for all } e \geq 0.
+$$
+
+This is the *single-crossing property* (i.e., the indifference curves of the two types cross exactly once in education–wage space). It is the heart of the Spence argument and worth dwelling on. The property does not require education to be cheap for $H$ in absolute terms; it requires only that *each additional unit* of education costs the low type more than it costs the high type. Whatever the source of the differential cost — greater academic aptitude, lower opportunity cost of time, higher tolerance for tedious coursework — the marginal cost is lower for the type the employer wants to identify.
+
+### A concrete numerical example
+
+Suppose $w_H = 100$, $w_L = 60$, $c_H(e) = e$, and $c_L(e) = 2e$. Employers offer wage $w_H$ to any worker with education $\geq e^*$ and wage $w_L$ otherwise. A *separating equilibrium* (i.e., one in which the two types take different actions and are correctly identified) requires that (i) high types prefer to acquire $e^*$ rather than zero, and (ii) low types prefer to acquire zero rather than $e^*$. Algebraically:
+
+$$
+\underbrace{w_H - c_H(e^*)}_{\text{H's payoff from signaling}} \geq \underbrace{w_L - c_H(0)}_{\text{H's payoff from pooling at } w_L},
+\qquad
+\underbrace{w_L - c_L(0)}_{\text{L's payoff from pooling}} \geq \underbrace{w_H - c_L(e^*)}_{\text{L's payoff from mimicking}}.
+$$
+
+Substituting, the first condition gives $100 - e^* \geq 60$, or $e^* \leq 40$. The second condition gives $60 \geq 100 - 2 e^*$, or $e^* \geq 20$. Any $e^* \in [20, 40]$ supports a separating equilibrium. The smallest such $e^*$ is the *least-cost separating equilibrium*, at $e^* = 20$. At that signal level, the high type's net payoff is $100 - 20 = 80$ and the low type's net payoff is $60 - 0 = 60$, both above what they would receive under pooling at the population average.
+
+Two features of this calculation recur throughout the disclosure literature. First, the signal is *wasteful in absolute terms*: the education itself is assumed to be unproductive, yet $20$ units are acquired in equilibrium. The signal is socially costly but privately rational, because the alternative — pooling — is worse for the high type. Second, the signal level is pinned down by the *low type's incentive constraint*, not the high type's. Low types must find imitation unprofitable, and that condition determines how much signaling the high type must do.
+
+::: {.callout-note}
+## Single-crossing in one sentence
+
+For a costly action to credibly reveal type, the marginal cost of the action must be lower for the type the receiver wants to identify; otherwise the low type would imitate the high type and the separating equilibrium would collapse.
+:::
+
+The Spence model is stylized in a number of respects. The strict separating equilibrium it predicts is robust only under specific assumptions about cost structure and information sets; richer models permit pooling equilibria, partially separating equilibria, and noisy signals. The deeper point, however, is robust: when one party knows more than another, the more-informed party may incur costly actions whose function is to credibly convey that information, and those actions can move the market away from the pooling outcome that asymmetric information would otherwise produce.
+
+## 3.3 The unraveling result and the Verrecchia threshold
+
+The Spence model takes the cost differential as primitive. The disclosure literature pushes one step further by asking whether, when the firm can simply *reveal* its private information at zero cost, asymmetric information unravels on the supply side without any need for a costly signal at all.
+
+### Full unraveling: Grossman and Milgrom
+
+Consider a manager who has observed a value $v$ drawn from a known distribution on $[0, 1]$ and who can choose to disclose $v$ truthfully and costlessly, or to remain silent. Investors are rational and price the firm at the expected value conditional on what they observe. Suppose investors initially believe $v$ is uniformly distributed. The argument runs as follows. The highest type, $v = 1$, strictly prefers to disclose; silence would pool him with everyone else at $E[v] = 1/2$. Anticipating this, investors who observe silence rationally update: silence cannot have come from $v = 1$, so the silent pool is now drawn from $[0, 1)$ with mean approximately $1/2$ still. But then the highest *remaining* type, just below $1$, has the same incentive to disclose. Iterating, the silent pool shrinks toward the bottom of the distribution, and in the limit *every* type discloses except possibly $v = 0$.
+
+This is the *full-disclosure result*, due independently to @grossman1981 and @milgrom1981. It is striking because it is the supply-side counterpart to Akerlof's demand-side unraveling. In Akerlof, the buyer's rational discounting unravels the market by driving out high-quality sellers. In Grossman–Milgrom, the seller's incentive to separate unravels the silence by driving out high-quality non-disclosers. The two results share a common logic: when one side of the market cannot distinguish types, the equilibrium pressure runs toward separation, and silence becomes informative whether or not the silent party intends it to be.
+
+::: {.callout-note}
+## A useful contrast
+
+Chapter 2's unraveling collapses *trade*: with asymmetric information, the market clears at $p = 0$ and no transactions occur. This chapter's unraveling collapses *silence*: with rational investors and costless disclosure, every type above the bottom discloses, and silence becomes a perfect signal of the worst type. The two results are mirror images. Both rest on the same insight: rational agents update against the party they cannot observe.
+:::
+
+### Partial unraveling: the Verrecchia threshold
+
+Full unraveling is a knife-edge prediction. It requires that disclosure be costless, that investors know the manager has information, and that disclosed information be costlessly verifiable. Relax any of these and the unraveling becomes partial.
+
+@verrecchia1983 introduced a fixed *proprietary cost* $c > 0$ of disclosure — for example, the cost of revealing competitively sensitive information that rivals will exploit, or the cost of preparing and auditing the disclosure itself. The manager discloses if and only if the price-impact gain from disclosure exceeds $c$. The equilibrium is characterized by a *threshold* $\theta^*$: managers with $v \geq \theta^*$ disclose; managers with $v < \theta^*$ stay silent. Investors who observe silence price the firm at the conditional expectation $E[v \mid v < \theta^*]$, which lies below the unconditional mean. The marginal type is indifferent: the price improvement from being known to be of type $\theta^*$ rather than pooled at $E[v \mid v < \theta^*]$ equals the cost $c$.
+
+As $c \to 0$, the threshold $\theta^* \to 0$ and the Verrecchia equilibrium approaches the Grossman–Milgrom full-disclosure outcome. As $c$ rises, $\theta^*$ rises, more types pool at silence, and the disclosure regime degrades toward complete pooling. The Verrecchia model thus nests both the Grossman–Milgrom benchmark and the Akerlof-style pooling outcome as limiting cases.
+
+@dye1985 made a second relaxation. In Dye's setup, the manager either has information $v$ or has no information at all, and investors do not know which case applies. The equilibrium continues to feature partial unraveling, but for a different reason: when investors observe silence, they cannot distinguish a manager who has bad information from one who has none, so silence is less damning than in Verrecchia. The Dye assumption is empirically more relevant in many disclosure settings, because the assumption that managers always have information of known precision is implausible.
+
+You will recognize this pattern from the Lemons simulation in Chapter 2. The Phase 3 voluntary-disclosure scenario plays out the Verrecchia equilibrium: students who chose to disclose did so for high values of their car's quality, while students with low quality preferred to pool. The synthetic-population summary reported a disclosure rate of approximately ninety-three percent and a clear separation between disclosed and silent average qualities — partial unraveling, observed in real time.
+
+## 3.4 Concrete examples of signaling in capital markets
+
+The signaling framework illuminates a number of patterns in real capital markets that are otherwise difficult to rationalize. We consider four.
+
+### IPO underpricing as a signal
+
+Initial public offerings in the United States are systematically underpriced. The average first-day return on an IPO has been about fifteen to twenty percent over the post-1980 period, meaning the issuer leaves a substantial fraction of the offering proceeds on the table. One signaling explanation, developed by a literature beginning with @allenfaulhaber1989, @grinblatthwang1989, and @welch1989 — each of whom models underpricing as a costly signal whose burden falls most heavily on low-quality issuers — is that high-quality issuers deliberately underprice the offering to signal confidence in the firm's prospects: a firm that expects to return to the equity market in the future can recoup the underpricing on subsequent offerings, while a low-quality issuer that expects to be unmasked before any follow-on offering cannot. The single-crossing property holds because the cost of underpricing — foregone proceeds on the IPO — is recouped only by issuers who realistically expect to issue again, and that expectation is correlated with quality.
+
+The signaling interpretation of underpricing is not the only candidate. The asymmetric-information story of @rock1986, in which informed investors crowd out uninformed ones unless the offering is discounted enough to compensate the uninformed for adverse selection, is a different mechanism that operates on the demand side. Both stories are consistent with the observed underpricing, and the empirical literature has had difficulty distinguishing them sharply.
+
+### Management earnings guidance
+
+A firm that issues a management earnings forecast for the upcoming quarter commits publicly to a number. If the realization falls materially short of the forecast, the firm bears legal exposure (e.g., shareholder securities litigation) and reputational damage (e.g., reduced credibility on future forecasts). Issuing a forecast is therefore costly, and the cost is plausibly higher for managers whose private information is less favorable: a manager who expects to miss has more to lose from committing publicly than a manager who expects to meet or beat. The single-crossing property holds, and the act of issuing guidance is a credible signal even before the content of the guidance is examined.
+
+The empirical literature, surveyed in @beyer2010, documents that firms that issue management forecasts have lower bid-ask spreads, higher analyst following, and lower implied costs of equity capital than otherwise comparable firms that do not. The average forecast is approximately unbiased and is more accurate than the analyst consensus for the same period, consistent with managers communicating private information through the disclosure choice.
+
+### Voluntary segment disclosure
+
+The Amazon AWS disclosure is the canonical example. U.S. GAAP under ASC 280 requires segment disclosure only to the extent that the chief operating decision maker (i.e., the senior executive who allocates capital across the firm's business units) views the segments as discrete reporting units. The reporting boundary is, in important respects, at management's discretion. A firm that disaggregates a high-margin, high-growth segment from a lower-margin parent reveals favorable private information; a firm that keeps the segment buried in "Other" pools with the parent. Amazon, in keeping AWS bundled from 2006 to 2015, was pooling. The 2015 unbundling was, in effect, a Verrecchia-style threshold disclosure: when the segment's economics became favorable enough that the price-impact gain exceeded the proprietary cost of revealing growth and margin information to competitors (Microsoft, Google, IBM), Amazon disclosed.
+
+The proprietary-cost dimension is not academic. After the 2015 disclosure, competitors invested aggressively in cloud-computing infrastructure, and AWS faced sharper competition from Microsoft Azure and Google Cloud Platform than it had during the bundled period. The disclosure cost was real; Amazon paid it because the price-impact gain was larger.
+
+### Dividend signaling
+
+A firm that initiates or raises its dividend commits to a recurring cash outflow. Cutting the dividend in a subsequent period imposes substantial reputational and price costs — the empirical literature documents announcement returns of negative five to ten percent on dividend cuts. Initiating or raising a dividend is therefore costly to a manager whose private information about future cash flows is unfavorable, because she is committing to outflows she may not be able to sustain. The single-crossing property holds, and dividend changes have been argued to function as signals at least since @bhattacharya1979 and @millerrock1985, both of whom model dividend commitments as costly information transfer about future earnings.
+
+Empirically, dividend initiations and increases are associated with positive announcement returns; dividend cuts and omissions are associated with negative announcement returns. The signaling interpretation is one of several candidates — free-cash-flow disgorgement and tax-clientele effects are alternatives — but the qualitative pattern is consistent with the framework.
+
+## 3.5 Accruals as a signal
+
+The signaling framework provides a useful interpretation of one of the most contested elements of financial accounting: the *accruals* (i.e., the non-cash components of earnings that distinguish accrual-basis income from operating cash flow). Under accrual accounting, the firm recognizes revenues when they are earned (which need not coincide with cash collection) and expenses when they are incurred (which need not coincide with cash payment). The wedge between accrual income and operating cash flow is *total accruals*, and it embeds the manager's projections about the timing and ultimate realization of the firm's economic activity.
+
+Consider a software company that signs a three-year service contract on January 1 and collects the full three-year fee in cash on the day of signing. Under cash-basis accounting, the firm would report a large positive cash inflow on January 1 and zero revenue thereafter. Under accrual-basis accounting, the firm would record the cash receipt as a liability (deferred revenue) on January 1 and recognize revenue ratably over the three-year service period. The accrual treatment moves the timing of revenue recognition away from the timing of cash and toward the timing of the underlying economic performance.
+
+Each accrual estimate is the manager's projection of an unobservable quantity: when is the service "earned," what fraction of the contract has been performed at any given balance-sheet date, what portion of the receivable is collectible, what portion of the inventory remains saleable. Each projection embeds the manager's private information about the firm's prospects, and each is, in principle, a signal.
+
+A manager who believes future cash flows will be strong has an incentive to recognize revenue earlier and at higher amounts. A manager who believes future cash flows will be weak has an incentive to defer. Investors observing the accrual choices learn something about what the manager believes that the cash flow statement, by itself, would not have communicated.
+
+::: {.callout-note}
+## A subtle point
+
+The accrual choice is a signal in two senses. First, the *amount* of accruals is informative — high accruals relative to cash flows convey one kind of information, low accruals another. Second, the *consistency* of accrual choices over time is informative — a firm whose accrual estimates are systematically validated by subsequent cash collections is sending a different signal from a firm whose estimates are systematically reversed. The accrual quality literature, which we will examine in Chapter 7, takes this consistency dimension as a primary object of study.
+:::
+
+A complication runs alongside this story. Because accruals embed the manager's private information, they also create the opportunity for *manipulation*. A manager who would benefit from reporting higher earnings has the means at her disposal to do so by adjusting accrual estimates upward; a manager who would benefit from reporting lower earnings can adjust them downward. The earnings-management literature [@healy1985; @burgstahlerdichev1997; @roychowdhury2006], which we will examine in detail in Chapter 10, takes seriously the possibility that the signaling content of accruals is contaminated by managerial discretion. The empirical question is whether, on average, the signal content dominates the manipulation content. The answer, on most evidence, is yes, but the contamination is real.
+
+## 3.6 The institutional response: voluntary disclosure mechanisms
+
+U.S. public companies make use of a wide variety of voluntary disclosure mechanisms beyond the mandatory floor of the 10-K, the 10-Q, and the 8-K. Four are particularly worth highlighting.
+
+The first is *management earnings forecasts*, discussed in Section 3.4. A management forecast is a public announcement, typically issued through a press release or as part of an earnings call, in which the firm provides forward-looking expectations about earnings, revenue, or other key financial metrics. Forecasts are not required by U.S. GAAP or SEC regulation. The decision to issue one is a costly commitment: by publicly anchoring on a number, the manager creates legal and reputational liability if the realization diverges materially.
+
+The second is the *conference call* and the broader practice of management–investor dialogue. The quarterly earnings call, in which management discusses results with analysts and answers their questions in real time, is essentially universal among U.S. public companies although it is not legally required. The disclosure that occurs on the call is voluntary in a strong sense: questions are unscripted, answers are extemporaneous, and the procedural safeguards that govern formal SEC filings do not apply with the same force.
+
+The third is the *Management's Discussion and Analysis* (MD&A) section of the 10-K. The MD&A is required by SEC regulation, but its content is largely at management's discretion. The MD&A is the primary venue through which management explains the period's results in narrative form, identifies the major drivers of the reported numbers, and provides forward-looking commentary on the firm's prospects. The level of detail and candor varies enormously across firms; the variation is itself observable and is interpreted by sophisticated readers as a signal.
+
+The fourth, increasingly important, is *voluntary non-financial disclosure* — segment disaggregations, sustainability reports, climate-related disclosures, human capital metrics, and the like. Some of this is now mandatory under SEC and international regulation, but a great deal remains voluntary, and firms vary in what they choose to disclose. The framework of this chapter applies: firms with favorable underlying performance on these dimensions have an incentive to disclose; firms with unfavorable performance have an incentive to remain silent; investors learn to read the absence of disclosure as informative.
+
+## 3.7 Mechanics: the income statement and the accrual basis
+
+The income statement is the canonical accounting representation of the firm's economic performance over an interval — typically a quarter or a year. Its central organizing identity is, in stylized form:
+
+$$
+\text{Net Income} = \text{Revenue} - \text{Expenses}.
+$$
+
+The revenue and expense figures aggregate transactions, accruals, and adjusting entries that, taken together, reflect the firm's economic activity for the period. Net income flows through to the equity section of the balance sheet, increasing retained earnings by the period's earnings (less any dividends declared). The income statement thus connects two consecutive balance sheets: the change in retained earnings over the interval equals net income for the interval, less any dividends paid.
+
+Consider, in extension of the Acme Corp. example from Chapter 2, a small set of transactions occurring during the firm's first month of operations.
+
+| Date | Transaction |
+|------|-------------|
+| Jan 5 | Acme provides $20{,}000 of services to a customer who pays in cash. |
+| Jan 10 | Acme provides $30{,}000 of services to a customer on account, payable in 30 days. |
+| Jan 15 | Acme pays $8{,}000 in wages to its employees for the month so far. |
+| Jan 20 | Acme pays $6{,}000 for one year of insurance coverage beginning January 1. |
+| Jan 31 | Acme owes its employees $4{,}000 in additional wages earned in the second half of January but not yet paid. |
+
+The income statement and balance sheet for January under the accrual basis would be:
+
+**Income Statement, Month of January**
+
+|  |  |
+|--|--|
+| Revenue | $50,000 |
+| Wage expense | (12,000) |
+| Insurance expense | (500) |
+| **Net income** | **$37,500** |
+
+**Balance Sheet, January 31** (immediately following the operations above plus the January 1–4 entries from Chapter 2)
+
+| **Assets** |  | **Liabilities and Equity** |  |
+|------------|------|----------------------------|------|
+| Cash       | $109,000 | Note payable               | $50,000 |
+| Accounts receivable | $30,000 | Wages payable | $4,000 |
+| Prepaid insurance | $5,500 | Common stock | $100,000 |
+| Truck | $50,000 | Retained earnings | $40,500 |
+| **Total**  | **$194,500** | **Total** | **$194,500** |
+
+(The retained-earnings figure reflects the $37{,}500 in January net income plus a $3{,}000 adjustment from a transaction not introduced in the table; it appears here for arithmetic completeness. The simpler example in Chapter 2 had no operating activity and zero retained earnings.)
+
+::: {.callout-warning}
+## Common pitfall
+
+A common stumbling block on first encounter with the income statement is the timing question: when is revenue "earned" if it does not coincide with cash collection? The answer in U.S. GAAP, codified in ASC 606, is governed by a five-step model that asks (i) what contract exists, (ii) what performance obligations the contract contains, (iii) what the transaction price is, (iv) how the transaction price is allocated across the obligations, and (v) when each obligation is satisfied. We will return to the five-step model in Chapter 6, where it is the core mechanic of the discussion of revenue recognition.
+:::
+
+The accrual basis differs from the cash basis in two specific ways visible in the example. First, on January 10 Acme recognizes $30{,}000 of revenue even though no cash has been collected; the cash collection occurs in February but the economic activity — the rendering of services — occurred in January. Second, on January 20 Acme pays $6{,}000 in cash for insurance but recognizes only $500 of insurance expense for January; the remaining $5{,}500 sits on the balance sheet as a prepaid asset, to be expensed over the eleven remaining months of coverage.
+
+The consequence is that net income and operating cash flow can differ — sometimes substantially — for any given period. The wedge between them is exactly the total accruals discussed in Section 3.5. The income statement reports the manager's view of economic activity; the statement of cash flows reports the verifiable cash record. Both are required precisely because each contains information the other suppresses: the income statement contains the manager's signal, the cash flow statement contains the verifiable check. We return to whether investors price the wedge correctly in Chapter 7.
+
+## 3.8 Empirical evidence
+
+The empirical literature on voluntary disclosure is large. @beyer2010 provides a useful survey, building on the earlier review by @healypalepu2001. Three findings are particularly relevant to the framework of this chapter.
+
+The first finding concerns the relationship between voluntary disclosure and the cost of capital. Firms that issue management earnings forecasts, hold conference calls, and provide expansive MD&A discussion have, on average, narrower bid-ask spreads, higher analyst following, and lower implied costs of equity capital than otherwise comparable firms with sparser voluntary disclosure. The estimated magnitudes are modest but consistent across studies; a typical estimate places the effect on the cost of equity at twenty to fifty basis points. The interpretation is that voluntary disclosure reduces the adverse-selection premium investors demand, consistent with the lemons argument of Chapter 2.
+
+The second finding concerns the *content* of voluntary disclosures relative to managers' private information. Studies of management forecasts document that the average forecast is approximately unbiased and that forecasts are systematically more accurate than analyst consensus forecasts of the same period [@beyer2010, who reviews the relevant evidence]. Studies of disclosure tone — the fraction of optimistic and pessimistic words in the MD&A, conference calls, and press releases — document that tone is informative about future cash flows even after controlling for the underlying numerical disclosures. Both findings are consistent with the signaling story: managers communicate their private information through the disclosure choices they make, and the market learns to read the disclosure for content.
+
+The third finding concerns the *unraveling* dynamic itself. The empirical literature has documented that bad news is, on average, disclosed more slowly than good news — an asymmetry consistent with the Verrecchia and Dye predictions and confirmed in studies of management forecasts, restatements, and disclosure of negative events [@beyer2010]. Firms with stronger governance and more sophisticated analyst followings tend to disclose more rapidly, suggesting that the partial-unraveling equilibrium is sensitive to the institutional context.
+
+The literature does not, of course, claim that voluntary disclosure is always informative or always efficient. A substantial side literature on *strategic disclosure* documents that managers can and do use voluntary disclosure to manipulate investor expectations, to shape the timing of price reactions, and to advance personal incentives that diverge from firm value. The signaling framework is the right starting point, but it is not the whole story; the strategic-manipulation literature complements it and we return to that material in Chapter 10.
+
+## 3.9 Key takeaways
+
+::: {.callout-important}
+## Key takeaways
+
+- **Signaling is the supply-side response to adverse selection.** Chapter 2 explained why investors demand disclosure; this chapter explains why managers supply it, sometimes at substantial private cost.
+- **Single-crossing is the engine of separation.** A signal is credible only when the marginal cost of producing it is lower for the type the receiver wants to identify; otherwise the low type imitates and separation collapses.
+- **The unraveling result has two faces.** Akerlof's demand-side unraveling collapses trade; Grossman–Milgrom's supply-side unraveling collapses silence. The two results share the logic that rational agents update against the party they cannot observe.
+- **Real disclosure is partial unraveling.** Proprietary costs (Verrecchia) and uncertainty about whether the manager has information (Dye) keep the silent pool from emptying entirely, producing a threshold equilibrium consistent with what we observe in practice.
+- **Accruals are a signal.** The wedge between accrual income and operating cash flow embeds the manager's private information about the firm's prospects, which is why the income statement and the cash flow statement are both required.
+- **Signals can be contaminated.** Because accrual estimates are discretionary, the signaling content of earnings can be manipulated; whether the signal dominates the manipulation is an empirical question taken up in Chapter 10.
+:::
+
+## 3.10 Discussion questions
+
+1. Amazon disclosed AWS segment results in 2015 and was rewarded with a substantial price increase. Why did the disclosure produce a fifteen-percent jump when, in principle, the same information was already implicit in Amazon's consolidated financial statements? What does this tell us about the cost–benefit trade-off of segment-level disclosure?
+2. The Spence model predicts that high types signal and low types do not. The Verrecchia threshold model predicts that types above a threshold disclose and types below pool at silence. Reconcile the two — when would we expect a Spence-style separating equilibrium, and when would we expect a Verrecchia-style threshold equilibrium?
+3. Conservative accounting practices — for example, expensing research and development costs in the period incurred rather than capitalizing them — are sometimes characterized as "signaling integrity": the firm leaves information on the table to demonstrate it is not trying to inflate the numbers. Is this argument coherent within the signaling framework of this chapter?
+4. The income statement under U.S. GAAP follows accrual accounting; the cash flow statement follows cash accounting. Both are required disclosures. Explain, using the framework of this chapter, why we need both rather than one or the other.
+5. A firm announces that, going forward, it will no longer provide quarterly earnings guidance. What signal does the announcement send to investors? Under what circumstances might this be the optimal policy for the firm?
+
+## 3.11 Problems
+
+### Mechanical problems
+
+1. *(Single-crossing and the separating equilibrium.)* Two types of workers, $H$ and $L$, exist in equal proportion. Type-$H$ productivity is $w_H = 120$ and type-$L$ productivity is $w_L = 80$. The cost of acquiring $e$ units of education is $c_H(e) = e$ for high types and $c_L(e) = 3e$ for low types. (a) Confirm that the single-crossing property holds. (b) Find the range of $e^*$ for which a separating equilibrium exists. (c) Identify the least-cost separating equilibrium. (d) Compute the net payoffs of each type in the least-cost separating equilibrium and compare to the pooling outcome.
+2. *(Signaling with auditing.)* High-quality firms are worth $200 to investors; low-quality firms are worth $100. The two types exist in equal proportion. A firm can issue an audited management forecast at a cost $c$ that credibly reveals its type. (a) If $c = 0$ for both types, what is the equilibrium? (b) If $c = 30$ for both types, is there a separating equilibrium? Justify with the incentive constraints. (c) Now suppose the cost is $c_H = 5$ for high types and $c_L = 60$ for low types. Compute the high-type and low-type payoffs in the separating equilibrium and confirm both incentive constraints hold. (d) What value of $c_L$, holding $c_H = 5$ fixed, makes the low type exactly indifferent between disclosing and pooling?
+3. *(Verrecchia threshold.)* Manager type $v$ is uniformly distributed on $[0, 1]$. Investors who observe silence price the firm at $E[v \mid v < \theta^*]$. Disclosure has a fixed proprietary cost $c = 0.05$. The marginal type $\theta^*$ satisfies $\theta^* - E[v \mid v < \theta^*] = c$. (a) Compute the threshold $\theta^*$. (b) What fraction of managers disclose? (c) How does $\theta^*$ change if $c$ rises to $0.10$? Explain the comparative statics in one sentence.
+4. *(Accrual-basis income statement.)* Continue the Acme Corp. example from Section 3.7 into a second month. In February: Acme collects the $30{,}000 receivable from January 10; provides $25{,}000 in additional services on account; pays $13{,}000 in wages (covering the $4{,}000 owed from January and $9{,}000 for February labor); and on February 28, Acme owes its employees $5{,}000 in additional wages earned but not paid. Construct the February income statement, the February 28 balance sheet, and a reconciliation between accrual net income and operating cash flow for the month.
+
+### Conceptual problems
+
+5. *(Applying unraveling to a new setting.)* Consider the market for executive labor. Candidates for CEO positions know their own quality; boards do not. Suppose candidates can voluntarily release a detailed track record from prior positions, including specific performance metrics and references. Using the Grossman–Milgrom logic, argue whether the market should unravel to full disclosure. Identify two frictions that, in practice, prevent full unraveling. Be specific about which assumption of the full-disclosure model each friction violates.
+6. *(Voluntary disclosure with proprietary costs.)* A pharmaceutical firm is conducting Phase II clinical trials of a new drug. Interim results are known to the firm but not yet required to be publicly disclosed. Discuss the disclosure decision through the lens of the Verrecchia model. What is the private benefit of disclosure? What is the proprietary cost? Under what circumstances would the firm voluntarily disclose interim results? Under what circumstances would the firm remain silent?
+7. *(Reading the absence of disclosure.)* Two firms in the same industry release their annual reports on the same day. Firm A includes a detailed segment breakdown showing the operating margins of each of its three business lines. Firm B reports only consolidated results and states that "the company operates as a single integrated business." Using the framework of this chapter, what would a sophisticated investor infer from the contrast? What additional information would the investor want before drawing a strong conclusion?
+
+### Short writing exercise
+
+8. *(Short writing exercise, ~400 words.)* Choose a U.S. public company. Identify one specific voluntary disclosure the company makes that is not required by U.S. GAAP or SEC regulation — a management forecast, a non-GAAP metric, a sustainability report, an investor day presentation, segment disaggregation beyond ASC 280 minimums, or any other example you can document. In approximately 400 words, argue why the company makes this disclosure using the framework of this chapter. Be specific about (i) what private information the disclosure conveys, (ii) what the cost of the disclosure is (including proprietary costs to competitors, legal exposure, and preparation costs), (iii) what the company gains from making it, and (iv) whether the disclosure is consistent with a Spence-style separating equilibrium, a Verrecchia-style threshold equilibrium, or a Grossman–Milgrom-style full-unraveling equilibrium.
+
+## 3.12 Lab
+
+The in-class activity for this week is the **Campus Curb FSET activity** (`activities/Campus Curb*`), in which you will use the financial statement effects template to record a sequence of transactions for a small startup and observe how the income statement, balance sheet, and statement of cash flows interact. The activity makes the signaling content of accruals concrete: as you record the transactions, you will see the wedge between cash flow and accrual income emerge in real time, and you will be asked to reflect on what an external investor would learn from the resulting statements.
+
+The activity is graded as part of participation. Bring your laptop and a copy of the FSET template to the second class meeting this week.
+
+## 3.13 Further reading
+
+The four readings below are the assigned readings for Week 3. You should read all of them.
+
+- @spence1973, "Job Market Signaling." A short paper. Read for the central argument and the structure of the separating equilibrium; the formal apparatus can be skimmed on a first pass.
+- @verrecchia1983, "Discretionary Disclosure." Read for the threshold result and the comparative statics on the disclosure cost.
+- @dye1985, "Disclosure of Nonproprietary Information." Read for the contrast with Verrecchia (1983) and for the role of investor uncertainty about whether the manager has information.
+- @coffee1984, "Market Failure and the Economic Case for a Mandatory Disclosure System." A legal-economic paper that frames the disclosure problem as a market failure and discusses the case for mandatory regulation. Read for the framework and the argument; the legal citations can be skimmed.
+
+::: {.callout-tip}
+## Connecting Chapter 3 to the rest of the course
+
+Chapter 3 closes the supply side of disclosure: we now have a framework for both why investors demand disclosure (Chapter 2) and why and how managers supply it (Chapter 3). Chapter 4 turns to the second of the two foundational information-economics problems — moral hazard — and develops the principal-agent model that has structured much of the contracting literature in accounting. The signaling framework introduced here will return in Chapter 10, where we examine earnings management as a contaminated form of the signal, and again in Chapter 12, where we examine performance measures as signals about managerial effort.
+:::

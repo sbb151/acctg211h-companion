@@ -1,0 +1,243 @@
+---
+title: "The Lemons Problem and the Demand for Disclosure"
+description: "Akerlof's adverse selection model and its implications for accounting. The balance sheet as a credible report."
+---
+
+# The Lemons Problem {#sec-lemons}
+
+## 2.1 Opening question
+
+Some markets that look like they should work do not. Consider three examples drawn from very different settings.
+
+A used car that is two years old has, on average, lost roughly thirty percent of its original sticker price — far more than the depreciation a comparable lightly driven rental vehicle would suggest. A great many cars in the second-hand market are, in fact, in good condition; some are not, and the buyer often cannot tell which is which.
+
+Before the Affordable Care Act of 2010, the individual health insurance market in many U.S. states was thin and expensive, and a substantial share of would-be participants were quoted premiums so high that they declined to enroll. The buyers who remained were, on average, sicker than the population at large, which pushed premiums higher still, which drove more healthy buyers out. Insurers and regulators referred to the dynamic as an *adverse selection death spiral* (i.e., a sequence of premium hikes and exits that ends with a tiny pool of high-cost enrollees).
+
+In March 2017, the social-media company Snap Inc. went public at an offering price of seventeen dollars per share, valuing the firm at approximately twenty-four billion dollars. Snap's S-1 registration statement, the document the firm filed with the Securities and Exchange Commission to register the offering, ran to roughly four hundred pages. The filing contained more than sixty distinct risk factors, three years of audited financial statements, and a detailed accounting of how the proceeds would be used. The audit was conducted by a Big Four firm. The underwriting syndicate of Morgan Stanley, Goldman Sachs, and J.P. Morgan signed off on the price. Within eighteen months, Snap shares had fallen below five dollars.
+
+Each of these examples is an instance of the same underlying phenomenon. The people who choose to sell — used-car owners, the chronically ill, IPO issuers — know more about what they are offering than the people who buy. The buyers know that the sellers know more, and they price-protect themselves accordingly. The sellers, anticipating that the buyers will price-protect, may either decline to sell at all or attempt, at substantial expense, to convince the buyers that what is being offered is in fact worth more than the buyers initially suspect.
+
+This chapter develops the canonical economic framework for analyzing markets of this kind. The framework is due to @akerlof1970, who in a few short pages established the reference model for asymmetric information (i.e., a setting in which one party to a transaction has private knowledge the other party lacks) in product markets. Although Akerlof's example was the used-car market, his result generalizes far beyond it; it is, on a large class of problems, the simplest result that captures the central tension that financial reporting was developed to address. By the end of the chapter you should be able to articulate why uncertainty about quality — combined with the seller's superior knowledge — can lead a market to *unravel*, and why the mandatory disclosure regime under U.S. securities law can be understood, in important respects, as a market-design response to that unraveling.
+
+The chapter also introduces, for the first time, the structure of the balance sheet. The introduction is deliberately positioned here rather than in Chapter 1. The balance sheet has a specific job in the framework we are developing: it is a credibly verifiable summary of the firm's stocks of assets and obligations at a point in time, prepared in a structurally rigid form that constrains the issuer's ability to misstate. Before the institutional context is in place, the form of the balance sheet can feel arbitrary. With that context in place, it should feel as though the form is performing real work.
+
+## 2.2 Stylized model {#sec-lemons-model}
+
+### 2.2.1 The Akerlof setup
+
+Consider a market for used cars. Suppose, for concreteness, that there are many cars on offer, each with a quality $\theta$ drawn from a uniform distribution on the interval $[0, 1]$. The quality $\theta$ summarizes everything a buyer would want to know about the car (i.e., mechanical condition, accident history, expected residual life). A car of quality $\theta$ is worth $\theta$ to its current owner — the value she places on continuing to drive it — and is worth $\beta \theta$ to a prospective buyer, where $\beta > 1$. The wedge between $\beta\theta$ and $\theta$ is the *gain from trade*: there is a buyer for whom the car is more valuable than it is to the current owner, so in principle a transaction can be arranged that makes both parties better off.
+
+Suppose, first, that quality is observable to both parties before any transaction occurs. The market in this benchmark case operates simply: buyers and sellers can negotiate any price between $\theta$ and $\beta\theta$, and every car trades at some price within that range. Every gain from trade is realized, and the outcome is Pareto efficient.
+
+Now consider the realistic case in which quality is observed only by the seller. The buyer knows that quality is uniformly distributed on $[0, 1]$ but does not know any individual seller's $\theta$. The buyer is rational and offers, for any car, a price equal to her expected willingness to pay conditional on the information she has. If the buyer believed the cars offered for sale were drawn at random from the population of all cars, she would offer a price of $\beta \cdot E[\theta] = \beta/2$. The buyer, being rational, knows that not every car will be offered: a seller with a $\theta$ above the price will keep her car rather than sell it.
+
+Let $p$ denote the price the buyer offers. A seller is willing to sell if and only if her quality $\theta \leq p$. The set of cars actually offered for sale is therefore the subset with $\theta \in [0, p]$, and the expected quality conditional on being offered is
+
+$$
+E[\theta \mid \theta \leq p] = \frac{p}{2}.
+$$ {#eq-condmean}
+
+The buyer, facing this conditional distribution, is willing to pay $\beta \cdot p/2$. For the market to clear, the buyer's willingness to pay must equal the price she offers — that is,
+
+$$
+p = \beta \cdot \frac{p}{2},
+$$ {#eq-fixedpt}
+
+which holds only when $p \cdot (1 - \beta/2) = 0$. If $\beta < 2$, the only price at which the market clears is $p = 0$. The market collapses, and no trade occurs.
+
+### 2.2.2 Unraveling, step by step
+
+The fixed-point algebra above hides a dynamic story that is worth walking through explicitly. Suppose $\beta = 1.5$ (i.e., buyers value each car at one-and-a-half times what the seller values it), and consider what happens as buyers learn, round by round, which cars are actually for sale.
+
+Round 0. A naive buyer assumes the seller pool resembles the full population and offers $p_0 = \beta \cdot E[\theta] = 1.5 \cdot 0.5 = 0.75$.
+
+Round 1. Sellers with $\theta > 0.75$ keep their cars. The pool of cars actually offered is the subset with $\theta \in [0, 0.75]$, which has expected quality $0.375$. A rational buyer updates her offer to $p_1 = 1.5 \cdot 0.375 = 0.5625$.
+
+Round 2. With the lower offer, only sellers with $\theta \leq 0.5625$ participate. Expected quality drops to $0.5625 / 2 = 0.281$, and the buyer offers $p_2 = 1.5 \cdot 0.281 \approx 0.422$.
+
+The process continues. The price falls in each round, the average quality of the remaining pool falls with it, and the iteration converges to $p^\* = 0$.
+
+| Round | Buyer's offer $p_t$ | Sellers with $\theta \leq p_t$ participate | Expected quality of remaining pool |
+|:-----:|:-------------------:|:------------------------------------------:|:----------------------------------:|
+| 0     | 0.750               | All cars assumed in pool                   | 0.500                              |
+| 1     | 0.563               | $\theta \in [0, 0.75]$                     | 0.375                              |
+| 2     | 0.422               | $\theta \in [0, 0.563]$                    | 0.281                              |
+| 3     | 0.316               | $\theta \in [0, 0.422]$                    | 0.211                              |
+| 4     | 0.237               | $\theta \in [0, 0.316]$                    | 0.158                              |
+| ...   | ...                 | ...                                        | ...                                |
+| $\infty$ | 0.000            | Empty                                      | undefined                          |
+
+: Iterative unraveling in the Akerlof model with $\beta = 1.5$. Each round the buyer's offer falls, and the cars that remain in the pool are progressively lower quality. The fixed point is $p^\* = 0$. {#tbl-unraveling}
+
+The lesson of @tbl-unraveling is not that buyers in the world iterate this way in real time; they almost certainly do not. The lesson is that in any rational-expectations equilibrium the only self-consistent price is one at which buyers' beliefs about the pool match what the pool actually contains. When $\beta < 2$, that fixed point is $p^\* = 0$.
+
+::: {.callout-note}
+## The unraveling result
+
+With full information, every car trades and the gains from trade are fully realized. With asymmetric information and $\beta < 2$, the same population of buyers and sellers produces no trade at all — even though every individual seller would have been willing to sell at the right price, and every individual buyer would have been willing to buy at the right price. The asymmetric information has created a wedge that drives the market to a corner solution in which the surplus is zero.
+:::
+
+### 2.2.3 What the model abstracts away
+
+The Akerlof model is stylized. The continuous uniform distribution on $[0, 1]$ is a convenience, and the prediction of *complete* market collapse depends on the parameter restriction $\beta < 2$. With richer assumptions — multiple buyer types, costly search, repeated transactions, partially informative signals — the model produces *partial* unraveling rather than complete unraveling, and the prediction shifts from "no trade" to "trade only of low-quality items at low prices." The empirical pattern that emerges from the literature is closer to partial than to total unraveling, but the qualitative result is the same: when sellers know more than buyers about quality, market quality declines, prices fall, and the gains from trade that the symmetric-information benchmark predicted are not fully realized.
+
+### 2.2.4 From used cars to capital markets
+
+The lemons logic generalizes naturally to capital markets. A firm raising capital in an initial public offering (i.e., the first sale of stock to the public) knows more about its prospects, its risks, and the integrity of its management than the investors who are being asked to subscribe to the offering. Investors, knowing that issuers know more, demand a discount — what the investment banking literature calls *IPO underpricing*. Issuers, anticipating the discount, may forgo the offering altogether, or may attempt to convey their private information through credible signals such as the choice of underwriter [@beyer2010, who survey the channels through which disclosure choices affect capital costs], the engagement of a Big Four auditor, or the disclosure of detailed financial information well beyond what is mandated by the SEC.
+
+The same logic applies in the secondary market. A firm whose insiders are about to issue equity at the prevailing market price knows that they would not be doing so if they thought the prevailing price was below the firm's intrinsic value. Outside investors, anticipating this asymmetry, treat the announcement of a seasoned equity offering as bad news, and the price typically falls on the announcement.
+
+The same logic applies, with appropriate modification, to debt markets, to private equity transactions, to the market for corporate control (i.e., mergers, acquisitions, and proxy contests), and to private placements of securities to a small set of sophisticated investors. Wherever an asymmetry exists in what the buyer and seller know about the asset being exchanged, we should expect, to a first approximation, prices to fall below their full-information level, volumes to be lower than the full-information benchmark would predict, and a substantial fraction of the gains from trade to be left on the table.
+
+::: {.callout-note}
+## Why this matters for accounting
+
+If asymmetric information about firm quality reduces trade and depresses prices, then any institution that credibly reduces the asymmetry has economic value. Mandatory financial reporting is one such institution. The audit is another. The SEC's disclosure regime is another. Each of these institutions exists, in part, because the alternative — a market with unmitigated information asymmetry — is one in which capital is allocated less efficiently and at higher cost.
+:::
+
+## 2.3 Institutional response {#sec-lemons-institutions}
+
+### 2.3.1 Four families of solution
+
+Once one understands why the market unravels, one immediately understands what kinds of institutional fixes might prevent the unraveling. The literature identifies four broad categories of solution.
+
+The first category is *credible disclosure*. If the seller can reveal her private information in a way that buyers find believable, the buyer can update her willingness to pay and the unraveling is mitigated. Credibility is the key word: a seller cannot simply assert that her car is high-quality, because every seller has the incentive to make that claim regardless of the truth. The disclosure has to come with a verification mechanism — a third-party inspector, a warranty backed by costly bonding, an audited financial statement — that makes the claim costly to falsify. Most of what we will study in this course is, in one form or another, a credible-disclosure solution. The audited 10-K is the canonical example.
+
+The second category is *signaling*. Even when direct disclosure is unavailable, a seller can sometimes engage in actions that are correlated with her private information and that low-quality types would find too costly to imitate. @spence1973 developed this argument in the labor market context, showing that high-ability workers signal their type by acquiring expensive education that low-ability workers cannot profitably obtain. In the capital markets context, dividend payouts have been argued to play a signaling role, as has the issuance of subordinated debt. The signaling solution does not require the seller's information to be directly verifiable; it requires only that the action being taken is more costly for low types than for high types. Chapter 3 develops the signaling logic in detail.
+
+The third category is *certification* by an information intermediary. The function of the auditor, the credit rating agency, the analyst, and the underwriter is, in important respects, to take on the verification role that buyers cannot easily perform themselves. An information intermediary that has its own reputation at stake — that loses business and rents if it certifies low-quality issuers as high-quality — can serve as a credibility device that the issuer alone could not provide. This is one reason the empirical literature documents that issuers engage information intermediaries: the intermediary's reputational capital is, in effect, lent to the issuer for the duration of the transaction.
+
+The fourth category is *repeated interaction* and *reputation*. In a one-shot transaction, the seller has no incentive to honor representations that go beyond what is contractually verifiable. In a repeated setting, the seller's incentive shifts: a seller who plans to be in the market again has reason to deliver on representations, because misrepresentation in the current transaction reduces the price she will obtain in the next. Repeated interaction is one of several reasons why long-lived public companies trade on tighter bid-ask spreads than otherwise comparable private firms or first-time issuers.
+
+::: {.callout-note}
+## A taxonomy worth memorizing
+
+The four solutions — (i) credible disclosure, (ii) signaling, (iii) certification, and (iv) reputation — are not mutually exclusive. A typical large public firm employs all four simultaneously: it discloses through its mandated filings, signals through dividend policy and capital structure, hires intermediaries (auditors, underwriters, credit rating agencies, analysts), and benefits from a reputation built up over many interactions with capital markets. The institutions of accounting are only one of the four — but they are the largest single component of the credibility infrastructure in modern capital markets.
+:::
+
+### 2.3.2 Mandatory disclosure under U.S. securities law
+
+The U.S. mandatory disclosure regime, which dates principally from the Securities Act of 1933 and the Securities Exchange Act of 1934, is the largest single institutional response to the lemons problem in capital markets. The regime imposes on public companies two distinct sets of obligations.
+
+The first set governs the issuance of new securities. It requires firms to register securities offerings with the SEC and to file a registration statement (Form S-1 for an IPO, Form S-3 for a seasoned offering) containing extensive disclosures about the firm and the securities being offered. The second set governs the ongoing reporting of public companies. It requires (i) an annual report on Form 10-K, (ii) quarterly reports on Form 10-Q, and (iii) event-based current reports on Form 8-K, each accompanied by audited or reviewed financial statements as applicable.
+
+The regime is mandatory in two senses that matter for the lemons argument. First, it requires the firm to provide disclosure even when the firm would, on a transactional basis, prefer to remain silent. (We will see in Chapter 3 that voluntary disclosure produces incomplete unraveling: low-type sellers will *not* voluntarily disclose, leading to a noisy equilibrium that resembles the partial-unraveling case.) Second, the regime requires the disclosure to satisfy specific standards of completeness, comparability, and accuracy, enforced by the SEC and, for the financial statements, by an external auditor.
+
+The regime is not without costs. Compliance costs for public companies are substantial; small public firms commonly report annual external audit fees of one to two million dollars, and total compliance costs (i.e., audit, legal, internal accounting, board oversight) can run several times that amount. Whether the regime's benefits in terms of reduced lemons discounts exceed those costs is an empirical question, and a contested one. The literature has produced evidence on both sides; @christensenhailleuz2013, who review the evidence on mandatory IFRS adoption around the world, find that the effects of mandated disclosure depend critically on the strength of enforcement institutions in the adopting country. The cost-benefit question recurs in Chapter 5.
+
+### 2.3.3 A non-capital-markets example: the ACA and the individual insurance market
+
+The opening question mentioned the individual health insurance market. The market design problem the Affordable Care Act attempted to solve is the same one Akerlof identified. Buyers (i.e., would-be enrollees) know more about their own health than insurers do. Sicker buyers are willing to pay more for coverage, so the pool of buyers who actually enroll at any given premium is sicker than the general population, which pushes the actuarially fair premium up, which drives more healthy buyers out — the dynamic, the *adverse selection death spiral*, described in Section 2.1.
+
+The ACA's institutional response combined three of the four families of solution from Section 2.3.1. (i) *Disclosure* requirements: insurers had to publish standardized plan summaries so consumers could compare apples to apples. (ii) *Certification*: a federal exchange certified that plans met minimum coverage standards, taking the verification burden off individual buyers. (iii) A mechanism that has no clean analog in the Akerlof model — the *individual mandate* — required all eligible Americans to purchase coverage, effectively forcing the healthy buyers who would have exited to remain in the pool. The mandate was, in effect, a non-market solution to the unraveling problem: rather than allow the equilibrium to collapse, the regulation simply ruled out the exit option. We will see in subsequent chapters that mandatory financial reporting under U.S. securities law has a similar character — it constrains the seller's option to remain silent.
+
+## 2.4 Mechanics: the balance sheet as a credible report {#sec-lemons-mechanics}
+
+The balance sheet is the canonical accounting representation of the firm's stocks of assets and obligations at a point in time. Its central organizing identity is the *accounting equation*:
+
+$$
+\text{Assets} = \text{Liabilities} + \text{Equity}.
+$$ {#eq-accteq}
+
+The equation reflects a definitional truth: every dollar of assets the firm controls is financed either by an obligation to a creditor (a *liability*) or by a residual claim of the owners (*equity*). The two sides of the equation must equal — by construction — for every transaction the firm undertakes.
+
+The discipline imposed by the accounting equation is, in part, what gives the balance sheet its credibility. Suppose the firm wishes to overstate its assets by ten million dollars. The overstatement must be reflected, by definition, on the right-hand side of the equation as well — either as a corresponding overstatement of liabilities (which the firm's creditors would presumably notice and dispute) or as a corresponding overstatement of equity (which would itself flow through to overstated retained earnings, and thence to overstated income, which the auditor reviews). The fraudster cannot simply add ten million to the asset side and stop; the bookkeeping system forces the consequence to appear elsewhere. The *double-entry* structure (i.e., the convention that every transaction is recorded in at least two accounts so that the equation holds) is, in this sense, an information-economics solution to the demand for credibility: it creates a verification structure that makes simple misstatement detectable.
+
+Consider a simple example. Suppose a new firm, Acme Corp., is organized on January 1 by an investor who contributes $100,000 in cash in exchange for 1,000 shares of common stock. Immediately after this transaction, Acme's balance sheet looks like:
+
+| **Assets** |  | **Liabilities and Equity** |  |
+|------------|------|----------------------------|------|
+| Cash       | $100,000 | Liabilities                | 0 |
+|            |      | Common stock               | $100,000 |
+| **Total**  | $100,000 | **Total**                  | $100,000 |
+
+The balance sheet is, simply, a structured statement of the assets the firm controls and the claims against those assets. The equation balances: $100{,}000 = 0 + 100{,}000$.
+
+Now suppose Acme borrows $50,000 from a bank on January 2 and uses the proceeds to purchase a delivery truck. After this transaction:
+
+| **Assets** |  | **Liabilities and Equity** |  |
+|------------|------|----------------------------|------|
+| Cash       | $100,000 | Note payable               | $50,000 |
+| Truck      | $50,000 | Common stock               | $100,000 |
+| **Total**  | $150,000 | **Total**                  | $150,000 |
+
+Each transaction has equal effects on both sides of the equation: the truck purchase increases truck (an asset) by $50{,}000 and increases note payable (a liability) by $50{,}000. The double-entry structure is doing the work of forcing every economic event into a form the bookkeeping system can verify internally.
+
+::: {.callout-warning}
+## Common pitfall
+
+It is easy at first to think of the balance sheet as merely a list of items the firm owns. The list is part of what the balance sheet does, but it is not what makes the balance sheet useful. The useful work is being done by the *structure* — the requirement that the two sides equal — which provides the verification discipline that gives the report its credibility. A balance sheet that did not have to balance would be a much weaker statement.
+:::
+
+We will return to the balance sheet many times in subsequent chapters. Chapter 3 introduces the income statement and connects accruals to the signaling literature. Chapter 8 examines specific measurement choices for long-term assets. Chapter 9 examines liabilities and the contracting role of the balance sheet in debt agreements. The balance sheet introduced here is the spine on which those subsequent chapters build.
+
+## 2.5 Empirical evidence {#sec-lemons-evidence}
+
+The empirical literature on disclosure and capital markets is large; @healypalepu2001, who survey the disclosure literature through the early 2000s, and @beyer2010, who update that survey with another decade of work, provide useful entry points. The findings most directly relevant to the lemons argument fall into two broad categories.
+
+The first category concerns the relationship between disclosure and the cost of capital. The theoretical prediction, traceable to @diamondverrecchia1991, who model the channel from disclosure to liquidity to required returns, is that firms with more complete and credible disclosure should face a lower cost of capital, because investors require less of a discount for adverse-selection risk. The empirical evidence is broadly consistent with this prediction, although the magnitudes are sensitive to the disclosure measure used and to the institutional setting. Studies using cross-country variation in disclosure regulations — @christensenhailleuz2013, who exploit mandatory IFRS adoption as a natural experiment — find that firms in countries with stronger disclosure and enforcement regimes face lower implied costs of equity capital, lower bid-ask spreads, and higher liquidity. The effects are concentrated in countries with strong enforcement, suggesting that the rule alone is not enough; the credibility of the regime depends on the institutions that back it.
+
+The second category concerns the relationship between disclosure and the volume and quality of transactions. Studies of IPO markets document substantial underpricing on average — first-day returns of approximately fifteen to twenty percent in the typical large U.S. study — consistent with a lemons discount, although the underpricing literature has identified several other contributing mechanisms as well. Studies of seasoned equity offerings document negative announcement returns averaging around three percent of the issuer's pre-announcement market value, consistent with the asymmetric-information story. Studies of insider trading document that insider purchases (sales) predict positive (negative) future returns, suggesting that insiders' private information has value not fully reflected in publicly available disclosures.
+
+The empirical literature does not, of course, establish that financial reporting *causes* lower lemons discounts. The identification problem is severe: disclosure is a choice, and firms with better fundamentals may both disclose more and trade at smaller discounts for reasons unrelated to the disclosure itself. The literature has used various natural experiments (i.e., regulatory changes, mandated adoptions of new standards, exogenous shocks to information environments) to make progress on causation, with mixed but generally supportive results. Whether the magnitude of the disclosure effect is large enough to justify the compliance costs of the U.S. regime is a question to which we will return.
+
+## 2.6 Key takeaways {#sec-lemons-takeaways}
+
+::: {.callout-important}
+## Key takeaways
+
+- **Asymmetric information can shut down otherwise valuable markets.** When sellers know more about quality than buyers do, the buyers who remain in the market are the ones the sellers most want to leave with.
+- **Unraveling is a fixed-point story, not a quirk.** In any rational-expectations equilibrium, the price must equal the buyer's expected value conditional on the cars that are actually offered at that price; in the Akerlof model with $\beta < 2$, the only such price is zero.
+- **Real markets exhibit partial, not complete, unraveling.** Used cars trade, IPOs price, health insurance is sold — but at discounts and volumes consistent with the asymmetric-information story rather than the full-information benchmark.
+- **Four families of institutional solution recur across markets.** (i) Credible disclosure, (ii) signaling, (iii) certification by intermediaries, and (iv) reputation through repeated interaction each operate, in some combination, in every market where information is asymmetric.
+- **Mandatory disclosure under U.S. securities law is a market-design response.** It constrains the seller's option to remain silent, much as the ACA's individual mandate constrained the healthy buyer's option to exit.
+- **The balance sheet is credible because of its structure, not its content.** The accounting equation forces every misstatement to leave a paired trace, which gives the audit something to verify against.
+:::
+
+## 2.7 Discussion questions {#sec-lemons-discussion}
+
+1. The Akerlof model produces complete market unraveling under the parameter restriction $\beta < 2$. What does this restriction mean intuitively? What features of real used-car markets — and real capital markets — would push us toward or away from the complete-unraveling prediction?
+2. Consider the four solutions to the lemons problem identified in Section 2.3.1 (i.e., disclosure, signaling, certification, reputation). For each, identify one institution or practice in modern U.S. capital markets that exemplifies the solution, and explain briefly how it works.
+3. Section 2.4 argues that the double-entry structure of the balance sheet provides a form of verification discipline. Yet financial fraud is not unknown — Enron, WorldCom, and Wirecard each produced balance sheets that were, in retrospect, materially false. Does this evidence weaken the argument of Section 2.4? Why or why not?
+4. Suppose a firm could choose between two disclosure regimes: (i) an unaudited but extensive disclosure of management's current beliefs about the firm's prospects, or (ii) an audited but mechanical disclosure of historical balance sheet and income statement information. Which would investors prefer, and why? Defend your answer.
+5. Snap's IPO disclosure was extensive, the audit was clean, and the underwriters were reputable, yet the price fell substantially within eighteen months. Does this experience indicate that the disclosure regime failed in Snap's case, or does it indicate something else? Be specific about what you would need to know to answer this question.
+6. Section 2.3.3 describes the Affordable Care Act's individual mandate as a non-market solution that ruled out the exit option for healthy buyers. Is mandatory disclosure under U.S. securities law analogous, in that it rules out the silence option for low-quality issuers? Identify one important way the analogy holds and one important way it breaks down.
+
+## 2.8 Problems {#sec-lemons-problems}
+
+### Mechanical problems on the lemons model
+
+1. *(Equilibrium price under symmetric vs. asymmetric information.)* A market for used cars has cars of quality $\theta$ uniformly distributed on $[0, 1]$, with sellers valuing a car at $\theta$ and buyers at $1.8\theta$. (a) Under symmetric information, what is the range of prices at which a car of quality $\theta = 0.6$ could trade? What total surplus is realized in the market? (b) Under asymmetric information, solve for the equilibrium price and the set of cars that trade. (c) What deadweight loss is attributable to the asymmetric information? Report your answer as the difference between the symmetric-information total surplus and the asymmetric-information total surplus.
+2. *(Identifying the unraveling threshold.)* Generalize the Akerlof model: cars of quality $\theta$ are uniformly distributed on $[0, 1]$; sellers value a car at $\theta$ and buyers at $\beta\theta$, with $\beta > 1$. (a) For what values of $\beta$ does the market completely unravel? (b) Suppose $\beta = 2.5$. Compute the equilibrium price, the set of cars that trade, and the realized total surplus, comparing to the symmetric-information benchmark.
+3. *(Iterative unraveling.)* For the parameter value $\beta = 1.8$ used in Problem 1, construct a table analogous to @tbl-unraveling. Begin from a naive buyer's first offer $p_0 = \beta \cdot E[\theta]$ and iterate at least four rounds, reporting the buyer's offer, the participating sellers, and the expected quality of the remaining pool at each step. Verify by inspection that the iteration converges to $p^\* = 0$.
+
+### Conceptual problems applying the framework
+
+4. *(Adverse selection beyond used cars.)* Choose one of the following markets: (i) the market for individual life insurance, (ii) the market for hospital services purchased by uninsured patients, (iii) the market for private placements of equity in early-stage startups, or (iv) the market for collectible-grade rare coins. Identify, as specifically as you can, (a) what the seller knows that the buyer does not, (b) which of the four families of solution from Section 2.3.1 the market uses to mitigate the resulting unraveling, and (c) one observable feature of the market that is consistent with the asymmetric-information story.
+5. *(CFO disclosure regulation.)* The SEC is considering a regulation that would require all public companies to disclose the resumes and prior employment history of their CFOs at the time of the CFO's appointment. Using the framework of this chapter, identify (i) the lemons problem the disclosure would mitigate, (ii) the cost of the disclosure to the affected firms, and (iii) the conditions under which the regulation would be likely to produce a net benefit.
+6. *(Reading exercise.)* Read the introduction and Section 1 of @healypalepu2001 (approximately seven pages). In approximately 250 words, summarize the authors' framework distinguishing the *information role* and the *contracting role* of disclosure. Provide one concrete example of each role drawn from a firm or institution you are familiar with.
+
+### Short writing exercise
+
+7. *(Apply the model to a market you participate in.)* Choose a real market in which you have participated as either buyer or seller — examples include the used-textbook market, the secondary ticket market for concerts or sports events, the residential rental market in a college town, or a peer-to-peer platform such as Etsy or eBay. In approximately one page, (a) identify the asymmetric information present in the market, (b) describe which of the four families of solution from Section 2.3.1 the market uses, and (c) speculate, with reasons, whether the unraveling is closer to the complete-unraveling or the partial-unraveling case.
+
+## 2.9 Lab {#sec-lemons-lab}
+
+The in-class activity for this week is the **Lemons Market simulation**, available at the course's interactive site at `acctg211h.psu.edu/lemons/`. The simulation walks you through four phases — full information, asymmetric information without disclosure, voluntary disclosure, and mandatory audited disclosure — and asks you to make trading decisions in each phase. Bring your laptop to the second class meeting this week. We will play the simulation together and then debrief.
+
+There is no written deliverable for the simulation, but the post-simulation debrief is a substantial part of the participation grade for this week. Come prepared to articulate, in your own words, what you observed about the relationship between asymmetric information, the unraveling result, and the role of disclosure.
+
+## 2.10 Further reading {#sec-lemons-reading}
+
+The four readings below are the assigned readings for Week 2. You should read all of them.
+
+- @akerlof1970, "The Market for Lemons." A short paper. Read for the central argument and the qualitative result; the formal model can be skimmed on a first pass.
+- @healypalepu2001, the introduction and Section 1 (approximately the first 15 pages). The most useful single survey of the disclosure literature for our purposes.
+- @beyer2010, the introduction and conclusion. A more recent survey that updates and extends Healy and Palepu.
+- *Optional, for those who want more:* @diamondverrecchia1991, "Disclosure, Liquidity, and the Cost of Capital." A canonical theoretical paper formalizing the channel from disclosure to liquidity to cost of capital. The model is technical; read for the result.
+
+::: {.callout-tip}
+## Connecting Chapter 2 to Chapter 1
+
+Chapter 1 introduced the agency problem in abstract form. Chapter 2 has sharpened one half of that problem — adverse selection, the form in which the principal cannot verify the type of the agent before contracting. Chapter 4 will sharpen the other half — moral hazard, the form in which the principal cannot verify the agent's actions after contracting. Each problem has its own canonical model and its own characteristic accounting response, and each will recur throughout the rest of the course.
+:::

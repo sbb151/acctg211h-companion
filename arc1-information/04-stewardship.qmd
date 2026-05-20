@@ -1,0 +1,237 @@
+---
+title: "Stewardship and Moral Hazard"
+description: "The principal-agent problem, the Holmstrom informativeness principle, and the role of accounting in executive compensation contracts."
+---
+
+# Stewardship and Moral Hazard {#sec-stewardship}
+
+## 4.1 Opening question
+
+In 2023, the median chief executive officer of an S&P 500 firm received total compensation of roughly sixteen million dollars. Of that amount, approximately seventy percent was performance-contingent (i.e., tied to equity grants, performance shares, or annual cash bonuses keyed to financial or stock-price targets). The median worker at those same firms earned approximately eighty thousand dollars. The CEO-to-worker pay ratio has attracted attention as a moral object, as a political object, and as a problem in managerial economics [@halliebman1998; @bebchukfried2003; @frydmanjenter2010, who collectively review the evolution of U.S. CEO pay since the 1980s and document the rising share of equity-based compensation].
+
+This chapter sets aside the moral and political questions and addresses a closely related analytical one: why is so much of CEO compensation made performance-contingent? A flat salary would shield the CEO from risk she presumably dislikes, and the diversified shareholders have a comparative advantage in absorbing risk. On a first pass, it appears inefficient to load risk onto the party who values diversification least.
+
+The literature has converged on a stylized answer. Performance-contingent compensation exists not because shareholders prefer to push risk onto the CEO, but because shareholders cannot directly observe what the CEO is doing. The CEO's effort, judgment, and decision-making are at most partially observable from the outside; the firm's reported earnings and stock price are observable but are noisy functions of the CEO's actions and of forces outside her control. A flat salary would do nothing to encourage effort that cannot be verified. A contract that makes pay contingent on observable performance does encourage that effort, at the cost of imposing some risk on the CEO. The optimal contract balances the cost of risk-bearing against the benefit of effort-incentivization.
+
+This is the *moral hazard* problem (i.e., the agent's incentive to take a hidden action the principal would not approve of) in its canonical form. It is the second of the two foundational information-economics problems we study in Arc I. The first was the adverse selection problem of Chapter 2. Both problems arise because one party in a relationship knows more than another. In adverse selection, the asymmetry concerns (i) *who* is in the market (high-quality versus low-quality types). In moral hazard, the asymmetry concerns (ii) *what action* the agent is taking (high effort versus low effort). The two problems have different formal structures, different institutional responses, and different accounting consequences. This chapter develops the moral hazard half of the framework. It also introduces the second-period mechanics of the income statement — adjusting entries, the closing process, and the trial balance — which exist in part because the principal needs a verification structure that can support a contractual relationship she cannot directly monitor.
+
+## 4.2 The principal-agent problem
+
+Consider a stylized contracting setup that maps onto the relationship between a firm's shareholders (the principal) and its CEO (the agent). The principal hires the agent to take an action $e$, which we will call effort. The action is costly to the agent: exerting effort requires forgoing leisure or accepting a higher cognitive load. The action produces output for the firm, $y$, which is a noisy function of effort:
+
+$$
+y = e + \varepsilon, \quad \varepsilon \sim N(0, \sigma^2).
+$$
+
+The output $y$ is observable to both parties, but the effort $e$ is observable only to the agent. The principal cannot tell, from any realization of $y$, how much of the result is attributable to the agent's effort and how much to the random component $\varepsilon$. The cost of effort to the agent, $c(e)$, is increasing and convex; we will use the simple quadratic form $c(e) = ke^2/2$, where $k > 0$ parameterizes the marginal cost of effort.
+
+The principal offers the agent a compensation contract that specifies a payment $w$ as a function of the observable output $y$. We restrict attention to *linear* contracts of the form $w(y) = a + \beta y$, where $a$ is the fixed component (i.e., a base salary) and $\beta$ is the slope on output (i.e., the agent's pay-for-performance sensitivity). The agent has CARA preferences (i.e., constant absolute risk aversion) with risk-aversion parameter $r > 0$, and an outside option that delivers a reservation utility $U_0$.
+
+::: {.callout-note}
+## The first-best benchmark
+
+If the principal could observe effort directly, the contract would simply specify the desired effort level and pay the agent a flat amount conditional on having taken it. The agent would face no risk; the principal, who is diversified, would absorb the entire variance of $y$. The first-best level of effort is $e^* = 1/k$. There is no agency cost because there is no information asymmetry to overcome.
+:::
+
+In the second-best world, where effort is unobservable, the principal must induce effort indirectly by making the agent's compensation contingent on output. The agent, anticipating the contract, chooses $e$ to maximize her own certainty-equivalent payoff:
+
+$$
+CE = a + \beta e - \tfrac{1}{2} k e^2 - \tfrac{1}{2} r \beta^2 \sigma^2.
+$$
+
+The first term is the expected wage. The second, $-\tfrac{1}{2} k e^2$, is the disutility of effort. The third, $-\tfrac{1}{2} r \beta^2 \sigma^2$, is the risk premium the agent demands for bearing the variability in $y$ that the contract has loaded onto her compensation.
+
+Maximizing with respect to $e$ yields the agent's optimal effort: $e = \beta/k$. The agent supplies more effort when her pay-for-performance sensitivity $\beta$ is higher and less when her marginal cost of effort $k$ is higher. The principal, anticipating this response, chooses $\beta$ to maximize the joint surplus net of the risk premium. The resulting optimal slope is
+
+$$
+\beta^* = \frac{1}{1 + r k \sigma^2}.
+$$
+
+The formula carries the central intuition of the section. The slope $\beta$ is bounded above by one (i.e., full effort incentivization, in which the agent bears the entire residual risk and the contract reproduces the first-best effort level). The slope is reduced from this benchmark by the term $r k \sigma^2$, which captures the joint cost of risk-bearing and effort-distortion. Three comparative statics follow:
+
+- (i) higher agent risk-aversion ($r$) reduces $\beta^*$;
+- (ii) higher marginal cost of effort ($k$) reduces $\beta^*$;
+- (iii) higher variance of output ($\sigma^2$) reduces $\beta^*$.
+
+In the limit $\sigma^2 \to 0$ — output perfectly reveals effort — the slope approaches one. In the limit $\sigma^2 \to \infty$ — output is pure noise — the slope falls toward zero, and the contract reverts to a flat wage because pay-for-performance imposes risk without informative content.
+
+This stylized model is known in the contracting literature as the *LEN model* (i.e., Linear contract, Exponential utility, Normally distributed output). It is a workhorse rather than a definitive characterization of the agency problem. Its predictions are nonetheless informative: in richer models the same forces are at work, and pay-for-performance sensitivities are tempered by risk-aversion and noise even when the contract form is more complex [@holmstrommilgrom1991, who extend the framework to multitask settings and show that the same logic governs how a contract weights multiple performance measures].
+
+## 4.3 The Holmstrom informativeness principle
+
+A central result in the agency literature, due to @holmstrom1979, generalizes the LEN intuition in a useful way. Suppose, in addition to output $y$, the principal can also contract on a second observable signal $s$ (e.g., an audit report, an internal performance metric, or a peer-firm benchmark). Should the additional signal enter the optimal contract?
+
+Holmstrom's answer is sharp. *Any signal that is incrementally informative about the agent's action, conditional on the signals already in the contract, should enter the contract with non-zero weight.* The converse also holds: a signal that contains no information about the action beyond what is already conveyed by other signals adds nothing useful and should receive zero weight, however precise it may be in isolation. The right test for inclusion is incremental informativeness, not precision.
+
+The intuition runs as follows. If $s$ contains information about $e$ that is not already contained in $y$, then conditioning compensation on both signals lets the principal filter some of the noise out of $y$, reducing the risk premium the agent demands without weakening effort-incentivization. The agent is paid more accurately for what she did, and less for what the world did to her. If $s$ contains no incremental information, then conditioning on it imposes additional risk on the agent (i.e., $s$ has its own noise) without any offsetting reduction in noise from $y$, and the principal does strictly better by excluding it.
+
+### A stylized two-signal example
+
+Consider a CEO whose effort $e$ affects two observable signals — accounting earnings $y_1$ and the firm's stock return $y_2$:
+
+$$
+y_1 = e + \varepsilon_1, \quad y_2 = e + \varepsilon_2,
+$$
+
+with $\varepsilon_1 \sim N(0, \sigma_1^2)$, $\varepsilon_2 \sim N(0, \sigma_2^2)$, and $\text{Cov}(\varepsilon_1, \varepsilon_2) = 0$. The principal chooses weights $\beta_1$ and $\beta_2$ on the two signals to maximize joint surplus. The optimal weights are proportional to the *precisions* (i.e., inverse variances) of the signals:
+
+$$
+\frac{\beta_1^*}{\beta_2^*} = \frac{1/\sigma_1^2}{1/\sigma_2^2} = \frac{\sigma_2^2}{\sigma_1^2}.
+$$
+
+Three implications follow. First, both signals enter the contract with positive weight, consistent with Holmstrom's principle. Second, the noisier signal receives a smaller weight: if earnings are five times noisier than the stock return ($\sigma_1^2 = 5\sigma_2^2$), the optimal weight on earnings is one-fifth of the weight on returns. Third, neither weight is set to zero merely because the other signal exists. Each contributes incremental information about $e$, and excluding either would force the principal to demand more effort from the remaining noisier metric.
+
+Now extend the example to a peer-firm benchmark. Suppose the CEO's effort affects firm output, but firm output is also exposed to an industry shock $\delta$ that affects every firm in the sector:
+
+$$
+y_1 = e + \delta + \varepsilon_1, \quad \tilde{y} = \delta + \tilde{\varepsilon},
+$$
+
+where $\tilde{y}$ is the average performance of the firm's peers, $\delta$ is the common industry shock, and $\tilde{\varepsilon}$ is independent noise in the peer benchmark. The peer signal $\tilde{y}$ contains no direct information about $e$, but it contains information about $\delta$. Conditioning on $\tilde{y}$ lets the principal *subtract* the industry shock from $y_1$, sharpening the inference about effort. The optimal contract takes the form
+
+$$
+w = a + \beta \left( y_1 - \gamma \tilde{y} \right),
+$$
+
+where $\gamma > 0$ is the optimal filtering weight on the peer benchmark. This is the formal logic behind *relative performance evaluation* (RPE): pay the CEO based on firm performance minus a peer-group benchmark, not on raw firm performance. The peer benchmark is informative about effort even though it does not respond to effort directly — it is incrementally informative because it isolates the component of firm performance that the CEO can be held accountable for.
+
+::: {.callout-note}
+## A subtle implication
+
+The informativeness principle does not say that a signal must be precise to enter the contract. A noisy but conditionally informative signal still adds value, just less of it. Conversely, a precise but already-redundant signal adds nothing, however precise it may be. The implication for compensation design is that signals should be evaluated jointly, not one at a time.
+:::
+
+### Why earnings remain in CEO contracts alongside stock returns
+
+The informativeness principle illuminates a question often asked about accounting numbers: *should the CEO be compensated on accounting earnings, on stock returns, or on both?* The stock return is, in many respects, more comprehensive — it incorporates not only the period's earnings but also forward-looking information about the firm's prospects. Yet accounting earnings continue to play a substantial role in CEO compensation contracts.
+
+The Holmstrom logic supplies an answer consistent with the empirical pattern. Earnings and stock returns are imperfectly correlated. Each contains information about CEO effort that the other does not. Earnings reflect operational decisions that have not yet shown up in returns. Returns reflect investor expectations about future cash flows that the period's earnings have not yet realized. Neither signal is redundant given the other, so both enter the contract with positive weight, with the weight on each scaled by its conditional informativeness about effort. @halliebman1998, in their study of pay-for-performance sensitivities in U.S. firms, document that accounting-based and stock-based metrics each carry economically meaningful weight in CEO compensation, consistent with the joint-informativeness reading.
+
+## 4.4 The institutional response: executive compensation contracts
+
+The framework of Sections 4.2 and 4.3 explains the architecture of executive compensation at U.S. public firms. CEO pay at large firms typically has four components, each of which can be read as the institutional response to a feature of the agency problem.
+
+**Base salary** is the fixed component $a$ in the LEN model. It typically accounts for ten to fifteen percent of total compensation at large U.S. firms. Its function is to satisfy the participation constraint — the CEO must be willing to take the job rather than her outside option — while imposing no incremental risk.
+
+**Annual cash bonus** is tied to *accounting-based* metrics for the current fiscal year, most commonly earnings per share (EPS), operating income, return on equity (ROE), or EBITDA, evaluated against a target set at the beginning of the year. The bonus typically has a threshold (below which payout is zero), a target (at which the agreed-upon bonus is paid), and a cap (above which additional performance produces no incremental payout). The threshold-target-cap structure is the source of the bunching documented by @healy1985, discussed in Chapter 3 and again below.
+
+**Performance shares** (sometimes called performance share units, or PSUs) are equity grants whose vesting is contingent on the firm meeting multi-year performance targets, typically over a three-year period. The performance metrics are usually *stock-based* — most commonly total shareholder return (TSR) relative to a peer group or a market index — and the structure is explicitly relative: the CEO earns the target share count if TSR falls at the median of the peer group, more if at the seventy-fifth percentile, less if at the twenty-fifth percentile, and zero if at the bottom. Performance shares are the dominant vehicle through which RPE is implemented at U.S. public firms.
+
+**Restricted stock (or restricted stock units, RSUs)** are equity grants that vest with the passage of time, conditional on continued employment. They provide an undifferentiated exposure to the firm's stock price and are intended in part to align the CEO's wealth with the long-run value of the firm, in part to discourage short-tenure turnover. Restricted stock typically vests in equal installments over three to four years.
+
+A representative compensation mix for the CEO of a large U.S. firm in 2023 might be (i) ten percent base salary, (ii) fifteen percent annual cash bonus, (iii) thirty-five percent performance shares, and (iv) forty percent restricted stock, with the exact mix varying by firm size, industry, and governance practices.
+
+Three features of this architecture follow directly from the framework.
+
+First, the contract uses *multiple performance measures*, consistent with the informativeness principle. Accounting earnings enter via the annual cash bonus. Stock returns enter via performance shares and restricted stock. The two measures are conditionally informative about different aspects of CEO effort, and neither is redundant.
+
+Second, the most heavily weighted stock-based metric — TSR in performance shares — is typically evaluated *relative to a peer group*, not in absolute terms. This is the RPE structure of Section 4.3. Industry-wide shocks (e.g., a recession, a commodity price swing, a sector-wide regulatory change) are filtered out, so the CEO is rewarded for outperforming her peers rather than for riding a sector wave. The empirical literature documents that the use of explicit RPE in performance share plans has grown substantially since the early 2000s, consistent with the Holmstrom prescription.
+
+Third, the contract distinguishes between *accounting metrics* and *stock metrics* in their treatment. Accounting metrics are typically evaluated against an *absolute* internal target (i.e., a budgeted EPS or ROE figure), while stock metrics are typically evaluated on a *relative* basis (i.e., TSR versus a peer group). The pattern is consistent with the framework: accounting metrics are firm-specific outputs of operating decisions, so an absolute internal target measures the CEO against her own commitments; stock returns are exposed to systematic shocks that are not the CEO's responsibility, so a relative benchmark filters those shocks out.
+
+### The role of audited financial statements
+
+Each of the accounting-based metrics in the contract is computed from the firm's audited financial statements. The audit (i.e., independent third-party verification of the firm's financial statements and, since SOX, of its internal controls over financial reporting) serves two functions in the framework of this chapter. It functions as a monitoring expenditure in the sense of @jensenmeckling1976, who define monitoring costs as expenditures by the principal to verify the agent's actions. It also functions as a Holmstrom-informative signal in its own right: the auditor's report adds independent information about the reliability of the firm's reported numbers, which can then enter the CEO's compensation contract through clawback provisions, performance metric definitions, or board-discretionary adjustments.
+
+The system of *internal controls* sits beneath the audit. Internal controls are the policies, procedures, and infrastructure within the firm that ensure transactions are recorded properly, assets are safeguarded, and financial reports are reliable. The Committee of Sponsoring Organizations (i.e., COSO) framework, originally issued in 1992 and updated in 2013, is the dominant conceptual framework for internal controls in U.S. firms. It identifies five components — control environment, risk assessment, control activities, information and communication, and monitoring — that together are intended to produce a system in which the agent's actions can be monitored at reasonable cost.
+
+The Sarbanes-Oxley Act of 2002, passed in the immediate aftermath of the Enron, WorldCom, and Tyco scandals, added a mandatory layer to the internal-controls structure for U.S. public companies. Section 404 of SOX requires management to assess and report on the effectiveness of internal control over financial reporting, and requires the firm's external auditor to issue an opinion on the same matter. Compliance with SOX 404 is expensive — small public companies often report annual SOX-related compliance costs in the millions of dollars — and the academic literature has been mixed on whether the benefits in reporting reliability are commensurate with the costs. The Holmstrom framework supplies a tool for thinking about that question: SOX 404 creates an additional signal of management's stewardship, valuable to the extent that the signal is incrementally informative about effort and not redundant with existing signals.
+
+### Accruals inside compensation contracts
+
+The accruals discussed in Chapter 3 are embedded in the accounting metrics that drive the annual cash bonus. @healy1985 documented in a foundational paper that managers respond to the structure of bonus plans by adjusting accruals. When a manager is below the lower threshold of her bonus plan, she takes an income-decreasing accrual to clean the slate (i.e., a "big bath"); when she is above the upper cap, she takes another income-decreasing accrual to bank earnings for future periods; when she is in the incentive-eligible range, she takes income-increasing accruals to maximize the bonus. The Healy result is the classic empirical demonstration that compensation contracts and accruals are mutually endogenous — the contract creates incentives that the agent responds to with the accounting tools at her disposal. We will return to the earnings-management literature in detail in Chapter 10.
+
+The Healy pattern is a cost of using accounting metrics in compensation, but it does not by itself imply that accounting metrics should be excluded. The informativeness principle compares signals jointly, and accounting metrics retain incremental content about effort even after accounting for managerial discretion. The institutional response has been to constrain the discretion (e.g., through audited statements, internal controls, clawback provisions, and audit-committee oversight) rather than to abandon the metric.
+
+## 4.5 Mechanics: the closing process and the trial balance
+
+The mechanics of the income statement and the balance sheet have, by this chapter, been introduced in pieces. Chapter 2 introduced the accounting equation and the structure of the balance sheet. Chapter 3 introduced the income statement and the accrual basis. This chapter introduces the operational machinery that takes a period's transactions and adjusting entries and produces the audited financial statements that will eventually enter the CEO's compensation contract. The machinery is the *closing process*.
+
+The closing process has three steps. First, *adjusting entries* are posted at the end of the period to bring revenue and expense accounts into line with the accrual basis. The adjustments include (i) revenues earned but not yet collected, (ii) expenses incurred but not yet paid, (iii) revenues collected but not yet earned, and (iv) expenses paid but not yet incurred. Each adjustment is an estimate the manager makes about the timing of economic activity; in aggregate, the adjustments determine the period's accruals.
+
+Second, the *trial balance* is computed to verify that the total of all debits equals the total of all credits across all accounts. The trial balance is the verification step in the accounting system: if the equation $\text{Assets} = \text{Liabilities} + \text{Equity}$ does not hold, something is wrong. The trial balance is an internal check that the bookkeeping infrastructure is self-consistent. It does not verify that any individual entry is correct — only that the entries are mutually consistent. A firm whose trial balance does not tie has, at minimum, a bookkeeping error; it may have something worse.
+
+Third, the *closing entries* move the period's revenues and expenses from the income-statement accounts into the equity section of the balance sheet via the retained-earnings account. After the closing entries are posted, the income-statement accounts have a zero balance and are ready to begin accumulating the next period's activity. The balance-sheet accounts carry forward into the next period at their post-closing balances.
+
+The closing process is straightforward as a piece of mechanics, but it is worth pausing to note what it accomplishes from the perspective of this chapter. The process produces a structured, internally consistent set of financial statements that has been subjected to the verification discipline of the double-entry system. The output of the process — the period-end financial statements — is what the auditor reviews, what the SEC files contain, what the compensation committee uses to determine bonus payouts, what shareholders receive, and what enters the empirical literature as the firm's reported earnings, assets, liabilities, and equity for the period. The closing process is, in an important sense, the bridge between the firm's underlying economic activity and the public artifact that the rest of the institutional system acts upon.
+
+::: {.callout-warning}
+## Common pitfall
+
+It is tempting on first encounter to treat the closing process as a clerical step — once the transactions have been recorded, the statements simply emerge. The framework of this chapter suggests a different view. The closing process is the moment at which the manager's discretion, exercised through the choice of accruals and adjusting entries, gets baked into the period's reported numbers. The verification structure of the trial balance ensures that the resulting numbers are arithmetically consistent. It does not ensure that the underlying estimates are unbiased. That is the auditor's job.
+:::
+
+## 4.6 Empirical evidence
+
+The empirical literature on the moral hazard problem in executive compensation is large; @frydmanjenter2010 provides a useful survey that documents the rise of equity-based pay since the 1980s and the shift toward performance-vesting structures. Three findings are particularly relevant to the framework of this chapter.
+
+The first concerns the magnitude of *pay-for-performance sensitivity* in U.S. CEO compensation contracts. @halliebman1998 documented that, accounting for the value of stock and option holdings, a CEO of a typical U.S. public firm in the 1990s gained or lost approximately twenty-five dollars in personal wealth for each thousand-dollar change in the firm's market value. The figure has grown substantially since: with the rise of equity-based compensation in the 2000s and 2010s, modern estimates of the wealth-performance sensitivity for the median S&P 500 CEO are an order of magnitude larger than the 1990s benchmark. The growth in sensitivity is consistent with the framework of this chapter — the contract is increasingly designed to load risk onto the CEO in exchange for effort-incentivization.
+
+The second finding concerns the *rent-extraction critique* of the standard model. @bebchukfried2003 argued, drawing on a substantial empirical literature, that the magnitude and structure of CEO compensation in U.S. firms cannot be explained by the standard agency model alone. They proposed a complementary view in which CEOs exercise managerial power over the compensation-setting process and extract rents that exceed what would be optimal in a clean principal-agent relationship. The Bebchuk-Fried view does not displace the standard model, but it qualifies it: the contracts we observe reflect a mixture of efficient incentive design and managerial influence, and the relative weight of the two channels remains a contested empirical question.
+
+The third finding concerns the *role of accounting numbers in compensation contracts*. Accounting-based performance metrics — earnings, ROE, EBITDA, growth rates — are nearly universal in CEO bonus plans, and the weight on accounting metrics relative to stock-price metrics varies systematically with firm characteristics. Smaller firms, firms in less-volatile industries, and firms with more-complex operations tend to put more weight on accounting metrics. The pattern is consistent with the informativeness principle: accounting metrics are most useful as performance signals when stock-price signals are noisy or slow to incorporate operational improvements [@ittnerlarcker2003, who document the role of non-financial measures in compensation and argue that firms select performance measures based on their informativeness about the actions the firm wishes to incentivize; @antleeppen1985, who study the role of accounting numbers in capital-budgeting and compensation settings].
+
+A separate empirical literature documents the prevalence of explicit RPE in performance share plans, particularly for TSR-based awards. Although RPE is the analytically clean implementation of the informativeness principle, the share of contracts that use it is smaller than the framework would naively predict. One reason, suggested in @holmstrommilgrom1991, is that adding metrics to a contract creates multitask distortions (i.e., the CEO may shift effort toward the measured dimension at the expense of unmeasured ones). The fact that the empirical adoption of RPE has nonetheless grown over the past two decades is consistent with the principle, even if the speed of adoption is slower than the framework would predict.
+
+Finally, managers respond to the structure of accounting-based incentives by adjusting accrual estimates, as @healy1985 documented and as discussed in Section 4.4. The empirical regularity is strong enough that it has motivated a substantial literature on earnings management, which we will examine in Chapter 10.
+
+## 4.7 Key takeaways
+
+::: {.callout-important}
+## Key takeaways
+
+- **Moral hazard creates the demand for performance-contingent pay.** When effort is unobservable, a flat salary cannot induce effort, so the contract loads risk onto the agent in exchange for incentivization, balancing risk-bearing cost against effort-incentivization benefit.
+- **The LEN model identifies three forces that reduce the optimal pay-for-performance sensitivity.** Higher agent risk-aversion, higher marginal cost of effort, and higher noise in output each push the optimal slope $\beta^*$ below one.
+- **The Holmstrom informativeness principle is a test of incremental informativeness, not precision.** A signal enters the optimal contract if and only if it contains information about the agent's action that is not already conveyed by signals already in the contract.
+- **Earnings and stock returns are jointly informative about CEO effort.** Neither is redundant given the other, which is why CEO contracts include both an accounting-based annual bonus and stock-based performance shares and restricted stock.
+- **Relative performance evaluation operationalizes the informativeness principle.** Subtracting a peer-group benchmark filters out industry-wide shocks that are not attributable to the focal CEO's effort, which is why TSR in performance share plans is typically evaluated relative to a peer group rather than in absolute terms.
+- **Audited financial statements and internal controls support the contract.** The audit, internal controls, and the closing process supply the verification infrastructure that makes accounting numbers usable as contractible signals in the first place.
+:::
+
+## 4.8 Discussion questions
+
+1. The chapter argues that CEO pay-for-performance sensitivity exists because shareholders cannot observe CEO effort. Yet many CEOs of large U.S. firms are also subject to substantial monitoring — boards meet regularly, audit committees oversee internal controls, and shareholders can vote on say-on-pay and other governance matters. Does the existence of these monitoring mechanisms reduce the optimal pay-for-performance sensitivity, increase it, or have an ambiguous effect? Defend your answer.
+2. The Holmstrom informativeness principle says that any signal informative about the agent's effort should enter the contract. The principle is silent on the *weight* the signal should receive. Suppose two signals are both informative about effort; one is more precise than the other. Should the more-precise signal receive a larger weight? Why or why not?
+3. SOX 404 imposes substantial compliance costs on U.S. public firms. Some critics have argued that the cost is excessive and that firms would be better off if SOX 404 were repealed. Using the framework of this chapter, identify the channels through which SOX 404 produces benefits and the channels through which it produces costs. Under what conditions would the benefits dominate the costs?
+4. The Bebchuk-Fried managerial-power view holds that CEO compensation reflects, in part, the CEO's ability to influence the compensation-setting process. The standard agency view holds that CEO compensation is the efficient outcome of an incentive-design problem. Suppose you were to test whether the managerial-power view contributes meaningfully to the explanation of observed pay levels. What would you measure, and what would you predict?
+5. The chapter described the closing process as the moment at which the manager's discretion gets baked into the period's reported numbers. Is this characterization fair? Could one argue that the manager's discretion is actually exercised earlier — at the point at which transactions are originally recorded — and that the closing process is purely mechanical? Take a position and defend it.
+
+## 4.9 Problems
+
+1. *(Numerical, LEN model.)* Consider the LEN model with $k = 1$, $r = 1$, and $\sigma^2 = 1$. (a) Compute the optimal pay-for-performance sensitivity $\beta^*$. (b) Compute the agent's resulting effort, expected output, expected wage (given $a$ chosen to satisfy the participation constraint at $U_0 = 0$), and certainty-equivalent payoff. (c) Now suppose the variance of output rises to $\sigma^2 = 4$. Recompute $\beta^*$, effort, expected output, and the agent's certainty equivalent. Comment on the direction of the changes and reconcile them with the comparative statics in Section 4.2.
+
+2. *(Numerical, informativeness principle, two signals.)* A CEO's effort affects two observable signals: accounting earnings $y_1 = e + \varepsilon_1$ and stock return $y_2 = e + \varepsilon_2$, with $\varepsilon_1 \sim N(0, 4)$, $\varepsilon_2 \sim N(0, 1)$, and $\text{Cov}(\varepsilon_1, \varepsilon_2) = 0$. The principal uses a linear contract of the form $w = a + \beta_1 y_1 + \beta_2 y_2$. (a) Using the precision-weighting result from Section 4.3, compute the ratio $\beta_1^* / \beta_2^*$. (b) Suppose the principal proposes to drop earnings from the contract on the grounds that the stock return is the more precise signal. Argue, using the informativeness principle, whether dropping earnings improves or worsens the contract. (c) Now suppose $\text{Cov}(\varepsilon_1, \varepsilon_2) = 1.8$ (i.e., the two signals share noise from a common source). Argue qualitatively how the optimal weights change relative to part (a), and explain the intuition.
+
+3. *(Numerical, relative performance evaluation.)* Continue the two-signal setup of Problem 2. Suppose firm output is exposed to an industry shock $\delta \sim N(0, 9)$ that also enters the firm's stock return, so that $y_2 = e + \delta + \tilde{\varepsilon}_2$ with $\tilde{\varepsilon}_2 \sim N(0, 1)$. The principal observes a peer-firm benchmark $\tilde{y} = \delta + \tilde{\varepsilon}$ with $\tilde{\varepsilon} \sim N(0, 1)$, independent of all other noise terms. (a) Argue why the optimal contract subtracts a multiple of $\tilde{y}$ from $y_2$ before paying the CEO. (b) Sketch how the optimal weight on residual (filtered) stock performance compares to the optimal weight that would apply without the peer benchmark. Be specific about the direction. (c) Interpret the result in the language of performance share plans at large U.S. firms.
+
+4. *(Conceptual, designing a CEO contract.)* You are advising the compensation committee of a mid-cap U.S. manufacturing firm. The firm operates in a single industry with three close peers, has stable operating margins, and is in the middle of a multi-year capital investment program whose payoff will not be reflected in earnings or stock price for at least two years. Design a compensation contract for the new CEO, specifying (i) the mix of base salary, annual cash bonus, performance shares, and restricted stock as percentages of total compensation; (ii) the performance metric(s) for the annual cash bonus and the rationale for choosing them; (iii) the performance metric(s) for the performance shares and whether they should be evaluated on an absolute or relative basis; and (iv) one feature of the contract designed specifically to address the multi-year capital investment program. Justify each choice using the framework of this chapter, approximately 400 words total.
+
+5. *(Conceptual, whether a metric belongs in the bonus formula.)* A board is considering whether to add *customer satisfaction* (measured via a Net Promoter Score survey administered quarterly by an independent vendor) to the CEO's annual cash bonus formula, currently based only on EPS. The CFO argues that customer satisfaction is a leading indicator of future earnings and therefore belongs in the contract; the CEO argues that it adds noise and exposes her to factors outside her control. Apply the Holmstrom informativeness principle to evaluate the proposal. What information would you want to see before recommending for or against? In approximately 300 words, identify (a) the empirical conditions under which the metric should be added, (b) the conditions under which it should not, and (c) one diagnostic the board could compute from existing data to discriminate between the two cases.
+
+6. *(Conceptual.)* Read Section II of @jensenmeckling1976 (the formal development of agency costs). In approximately 250 words, summarize the three components of agency cost they identify and give one concrete example of each that connects to the institutional features discussed in Section 4.4 of this chapter.
+
+7. *(Numerical, closing process.)* Continue the Acme Corp. example from the end of Chapter 3. Acme's pre-closing trial balance at February 28 includes the following accounts (some balances are to be supplied by the student from the worked transactions of Section 3.6 plus February's additional activity): cash, accounts receivable, prepaid insurance, truck, accumulated depreciation, accounts payable, wages payable, note payable, common stock, retained earnings, revenue, wage expense, insurance expense, and depreciation expense. (a) Construct the trial balance, ensuring debits and credits are equal. (b) Post the closing entries to move revenue and expenses into retained earnings. (c) Construct the post-closing balance sheet and verify that the accounting equation holds.
+
+8. *(Short writing exercise.)* Locate the most recent proxy statement (DEF 14A) of a U.S. public company of your choice. In the Compensation Discussion and Analysis (CD&A) section, identify (i) the performance metric(s) used in the annual cash bonus, (ii) the performance metric(s) used in the long-term incentive plan and whether each is evaluated on an absolute or relative basis, and (iii) the peer group used for any RPE-based metric. In approximately 400 words, evaluate the contract through the lens of the Holmstrom informativeness principle. Identify one feature of the contract that is consistent with the principle and one feature that is harder to reconcile with it. Be specific about what private information the contract is attempting to elicit and which signal is being used to elicit it.
+
+## 4.10 Lab
+
+The in-class activity for this week is a **principal-agent simulation**. You will be assigned a role — either principal or agent — and will participate in a structured contracting exercise. Principals will design compensation contracts; agents will choose effort levels in response. The exercise will play out over several rounds, with the resulting outcomes (effort, output, wages, profits) tabulated and discussed in the second class meeting of the week.
+
+**Quiz 1 (covering Chapters 1–3 of the Companion) is administered at the start of the second class meeting this week.** Bring a writing implement, your laptop or a calculator, and an analog watch if you have one — phones are not permitted during the quiz.
+
+## 4.11 Further reading
+
+The four readings below are the assigned readings for Week 4. You should read all of them.
+
+- @holmstrom1979, "Moral Hazard and Observability." A short paper. Read for the central result (i.e., the informativeness principle) and the framework; the formal proofs can be skimmed on a first pass.
+- @holmstrommilgrom1991, "Multitask Principal-Agent Analyses." Read for the extension of the informativeness principle to settings where the agent allocates effort across multiple tasks, and for the implications regarding when to add performance measures to a contract.
+- @jensenmeckling1976, Sections II and III on agency costs. (You will have read the introduction and Section II for Chapter 1; this week, focus on Section III's discussion of the implications for outside equity and outside debt.)
+- A short selection from @demski2008 on stewardship and the role of accounting in performance measurement (chapter assignment to be specified on Canvas).
+- *Optional, for those who want more:* @halliebman1998 on the magnitude of CEO pay-for-performance sensitivity in U.S. public firms. The paper is accessible at the level of an honors freshman; the formal modeling is light.
+
+::: {.callout-tip}
+## Connecting Chapter 4 to the rest of the course
+
+Chapter 4 closes Arc I's main theoretical content. We now have a framework for adverse selection (Chapter 2) and moral hazard (Chapter 4), the two foundational information-economics problems that accounting was developed to address; we have a framework for voluntary disclosure (Chapter 3) and for the institutional response — internal controls, audit, mandatory reporting — that has emerged around them. Chapter 5 closes Arc I by stepping up to the institutional level itself, asking why we have a FASB and what the conceptual framework is for. Arc II then turns to how capital markets actually use the accounting numbers we have spent Arc I learning to construct.
+:::

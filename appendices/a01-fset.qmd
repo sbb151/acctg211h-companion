@@ -1,0 +1,21 @@
+# A1. The Financial Statement Effects Template (FSET) {#sec-fset .appendix}
+
+> *Reference appendix — to be drafted Summer 2026.*
+
+The financial statement effects template (FSET) is a worksheet that records the impact of each transaction on the three financial statements simultaneously. It is more transparent than journal entries for the introductory student and is the primary tool used in early chapters of the Companion (especially Chapters 3, 4, and 7).
+
+## Layout
+
+The FSET has columns for each affected account on the balance sheet, the income statement, and the statement of cash flows.
+
+## Worked examples
+
+*To be drafted: a representative set of transactions with FSET entries and the corresponding journal entries.*
+
+## How the FSET relates to journal entries
+
+*To be drafted: the FSET-to-journal-entry mapping for the entry types students will encounter.*
+
+## Reference
+
+Hanlon, Magee, Pfeiffer, Kulp, and Dragoo (2024), Chapter 2, develops the FSET in detail.

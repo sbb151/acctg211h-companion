@@ -1,0 +1,58 @@
+# Welcome {.unnumbered}
+
+This is the *ACCTG 211H Companion* — the online textbook for *Honors Financial and Managerial Accounting for Decision Making* at the Smeal College of Business.
+
+The Companion is organized around a single question: *Why does accounting exist?* Each chapter answers a smaller piece of that question, then introduces the mechanics needed to act on the answer. The goal of the course, and of this book, is to help you graduate from ACCTG 211H able to articulate, for any accounting choice, both *what* the rule is and *why* a sensible person would choose that rule over plausible alternatives.
+
+## How to use this book
+
+The chapters are designed to be read in order. Each builds on the last, and the spiral structure of the course means that ideas introduced early are revisited later at greater depth. If you read Chapter 7 before Chapter 3, the discussion of the accrual anomaly will not land in quite the same way.
+
+That said, the chapters are also designed to be revisited. After we have studied Holmstrom's stewardship model in Week 4, you may find it useful to reread Chapter 1's discussion of the separation of ownership and control. After we have computed the Sloan accruals in Week 7, the Chapter 3 discussion of accruals as a signal will read very differently. Treat the Companion the way you would treat a good road atlas: you read it forward to plan, and you flip back to it constantly to figure out where you are.
+
+## What you will learn
+
+By the end of the course, you should be able to:
+
+1. Explain the economic problems that gave rise to financial and managerial accounting, using the language of information asymmetry, signaling, moral hazard, and decentralization.
+2. Prepare and analyze a basic set of GAAP financial statements for representative business transactions.
+3. Read a canonical academic paper in financial or managerial accounting and articulate (a) the question it asks, (b) the empirical or theoretical method it uses, (c) what it finds, and (d) what its findings imply for the broader question of how accounting is used.
+4. Conduct a small empirical analysis using Wharton Research Data Services (WRDS), including extracting data, computing standard accounting and capital-market measures, and summarizing findings in a written report.
+5. Argue, in structured oral debate, both sides of contested conceptual questions in financial reporting.
+
+## A note on the spiral
+
+You will encounter accruals three times this semester: first in Chapter 3, where they appear as a signaling device; second in Chapter 6, where they appear as a value-relevant input to capital markets; and third in Chapter 7, where they appear as a noisy and sometimes mispriced metric. Each pass introduces what came before, deepens it, and adds a new layer.
+
+This is not redundancy. It is the structure of the course. The reason you study accruals three times is that there are three different questions one can ask about them, and a serious treatment of accounting requires you to be able to answer all three.
+
+## Conventions
+
+In this book:
+
+- **Bold** indicates a defined term that you should be able to define yourself after reading.
+- *Italic* indicates emphasis or, occasionally, the title of a referenced work.
+- `Monospaced` indicates code or a variable name in a dataset.
+- A box like the one below indicates an important callout:
+
+::: {.callout-note}
+## Why this matters
+
+Callouts pull out a particular point or implication of the surrounding text. Read them carefully.
+:::
+
+::: {.callout-warning}
+## Common pitfall
+
+Pitfalls flag mistakes that students reliably make on the relevant material. Read these especially carefully.
+:::
+
+::: {.callout-tip}
+## For the empirical labs
+
+Lab tips are practical guidance for the WRDS work — Python/`pandas` syntax, data caveats, things to check.
+:::
+
+## Errata and feedback
+
+This is the first edition of the Companion. If you spot an error, an unclear passage, or a missing reference, please email me at sbb151@psu.edu, or — if you are comfortable with GitHub — submit an issue or pull request to the [companion repository](https://github.com/sambonsall/acctg211h-companion). Each year's edition incorporates the previous year's corrections.

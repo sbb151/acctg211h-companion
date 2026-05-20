@@ -1,0 +1,250 @@
+---
+title: "Efficient Markets and the Information Content of Earnings"
+description: "Do earnings announcements convey information that capital markets actually use? The Fama efficient-markets taxonomy, the Ball-Brown (1968) event study, and the post-earnings-announcement drift."
+---
+
+# Efficient Markets and the Information Content of Earnings {#sec-emh}
+
+## 6.1 Opening question
+
+On any given trading day, roughly ten to fifteen firms in the S&P 500 release their quarterly earnings. The releases are scheduled in advance and are typically issued either before the market opens or after the close. The trading days surrounding these releases are, almost without exception, the days on which the affected stock experiences its largest absolute price moves and its highest volume of the quarter. The pattern is robust across firms, across industries, and across time.
+
+Consider three recent examples. NVIDIA's August 23, 2023 release reported quarterly revenue of approximately $13.5 billion against an analyst consensus near $11.2 billion; the stock moved roughly ten percent on the next trading day, on volume more than four times the firm's recent average. Apple's January 2019 pre-announcement, warning that iPhone revenue in greater China had fallen short of expectations, produced a ten percent single-day decline. Tesla's April 2020 release, which reported a third consecutive quarterly profit during a period in which most investors expected a loss, produced a price reaction in the opposite direction of comparable magnitude. Smaller-magnitude versions of the same pattern characterize essentially every U.S. public firm that releases earnings on a regular schedule.
+
+The pattern raises an empirical question that the literature in financial accounting has spent more than half a century investigating: do earnings announcements convey information that capital markets actually use? On a first pass, the question may seem rhetorical — of course they do; one can read the price reaction in the trading data. The deeper question is whether the reaction reflects new information that the announcement itself revealed, or whether it reflects something else (e.g., coordinated trading by short-term participants, or an emotional reaction to a focal-point event). The distinction matters because it bears on whether financial accounting actually performs the function that Arc I argued it should perform — the function of reducing the information asymmetry between insiders and outsiders that produces lemons discounts, raises the cost of capital, and depresses the gains from trade in equity markets.
+
+This chapter develops the framework that the empirical accounting literature uses to address the question. We begin with the efficient markets taxonomy of @fama1970 (the canonical organizing structure for empirical work on prices and information), turn to the foundational event study of @ball1968 (the first systematic demonstration that accounting earnings have value relevance), introduce the mechanics of abnormal returns and cumulative abnormal returns (i.e., the unit of measurement in essentially every empirical paper in this arc), and close with the longest-running challenge to semi-strong efficiency in the accounting literature — the post-earnings-announcement drift documented by @bernardthomas1989 and @bernardthomas1990. The chapter points forward to the WRDS lab in which you will replicate the Ball-Brown analysis on a recent sample.
+
+The chapter opens Arc II. Where Arc I asked *why* accounting exists and developed the information-economics framework that motivates the rest of the course, Arc II asks the empirical question of *how* capital markets actually use the numbers the institutional structure produces. The two arcs interact: the empirical patterns of Arc II both vindicate parts of the Arc I framework (markets do react to earnings; mandatory disclosure does reduce information asymmetry) and complicate it (the post-earnings-announcement drift suggests that markets do not always use accounting information as fully as the framework would predict).
+
+## 6.2 The Fama taxonomy of market efficiency
+
+@fama1970 organized the academic literature on capital-market efficiency around a three-form taxonomy that has structured the field's terminology ever since. The taxonomy is built around a single question: against which information set are we evaluating market prices?
+
+A market is *efficient with respect to information set $\Omega$* if prices fully reflect the contents of $\Omega$. The taxonomy distinguishes three nested choices of $\Omega$.
+
+*Weak-form efficiency* takes $\Omega$ to be the history of past prices and returns. The weak form predicts that no trading strategy based on past prices alone — momentum, reversal, technical patterns — can produce systematic abnormal returns. The empirical evidence for weak-form efficiency is mixed but broadly supportive: some momentum and reversal strategies have produced abnormal returns in some samples, but the magnitudes have generally been small and have attenuated over time as the strategies became known. A textbook prediction of weak-form efficiency is that one cannot beat a buy-and-hold strategy by reading a chart of past prices.
+
+*Semi-strong-form efficiency* takes $\Omega$ to be all publicly available information — past prices plus everything in the public record (i.e., financial statements, regulatory filings, news releases, analyst reports, management forecasts, conference call transcripts). The semi-strong form predicts that no trading strategy conditioned on public information can produce systematic abnormal returns. The semi-strong form is the version of efficiency most directly relevant to the accounting literature: if accounting information is publicly released, the announcement itself should produce an immediate price adjustment, and no further strategy conditioned on the released number should be profitable. The post-earnings-announcement drift, developed in Section 6.6, is the longest-running apparent failure of semi-strong efficiency in the empirical literature.
+
+*Strong-form efficiency* takes $\Omega$ to be all information, including information held privately by insiders. The strong form predicts that even insider trades should not produce systematic abnormal returns. The empirical evidence for strong-form efficiency is uniformly negative: insider purchases predict positive subsequent returns and insider sales predict negative subsequent returns, in patterns large enough that the SEC devotes substantial enforcement resources to insider-trading prosecutions. The strong form is, in this sense, more an upper-bound benchmark than a serious empirical hypothesis.
+
+The three forms are nested: strong-form efficiency implies semi-strong, which implies weak. A useful way to internalize the taxonomy is to ask, for any candidate trading strategy, which form of efficiency it would have to violate to be profitable. A strategy based on a chart pattern violates the weak form; a strategy based on reading a 10-K violates the semi-strong form; a strategy based on a tip from the CFO's brother-in-law violates the strong form (and may also violate Rule 10b-5).
+
+The taxonomy is useful, but it conceals a methodological subtlety: any empirical test of efficiency is necessarily a *joint test* of efficiency and the asset pricing model used to define abnormal returns. If a researcher finds that a strategy produces abnormal returns, the finding can mean (i) that the market is inefficient with respect to the relevant information, or (ii) that the asset pricing model used to define "abnormal" was misspecified. The joint hypothesis problem qualifies the strength of any specific efficiency claim, and we return to it in Section 6.6 when interpreting the post-earnings-announcement drift.
+
+::: {.callout-note}
+## Why this matters
+
+The Fama taxonomy supplies the language in which the accounting literature's empirical questions get asked. When @ball1968 ask whether earnings announcements convey information that prices reflect, they are asking a semi-strong-form question. When @bernardthomas1989 document that prices continue to drift in the direction of the earnings surprise for weeks after the announcement, they are documenting an apparent *failure* of semi-strong efficiency — though the joint-hypothesis problem means the failure could also be interpreted as a deficiency of the asset pricing model used to compute abnormal returns.
+:::
+
+## 6.3 Ball and Brown (1968): the foundational event study
+
+The empirical accounting literature begins, by convention, with @ball1968. The paper asked whether realized earnings — and specifically, whether the realized earnings exceed or fall short of the market's expectation — predict the direction of the announcement-period price reaction. The question seems straightforward in retrospect, but in 1968 it was not.
+
+The conventional view among practitioners and academics at the time was that accounting earnings were not particularly useful to investors. The reasoning was twofold. First, earnings are issued with substantial delay relative to the events they summarize — an annual earnings release in 1965 reflected economic activity from twelve months ending in the prior calendar year. Second, earnings are produced under accounting conventions (i.e., historical cost, accrual matching, conservatism) that critics argued were too far removed from the underlying economic flows to be informative. If both critiques were correct, one would expect realized earnings to carry little predictive content for the announcement-period price reaction: any economically relevant information would have already reached prices through other, more timely channels.
+
+Ball and Brown set up an empirical test that could speak to the question.
+
+**Sample.** They studied 261 firms drawn from the NYSE over the period 1957–1965 — firms with continuous data on Compustat (then a recent product) and on the CRSP daily return file (also then a recent product). The sample size reflected the data infrastructure of the time; today a comparable study would use tens of thousands of firm-years.
+
+**Defining the news.** For each firm-year, Ball and Brown classified realized earnings as good news or bad news based on whether the realization exceeded or fell short of an expectation. They constructed the expectation from a cross-sectional regression of firm-level earnings changes on the market's earnings change — essentially, a stylized model in which a firm's earnings should track the market's earnings, and the deviation from that prediction is the "surprise." Contemporary studies would use analyst forecasts as the expectation benchmark (the Institutional Brokers' Estimate System, or IBES, dataset that you will encounter in later labs), but the analyst-forecast infrastructure did not yet exist in 1968.
+
+**Measuring the price reaction.** For each firm-year, Ball and Brown computed abnormal returns over a window from twelve months before the announcement through six months after. Abnormal returns were measured against a market-model benchmark (i.e., the residual from a regression of firm returns on market returns), making the empirical metric a precursor of the cumulative abnormal return (CAR) developed mechanically in Section 6.4. They then averaged abnormal returns separately within the good-news and bad-news groups and plotted the two series.
+
+**Result.** The pattern Ball and Brown documented is the canonical figure of the empirical accounting literature. Good-news firm-years showed an upward drift in cumulative abnormal returns over the twelve months leading up to the release, an upward jump in the announcement window itself, and a smaller continued drift in the months after the announcement. Bad-news firm-years showed the mirror-image pattern downward. The two series — good news and bad news — diverged steadily through the entire window, with the largest single-period jump occurring at the announcement itself.
+
+Two features of the Ball-Brown plot are worth pausing on.
+
+First, *most of the price movement happens before the announcement*. By the time the firm releases its annual earnings, the market has already partially anticipated the news through other channels: interim disclosures, industry data, peer-firm announcements, and analyst commentary. The announcement itself adds a meaningful but not overwhelming increment to the cumulative price adjustment. This pattern is consistent with the semi-strong efficiency view — prices respond to publicly available information in real time, and the earnings release is one of several channels through which the underlying economic information reaches prices.
+
+Second, *the price drift continues after the announcement*. The post-announcement drift in Ball and Brown's original figures is modest but visible, particularly for firms with large earnings surprises. It is the empirical seed of the post-earnings-announcement drift literature developed in Section 6.6.
+
+**Why this paper is a landmark.** Ball and Brown established three things at once. First, accounting earnings have *value relevance* in the sense that the realized number predicts the direction of the announcement-period price reaction — the conventional view that earnings were too delayed and too convention-bound to matter was inconsistent with the data. Second, the *magnitude* of the price reaction is positively associated with the magnitude of the surprise. Third, the market has access to a substantial fraction of the information content of earnings *before* the formal announcement, suggesting that earnings are one — but only one — of the channels through which firm-specific information reaches prices.
+
+The paper is also a methodological landmark. The structure of the design — define the event, define the news, compute abnormal returns relative to a benchmark, aggregate across event-firms, plot or test the resulting series — became the template for the *event study* methodology that has dominated empirical capital-markets research in accounting and finance for half a century. You will replicate the design in the WRDS lab at the end of this chapter.
+
+::: {.callout-note}
+## Beaver (1968), in brief
+
+A companion paper, @beaver1968, asked a related but distinct question: do trading volume and return variance spike at earnings announcements? Beaver studied 143 NYSE firms over 1961–1965 and found that announcement-week volume was approximately twice non-announcement-week volume and that announcement-week return variance was approximately seventy percent higher than non-announcement-week variance. Where Ball and Brown studied the *content* of earnings news by sorting on the sign of the surprise, Beaver studied the *presence* of information by examining trading activity without requiring a sign-prediction. The two papers are often paired as the joint foundation of the empirical accounting literature.
+:::
+
+## 6.4 Mechanics: abnormal returns, the market model, and cumulative abnormal returns
+
+The Ball-Brown design rests on a small number of mechanical building blocks that we develop here. The mechanics carry through essentially every empirical paper you will read in this course and in the broader literature.
+
+**Raw return.** The raw return on firm $i$ from day $t-1$ to day $t$ is
+$$
+R_{i,t} = \frac{P_{i,t} + D_{i,t}}{P_{i,t-1}} - 1,
+$$
+where $P_{i,t}$ is the closing price on day $t$ and $D_{i,t}$ is any cash distribution (dividend) with ex-date $t$. The raw return is what an investor with a position in the stock actually earned over the day. For most days $D_{i,t} = 0$ and the formula collapses to the familiar percentage price change.
+
+**The market model.** To define an *abnormal* return, we need a benchmark — a model of what the return would have been absent the event. The simplest benchmark is the *market model*:
+$$
+R_{i,t} = \alpha_i + \beta_i R_{m,t} + \varepsilon_{i,t},
+$$
+where $R_{m,t}$ is the return on a broad market index (e.g., the CRSP value-weighted index) on day $t$. The parameters $\alpha_i$ and $\beta_i$ are estimated from an *estimation window* that ends some days before the event — a common choice is 250 trading days ending 30 days before the event day. The estimate $\hat\beta_i$ captures the firm's systematic sensitivity to the market; $\hat\alpha_i$ captures the average daily return not attributable to market exposure.
+
+**Abnormal return.** Given $(\hat\alpha_i, \hat\beta_i)$, the abnormal return on day $t$ in the event window is
+$$
+AR_{i,t} = R_{i,t} - (\hat\alpha_i + \hat\beta_i R_{m,t}).
+$$
+The abnormal return is the residual of the realized return from the market-model prediction. It is the part of the day's return that is *not* explained by exposure to the market. A positive $AR$ on the announcement day suggests that the firm's return on that day exceeded what its market exposure alone would predict — consistent with the announcement having released favorable information.
+
+**Cumulative abnormal return.** A single day's abnormal return is noisy. Researchers typically cumulate abnormal returns over an *event window* $[\tau_1, \tau_2]$ centered on the event day $t = 0$:
+$$
+CAR_i[\tau_1, \tau_2] = \sum_{t=\tau_1}^{\tau_2} AR_{i,t}.
+$$
+Common event windows include $[0, 0]$ (announcement day only), $[-1, +1]$ (three-day window centered on the announcement, used to absorb information leakage and after-hours trading), $[-1, +5]$ (announcement plus the following trading week), and $[+2, +60]$ (the post-announcement drift window).
+
+**Numerical illustration.** Suppose we are studying the earnings announcement of a hypothetical firm with $\hat\alpha_i = 0.0001$ (i.e., 0.01% per day) and $\hat\beta_i = 1.20$ estimated over the prior year. The firm announces earnings after the close on day $t = 0$, and we study the three-day window $[-1, +1]$. The observed returns are:
+
+| Event day | $R_{i,t}$ | $R_{m,t}$ | Predicted return $\hat\alpha_i + \hat\beta_i R_{m,t}$ | $AR_{i,t} = R_{i,t} - $ predicted |
+|:---:|:---:|:---:|:---:|:---:|
+| $-1$ | 0.50% | 0.40% | 0.49% | 0.01% |
+| $0$  | 4.20% | 0.10% | 0.13% | 4.07% |
+| $+1$ | 0.80% | 0.20% | 0.25% | 0.55% |
+
+The three-day cumulative abnormal return is
+$$
+CAR_i[-1, +1] = 0.01\% + 4.07\% + 0.55\% = 4.63\%.
+$$
+The interpretation is that the firm's stock outperformed its market-model benchmark by 4.63% over the three-day window centered on the announcement, with the bulk of the outperformance concentrated on day 0 (i.e., the announcement day itself). A researcher studying a large sample would compute the equivalent CAR for each firm-event, sort firms into good-news and bad-news groups using an earnings-surprise variable, and average the CARs within each group. The Ball-Brown plot is, in essence, the time-series of these group-averaged CARs traced over a long event window.
+
+::: {.callout-warning}
+## Common pitfall
+
+It is tempting to read a positive announcement-day raw return as evidence of a positive market reaction without netting out the market-model prediction. This is a mistake. On a day when the broader market rallies sharply, a positive raw return for the announcing firm may reflect ordinary beta exposure rather than firm-specific news. The market model exists to net out the part of the return attributable to market exposure, isolating the firm-specific reaction. Always work with abnormal returns, not raw returns, when measuring the reaction to a firm-specific event.
+:::
+
+**A note on alternative benchmarks.** The market model is the simplest workable benchmark. Contemporary studies often use richer asset pricing models — the Fama-French three- and five-factor models, the Carhart momentum-augmented model — to define abnormal returns. The mechanics are identical: estimate the model over a pre-event window, compute the residual over the event window, cumulate. The choice of benchmark matters for the joint-hypothesis problem (i.e., a strategy may look profitable under a parsimonious benchmark but unprofitable under a richer one), but it does not change the structural logic of the event study. The lab uses the market model for transparency; richer models are an extension.
+
+## 6.5 What counts as "fast enough"? The semi-strong efficiency benchmark
+
+The Ball-Brown design speaks to the semi-strong efficiency question because it traces the price reaction to a piece of publicly released information through the announcement window and beyond. The semi-strong-form prediction is sharp: prices should adjust to the announcement *in the announcement window itself*, and no trading strategy conditioned on the announcement should produce abnormal returns in the post-announcement period.
+
+The prediction implies a useful diagnostic. For any candidate event, ask:
+
+(i) Is there an immediate, statistically significant price reaction in a tight window around the announcement?
+(ii) Is the magnitude of the reaction proportional to the magnitude of the news (e.g., larger for larger earnings surprises)?
+(iii) Does the reaction *complete* in the announcement window, or does the price continue to drift in the same direction afterward?
+
+A pattern that satisfies (i) and (ii) but fails (iii) is consistent with markets *recognizing* the news but failing to *fully impound* it on the announcement day. This is the pattern documented by the post-earnings-announcement drift literature in Section 6.6. A pattern that fails (i) and (ii) — no immediate reaction, no proportional response — would suggest that the news was not informative, or that prices had already fully impounded it through prior channels. A pattern that satisfies all three is consistent with semi-strong-form efficiency.
+
+The diagnostic is useful in classroom analysis and in the lab. Given a candidate event and a measured CAR series, ask which of (i), (ii), and (iii) are satisfied. The answers map directly to the efficiency claim the data will and will not support.
+
+## 6.6 The post-earnings-announcement drift
+
+The post-announcement drift visible in Ball and Brown's original figures became the central focus of an extensive subsequent literature. The crystallizing work was @bernardthomas1989 and @bernardthomas1990, who documented what is now known as the *post-earnings-announcement drift* (PEAD): stock prices continue to drift in the direction of the earnings surprise for weeks and sometimes months after the announcement.
+
+The Bernard-Thomas design refines the Ball-Brown template. They sorted firm-quarter observations into ten deciles based on standardized unexpected earnings (i.e., the earnings surprise scaled by its time-series standard deviation), and they tracked cumulative abnormal returns over windows extending sixty trading days past the announcement. The pattern they documented was striking. The top decile (largest positive surprises) earned positive abnormal returns of several percent over the sixty-day post-announcement window; the bottom decile (largest negative surprises) earned roughly symmetric negative abnormal returns. A trading strategy that took a long position in the top decile and a short position in the bottom decile produced statistically significant abnormal returns at horizons well past the announcement day.
+
+PEAD is, on its face, a violation of semi-strong-form efficiency. Earnings releases are public information; the announcement-day price reaction should fully impound the information; subsequent trading strategies conditioned on the announcement should not produce abnormal returns. The fact that they do — and that the result has persisted for several decades since Bernard and Thomas first documented it — has made PEAD the longest-surviving anomaly in the empirical asset pricing literature.
+
+Three broad interpretations have been advanced in the literature.
+
+The first is that the drift reflects a *behavioral underreaction*: investors do not fully process the implications of current earnings for future earnings, and prices adjust gradually as the implications are recognized. @bernardthomas1990 provided direct evidence consistent with this interpretation by showing that the drift's magnitude is related to the autocorrelation structure of quarterly earnings — the drift is largest where current quarterly earnings most strongly predict next-quarter earnings, suggesting that investors underweight the predictive content of current earnings for the earnings stream.
+
+The second is that the drift reflects a *risk premium* compensating investors for bearing some systematic risk associated with earnings surprises that conventional asset pricing models fail to capture. This interpretation rescues efficiency by attributing the abnormal returns to a misspecified benchmark — the joint-hypothesis problem in action. The empirical literature has tested this view by augmenting the benchmark with additional factors (size, book-to-market, momentum, profitability, investment); the drift has shrunk in some specifications but has not been fully explained away.
+
+The third is that the drift reflects *frictions* — short-sale constraints (i.e., difficulty borrowing shares to short), transaction costs, and capacity constraints on arbitrage capital — that prevent rational arbitrageurs from fully eliminating the mispricing. This interpretation reconciles the persistence of the anomaly with the rationality of marginal investors: arbitrageurs know about PEAD but face costs that limit their ability to trade it away.
+
+The empirical literature has not converged on a single interpretation. The behavioral and risk-based views both have empirical support; the frictions view supplies a complementary explanation for why the drift has persisted despite being widely known. For the framework of this chapter, the deeper point is that PEAD complicates the semi-strong-form efficiency story without overturning it. Markets clearly use earnings information — the announcement-window reaction is large and in the predicted direction — but markets do not appear to use that information fully in real time, and the residual mispricing persists in measurable form for some period after the announcement.
+
+## 6.7 Empirical evidence on earnings and prices
+
+The capital-markets literature on earnings has continued to develop in the decades since Ball-Brown. @kothari2001 provides the most useful single survey for our purposes. Three findings from the broader literature are worth noting.
+
+First, the *earnings-response coefficient* (ERC) — the slope of the regression of announcement-window abnormal returns on the earnings surprise — varies systematically across firms in directions consistent with the framework of Arc I. Firms with more persistent earnings (i.e., firms where current earnings strongly predict future earnings) have larger ERCs than firms with transient earnings. Firms with more growth opportunities have larger ERCs than firms with stable cash flows. Firms with more ambiguous information environments — younger firms, smaller firms, firms with less analyst coverage — show larger announcement-window reactions, consistent with the earnings release being a relatively more important information channel for those firms.
+
+Second, the *post-earnings-announcement drift* has been replicated across many samples and time periods and has remained robust to the introduction of factor models that might explain away the abnormal returns as risk premia. The drift is smaller in magnitude in recent decades than in Bernard and Thomas's original samples, but it has not disappeared. The literature's tentative consensus is that PEAD reflects a combination of slow processing of earnings information by investors and frictions on arbitrage capital that prevent the mispricing from being fully eliminated.
+
+Third, the *information content of earnings* interacts in important ways with concurrent disclosures — management forecasts, conference call commentary, MD&A disclosures, and the like. Earnings announcements accompanied by detailed management commentary produce larger price reactions than otherwise comparable announcements made in silence. The pattern is consistent with the signaling framework of Chapter 3: the choice to accompany earnings with additional disclosure is itself informative, and investors price both the earnings and the surrounding disclosure jointly.
+
+The literature is large and continues to evolve. The lab assignment for this week is the canonical exercise that ties the framework to the data; the further-reading list at the end of the chapter points to other useful entry points.
+
+## 6.8 Key takeaways
+
+::: {.callout-important}
+## Key takeaways
+
+- **Efficiency is defined against an information set.** Weak-form efficiency speaks to past prices, semi-strong-form to all public information, and strong-form to all information including private; the accounting literature lives largely in the semi-strong form.
+- **The joint-hypothesis problem qualifies every efficiency test.** Any apparent anomaly may reflect either market inefficiency or a misspecified asset pricing model — the two cannot be cleanly separated.
+- **Ball and Brown (1968) is the foundational event study.** Sorting firm-years by the sign of the earnings surprise and tracing cumulative abnormal returns through the announcement window established that accounting earnings have value relevance despite their delay and convention-bound construction.
+- **Most of the price movement happens before the announcement.** Earnings releases are one of several channels through which firm-specific information reaches prices, consistent with the semi-strong view that prices respond to public information in real time.
+- **Cumulative abnormal returns are the empirical workhorse.** $CAR_i[\tau_1, \tau_2] = \sum_{t=\tau_1}^{\tau_2}[R_{i,t} - (\hat\alpha_i + \hat\beta_i R_{m,t})]$ — abnormal returns net out market exposure, and cumulation over the event window aggregates the firm-specific reaction.
+- **The post-earnings-announcement drift is a long-standing challenge.** Prices continue to drift in the direction of the earnings surprise for weeks after the announcement, consistent with behavioral underreaction, risk premia, arbitrage frictions, or some combination of the three.
+:::
+
+## 6.9 Discussion questions
+
+1. The chapter argued that the announcement-window price reaction to earnings is large but that most of the price movement happens *before* the announcement. What does the pre-announcement drift tell us about the role of accounting information relative to other information channels available to investors? What does it imply about the marginal informational value of the formal earnings release?
+2. The post-earnings-announcement drift has persisted for several decades despite being widely known. Three explanations were sketched in Section 6.6: behavioral underreaction, an unmeasured risk premium, and arbitrage frictions. Which do you find most plausible, and what evidence would shift your view?
+3. Consider a non-earnings news event — for example, the FDA approval of a new drug, the announcement of a CEO succession, or the resolution of a major lawsuit. Apply the Ball-Brown logic to one such event. How would you define the news? What would the good-news and bad-news series look like under semi-strong efficiency, and what would deviations from that pattern suggest?
+4. The chapter argued that any empirical test of market efficiency is a joint test of efficiency and the asset pricing model. Suppose a researcher reports that a strategy based on short-interest data earns a six-factor alpha of 0.080% per day (t = 4.87) — i.e., approximately 20% per year in annualized terms. What can the researcher claim about market efficiency, and what cannot the researcher claim?
+5. Suppose a firm announces it will no longer provide quarterly earnings guidance. The signaling framework of Chapter 3 and the value-relevance framework of this chapter make different predictions about how investors should interpret the announcement. Reconcile the two frameworks: what does the decision to stop guiding signal, and how should the value-relevance literature inform our interpretation of the subsequent price reaction?
+
+## 6.10 Problems
+
+1. *(Mechanical, CAR computation.)* A firm has an estimated market-model intercept of $\hat\alpha_i = 0.0002$ (i.e., 0.02% per day) and slope of $\hat\beta_i = 0.85$. The firm announces earnings after the close on day $t = 0$. The observed firm and market returns over the event window $[-1, +2]$ are:
+
+   | Event day | $R_{i,t}$ | $R_{m,t}$ |
+   |:---:|:---:|:---:|
+   | $-1$ | $-0.30\%$ | $0.10\%$ |
+   | $0$  | $-2.50\%$ | $0.20\%$ |
+   | $+1$ | $-1.10\%$ | $-0.40\%$ |
+   | $+2$ | $-0.40\%$ | $0.30\%$ |
+
+   Compute (i) the predicted return for each day under the market model, (ii) the daily abnormal return $AR_{i,t}$, (iii) the three-day announcement CAR $CAR_i[-1, +1]$, and (iv) the four-day CAR $CAR_i[-1, +2]$. Interpret the result: was the announcement good news or bad news, and does the price reaction concentrate in the announcement window?
+
+2. *(Mechanical, market model.)* You have downloaded 252 daily observations on firm returns and market returns for an estimation window ending 30 trading days before an event date. The ordinary-least-squares regression of $R_{i,t}$ on $R_{m,t}$ produces estimates $\hat\alpha_i = 0.00015$ and $\hat\beta_i = 1.42$ with $R^2 = 0.38$. (i) On a day when the market index returns $0.50\%$, what is the market-model-predicted return for the firm? (ii) The firm's actual return on that day is $2.10\%$. What is the abnormal return? (iii) Suppose the firm's announcement falls in the estimation window itself (i.e., the researcher forgot to exclude the announcement window when fitting the model). Explain in two or three sentences how this affects the estimated coefficients and the resulting abnormal-return inference.
+
+3. *(Mechanical, fast-enough diagnostic.)* For each of the following three patterns, indicate whether the data are (a) consistent with semi-strong-form efficiency, (b) consistent with a failure of semi-strong-form efficiency, or (c) ambiguous because of the joint-hypothesis problem. Explain.
+
+   (i) After a positive earnings surprise, the firm's CAR rises by 3.5% on the announcement day and remains flat for the subsequent 60 trading days.
+
+   (ii) After a positive earnings surprise, the firm's CAR rises by 2.0% on the announcement day and drifts upward by an additional 2.5% over the subsequent 60 trading days, with the drift statistically significant under a market-model benchmark but not under a Carhart four-factor benchmark.
+
+   (iii) After a positive earnings surprise, the firm's CAR is essentially zero on the announcement day and then drifts upward by 4.0% over the subsequent 30 trading days.
+
+4. *(Mechanical, group-average CAR.)* You compute three-day announcement CARs for 100 firms, sorted into a "good-news" group (50 firms) and a "bad-news" group (50 firms) based on the sign of the earnings surprise. The group means and standard deviations of the CARs are:
+
+   | Group | Mean CAR | Std. dev. | $n$ |
+   |:---:|:---:|:---:|:---:|
+   | Good news | $+2.40\%$ | $3.10\%$ | 50 |
+   | Bad news  | $-1.80\%$ | $2.90\%$ | 50 |
+
+   (i) Compute the difference in mean CARs between the two groups. (ii) Compute the standard error of that difference, assuming independent observations across firms. (iii) Compute the $t$-statistic for the difference. (iv) State the inference: are good-news and bad-news firms' announcement reactions statistically distinguishable?
+
+5. *(Conceptual.)* Consider the following anomalies. For each, state which form of market efficiency it would violate if the empirical result were taken at face value: (i) a strategy based on the average return of the prior 12 months produces a six-factor alpha of 0.050% per day; (ii) a strategy based on net insider buying produces a six-factor alpha of 0.090% per day; (iii) a strategy of buying firms with positive earnings surprises and shorting firms with negative earnings surprises produces a six-factor alpha of 0.060% per day, with the position held for 60 trading days after the announcement. Identify the form of efficiency at stake in each case, and state what would need to be true for the result to be reconciled with that form.
+
+6. *(Conceptual.)* Read @ball1968 (the introduction, the empirical methodology, and the figures). In approximately 300 words, summarize the paper's question, methodology, and central finding. Identify two features of the methodology that you would update for a contemporary replication and explain why. (Hint: consider the data infrastructure available to Ball and Brown in 1968 versus the infrastructure available today.)
+
+7. *(Conceptual.)* Apply the Ball-Brown logic to a non-earnings news event of your choice. Examples include FDA drug-approval announcements, merger announcements, dividend initiations or omissions, and credit-rating changes. In approximately 400 words, (i) define the event and the news, (ii) specify the good-news and bad-news partition, (iii) describe the CAR pattern you would predict under semi-strong efficiency, and (iv) identify one feature of the chosen event that complicates the inference relative to the earnings setting.
+
+8. *(Short writing exercise.)* In approximately 250 words, take a position on the following claim and defend it: *"The post-earnings-announcement drift refutes the efficient-markets hypothesis."* Your essay should engage the three interpretations of PEAD developed in Section 6.6 (behavioral underreaction, risk premium, arbitrage frictions) and the joint-hypothesis problem developed in Section 6.2. Conclude with a one-sentence statement of your position, with the reasoning that supports it.
+
+## 6.11 Lab
+
+The in-class activity for this week is **WRDS Lab 1: Replicating Ball and Brown (1968)**, the first of the six WRDS-based labs in this course. The lab walks you through the empirical chain that the chapter has described abstractly: sampling firms from Compustat over a recent ten-year window, computing earnings surprises using an analyst-forecast benchmark from IBES, linking to CRSP daily returns via the CCM linking table, fitting a firm-level market model over the pre-event estimation window, computing daily abnormal returns and cumulating them into event-window CARs, and producing the canonical good-news / bad-news CAR figure on the recent sample. The lab is the empirical analog of Sections 6.3 and 6.4 of this chapter; the figure you produce in the lab is the modern counterpart of the canonical Ball-Brown plot.
+
+The full lab instructions are in `labs/lab01-ball-brown/lab01_instructions.md`; the Colab notebook template is at `lab01_template.ipynb`. We will work on the lab together during the second class meeting of the week, but you should plan to complete the lab outside of class as well; the deliverable is due at the end of the week.
+
+The GenAI policy for the lab permits the use of AI coding assistants with disclosure. See the lab instructions for the specific disclosure requirements.
+
+## 6.12 Further reading
+
+The four readings below are the assigned readings for Week 6. You should read all of them.
+
+- @fama1970, "Efficient Capital Markets." A classic survey that established the language of the modern capital-markets literature. Read for the three-form taxonomy and the joint-hypothesis discussion; the empirical evidence sections can be skimmed.
+- @ball1968, "An Empirical Evaluation of Accounting Income Numbers." Read for the methodology, the figures, and the discussion of what the figures imply about the role of accounting earnings in capital markets. This is the foundational event study.
+- @beaver1968, "The Information Content of Annual Earnings Announcements." Short and accessible. Read for the volume-and-variance methodology and the result that announcement weeks differ markedly from non-announcement weeks.
+- *Optional, for those who want more:* @kothari2001, "Capital Markets Research in Accounting." A book-length survey. Section 5 (event study methodology) is the most directly relevant for the lab; Sections 2–4 (information content, earnings response coefficients, and post-announcement drift) are useful background for the chapter.
+
+::: {.callout-tip}
+## Where Arc II goes from here
+
+Chapter 6 has established that capital markets use accounting earnings — that announcements convey information, that the realized number predicts the direction of the price reaction, and that the reaction is large but not always fully impounded in the announcement window. Chapter 7 turns from earnings as a single number to the *components* of earnings: the cash flow component versus the accrual component, and the empirical literature on whether the market prices the components correctly. The chapter introduces the most influential empirical paper of the past forty years in financial accounting — @sloan1996, on the accrual anomaly — and the corresponding WRDS Lab 2.
+:::

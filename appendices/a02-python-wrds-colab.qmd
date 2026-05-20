@@ -1,0 +1,123 @@
+# A2. Python + WRDS in Google Colab Quickstart {#sec-python-wrds .appendix}
+
+> *Reference appendix — to be drafted Summer 2026.*
+
+This appendix is a one-stop reference for the empirical labs. It assumes no prior experience with Python, WRDS, or empirical accounting research; it does not, however, repeat what is already in the lab notebooks themselves. Use this appendix as a complement to the lab walk-throughs.
+
+## Why Python in Colab
+
+The labs are designed to run in [Google Colab](https://colab.research.google.com), Google's hosted Jupyter notebook environment. Colab is free, requires nothing more than a Penn State Google account, and runs in your browser — no local install required. It has the standard Python data-science stack (`pandas`, `numpy`, `matplotlib`, `scipy`, `statsmodels`) pre-installed, and the Wharton Research Data Services (WRDS) team maintains an official Python package, `wrds`, that connects directly to the WRDS PostgreSQL backend with a single line of code.
+
+## Setting up your WRDS account
+
+Smeal provides institutional access to WRDS. To register your account:
+
+1. Go to [https://wrds-www.wharton.upenn.edu](https://wrds-www.wharton.upenn.edu).
+2. Click "Register for an Account."
+3. Enter your `psu.edu` email address and create a password.
+4. Wait for account approval (usually within one business day).
+
+Once your account is active, you are ready to connect from Colab.
+
+## Connecting from Colab
+
+A typical lab session opens with three cells:
+
+```python
+# Cell 1: install the WRDS package
+!pip install wrds --quiet
+
+# Cell 2: import everything you need
+import wrds
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy import stats
+
+# Cell 3: connect (you will be prompted for your WRDS username and password)
+db = wrds.Connection()
+```
+
+The `wrds.Connection()` call prompts for your WRDS credentials the first time it runs in a session. After that, the connection persists for the rest of the notebook. (In a long-running notebook, the connection can occasionally drop; if a query fails with a connection-related error, simply re-run the connect cell.)
+
+## Querying WRDS
+
+The simplest way to pull data from WRDS is `db.raw_sql(...)`, which executes an arbitrary SQL query against the WRDS PostgreSQL database and returns a `pandas` DataFrame. For example:
+
+```python
+df = db.raw_sql("""
+    SELECT gvkey, datadate, fyear, at, ib
+    FROM comp.funda
+    WHERE indfmt = 'INDL'
+      AND datafmt = 'STD'
+      AND fyear BETWEEN 2018 AND 2024
+""", date_cols=['datadate'])
+```
+
+The `date_cols` argument tells `pandas` to parse the named columns as dates rather than strings.
+
+## The five WRDS tables you will use most
+
+- `crsp.dsf` — daily stock file (returns, prices, shares outstanding)
+- `crsp.msf` — monthly stock file
+- `crsp.dsi` — daily stock index file (the value-weighted and equal-weighted CRSP market returns; also serves as the trading-day calendar)
+- `comp.funda` — Compustat North America annual fundamentals
+- `comp.fundq` — Compustat North America quarterly fundamentals
+
+For linking CRSP and Compustat, you will additionally need:
+
+- `crsp.ccmxpf_lnkhist` — the CRSP/Compustat Merged linking table
+
+Each is documented in detail at the WRDS site under "Data > [vendor] > [dataset] > Manual."
+
+## Common pitfalls
+
+- **Linking CRSP to Compustat.** Use `crsp.ccmxpf_lnkhist` (the CRSP/Compustat Merged linking table). Filter on `linktype IN ('LU','LC')` and `linkprim IN ('P','C')`.
+- **Adjusting for splits.** CRSP daily returns are already split-adjusted; CRSP daily prices are not.
+- **Trading days vs. calendar days.** Use `crsp.dsi` as your trading-day calendar; do not infer trading days from `crsp.dsf` alone.
+- **Earnings announcement dates.** Compustat's `rdq` (on `comp.fundq`) is the date the firm announced; it is not always the date the market reacted to the announcement, especially for after-hours announcements.
+- **Pickling intermediate DataFrames.** Free Colab sessions disconnect after about 90 minutes of inactivity, and the WRDS pulls in the larger labs take several minutes each. Mount your Google Drive (`drive.mount('/content/drive')`) and save intermediate DataFrames to a folder there using `df.to_pickle(...)`. You can then reload them in subsequent sessions without re-running the queries.
+- **`pip install` is per-session.** Colab does not persist installed packages across sessions. The `!pip install wrds --quiet` cell must run every time you reopen the notebook.
+
+## A minimal pandas reference
+
+The labs use only a small subset of `pandas`. The operations you will need most often are:
+
+| Operation                     | Code                                              |
+|-------------------------------|---------------------------------------------------|
+| Inspect first rows            | `df.head()`                                       |
+| Inspect shape                 | `df.shape`                                        |
+| Filter rows                   | `df.loc[df['col'] > 0]`                           |
+| Sort                          | `df.sort_values(['gvkey','fyear'])`               |
+| Lag a column within group     | `df.groupby('gvkey')['at'].shift(1)`              |
+| Merge two DataFrames          | `df1.merge(df2, on=['gvkey','datadate'], how='inner')` |
+| Drop duplicates               | `df.drop_duplicates(subset=['gvkey','datadate'])` |
+| Compute a within-group statistic | `df.groupby('fyear')['news'].transform('median')` |
+| Cross-tab of counts           | `df['col'].value_counts()`                        |
+| Drop missing values           | `df.dropna(subset=['col'])`                       |
+
+If you have not used `pandas` before, work through the [pandas Getting Started tutorials](https://pandas.pydata.org/docs/getting_started/intro_tutorials/) before Lab 1. One to two hours is enough.
+
+## Plotting
+
+The labs use `matplotlib` for all plots. The basic pattern:
+
+```python
+fig, ax = plt.subplots(figsize=(8, 5))
+ax.plot(x, y, lw=2, label='Series A')
+ax.set_xlabel('...')
+ax.set_ylabel('...')
+ax.legend()
+fig.tight_layout()
+fig.savefig('myplot.pdf')
+plt.show()
+```
+
+For more elegant defaults you may use `seaborn` (`import seaborn as sns; sns.set_theme()`), but it is not required.
+
+## When you get stuck
+
+- Check the WRDS support documentation: [https://wrds-www.wharton.upenn.edu/pages/support/](https://wrds-www.wharton.upenn.edu/pages/support/)
+- Check the WRDS Python package documentation: [https://github.com/wharton/wrds](https://github.com/wharton/wrds)
+- Use the in-class WRDS lab session to ask the TA.
+- GenAI tools are permitted on labs (with disclosure) and can be useful for `pandas` syntax and SQL questions.

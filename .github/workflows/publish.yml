@@ -1,0 +1,55 @@
+name: Render and Publish ACCTG 211H Companion
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.5.57   # pin to a known-good Quarto release
+
+      # If chapters embed Python code chunks, set up Python and pandas
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jupyter pandas numpy matplotlib
+
+      # If chapters embed R code chunks, uncomment the next two steps
+      # - name: Set up R
+      #   uses: r-lib/actions/setup-r@v2
+      # - name: Install R packages
+      #   run: Rscript -e 'install.packages(c("rmarkdown","knitr"))'
+
+      - name: Render Quarto book
+        run: quarto render
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_book
+          publish_branch: gh-pages
+          # Set custom domain by uncommenting the next line and creating a CNAME file
+          # cname: acctg211h.psu.edu
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'

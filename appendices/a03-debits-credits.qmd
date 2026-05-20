@@ -1,0 +1,31 @@
+# A3. Debits and Credits Cheat Sheet {#sec-dr-cr .appendix}
+
+> *Reference appendix — to be drafted Summer 2026.*
+
+## The five account types
+
+| Type      | Normal balance | Debit increases? | Credit increases? |
+|-----------|----------------|------------------|-------------------|
+| Asset     | Debit          | Yes              | No                |
+| Liability | Credit         | No               | Yes               |
+| Equity    | Credit         | No               | Yes               |
+| Revenue   | Credit         | No               | Yes               |
+| Expense   | Debit          | Yes              | No                |
+
+The mnemonic is **DEAL**: **D**ebits increase **E**xpenses and **A**ssets; **L**iabilities, equity, and revenue (the rest) increase with credits.
+
+## The accounting equation behind it
+
+Assets = Liabilities + Equity. Revenue and expenses are sub-accounts of equity (specifically, retained earnings). When revenue increases (credit) or expense increases (debit), retained earnings — and thus equity — moves accordingly.
+
+## Why we use it at all
+
+The double-entry system is a verification device. Every transaction has equal debits and credits; if the books do not balance, something is wrong. This is itself an information-economics solution: a recordkeeping system designed to make tampering and arithmetic error visible. (See Chapter 1 for the broader context.)
+
+## Common transaction types
+
+*To be drafted: a one-page table of canonical transactions and their journal entries.*
+
+## When in doubt
+
+Ask: did the asset/liability/equity *increase* or *decrease* as a result of this transaction? Then apply the table above.

@@ -1,0 +1,271 @@
+---
+title: "Liabilities, Debt Covenants, and Conservatism"
+description: "Why debt contracts condition on accounting numbers. Smith and Warner's covenant typology, Watts on conservatism, bond mechanics, ASC 842 leases, pensions and OPEB, and contingencies."
+---
+
+# Liabilities, Debt Covenants, and Conservatism {#sec-liabilities}
+
+## 9.1 Opening question
+
+Hertz filed for Chapter 11 protection on May 22, 2020. The collapse of the rental-car business during the early months of the COVID-19 pandemic was the proximate trigger, but Hertz had been operating with elevated leverage for years, and the firm's debt agreements — like those of most highly-leveraged firms — contained covenants (i.e., contractual side-conditions) tied to accounting numbers: minimum interest-coverage ratios, maximum debt-to-EBITDA ratios, restrictions on capital expenditures, and restrictions on asset dispositions. The COVID shock pushed Hertz's accounting metrics through the relevant thresholds, the covenant violations cascaded, the lenders accelerated, and Hertz's ability to operate independently was effectively over.
+
+The Hertz case is a predictable consequence of how modern debt contracts work. A creditor lending money to a firm has, in effect, sold an option that the firm will repay; the option is in the money when the firm is healthy and out of the money when the firm is distressed. The creditor faces the same information problem we have studied throughout Arc I: the manager knows more about the firm's prospects than the creditor does, and the manager's incentives in distress diverge sharply from the creditor's. Debt covenants are the contractual response. They give the creditor a measurable trigger, typically tied to accounting numbers, that activates creditor rights — acceleration, renegotiation, or the installation of an outside controller — when the firm's condition deteriorates.
+
+This chapter develops a framework for thinking about how liabilities are measured and how debt contracts use accounting numbers. We proceed in four steps. We begin with the bondholder-shareholder conflict articulated by @smithwarner1979, who classified the covenants found in U.S. bond indentures into four categories that remain the standard reference forty-five years on. We then introduce conservatism — a long-recognized but contested feature of U.S. GAAP — as a contracting solution to that conflict, drawing on @watts2003a, who argues that asymmetric measurement (i.e., requiring more evidence for gains than for losses) is functional in a creditor-protective accounting regime. We work through the mechanics of bond accounting, lease accounting under ASC 842, pension and other post-employment benefit (OPEB) accounting, and contingent liabilities. We close with the empirical literature on covenants, focusing on @robertssufi2009, who document that covenant violations produce sharp reductions in subsequent investment.
+
+The chapter sits squarely in Arc II's empirical investigation but leans toward the internal-information theme of Arc III. The contracting role of accounting — visible most clearly in debt covenants but also present in compensation, regulatory, and supplier-customer contracts — is the long-arc parallel to the capital-markets role developed in Chapters 6 and 7. Both roles motivate accounting standards and accounting practice, and the empirical literature on each role has independently documented that accounting numbers affect real corporate outcomes.
+
+## 9.2 The bondholder-shareholder conflict
+
+Consider a stylized firm financed with a mix of debt and equity. The shareholders own the residual claim on the firm's cash flows and receive whatever is left after the creditors are paid. The creditors own a fixed claim and receive their promised payments if the firm is solvent and a fraction of liquidation value if the firm is not. The two claims have very different sensitivities to the firm's underlying decisions.
+
+Three particular conflicts have been identified. The first is the *asset substitution* problem (i.e., the post-debt incentive to take on riskier projects). After the debt is in place, the shareholders can increase the value of their claim by inducing the firm to substitute high-variance projects for low-variance projects: the upside accrues to them, while the downside falls disproportionately on the creditors. The second is the *underinvestment* problem (i.e., the debt-overhang incentive to forgo positive-NPV investment). The shareholders may decline to fund positive-NPV projects if much of the payoff would accrue to existing creditors rather than to the new equity invested. The third is the *claim dilution* problem (i.e., the post-debt incentive to issue further senior debt). The shareholders may increase the firm's leverage by issuing additional debt, diluting the claim of existing creditors.
+
+Each of the three conflicts is a moral-hazard problem of the kind introduced in Chapter 4. The agent (i.e., the manager, acting on behalf of the shareholders) has private information about the firm's investment opportunities and capital-structure choices, and the principal (i.e., the creditor) cannot directly observe the agent's actions. Each conflict produces an ex-ante deadweight loss. Anticipating the shareholders' incentives, creditors demand a higher coupon to compensate for the expected loss; anticipating the higher coupon, shareholders may forgo value-creating debt issuances.
+
+The contractual response is to condition the debt on observable measures that proxy for the underlying behaviors. Asset substitution can be partially controlled by covenants restricting investment in risky assets and by negative-pledge covenants (i.e., covenants that prevent the firm from collateralizing other debt with the firm's existing assets). Underinvestment can be partially controlled by covenants permitting accelerated repayment if the firm's measured capacity to invest is impaired. Claim dilution can be partially controlled by covenants restricting additional debt issuance, dividend payments, and stock repurchases.
+
+Accounting numbers enter the contracting framework because they are the most readily available and most credibly verifiable summary of the firm's economic position. A creditor cannot easily observe the firm's investment opportunities, the riskiness of its individual projects, or the manager's private information. The creditor can observe — at low cost, with reasonable verification, and at standardized intervals — the firm's reported earnings, leverage, liquidity, and operating cash flow. The covenant structure is the institutional response to the limited verifiability of the underlying economic conditions: the contract conditions on what is observable and verifiable, and the verifiable proxies are accounting numbers.
+
+::: {.callout-note}
+## Why this matters for accounting
+
+The bondholder-shareholder framework gives accounting a role distinct from its capital-markets role. Capital markets use accounting numbers to value the firm's residual claim (Arc II's main theme so far). Debt contracts use accounting numbers to determine when contractual rights have been triggered. The two uses make different demands on the accounting numbers. Capital markets value information that is forward-looking and economically meaningful; debt contracts value information that is conservative, verifiable, and timely. The two demands sometimes pull in the same direction and sometimes in opposite directions, and FASB standard-setting decisions navigate the tension on a standard-by-standard basis.
+:::
+
+## 9.3 The Smith and Warner typology
+
+@smithwarner1979 classified the covenants found in U.S. bond indentures into four broad categories, organized by the type of behavior the covenant restricts. The classification has proven durable.
+
+*Production-investment covenants* restrict the firm's investment activity. Examples include (i) limits on capital expenditures, (ii) restrictions on asset sales, (iii) prohibitions on investments in unrelated businesses, and (iv) prohibitions on mergers and acquisitions absent creditor consent. These covenants address the asset-substitution and underinvestment problems by giving the creditor a direct say over the firm's investment portfolio.
+
+*Dividend covenants* restrict the firm's distributions to shareholders. Examples include restrictions on dividend payments above a stated cumulative ceiling, restrictions on stock repurchases, and "payment-in-kind" provisions that limit the firm's ability to redeem subordinated securities. These covenants address the claim-dilution problem by preventing the firm from withdrawing equity capital that protects the creditors.
+
+*Financing covenants* restrict the firm's capital-structure choices. Examples include limits on additional debt issuance, restrictions on liens that would subordinate the existing debt, and prohibitions on sale-leaseback transactions that would synthetically increase leverage. These covenants address the claim-dilution problem more comprehensively.
+
+*Bonding covenants* require the firm to provide specific information or to take specific actions that signal the absence of opportunism. Examples include requirements to provide audited financial statements at stated intervals, requirements to maintain insurance coverage, and requirements to maintain particular financial ratios.
+
+The fourth category — bonding covenants — is the one that most directly conditions on accounting numbers. The financial-ratio covenants in this category impose constraints such as (i) a minimum interest-coverage ratio, (ii) a maximum debt-to-EBITDA ratio, (iii) a minimum current ratio, (iv) a maximum leverage ratio, or (v) a minimum tangible net worth. Each ratio is computed from the firm's reported financial statements at the relevant measurement date. A covenant violation occurs when the ratio crosses the contractual threshold; the violation gives the creditor the right to accelerate the loan, to demand additional collateral, to renegotiate terms, or — in the most severe cases — to force the firm into bankruptcy.
+
+Bonding covenants in modern debt agreements are extensive. The typical leveraged loan in the U.S. private credit market contains a dozen or more financial-ratio covenants; the typical investment-grade bond contains a smaller but still substantive set. The number, structure, and tightness of covenants vary systematically with the borrower's credit quality and with the lender's information environment.
+
+## 9.4 Conservatism as a contracting solution
+
+@watts2003a developed the argument that the conservative biases observable in U.S. GAAP are a contracting solution to the bondholder-shareholder conflict. The argument runs as follows. A creditor with a fixed claim cares more about downside risk than about upside potential — the creditor receives at most the promised payment and may receive less, but cannot receive more. Accounting that systematically biases toward conservative measurement — recognizing losses when they become probable but recognizing gains only when they become realized, carrying inventory at the lower of cost or market, requiring more verifiable evidence for income recognition than for loss recognition — produces accounting numbers that overstate the downside scenarios the creditor cares about while understating the upside scenarios that primarily benefit the shareholders.
+
+Conservatism, on this view, is asymmetric (i.e., more demanding of evidence for good news than for bad news). The asymmetry is contracting-functional in two distinct ways. First, conservative accounting produces numbers that tilt toward triggering the covenant earlier than they would under symmetric accounting, giving the creditor protection against the shareholder's incentive to delay loss recognition. Second, conservative accounting reduces the manager's discretion over the timing of loss recognition. A manager whose compensation depends on reported earnings has an incentive to delay losses; conservative standards reduce the scope for that delay by requiring the manager to recognize losses on triggered events rather than at discretionary times.
+
+The Watts argument has both empirical and conceptual implications. Empirically, it predicts that firms with more debt in their capital structure, with more covenants in their debt contracts, or with more concentrated creditors should have more conservative accounting; the prediction has been broadly supported. Conceptually, it suggests that the FASB's reluctance to permit upward revaluations of long-lived assets, the lower-of-cost-or-market rule for inventory, the impairment-only goodwill model under ASC 350, and the asymmetric treatment of contingent gains and losses are not arbitrary holdovers from a less sophisticated era of accounting but are functional responses to the contracting environment.
+
+The argument is contested. The Conceptual Framework (Chapter 5) treats neutrality as an aspect of faithful representation and is wary of systematic biases in either direction. Critics argue that the contracting benefits of conservative accounting are smaller than its costs in distorting investor perceptions, particularly for firms with substantial public equity. Recent FASB decisions — the move from incurred-loss to expected-loss credit accounting under CECL, for example — have, on the margin, shifted some areas of GAAP toward more symmetric measurement. The Watts argument is best understood as a description of one role accounting plays, not a normative endorsement of conservatism in all settings.
+
+::: {.callout-note}
+## A subtle implication
+
+Conservatism is not synonymous with prudence in some general moral sense. Watts's notion of conservatism is specifically asymmetric — it requires more evidence for good news than for bad news. A standard that requires equally rigorous evidence for both gains and losses is *neutral*, not conservative. The distinction matters in standard-setting deliberations because debates over neutrality versus conservatism are often confused with debates over rigor versus laxity.
+:::
+
+## 9.5 Mechanics: bonds, the effective-interest method, and a worked example
+
+Bond accounting under U.S. GAAP follows the *amortized cost* model (i.e., a model in which the carrying amount is updated each period by accruing interest at the historical market rate, rather than by remeasuring to current market value) for most non-trading bond obligations. The structure sits at the heart of the financial reporting of corporate debt.
+
+When a firm issues a bond, the bond promises a stream of fixed cash payments — a periodic coupon and a principal repayment at maturity. The cash the issuer receives is determined by the *market* interest rate at issuance (i.e., the yield demanded by investors for bonds of comparable risk and duration), not by the bond's stated coupon rate. Three issuance cases arise:
+
+1. **At par.** If the market rate equals the coupon rate, the bond issues at par, and the cash received equals the face value.
+2. **At a discount.** If the market rate exceeds the coupon rate, the bond issues at a discount, and the cash received is less than the face value. The discount is prepaid interest that the issuer recognizes over the life of the bond.
+3. **At a premium.** If the market rate is below the coupon rate, the bond issues at a premium, and the cash received exceeds the face value. The premium reduces interest expense recognized over the life of the bond.
+
+The discount or premium is amortized over the life of the bond using the *effective-interest method*. In any period, (i) interest expense equals the carrying amount at the start of the period multiplied by the market rate at issuance, (ii) the cash coupon payment equals the face value multiplied by the coupon rate, and (iii) the difference between interest expense and the coupon payment adjusts the discount or premium account, moving the carrying amount toward face value. At maturity, the carrying amount equals the face value, and the firm pays the face value to retire the bond.
+
+### A worked example: $100,000 face, 10-year, 6% coupon, issued to yield 8%
+
+Suppose Acme Corp. issues, on January 1, a ten-year bond with a face value of $100{,}000 and a coupon rate of 6% paid annually. The market rate for bonds of comparable risk and duration at issuance is 8%. The cash the bond will fetch — the present value of the bond's cash flows discounted at 8% — is the sum of (i) the present value of a ten-year annuity of $6{,}000 (i.e., 6% of $100{,}000) and (ii) the present value of the $100{,}000 face repayment at the end of year 10:
+
+$$
+\text{Issue price} \;=\; \$6{,}000 \cdot \frac{1 - (1.08)^{-10}}{0.08} \;+\; \frac{\$100{,}000}{(1.08)^{10}} \;\approx\; \$40{,}260 + \$46{,}319 \;=\; \$86{,}580.
+$$
+
+The bond issues at a discount of approximately $13{,}420 ($100{,}000 − $86{,}580). The journal entry at issuance is:
+
+| Account              | Debit  | Credit  |
+|----------------------|--------|---------|
+| Cash                 | 86,580 |         |
+| Discount on bonds payable | 13,420 |         |
+| Bonds payable (face) |        | 100,000 |
+
+The discount on bonds payable is a contra-liability account (i.e., a balance-sheet account that reduces the gross face value of the bonds to the net carrying amount). The net liability presented on the balance sheet at issuance is $100{,}000 − $13{,}420 = $86{,}580.
+
+The amortization schedule for the first three periods is:
+
+| Period | Carrying amount, BOP | Interest expense (8% × BOP) | Coupon (6% × face) | Discount amortized | Carrying amount, EOP |
+|--------|----------------------|-----------------------------|--------------------|--------------------|----------------------|
+| 1      | $86,580              | $6,926                      | $6,000             | $926               | $87,506              |
+| 2      | $87,506              | $7,000                      | $6,000             | $1,000             | $88,506              |
+| 3      | $88,506              | $7,081                      | $6,000             | $1,081             | $89,587              |
+
+(BOP and EOP denote beginning-of-period and end-of-period, respectively. Numbers are rounded to the nearest dollar.)
+
+The journal entry at the end of year 1 is:
+
+| Account                  | Debit | Credit |
+|--------------------------|-------|--------|
+| Interest expense         | 6,926 |        |
+| Discount on bonds payable |       | 926    |
+| Cash                     |       | 6,000  |
+
+Interest expense ($6{,}926) is the economically meaningful charge — it equals the carrying amount at the start of the period times the market rate at issuance. Cash interest paid ($6{,}000) is smaller because the coupon rate is below the market rate. The difference ($926) reduces the discount account; the carrying amount rises to $87{,}506 and the bond moves closer to its face value. The pattern repeats with the carrying amount compounding upward each period until, at the end of year 10, the discount has been fully amortized and the carrying amount equals the face value of $100{,}000.
+
+At maturity, the firm retires the bond by paying the face value:
+
+| Account             | Debit   | Credit  |
+|---------------------|---------|---------|
+| Bonds payable (face) | 100,000 |         |
+| Cash                 |         | 100,000 |
+
+The amortized-cost model differs from a fair-value model in an important respect. If market interest rates change after issuance, the bond's market price will change correspondingly — but the carrying amount on the issuer's balance sheet does not move. The bond is reported at the historical issuance value, amortized toward face. The amortized-cost basis is an example of a measurement choice that prioritizes faithful representation (the carrying amount is verifiable from the original transaction) over relevance (the carrying amount may be a poor proxy for the bond's current market value).
+
+::: {.callout-note}
+## An instructive case: Apple's 2013 debut
+
+Apple held no public debt for nearly two decades before issuing $17 billion in bonds across six tranches on April 30, 2013 — at the time the largest non-bank corporate bond offering in history. The proceeds funded a share-repurchase and dividend program rather than operating investment, an example of how leverage decisions interact with shareholder distributions. The accounting was standard: each tranche was recorded at its issue price (with small discounts and premiums relative to par), and interest expense has been recognized at the effective yield in each period since. The case is a reminder that bond accounting mechanics apply equally to a firm with no operating need to borrow and to a firm in deep distress; the mechanics are silent on why the firm chose to issue.
+:::
+
+## 9.6 Mechanics: leases under ASC 842
+
+The most consequential single change in U.S. liabilities accounting in the past decade was the FASB's adoption of ASC 842, effective for U.S. public companies in 2019. The standard replaced a framework under which operating leases were essentially off-balance-sheet — the firm reported lease expense as a periodic operating cost but did not record any asset or liability associated with the lease — with a framework requiring all leases of more than twelve months to appear on the balance sheet.
+
+Under ASC 842, the lessee recognizes, at lease inception, (i) a *right-of-use* (ROU) asset (i.e., the lessee's contractual right to use the leased asset over the lease term) and (ii) a corresponding *lease liability* (i.e., the lessee's obligation to make the lease payments). Both are measured at the present value of the unavoidable lease payments, discounted at the lessee's incremental borrowing rate (i.e., the rate the lessee would pay to borrow on a collateralized basis over a similar term) or the rate implicit in the lease, if determinable.
+
+ASC 842 distinguishes two categories of leases for income-statement purposes. *Finance leases* are those that transfer substantially all of the economic benefits and burdens of ownership to the lessee — for example, (i) leases that transfer title at the end of the term, (ii) leases with bargain purchase options, (iii) leases of substantially all of the asset's useful life, and (iv) leases whose present value of payments equals substantially all of the asset's fair value. Finance leases produce a depreciation expense on the ROU asset and a separately reported interest expense on the lease liability, just as if the lessee had purchased the asset and financed it with debt. *Operating leases* are all other leases. They produce a single straight-line lease expense over the lease term, preserving the income-statement pattern of the pre-2019 framework while introducing the balance-sheet recognition the prior framework lacked.
+
+### Why ASC 842 was a big deal
+
+The pre-2019 framework was widely understood — by sophisticated analysts and creditors — as an accounting fiction. A firm that leased a building had the same economic obligations as a firm that financed the building with debt and recorded depreciation, but only the latter showed up on the balance sheet. Analysts had for decades constructed adjusted leverage ratios that capitalized the discounted stream of footnoted operating-lease payments, but less sophisticated readers of financial statements — including some creditors writing covenants — relied on the unadjusted GAAP numbers.
+
+The 2019 transition moved approximately $2 trillion of operating-lease right-of-use assets and corresponding liabilities onto U.S. corporate balance sheets — the largest single change in U.S. financial reporting in a generation. The change was concentrated in industries with heavy reliance on operating leases: retail (store leases), airlines (aircraft and gate leases), restaurants (location leases), and shipping (vessel and container leases). It reduced the cross-firm variation in apparent leverage that had been driven by the choice between leasing and buying, and it produced an empirical natural experiment in the renegotiation of covenants that had been written before the change.
+
+### A concrete example: Boeing in the 737 MAX era
+
+Boeing's pre-2019 footnote disclosures showed substantial operating-lease commitments associated with its leased buildings, its aircraft-test infrastructure, and its supplier-financing arrangements. The 2019 adoption of ASC 842, coinciding with the 737 MAX grounding, brought these obligations onto the balance sheet as ROU assets and lease liabilities at the same time that Boeing's underlying credit was deteriorating. The two changes are conceptually distinct — one is an accounting representation change, the other is a real-economic change — but both showed up in the same financial statements, and the resulting compounded effect on reported leverage produced a meaningful change in how creditors and rating agencies viewed the firm. The Boeing case is an instructive reminder that an accounting representation change, although not changing the underlying economics, can interact with concurrent real shocks in ways that affect contractual outcomes.
+
+::: {.callout-warning}
+## Common pitfall
+
+The lease accounting change did not change the underlying economics of leasing. A firm that leased a building before 2019 had the same economic obligations as a firm that leased the building after 2019. What changed was the accounting representation: the off-balance-sheet treatment under the prior framework was, on most analyses, an accounting fiction that the change merely corrected. Sophisticated investors and creditors had for decades adjusted for off-balance-sheet leases through footnote analysis. The institutional value of ASC 842 is that the adjustment is no longer required.
+:::
+
+## 9.7 Mechanics: pensions, OPEB, and off-balance-sheet history
+
+### Defined-benefit versus defined-contribution plans
+
+Employer-sponsored retirement plans fall into two broad categories that differ sharply in who bears the residual risk. A *defined-contribution* plan (e.g., a 401(k)) specifies the employer's periodic contribution; the employee bears the investment risk on the accumulated balance, and the employer's accounting is simple — the contribution is an expense in the period made. A *defined-benefit* plan (e.g., a traditional corporate pension) specifies the retirement benefit the employee will receive — typically a function of years of service and final salary — and the employer bears the risk that the assets set aside to fund the obligation may or may not be sufficient when the benefits come due. Other post-employment benefits (OPEB), most notably retiree health care, are accounted for similarly to defined-benefit pensions.
+
+The accounting for defined-benefit plans is governed by ASC 715. The economic obligation — the *projected benefit obligation* (i.e., the present value of benefits earned to date, with future salary increases factored in) — is computed by an actuary using assumptions about (i) the discount rate, (ii) the expected long-term return on plan assets, (iii) future salary growth, (iv) employee turnover, and (v) mortality. The plan's *funded status* is the difference between the fair value of plan assets and the projected benefit obligation. The funded status is reported on the balance sheet, and the period's *pension expense* is reported on the income statement.
+
+The role of actuarial assumptions is consequential. A higher discount rate produces a lower obligation; a higher assumed return on plan assets produces a lower pension expense. Both assumptions are at the firm's discretion, subject to broad professional-judgment standards and auditor review. The empirical literature has documented that firms appear to choose actuarial assumptions in ways correlated with the firm's incentives — for example, raising the assumed return on plan assets in periods when pension expense pressure is binding (e.g., periods of weak earnings or near covenant thresholds).
+
+### The gap between funded status and pension expense
+
+A distinctive feature of defined-benefit pension accounting is that the *funded status* reported on the balance sheet and the *pension expense* reported on the income statement are not tightly linked. The funded status reflects the current present-value gap between obligations and assets. The pension expense, by contrast, smooths several components — service cost, interest cost, expected return on plan assets, and amortization of prior gains and losses — across periods. Actuarial gains and losses (i.e., changes in the funded status from actual-versus-expected investment performance or assumption changes) are not flowed through the income statement in the period of change; they are deferred in accumulated other comprehensive income (AOCI) and amortized into pension expense over time using the "corridor" mechanism.
+
+The result is that a firm can carry a substantial underfunded pension liability on the balance sheet while reporting modest pension expense on the income statement. The smoothing was a deliberate FASB choice — actuarial estimates are noisy, and quarter-to-quarter remeasurement was viewed as producing more variation than information — but the smoothing produces a divergence between the cash-flow reality of the pension obligation and the period-by-period reported expense.
+
+### The legacy-pension overhang: GM and Ford
+
+The U.S. auto industry has long carried defined-benefit pension and OPEB obligations of a magnitude that meaningfully affects firm value. General Motors and Ford each carried obligations measured in the tens of billions of dollars during the 2000s and 2010s, with funded-status gaps that varied with discount rates and asset performance. The 2009 GM bankruptcy was driven in substantial part by the unsustainability of legacy retiree benefits relative to the firm's operating cash flows. The case is consistent with the broader point that off-balance-sheet or partially-smoothed obligations can mask leverage that becomes binding when business conditions deteriorate — a pattern with the same structural shape as the ASC 842 lease case, although the institutional response (smoothing versus capitalization) has been different.
+
+### Special-purpose entities and the Enron episode
+
+A historical thread that ties together the chapter's treatment of off-balance-sheet items is the history of *special-purpose entities* (SPEs) and *variable-interest entities* (VIEs). Before the 2003 issuance of FIN 46 (later codified as ASC 810), firms could sponsor SPEs — separately incorporated entities holding assets and liabilities — without consolidating the SPE's balance sheet into the sponsor's, provided that a small minority equity interest (3% under the prior guidance) was held by an outside party. Enron exploited the structure aggressively, using SPEs to hold assets at high carrying values and to hold liabilities off the sponsor's balance sheet. The 2001 Enron collapse revealed that the consolidation threshold had become a mechanism for evasion rather than a substantive test of control.
+
+ASC 810 (i.e., the consolidation guidance issued in 2003 and revised subsequently) shifted the consolidation test from a quantitative equity threshold to a qualitative analysis of who bears the entity's risks and rewards. Under the revised guidance, the *primary beneficiary* — the party with the power to direct the entity's most significant activities and the obligation to absorb losses or right to receive benefits — consolidates the entity. The Enron-era SPE structures would not survive the ASC 810 test, and the broader pattern of using off-balance-sheet vehicles to disguise leverage has been substantially curtailed. The post-2003 environment is not friction-free — securitization structures and certain operating-lease and joint-venture arrangements remain analytically demanding — but the consolidation perimeter is now substantially broader than it was before the Enron episode.
+
+## 9.8 Mechanics: contingent liabilities
+
+A *contingent liability* (i.e., a potential obligation that depends on the outcome of a future event) is accounted for under ASC 450 according to (i) the probability that the obligation will be confirmed and (ii) the firm's ability to estimate the amount. The three-tier framework is:
+
+1. **Probable and reasonably estimable.** The firm recognizes a liability on the balance sheet and an expense on the income statement.
+2. **Reasonably possible but not probable.** The firm does not recognize a liability but discloses the contingency in the footnotes, including the nature of the contingency and an estimate of the possible loss (or a statement that no estimate can be made).
+3. **Remote.** The firm need not disclose the contingency at all.
+
+The framework is asymmetric in the same direction as the rest of conservatism: a contingent *gain* (e.g., a probable favorable outcome in pending litigation in which the firm is the plaintiff) is not recognized until the gain is realized, while a contingent loss is recognized once it is probable. The asymmetry is consistent with the Watts argument of Section 9.4.
+
+The probability thresholds are stated qualitatively, and the firm's classification of a given contingency requires substantial judgment. Litigation contingencies, product warranties, environmental remediation obligations, and tax disputes are common settings in which the classification has been contested. The empirical literature on contingency disclosure has documented (i) that firms with binding accounting concerns tend to disclose less specifically than firms without such concerns, (ii) that the realized losses on disclosed contingencies are systematically larger than the disclosed estimates, and (iii) that the asymmetric treatment of gains and losses produces footnote disclosures that are useful but incomplete summaries of the firm's exposure.
+
+## 9.9 Empirical evidence
+
+The empirical literature on liabilities and contracting is large; @beyer2010 review the financial-reporting environment broadly, and @dechow2010 review earnings quality. Three findings are particularly relevant.
+
+First, the *contracting role of accounting* has been documented through natural-experiment designs. @robertssufi2009, in a paper titled "Control Rights and Capital Structure," document that covenant violations produce sharp reductions in subsequent investment by violating firms — investment falls by approximately 13% on average in the four quarters following a violation. The reduction is concentrated in firms with greater contracting flexibility (i.e., firms with single-lender relationships, where the lender can implement the covenant remedy directly) and is largest when the violation is the firm's first. The result is consistent with the framework of Section 9.2: covenants are not merely passive performance metrics but active mechanisms through which creditors influence the firm's real decisions. The Roberts-Sufi result has been replicated and extended, and it forms the empirical foundation of this week's lab.
+
+Second, the *empirical literature on conservatism* has documented that conservative accounting is more prevalent in firms with more debt in their capital structure and with more concentrated creditors. The pattern is consistent with @watts2003a, who argues that conservatism has a contracting function. The literature has also documented that conservatism has, on the margin, declined over time as the FASB has moved toward more neutral standards and as firms have become more equity-financed; the relative importance of the contracting role versus the capital-markets role has shifted.
+
+Third, the *empirical literature on the ASC 842 lease accounting change* is still developing, but early evidence suggests that the change has produced statistically significant changes in firms' apparent leverage as measured by traditional ratios and corresponding changes in covenant slack. Renegotiations of debt covenants in response to the change have been substantial, suggesting that — even though sophisticated creditors had presumably already adjusted for off-balance-sheet leases — the formal change in measurement basis carried contractual weight.
+
+The literature does not claim that all aspects of GAAP liability accounting are well-designed. Specific concerns — around the measurement of complex derivatives, the recognition of contingent obligations, and the treatment of pension and OPEB obligations — remain contested. The general claim that emerges is that accounting numbers play an active role in the contracting environment of the modern firm, and that the design of the accounting standards has consequences for that environment.
+
+## 9.10 Key takeaways
+
+::: {.callout-important}
+## Key takeaways
+
+- **Debt contracts condition on accounting numbers because direct economic conditions are not verifiable.** Reported earnings, leverage, and cash-flow ratios are the most credibly verifiable summaries of the firm's position, and covenants tie creditor rights to thresholds on those numbers.
+- **The Smith-Warner typology organizes covenants by what they restrict.** Production-investment, dividend, financing, and bonding covenants each address a specific component of the bondholder-shareholder conflict.
+- **Conservatism is asymmetric, not merely prudent.** Asymmetric measurement is functional in a creditor-protective regime by triggering covenants earlier and reducing the manager's discretion over the timing of loss recognition.
+- **The effective-interest method ties accounting interest expense to the market rate at issuance.** Interest expense equals the carrying amount times the historical yield; the discount or premium is amortized so that the carrying amount converges to face value at maturity.
+- **ASC 842 moved approximately $2 trillion of operating leases onto U.S. balance sheets without changing the underlying economics.** The change replaced an accounting fiction with substantive recognition, with the largest effects concentrated in lease-intensive industries.
+- **Pension and OPEB accounting smooths actuarial volatility through the corridor mechanism, producing a divergence between the funded status on the balance sheet and the pension expense on the income statement.** The smoothing was a deliberate FASB choice but creates a gap between cash-flow reality and reported expense that is consequential for legacy-pension-heavy firms.
+:::
+
+## 9.11 Discussion questions
+
+1. The chapter argued that conservative accounting can be understood as a contracting solution to the bondholder-shareholder conflict. The Conceptual Framework (Chapter 5) treats neutrality as an aspect of faithful representation. Are these positions in tension? If so, how should the FASB resolve the tension when designing a specific standard?
+2. The Smith and Warner typology classifies covenants by the type of behavior they restrict. Identify a covenant from each of the four categories that you would expect to see in a leveraged loan agreement, and explain briefly which of the bondholder-shareholder conflicts the covenant addresses.
+3. The 2019 lease accounting change moved approximately $2 trillion of operating-lease right-of-use assets and corresponding liabilities onto U.S. corporate balance sheets. Did the change produce more useful financial statements? Defend your answer using the relevance-versus-faithful-representation framework of Chapter 5.
+4. @robertssufi2009 document that covenant violations produce sharp reductions in subsequent investment. Is this a case where accounting numbers are *causing* real corporate behavior, or a case where the accounting numbers are correlated with underlying economic conditions that themselves cause the behavior? How might one distinguish the two interpretations empirically?
+5. Suppose a creditor and a debtor are negotiating a new loan agreement. The creditor proposes a covenant requiring the debtor to maintain a minimum interest-coverage ratio of 3.0×. The debtor counters with a proposal to instead provide weekly cash-flow reports to the creditor. From the creditor's perspective, which proposal is preferable? Use the framework of this chapter to defend your answer.
+
+## 9.12 Problems
+
+### Mechanical
+
+1. *(Bond issued at a discount; effective-interest amortization.)* Acme Corp. issues a four-year bond with a face value of $200{,}000 and a coupon rate of 5% paid semi-annually. The market interest rate at issuance is 6%. (a) Compute the cash received at issuance. (b) Construct an amortization schedule showing the carrying amount, interest expense, coupon payment, and discount amortization for each of the eight semi-annual periods. (c) Verify that the carrying amount at the end of period 8 equals the face value. (d) Record the journal entry at issuance, the journal entry at the end of period 1, and the journal entry at the retirement of the bond.
+
+2. *(Bond issued at a premium; effective-interest amortization.)* Repeat Problem 1 under the assumption that the market interest rate at issuance is 4% (i.e., the bond issues at a premium). Show how the premium account behaves over the life of the bond, and contrast the income-statement pattern with that of Problem 1.
+
+3. *(ASC 842 lease, operating classification.)* On January 1, Acme Corp. enters into a five-year lease of office space. The lease requires annual payments of $24{,}000 at the end of each year. Acme's incremental borrowing rate is 7%. The lease is classified as an operating lease under ASC 842. (a) Compute the lease liability and right-of-use asset at lease inception. (b) Construct the journal entries for the first two years of the lease, separately reporting the components of the single straight-line lease expense (i.e., interest accretion on the liability and amortization of the ROU asset). (c) Compute the carrying amount of the ROU asset and the lease liability at the end of year 2.
+
+4. *(Pension expense decomposition.)* Acme Corp.'s defined-benefit pension plan reports the following at the start of the year: projected benefit obligation $400{,}000; fair value of plan assets $360{,}000; discount rate 5%; expected long-term return on plan assets 7%; current-year service cost $30{,}000; benefits paid during the year $20{,}000; actual return on plan assets for the year $36{,}000. Assume no amortization of prior gains or losses. (a) Compute the components of pension expense (i.e., service cost, interest cost on the obligation, expected return on plan assets, and any amortization). (b) Compute the projected benefit obligation and fair value of plan assets at year-end. (c) Report the funded status at year-end and identify whether the plan is over- or under-funded.
+
+### Conceptual
+
+5. *(On-balance-sheet versus off-balance-sheet judgment.)* A firm enters into a fifteen-year agreement to purchase 80% of the output of a specialized manufacturing facility being constructed by a counterparty. The agreement is structured so that the firm does not own the facility, does not bear residual value risk on the facility, and is not obligated to make payments if the counterparty fails to deliver. Should the agreement give rise to a recognized liability on the firm's balance sheet? Apply the consolidation framework of ASC 810 and the lease framework of ASC 842, identify the relevant judgment calls, and defend your conclusion.
+
+6. *(Evaluation of contingent-liability disclosure.)* Choose a publicly traded firm with substantial pending litigation disclosed in its most recent 10-K (large pharmaceutical firms and large industrial firms are usually good candidates). In approximately 400 words, evaluate the firm's contingency disclosure. Address (i) the classification of the contingencies under ASC 450 (probable, reasonably possible, remote), (ii) whether the firm provides a numerical estimate of possible loss, (iii) what the disclosure conveys about the firm's exposure relative to its market capitalization, and (iv) whether the disclosure is, in your view, useful to a reader trying to assess the firm's economic position.
+
+### Writing exercise
+
+7. *(Short writing exercise on conservatism and standard-setting trade-offs.)* In approximately 500 words, evaluate the following claim: "The FASB's recent move toward expected-loss credit accounting under CECL is a retreat from conservatism that will, on net, produce less useful financial statements for creditors." Engage the @watts2003a contracting argument, the Conceptual Framework's treatment of neutrality, and the empirical literature you have read. State your position and defend it; do not pretend the question has an obvious answer.
+
+## 9.13 Lab
+
+The out-of-class lab for this week is **WRDS Lab 4: Covenant Slack and Investment**. The lab walks through the construction of standardized covenant-slack measures from Compustat for a sample of leveraged firms and the replication of the @robertssufi2009 finding that covenant violations predict reductions in subsequent investment. The lab is the most empirically intensive of the WRDS labs in this course and builds directly on the methodologies of Labs 1–3.
+
+The deliverable is a Colab notebook that produces (i) the cross-sectional distribution of covenant slack in your sample, (ii) a regression of subsequent investment on covenant slack and standard controls, and (iii) a brief written discussion of what the replication implies about the contracting role of accounting. The lab is due at the end of the week.
+
+The GenAI policy permits the use of AI coding assistants with disclosure. As with prior labs, the disclosure must specify what the tool was used for and whether any AI-generated text appears in the final submission.
+
+## 9.14 Further reading
+
+The four readings below are the assigned readings for Week 9. Students should read all of them.
+
+- @smithwarner1979, "On Financial Contracting." The foundational paper, which articulates the bondholder-shareholder conflict and the four-category typology of covenants. Read for the conflict, the typology, and the contracting argument.
+- @watts2003a, "Conservatism in Accounting Part I: Explanations and Implications." Read for the contracting interpretation of conservatism and the four explanations the author offers. The companion paper "Part II" is optional.
+- @robertssufi2009, "Control Rights and Capital Structure." The empirical paper that documents that covenant violations sharply reduce subsequent investment. Read for the empirical design and the headline result; the technical appendix on covenant slack measures is useful for the lab.
+- *Optional, for those who want more:* The text of a real credit agreement from EDGAR. The agreements are dense and unfamiliar at first, but working through the financial-covenant section of one — for any leveraged firm whose 10-K incorporates its credit facility by reference — is one of the more useful exercises a student can do for understanding what bonding covenants actually look like in practice.
+
+::: {.callout-tip}
+## Where Arc II goes from here
+
+Chapter 9 has examined the liability side of the balance sheet and the contracting role of accounting numbers in debt agreements. Chapter 10 closes Arc II by turning to the equity side: stockholders' equity, basic and diluted earnings per share, stock-based compensation, and the empirical literature on earnings management. The Chapter 4 framework on moral hazard returns explicitly: managers respond to the incentives created by their compensation contracts, and the accruals discussed in Chapter 7 are the workhorse mechanism through which the response is implemented.
+:::
