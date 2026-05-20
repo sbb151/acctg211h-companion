@@ -39,8 +39,8 @@ jobs:
       # - name: Install R packages
       #   run: Rscript -e 'install.packages(c("rmarkdown","knitr"))'
 
-      - name: Render Quarto book
-        run: quarto render
+      - name: Render Quarto book (HTML only)
+        run: quarto render --to html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
