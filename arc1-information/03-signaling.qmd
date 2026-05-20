@@ -5,7 +5,7 @@ description: "Voluntary disclosure as a costly signal. The income statement and 
 
 # Signaling and the Income Statement {#sec-signaling}
 
-## 3.1 Opening question
+## Opening question
 
 In April 2015, Amazon disclosed for the first time the operating results of its cloud-computing business, Amazon Web Services. AWS had been operating since 2006, but for nine years its revenue and operating income had been bundled into Amazon's "Other" segment alongside a miscellany of smaller businesses. The Q1 2015 earnings release revealed that AWS was, on its own, a five-billion-dollar annual revenue business growing at forty-nine percent year-over-year, with operating margins of approximately seventeen percent. Amazon's stock price gained roughly fifteen percent over the next two trading days. Equity analysts spent the following weeks revaluing AWS as a stand-alone business and, by extension, the rest of Amazon at substantially higher levels.
 
@@ -15,7 +15,7 @@ This chapter develops the framework for thinking about *voluntary* disclosure. T
 
 Chapter 2 also left a structural gap. The balance sheet, introduced there, is a credibly verifiable summary of the firm's *stocks* at a point in time. It does not, by itself, tell investors what the firm did between two balance-sheet dates. This chapter introduces the income statement as the structure through which the firm reports its economic *performance* over an interval — and, more subtly, as the structure through which the manager communicates her private information about the firm's prospects via the choice of accrual estimates. The mechanics are introduced here at the level needed to support the framework of this chapter; the deeper measurement issues will be revisited in Arc II.
 
-## 3.2 The Spence setup
+## The Spence setup
 
 Spence's model is the canonical reference for *signaling* (i.e., a costly action a more-informed party takes to credibly reveal her type to a less-informed party). Consider, in the spirit of @spence1973, a labor market with two worker types — high productivity ($H$) and low productivity ($L$) — and a population of risk-neutral employers who cannot observe a worker's type. Let the employer's productivity from a type-$H$ worker be $w_H$ and from a type-$L$ worker be $w_L$, with $w_H > w_L$. Let the share of high types in the population be $\lambda$.
 
@@ -51,7 +51,7 @@ For a costly action to credibly reveal type, the marginal cost of the action mus
 
 The Spence model is stylized in a number of respects. The strict separating equilibrium it predicts is robust only under specific assumptions about cost structure and information sets; richer models permit pooling equilibria, partially separating equilibria, and noisy signals. The deeper point, however, is robust: when one party knows more than another, the more-informed party may incur costly actions whose function is to credibly convey that information, and those actions can move the market away from the pooling outcome that asymmetric information would otherwise produce.
 
-## 3.3 The unraveling result and the Verrecchia threshold
+## The unraveling result and the Verrecchia threshold
 
 The Spence model takes the cost differential as primitive. The disclosure literature pushes one step further by asking whether, when the firm can simply *reveal* its private information at zero cost, asymmetric information unravels on the supply side without any need for a costly signal at all.
 
@@ -79,7 +79,7 @@ As $c \to 0$, the threshold $\theta^* \to 0$ and the Verrecchia equilibrium appr
 
 You will recognize this pattern from the Lemons simulation in Chapter 2. The Phase 3 voluntary-disclosure scenario plays out the Verrecchia equilibrium: students who chose to disclose did so for high values of their car's quality, while students with low quality preferred to pool. The synthetic-population summary reported a disclosure rate of approximately ninety-three percent and a clear separation between disclosed and silent average qualities — partial unraveling, observed in real time.
 
-## 3.4 Concrete examples of signaling in capital markets
+## Concrete examples of signaling in capital markets
 
 The signaling framework illuminates a number of patterns in real capital markets that are otherwise difficult to rationalize. We consider four.
 
@@ -107,7 +107,7 @@ A firm that initiates or raises its dividend commits to a recurring cash outflow
 
 Empirically, dividend initiations and increases are associated with positive announcement returns; dividend cuts and omissions are associated with negative announcement returns. The signaling interpretation is one of several candidates — free-cash-flow disgorgement and tax-clientele effects are alternatives — but the qualitative pattern is consistent with the framework.
 
-## 3.5 Accruals as a signal
+## Accruals as a signal
 
 The signaling framework provides a useful interpretation of one of the most contested elements of financial accounting: the *accruals* (i.e., the non-cash components of earnings that distinguish accrual-basis income from operating cash flow). Under accrual accounting, the firm recognizes revenues when they are earned (which need not coincide with cash collection) and expenses when they are incurred (which need not coincide with cash payment). The wedge between accrual income and operating cash flow is *total accruals*, and it embeds the manager's projections about the timing and ultimate realization of the firm's economic activity.
 
@@ -125,7 +125,7 @@ The accrual choice is a signal in two senses. First, the *amount* of accruals is
 
 A complication runs alongside this story. Because accruals embed the manager's private information, they also create the opportunity for *manipulation*. A manager who would benefit from reporting higher earnings has the means at her disposal to do so by adjusting accrual estimates upward; a manager who would benefit from reporting lower earnings can adjust them downward. The earnings-management literature [@healy1985; @burgstahlerdichev1997; @roychowdhury2006], which we will examine in detail in Chapter 10, takes seriously the possibility that the signaling content of accruals is contaminated by managerial discretion. The empirical question is whether, on average, the signal content dominates the manipulation content. The answer, on most evidence, is yes, but the contamination is real.
 
-## 3.6 The institutional response: voluntary disclosure mechanisms
+## The institutional response: voluntary disclosure mechanisms
 
 U.S. public companies make use of a wide variety of voluntary disclosure mechanisms beyond the mandatory floor of the 10-K, the 10-Q, and the 8-K. Four are particularly worth highlighting.
 
@@ -137,7 +137,7 @@ The third is the *Management's Discussion and Analysis* (MD&A) section of the 10
 
 The fourth, increasingly important, is *voluntary non-financial disclosure* — segment disaggregations, sustainability reports, climate-related disclosures, human capital metrics, and the like. Some of this is now mandatory under SEC and international regulation, but a great deal remains voluntary, and firms vary in what they choose to disclose. The framework of this chapter applies: firms with favorable underlying performance on these dimensions have an incentive to disclose; firms with unfavorable performance have an incentive to remain silent; investors learn to read the absence of disclosure as informative.
 
-## 3.7 Mechanics: the income statement and the accrual basis
+## Mechanics: the income statement and the accrual basis
 
 The income statement is the canonical accounting representation of the firm's economic performance over an interval — typically a quarter or a year. Its central organizing identity is, in stylized form:
 
@@ -190,7 +190,7 @@ The accrual basis differs from the cash basis in two specific ways visible in th
 
 The consequence is that net income and operating cash flow can differ — sometimes substantially — for any given period. The wedge between them is exactly the total accruals discussed in Section 3.5. The income statement reports the manager's view of economic activity; the statement of cash flows reports the verifiable cash record. Both are required precisely because each contains information the other suppresses: the income statement contains the manager's signal, the cash flow statement contains the verifiable check. We return to whether investors price the wedge correctly in Chapter 7.
 
-## 3.8 Empirical evidence
+## Empirical evidence
 
 The empirical literature on voluntary disclosure is large. @beyer2010 provides a useful survey, building on the earlier review by @healypalepu2001. Three findings are particularly relevant to the framework of this chapter.
 
@@ -202,7 +202,7 @@ The third finding concerns the *unraveling* dynamic itself. The empirical litera
 
 The literature does not, of course, claim that voluntary disclosure is always informative or always efficient. A substantial side literature on *strategic disclosure* documents that managers can and do use voluntary disclosure to manipulate investor expectations, to shape the timing of price reactions, and to advance personal incentives that diverge from firm value. The signaling framework is the right starting point, but it is not the whole story; the strategic-manipulation literature complements it and we return to that material in Chapter 10.
 
-## 3.9 Key takeaways
+## Key takeaways
 
 ::: {.callout-important}
 ## Key takeaways
@@ -215,7 +215,7 @@ The literature does not, of course, claim that voluntary disclosure is always in
 - **Signals can be contaminated.** Because accrual estimates are discretionary, the signaling content of earnings can be manipulated; whether the signal dominates the manipulation is an empirical question taken up in Chapter 10.
 :::
 
-## 3.10 Discussion questions
+## Discussion questions
 
 1. Amazon disclosed AWS segment results in 2015 and was rewarded with a substantial price increase. Why did the disclosure produce a fifteen-percent jump when, in principle, the same information was already implicit in Amazon's consolidated financial statements? What does this tell us about the cost–benefit trade-off of segment-level disclosure?
 2. The Spence model predicts that high types signal and low types do not. The Verrecchia threshold model predicts that types above a threshold disclose and types below pool at silence. Reconcile the two — when would we expect a Spence-style separating equilibrium, and when would we expect a Verrecchia-style threshold equilibrium?
@@ -223,7 +223,7 @@ The literature does not, of course, claim that voluntary disclosure is always in
 4. The income statement under U.S. GAAP follows accrual accounting; the cash flow statement follows cash accounting. Both are required disclosures. Explain, using the framework of this chapter, why we need both rather than one or the other.
 5. A firm announces that, going forward, it will no longer provide quarterly earnings guidance. What signal does the announcement send to investors? Under what circumstances might this be the optimal policy for the firm?
 
-## 3.11 Problems
+## Problems
 
 ### Mechanical problems
 
@@ -242,13 +242,13 @@ The literature does not, of course, claim that voluntary disclosure is always in
 
 8. *(Short writing exercise, ~400 words.)* Choose a U.S. public company. Identify one specific voluntary disclosure the company makes that is not required by U.S. GAAP or SEC regulation — a management forecast, a non-GAAP metric, a sustainability report, an investor day presentation, segment disaggregation beyond ASC 280 minimums, or any other example you can document. In approximately 400 words, argue why the company makes this disclosure using the framework of this chapter. Be specific about (i) what private information the disclosure conveys, (ii) what the cost of the disclosure is (including proprietary costs to competitors, legal exposure, and preparation costs), (iii) what the company gains from making it, and (iv) whether the disclosure is consistent with a Spence-style separating equilibrium, a Verrecchia-style threshold equilibrium, or a Grossman–Milgrom-style full-unraveling equilibrium.
 
-## 3.12 Lab
+## Lab
 
 The in-class activity for this week is the **Campus Curb FSET activity** (`activities/Campus Curb*`), in which you will use the financial statement effects template to record a sequence of transactions for a small startup and observe how the income statement, balance sheet, and statement of cash flows interact. The activity makes the signaling content of accruals concrete: as you record the transactions, you will see the wedge between cash flow and accrual income emerge in real time, and you will be asked to reflect on what an external investor would learn from the resulting statements.
 
 The activity is graded as part of participation. Bring your laptop and a copy of the FSET template to the second class meeting this week.
 
-## 3.13 Further reading
+## Further reading
 
 The four readings below are the assigned readings for Week 3. You should read all of them.
 

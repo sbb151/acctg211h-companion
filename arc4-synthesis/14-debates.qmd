@@ -5,7 +5,7 @@ description: "Four contested questions in financial reporting, the debate format
 
 # Synthesis: The Capstone Debates {#sec-debates}
 
-## 14.1 Where we have been
+## Where we have been
 
 The framework is finished. Across the previous thirteen chapters, the Companion has assembled a single integrated apparatus for thinking about financial and managerial accounting, anchored in information economics.
 
@@ -17,7 +17,7 @@ Arc III turned inside the firm. The same framework that motivates external repor
 
 The framework is not a complete theory of accounting. It does not, in itself, settle the contested questions that practitioners and standard-setters wrestle with in their daily work. It does, however, provide a vocabulary and a set of analytical tools that can structure those wrestling matches. The capstone debates that occupy Weeks 14 and 15 of the course are designed to put the framework to work on a small set of currently contested questions in financial reporting.
 
-## 14.2 How to argue both sides
+## How to argue both sides
 
 The debates that follow are not exercises in expressing personal opinions. They are exercises in steelmanning (i.e., constructing the strongest available version of a position one may not personally hold). The structure of each debate is identical, and we lay it out here so that the reader can use the same structure when preparing for class.
 
@@ -37,7 +37,7 @@ The five-element structure is the analytical scaffold. The classroom format that
 Assigning positions randomly is a deliberate pedagogical choice. Students who are forced to argue for a position they personally find unpersuasive must do the work of constructing the best argument from a perspective they did not begin with. The resulting argument is, almost always, more careful and more rigorously grounded than the argument those same students would have produced if they had been assigned the position they already held. The exercise teaches that contested questions usually have more support on the side the student initially rejected than the student initially supposed, and that the case for the student's own initial view is often weaker than the student initially thought.
 :::
 
-## 14.3 The four 2027 debate prompts
+## The four 2027 debate prompts
 
 The four debate prompts for Spring 2027 are listed below. Each connects to specific chapters of the Companion, and the connections are noted explicitly so that students preparing their constructive arguments can locate the analytical tools they need. Each prompt is developed using the five-element structure introduced in Section 14.2.
 
@@ -97,7 +97,7 @@ The four debate prompts for Spring 2027 are listed below. Each connects to speci
 
 **Tentative conclusion.** The two framings are not mutually exclusive — ESG reporting can serve both functions simultaneously. The interesting analytical question is which function it serves *primarily*, and the empirical evidence is currently insufficient to settle the question. Recognizing the distinction is itself the principal pedagogical payoff: students who can articulate why the two problems imply different institutional responses have internalized the central conceptual move of Arc I.
 
-## 14.4 The classroom format
+## The classroom format
 
 The five-element analytical structure of Section 14.2 is the substance of each debate. The classroom format that wraps around it is described here.
 
@@ -114,7 +114,7 @@ Each debate proceeds through six stages.
 
 The format is rigorous but the goal is not adversarial. The point of the structure is to force each team to articulate the strongest version of its assigned position, and to engage seriously with the strongest version of the opposing position. Students who emerge from a well-run debate having argued for a position they did not initially hold are, on this account, the students who have learned the most.
 
-## 14.5 Evaluation rubric
+## Evaluation rubric
 
 Each debate is evaluated by three non-presenting students using the following rubric. The total score for each team is the sum of the component scores; the team with the higher total wins the debate.
 
@@ -129,7 +129,7 @@ Each debate is evaluated by three non-presenting students using the following ru
 
 The "engagement with the framework" component is the largest single piece of the rubric. It rewards teams that ground their arguments in the analytical content of the course rather than in extemporaneous opinion or general rhetorical skill. A team whose constructive argument cites specific chapters of the Companion, engages with specific empirical findings from the assigned readings, and applies specific analytical tools — the relevance-faithfulness trade-off, the multitasking framework, the political-economy analysis of standard-setting — will outscore a team whose argument is rhetorically polished but framework-sparse.
 
-## 14.6 Key takeaways
+## Key takeaways
 
 ::: {.callout-important}
 ## Key takeaways
@@ -142,7 +142,7 @@ The "engagement with the framework" component is the largest single piece of the
 - **The framework outlasts the course.** Agency theory in corporate finance, mechanism design in microeconomic theory, contract theory in organizational economics, and the institutional analysis of regulation in public finance all use versions of the same tools. The course ends; the tools do not.
 :::
 
-## 14.7 A course retrospective
+## A course retrospective
 
 Beyond the debates themselves, the final session of Week 15 includes a course retrospective in which the instructor and students collectively reflect on what the semester has produced. The retrospective is intended to reinforce the central organizing insight of the course: that financial and managerial accounting are unified by the information-economics framework rather than divided by the financial/managerial distinction.
 
@@ -155,7 +155,7 @@ The retrospective is not a review session. It is the occasion at which students 
 
 The reflections are graded as part of participation. They are also used to inform the design of the course in subsequent years; many of the changes between the 2025, 2026, and 2027 versions of the course originated in suggestions students made in their retrospective reflections.
 
-## 14.8 What comes next, and what remains unsettled
+## What comes next, and what remains unsettled
 
 The semester ends here, but the framework does not. Students who continue in accounting (ACCTG 311, ACCTG 401, the upper-level electives) will encounter the institutional details of GAAP at much greater depth. Students who continue in finance, economics, or related fields will encounter many of the analytical tools developed in this course in different applications: agency theory in corporate finance, mechanism design in microeconomic theory, contract theory in organizational economics. Students who continue in industry will encounter the institutional infrastructure of accounting in the role of preparer, auditor, regulator, investor, or analyst — and the framework of this course is, in important respects, the same framework practitioners in those roles use to think about contested questions in their daily work.
 

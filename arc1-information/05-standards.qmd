@@ -5,7 +5,7 @@ description: "Why do we have a FASB? The political economy of standard setting a
 
 # Standard Setting and the Conceptual Framework {#sec-standards}
 
-## 5.1 Opening question
+## Opening question
 
 The United States sets accounting standards in an unusual way. The Securities and Exchange Commission (i.e., the SEC, the federal agency created by the Securities Exchange Act of 1934 with plenary authority over the financial reporting of registrants) has, since 1973, delegated the day-to-day work of writing accounting standards to a private nonprofit body, the Financial Accounting Standards Board (i.e., the FASB). The SEC retains the formal power to override or supplement the FASB's pronouncements, but has done so rarely. The result is a regulatory structure in which most of the substantive rule-making for U.S. public-company financial reporting is conducted at substantial remove from the federal government. Most other large economies set accounting standards through government bodies, or through international bodies in which government participation is more visible.
 
@@ -13,7 +13,7 @@ The structural choice raises a question this chapter takes up: why does the Unit
 
 This chapter develops the framework. It traces the institutional history (the SEC's 1934 founding, the AICPA's Committee on Accounting Procedure and Accounting Principles Board, the FASB's creation in 1973, the Sarbanes-Oxley Act of 2002 and the Public Company Accounting Oversight Board, and the FASB-IASB convergence project). It introduces the positive theory of accounting standards [@wattszimmerman1978, which examines how firms respond to standards rather than what standards ought to be]. It introduces the FASB Conceptual Framework [@fasb_cf, the FASB's own articulation of the objective and qualitative characteristics of financial reporting]. It draws on the empirical literature on the consequences of standard adoption, principally the natural experiment of mandatory adoption of International Financial Reporting Standards [@daskehailleuzverdi2008, who found that mandatory IFRS adoption was associated with increases in market liquidity and decreases in cost of capital; @christensenhailleuz2013, who showed that the effects were concentrated in countries that simultaneously strengthened enforcement]. The chapter closes Arc I by stepping up from the firm-level analysis of Chapters 1 through 4 to the institutional level at which the rules of the reporting environment are set.
 
-## 5.2 A short institutional history
+## A short institutional history
 
 U.S. accounting standard-setting evolved through three regimes. We sketch each briefly because each one is, in part, a response to the failure of the one before.
 
@@ -29,7 +29,7 @@ The FASB's first three decades were not without controversy. The funding structu
 
 The institutional history is worth tracing because it locates the present structure in a particular set of compromises. We do not have the SEC setting standards directly; we have a private body operating under a public delegation. We do not have a single global standard; we have two large standards with substantial but incomplete overlap. Each feature of the structure is, in part, a response to a perceived failure of an earlier arrangement, and each carries forward both the strengths and the limitations of that response.
 
-## 5.3 The economic theory of regulation
+## The economic theory of regulation
 
 The standard economic model of regulation begins from a simple asymmetry. Regulation imposes concentrated costs on identifiable parties (i.e., the regulated firms, their employees, sometimes their customers) and produces diffuse benefits across a broader population (i.e., consumers, investors, society at large). The party bearing the concentrated cost has a strong incentive to lobby against the regulation; the parties bearing the diffuse benefit have a weak per-party incentive to lobby for it. The regulatory-capture literature [@stigler1971, who modeled regulation as supplied to the industries with the highest demand for it; @easterbrookfischel1984, who applied a similar logic to mandatory securities disclosure] takes seriously the possibility that, at equilibrium, regulation often serves the interests of the regulated parties more than the interests of those the regulation is nominally designed to protect.
 
@@ -45,7 +45,7 @@ There is also a tension that runs through the structure of U.S. standard-setting
 The political-economy analysis is a tool for prediction, not just critique. Standards that generate large, concentrated compliance costs for major preparers face vigorous opposition during the comment-letter process. Standards that primarily benefit dispersed user constituencies struggle to generate the lobbying support needed to push them through. The framework gives us a way to think about why the FASB's standards look the way they do.
 :::
 
-## 5.4 The case for mandatory standards
+## The case for mandatory standards
 
 A central economic question about accounting standards is why we have them at all. Why not let firms choose their own accounting policies, with the market disciplining inadequate disclosure through higher cost of capital? Three answers emerge from the literature.
 
@@ -67,7 +67,7 @@ The FASB proposed mandatory recognition (i.e., bringing the expense onto the fac
 The episode is a clean illustration of the tension Section 5.3 described. Mandatory recognition of stock-based compensation was, in part, an exercise of economic policy --- the FASB was choosing, on behalf of capital markets, how a particular form of compensation should be measured. It was also, in part, an exercise of private-sector self-regulation --- the FASB's decision survived congressional pressure because the SEC and a coalition of users supported it. The outcome was neither a clean capture by preparers nor a clean victory for users, but a contested equilibrium produced by the structure described in Section 5.2.
 :::
 
-## 5.5 Watts and Zimmerman: a positive theory of standards
+## Watts and Zimmerman: a positive theory of standards
 
 @wattszimmerman1978 made a related but distinct contribution. Where the Stigler--Peltzman--Posner literature analyzed the *supply* of regulation, Watts and Zimmerman analyzed the *demand* for accounting choices --- how firms respond to the discretion that accounting standards leave them. Their argument was framed as a positive theory (i.e., a theory about what firms actually do, rather than what they ought to do under some normative criterion). They asked which accounting methods firms select and what the regularities in those selections reveal about the economic incentives at work.
 
@@ -83,7 +83,7 @@ The three hypotheses are positive rather than normative. Watts and Zimmerman did
 
 The Watts-Zimmerman framework has implications for the standard-setting process itself. If firms respond to standards with the predictable patterns of the three hypotheses, then a standard setter who designs standards without anticipating those responses produces equilibria different from the ones intended. A standard that, in a frictionless world, would yield a particular distribution of reported earnings, will in practice produce a different distribution shaped by managerial discretion within the standard's bounds. The implication is that "standards plus discretion" is the relevant unit of analysis, not "standards alone."
 
-## 5.6 The FASB Conceptual Framework
+## The FASB Conceptual Framework
 
 The FASB Conceptual Framework (i.e., the *Statement of Financial Accounting Concepts*, with the most recent integrated version published as Concepts Statement No. 8) is the FASB's own articulation of the objective of financial reporting and the qualitative characteristics that financial information should possess. The Conceptual Framework is not itself authoritative GAAP --- firms cannot violate the Conceptual Framework, and auditors cannot opine on conformity with it --- but it serves as the conceptual scaffold the FASB uses when drafting and revising specific standards. It is also a useful introduction to the FASB's own theory of what financial reporting is for.
 
@@ -113,7 +113,7 @@ Each of the enhancing characteristics is the framework's response to a problem w
 The qualitative characteristics are sometimes presented in introductory courses as a hierarchy or a checklist. The Conceptual Framework does not endorse that view. The fundamental characteristics are necessary conditions; the enhancing characteristics raise or lower the value of information that already satisfies the fundamental characteristics. There is no formula by which a standard setter mechanically combines the characteristics to produce a standard. The trade-offs require judgment and are at the center of every contested standard-setting decision.
 :::
 
-## 5.7 The standard-setting process in practice
+## The standard-setting process in practice
 
 The FASB's standard-setting process is structured to balance technical expertise, accountability, and responsiveness to constituent input. The process is often referred to as the FASB's *due process*. The principal elements are as follows.
 
@@ -135,7 +135,7 @@ A clean illustration of the limits of convergence is the treatment of inventory.
 LIFO persists in U.S. GAAP for a reason that is institutional rather than conceptual. The U.S. Internal Revenue Code's LIFO conformity rule requires that a firm using LIFO for tax purposes also use it for financial reporting. Eliminating LIFO from U.S. GAAP would, in effect, eliminate the tax deferral that LIFO provides to firms in industries with persistent input-price inflation. The political economy of that change has been sufficient to keep LIFO in U.S. GAAP through multiple convergence rounds. The episode illustrates that convergence is bounded not only by technical disagreement but by external institutional constraints (i.e., tax law, here) that operate outside the standard-setter's control.
 :::
 
-## 5.8 Empirical evidence on the consequences of standards
+## Empirical evidence on the consequences of standards
 
 The empirical literature on the consequences of accounting standards is large and continues to grow. Two strands are particularly relevant.
 
@@ -145,7 +145,7 @@ The second strand examines the *capital-market consequences* of large-scale stan
 
 The literature does not establish that any specific standard produced a net benefit to society after compliance costs are netted against capital-market gains. The cost-benefit calculation is difficult to perform and is contested in specific cases. The general claim is more modest: standards-based reporting environments produce capital-market benefits (i.e., lower cost of capital, narrower bid-ask spreads, higher liquidity) when paired with credible enforcement, and the benefits scale with the size of the affected economies' capital markets. Whether the magnitude of the benefits exceeds the magnitude of the costs in any given case is, the literature suggests, sensitive to features of the specific standard and the institutional setting in which it operates.
 
-## 5.9 Key takeaways
+## Key takeaways
 
 ::: {.callout-important}
 ## Key takeaways
@@ -158,7 +158,7 @@ The literature does not establish that any specific standard produced a net bene
 - **The empirical literature is supportive but conditional.** Standardization produces capital-market benefits (lower cost of capital, higher liquidity) when paired with credible enforcement; the benefits are attenuated where enforcement is weak, suggesting that standards and institutions are complements rather than substitutes.
 :::
 
-## 5.10 Discussion questions
+## Discussion questions
 
 1. The chapter argues that the United States is unusual in delegating accounting standard-setting to a private body rather than to a government agency. Identify one advantage and one disadvantage of the U.S. arrangement compared with the alternative of having the SEC set standards directly. Which arrangement would you defend, and why?
 2. Watts and Zimmerman's three hypotheses (bonus plan, debt/equity, political cost) are *positive* hypotheses about firm behavior. Are they consistent with the *normative* presumption of the FASB Conceptual Framework that financial information should be relevant and faithfully represented? If so, why? If not, what does the inconsistency imply for the standard-setting process?
@@ -166,7 +166,7 @@ The literature does not establish that any specific standard produced a net bene
 4. The empirical literature on mandatory IFRS adoption suggests that the capital-market benefits of standardization depend on the enforcement environment. Suppose you were advising a developing economy considering mandatory IFRS adoption. What enforcement institutions would you argue need to be in place for the IFRS adoption to produce the benefits documented in the literature?
 5. Section 5.4 introduces FAS 123R on stock-based compensation as an episode in which the FASB resisted organized industry opposition and ultimately required recognition of an item that had previously been disclosed only in the footnotes. Construct the argument the technology industry made against recognition, and then construct the argument the FASB and the SEC made in favor. On the framework of this chapter, whose argument is stronger?
 
-## 5.11 Problems
+## Problems
 
 1. *(Conceptual.)* Read Chapter 1 (Objective) and Chapter 3 (Qualitative Characteristics) of the FASB Conceptual Framework [@fasb_cf]. In approximately 400 words, summarize (i) the objective of general purpose financial reporting as the Framework articulates it, (ii) the two fundamental qualitative characteristics and the relationship between them, and (iii) the four enhancing qualitative characteristics. Identify one specific accounting choice (for example, the choice between historical cost and fair value for an asset class) and use the qualitative characteristics to argue for one side of the choice.
 
@@ -180,13 +180,13 @@ The literature does not establish that any specific standard produced a net bene
 
 6. *(Writing exercise --- comment letters.)* Choose a recent or ongoing FASB exposure draft and read three comment letters from the public record (the FASB makes them available on its website). In approximately 500 words, identify the constituencies the letters represent, the principal arguments each letter advances, and the points of disagreement. Use the framework of Section 5.3 to interpret what the comment letters reveal about the political economy of the standard. Identify, in particular, whether the letters appear to align with the predictions of the Watts-Zimmerman hypotheses.
 
-## 5.12 Lab
+## Lab
 
 The in-class activity for this week is a **standard-setting role play**. You will be assigned a stakeholder identity --- preparer (CFO or controller), auditor, financial statement user (institutional investor or credit analyst), regulator (SEC staff), or academic advisor --- and will be asked to argue from that perspective on a specific FASB project. The Board (a subset of the class playing the role of the FASB itself) will hear arguments and reach a tentative decision; the rest of the class will then debate whether the resulting decision satisfies the qualitative characteristics articulated in the Conceptual Framework.
 
 The exercise is designed to make tangible the political-economy framework of Section 5.3 and the qualitative-characteristics framework of Section 5.6. Bring your laptop, a printed copy of the assigned background materials (distributed via Canvas one week before class), and the willingness to argue from a perspective that may not be your own.
 
-## 5.13 Further reading
+## Further reading
 
 The four readings below are the assigned readings for Week 5. You should read all of them.
 

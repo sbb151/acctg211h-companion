@@ -5,7 +5,7 @@ description: "Akerlof's adverse selection model and its implications for account
 
 # The Lemons Problem {#sec-lemons}
 
-## 2.1 Opening question
+## Opening question
 
 Some markets that look like they should work do not. Consider three examples drawn from very different settings.
 
@@ -21,7 +21,7 @@ This chapter develops the canonical economic framework for analyzing markets of 
 
 The chapter also introduces, for the first time, the structure of the balance sheet. The introduction is deliberately positioned here rather than in Chapter 1. The balance sheet has a specific job in the framework we are developing: it is a credibly verifiable summary of the firm's stocks of assets and obligations at a point in time, prepared in a structurally rigid form that constrains the issuer's ability to misstate. Before the institutional context is in place, the form of the balance sheet can feel arbitrary. With that context in place, it should feel as though the form is performing real work.
 
-## 2.2 Stylized model {#sec-lemons-model}
+## Stylized model {#sec-lemons-model}
 
 ### 2.2.1 The Akerlof setup
 
@@ -95,7 +95,7 @@ The same logic applies, with appropriate modification, to debt markets, to priva
 If asymmetric information about firm quality reduces trade and depresses prices, then any institution that credibly reduces the asymmetry has economic value. Mandatory financial reporting is one such institution. The audit is another. The SEC's disclosure regime is another. Each of these institutions exists, in part, because the alternative — a market with unmitigated information asymmetry — is one in which capital is allocated less efficiently and at higher cost.
 :::
 
-## 2.3 Institutional response {#sec-lemons-institutions}
+## Institutional response {#sec-lemons-institutions}
 
 ### 2.3.1 Four families of solution
 
@@ -131,7 +131,7 @@ The opening question mentioned the individual health insurance market. The marke
 
 The ACA's institutional response combined three of the four families of solution from Section 2.3.1. (i) *Disclosure* requirements: insurers had to publish standardized plan summaries so consumers could compare apples to apples. (ii) *Certification*: a federal exchange certified that plans met minimum coverage standards, taking the verification burden off individual buyers. (iii) A mechanism that has no clean analog in the Akerlof model — the *individual mandate* — required all eligible Americans to purchase coverage, effectively forcing the healthy buyers who would have exited to remain in the pool. The mandate was, in effect, a non-market solution to the unraveling problem: rather than allow the equilibrium to collapse, the regulation simply ruled out the exit option. We will see in subsequent chapters that mandatory financial reporting under U.S. securities law has a similar character — it constrains the seller's option to remain silent.
 
-## 2.4 Mechanics: the balance sheet as a credible report {#sec-lemons-mechanics}
+## Mechanics: the balance sheet as a credible report {#sec-lemons-mechanics}
 
 The balance sheet is the canonical accounting representation of the firm's stocks of assets and obligations at a point in time. Its central organizing identity is the *accounting equation*:
 
@@ -171,7 +171,7 @@ It is easy at first to think of the balance sheet as merely a list of items the 
 
 We will return to the balance sheet many times in subsequent chapters. Chapter 3 introduces the income statement and connects accruals to the signaling literature. Chapter 8 examines specific measurement choices for long-term assets. Chapter 9 examines liabilities and the contracting role of the balance sheet in debt agreements. The balance sheet introduced here is the spine on which those subsequent chapters build.
 
-## 2.5 Empirical evidence {#sec-lemons-evidence}
+## Empirical evidence {#sec-lemons-evidence}
 
 The empirical literature on disclosure and capital markets is large; @healypalepu2001, who survey the disclosure literature through the early 2000s, and @beyer2010, who update that survey with another decade of work, provide useful entry points. The findings most directly relevant to the lemons argument fall into two broad categories.
 
@@ -181,7 +181,7 @@ The second category concerns the relationship between disclosure and the volume 
 
 The empirical literature does not, of course, establish that financial reporting *causes* lower lemons discounts. The identification problem is severe: disclosure is a choice, and firms with better fundamentals may both disclose more and trade at smaller discounts for reasons unrelated to the disclosure itself. The literature has used various natural experiments (i.e., regulatory changes, mandated adoptions of new standards, exogenous shocks to information environments) to make progress on causation, with mixed but generally supportive results. Whether the magnitude of the disclosure effect is large enough to justify the compliance costs of the U.S. regime is a question to which we will return.
 
-## 2.6 Key takeaways {#sec-lemons-takeaways}
+## Key takeaways {#sec-lemons-takeaways}
 
 ::: {.callout-important}
 ## Key takeaways
@@ -194,7 +194,7 @@ The empirical literature does not, of course, establish that financial reporting
 - **The balance sheet is credible because of its structure, not its content.** The accounting equation forces every misstatement to leave a paired trace, which gives the audit something to verify against.
 :::
 
-## 2.7 Discussion questions {#sec-lemons-discussion}
+## Discussion questions {#sec-lemons-discussion}
 
 1. The Akerlof model produces complete market unraveling under the parameter restriction $\beta < 2$. What does this restriction mean intuitively? What features of real used-car markets — and real capital markets — would push us toward or away from the complete-unraveling prediction?
 2. Consider the four solutions to the lemons problem identified in Section 2.3.1 (i.e., disclosure, signaling, certification, reputation). For each, identify one institution or practice in modern U.S. capital markets that exemplifies the solution, and explain briefly how it works.
@@ -203,7 +203,7 @@ The empirical literature does not, of course, establish that financial reporting
 5. Snap's IPO disclosure was extensive, the audit was clean, and the underwriters were reputable, yet the price fell substantially within eighteen months. Does this experience indicate that the disclosure regime failed in Snap's case, or does it indicate something else? Be specific about what you would need to know to answer this question.
 6. Section 2.3.3 describes the Affordable Care Act's individual mandate as a non-market solution that ruled out the exit option for healthy buyers. Is mandatory disclosure under U.S. securities law analogous, in that it rules out the silence option for low-quality issuers? Identify one important way the analogy holds and one important way it breaks down.
 
-## 2.8 Problems {#sec-lemons-problems}
+## Problems {#sec-lemons-problems}
 
 ### Mechanical problems on the lemons model
 
@@ -221,13 +221,13 @@ The empirical literature does not, of course, establish that financial reporting
 
 7. *(Apply the model to a market you participate in.)* Choose a real market in which you have participated as either buyer or seller — examples include the used-textbook market, the secondary ticket market for concerts or sports events, the residential rental market in a college town, or a peer-to-peer platform such as Etsy or eBay. In approximately one page, (a) identify the asymmetric information present in the market, (b) describe which of the four families of solution from Section 2.3.1 the market uses, and (c) speculate, with reasons, whether the unraveling is closer to the complete-unraveling or the partial-unraveling case.
 
-## 2.9 Lab {#sec-lemons-lab}
+## Lab {#sec-lemons-lab}
 
 The in-class activity for this week is the **Lemons Market simulation**, available at the course's interactive site at `acctg211h.psu.edu/lemons/`. The simulation walks you through four phases — full information, asymmetric information without disclosure, voluntary disclosure, and mandatory audited disclosure — and asks you to make trading decisions in each phase. Bring your laptop to the second class meeting this week. We will play the simulation together and then debrief.
 
 There is no written deliverable for the simulation, but the post-simulation debrief is a substantial part of the participation grade for this week. Come prepared to articulate, in your own words, what you observed about the relationship between asymmetric information, the unraveling result, and the role of disclosure.
 
-## 2.10 Further reading {#sec-lemons-reading}
+## Further reading {#sec-lemons-reading}
 
 The four readings below are the assigned readings for Week 2. You should read all of them.
 

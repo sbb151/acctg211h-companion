@@ -5,7 +5,7 @@ description: "Why debt contracts condition on accounting numbers. Smith and Warn
 
 # Liabilities, Debt Covenants, and Conservatism {#sec-liabilities}
 
-## 9.1 Opening question
+## Opening question
 
 Hertz filed for Chapter 11 protection on May 22, 2020. The collapse of the rental-car business during the early months of the COVID-19 pandemic was the proximate trigger, but Hertz had been operating with elevated leverage for years, and the firm's debt agreements — like those of most highly-leveraged firms — contained covenants (i.e., contractual side-conditions) tied to accounting numbers: minimum interest-coverage ratios, maximum debt-to-EBITDA ratios, restrictions on capital expenditures, and restrictions on asset dispositions. The COVID shock pushed Hertz's accounting metrics through the relevant thresholds, the covenant violations cascaded, the lenders accelerated, and Hertz's ability to operate independently was effectively over.
 
@@ -15,7 +15,7 @@ This chapter develops a framework for thinking about how liabilities are measure
 
 The chapter sits squarely in Arc II's empirical investigation but leans toward the internal-information theme of Arc III. The contracting role of accounting — visible most clearly in debt covenants but also present in compensation, regulatory, and supplier-customer contracts — is the long-arc parallel to the capital-markets role developed in Chapters 6 and 7. Both roles motivate accounting standards and accounting practice, and the empirical literature on each role has independently documented that accounting numbers affect real corporate outcomes.
 
-## 9.2 The bondholder-shareholder conflict
+## The bondholder-shareholder conflict
 
 Consider a stylized firm financed with a mix of debt and equity. The shareholders own the residual claim on the firm's cash flows and receive whatever is left after the creditors are paid. The creditors own a fixed claim and receive their promised payments if the firm is solvent and a fraction of liquidation value if the firm is not. The two claims have very different sensitivities to the firm's underlying decisions.
 
@@ -33,7 +33,7 @@ Accounting numbers enter the contracting framework because they are the most rea
 The bondholder-shareholder framework gives accounting a role distinct from its capital-markets role. Capital markets use accounting numbers to value the firm's residual claim (Arc II's main theme so far). Debt contracts use accounting numbers to determine when contractual rights have been triggered. The two uses make different demands on the accounting numbers. Capital markets value information that is forward-looking and economically meaningful; debt contracts value information that is conservative, verifiable, and timely. The two demands sometimes pull in the same direction and sometimes in opposite directions, and FASB standard-setting decisions navigate the tension on a standard-by-standard basis.
 :::
 
-## 9.3 The Smith and Warner typology
+## The Smith and Warner typology
 
 @smithwarner1979 classified the covenants found in U.S. bond indentures into four broad categories, organized by the type of behavior the covenant restricts. The classification has proven durable.
 
@@ -49,7 +49,7 @@ The fourth category — bonding covenants — is the one that most directly cond
 
 Bonding covenants in modern debt agreements are extensive. The typical leveraged loan in the U.S. private credit market contains a dozen or more financial-ratio covenants; the typical investment-grade bond contains a smaller but still substantive set. The number, structure, and tightness of covenants vary systematically with the borrower's credit quality and with the lender's information environment.
 
-## 9.4 Conservatism as a contracting solution
+## Conservatism as a contracting solution
 
 @watts2003a developed the argument that the conservative biases observable in U.S. GAAP are a contracting solution to the bondholder-shareholder conflict. The argument runs as follows. A creditor with a fixed claim cares more about downside risk than about upside potential — the creditor receives at most the promised payment and may receive less, but cannot receive more. Accounting that systematically biases toward conservative measurement — recognizing losses when they become probable but recognizing gains only when they become realized, carrying inventory at the lower of cost or market, requiring more verifiable evidence for income recognition than for loss recognition — produces accounting numbers that overstate the downside scenarios the creditor cares about while understating the upside scenarios that primarily benefit the shareholders.
 
@@ -65,7 +65,7 @@ The argument is contested. The Conceptual Framework (Chapter 5) treats neutralit
 Conservatism is not synonymous with prudence in some general moral sense. Watts's notion of conservatism is specifically asymmetric — it requires more evidence for good news than for bad news. A standard that requires equally rigorous evidence for both gains and losses is *neutral*, not conservative. The distinction matters in standard-setting deliberations because debates over neutrality versus conservatism are often confused with debates over rigor versus laxity.
 :::
 
-## 9.5 Mechanics: bonds, the effective-interest method, and a worked example
+## Mechanics: bonds, the effective-interest method, and a worked example
 
 Bond accounting under U.S. GAAP follows the *amortized cost* model (i.e., a model in which the carrying amount is updated each period by accruing interest at the historical market rate, rather than by remeasuring to current market value) for most non-trading bond obligations. The structure sits at the heart of the financial reporting of corporate debt.
 
@@ -130,7 +130,7 @@ The amortized-cost model differs from a fair-value model in an important respect
 Apple held no public debt for nearly two decades before issuing $17 billion in bonds across six tranches on April 30, 2013 — at the time the largest non-bank corporate bond offering in history. The proceeds funded a share-repurchase and dividend program rather than operating investment, an example of how leverage decisions interact with shareholder distributions. The accounting was standard: each tranche was recorded at its issue price (with small discounts and premiums relative to par), and interest expense has been recognized at the effective yield in each period since. The case is a reminder that bond accounting mechanics apply equally to a firm with no operating need to borrow and to a firm in deep distress; the mechanics are silent on why the firm chose to issue.
 :::
 
-## 9.6 Mechanics: leases under ASC 842
+## Mechanics: leases under ASC 842
 
 The most consequential single change in U.S. liabilities accounting in the past decade was the FASB's adoption of ASC 842, effective for U.S. public companies in 2019. The standard replaced a framework under which operating leases were essentially off-balance-sheet — the firm reported lease expense as a periodic operating cost but did not record any asset or liability associated with the lease — with a framework requiring all leases of more than twelve months to appear on the balance sheet.
 
@@ -154,7 +154,7 @@ Boeing's pre-2019 footnote disclosures showed substantial operating-lease commit
 The lease accounting change did not change the underlying economics of leasing. A firm that leased a building before 2019 had the same economic obligations as a firm that leased the building after 2019. What changed was the accounting representation: the off-balance-sheet treatment under the prior framework was, on most analyses, an accounting fiction that the change merely corrected. Sophisticated investors and creditors had for decades adjusted for off-balance-sheet leases through footnote analysis. The institutional value of ASC 842 is that the adjustment is no longer required.
 :::
 
-## 9.7 Mechanics: pensions, OPEB, and off-balance-sheet history
+## Mechanics: pensions, OPEB, and off-balance-sheet history
 
 ### Defined-benefit versus defined-contribution plans
 
@@ -180,7 +180,7 @@ A historical thread that ties together the chapter's treatment of off-balance-sh
 
 ASC 810 (i.e., the consolidation guidance issued in 2003 and revised subsequently) shifted the consolidation test from a quantitative equity threshold to a qualitative analysis of who bears the entity's risks and rewards. Under the revised guidance, the *primary beneficiary* — the party with the power to direct the entity's most significant activities and the obligation to absorb losses or right to receive benefits — consolidates the entity. The Enron-era SPE structures would not survive the ASC 810 test, and the broader pattern of using off-balance-sheet vehicles to disguise leverage has been substantially curtailed. The post-2003 environment is not friction-free — securitization structures and certain operating-lease and joint-venture arrangements remain analytically demanding — but the consolidation perimeter is now substantially broader than it was before the Enron episode.
 
-## 9.8 Mechanics: contingent liabilities
+## Mechanics: contingent liabilities
 
 A *contingent liability* (i.e., a potential obligation that depends on the outcome of a future event) is accounted for under ASC 450 according to (i) the probability that the obligation will be confirmed and (ii) the firm's ability to estimate the amount. The three-tier framework is:
 
@@ -192,7 +192,7 @@ The framework is asymmetric in the same direction as the rest of conservatism: a
 
 The probability thresholds are stated qualitatively, and the firm's classification of a given contingency requires substantial judgment. Litigation contingencies, product warranties, environmental remediation obligations, and tax disputes are common settings in which the classification has been contested. The empirical literature on contingency disclosure has documented (i) that firms with binding accounting concerns tend to disclose less specifically than firms without such concerns, (ii) that the realized losses on disclosed contingencies are systematically larger than the disclosed estimates, and (iii) that the asymmetric treatment of gains and losses produces footnote disclosures that are useful but incomplete summaries of the firm's exposure.
 
-## 9.9 Empirical evidence
+## Empirical evidence
 
 The empirical literature on liabilities and contracting is large; @beyer2010 review the financial-reporting environment broadly, and @dechow2010 review earnings quality. Three findings are particularly relevant.
 
@@ -204,7 +204,7 @@ Third, the *empirical literature on the ASC 842 lease accounting change* is stil
 
 The literature does not claim that all aspects of GAAP liability accounting are well-designed. Specific concerns — around the measurement of complex derivatives, the recognition of contingent obligations, and the treatment of pension and OPEB obligations — remain contested. The general claim that emerges is that accounting numbers play an active role in the contracting environment of the modern firm, and that the design of the accounting standards has consequences for that environment.
 
-## 9.10 Key takeaways
+## Key takeaways
 
 ::: {.callout-important}
 ## Key takeaways
@@ -217,7 +217,7 @@ The literature does not claim that all aspects of GAAP liability accounting are 
 - **Pension and OPEB accounting smooths actuarial volatility through the corridor mechanism, producing a divergence between the funded status on the balance sheet and the pension expense on the income statement.** The smoothing was a deliberate FASB choice but creates a gap between cash-flow reality and reported expense that is consequential for legacy-pension-heavy firms.
 :::
 
-## 9.11 Discussion questions
+## Discussion questions
 
 1. The chapter argued that conservative accounting can be understood as a contracting solution to the bondholder-shareholder conflict. The Conceptual Framework (Chapter 5) treats neutrality as an aspect of faithful representation. Are these positions in tension? If so, how should the FASB resolve the tension when designing a specific standard?
 2. The Smith and Warner typology classifies covenants by the type of behavior they restrict. Identify a covenant from each of the four categories that you would expect to see in a leveraged loan agreement, and explain briefly which of the bondholder-shareholder conflicts the covenant addresses.
@@ -225,7 +225,7 @@ The literature does not claim that all aspects of GAAP liability accounting are 
 4. @robertssufi2009 document that covenant violations produce sharp reductions in subsequent investment. Is this a case where accounting numbers are *causing* real corporate behavior, or a case where the accounting numbers are correlated with underlying economic conditions that themselves cause the behavior? How might one distinguish the two interpretations empirically?
 5. Suppose a creditor and a debtor are negotiating a new loan agreement. The creditor proposes a covenant requiring the debtor to maintain a minimum interest-coverage ratio of 3.0×. The debtor counters with a proposal to instead provide weekly cash-flow reports to the creditor. From the creditor's perspective, which proposal is preferable? Use the framework of this chapter to defend your answer.
 
-## 9.12 Problems
+## Problems
 
 ### Mechanical
 
@@ -247,7 +247,7 @@ The literature does not claim that all aspects of GAAP liability accounting are 
 
 7. *(Short writing exercise on conservatism and standard-setting trade-offs.)* In approximately 500 words, evaluate the following claim: "The FASB's recent move toward expected-loss credit accounting under CECL is a retreat from conservatism that will, on net, produce less useful financial statements for creditors." Engage the @watts2003a contracting argument, the Conceptual Framework's treatment of neutrality, and the empirical literature you have read. State your position and defend it; do not pretend the question has an obvious answer.
 
-## 9.13 Lab
+## Lab
 
 The out-of-class lab for this week is **WRDS Lab 4: Covenant Slack and Investment**. The lab walks through the construction of standardized covenant-slack measures from Compustat for a sample of leveraged firms and the replication of the @robertssufi2009 finding that covenant violations predict reductions in subsequent investment. The lab is the most empirically intensive of the WRDS labs in this course and builds directly on the methodologies of Labs 1–3.
 
@@ -255,7 +255,7 @@ The deliverable is a Colab notebook that produces (i) the cross-sectional distri
 
 The GenAI policy permits the use of AI coding assistants with disclosure. As with prior labs, the disclosure must specify what the tool was used for and whether any AI-generated text appears in the final submission.
 
-## 9.14 Further reading
+## Further reading
 
 The four readings below are the assigned readings for Week 9. Students should read all of them.
 

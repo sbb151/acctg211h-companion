@@ -5,7 +5,7 @@ description: "The principal-agent problem, the Holmstrom informativeness princip
 
 # Stewardship and Moral Hazard {#sec-stewardship}
 
-## 4.1 Opening question
+## Opening question
 
 In 2023, the median chief executive officer of an S&P 500 firm received total compensation of roughly sixteen million dollars. Of that amount, approximately seventy percent was performance-contingent (i.e., tied to equity grants, performance shares, or annual cash bonuses keyed to financial or stock-price targets). The median worker at those same firms earned approximately eighty thousand dollars. The CEO-to-worker pay ratio has attracted attention as a moral object, as a political object, and as a problem in managerial economics [@halliebman1998; @bebchukfried2003; @frydmanjenter2010, who collectively review the evolution of U.S. CEO pay since the 1980s and document the rising share of equity-based compensation].
 
@@ -15,7 +15,7 @@ The literature has converged on a stylized answer. Performance-contingent compen
 
 This is the *moral hazard* problem (i.e., the agent's incentive to take a hidden action the principal would not approve of) in its canonical form. It is the second of the two foundational information-economics problems we study in Arc I. The first was the adverse selection problem of Chapter 2. Both problems arise because one party in a relationship knows more than another. In adverse selection, the asymmetry concerns (i) *who* is in the market (high-quality versus low-quality types). In moral hazard, the asymmetry concerns (ii) *what action* the agent is taking (high effort versus low effort). The two problems have different formal structures, different institutional responses, and different accounting consequences. This chapter develops the moral hazard half of the framework. It also introduces the second-period mechanics of the income statement — adjusting entries, the closing process, and the trial balance — which exist in part because the principal needs a verification structure that can support a contractual relationship she cannot directly monitor.
 
-## 4.2 The principal-agent problem
+## The principal-agent problem
 
 Consider a stylized contracting setup that maps onto the relationship between a firm's shareholders (the principal) and its CEO (the agent). The principal hires the agent to take an action $e$, which we will call effort. The action is costly to the agent: exerting effort requires forgoing leisure or accepting a higher cognitive load. The action produces output for the firm, $y$, which is a noisy function of effort:
 
@@ -57,7 +57,7 @@ In the limit $\sigma^2 \to 0$ — output perfectly reveals effort — the slope 
 
 This stylized model is known in the contracting literature as the *LEN model* (i.e., Linear contract, Exponential utility, Normally distributed output). It is a workhorse rather than a definitive characterization of the agency problem. Its predictions are nonetheless informative: in richer models the same forces are at work, and pay-for-performance sensitivities are tempered by risk-aversion and noise even when the contract form is more complex [@holmstrommilgrom1991, who extend the framework to multitask settings and show that the same logic governs how a contract weights multiple performance measures].
 
-## 4.3 The Holmstrom informativeness principle
+## The Holmstrom informativeness principle
 
 A central result in the agency literature, due to @holmstrom1979, generalizes the LEN intuition in a useful way. Suppose, in addition to output $y$, the principal can also contract on a second observable signal $s$ (e.g., an audit report, an internal performance metric, or a peer-firm benchmark). Should the additional signal enter the optimal contract?
 
@@ -107,7 +107,7 @@ The informativeness principle illuminates a question often asked about accountin
 
 The Holmstrom logic supplies an answer consistent with the empirical pattern. Earnings and stock returns are imperfectly correlated. Each contains information about CEO effort that the other does not. Earnings reflect operational decisions that have not yet shown up in returns. Returns reflect investor expectations about future cash flows that the period's earnings have not yet realized. Neither signal is redundant given the other, so both enter the contract with positive weight, with the weight on each scaled by its conditional informativeness about effort. @halliebman1998, in their study of pay-for-performance sensitivities in U.S. firms, document that accounting-based and stock-based metrics each carry economically meaningful weight in CEO compensation, consistent with the joint-informativeness reading.
 
-## 4.4 The institutional response: executive compensation contracts
+## The institutional response: executive compensation contracts
 
 The framework of Sections 4.2 and 4.3 explains the architecture of executive compensation at U.S. public firms. CEO pay at large firms typically has four components, each of which can be read as the institutional response to a feature of the agency problem.
 
@@ -143,7 +143,7 @@ The accruals discussed in Chapter 3 are embedded in the accounting metrics that 
 
 The Healy pattern is a cost of using accounting metrics in compensation, but it does not by itself imply that accounting metrics should be excluded. The informativeness principle compares signals jointly, and accounting metrics retain incremental content about effort even after accounting for managerial discretion. The institutional response has been to constrain the discretion (e.g., through audited statements, internal controls, clawback provisions, and audit-committee oversight) rather than to abandon the metric.
 
-## 4.5 Mechanics: the closing process and the trial balance
+## Mechanics: the closing process and the trial balance
 
 The mechanics of the income statement and the balance sheet have, by this chapter, been introduced in pieces. Chapter 2 introduced the accounting equation and the structure of the balance sheet. Chapter 3 introduced the income statement and the accrual basis. This chapter introduces the operational machinery that takes a period's transactions and adjusting entries and produces the audited financial statements that will eventually enter the CEO's compensation contract. The machinery is the *closing process*.
 
@@ -161,7 +161,7 @@ The closing process is straightforward as a piece of mechanics, but it is worth 
 It is tempting on first encounter to treat the closing process as a clerical step — once the transactions have been recorded, the statements simply emerge. The framework of this chapter suggests a different view. The closing process is the moment at which the manager's discretion, exercised through the choice of accruals and adjusting entries, gets baked into the period's reported numbers. The verification structure of the trial balance ensures that the resulting numbers are arithmetically consistent. It does not ensure that the underlying estimates are unbiased. That is the auditor's job.
 :::
 
-## 4.6 Empirical evidence
+## Empirical evidence
 
 The empirical literature on the moral hazard problem in executive compensation is large; @frydmanjenter2010 provides a useful survey that documents the rise of equity-based pay since the 1980s and the shift toward performance-vesting structures. Three findings are particularly relevant to the framework of this chapter.
 
@@ -175,7 +175,7 @@ A separate empirical literature documents the prevalence of explicit RPE in perf
 
 Finally, managers respond to the structure of accounting-based incentives by adjusting accrual estimates, as @healy1985 documented and as discussed in Section 4.4. The empirical regularity is strong enough that it has motivated a substantial literature on earnings management, which we will examine in Chapter 10.
 
-## 4.7 Key takeaways
+## Key takeaways
 
 ::: {.callout-important}
 ## Key takeaways
@@ -188,7 +188,7 @@ Finally, managers respond to the structure of accounting-based incentives by adj
 - **Audited financial statements and internal controls support the contract.** The audit, internal controls, and the closing process supply the verification infrastructure that makes accounting numbers usable as contractible signals in the first place.
 :::
 
-## 4.8 Discussion questions
+## Discussion questions
 
 1. The chapter argues that CEO pay-for-performance sensitivity exists because shareholders cannot observe CEO effort. Yet many CEOs of large U.S. firms are also subject to substantial monitoring — boards meet regularly, audit committees oversee internal controls, and shareholders can vote on say-on-pay and other governance matters. Does the existence of these monitoring mechanisms reduce the optimal pay-for-performance sensitivity, increase it, or have an ambiguous effect? Defend your answer.
 2. The Holmstrom informativeness principle says that any signal informative about the agent's effort should enter the contract. The principle is silent on the *weight* the signal should receive. Suppose two signals are both informative about effort; one is more precise than the other. Should the more-precise signal receive a larger weight? Why or why not?
@@ -196,7 +196,7 @@ Finally, managers respond to the structure of accounting-based incentives by adj
 4. The Bebchuk-Fried managerial-power view holds that CEO compensation reflects, in part, the CEO's ability to influence the compensation-setting process. The standard agency view holds that CEO compensation is the efficient outcome of an incentive-design problem. Suppose you were to test whether the managerial-power view contributes meaningfully to the explanation of observed pay levels. What would you measure, and what would you predict?
 5. The chapter described the closing process as the moment at which the manager's discretion gets baked into the period's reported numbers. Is this characterization fair? Could one argue that the manager's discretion is actually exercised earlier — at the point at which transactions are originally recorded — and that the closing process is purely mechanical? Take a position and defend it.
 
-## 4.9 Problems
+## Problems
 
 1. *(Numerical, LEN model.)* Consider the LEN model with $k = 1$, $r = 1$, and $\sigma^2 = 1$. (a) Compute the optimal pay-for-performance sensitivity $\beta^*$. (b) Compute the agent's resulting effort, expected output, expected wage (given $a$ chosen to satisfy the participation constraint at $U_0 = 0$), and certainty-equivalent payoff. (c) Now suppose the variance of output rises to $\sigma^2 = 4$. Recompute $\beta^*$, effort, expected output, and the agent's certainty equivalent. Comment on the direction of the changes and reconcile them with the comparative statics in Section 4.2.
 
@@ -214,13 +214,13 @@ Finally, managers respond to the structure of accounting-based incentives by adj
 
 8. *(Short writing exercise.)* Locate the most recent proxy statement (DEF 14A) of a U.S. public company of your choice. In the Compensation Discussion and Analysis (CD&A) section, identify (i) the performance metric(s) used in the annual cash bonus, (ii) the performance metric(s) used in the long-term incentive plan and whether each is evaluated on an absolute or relative basis, and (iii) the peer group used for any RPE-based metric. In approximately 400 words, evaluate the contract through the lens of the Holmstrom informativeness principle. Identify one feature of the contract that is consistent with the principle and one feature that is harder to reconcile with it. Be specific about what private information the contract is attempting to elicit and which signal is being used to elicit it.
 
-## 4.10 Lab
+## Lab
 
 The in-class activity for this week is a **principal-agent simulation**. You will be assigned a role — either principal or agent — and will participate in a structured contracting exercise. Principals will design compensation contracts; agents will choose effort levels in response. The exercise will play out over several rounds, with the resulting outcomes (effort, output, wages, profits) tabulated and discussed in the second class meeting of the week.
 
 **Quiz 1 (covering Chapters 1–3 of the Companion) is administered at the start of the second class meeting this week.** Bring a writing implement, your laptop or a calculator, and an analog watch if you have one — phones are not permitted during the quiz.
 
-## 4.11 Further reading
+## Further reading
 
 The four readings below are the assigned readings for Week 4. You should read all of them.
 

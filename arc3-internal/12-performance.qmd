@@ -5,7 +5,7 @@ description: "Why every performance metric induces some distortion. Multitasking
 
 # Performance Measurement as Agency {#sec-performance}
 
-## 12.1 Opening question
+## Opening question
 
 In the late 1990s and through the 2000s, Wells Fargo built an internal incentive system that rewarded retail employees for opening new accounts for existing customers — a practice the bank called *cross-selling* (i.e., persuading a checking-account customer to also take a savings account, a credit card, and so on). The system became famous internally as *Eight is Great*: the stated aspiration was that the average retail customer should hold eight separate Wells Fargo accounts. Branch employees were assigned daily and weekly cross-sell quotas; their compensation, performance evaluations, and continued employment were tied to the quotas; and the bank cited cross-sell metrics as a competitive advantage in its investor disclosures.
 
@@ -17,7 +17,7 @@ This chapter develops the framework. The framework is, in its formal structure, 
 
 The chapter introduces the standard internal performance metrics that firms use — return on investment (ROI), residual income (RI), economic value added (EVA), and the balanced scorecard — and develops each as a particular response to the multitasking problem. None of these metrics is a clean solution. Each has characteristic distortions of its own. The framework gives us a tool for predicting which distortions a given metric will produce, and the chapter's discussion questions and problems ask the student to apply the tool to specific design problems.
 
-## 12.2 The multitasking framework
+## The multitasking framework
 
 Consider an extension of the LEN model from Chapter 4 in which the agent allocates effort across multiple tasks. Let the agent's effort vector be $\mathbf{e} = (e_1, e_2, \ldots, e_n)$, with each component $e_i$ representing effort on task $i$. The cost of effort is $C(\mathbf{e})$, an increasing convex function with substitution: time spent on task 1 is time not spent on tasks 2 through $n$. The firm's true preferences are a weighted combination of the tasks, with weights $b_1, \ldots, b_n$ that reflect what the firm actually values.
 
@@ -35,7 +35,7 @@ The Holmstrom-Milgrom result is often stated more simply: **incentivizing what y
 
 The multitasking framework has implications well beyond the Wells Fargo case. It predicts that any performance-measurement system using a narrow set of metrics will produce predictable distortions in the dimensions the metrics do not capture. (i) A teacher whose pay depends on test scores may neglect dimensions of student development the tests do not measure. (ii) An emergency-room physician evaluated on average length-of-stay may discharge patients prematurely. (iii) A salesperson whose commission is tied to closed deals may neglect customer relationships, follow-through, and account quality. The pattern is consistent across organizational settings, and the framework explains why. We will return to the empirical evidence in Section 12.7.
 
-## 12.3 Return on investment
+## Return on investment
 
 The most widely-used internal performance metric in U.S. firms is *return on investment* (ROI) — operating profit divided by the assets deployed in the unit being measured:
 
@@ -49,7 +49,7 @@ The ROI metric has, however, a well-known distortion. A manager whose performanc
 
 The underinvestment distortion is the canonical problem of ROI as a performance metric. It is large enough in some settings that firms have moved to alternative metrics — particularly *residual income* and *economic value added* — which we develop next.
 
-## 12.4 Residual income, EVA, and a worked comparison
+## Residual income, EVA, and a worked comparison
 
 *Residual income* (RI) addresses the ROI underinvestment distortion by measuring the dollar amount of profit the unit produces in excess of a capital charge. The capital charge is the firm's required return times the assets deployed in the unit:
 
@@ -87,7 +87,7 @@ The example makes concrete the broad claim of Sections 12.3 and 12.4: ROI produc
 Residual income and EVA are sometimes presented as superior to ROI on the grounds that they "are correct" while ROI "is incorrect." The framing is too strong. Residual income and EVA correct the *underinvestment distortion* of ROI, but they introduce other distortions of their own. (i) A manager evaluated on residual income may overstate the unit's contribution to firm value by neglecting cross-divisional spillovers. (ii) A manager may resist asset sales that would reduce the capital charge even when the asset is genuinely impaired. (iii) The dollar-based metrics make small divisions look small in absolute terms, which can complicate compensation comparisons across units of different sizes. Each metric is the result of design choices, and each metric produces characteristic distortions. The right comparison is among the distortions, not between "right" and "wrong" metrics.
 :::
 
-## 12.5 The balanced scorecard
+## The balanced scorecard
 
 The balanced scorecard, developed by @kaplannorton1992, is a non-quantitative response to the multitasking problem. Rather than pick a single metric and live with its distortions, the firm uses a *portfolio* of performance metrics covering multiple dimensions of the unit's activity. The original Kaplan-Norton framework identifies four perspectives: (i) *financial* (the traditional accounting metrics — ROI, residual income, EVA, growth in operating profit); (ii) *customer* (customer satisfaction, market share, retention, net promoter score); (iii) *internal business processes* (cycle times, defect rates, time-to-market for new products); and (iv) *learning and growth* (employee skill development, training hours, organizational capacity, employee retention).
 
@@ -97,7 +97,7 @@ The balanced-scorecard approach has limitations of its own. (i) Adding metrics i
 
 @ittnerlarcker2003 reviewed the empirical evidence and concluded that the implementation of balanced-scorecard systems is harder than the conceptual framework suggests, and that many adopting firms do not realize the full benefits the framework predicts. Their finding is consistent with the broader pattern in this chapter: the balanced scorecard is a partial response to the multitasking problem, not a clean solution. The trade-off between simplicity and completeness in performance measurement does not have an obvious resolution; the right balance varies by firm, by industry, and by the specific roles being measured.
 
-## 12.6 Variance analysis
+## Variance analysis
 
 The chapter has so far focused on metrics that compare actual performance to a benchmark — the cost of capital, the firm's overall preferences, a portfolio of dimensions. A separate but related set of tools compares actual performance to a *budget* or *standard*, decomposing the difference into component pieces that identify where the deviation came from. This is the domain of *variance analysis*.
 
@@ -107,7 +107,7 @@ Variance analysis is a workhorse of internal management accounting. It is widely
 
 The framework of this chapter qualifies the value of variance analysis in a way the standard treatments often miss. A variance is a deviation from a benchmark, but the benchmark itself is a design choice. A standard cost set too tight produces unfavorable variances even when the firm is performing well; a standard cost set too loose produces favorable variances even when the firm is underperforming. The standard-setting process is itself subject to the multitasking distortions: a manager who negotiates her own standards has an incentive to negotiate loose ones, producing favorable variances at the cost of disguising underperformance. Variance analysis is most useful when the standards are credible — set by an outside party, indexed to external benchmarks, or otherwise made resistant to the manager's negotiating influence.
 
-## 12.7 Empirical evidence
+## Empirical evidence
 
 The empirical literature on performance measurement is large; @ittnerlarcker2003 and the subsequent literature on management control systems provide useful entry points. Four findings are particularly relevant to the framework of this chapter.
 
@@ -127,7 +127,7 @@ The four findings together support the broad claim of this chapter: performance 
 General Electric under Jack Welch (CEO from 1981 to 2001) is the most-studied corporate case of single-metric-driven management. Welch ran GE on a small set of dominant financial metrics — operating margin, return on equity, and "Six Sigma" defect rates — and tied substantial divisional compensation to those metrics. The strategy produced two decades of extraordinary reported performance and made Welch one of the most-admired executives of his generation. It also produced, in retrospect, a set of distortions consistent with the multitasking framework. GE Capital grew into a financial-services giant in part because reported earnings from financial-services operations could be smoothed across periods in ways that operating-business earnings could not — the unit became, in important respects, an instrument for managing the firm's reported metrics. Several of GE's industrial businesses underinvested in research and capital expenditure during the Welch era, producing strong short-term margins at the cost of competitive position in the 2000s and 2010s. The post-Welch decline of GE is, in the framework of this chapter, exactly the pattern the multitasking theory predicts: extraordinary measured performance during the incentive regime, followed by the slow revelation of the dimensions that were not being measured.
 :::
 
-## 12.8 Discussion questions
+## Discussion questions
 
 1. The Wells Fargo case is presented as the canonical illustration of the multitasking problem. Identify another widely-discussed case — in any organizational setting (i.e., corporate, educational, governmental, athletic) — in which a measurable performance metric induced substitution away from unmeasurable dimensions of the desired behavior. Use the framework of Section 12.2 to explain the mechanism.
 2. The chapter argues that ROI produces an underinvestment distortion that residual income corrects. Yet ROI remains widely used in U.S. firms, including in firms whose CFOs are sophisticated enough to understand the distortion. Why might a firm prefer ROI to residual income despite the known distortion?
@@ -146,7 +146,7 @@ General Electric under Jack Welch (CEO from 1981 to 2001) is the most-studied co
 - **What gets measured gets managed — for good and for ill.** Hospital scorecards, school accountability, and sales-quota gaming all show the same pattern: measurable dimensions improve, unmeasurable dimensions deteriorate, and the net welfare effect depends on the relative magnitudes.
 :::
 
-## 12.9 Problems
+## Problems
 
 1. *(Numerical, ROI vs. residual income.)* A division of Acme Corp. currently earns operating profit of $40 million on average operating assets of $200 million. The firm's cost of capital is 10 percent. (a) Compute the division's ROI and residual income. (b) Suppose the divisional manager is presented with a new project requiring $50 million of investment that will produce $7 million of incremental operating profit. Compute the project's standalone ROI, the division's post-project ROI, and the project's contribution to residual income. (c) Will a manager evaluated on ROI accept the project? Will a manager evaluated on residual income? Explain.
 2. *(Numerical, EVA.)* Continuing Problem 1, suppose Acme is considering moving from residual income to EVA. The relevant adjustments increase the divisional asset base by $20 million (i.e., capitalizing R&D that GAAP expenses) and increase operating profit by $3 million (i.e., reducing the corresponding R&D expense recognized in the period). Acme's weighted-average cost of capital is 9 percent — lower than the equity-only 10 percent because of debt financing. (a) Compute the division's EVA. (b) Compare the EVA result to the residual-income result from Problem 1 and explain, in one or two sentences, why the EVA figure is larger.
@@ -157,13 +157,13 @@ General Electric under Jack Welch (CEO from 1981 to 2001) is the most-studied co
 7. *(Conceptual, reading.)* Read @holmstrommilgrom1991, focusing on the introduction and the simplest version of the multitasking model. In approximately 350 words, summarize the central result and explain how it applies to the Wells Fargo case. Identify one feature of the Wells Fargo incentive structure that, if it had been changed, would have reduced the distortion.
 8. *(Writing exercise.)* Choose a specific role within an organization you know well (i.e., a job you or a family member has held, a position at a campus organization, a role at a firm you have studied). In approximately 500 words, write a memo to the person who designs the performance-evaluation system for that role. The memo should (i) identify three dimensions of effort the role requires, (ii) describe the metrics currently in use and the distortions they produce, and (iii) propose a revised metric portfolio. Adopt a measured, third-person professional tone throughout — the memo is a deliverable, not an internal monologue.
 
-## 12.10 Lab
+## Lab
 
 The in-class activity for the second meeting of this week is a **performance-evaluation simulation** building on the existing `performance evaluation 2.xlsx` materials. You will be assigned a role as either a divisional manager or a corporate evaluator and will play out a sequence of compensation-design and effort-allocation decisions. The simulation makes the multitasking framework concrete by showing, in real time, how a particular performance metric induces predictable distortions in the manager's behavior.
 
 There is no out-of-class lab for this week. The Lab 6 group empirical project is in active development; preliminary findings are due in Week 14.
 
-## 12.11 Further reading
+## Further reading
 
 The four readings below are the assigned readings for Week 12. You should read all of them.
 

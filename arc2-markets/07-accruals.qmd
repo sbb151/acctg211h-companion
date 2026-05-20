@@ -5,7 +5,7 @@ description: "Sloan's accrual anomaly. The cash flow component vs. the accrual c
 
 # The Accrual Anomaly and Earnings Quality {#sec-accruals}
 
-## 7.1 Opening question
+## Opening question
 
 Consider two firms that report identical earnings of $100 million. Firm A's earnings are entirely operating cash flow; Firm B's earnings consist of $20 million of cash flow and $80 million of accruals (i.e., non-cash adjustments such as growing receivables, growing inventory, or aggressive revenue recognition). The bottom line is the same. Should investors price the two firms identically?
 
@@ -15,7 +15,7 @@ This chapter develops Sloan's framework. The framework matters for two reasons. 
 
 The chapter also introduces the *statement of cash flows* — the third of the three primary financial statements — and the working-capital accruals that produce the wedge between earnings and operating cash flow. The mechanics section develops four major accrual categories (working-capital accruals, depreciation, deferred taxes, and special items), the receivables and inventory accounts that drive most working-capital accruals, and a stylized example connecting cash sales, credit sales, and the persistence of each.
 
-## 7.2 Decomposing earnings: cash flows and accruals
+## Decomposing earnings: cash flows and accruals
 
 Section 3.4 introduced the wedge between accrual income and operating cash flow as the locus of the manager's projections. We can now formalize the wedge as an accounting identity. Define
 
@@ -49,7 +49,7 @@ Two firms reporting identical earnings can have very different decompositions. F
 
 The accrual measure is not a measure of *bad* accounting. Accruals are central to the value of accrual accounting itself. Chapter 3 argued that accruals communicate information that cash flows alone cannot — the timing of underlying economic performance, the manager's forward-looking estimates, the smoothing of lumpy cash collections. Sloan's result does not undermine this argument. It says, more specifically, that the *marginal* accrual — accruals beyond what is necessary to communicate underlying economic activity — is on average less persistent than the corresponding cash flow. Some accruals are economically informative; others reflect estimation noise or manipulation. The empirical aggregate is dominated enough by the latter that high-accrual earnings predict lower future earnings.
 
-## 7.3 The Sloan result
+## The Sloan result
 
 Sloan's empirical strategy was elegantly simple. Take a large sample of U.S. public firms over 1962--1991. Compute, for each firm-year, total accruals using the balance-sheet formula of Section 7.2. Scale by average total assets. Sort firms into deciles each year by the accrual measure. Then trace future earnings and future stock returns of the firms in each decile.
 
@@ -73,7 +73,7 @@ The result has been replicated and extended many times. The anomaly is robust to
 The Sloan result admits at least three interpretations. (i) A *behavioral* failure: investors fixate on bottom-line earnings and fail to process the cash-versus-accrual decomposition. (ii) A *risk-based* explanation: high-accrual firms differ from low-accrual firms on a priced risk dimension that the standard asset pricing model fails to capture, so Sloan's abnormal returns are compensation for that risk. (iii) A *limits-to-arbitrage* explanation: rational arbitrageurs cannot fully eliminate the mispricing because of short-sale constraints, transaction costs, and idiosyncratic-risk capacity limits. The literature has not converged on a single interpretation. @mashruwalarajgopalshevlin2006 provide direct evidence consistent with the limits-to-arbitrage view by showing that the anomaly concentrates in high-idiosyncratic-risk, high-transaction-cost firms. Subsequent work has also documented behavioral mechanisms and partial risk-based corrections.
 :::
 
-## 7.4 The four major accrual categories
+## The four major accrual categories
 
 Total accruals are the sum of several economically distinct items. The empirical literature typically distinguishes four major categories, each with its own persistence profile and its own susceptibility to managerial discretion.
 
@@ -123,7 +123,7 @@ The example is stylized, but the pattern generalizes. The cash-sale component of
 
 A real firm has many more accruals than the single receivable in this example, and many of the accruals are economically informative rather than mechanically reversing. The point of the example is not that all accruals are noise. The point is that even the most innocuous accrual — a routine credit sale to a creditworthy customer — embeds a persistence wedge between earnings and cash flows, and that the cumulative effect of many such wedges produces the empirical regularity Sloan documented.
 
-## 7.5 The Dechow-Dichev framework
+## The Dechow-Dichev framework
 
 @dechowdichev2002 sharpened the analysis by proposing a measure of *accrual quality* (i.e., the extent to which accruals map into cash flows in the surrounding periods). In their framework, the firm's working-capital accruals at time $t$ should, if economically informative, be associated with cash flows realized at $t-1$, $t$, and $t+1$. Receivables at $t$ should be collected as cash at $t+1$; payables at $t$ should be paid as cash at $t+1$; revenue accrued at $t$ may correspond to cash collected at $t-1$ in the form of customer prepayments. The unexplained portion of working-capital accruals — the residual from a regression of accruals on lagged, contemporaneous, and lead cash flows — is the *estimation error*, the part of the accrual that does not map into cash flows in the surrounding periods.
 
@@ -133,7 +133,7 @@ The Dechow-Dichev framework gives a more nuanced version of the Sloan story. Hig
 
 The two frameworks are complementary. Sloan documented an empirical regularity at the level of total accruals. Dechow-Dichev provided a measurement framework that distinguishes informative accruals from noisy ones. Subsequent work has used both frameworks to study earnings-quality determinants, financial-reporting reliability, and the cross-section of expected stock returns.
 
-## 7.6 The institutional response: the statement of cash flows
+## The institutional response: the statement of cash flows
 
 The decomposition Sloan made central is observable, on a public-firm basis, only because U.S. GAAP requires the firm to report its operating cash flow separately from its earnings. The *statement of cash flows*, codified at ASC 230, has been required of U.S. public firms since 1987, when SFAS 95 replaced an earlier statement of changes in financial position.
 
@@ -169,7 +169,7 @@ Consider a firm that sells a bundled contract — a piece of hardware together w
 
 The example connects directly to the Sloan framework. The receivables-driven and contract-liability-driven portions of working-capital accruals are exactly the items in which application choices under ASC 606 — the identification of performance obligations, the estimation of standalone selling prices, the determination of variable consideration, and the timing of satisfaction — have their largest impact on near-term earnings persistence. Two firms with identical underlying economic activity can produce different accrual paths depending on how aggressively they identify distinct performance obligations or accelerate the recognition of variable consideration. The empirical accrual literature treats this category of judgment as a central driver of cross-sectional variation in earnings quality, consistent with the @dechowdichev2002 prediction that working-capital accruals reflecting larger estimation errors carry lower persistence into future cash flows.
 
-## 7.7 Mechanics: receivables, inventory, and the WorldCom case
+## Mechanics: receivables, inventory, and the WorldCom case
 
 Two of the most consequential working-capital accruals in the empirical literature are the allowance for doubtful accounts (associated with receivables) and the inventory cost-flow assumption. This section develops both at the level needed for the framework of this chapter, and closes with the WorldCom capitalization case — the most cited real-world illustration of how a single accrual decision can move earnings by billions of dollars.
 
@@ -217,7 +217,7 @@ Second, the case illustrates that the accrual quality literature is not only abo
 In retrospect, WorldCom's published cash flow statements during the period of the irregularities showed unusually high operating cash flow relative to peers — operating cash flow grew faster than would have been expected given the firm's revenue and the industry's competitive pressure. Capital expenditures, by contrast, also grew rapidly. The combination — high CFO, high capex, with capex growing faster than CFO — was consistent with reclassification of operating expenses as investing items. Analysts who attended to the cash flow statement detail had access to suggestive (though not definitive) evidence before the public disclosure of the irregularities.
 :::
 
-## 7.8 Empirical evidence
+## Empirical evidence
 
 The accrual anomaly literature has continued to develop in the three decades since Sloan's original paper. Three strands are particularly worth noting.
 
@@ -229,7 +229,7 @@ Third, the *broader earnings-quality* literature has used the Sloan and Dechow-D
 
 The literature does not hold that accruals should be regarded with suspicion as a class. Accruals are central to the value of accrual accounting itself, and Chapter 3 argued that accruals carry information about underlying economic performance that operating cash flows alone cannot. Sloan's result qualifies this argument by showing that, on average, the marginal accrual is less persistent than the corresponding cash flow, and that the price reaction to earnings underweights the difference. The result is a reason to read the cash flow statement carefully — not a reason to ignore accrual accounting.
 
-## 7.9 Key takeaways
+## Key takeaways
 
 ::: {.callout-important}
 ## Key takeaways
@@ -243,7 +243,7 @@ The literature does not hold that accruals should be regarded with suspicion as 
 - **Read the cash flow statement first.** A firm whose earnings are close to operating cash flow is sending a different signal than a firm whose earnings are dominated by reconciling items. The WorldCom improper line-cost capitalization is a cautionary illustration.
 :::
 
-## 7.10 Discussion questions
+## Discussion questions
 
 1. Sloan's accrual anomaly has shown some attenuation since the publication of his original 1996 paper but has not disappeared. What does the partial attenuation tell us about the role of academic research in financial markets? Is the partial nature of the attenuation evidence for or against the limits-to-arbitrage interpretation?
 2. The chapter argued that accruals can be informationally useful (Chapter 3) and yet, on average, less persistent than cash flows (this chapter). Reconcile the two framings: under what conditions would we expect a particular accrual to be highly informative, and under what conditions would we expect it to be noise?
@@ -251,7 +251,7 @@ The literature does not hold that accruals should be regarded with suspicion as 
 4. Suppose two firms in the same industry report identical earnings for the year, but one firm's earnings are dominated by operating cash flow and the other by accruals. Which firm should investors expect to perform better in the following year, and why? Are there conditions under which the answer reverses?
 5. The chapter discussed three interpretations of the Sloan result — behavioral underreaction, risk premium, and limits to arbitrage. Which interpretation do you find most compelling? What evidence would shift your view?
 
-## 7.11 Problems
+## Problems
 
 ### Mechanical
 
@@ -279,7 +279,7 @@ The literature does not hold that accruals should be regarded with suspicion as 
 
 10. *(Lab preparation.)* Open `lab02_template.ipynb` in Google Colab when it becomes available on Canvas. Run the data-pull section and verify that you can produce a Compustat panel of accrual measures over the past five years. Bring any errors or unexpected behaviors to the in-class lab session.
 
-## 7.12 Lab
+## Lab
 
 The in-class activity for this week is **WRDS Lab 2: The Sloan Accrual Anomaly**. The lab walks you through the construction of the Sloan accrual measure on a recent panel of Compustat firms, the formation of accrual deciles, and the computation of one-year-ahead returns by decile. The deliverable is a Colab notebook that produces (i) the canonical decile-mean plot of one-year-ahead returns by accrual decile, (ii) the Sloan forecasting regression of next-year earnings on the current-year cash flow and accrual components, and (iii) a brief written discussion of how your replication compares to Sloan's original 1996 result, including any attenuation you observe in the more recent sample.
 
@@ -287,7 +287,7 @@ Lab 2 will be available on Canvas at the start of Week 7. The deliverable is due
 
 The in-class activity for the second class meeting is the **Nittany Threads cash flow** activity (`activities/Nittany Threads*`), in which you will work through the construction of a cash flow statement for a stylized small firm and observe how the working-capital accruals connect the income statement to the change in cash.
 
-## 7.13 Further reading
+## Further reading
 
 The four readings below are the assigned readings for Week 7. You should read all of them.
 

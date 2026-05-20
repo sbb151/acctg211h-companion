@@ -5,7 +5,7 @@ description: "How firms choose which long-term investments to fund, and the agen
 
 # Capital Budgeting Under Asymmetric Information {#sec-capbudget}
 
-## 13.1 Opening question
+## Opening question
 
 In the late 1990s, @grahamharvey2001 surveyed the chief financial officers of nearly four hundred U.S. firms about the capital budgeting techniques they actually used. The textbook answer, taught in every introductory corporate finance course, is that firms should compute the *net present value* (NPV, i.e., the discounted sum of a project's future cash flows minus its initial cost) of each candidate project and accept those with positive NPV. The survey found something more interesting. Approximately seventy-five percent of CFOs reported using NPV, but approximately seventy-five percent also reported using *internal rate of return* (IRR, i.e., the discount rate at which a project's NPV equals zero). Approximately fifty-seven percent reported using *payback period* (i.e., the time required to recover the initial investment), the simplest and theoretically least defensible technique. A substantial fraction of firms reported using all three simultaneously.
 
@@ -15,7 +15,7 @@ This chapter develops the framework. It opens with the standard NPV machinery an
 
 The chapter closes Arc III's substantive content. After this chapter, only the synthesis Chapter 14 and the capstone debates remain.
 
-## 13.2 The NPV framework
+## The NPV framework
 
 Net present value is the standard analytical tool for evaluating long-term investment projects. The technique computes the present value of the project's expected future cash flows, discounted at a rate that reflects the project's risk and the time value of money, and subtracts the project's initial cost. A project with positive NPV creates value for the firm and should be accepted; a project with negative NPV destroys value and should be rejected.
 
@@ -31,7 +31,7 @@ The discount rate is, in principle, the project's risk-adjusted required return 
 
 The NPV technique has theoretical appeal. It is consistent with the firm-value-maximization objective, it accommodates risk through the discount rate, it weights cash flows by the time at which they occur, and it produces a single decision-relevant number. The textbook treatment of NPV is rigorous and the criticisms of NPV in the academic literature are typically not about the framework itself but about specific applications — the choice of discount rate, the estimation of cash flows, and the treatment of embedded option value (developed in Section 13.6).
 
-## 13.3 IRR, payback, and the profitability index
+## IRR, payback, and the profitability index
 
 Three alternatives to NPV are widely used in practice. We develop each in turn.
 
@@ -49,7 +49,7 @@ $$
 
 A profitability index above one corresponds to a positive NPV. The PI's primary use is *capital rationing*: when the firm has a fixed budget that does not permit acceptance of every positive-NPV project, ranking projects by PI rather than by NPV identifies the combination of projects that produces the largest aggregate NPV per dollar of constrained capital. We illustrate the rationing application in Problem 2 of Section 13.10.
 
-## 13.4 Mechanics: an extended worked example
+## Mechanics: an extended worked example
 
 To make the four techniques concrete, consider an extended Acme Corp. example. Acme is evaluating a five-year capital project to expand its production capacity. The project requires an initial investment of $1{,}500{,}000 at $t = 0$, is expected to produce after-tax operating cash flows over five years, and is expected to generate a terminal value of $300{,}000 at the end of year 5 from the sale of residual equipment and the release of working capital. Acme's cost of capital is 10 percent. The cash-flow profile is as follows.
 
@@ -80,7 +80,7 @@ Consider two mutually exclusive variants of the Acme project. Project A is the p
 Non-conventional cash-flow patterns produce a related complication. A project that requires $100{,}000 at $t = 0$, returns $400{,}000 at $t = 1$, and requires a $400{,}000 remediation outlay at $t = 2$ has two IRRs — one near 25 percent and another near 400 percent — because the NPV function changes sign twice. The IRR rule cannot identify "the" rate of return; the analyst who relies on a single IRR will reach incorrect conclusions. NPV, applied at the firm's cost of capital, gives an unambiguous answer.
 :::
 
-## 13.5 Antle-Eppen: capital rationing and organizational slack
+## Antle-Eppen: capital rationing and organizational slack
 
 @antleeppen1985 developed an analytical model of capital budgeting under asymmetric information that connects directly to the framework Arc III has developed. The model considers a corporate headquarters allocating capital across divisions, where each division has private information about the productivity of its investment opportunities. Headquarters cannot directly observe divisional productivity; it can observe only the project proposals divisions submit, and divisions have incentives to overstate the productivity of their proposals to obtain more capital than they truly need. Antle and Eppen showed that, under a wide class of information conditions, the optimal capital allocation policy involves *capital rationing*: corporate headquarters provides each division with a capital budget below the level that the division's reported productivity would justify. The rationing serves a screening function: divisions with truly high-productivity projects will, on the margin, prefer to receive smaller capital allocations on terms that prevent overstatement, while divisions with low-productivity projects will be unable to extract excessive capital because the rationing constraint binds.
 
@@ -94,7 +94,7 @@ The Antle-Eppen analysis has implications that extend beyond the model's specifi
 The Antle-Eppen framework links capital budgeting to the broader Arc III theme. Internal accounting is the institutional response to information asymmetry between corporate headquarters and decentralized operating units, and the framework applies to capital budgeting as much as it applies to performance measurement. The capital allocation process is one of the most important single decisions the modern firm makes, and the analytical framework for thinking about it is the same framework we have used for cost behavior, performance measurement, and (in Arc I) external reporting.
 :::
 
-## 13.6 Influence costs and internal capital markets
+## Influence costs and internal capital markets
 
 The Antle-Eppen model treats divisional managers as informationally private but otherwise non-strategic. A separate strand of the literature emphasizes that managers spend real resources lobbying for capital — preparing slide decks, building political coalitions, cultivating relationships with corporate officers — and that the lobbying activity itself is costly to the firm.
 
@@ -116,7 +116,7 @@ Two concrete examples illustrate the range. *General Electric under Jack Welch* 
 Stein's model captures the central tension: corporate headquarters has the *authority* to pick winners across divisions, an authority the external market lacks, but the same authority creates the *opportunity* for divisional managers to lobby for capital they do not deserve, and the empirical question is whether headquarters uses the authority to pick winners or is captured by the lobbying.
 :::
 
-## 13.7 Real options
+## Real options
 
 A separate qualification to the standard NPV framework concerns the treatment of *flexibility* in long-term investments. The standard NPV computation assumes a fixed cash flow profile to which the firm commits at the time of the investment. Real-world projects often have substantial flexibility: the firm can scale up if early results are favorable, scale down or abandon if they are unfavorable, defer the project to a later date, or modify the project's scope in response to new information. The standard NPV technique fails to capture this flexibility, and projects with substantial flexibility are often undervalued by NPV alone.
 
@@ -128,7 +128,7 @@ The mechanical computation of real-option values is, in general, more complex th
 
 The real-options framework intersects with the influence-cost framework in interesting ways. A capital-rationing constraint that prevents a division from undertaking a real-option-rich project is more costly than a constraint that prevents an inflexible project of the same NPV: the option value, which the rationing constraint forecloses, is part of the cost of the constraint. The empirical literature has documented patterns consistent with this reasoning, with firms in industries where real options are particularly important (e.g., R&D-intensive industries, resource-extraction industries, industries exposed to commodity-price volatility) maintaining looser capital allocation processes than firms in less option-rich industries.
 
-## 13.8 Empirical evidence
+## Empirical evidence
 
 The empirical literature on capital budgeting has grown substantially since the Graham-Harvey survey. Four findings are particularly relevant.
 
@@ -151,7 +151,7 @@ Fourth, the *capital allocation process* in multidivisional firms has been exten
 - **Real options raise the value of flexibility above the NPV baseline.** Projects with embedded options to delay, abandon, or expand are systematically undervalued by mechanical NPV, and the practical capital-budgeting processes of R&D-intensive and resource-extraction firms reflect the importance of preserving optionality.
 :::
 
-## 13.9 Discussion questions
+## Discussion questions
 
 1. The Graham-Harvey survey found that approximately seventy-five percent of CFOs use IRR and roughly the same percentage use NPV — even though the two techniques are theoretically equivalent for projects with conventional cash flows. Why might a CFO use both? What information does each technique provide that the other does not?
 2. Payback period ignores cash flows beyond the payback horizon and ignores the time value of money. Yet it remains in widespread use. Identify three plausible reasons for its persistence and rank them by which you find most compelling.
@@ -160,7 +160,7 @@ Fourth, the *capital allocation process* in multidivisional firms has been exten
 5. The Scharfstein-Stein "corporate socialism" mechanism predicts that internal capital markets in diversified firms cross-subsidize low-productivity divisions at the expense of high-productivity ones. The Maksimovic-Phillips evidence suggests that, in plant-level data, diversified firms transfer assets toward more productive divisions. How would you reconcile the two findings, and what would you want to see in additional evidence to take a stronger position?
 6. The real-options framework predicts that firms in R&D-intensive industries should maintain looser capital allocation processes than firms in less option-rich industries. Suppose you observe a pharmaceutical firm with a strict payback-based capital allocation rule. What does the choice suggest, and what would you advise the firm to consider?
 
-## 13.10 Problems
+## Problems
 
 1. *(Numerical, NPV and IRR.)* A five-year project requires an initial investment of $1{,}200{,}000 and is expected to produce after-tax cash flows of $250{,}000, $350{,}000, $400{,}000, $400{,}000, and $300{,}000 in years 1 through 5, plus a terminal value of $200{,}000 received at the end of year 5. The firm's cost of capital is 9 percent. (a) Compute the project's NPV. (b) Compute the project's IRR using trial-and-error or a spreadsheet's IRR function. (c) Compute the project's undiscounted payback period. (d) Compute the profitability index. (e) Apply each of the four decision rules — NPV, IRR (with hurdle equal to cost of capital), payback (with a three-year threshold), and PI — and discuss whether they agree.
 2. *(Numerical, capital rationing with PI.)* A division of Acme Corp. has identified five candidate projects with the following NPVs and capital requirements: Project A, NPV $80{,}000, capital $200{,}000; Project B, NPV $60{,}000, capital $150{,}000; Project C, NPV $50{,}000, capital $100{,}000; Project D, NPV $40{,}000, capital $200{,}000; Project E, NPV $20{,}000, capital $50{,}000. The division's capital budget is $400{,}000. (a) Compute the profitability index for each project. (b) Identify the value-maximizing combination of projects subject to the capital constraint, using the PI ranking as a starting point and confirming the result by checking the aggregate NPV of each feasible combination. (c) Compute the opportunity cost of capital for the marginal accepted project and compare it to the firm's nominal cost of capital. Discuss the implications for the divisional hurdle rate.
@@ -171,7 +171,7 @@ Fourth, the *capital allocation process* in multidivisional firms has been exten
 7. *(Conceptual, winner-picking vs. socialism.)* The chapter contrasted GE under Jack Welch with Berkshire Hathaway as two responses to the winner-picking / socialism trade-off. Identify a third public company whose capital-allocation arrangements are publicly documented (in annual reports, investor presentations, or business journalism). Describe the firm's approach, classify it relative to the GE and Berkshire models, and assess whether the approach appears to address the influence-cost problem.
 8. *(Writing exercise.)* In approximately 600 words, take a position on the following claim: *"The widespread practice of using hurdle rates substantially above the firm's cost of capital is an institutional error that destroys value by causing firms to reject positive-NPV projects."* Marshal evidence from this chapter — including the Antle-Eppen, Milgrom, and Stein analyses — and from your own reading. Acknowledge the strongest counterargument and respond to it. Your essay should take a position rather than survey the literature.
 
-## 13.11 Lab
+## Lab
 
 The in-class activity for this week is a **capital budgeting simulation** in which students play roles as divisional managers proposing projects to a corporate headquarters that must allocate a fixed capital budget across competing proposals. Each project proposal embeds private information about the project's true productivity that the divisional manager knows but corporate headquarters does not. Divisional managers may also invest "lobbying effort" — a costly action that increases the probability headquarters funds the project but produces no value for the firm — capturing the influence-cost mechanism of @milgrom1988. The simulation makes the mechanism-design framework concrete: students experience, in real time, the trade-off between providing capital to high-productivity projects, avoiding overpayment to managers who overstate their project quality, and limiting the wasteful expenditure of effort on internal politics.
 
@@ -179,7 +179,7 @@ The in-class activity for this week is a **capital budgeting simulation** in whi
 
 There is no out-of-class lab for this week. The Lab 6 group empirical project has been ongoing through Arc III; preliminary findings are due in Week 14.
 
-## 13.12 Further reading
+## Further reading
 
 The readings below are the assigned readings for Week 13. You should read all of them.
 

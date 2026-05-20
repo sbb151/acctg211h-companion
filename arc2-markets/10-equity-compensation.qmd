@@ -5,7 +5,7 @@ description: "Stock options, restricted stock units, and performance shares. The
 
 # Equity Compensation {#sec-equity-compensation}
 
-## 10.1 Opening question
+## Opening question
 
 In 2005, just before the FASB's new stock-option expensing rule took effect, the median S&P 500 CEO held option grants whose Black-Scholes value was approximately $5 million per year. The same firms reported the cost of those grants — under the pre-2005 framework — almost entirely in a footnote, with no charge to net income. The largest single line item in many executives' annual pay packages produced, on the income statement, no expense at all. Earnings under the prior framework treated stock options as economically free.
 
@@ -15,7 +15,7 @@ The episode is a useful entry point into this chapter for two reasons. First, it
 
 This chapter closes Arc II by examining equity compensation as a contracting and measurement problem. The chapter develops the historical fight over options expensing (i.e., the standard-setting episode that produced FAS 123R), the mechanics of grant-date fair value for options, restricted stock units, and performance shares, and the empirical literature on whether equity-pay-sensitive executives are more likely to misreport. The literature on misreporting incentives [@bergstresserphilippon2006; @burnskedia2006; @ericksonhanlonmaydew2006] connects directly to the moral hazard framework of Chapter 4 and to the earnings-management mechanisms that the Companion will revisit when Arc III turns to internal information systems.
 
-## 10.2 A short history of stock-option accounting
+## A short history of stock-option accounting
 
 The accounting treatment of stock options in the United States passed through three regimes between 1972 and 2005. The trajectory is itself a useful illustration of how standard-setting interacts with industry incentives and Congressional politics.
 
@@ -33,7 +33,7 @@ The FAS 123R fight is a useful case study in the political economy of standard-s
 
 The argument for the pre-2005 framework — that options are not "real" expenses — does not, on most economic readings, survive scrutiny. The firm that grants an option has transferred a contingent claim on its future cash flows; the recipient has received something of positive market value; the transfer is unambiguously a compensation event. The accounting question is how to measure the value of the transfer, not whether the transfer occurred. The contested issue was construct validity: whether the Black-Scholes model and its variants produce reliable estimates of the option's value at grant, given that the options are non-tradable, contingent on continued employment, and subject to substantial early-exercise behavior. The FASB's view, broadly shared in the academic literature [@coreguay2002], was that grant-date fair-value estimates were imperfect but sufficiently reliable for recognition.
 
-## 10.3 Institutional response: ASC 718
+## Institutional response: ASC 718
 
 The current U.S. GAAP framework for stock-based compensation is codified at ASC 718 (the codification of SFAS 123R, plus subsequent amendments). The framework has four essential elements.
 
@@ -47,7 +47,7 @@ The current U.S. GAAP framework for stock-based compensation is codified at ASC 
 
 The framework treats different categories of awards consistently in their accounting representation while distinguishing them by their economic characteristics. The next section develops the mechanics of the three principal categories.
 
-## 10.4 Mechanics: options, RSUs, and performance shares
+## Mechanics: options, RSUs, and performance shares
 
 ### Stock options
 
@@ -122,7 +122,7 @@ Performance shares have become a substantial fraction of senior-executive equity
 The accounting asymmetry between performance conditions and market conditions has unintended consequences for contract design. A firm that designs a relative-TSR performance share locks in its compensation expense at grant. A firm that designs an EPS-target performance share has a residual chance of reversing the expense (if the target is missed). The asymmetry creates a marginal accounting incentive to favor market-condition awards, even when the contract designer might prefer an accounting-target award on incentive grounds. The empirical literature on the rise of rTSR awards has not, to our knowledge, isolated the contribution of this accounting asymmetry.
 :::
 
-## 10.5 Mechanics: tax treatment and diluted EPS
+## Mechanics: tax treatment and diluted EPS
 
 Two further mechanical issues warrant attention because they affect both reported financial statements and the cash cost of the awards.
 
@@ -140,7 +140,7 @@ Consider an example. Suppose Acme has 1,000,000 weighted-average common shares o
 
 Anti-dilutive securities — those whose inclusion would increase EPS rather than decrease it — are excluded from the diluted computation. Out-of-the-money options (strike above the average market price) are anti-dilutive and do not enter the diluted EPS. RSUs enter the diluted EPS at the full number of unvested units, since they have no exercise price and produce no offsetting cash proceeds for the treasury stock method.
 
-## 10.6 The connection to stewardship
+## The connection to stewardship
 
 Chapter 4 introduced the principal-agent framework and the Holmstrom informativeness principle as the analytical foundation for thinking about compensation contracts. The equity-compensation mechanics developed above are a specific institutional instantiation of that framework, and a step back is useful before turning to the empirical literature.
 
@@ -152,7 +152,7 @@ A second connection to Chapter 4 is the verifiability requirement. The Holmstrom
 
 The connection runs in the other direction as well. The structure of the equity contract creates incentives for the manager to influence the verifiable signal — the reported earnings, the audited performance target, the stock price at grant. Section 10.7 turns to the empirical literature on whether equity-pay-sensitive executives in fact respond to the contract by exercising discretion over the signal.
 
-## 10.7 Empirical evidence: equity pay and misreporting
+## Empirical evidence: equity pay and misreporting
 
 The empirical literature on the relation between equity-based compensation and financial misreporting is, as Bergstresser and Philippon characterize it, "a literature with a clear theoretical prediction and a contested empirical record." The theoretical prediction is straightforward: an executive whose wealth is sensitive to the stock price has an incentive to take actions that increase the stock price, including misreporting actions (i.e., the manipulation of reported earnings through accruals or other discretionary choices) that can fool the market temporarily. The contested empirical question is whether the marginal effect of equity pay on misreporting is detectable in the cross-section of firms, conditional on the substantial confounding variation in firm characteristics and contract design.
 
@@ -189,7 +189,7 @@ The literature on equity pay and misreporting is an example of a finding that is
 - **Connections to Arc III.** The contracting framework developed in Chapter 4 and applied here to equity compensation will recur in Arc III's treatment of performance measurement and capital budgeting. The same Holmstrom logic — condition on informative signals; balance risk and effort — underlies the internal-information systems that will occupy the remainder of the course.
 :::
 
-## 10.8 Discussion questions
+## Discussion questions
 
 1. The FAS 123R fight was, in important respects, a dispute about whether stock options have an "economic" cost or only a "potential" cost. Take a position on the dispute and defend it. What does the position imply about the appropriate accounting treatment for other compensation forms whose value is contingent on uncertain future events?
 2. Performance shares introduce a step function at the performance threshold, creating an incentive for executives to manage the firm's reported performance toward the threshold. Suppose you are designing the compensation contract for a CEO of a large U.S. public firm. Would you (i) use performance shares with a smoothly increasing payout function, (ii) use performance shares with discrete payout tiers, or (iii) avoid performance shares in favor of time-vested RSUs? Defend your choice using the framework of Chapter 4.
@@ -197,7 +197,7 @@ The literature on equity pay and misreporting is an example of a finding that is
 4. The Holmstrom informativeness principle (Chapter 4) holds that any signal informative about managerial effort should enter the compensation contract. The principle is silent on the *form* of the signal's incorporation. Options, RSUs, and performance shares all condition on the stock price but produce different sensitivities of executive wealth to the price. Which form of conditioning best implements the Holmstrom logic? Why?
 5. Some technology firms continue to report non-GAAP earnings measures that exclude stock-based compensation. Engage the argument for and against such exclusion. Does the framework of this chapter give you a reason to prefer one position over the other?
 
-## 10.9 Problems
+## Problems
 
 1. *(Numerical, grant-date fair value.)* Acme Corp. grants its CEO 10,000 stock options on January 1 with a strike of $40 (the grant-date stock price). The options have an expected term of seven years, expected annualized volatility of 35%, a risk-free rate of 4.5%, and an expected dividend yield of 1.5%. A Black-Scholes calculation produces a fair value per option of $14.50. (a) Compute the total grant-date fair value of the award. (b) Assuming four-year ratable vesting, compute the annual compensation expense. (c) Construct the journal entry Acme will record at the end of year 1.
 2. *(Numerical, RSU vesting and exercise.)* On January 1, Acme grants its CFO 8,000 RSUs with a grant-date stock price of $60 per share and three-year cliff vesting. (a) Compute the grant-date fair value of the award. (b) Compute the annual compensation expense. (c) Construct the journal entry Acme will record on the day the RSUs vest, assuming all 8,000 vest and the stock price at vesting is $90 per share.
@@ -207,7 +207,7 @@ The literature on equity pay and misreporting is an example of a finding that is
 6. *(Conceptual.)* The FAS 123R episode produced a final standard that required fair-value expensing of stock options, over the objection of a substantial coalition of corporate issuers. Construct the argument both sides made: (i) the case for footnote-only disclosure under the pre-2005 framework, and (ii) the case for income-statement recognition at grant-date fair value. In approximately 400 words, identify the strongest version of each argument and indicate which side you find more persuasive and why.
 7. *(Writing exercise.)* In approximately 600 words, describe a compensation contract you would design for the CEO of a hypothetical mid-cap U.S. public firm. Specify the mix of fixed salary, cash bonus, time-vested RSUs, and performance shares. For each component, indicate the rationale (referencing the framework of Chapter 4 and this chapter). Identify the misreporting incentive each component creates, and describe how you would mitigate it through contract design or through the firm's internal-control environment.
 
-## 10.10 Lab
+## Lab
 
 The out-of-class lab for this week is **WRDS Lab 5: Equity Compensation and Discretionary Accruals**. The lab walks you through (i) the construction of a CEO-level wealth-performance-sensitivity measure from Execucomp, (ii) the computation of firm-level discretionary accruals using the modified Jones model on a panel of Compustat firms, and (iii) a cross-sectional regression of discretionary accruals on equity-pay sensitivity along the lines of @bergstresserphilippon2006. The deliverable is a Colab notebook that produces (a) the cross-sectional distribution of wealth-performance sensitivity in your sample, (b) the cross-sectional distribution of discretionary accruals, and (c) a brief written discussion of what your replication implies about the link between equity pay and misreporting in the modern sample.
 
@@ -215,7 +215,7 @@ The out-of-class lab for this week is **WRDS Lab 5: Equity Compensation and Disc
 
 The GenAI policy permits the use of AI coding assistants on the lab, with disclosure. The policy continues to prohibit GenAI on quizzes and exams.
 
-## 10.11 Further reading
+## Further reading
 
 The four readings below are the assigned readings for Week 10. You should read all of them.
 
