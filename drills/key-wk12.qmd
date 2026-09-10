@@ -1,0 +1,13 @@
+1. **Materials price variance.** = (actual price − standard price) × actual quantity = (5.30 − 5.00) × 8,000 = **\$2,400 U**.
+
+2. **Materials quantity variance.** Standard quantity allowed = 2,000 × 3 = 6,000 lbs. Variance = (actual − standard) × standard price = (6,300 − 6,000) × 5.00 = **\$1,500 U**.
+
+3. **Labor rate variance.** = (actual rate − standard rate) × actual hours = (19.50 − 20.00) × 4,200 = **\$2,100 F**.
+
+4. **Labor efficiency variance.** Standard hours allowed = 2,000 × 2 = 4,000. Variance = (actual − standard) × standard rate = (4,200 − 4,000) × 20.00 = **\$4,000 U**.
+
+5. **ROI.** = 600,000 ÷ 3,000,000 = **20%**.
+
+6. **Residual income.** = operating income − (required rate × operating assets) = 600,000 − 0.14 × 3,000,000 = 600,000 − 420,000 = **\$180,000**.
+
+7. **EVA.** = NOPAT − (WACC × invested capital) = 1,200,000 − 0.10 × 8,000,000 = 1,200,000 − 800,000 = **\$400,000**.

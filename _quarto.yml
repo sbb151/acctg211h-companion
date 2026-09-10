@@ -17,9 +17,7 @@ book:
     treats accounting as the institutional response to specific information-economics
     problems and develops the relevant mechanics as students encounter the questions
     those mechanics are designed to answer.
-  cover-image: cover.png
-  favicon: favicon.png
-  site-url: https://acctg211h.psu.edu/
+  site-url: https://sbb151.github.io/acctg211h-companion/
   repo-url: https://github.com/sbb151/acctg211h-companion
   repo-actions: [edit, issue]
   sharing: [twitter, linkedin]
@@ -30,13 +28,13 @@ book:
   chapters:
     - index.qmd
     - preface.qmd
-    - part: "Arc I — The Information Problem"
+    - part: "Arc I — Information, Value, and Reporting"
       chapters:
-        - arc1-information/01-foundations.qmd
-        - arc1-information/02-lemons.qmd
-        - arc1-information/03-signaling.qmd
-        - arc1-information/04-stewardship.qmd
-        - arc1-information/05-standards.qmd
+        - arc1-information/01-information.qmd
+        - arc1-information/02-certainty.qmd
+        - arc1-information/03-uncertainty.qmd
+        - arc1-information/04-information-incentives.qmd
+        - arc1-information/05-framework.qmd
     - part: "Arc II — Markets and Measurement"
       chapters:
         - arc2-markets/06-efficient-markets.qmd

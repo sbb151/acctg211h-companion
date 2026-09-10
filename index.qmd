@@ -1,58 +1,35 @@
 # Welcome {.unnumbered}
 
-This is the *ACCTG 211H Companion* — the online textbook for *Honors Financial and Managerial Accounting for Decision Making* at the Smeal College of Business.
+This is the *ACCTG 211H Companion*, the textbook for Honors Financial and Managerial Accounting for Decision Making at Penn State. It asks: **What would someone need to know to entrust resources to an organization, and what can its accounts actually tell them?**
 
-The Companion is organized around a single question: *Why does accounting exist?* Each chapter answers a smaller piece of that question, then introduces the mechanics needed to act on the answer. The goal of the course, and of this book, is to help you graduate from ACCTG 211H able to articulate, for any accounting choice, both *what* the rule is and *why* a sensible person would choose that rule over plausible alternatives.
+You do not need to plan a career in accounting to use these ideas. They help you evaluate an employer, understand a business proposal, question a performance measure, or assess a claim about an organization's finances.
 
-## How to use this book
+## Begin with the opening unit
 
-The chapters are designed to be read in order. Each builds on the last, and the spiral structure of the course means that ideas introduced early are revisited later at greater depth. If you read Chapter 7 before Chapter 3, the discussion of the accrual anomaly will not land in quite the same way.
+The first five weeks develop a sequence of increasingly realistic settings:
 
-That said, the chapters are also designed to be revisited. After we have studied Holmstrom's stewardship model in Week 4, you may find it useful to reread Chapter 1's discussion of the separation of ownership and control. After we have computed the Sloan accruals in Week 7, the Chapter 3 discussion of accruals as a signal will read very differently. Treat the Companion the way you would treat a good road atlas: you read it forward to plan, and you flip back to it constantly to figure out where you are.
+1. [Information and cooperation](arc1-information/01-information.qmd): why records and credible reports matter.
+2. [Certainty](arc1-information/02-certainty.qmd): value, income, distributions, and linked statements when future cash flows are known.
+3. [Uncertainty](arc1-information/03-uncertainty.qmd): expected income, news, and revisions to value.
+4. [Information and incentives](arc1-information/04-information-incentives.qmd): learning from reports and evaluating performance.
+5. [The framework and first accrual statements](arc1-information/05-framework.qmd): recognition, measurement, disclosure, and transaction analysis.
+
+One small model enterprise connects the numerical examples. A separate, fully specified Campus Curb operating case then introduces GAAP accounting. Each case states its assumptions; do not mix their numbers.
+
+## How to work with the book
+
+Read the required route shown at the start of each opening chapter. Pause to calculate the worked examples. Complete the drills, check the answers, and correct errors. Optional extensions deepen the theory but are not prerequisites for the opening assessments.
+
+Research briefs ask what a study compares, what its evidence supports, and what remains uncertain. Full papers are not automatically required because they appear in a citation or bibliography. Follow the exact reading selections in the course schedule.
+
+Later chapters return to these ideas in capital markets, assets and liabilities, compensation, and decisions inside firms. The opening unit supplies the distinction between cash, accounting income, and value that those chapters use.
 
 ## What you will learn
 
-By the end of the course, you should be able to:
+- Explain how information, uncertainty, and incentives affect cooperation and decisions.
+- Prepare and interpret linked financial statements for representative transactions.
+- Distinguish model predictions, empirical associations, causal evidence, and policy judgments.
+- Conduct a bounded empirical analysis and explain the evidence and its limitations.
+- Defend an accounting choice using numerical reasoning, the user's decision, and relevant evidence.
 
-1. Explain the economic problems that gave rise to financial and managerial accounting, using the language of information asymmetry, signaling, moral hazard, and decentralization.
-2. Prepare and analyze a basic set of GAAP financial statements for representative business transactions.
-3. Read a canonical academic paper in financial or managerial accounting and articulate (a) the question it asks, (b) the empirical or theoretical method it uses, (c) what it finds, and (d) what its findings imply for the broader question of how accounting is used.
-4. Conduct a small empirical analysis using Wharton Research Data Services (WRDS), including extracting data, computing standard accounting and capital-market measures, and summarizing findings in a written report.
-5. Argue, in structured oral debate, both sides of contested conceptual questions in financial reporting.
-
-## A note on the spiral
-
-You will encounter accruals three times this semester: first in Chapter 3, where they appear as a signaling device; second in Chapter 6, where they appear as a value-relevant input to capital markets; and third in Chapter 7, where they appear as a noisy and sometimes mispriced metric. Each pass introduces what came before, deepens it, and adds a new layer.
-
-This is not redundancy. It is the structure of the course. The reason you study accruals three times is that there are three different questions one can ask about them, and a serious treatment of accounting requires you to be able to answer all three.
-
-## Conventions
-
-In this book:
-
-- **Bold** indicates a defined term that you should be able to define yourself after reading.
-- *Italic* indicates emphasis or, occasionally, the title of a referenced work.
-- `Monospaced` indicates code or a variable name in a dataset.
-- A box like the one below indicates an important callout:
-
-::: {.callout-note}
-## Why this matters
-
-Callouts pull out a particular point or implication of the surrounding text. Read them carefully.
-:::
-
-::: {.callout-warning}
-## Common pitfall
-
-Pitfalls flag mistakes that students reliably make on the relevant material. Read these especially carefully.
-:::
-
-::: {.callout-tip}
-## For the empirical labs
-
-Lab tips are practical guidance for the WRDS work — Python/`pandas` syntax, data caveats, things to check.
-:::
-
-## Errata and feedback
-
-This is the first edition of the Companion. If you spot an error, an unclear passage, or a missing reference, please email me at sbb151@psu.edu, or — if you are comfortable with GitHub — submit an issue or pull request to the [companion repository](https://github.com/sambonsall/acctg211h-companion). Each year's edition incorporates the previous year's corrections.
+If an example or explanation is unclear, bring the question to class or email sbb151@psu.edu. Explaining where your reasoning stopped is useful feedback, even before you know the answer.

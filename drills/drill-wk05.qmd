@@ -1,0 +1,11 @@
+## Week 5 drills: accruals and statement connections {#sec-drill-wk05}
+
+Complete after Day 10 and submit Sunday, February 14, together with your end-of-unit memo. Work individually, check the key, and correct errors. Graded for completion; no generative AI. These drills introduce independent practice, not additional transactions in Campus Curb.
+
+1. A company pays \$1,200 for six months of insurance and initially records a prepaid asset. One month elapses. State the expense, remaining asset, and adjustment's cash effect.
+2. A service provider receives \$2,400 for four months of equally provided service and initially records a liability. After one month, state revenue, remaining liability, and the adjustment's effect on equity.
+3. A \$6,000 loan bears 8% annual interest. Three months pass without a payment or bill. Calculate interest expense and the related liability. Is recognizing it necessarily a private-information signal?
+4. A \$2,400 asset has a four-year useful life, zero residual value, and straight-line depreciation. Calculate one month's depreciation. State the effects on equipment cost, accumulated depreciation, net assets, income, and cash.
+5. An organization reports revenue of \$3,000 and expenses of \$2,200. Opening equity is \$5,000; owners contribute \$1,000 and receive \$300 in distributions. Calculate income and closing equity.
+6. A company recognizes \$500 of completed services on account and \$300 of wages earned but unpaid. Give the combined effects on assets, liabilities, equity, income, and cash. Check the equation.
+7. Distinguish the following questions: does a present right exist; should it appear in the statements; at what amount should it be reported; what assumptions should a note explain? Can a concepts statement override an applicable GAAP standard?

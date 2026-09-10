@@ -1,49 +1,37 @@
-# Preface: How This Book Is Organized {.unnumbered}
+# Preface: Reading, Practice, and Evidence {.unnumbered}
 
-This preface explains the structure of the Companion, the chapter template, and how the book interacts with the rest of the course. It is not strictly required reading on the first day — but you will probably find the rest of the course easier to navigate if you read it once before Week 1.
+The companion connects accounting to decisions about resources. Its first job is to make the numerical and conceptual foundations usable; its second is to help you examine where accounting's choices are contested.
 
 ## The four arcs
 
-The Companion is divided into four arcs of unequal length, each animated by a single question.
+**Arc I — Information, Value, and Reporting (Chapters 1–5).** Begin with the demand for information. Build accounting under certainty, introduce shared uncertainty, then introduce imperfect reports and incentives. The FASB framework and first systematic GAAP entries follow those economic questions.
 
-**Arc I — The Information Problem (Chapters 1–5).** Why does accounting exist at all? The arc opens with the historical separation of ownership from control [@berlemeans1933] and develops the four foundational economic problems accounting was invented to address: adverse selection, signaling, moral hazard, and the regulatory environment in which standards are set.
+**Arc II — Markets and Measurement (Chapters 6–10).** Examine how users interpret earnings and cash flows, how assets and liabilities are measured, and how compensation interacts with reporting. Value and income are related, but they are not interchangeable.
 
-**Arc II — Markets and Measurement (Chapters 6–10).** How do capital markets use accounting numbers, and what should be measured? The arc moves from market efficiency [@fama1970; @ball1968] through accruals and earnings quality [@sloan1996] to specific measurement issues for long-term assets, liabilities, and equity.
+**Arc III — Contracting and Internal Information (Chapters 11–13).** Apply the same ideas to cost behavior, performance measures, decentralization, and investment decisions inside an organization.
 
-**Arc III — Contracting and Internal Information (Chapters 11–13).** How does accounting support contracts inside the firm? The arc reframes managerial accounting as the design of internal information systems for decentralized decision-making: cost behavior, performance measurement, and capital budgeting are all studied as instances of the agency and decision-rights problems introduced in Arc I.
+**Arc IV — Synthesis (Chapter 14).** Use the concepts and evidence to evaluate contested reporting choices. A defensible answer identifies its assumptions and explains what evidence would change it.
 
-**Arc IV — Synthesis (Chapter 14).** What have we learned, and what is unresolved? The arc returns to a small set of contested questions in financial reporting and uses the framework developed across the prior thirteen chapters to argue both sides.
+## The opening unit's required route
 
-## Chapter template
+Each opening chapter starts with preparation guidance and learning objectives. Read the required main text, work its examples, and complete the assigned drills. Sections labeled optional are extensions; the first quiz excludes them. The reading schedule specifies short original-source selections rather than assigning every paper cited in the text.
 
-Every chapter, except those in Arc IV, follows the same nine-section structure. The template is rigid by design — once you have read one chapter, you know how to read the next.
+A typical learning sequence is a decision, an explicit model, a worked calculation, a changed assumption, an accounting consequence, and a check of understanding. Not every chapter needs an empirical study or a formal derivation in the same place. The structure should serve the question being answered.
 
-1. **Opening question.** A short economic puzzle that motivates the chapter. Most chapters open with a concrete fact about firm behavior or capital markets, supported by a citation to the relevant literature, before turning to the question the chapter sets out to address.
-2. **Stylized model.** The simplest formal or semi-formal model that captures the puzzle. The math is kept light and the intuition heavy. Where a model is canonical (Akerlof, Holmstrom, Spence), the formal derivation is included; otherwise we rely on stylized numerical examples.
-3. **Institutional response.** How GAAP, the SEC, the FASB, or firms in practice handle the underlying problem. This section connects the abstract model to the concrete world the student will encounter as a working professional.
-4. **Mechanics.** Journal entries, financial statement preparation, ratios, or computations the student must master. The mechanics are introduced *after* the stylized model so that the student understands what the mechanics are for.
-5. **Empirical evidence.** What the academic literature has found. Each chapter assigns one or two papers; this section explains them in the context of the chapter's framework.
-6. **Discussion questions.** Three to five open-ended questions intended to seed class discussion.
-7. **Problems.** Practice problems, mostly mechanical, with a small number of conceptual problems mixed in.
-8. **Lab.** For chapters that have an associated WRDS lab, a section pointing to the lab notebook and outlining what the student should expect to learn from it.
-9. **Further reading.** An annotated list of papers and book chapters for students who want to go deeper.
+## Three distinct kinds of number
 
-## How to study from this book
+**Cash flow** records a receipt or payment. **Accounting income** reports performance under a recognition and measurement system. **Value** depends on prospective benefits and the valuation assumptions. A change in any one does not automatically imply an equal change in the others.
 
-Read the opening question and the stylized model carefully. Slow down. Most students who struggle in this course do so because they tried to memorize the institutional response (Section 3) and the mechanics (Section 4) without first internalizing the underlying problem. The mechanics make sense only after you have understood the puzzle they were designed to solve.
+The opening examples intentionally simplify firms so you can trace these connections. They identify when a calculation is a model benchmark, a proposed policy, or the supplied accounting treatment for a transaction. Keep those settings separate.
 
-Work the problems. Reading is not enough. Reading the journal entries for revenue recognition is no substitute for actually constructing them. The problems at the end of each chapter are the minimum; if you find them easy, do additional problems from the resources listed in *Further reading*.
+## Read research as an argument supported by evidence
 
-Read the assigned papers actively. For each paper, you should be able to write down — without looking — (a) the question, (b) the method, (c) the headline finding, (d) what you would believe differently after reading the paper than before. The pre-class reading questions on Canvas are designed to enforce this.
+For an empirical study, identify the question, sample, measure, comparison, main result, and limitation. Ask whether the evidence supports association or a causal inference. For a theory paper, identify the assumptions, mechanism, and prediction. A numerical classroom example illustrates a mechanism; it does not establish that the mechanism dominates in actual firms.
 
-Engage with the discussion questions before class. The discussion questions are the rough outline for what we will actually discuss. Coming to class with a half-formed answer in your head is much more useful than coming in with no answer at all.
+A result that differs from your prediction is an opportunity to investigate data, design, or assumptions. It is not a reason to alter an analysis until it produces the expected picture.
 
-Use the appendices when you need them. The appendices are reference material rather than reading material. Appendix A1 is a primer on the financial statement effects template (FSET); Appendix A2 is a Python + WRDS in Colab quickstart for the labs; Appendix A3 is a debits-and-credits cheat sheet for the moments when the entry you are about to make does not feel quite right.
+## Practice and feedback
 
-## A note on the readings
+Drills provide individual practice and have self-check answers. Opening-unit due dates follow the relevant class demonstrations. The first quiz covers the required material in Chapters 1–3, and a short Week 5 memo assesses transfer to a new case. The FSET appendix shows how to connect transactions to statements and journal entries.
 
-The Companion is the primary text for the course. Each chapter also points you toward two or three academic papers and, occasionally, chapters from other books. The papers are the heart of the matter — they are how the field actually communicates — and the Companion's job is to give you enough scaffolding that you can read them productively. Do not skip the papers in favor of the Companion. The Companion is not a replacement for the literature; it is a guide to how to read it.
-
-## A note on style
-
-I have written the Companion in what I hope is a clear, measured tone. The book is more careful and more hedged than a typical introductory textbook, because the material itself is more careful and more hedged than introductory textbooks usually admit. Accounting is not a settled field. The standards we have are the standards we have because they are the best compromises a well-meaning standard-setter could find under the constraints — not because they are the unique correct answer to a well-posed problem. I would rather you finish this course with a slight discomfort about which choices are right than with a false confidence that the answers are obvious.
+Follow the syllabus's AI policy. Reading questions, drills, and quizzes require your own work without AI. For permitted work, form your own analysis first, use AI to question it, and document what you accepted or rejected. The correct-looking output of a tool is not a substitute for understanding why an accounting treatment or inference is justified.

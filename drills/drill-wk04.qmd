@@ -1,0 +1,9 @@
+## Week 4 drills: information and incentives {#sec-drill-wk04}
+
+Complete after Day 8 and submit Sunday, February 7. These topics are not on Quiz 1. Work individually, check the key, and correct errors. Graded for completion; no generative AI.
+
+1. Among 100 cases, 25 are high demand and 75 low demand. A report is favorable in 80% of high cases and 20% of low cases. Complete a two-by-two frequency table. What fraction of favorable reports correspond to high demand? Why is the answer not 80%?
+2. Return to the chapter's 50% prior and the same report accuracy. After a favorable report, the probability of high demand is 80%. Payoffs one year later are \$880 or \$440. At 10%, calculate expected payoff and value after each report.
+3. At that report date an investor can buy the claim for \$700 or decline. Compute the report's expected decision benefit before its fee. Should the investor purchase information costing \$8? What about \$11? All costs and values are at that decision date.
+4. For the main text's manager, compare fixed pay of \$40 with \$20 plus \$80 for a good outcome. Calculate the manager's net expected payoff under each effort choice and identify the choice. Extra effort costs \$30 and raises the good-outcome probability from 40% to 80%.
+5. Classify each: recognizing interest under a known contract; estimating a scooter's useful life; offering a warranty that costs more for unreliable products; omitting interest because a bill has not arrived. Which can involve private information, and which does not require it?

@@ -18,7 +18,7 @@ The chapter introduces the standard internal performance metrics that firms use 
 
 ## The multitasking framework
 
-Consider an extension of the LEN model from Chapter 4 in which the agent allocates effort across multiple tasks. Let the agent's effort vector be $\mathbf{e} = (e_1, e_2, \ldots, e_n)$, with each component $e_i$ representing effort on task $i$. The cost of effort is $C(\mathbf{e})$, an increasing convex function with substitution: time spent on task 1 is time not spent on tasks 2 through $n$. The firm's true preferences are a weighted combination of the tasks, with weights $b_1, \ldots, b_n$ that reflect what the firm actually values.
+The following formal treatment builds on the optional LEN extension in Chapter 4; the economic intuition is that rewarding one measured task can divert attention from other valuable work. Consider a model in which the agent allocates effort across multiple tasks. Let the agent's effort vector be $\mathbf{e} = (e_1, e_2, \ldots, e_n)$, with each component $e_i$ representing effort on task $i$. The cost of effort is $C(\mathbf{e})$, an increasing convex function with substitution: time spent on task 1 is time not spent on tasks 2 through $n$. The firm's true preferences are a weighted combination of the tasks, with weights $b_1, \ldots, b_n$ that reflect what the firm actually values.
 
 The contracting problem arises because the principal cannot directly observe $\mathbf{e}$. The principal observes only signals of the form $\mathbf{y}_i = e_i + \varepsilon_i$ for some subset of the tasks $i \in S$, where $S$ is the set of *contractible* tasks. For tasks $i \notin S$, the principal cannot construct a contract that directly rewards effort — she may know the agent is doing the work in some general sense, but no measurable signal can be tied to compensation.
 
@@ -143,6 +143,14 @@ General Electric under Jack Welch (CEO from 1981 to 2001) is the most-studied co
 - **Residual income and EVA correct underinvestment but introduce their own distortions.** The choice among ROI, RI, and EVA is a choice among distortion profiles, not a choice between right and wrong metrics.
 - **The balanced scorecard is a partial response, not a solution.** Adding non-financial metrics dampens the multitasking distortion of any single metric but adds weighting and gaming problems of its own [@kaplannorton1992; @ittnerlarcker2003].
 - **What gets measured gets managed — for good and for ill.** Hospital scorecards, school accountability, and sales-quota gaming all show the same pattern: measurable dimensions improve, unmeasurable dimensions deteriorate, and the net welfare effect depends on the relative magnitudes.
+:::
+
+{{< include ../drills/drill-wk12.qmd >}}
+
+::: {.callout-tip collapse="true"}
+## Drill Set — Self-Check Answers
+
+{{< include ../drills/key-wk12.qmd >}}
 :::
 
 ## Problems

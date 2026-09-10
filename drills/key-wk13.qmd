@@ -1,0 +1,15 @@
+1. **Payback, even.** = 240,000 ÷ 60,000 = **4.0 years**.
+
+2. **Payback, uneven.** Cumulative cash flow: year 1 = 30,000; year 2 = 70,000; year 3 = 120,000. The \$100,000 cost is recovered during year 3: after year 2, \$30,000 remains, and year 3 brings \$50,000, so 30,000 ÷ 50,000 = 0.6. Payback = **2.6 years**.
+
+3. **PV of a single sum.** = 50,000 ÷ 1.10³ = 50,000 ÷ 1.331 = **\$37,566**.
+
+4. **NPV, annuity.** Annuity factor (10%, 4 years) = 3.1699. PV of inflows = 25,000 × 3.1699 = \$79,247. NPV = 79,247 − 75,000 = **\$4,247**.
+
+5. **NPV, uneven.** PVs at 8%: year 1 = 20,000 ÷ 1.08 = 18,519; year 2 = 30,000 ÷ 1.08² = 25,720; year 3 = 25,000 ÷ 1.08³ = 19,846. Sum ≈ 64,084. NPV = 64,084 − 60,000 = **\$4,084**.
+
+6. **IRR rule.** **Reject** — the IRR (9%) is below the cost of capital (11%). At an 11% discount rate the NPV is **negative** (NPV equals zero only at the 9% IRR, and falls as the discount rate rises).
+
+7. **IRR, even.** Annuity factor = 79,247 ÷ 25,000 = 3.1699. Because that equals the four-year annuity factor at 10%, the IRR = **10%**.
+
+8. **Profitability index.** = PV of future cash flows ÷ initial investment = 58,000 ÷ 50,000 = **1.16**. Since PI > 1.0, **accept** the project.

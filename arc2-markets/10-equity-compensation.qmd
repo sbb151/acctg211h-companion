@@ -147,7 +147,7 @@ The Holmstrom principle holds that any signal informative about the agent's effo
 
 Each award structure produces a distinct incentive profile. Options reward upside risk-taking but provide limited downside discipline. RSUs reward shareholder-value creation in either direction (price increases or restraint from price-destroying actions). Performance shares reward proximity to the threshold and may, on standard incentive arguments, produce target-proximity manipulation similar to the bonus-plan kinks that @healy1985 documented.
 
-A second connection to Chapter 4 is the verifiability requirement. The Holmstrom principle requires that the contract condition on observable signals; for equity compensation, the relevant signal is the stock price, which is observable and verifiable in real time. For performance shares, the relevant signal is the achievement of the performance target, which is typically computed from the firm's audited financial statements. The verification structure of the closing process and the external audit (Section 4.5) determines whether the performance target is reliably measured, which in turn determines whether the contract is incentive-compatible.
+A second connection to Chapter 4 is the verifiability requirement. The Holmstrom principle requires that the contract condition on observable signals; for equity compensation, the relevant signal is the stock price, which is observable and verifiable in real time. For performance shares, the relevant signal is the achievement of the performance target, which is typically computed from the firm's audited financial statements. The verification structure of the closing process and the external audit (see @sec-stewardship and @sec-first-accruals) determines whether the performance target is reliably measured, which in turn determines whether the contract is incentive-compatible.
 
 The connection runs in the other direction as well. The structure of the equity contract creates incentives for the manager to influence the verifiable signal — the reported earnings, the audited performance target, the stock price at grant. Section 10.7 turns to the empirical literature on whether equity-pay-sensitive executives in fact respond to the contract by exercising discretion over the signal.
 
@@ -195,6 +195,14 @@ The literature on equity pay and misreporting is an example of a finding that is
 3. The empirical literature on equity pay and misreporting has produced divergent findings — Bergstresser-Philippon and Burns-Kedia document positive associations, while Erickson-Hanlon-Maydew does not. What features of the research designs might explain the divergence, and which design produces evidence you find more compelling?
 4. The Holmstrom informativeness principle (Chapter 4) holds that any signal informative about managerial effort should enter the compensation contract. The principle is silent on the *form* of the signal's incorporation. Options, RSUs, and performance shares all condition on the stock price but produce different sensitivities of executive wealth to the price. Which form of conditioning best implements the Holmstrom logic? Why?
 5. Some technology firms continue to report non-GAAP earnings measures that exclude stock-based compensation. Engage the argument for and against such exclusion. Does the framework of this chapter give you a reason to prefer one position over the other?
+
+{{< include ../drills/drill-wk10.qmd >}}
+
+::: {.callout-tip collapse="true"}
+## Drill Set — Self-Check Answers
+
+{{< include ../drills/key-wk10.qmd >}}
+:::
 
 ## Problems
 

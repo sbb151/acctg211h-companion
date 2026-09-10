@@ -1,0 +1,23 @@
+1. **High-low.** Variable cost per unit = (80,000 − 56,000) ÷ (10,000 − 6,000) = 24,000 ÷ 4,000 = **\$6.00**. Fixed cost = 80,000 − 6.00 × 10,000 = **\$20,000** (check at low point: 56,000 − 6.00 × 6,000 = 20,000).
+
+2. **Contribution margin.** Unit CM = 40 − 25 = **\$15**. CM ratio = 15 ÷ 40 = **37.5%**.
+
+3. **Break-even units.** = 120,000 ÷ 15 = **8,000 units**.
+
+4. **Break-even dollars.** = 120,000 ÷ 0.375 = **\$320,000**.
+
+5. **Target profit.** = (120,000 + 45,000) ÷ 15 = 165,000 ÷ 15 = **11,000 units**.
+
+6. **Margin of safety.** = 500,000 − 320,000 = **\$180,000**; as a percentage = 180,000 ÷ 500,000 = **36%**.
+
+7. **Contribution-margin income statement.**
+
+   | | |
+   |:---|---:|
+   | Sales (11,000 × \$40) | 440,000 |
+   | Variable costs (11,000 × \$25) | (275,000) |
+   | **Contribution margin** | **165,000** |
+   | Fixed costs | (120,000) |
+   | **Operating income** | **45,000** |
+
+8. **Operating leverage.** Degree of operating leverage = contribution margin ÷ operating income = 165,000 ÷ 45,000 = **3.67**. A 10% rise in sales raises operating income by 3.67 × 10% ≈ **36.7%**.

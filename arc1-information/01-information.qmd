@@ -1,0 +1,142 @@
+---
+aliases:
+  - 01-foundations.html
+  - 02-lemons.html
+description: "Why entrust resources to someone who knows more than you? Information, cooperation, and credible records."
+---
+
+# Why Accounting? Information and Cooperation {#sec-foundations}
+
+::: {.callout-note title="Your route through this chapter"}
+**Week 1 · Required:** the main text through *Check your understanding*, including the research brief. Allow 35–45 minutes with the questions. No accounting or probability background is assumed. The final extension is optional and is not on Quiz 1.
+
+You should be able to distinguish shared uncertainty, hidden information, and hidden action; explain a simple adverse-selection problem; and distinguish an internally consistent report from a credible one.
+:::
+
+## Would you entrust your money to Campus Curb?
+
+Three students want to expand Campus Curb, a hypothetical campus delivery service. They ask you to invest. They know their delivery routes, repeat customers, damaged scooters, and unpaid bills. You have a pitch deck and a promise that the business is doing well.
+
+You might ask how much cash it has. You might ask whether customers have paid, whether the scooters need replacing, or whether the founders owe their couriers wages. You might also ask how the founders will pay themselves. A business can have cash because it borrowed yesterday; it can have satisfied customers and still struggle to pay its bills. A confident founder can be either well informed or overconfident.
+
+These questions arise before anyone mentions an accounting standard. People need information when they entrust resources to others. Resources include an investor's money, a supplier's goods delivered on credit, a courier's work before payday, or a donor's contribution to a campus nonprofit. Each person wants to know something about what has happened and what may happen next.
+
+Accounting creates organized records and reports about an entity's resources, obligations, and activities. It can help people decide whether to cooperate, evaluate what happened after they cooperated, and hold someone accountable. It cannot eliminate every uncertainty or make conflicting interests disappear.
+
+Our guiding question is: **What would someone need to know to entrust resources to this organization, and what can its accounts actually tell them?**
+
+## Three different reasons you might not know
+
+Different problems require different responses. We need more precise language than simply calling everything an information problem.
+
+| Situation | What is unknown, and to whom? | Main problem |
+|---|---|---|
+| An unexpected storm may interrupt deliveries. Neither founders nor investors know whether it will occur. | Everyone faces the same unknown future event. | **Shared uncertainty** |
+| A founder knows that half the scooters have damaged batteries but does not tell a prospective investor. | One party already knows a relevant fact the other lacks. | **Information asymmetry: hidden information** |
+| After receiving investment, a founder can skip maintenance, and investors cannot observe that choice directly. | One party cannot observe another's action. | **Information asymmetry: hidden action** |
+
+**Adverse selection** arises when hidden information affects who is willing to enter a transaction or which terms they accept. **Moral hazard** arises when imperfectly observed actions affect the outcome of a relationship. These labels describe features of an economic arrangement; they do not require an assumption that everyone is dishonest.
+
+A founder may honestly know more about scooter condition than an investor. A capable employee may reasonably dislike a compensation plan that makes pay depend on weather. Reporting and contracts must work in settings containing honest mistakes, ordinary uncertainty, and conflicting incentives as well as deliberate deception.
+
+::: {.callout-tip title="Try the distinction"}
+A nonprofit director and a donor both know that next month's fundraising revenue could be high or low. That is shared uncertainty. If the director privately knows that a major donor has withdrawn, information is asymmetric. If the director later reduces fundraising effort without the donor being able to observe it, the problem involves hidden action.
+:::
+
+## Why hidden information can prevent useful trade {#sec-lemons}
+
+Suppose students are selling used scooters. Half are reliable and half need repairs. A buyer values a reliable scooter at \$1,200 and a repair-prone scooter at \$600. A reliable scooter's owner will sell for at least \$1,000; a repair-prone scooter's owner will sell for at least \$400.
+
+If condition is observable, both kinds can trade. A reliable scooter can sell between \$1,000 and \$1,200, making both parties better off. A repair-prone scooter can sell between \$400 and \$600. For each scooter, the buyer values it more than its current owner does.
+
+Now suppose sellers know condition but buyers cannot tell the difference. If both types were offered, the buyer's average valuation would be
+
+$$
+0.5(1{,}200)+0.5(600)=900.
+$$
+
+But \$900 is below the reliable owner's minimum price. Reliable owners withdraw. Buyers must revise their beliefs about the scooters still offered: the original half-and-half composition no longer describes the market. If only repair-prone scooters remain, a buyer values a scooter at \$600.
+
+The result is a market in repair-prone scooters, with reliable scooters excluded despite the potential gains from trading them. This is adverse selection: the price offered to a mixed pool changes who remains in it. The logic follows the problem made famous by @akerlof1970. Our example loses some beneficial trade; it does not predict that every market with asymmetric information completely collapses.
+
+An average price is not automatically an equilibrium price. Ask: *Who would accept it? Given those participants, what would buyers pay?* Beliefs about quality and participation must be consistent.
+
+### Would an inspection help?
+
+Suppose a trusted inspector can perfectly verify condition for \$50, paid by the seller. A reliable scooter sold for \$1,100 leaves the seller \$1,050 after inspection, exceeding the seller's \$1,000 minimum, while the buyer receives something worth \$1,200. Inspection can restore that trade.
+
+The assumptions matter: the inspection is accurate, buyers trust it, the result cannot be forged, and the fee is small enough relative to the gains from trade. An inspection costing \$250 would exceed the \$200 total gains available from trading this reliable scooter.
+
+Other arrangements can help: warranties, repeated dealings, reputation, legal remedies, or a seller retaining exposure to future failures. Each has costs and limitations. Accounting and auditing belong to this larger family of institutions that help people transact despite unequal information.
+
+## From scooters to financial reports
+
+Campus Curb's founders are offering claims on a business rather than selling individual scooters. The information gap is more complicated, but a similar problem remains. If outsiders cannot distinguish an attractive opportunity from a weak one, they may offer terms that attractive firms refuse. Useful projects may fail to attract resources.
+
+A report organizes answers to recurring questions:
+
+| Report | Basic question | Campus Curb example |
+|---|---|---|
+| **Balance sheet** | What resources and obligations exist at a date? | Cash, equipment, unpaid wages, and borrowing. |
+| **Income statement** | What performance is reported over a period? | Delivery revenue and operating expenses. |
+| **Statement of cash flows** | Where did cash come from, and where did it go? | Customer receipts, equipment purchases, and borrowing. |
+| **Statement of changes in equity** | Why did owners' recorded claims change? | Contributions, income or loss, and distributions. |
+| **Notes** | What do the numbers mean, and what qualifications matter? | Methods, commitments, and uncertainty. |
+
+For now, learn the questions rather than detailed formats. The next chapter builds small, complete statements in a world simple enough to check every number.
+
+The **accounting equation** is
+
+$$
+\text{Assets}=\text{Liabilities}+\text{Equity}.
+$$ {#eq-accteq}
+
+Assets are the entity's resources as recognized and measured in its accounts; liabilities are its recognized obligations; equity is the residual. If recognized assets are \$8,000 and liabilities are \$3,000, equity is \$5,000. “Recognized” matters: a reported amount is included in statements under a measurement convention, not automatically the market value of everything that makes a business valuable.
+
+### A balanced report can still be false
+
+Suppose Campus Curb invents \$1,000 of delivery revenue and a corresponding customer receivable. Reported assets increase by \$1,000; the fictitious income increases equity by \$1,000. The equation still balances.
+
+Double entry imposes a useful consistency discipline, but balancing does not establish that a delivery occurred or that a customer owes money. Credibility also depends on evidence, appropriate measurement, controls, and independent scrutiny. A customer confirmation or delivery record addresses a question arithmetic alone cannot answer.
+
+An **audit** provides independent assurance about financial statements; it is not a guarantee that a company will succeed or that every error has been found. Keep a report's credibility separate from the attractiveness of the opportunity it describes. A credible report can reveal an unattractive business.
+
+## Records help people cooperate and remember
+
+Financial reporting is not useful only because public-company shareholders cannot watch managers. Consider a student organization selling tickets for a concert. Even if all officers are honest and share the same information today, records help them remember which vendors have been paid, which tickets have been sold, and what the next group of officers will inherit.
+
+The separation of ownership and control adds another reason for reporting. Someone supplies resources while another person chooses how to use them. @berlemeans1933 and @jensenmeckling1976 provide influential accounts of this relationship. We return to incentives in @sec-stewardship. You do not need their full models to recognize the problem: an outcome such as profit combines decisions, circumstances, and luck.
+
+Reports can support **decision making**—choosing what to do—and **stewardship**—evaluating how entrusted resources have been used. They can also improve coordination between people without an agency conflict. No single story exhausts accounting's uses.
+
+## Research brief: does access to records change exchange?
+
+@basu2009 study recordkeeping in a laboratory exchange setting. They compare economies with and without recordkeeping and find that records support reciprocity, reputation formation, and coordination. This is evidence about a mechanism through which records can affect cooperation, rather than simply describe it.
+
+For the assigned excerpt, identify the treatment and comparison, choose one reported result, and explain why the experimental setting helps evaluate the mechanism. Identify one reason it might not transfer unchanged to a modern firm. Experimental evidence about exchange does not, by itself, establish an account of ancient economic development.
+
+Your task is to interpret the comparison, not reproduce the statistical analysis. The classroom games are illustrations rather than replications of this study.
+
+## Check your understanding
+
+1. A seller and buyer both know a battery has a 20% chance of failing. Is unequal information necessary for this uncertainty? What additional fact would create an asymmetry?
+2. Why is \$900 not a sustainable price at which both scooter types sell?
+3. Why might a lender want both cash-flow information and a list of unpaid obligations?
+4. Construct a numerical example of a balanced but false report.
+5. A report causes investors to offer Campus Curb less money. Does that establish that it was unhelpful?
+
+::: {.callout-note title="Self-check" collapse="true"}
+1. No. Both can share uncertainty. A seller's undisclosed diagnostic result would create unequal information.
+2. Reliable owners require \$1,000, so they withdraw; buyers revise the quality mix.
+3. Cash movements show liquidity; obligations reveal claims on future cash. Borrowing can improve cash without improving operating performance.
+4. An invented \$100 receivable and \$100 revenue increase both assets and equity.
+5. No. Learning unfavorable facts can improve an investment decision even if the founder dislikes the price.
+:::
+
+## Optional extension: where the economic theories fit
+
+Akerlof asks how hidden information affects exchange. Coase asks why some activities are coordinated inside firms rather than through markets [@coase1937]. Jensen and Meckling examine costs arising when decision authority is delegated [@jensenmeckling1976]. Basu and Waymire consider the broader role of recordkeeping in cooperation [@basuwaymire2006].
+
+Choose one theory and connect its question to an organization you know. Describe what it helps explain and one feature it leaves out. A model clarifies a mechanism under assumptions; it need not be a complete history or justification of accounting practice.
+
+Next we temporarily remove the information problems. That gives us a benchmark against which to understand what uncertainty and imperfect reporting change.

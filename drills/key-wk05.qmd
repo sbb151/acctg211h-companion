@@ -1,0 +1,7 @@
+1. Expense **\$200**; prepaid asset **\$1,000**; adjustment cash effect **\$0**.
+2. Revenue **\$600**; liability **\$1,800**; equity increases **\$600**. No cash moves in the adjustment.
+3. 6,000 × 8% × 3/12 = **\$120**, for both expense and interest payable. **No**: the contract and passage of time can determine it without private information.
+4. Depreciation **\$50**. Equipment cost unchanged; accumulated depreciation increases \$50; net assets and income decrease \$50; cash unchanged.
+5. Income **\$800**. Closing equity = 5,000 + 1,000 + 800 − 300 = **\$6,500**. Contributions and distributions are not components of income.
+6. Assets **+\$500**, liabilities **+\$300**, equity and income **+\$200**, cash **\$0**. The equation holds: 500 = 300 + 200.
+7. **Definition, recognition, measurement, disclosure.** A concepts statement does **not** override an applicable GAAP requirement.

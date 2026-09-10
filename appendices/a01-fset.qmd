@@ -1,21 +1,110 @@
-# A1. The Financial Statement Effects Template (FSET) {#sec-fset .appendix}
+# A1. The Financial Statement Effects Template {#sec-fset .appendix}
 
-> *Reference appendix — to be drafted Summer 2026.*
+The FSET traces one event across the accounting equation, income statement, and cash-flow statement. This appendix completes the operating-company example in @sec-first-accruals. It does not use the earlier present-value model's balances.
 
-The financial statement effects template (FSET) is a worksheet that records the impact of each transaction on the three financial statements simultaneously. It is more transparent than journal entries for the introductory student and is the primary tool used in early chapters of the Companion (especially Chapters 3, 4, and 7).
+## How to read a row
 
-## Layout
+Use signed changes. Revenue increases income and equity; expense decreases them. The income columns **explain** the change in equity; do not add income to equity again when checking the equation. An increase in accumulated depreciation reduces net assets.
 
-The FSET has columns for each affected account on the balance sheet, the income statement, and the statement of cash flows.
+Always check:
 
-## Worked examples
+$$\Delta A=\Delta L+\Delta E.$$
 
-*To be drafted: a representative set of transactions with FSET entries and the corresponding journal entries.*
+A balanced row is necessary for consistency. It does not prove that the transaction occurred or that its measurement is correct.
 
-## How the FSET relates to journal entries
+## December transactions before adjustment
 
-*To be drafted: the FSET-to-journal-entry mapping for the entry types students will encounter.*
+The company starts with zero balances. Cash-flow categories are operating (O), investing (I), and financing (F).
 
-## Reference
+| Event | Assets | Liabilities | Equity | Revenue | Expense | Cash flow |
+|---|---|---|---|---:|---:|---|
+| Owners contribute | Cash +8,000 | — | +8,000 | — | — | +8,000 F |
+| Borrow | Cash +10,000 | Note +10,000 | — | — | — | +10,000 F |
+| Buy equipment | Equipment +3,600; cash −3,600 | — | — | — | — | −3,600 I |
+| Prepay insurance | Prepaid +3,000; cash −3,000 | — | — | — | — | −3,000 O |
+| Buy supplies | Supplies +1,200; cash −1,200 | — | — | — | −1,200 O |
+| Collect subscription advance | Cash +5,000 | Unearned revenue +5,000 | — | — | — | +5,000 O |
 
-Hanlon, Magee, Pfeiffer, Kulp, and Dragoo (2024), Chapter 2, develops the FSET in detail.
+After these transactions, assets are 23,000 (cash 15,200, equipment 3,600, prepaid insurance 3,000, supplies 1,200); liabilities are 15,000; equity is 8,000. Income is zero at this intermediate, unadjusted stage.
+
+## Seven adjustments
+
+| Adjustment | Net assets | Liabilities | Equity via income | Revenue | Expense | Cash |
+|---|---:|---:|---:|---:|---:|---:|
+| Insurance used | −1,000 | — | −1,000 | — | +1,000 | 0 |
+| Depreciation | −100 | — | −100 | — | +100 | 0 |
+| Subscription service provided | — | −1,250 | +1,250 | +1,250 | — | 0 |
+| Supplies used | −900 | — | −900 | — | +900 | 0 |
+| Delivery on account | +800 | — | +800 | +800 | — | 0 |
+| Wages owed | — | +1,500 | −1,500 | — | +1,500 | 0 |
+| Interest owed | — | +50 | −50 | — | +50 | 0 |
+| **Total adjustment** | **−1,200** | **+300** | **−1,500** | **+2,050** | **+3,550** | **0** |
+
+The total row balances: −1,200 = +300 − 1,500. Adjusted assets are 21,800, liabilities 15,300, and equity 6,500. Cash remains 15,200. The net loss is 1,500.
+
+## Translate the same effects into journal entries
+
+A debit is the left side of an entry; a credit is the right. They do not mean good and bad, or necessarily increase and decrease. [Appendix A3](a03-debits-credits.qmd) gives the account rules.
+
+| Event | Debit | Credit |
+|---|---|---|
+| Owners contribute | Cash 8,000 | Contributed capital 8,000 |
+| Borrow | Cash 10,000 | Notes payable 10,000 |
+| Buy equipment | Equipment 3,600 | Cash 3,600 |
+| Prepay insurance | Prepaid insurance 3,000 | Cash 3,000 |
+| Buy supplies | Supplies 1,200 | Cash 1,200 |
+| Subscription advance | Cash 5,000 | Unearned revenue 5,000 |
+| Insurance adjustment | Insurance expense 1,000 | Prepaid insurance 1,000 |
+| Depreciation adjustment | Depreciation expense 100 | Accumulated depreciation 100 |
+| Subscription adjustment | Unearned revenue 1,250 | Service revenue 1,250 |
+| Supplies adjustment | Supplies expense 900 | Supplies 900 |
+| Completed delivery | Accounts receivable 800 | Service revenue 800 |
+| Accrued wages | Wages expense 1,500 | Wages payable 1,500 |
+| Accrued interest | Interest expense 50 | Interest payable 50 |
+
+Contributed capital combines the owners' contributed-equity accounts here; splitting common stock and additional paid-in capital is not required in this opening case.
+
+## Adjusted trial balance before closing
+
+| Account | Debit | Credit |
+|---|---:|---:|
+| Cash | 15,200 | — |
+| Accounts receivable | 800 | — |
+| Supplies | 300 | — |
+| Prepaid insurance | 2,000 | — |
+| Equipment | 3,600 | — |
+| Accumulated depreciation | — | 100 |
+| Notes payable | — | 10,000 |
+| Unearned revenue | — | 3,750 |
+| Wages payable | — | 1,500 |
+| Interest payable | — | 50 |
+| Contributed capital | — | 8,000 |
+| Service revenue | — | 2,050 |
+| Insurance expense | 1,000 | — |
+| Depreciation expense | 100 | — |
+| Supplies expense | 900 | — |
+| Wages expense | 1,500 | — |
+| Interest expense | 50 | — |
+| **Total** | **25,450** | **25,450** |
+
+The trial balance includes revenue and expense accounts before closing. It is not itself a balance sheet. Their net effect becomes the 1,500 retained-earnings deficit shown in the statements.
+
+## Optional: closing and the operating cash reconciliation
+
+To close directly to retained earnings, debit service revenue 2,050 and credit retained earnings 2,050; then debit retained earnings 3,550 and credit each expense account for its balance. Temporary revenue and expense accounts become zero. Retained earnings has a debit balance of 1,500. These entries do not move cash or create an additional loss.
+
+The indirect operating-cash reconciliation is:
+
+| Item | Amount |
+|---|---:|
+| Net loss | −1,500 |
+| Add noncash depreciation | +100 |
+| Increase in receivables | −800 |
+| Increase in supplies | −300 |
+| Increase in prepaid insurance | −2,000 |
+| Increase in unearned revenue | +3,750 |
+| Increase in wages payable | +1,500 |
+| Increase in interest payable | +50 |
+| **Operating cash flow** | **800** |
+
+The result equals cash collected from customers (5,000) less insurance (3,000) and supplies (1,200) payments. The main Week 5 requirement uses the direct cash-flow calculation. Closing procedures and the indirect reconciliation are extensions revisited later.

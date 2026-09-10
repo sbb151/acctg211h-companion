@@ -8,7 +8,7 @@ The Companion replaces a commercial textbook for ACCTG 211H. It treats accountin
 
 The book is organized into four arcs, mirroring the course structure:
 
-- **Arc I — The Information Problem** (Chs. 1–5)
+- **Arc I — Information, Value, and Reporting** (Chs. 1–5)
 - **Arc II — Markets and Measurement** (Chs. 6–10)
 - **Arc III — Contracting and Internal Information** (Chs. 11–13)
 - **Arc IV — Synthesis** (Ch. 14)
@@ -52,17 +52,7 @@ companion/
 
 ## Authoring conventions
 
-Each chapter follows the template in `preface.qmd`:
-
-1. Opening question (the economic puzzle)
-2. Stylized model
-3. Institutional response
-4. Mechanics
-5. Empirical evidence
-6. Discussion questions
-7. Problems
-8. Lab (where applicable)
-9. Further reading
+The opening chapters use a required reading path, worked numerical cases, self-check drills, and clearly labeled optional extensions. Their content follows the learning question rather than a mandatory nine-section template. See `preface.qmd` for the required reading route. Instructor lesson plans and assessments are maintained separately from this public companion.
 
 Use `[@citekey]` for parenthetical citations and `@citekey` for in-text citations. All references go in `references.bib`.
 
@@ -76,4 +66,4 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-N
 
 If you use this material in your own teaching, please cite:
 
-> Bonsall, Samuel B., IV. *ACCTG 211H Companion: An Information-Economics Introduction to Financial and Managerial Accounting.* Smeal College of Business, Penn State, 2027. https://acctg211h.psu.edu/
+> Bonsall, Samuel B., IV. *ACCTG 211H Companion: An Information-Economics Introduction to Financial and Managerial Accounting.* Smeal College of Business, Penn State, 2027. https://sbb151.github.io/acctg211h-companion/

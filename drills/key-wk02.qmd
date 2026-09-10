@@ -1,0 +1,5 @@
+1. Present value = 121/1.10² = **\$100**. Year 1 value = 121/1.10 = **\$110**. Income = **\$10**.
+2. Opening value = 110/1.10 + 121/1.10² = **\$200**. Closing Year 1 value = **\$110**. Year 1 income = 110 + 110 − 200 = **\$20**. Year 2 income = 121 − 110 = **\$11**. Lifetime income is \$31.
+3. Cash **\$110**, productive asset **\$110**, equity **\$220**, income **\$20**. No distribution occurred; retaining cash does not erase income.
+4. Annual depreciation **\$100**. Income is **\$10** and **\$21**. Lifetime income remains \$31; given cash flows and initial value are unchanged.
+5. Cash **\$80**, liabilities **\$30**, equity **\$50**, income **\$0**. Contributions and borrowing are financing transactions.

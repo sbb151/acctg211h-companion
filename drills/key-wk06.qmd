@@ -1,0 +1,13 @@
+1. **Allocate.** Total standalone value = 800 + 400 = \$1,200. Product = 900 × (800/1,200) = \$600. Service = 900 × (400/1,200) = \$300.
+
+2. **Over time.** Service revenue = 300 × (2/12) = \$50.
+
+3. **Contract liability.**
+   - (a) January 1: Dr Cash \$900; Cr Sales Revenue \$600 (product delivered); Cr Deferred (Contract) Revenue \$300.
+   - (b) January 31: Dr Deferred Revenue \$25 (= 300 ÷ 12); Cr Service Revenue \$25.
+
+4. **Right of return.** Revenue recognized = 50,000 × 96% = \$48,000; Refund liability = 50,000 × 4% = \$2,000.
+
+5. **Abnormal return.** Expected return = α + β·R_m = 0 + 1.2 × 1.5% = 1.8%. AR = 3.2% − 1.8% = **+1.4%**.
+
+6. **CAR.** CAR = 0.6% − 0.2% + 1.1% = **+1.5%**.

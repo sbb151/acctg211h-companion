@@ -1,0 +1,19 @@
+## Drill Set {#sec-drill-wk10}
+
+Quick, single-skill reps to build mechanical fluency before the week's first class. Graded for **completion** — work each one by hand, then check it against the key that follows and re-do any you missed.
+
+1. *(Issue stock above par.)* A firm issues 10,000 shares of \$1 par common stock for \$15 per share. Record the journal entry.
+
+2. *(Treasury stock, cost method.)* The firm repurchases 1,000 of its own shares for \$18 each. Record the journal entry.
+
+3. *(Cash dividend.)* A firm declares a \$0.50 per share cash dividend on 200,000 shares outstanding. Record (a) the declaration and (b) the payment.
+
+4. *(Basic EPS.)* Net income is \$2,400,000, preferred dividends are \$200,000, and the weighted-average number of common shares outstanding is 1,000,000. Compute basic earnings per share.
+
+5. *(Weighted-average shares.)* A firm has 800,000 shares outstanding on January 1 and issues 240,000 additional shares on July 1. Compute the weighted-average shares outstanding for the year.
+
+6. *(Diluted EPS, treasury-stock method.)* A firm has net income of \$1,800,000 and 1,000,000 weighted-average shares. It has 100,000 options outstanding with a \$20 exercise price; the average market price is \$25. Compute diluted EPS.
+
+7. *(Stock-based compensation expense.)* A firm grants options with a total grant-date fair value of \$600,000 that vest evenly over a three-year service period. Compute the annual compensation expense and record one year's entry.
+
+8. *(RSU expense, partial year.)* A firm grants 12,000 restricted stock units on July 1 with a grant-date fair value of \$30 each, vesting evenly over four years. Compute the compensation expense for the first calendar year (July–December).

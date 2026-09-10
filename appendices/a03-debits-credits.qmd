@@ -1,31 +1,32 @@
-# A3. Debits and Credits Cheat Sheet {#sec-dr-cr .appendix}
+# A3. Debits and Credits {#sec-dr-cr .appendix}
 
-> *Reference appendix — to be drafted Summer 2026.*
+Start with the economic event and its effects on assets, liabilities, and equity. Debit and credit notation records those effects; it does not determine whether the event should be recognized.
 
-## The five account types
+## Account directions
 
-| Type      | Normal balance | Debit increases? | Credit increases? |
-|-----------|----------------|------------------|-------------------|
-| Asset     | Debit          | Yes              | No                |
-| Liability | Credit         | No               | Yes               |
-| Equity    | Credit         | No               | Yes               |
-| Revenue   | Credit         | No               | Yes               |
-| Expense   | Debit          | Yes              | No                |
+| Account type | Increase | Decrease | Usual balance |
+|---|---|---|---|
+| Asset | Debit | Credit | Debit |
+| Liability | Credit | Debit | Credit |
+| Contributed equity | Credit | Debit | Credit |
+| Retained earnings | Credit | Debit | Credit; a deficit can be a debit |
+| Revenue | Credit | Debit | Credit before closing |
+| Expense | Debit | Credit | Debit before closing |
+| Distributions to owners | Debit | Credit | Debit before closing |
+| Accumulated depreciation (contra-asset) | Credit | Debit | Credit |
 
-The mnemonic is **DEAL**: **D**ebits increase **E**xpenses and **A**ssets; **L**iabilities, equity, and revenue (the rest) increase with credits.
+Revenue and expense accounts record the period's performance. At closing their net effect is transferred to retained earnings. Distributions reduce equity but are not expenses. Cash is one asset account; a debit does not always mean cash received.
 
-## The accounting equation behind it
+## Three entries from Campus Curb
 
-Assets = Liabilities + Equity. Revenue and expenses are sub-accounts of equity (specifically, retained earnings). When revenue increases (credit) or expense increases (debit), retained earnings — and thus equity — moves accordingly.
+| Event | Debit | Credit | Why |
+|---|---|---|---|
+| Insurance coverage used | Insurance expense 1,000 | Prepaid insurance 1,000 | A previously paid benefit has been consumed. |
+| Subscription service provided | Unearned revenue 1,250 | Service revenue 1,250 | Part of the service obligation has been satisfied. |
+| Interest accumulated | Interest expense 50 | Interest payable 50 | A contractual obligation has accumulated without payment. |
 
-## Why we use it at all
+[The complete FSET example](a01-fset.qmd) maps every transaction and adjustment to entries and the adjusted trial balance.
 
-The double-entry system is a verification device. Every transaction has equal debits and credits; if the books do not balance, something is wrong. This is itself an information-economics solution: a recordkeeping system designed to make tampering and arithmetic error visible. (See Chapter 1 for the broader context.)
+## What equal debits and credits prove
 
-## Common transaction types
-
-*To be drafted: a one-page table of canonical transactions and their journal entries.*
-
-## When in doubt
-
-Ask: did the asset/liability/equity *increase* or *decrease* as a result of this transaction? Then apply the table above.
+Equal totals establish a form of internal consistency. They do not prove that a reported receivable exists, that an estimate is appropriate, or that all obligations were recorded. A fictitious receivable and revenue can balance. Evidence and controls address questions the bookkeeping identity cannot answer.

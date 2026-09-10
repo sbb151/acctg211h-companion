@@ -1,0 +1,161 @@
+---
+description: "Separate expected income from news, expected losses from priced risk, and shared uncertainty from unequal information."
+---
+
+# Value and Income Under Uncertainty {#sec-uncertainty}
+
+::: {.callout-note title="Your route through this chapter"}
+**Week 3 · Required:** the main text and Week 3 drills. Read through *The same enterprise with an uncertain final receipt* before the first meeting; finish before the second. Allow 45–60 minutes for text and worked examples, plus 20 minutes for drills. Review @eq-economic-income if the distribution/value distinction is unfamiliar.
+
+You should be able to compute expected payoffs, value our simplified uncertain enterprise, reconcile statements after news, and explain why a lower expected payoff is different from a risk premium. No calculus or statistical software is required.
+:::
+
+## An uncertain outcome need not be private information
+
+Campus Curb's founders and investors might agree on the possible outcomes and their probabilities without knowing which will occur. This is uncertainty with **symmetric information**. It is different from a manager concealing a fact already known to her.
+
+In this chapter, everyone shares the same probability model. Investors are **risk neutral**: for the payoffs considered here they value an uncertain dollar amount at its expected amount before discounting for time. They can borrow and lend at the stated interest rate, and we retain the other simplifying assumptions from @sec-certainty. These assumptions let us introduce uncertainty without simultaneously introducing a pricing model for risk or a credibility problem.
+
+Risk neutrality is a teaching assumption. It does not mean that real investors are indifferent to all risks or that a risky investment should always be discounted at the risk-free rate.
+
+## An expected value is a weighted average
+
+Suppose a claim pays \$880 in a high-demand state and \$440 in a low-demand state. Each state has probability 0.5. Its **expected payoff** is
+
+$$
+E[X]=0.5(880)+0.5(440)=660.
+$$
+
+The weights sum to one. They describe our uncertainty, not a promise to receive part of each outcome. The actual receipt will be \$880 or \$440; it will never be \$660 in this example. An expectation can be useful even though it is not a possible realization.
+
+A report that estimates \$660 has not necessarily made an error when the outcome is \$440. To judge the estimate, ask what information was available when it was made, whether the probability model was appropriate, and whether that model was applied honestly and correctly. A single unfavorable outcome cannot answer all those questions.
+
+## The same enterprise with an uncertain final receipt
+
+Return to the Campus Curb model enterprise. Keep Year 1's net cash receipt of \$660 certain. Year 2's receipt is now \$880 or \$440, with equal probability. The annual rate remains 10%, the asset has no value after Year 2, all cash receipts are immediately distributed, and there is no debt. At acquisition, everyone knows this distribution.
+
+At the **end of Year 1**, just after the first receipt and distribution, the demand state is publicly revealed. After revelation, the appropriate Year 2 receipt is known with certainty. This timing is essential: cash is received in Year 2, but news about that cash arrives in Year 1.
+
+| Time | Cash and information |
+|---|---|
+| 0 | Buy asset; everyone assigns 50% to each Year 2 state. |
+| End of Year 1 | Receive and distribute \$660; observe the state. |
+| End of Year 2 | Receive and distribute the now-known \$880 or \$440; asset expires. |
+
+At time 0, valuation is
+
+$$
+V_0=\frac{660}{1.10}+\frac{0.5(880)+0.5(440)}{(1.10)^2}
+=1{,}145.45.
+$$
+
+This is the same initial value as in the certainty case. We held the expected cash flows constant and assumed risk neutrality. Uncertainty alone has not reduced the price under these assumptions.
+
+## Separate the passage of time from news
+
+Before Year 1's state revelation, the expected value of the remaining receipt at the end of that year is \$660/1.10 = \$600. After revelation:
+
+$$
+V_{1,H}=\frac{880}{1.10}=800,
+\qquad
+V_{1,L}=\frac{440}{1.10}=400.
+$$
+
+The state changes the remaining asset value by +\$200 or −\$200 relative to the \$600 expectation. First-year income includes that surprise:
+
+| Year 1 item | High state | Low state |
+|---|---:|---:|
+| Expected income from opening value × 10% | \$114.55 | \$114.55 |
+| Unexpected change in remaining value | +200.00 | −200.00 |
+| **Realized economic income** | **\$314.55** | **−\$85.45** |
+
+Verify using distributions plus the change in value:
+
+$$
+I_{1,H}=660+800-1{,}145.45=314.55,
+$$
+
+$$
+I_{1,L}=660+400-1{,}145.45=-85.45.
+$$
+
+Expected first-year income, assessed at time 0, remains \$114.55 because the positive and negative surprises average to zero. The expected value of an unexpected gain or loss is zero relative to the information used to form the expectation; realized gains and losses need not be zero.
+
+::: {.callout-warning title="Cash arrived, but there is a loss"}
+In the low state, Campus Curb receives \$660 and reports an economic loss. The bad news about the remaining asset more than offsets the expected return. Cash received this year does not summarize everything learned about future receipts.
+:::
+
+## Accounting for the state revelation
+
+Here is a present-value income statement that separates the two components. We use expected economic depreciation of \$545.45 before the state revision, then record the unexpected remeasurement separately.
+
+| Year 1 income statement | High | Low |
+|---|---:|---:|
+| Net operating receipts | \$660.00 | \$660.00 |
+| Expected economic depreciation | (545.45) | (545.45) |
+| Gain/(loss) from new information | 200.00 | (200.00) |
+| **Economic income/(loss)** | **\$314.55** | **(\$85.45)** |
+
+| Closing balances and equity reconciliation | High | Low |
+|---|---:|---:|
+| Opening equity | \$1,145.45 | \$1,145.45 |
+| Income/(loss) | 314.55 | (85.45) |
+| Distribution | (660.00) | (660.00) |
+| **Closing equity** | **\$800.00** | **\$400.00** |
+| Closing cash | 0.00 | 0.00 |
+| Closing delivery asset | 800.00 | 400.00 |
+| Closing liabilities | 0.00 | 0.00 |
+
+The cash-flow statement is identical in both states: \$660 from operations, \$660 distributed, and no net change in cash. The balance sheet and income statement differ because the same cash receipt accompanies different news.
+
+In Year 2 there is no further surprise. Income is \$80 in the high state or \$40 in the low state, each 10% of the corresponding opening value. Lifetime income is \$394.55 in the high state and −\$45.45 in the low state. Check those totals by subtracting the initial investment from lifetime cash distributions. Their average is the certainty case's \$174.55.
+
+These are statements under a stipulated measurement model. Whether GAAP recognizes a particular forecast revision, and where, depends on the relevant accounting requirements. Economic news is not automatically a GAAP entry.
+
+## Expected loss is not the same as a price of risk
+
+Consider three claims paying in two years, discounted at 5% with risk-neutral investors:
+
+| Payoff | Expected payoff | Present value |
+|---|---:|---:|
+| Certain \$1,000 | \$1,000 | \$907.03 |
+| Equal chances of \$500 and \$1,500 | \$1,000 | \$907.03 |
+| 90% chance of \$1,000; 10% chance of zero | \$900 | \$816.33 |
+
+The third claim is worth \$90.70 less than the first because its expected receipt is \$100 lower. This is the present value of expected nonpayment. It does not isolate a separate “cost of not knowing.”
+
+Outside our risk-neutral model, investors may demand compensation for bearing priced risk. Which risks affect market prices depends on the economic setting, including how payoffs co-vary with other risks investors bear. Greater variation by itself is not a complete asset-pricing theory.
+
+For this unit, use the supplied risk-neutral assumption. In a later valuation using risk adjustment, explain whether risk is handled in the cash flows, discount rate, or state prices. Do not add a second adjustment for the same risk without examining what the first already includes. We need a consistent model, not a rule that “uncertainty always subtracts value.”
+
+## A useful report can deliver bad news
+
+In the low state, disclosing the news reduces the remaining asset's value from its prior expectation of \$600 to \$400. The report has not destroyed a \$200 physical resource. It has changed what users know about an already-existing economic situation.
+
+That distinction matters when interpreting evidence. A negative price response does not establish that disclosure was socially harmful. Conversely, an announcement followed by a price increase does not prove that the reporting rule created wealth. Users may simply have learned good news.
+
+The question becomes sharper when users must choose an action. Would a lender offer the same amount after learning the low state? Would a prospective investor buy at the seller's proposed price? In the next chapter we make the report imperfect and ask how much a decision maker would pay for it.
+
+## Evidence habits: prediction is not proof
+
+This week's numerical cases are constructed models, not empirical findings. You can verify their arithmetic exactly because their assumptions are specified. A study of real companies faces additional questions: how to measure expectations, when information became available, and what else happened at the same time.
+
+Write two sentences before seeing data: one stating the model's prediction, and another describing a result that would make you question its application. This habit prepares you for the earnings-announcement evidence in @sec-emh. A model that can “explain” every possible outcome after the fact has not supplied a useful test.
+
+## Check your understanding
+
+If the state is revealed only in Year 2, and no other news arrives in Year 1, the Year 1 closing expected asset value remains \$600. Explain why the timing of information changes the timing of remeasurement income, even though the ultimate cash outcomes are unchanged. Then work the drills.
+
+[Printable drill sheet](../drills/pdf/wk03-drills.pdf) · [Self-check key](../drills/pdf/wk03-drills-key.pdf)
+
+{{< include ../drills/drill-wk03.qmd >}}
+
+::: {.callout-note title="Drill answers" collapse="true"}
+{{< include ../drills/key-wk03.qmd >}}
+:::
+
+## Optional extension: uncertain probabilities
+
+We have assumed that everyone knows the probabilities. What if founders estimate a 70% chance of high demand and an outside analyst estimates 40%? The disagreement might reflect different evidence, different models, or biased reporting. It need not mean one person is lying.
+
+Compute both valuations, holding everything else fixed. Identify the evidence you would need to distinguish an informed estimate from an optimistic one. This introduces a measurement problem we will return to when discussing faithful representation.

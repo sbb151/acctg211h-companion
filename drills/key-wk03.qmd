@@ -1,0 +1,5 @@
+1. Expected cash = **\$121**; value = **\$110**. The certain claim also has value \$110 under the supplied assumptions.
+2. (a) 110/1.10 + 121/1.10² = **\$200**. (b) High **\$140**, low **\$80**, for both the remaining asset and equity; closing cash and liabilities are zero. (c) High income = 110 + 140 − 200 = **\$50**; low = 110 + 80 − 200 = **−\$10**. (d) **\$20**. (e) Expected return **\$20** in both states; news is **+\$30** or **−\$30**. First-year cash flows are the same in both states.
+3. Closing value **\$110**, income **\$20**. With no Year 1 news, the state-dependent revision is postponed; ultimate operating cash flows are not changed.
+4. Values **\$907.03** and **\$816.33**; difference **\$90.70**. Expected cash falls from \$1,000 to \$900. This is a discounted expected-payoff reduction, not an isolated risk premium or value of information.
+5. **No.** Seek information available at the estimate date, model assumptions, evidence of bias, or consistent application. Do not judge solely with hindsight.

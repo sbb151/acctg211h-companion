@@ -1,0 +1,182 @@
+---
+aliases:
+  - 05-standards.html
+description: "Use the FASB framework to evaluate reporting choices, then build Campus Curb's first accrual statements."
+---
+
+# From Economic Questions to Accounting Reports {#sec-standards}
+
+::: {.callout-note title="Your route through this chapter"}
+**Week 5 · Required:** read through *A reporting choice for the class* before Day 9; finish the Campus Curb example before Day 10. Allow 50–65 minutes for the chapter across the two meetings, 15–20 minutes for the selected framework paragraphs, and 25 minutes for Week 5 drills. Full conceptual-framework chapters and the closing extension are optional.
+
+You should be able to separate definition, recognition, measurement, and disclosure; explain the roles of the framework and GAAP; and prepare linked statements from basic transactions and adjustments.
+:::
+
+## What report would you design?
+
+An investor asks Campus Curb for its value. A lender asks what resources will be available to repay a loan. Employees ask whether wages can be paid. A founder asks whether a bad result reflects her choices or circumstances beyond her control.
+
+In our ideal model, everyone agreed on the possible cash flows and how to value them. Real reporting involves incomplete evidence, different models, and incentives to influence the depiction. It also has to cover many transactions consistently across entities and periods.
+
+We could ask each user to negotiate a separate report, but doing so is costly. Common reporting conventions help users know what a number represents and compare it with other numbers. Those conventions also constrain some choices a preparer might otherwise make. They cannot make every report equally useful for every purpose.
+
+The **Financial Accounting Standards Board (FASB)** develops U.S. financial accounting standards. Its **conceptual framework** states concepts used to develop and evaluate standards. **Generally accepted accounting principles (GAAP)** supply the applicable accounting requirements; the FASB Accounting Standards Codification is the authoritative source of nongovernmental U.S. GAAP, with SEC requirements also relevant to SEC registrants. A concepts statement does not override an applicable standard [@fasb_concepts_status].
+
+## What the framework contributes
+
+For business reporting, the framework focuses on information useful to investors, lenders, and other creditors in resource decisions. It includes information about how management discharged its responsibilities. Reports help users estimate an entity's value; they are not designed to show that value directly.
+
+Information needs **relevance** and **faithful representation**. Relevance includes predictive and confirmatory usefulness. Faithful representation concerns completeness, neutrality, and freedom from error in the depiction; it does not demand perfect foresight. Comparability, verifiability, timeliness, and understandability enhance usefulness, subject to a cost constraint [@fasb_cf, OB2–OB7 and QC5–QC39].
+
+Apply those ideas to a scooter-life estimate. Does the estimate reflect usage evidence? Is the method explained? Has it been applied consistently? Can someone inspect the evidence and reproduce the calculation? Reporting five years because it increases income fails a different test from reporting five years because documented usage supports that estimate.
+
+Avoid a shortcut in which historical cost is always faithful and current value is always relevant. A carefully explained estimate can be faithfully represented; a precisely recorded irrelevant amount can still be unhelpful. The question is what phenomenon the report purports to depict and whether its depiction helps the specified decision.
+
+::: {.callout-note title="Assigned framework selections"}
+Use the FASB's consolidated framework linked in the bibliography. Read **OB4 and OB7; QC15–QC18; E16–E17 and E37–E38; RD4–RD7; M5–M8**. These short selections address stewardship, valuation, estimates, definitions, recognition, and measurement. Do not read all five chapters for this week.
+:::
+
+## Four questions that should not be collapsed into one
+
+### Definition: what kind of item is it?
+
+The asset definition concerns an entity's present right to an economic benefit; the liability definition concerns a present obligation to transfer an economic benefit. Equity is the residual after liabilities. Definitions identify kinds of items rather than a single required measurement [@fasb_elements2021].
+
+An enforceable customer receivable can exist even if collection is uncertain. Uncertainty about the amount ultimately collected does not necessarily erase the present right. Conversely, hoping for future customers does not itself establish a present right to their future payments.
+
+### Recognition: should it appear in the statements?
+
+**Recognition** includes an item in the financial statements. The recognition chapter identifies criteria concerning an element definition, measurability, and faithful representation [@fasb_recognition2023, RD4–RD7]. Meeting a definition is not the whole recognition analysis. For an actual transaction, the relevant GAAP requirements determine the treatment.
+
+Ask separately: *Does a resource or obligation exist? Does the accounting requirement call for recognition?* Treating every useful business attribute as a recognizable asset skips that distinction.
+
+### Measurement: what amount, and what subsequent changes?
+
+The framework's measurement chapter develops entry-price and exit-price systems. Entry-price accounting involves the acquisition or assumption price and subsequent allocations or adjustments; exit-price accounting involves remeasurement. The chapter also distinguishes market-participant and entity-specific perspectives [@fasb_measurement2024, M5–M22].
+
+Our prior present-value examples supplied entity cash flows under explicit assumptions. They were not instructions to label every discounted forecast “fair value.” A real measurement needs an identified attribute, perspective, date, and method.
+
+### Presentation and disclosure: how will users understand it?
+
+A number in the statements and an explanation in the notes do different jobs. A delivery asset's carrying amount does not tell users its estimated useful life or how that estimate was chosen. Reporting an estimate without explaining its basis can leave a reader unable to interpret it. Notes supplement the statements; they are not permission to omit an entry required by GAAP.
+
+## A reporting choice for the class
+
+Campus Curb paid \$3,600 for scooters. After one month their carrying amount under the supplied cost-allocation policy is \$3,500. A documented offer to buy the used scooters is \$3,200. The founders estimate \$4,200 of discounted net cash flows from continuing to operate them. You have not yet assessed the forecasts' assumptions or the offer's terms.
+
+For a **hypothetical standard-setting exercise**, compare a cost-based report, a report using the proposed sale amount, and a report using the operating forecast. Each group represents an investor, lender, manager-evaluation committee, or preparer. Identify the decision, the attribute measured, supporting evidence, and information still needed. Propose a measurement policy and accompanying note.
+
+This exercise asks what a rule should achieve. It does not claim that the three amounts are interchangeable GAAP choices. In particular, operating value may include resources and activities beyond the scooters themselves, and an offer may not establish a market-participant fair value.
+
+Standards also affect incentives and impose costs. The political-economy perspective associated with @wattszimmerman1978 encourages us to ask who benefits, who bears costs, and who participates in the process. It does not establish that every existing rule is optimal or that every disagreement is regulatory capture.
+
+## Campus Curb's first month: from cash records to accrual reports {#sec-first-accruals}
+
+We now leave the one-asset valuation model and use a **new, self-contained operating-company case**. This Campus Curb corporation starts December with zero balances. Do not carry any \$660 receipts or \$1,145.45 model values into it. Ignore taxes; all listed transactions are in dollars; there are no owner distributions. Treat the stated policies as the required accounting treatments for these elementary facts.
+
+| December cash transaction | Initial accounting |
+|---|---|
+| Owners contribute \$8,000. | Increase cash and contributed equity. |
+| Borrow \$10,000 on December 1 at 6% annually. Principal is due in two years; interest is first paid after six months. | Increase cash and notes payable. |
+| Buy scooters for \$3,600 cash on December 1; place them in service immediately. | Exchange cash for equipment. |
+| Pay \$3,000 for insurance covering December through February evenly. | Exchange cash for prepaid insurance. |
+| Buy \$1,200 of supplies for cash. | Exchange cash for supplies. |
+| Receive \$5,000 for a nonrefundable stand-ready delivery subscription covering December through March evenly. | Increase cash and a contract liability, called unearned revenue here. |
+
+Cash is now \$15,200. That is not profit: it includes owner financing, borrowing, and payment for future service.
+
+### Accrual accounting asks what happened during the period
+
+**Accrual accounting** recognizes the effects of activity and obligations in the appropriate periods even when cash moves at another time. It can require recording a payment first as a resource or obligation, and then recognizing its use or satisfaction. Other entries record activity before cash is collected or paid. Accruals need not all involve uncertain estimates.
+
+At December 31, these seven facts require adjustments:
+
+| Fact and stated policy | Amount | Effect on net assets and income |
+|---|---:|---|
+| One of the three insured months has elapsed. | \$1,000 | Reduce prepaid insurance; recognize insurance expense. |
+| Scooters have a three-year useful life, zero residual value, and straight-line depreciation. | 100 | Increase accumulated depreciation; recognize depreciation expense. |
+| One of four subscription months has been provided evenly. | 1,250 | Reduce unearned revenue; recognize service revenue. |
+| A count shows \$300 of unused supplies. | 900 | Reduce supplies; recognize supplies expense. |
+| A separate completed delivery job has an undisputed \$800 invoice, due in January; assume full collection. | 800 | Increase receivables; recognize service revenue. |
+| Couriers earned \$1,500 for December work, payable in January. | 1,500 | Increase wages payable; recognize wages expense. |
+| One month's interest has accumulated on the December 1 loan. | 50 | Increase interest payable; recognize interest expense. |
+
+The interest is \$10,000 × 6% × 1/12. It is owed because time passed under the contract. A missing bill does not remove the obligation. The depreciation estimate, in contrast, depends on assumptions about useful life and residual value. Both are accounting entries, but their evidentiary questions differ.
+
+**Accumulated depreciation** is a contra-asset: it reduces equipment's carrying amount while preserving the original equipment cost in the records. Increasing this contra-asset by \$100 reduces net assets by \$100.
+
+### Use the financial statement effects template
+
+The **FSET** records each event's effects on assets, liabilities, equity, income, and cash flows. Income is shown separately to explain its contribution to equity; do not add it to the accounting equation a second time. For example:
+
+| Adjustment | Assets | Liabilities | Equity via income | Income explanation | Cash |
+|---|---:|---:|---:|---|---:|
+| December insurance | −\$1,000 | \$0 | −\$1,000 | Expense +\$1,000 | \$0 |
+| December subscription service | \$0 | −\$1,250 | +\$1,250 | Revenue +\$1,250 | \$0 |
+| Interest accrued | \$0 | +\$50 | −\$50 | Expense +\$50 | \$0 |
+
+Check that each row satisfies changes in assets = changes in liabilities + changes in equity. All seven adjustments have zero cash effect: the associated cash either moved earlier or will move later. [The FSET appendix](../appendices/a01-fset.qmd) provides the complete worked template and the corresponding journal entries.
+
+### Prepare the statements
+
+| December income statement | Amount |
+|---|---:|
+| Subscription and delivery revenue | \$2,050 |
+| Insurance expense | (1,000) |
+| Depreciation expense | (100) |
+| Supplies expense | (900) |
+| Wages expense | (1,500) |
+| Interest expense | (50) |
+| **Net loss** | **(\$1,500)** |
+
+| December 31 balance sheet | Amount | Liabilities and equity | Amount |
+|---|---:|---|---:|
+| Cash | \$15,200 | Notes payable | \$10,000 |
+| Accounts receivable | 800 | Unearned revenue | 3,750 |
+| Supplies | 300 | Wages payable | 1,500 |
+| Prepaid insurance | 2,000 | Interest payable | 50 |
+| Equipment | 3,600 | Total liabilities | **15,300** |
+| Less accumulated depreciation | (100) | Contributed equity | 8,000 |
+| | | Retained earnings (deficit) | (1,500) |
+| **Total assets** | **\$21,800** | **Total liabilities and equity** | **\$21,800** |
+
+The equity statement explains \$6,500 closing equity: zero opening balance + \$8,000 contributions − \$1,500 loss − zero distributions. Retained earnings records cumulative income less distributions in this simple case; it is not a separate bank account.
+
+| December cash flows | Amount |
+|---|---:|
+| Operating: subscription receipts less insurance and supplies payments | \$800 |
+| Investing: scooter purchase | (3,600) |
+| Financing: contributions and borrowing | 18,000 |
+| **Increase in cash** | **\$15,200** |
+
+The company has cash and a loss. That is not a contradiction: much of its cash came from financing and advance payment. Its future viability cannot be determined from one month's loss or cash balance alone.
+
+### Ask a better question than “what does every entry signal?”
+
+For each adjustment ask: *What economic event occurred? What amount belongs in this period? What evidence supports it? What uncertainty remains? Who could benefit from misstating it?*
+
+A five-year scooter life would reduce monthly depreciation to \$60, increasing current income by \$40. Whether it is justified depends on evidence. Omitting the \$50 interest because it has not been billed is not another equally acceptable estimate. Recording January wages before the work occurs would also require a basis beyond a desire to be conservative. Neutral reporting is not a contest to maximize or minimize profit.
+
+## Research brief: why use accruals when cash is observable?
+
+@dechow1994 investigates when accrual earnings better reflect firm performance, using stock returns as a performance benchmark. The results support a role for accruals in addressing cash-flow timing and matching problems, with differences related to measurement intervals and operating circumstances. This motivates examining both cash and earnings rather than treating one as universally superior.
+
+For preparation, read the abstract and the chapter brief, not the full paper. Relate the research question to Campus Curb's subscription and insurance. An association with returns does not establish that every accrual estimate is accurate or every reporting choice desirable. Later we will examine earnings persistence and interpretation in @sec-accruals.
+
+## Practice and transfer
+
+[Printable drill sheet](../drills/pdf/wk05-drills.pdf) · [Self-check key](../drills/pdf/wk05-drills-key.pdf)
+
+{{< include ../drills/drill-wk05.qmd >}}
+
+::: {.callout-note title="Drill answers" collapse="true"}
+{{< include ../drills/key-wk05.qmd >}}
+:::
+
+For the end-of-unit memo, use the separate assignment in the class packet. It asks you to distinguish cash, income, value, and evidence in an unfamiliar organization. There is no additional essay hidden in this chapter.
+
+## Optional extension: institutions and disagreement
+
+Compare the decision usefulness of the reporting alternatives in the class exercise with their implementation costs and incentives. Who supplies the evidence? Who can verify it? Which users can obtain extra information privately? Would a uniform convention improve comparisons even if it is imperfect for one user?
+
+The IASB's 2018 framework revision and FASB's framework should be identified separately when comparing stewardship discussions. Both conceptual reasoning and evidence can inform standard setting, but neither turns every disputed measurement into a uniquely correct answer. The remainder of the book examines what users do with accounting numbers and where those numbers' limits matter.

@@ -1,0 +1,17 @@
+1. **Capitalized cost.** = 50,000 + 2,000 + 3,000 = **\$55,000**. The first year's insurance (\$1,500) is a period expense, not a cost of acquiring the asset.
+
+2. **Straight-line.** Annual depreciation = (55,000 − 5,000) ÷ 5 = \$10,000. Book value end of year 2 = 55,000 − 2 × 10,000 = **\$35,000**.
+
+3. **Double-declining-balance.** Rate = 2 ÷ 5 = 40%. Year 1 = 55,000 × 40% = **\$22,000**. Year 2 = (55,000 − 22,000) × 40% = 33,000 × 40% = **\$13,200**. (Salvage is ignored until the final years under DDB.)
+
+4. **Units-of-production.** Rate = (80,000 − 8,000) ÷ 180,000 = \$0.40 per unit. Year 1 = 30,000 × 0.40 = **\$12,000**.
+
+5. **Partial year.** Full-year depreciation = 24,000 ÷ 4 = \$6,000. October 1 to December 31 = 3 months: 6,000 × 3/12 = **\$1,500**.
+
+6. **Disposal.** Book value = 40,000 − 30,000 = \$10,000. Proceeds \$7,000 < \$10,000, so **loss of \$3,000**. Entry: Dr Cash \$7,000; Dr Accumulated Depreciation \$30,000; Dr Loss on Disposal \$3,000; Cr Equipment \$40,000.
+
+7. **Impairment.** Recoverability test: undiscounted cash flows \$110,000 < book value \$120,000, so the asset **is impaired**. Impairment loss = book value − fair value = 120,000 − 95,000 = **\$25,000**.
+
+8. **Goodwill.** = 500,000 − 430,000 = **\$70,000**.
+
+9. **Patent amortization.** Annual = 60,000 ÷ 10 = \$6,000. Carrying value end of year 3 = 60,000 − 3 × 6,000 = **\$42,000**.

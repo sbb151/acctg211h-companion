@@ -160,7 +160,7 @@ First, the *earnings-response coefficient* (ERC) — the slope of the regression
 
 Second, the *post-earnings-announcement drift* has been replicated across many samples and time periods and has remained robust to the introduction of factor models that might explain away the abnormal returns as risk premia. The drift is smaller in magnitude in recent decades than in Bernard and Thomas's original samples, but it has not disappeared. The literature's tentative consensus is that PEAD reflects a combination of slow processing of earnings information by investors and frictions on arbitrage capital that prevent the mispricing from being fully eliminated.
 
-Third, the *information content of earnings* interacts in important ways with concurrent disclosures — management forecasts, conference call commentary, MD&A disclosures, and the like. Earnings announcements accompanied by detailed management commentary produce larger price reactions than otherwise comparable announcements made in silence. The pattern is consistent with the signaling framework of Chapter 3: the choice to accompany earnings with additional disclosure is itself informative, and investors price both the earnings and the surrounding disclosure jointly.
+Third, the *information content of earnings* interacts in important ways with concurrent disclosures — management forecasts, conference call commentary, MD&A disclosures, and the like. Earnings announcements accompanied by detailed management commentary produce larger price reactions than otherwise comparable announcements made in silence. The pattern is consistent with the information-and-credibility discussion in @sec-signaling: the choice to accompany earnings with additional disclosure is itself informative, and investors price both the earnings and the surrounding disclosure jointly.
 
 The literature is large and continues to evolve. The lab assignment for this week is the canonical exercise that ties the framework to the data; the further-reading list at the end of the chapter points to other useful entry points.
 
@@ -183,7 +183,15 @@ The literature is large and continues to evolve. The lab assignment for this wee
 2. The post-earnings-announcement drift has persisted for several decades despite being widely known. Three explanations were sketched in Section 6.6: behavioral underreaction, an unmeasured risk premium, and arbitrage frictions. Which do you find most plausible, and what evidence would shift your view?
 3. Consider a non-earnings news event — for example, the FDA approval of a new drug, the announcement of a CEO succession, or the resolution of a major lawsuit. Apply the Ball-Brown logic to one such event. How would you define the news? What would the good-news and bad-news series look like under semi-strong efficiency, and what would deviations from that pattern suggest?
 4. The chapter argued that any empirical test of market efficiency is a joint test of efficiency and the asset pricing model. Suppose a researcher reports that a strategy based on short-interest data earns a six-factor alpha of 0.080% per day (t = 4.87) — i.e., approximately 20% per year in annualized terms. What can the researcher claim about market efficiency, and what cannot the researcher claim?
-5. Suppose a firm announces it will no longer provide quarterly earnings guidance. The signaling framework of Chapter 3 and the value-relevance framework of this chapter make different predictions about how investors should interpret the announcement. Reconcile the two frameworks: what does the decision to stop guiding signal, and how should the value-relevance literature inform our interpretation of the subsequent price reaction?
+5. Suppose a firm announces it will no longer provide quarterly earnings guidance. The information-and-credibility discussion in @sec-signaling and the value-relevance framework of this chapter make different predictions about how investors should interpret the announcement. Reconcile the two frameworks: what does the decision to stop guiding signal, and how should the value-relevance literature inform our interpretation of the subsequent price reaction?
+
+{{< include ../drills/drill-wk06.qmd >}}
+
+::: {.callout-tip collapse="true"}
+## Drill Set — Self-Check Answers
+
+{{< include ../drills/key-wk06.qmd >}}
+:::
 
 ## Problems
 

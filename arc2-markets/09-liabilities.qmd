@@ -76,15 +76,15 @@ When a firm issues a bond, the bond promises a stream of fixed cash payments —
 
 The discount or premium is amortized over the life of the bond using the *effective-interest method*. In any period, (i) interest expense equals the carrying amount at the start of the period multiplied by the market rate at issuance, (ii) the cash coupon payment equals the face value multiplied by the coupon rate, and (iii) the difference between interest expense and the coupon payment adjusts the discount or premium account, moving the carrying amount toward face value. At maturity, the carrying amount equals the face value, and the firm pays the face value to retire the bond.
 
-### A worked example: $100,000 face, 10-year, 6% coupon, issued to yield 8%
+### A worked example: \$100,000 face, 10-year, 6% coupon, issued to yield 8%
 
-Suppose Acme Corp. issues, on January 1, a ten-year bond with a face value of $100{,}000 and a coupon rate of 6% paid annually. The market rate for bonds of comparable risk and duration at issuance is 8%. The cash the bond will fetch — the present value of the bond's cash flows discounted at 8% — is the sum of (i) the present value of a ten-year annuity of $6{,}000 (i.e., 6% of $100{,}000) and (ii) the present value of the $100{,}000 face repayment at the end of year 10:
+Suppose Acme Corp. issues, on January 1, a ten-year bond with a face value of \$100,000 and a coupon rate of 6% paid annually. The market rate for bonds of comparable risk and duration at issuance is 8%. The cash the bond will fetch — the present value of the bond's cash flows discounted at 8% — is the sum of (i) the present value of a ten-year annuity of \$6,000 (i.e., 6% of \$100,000) and (ii) the present value of the \$100,000 face repayment at the end of year 10:
 
 $$
-\text{Issue price} \;=\; \$6{,}000 \cdot \frac{1 - (1.08)^{-10}}{0.08} \;+\; \frac{\$100{,}000}{(1.08)^{10}} \;\approx\; \$40{,}260 + \$46{,}319 \;=\; \$86{,}580.
+\text{Issue price} \;=\; \$6,000 \cdot \frac{1 - (1.08)^{-10}}{0.08} \;+\; \frac{\$100,000}{(1.08)^{10}} \;\approx\; \$40,260 + \$46,319 \;=\; \$86,580.
 $$
 
-The bond issues at a discount of approximately $13{,}420 ($100{,}000 − $86{,}580). The journal entry at issuance is:
+The bond issues at a discount of approximately \$13,420 (\$100,000 − \$86,580). The journal entry at issuance is:
 
 | Account              | Debit  | Credit  |
 |----------------------|--------|---------|
@@ -92,15 +92,15 @@ The bond issues at a discount of approximately $13{,}420 ($100{,}000 − $86{,}5
 | Discount on bonds payable | 13,420 |         |
 | Bonds payable (face) |        | 100,000 |
 
-The discount on bonds payable is a contra-liability account (i.e., a balance-sheet account that reduces the gross face value of the bonds to the net carrying amount). The net liability presented on the balance sheet at issuance is $100{,}000 − $13{,}420 = $86{,}580.
+The discount on bonds payable is a contra-liability account (i.e., a balance-sheet account that reduces the gross face value of the bonds to the net carrying amount). The net liability presented on the balance sheet at issuance is \$100,000 − \$13,420 = \$86,580.
 
 The amortization schedule for the first three periods is:
 
 | Period | Carrying amount, BOP | Interest expense (8% × BOP) | Coupon (6% × face) | Discount amortized | Carrying amount, EOP |
 |--------|----------------------|-----------------------------|--------------------|--------------------|----------------------|
-| 1      | $86,580              | $6,926                      | $6,000             | $926               | $87,506              |
-| 2      | $87,506              | $7,000                      | $6,000             | $1,000             | $88,506              |
-| 3      | $88,506              | $7,081                      | $6,000             | $1,081             | $89,587              |
+| 1      | \$86,580              | \$6,926                      | \$6,000             | \$926               | \$87,506              |
+| 2      | \$87,506              | \$7,000                      | \$6,000             | \$1,000             | \$88,506              |
+| 3      | \$88,506              | \$7,081                      | \$6,000             | \$1,081             | \$89,587              |
 
 (BOP and EOP denote beginning-of-period and end-of-period, respectively. Numbers are rounded to the nearest dollar.)
 
@@ -112,7 +112,7 @@ The journal entry at the end of year 1 is:
 | Discount on bonds payable |       | 926    |
 | Cash                     |       | 6,000  |
 
-Interest expense ($6{,}926) is the economically meaningful charge — it equals the carrying amount at the start of the period times the market rate at issuance. Cash interest paid ($6{,}000) is smaller because the coupon rate is below the market rate. The difference ($926) reduces the discount account; the carrying amount rises to $87{,}506 and the bond moves closer to its face value. The pattern repeats with the carrying amount compounding upward each period until, at the end of year 10, the discount has been fully amortized and the carrying amount equals the face value of $100{,}000.
+Interest expense (\$6,926) is the economically meaningful charge — it equals the carrying amount at the start of the period times the market rate at issuance. Cash interest paid (\$6,000) is smaller because the coupon rate is below the market rate. The difference (\$926) reduces the discount account; the carrying amount rises to \$87,506 and the bond moves closer to its face value. The pattern repeats with the carrying amount compounding upward each period until, at the end of year 10, the discount has been fully amortized and the carrying amount equals the face value of \$100,000.
 
 At maturity, the firm retires the bond by paying the face value:
 
@@ -126,7 +126,7 @@ The amortized-cost model differs from a fair-value model in an important respect
 ::: {.callout-note}
 ## An instructive case: Apple's 2013 debut
 
-Apple held no public debt for nearly two decades before issuing $17 billion in bonds across six tranches on April 30, 2013 — at the time the largest non-bank corporate bond offering in history. The proceeds funded a share-repurchase and dividend program rather than operating investment, an example of how leverage decisions interact with shareholder distributions. The accounting was standard: each tranche was recorded at its issue price (with small discounts and premiums relative to par), and interest expense has been recognized at the effective yield in each period since. The case is a reminder that bond accounting mechanics apply equally to a firm with no operating need to borrow and to a firm in deep distress; the mechanics are silent on why the firm chose to issue.
+Apple held no public debt for nearly two decades before issuing \$17 billion in bonds across six tranches on April 30, 2013 — at the time the largest non-bank corporate bond offering in history. The proceeds funded a share-repurchase and dividend program rather than operating investment, an example of how leverage decisions interact with shareholder distributions. The accounting was standard: each tranche was recorded at its issue price (with small discounts and premiums relative to par), and interest expense has been recognized at the effective yield in each period since. The case is a reminder that bond accounting mechanics apply equally to a firm with no operating need to borrow and to a firm in deep distress; the mechanics are silent on why the firm chose to issue.
 :::
 
 ## Mechanics: leases under ASC 842
@@ -141,7 +141,7 @@ ASC 842 distinguishes two categories of leases for income-statement purposes. *F
 
 The pre-2019 framework was widely understood — by sophisticated analysts and creditors — as an accounting fiction. A firm that leased a building had the same economic obligations as a firm that financed the building with debt and recorded depreciation, but only the latter showed up on the balance sheet. Analysts had for decades constructed adjusted leverage ratios that capitalized the discounted stream of footnoted operating-lease payments, but less sophisticated readers of financial statements — including some creditors writing covenants — relied on the unadjusted GAAP numbers.
 
-The 2019 transition moved approximately $2 trillion of operating-lease right-of-use assets and corresponding liabilities onto U.S. corporate balance sheets — the largest single change in U.S. financial reporting in a generation. The change was concentrated in industries with heavy reliance on operating leases: retail (store leases), airlines (aircraft and gate leases), restaurants (location leases), and shipping (vessel and container leases). It reduced the cross-firm variation in apparent leverage that had been driven by the choice between leasing and buying, and it produced an empirical natural experiment in the renegotiation of covenants that had been written before the change.
+The 2019 transition moved approximately \$2 trillion of operating-lease right-of-use assets and corresponding liabilities onto U.S. corporate balance sheets — the largest single change in U.S. financial reporting in a generation. The change was concentrated in industries with heavy reliance on operating leases: retail (store leases), airlines (aircraft and gate leases), restaurants (location leases), and shipping (vessel and container leases). It reduced the cross-firm variation in apparent leverage that had been driven by the choice between leasing and buying, and it produced an empirical natural experiment in the renegotiation of covenants that had been written before the change.
 
 ### A concrete example: Boeing in the 737 MAX era
 
@@ -212,7 +212,7 @@ The literature does not claim that all aspects of GAAP liability accounting are 
 - **The Smith-Warner typology organizes covenants by what they restrict.** Production-investment, dividend, financing, and bonding covenants each address a specific component of the bondholder-shareholder conflict.
 - **Conservatism is asymmetric, not merely prudent.** Asymmetric measurement is functional in a creditor-protective regime by triggering covenants earlier and reducing the manager's discretion over the timing of loss recognition.
 - **The effective-interest method ties accounting interest expense to the market rate at issuance.** Interest expense equals the carrying amount times the historical yield; the discount or premium is amortized so that the carrying amount converges to face value at maturity.
-- **ASC 842 moved approximately $2 trillion of operating leases onto U.S. balance sheets without changing the underlying economics.** The change replaced an accounting fiction with substantive recognition, with the largest effects concentrated in lease-intensive industries.
+- **ASC 842 moved approximately \$2 trillion of operating leases onto U.S. balance sheets without changing the underlying economics.** The change replaced an accounting fiction with substantive recognition, with the largest effects concentrated in lease-intensive industries.
 - **Pension and OPEB accounting smooths actuarial volatility through the corridor mechanism, producing a divergence between the funded status on the balance sheet and the pension expense on the income statement.** The smoothing was a deliberate FASB choice but creates a gap between cash-flow reality and reported expense that is consequential for legacy-pension-heavy firms.
 :::
 
@@ -220,21 +220,29 @@ The literature does not claim that all aspects of GAAP liability accounting are 
 
 1. The chapter argued that conservative accounting can be understood as a contracting solution to the bondholder-shareholder conflict. The Conceptual Framework (Chapter 5) treats neutrality as an aspect of faithful representation. Are these positions in tension? If so, how should the FASB resolve the tension when designing a specific standard?
 2. The Smith and Warner typology classifies covenants by the type of behavior they restrict. Identify a covenant from each of the four categories that you would expect to see in a leveraged loan agreement, and explain briefly which of the bondholder-shareholder conflicts the covenant addresses.
-3. The 2019 lease accounting change moved approximately $2 trillion of operating-lease right-of-use assets and corresponding liabilities onto U.S. corporate balance sheets. Did the change produce more useful financial statements? Defend your answer using the relevance-versus-faithful-representation framework of Chapter 5.
+3. The 2019 lease accounting change moved approximately \$2 trillion of operating-lease right-of-use assets and corresponding liabilities onto U.S. corporate balance sheets. Did the change produce more useful financial statements? Defend your answer using the relevance-versus-faithful-representation framework of Chapter 5.
 4. @robertssufi2009 document that covenant violations produce sharp reductions in subsequent investment. Is this a case where accounting numbers are *causing* real corporate behavior, or a case where the accounting numbers are correlated with underlying economic conditions that themselves cause the behavior? How might one distinguish the two interpretations empirically?
 5. Suppose a creditor and a debtor are negotiating a new loan agreement. The creditor proposes a covenant requiring the debtor to maintain a minimum interest-coverage ratio of 3.0×. The debtor counters with a proposal to instead provide weekly cash-flow reports to the creditor. From the creditor's perspective, which proposal is preferable? Use the framework of this chapter to defend your answer.
+
+{{< include ../drills/drill-wk09.qmd >}}
+
+::: {.callout-tip collapse="true"}
+## Drill Set — Self-Check Answers
+
+{{< include ../drills/key-wk09.qmd >}}
+:::
 
 ## Problems
 
 ### Mechanical
 
-1. *(Bond issued at a discount; effective-interest amortization.)* Acme Corp. issues a four-year bond with a face value of $200{,}000 and a coupon rate of 5% paid semi-annually. The market interest rate at issuance is 6%. (a) Compute the cash received at issuance. (b) Construct an amortization schedule showing the carrying amount, interest expense, coupon payment, and discount amortization for each of the eight semi-annual periods. (c) Verify that the carrying amount at the end of period 8 equals the face value. (d) Record the journal entry at issuance, the journal entry at the end of period 1, and the journal entry at the retirement of the bond.
+1. *(Bond issued at a discount; effective-interest amortization.)* Acme Corp. issues a four-year bond with a face value of \$200,000 and a coupon rate of 5% paid semi-annually. The market interest rate at issuance is 6%. (a) Compute the cash received at issuance. (b) Construct an amortization schedule showing the carrying amount, interest expense, coupon payment, and discount amortization for each of the eight semi-annual periods. (c) Verify that the carrying amount at the end of period 8 equals the face value. (d) Record the journal entry at issuance, the journal entry at the end of period 1, and the journal entry at the retirement of the bond.
 
 2. *(Bond issued at a premium; effective-interest amortization.)* Repeat Problem 1 under the assumption that the market interest rate at issuance is 4% (i.e., the bond issues at a premium). Show how the premium account behaves over the life of the bond, and contrast the income-statement pattern with that of Problem 1.
 
-3. *(ASC 842 lease, operating classification.)* On January 1, Acme Corp. enters into a five-year lease of office space. The lease requires annual payments of $24{,}000 at the end of each year. Acme's incremental borrowing rate is 7%. The lease is classified as an operating lease under ASC 842. (a) Compute the lease liability and right-of-use asset at lease inception. (b) Construct the journal entries for the first two years of the lease, separately reporting the components of the single straight-line lease expense (i.e., interest accretion on the liability and amortization of the ROU asset). (c) Compute the carrying amount of the ROU asset and the lease liability at the end of year 2.
+3. *(ASC 842 lease, operating classification.)* On January 1, Acme Corp. enters into a five-year lease of office space. The lease requires annual payments of \$24,000 at the end of each year. Acme's incremental borrowing rate is 7%. The lease is classified as an operating lease under ASC 842. (a) Compute the lease liability and right-of-use asset at lease inception. (b) Construct the journal entries for the first two years of the lease, separately reporting the components of the single straight-line lease expense (i.e., interest accretion on the liability and amortization of the ROU asset). (c) Compute the carrying amount of the ROU asset and the lease liability at the end of year 2.
 
-4. *(Pension expense decomposition.)* Acme Corp.'s defined-benefit pension plan reports the following at the start of the year: projected benefit obligation $400{,}000; fair value of plan assets $360{,}000; discount rate 5%; expected long-term return on plan assets 7%; current-year service cost $30{,}000; benefits paid during the year $20{,}000; actual return on plan assets for the year $36{,}000. Assume no amortization of prior gains or losses. (a) Compute the components of pension expense (i.e., service cost, interest cost on the obligation, expected return on plan assets, and any amortization). (b) Compute the projected benefit obligation and fair value of plan assets at year-end. (c) Report the funded status at year-end and identify whether the plan is over- or under-funded.
+4. *(Pension expense decomposition.)* Acme Corp.'s defined-benefit pension plan reports the following at the start of the year: projected benefit obligation \$400,000; fair value of plan assets \$360,000; discount rate 5%; expected long-term return on plan assets 7%; current-year service cost \$30,000; benefits paid during the year \$20,000; actual return on plan assets for the year \$36,000. Assume no amortization of prior gains or losses. (a) Compute the components of pension expense (i.e., service cost, interest cost on the obligation, expected return on plan assets, and any amortization). (b) Compute the projected benefit obligation and fair value of plan assets at year-end. (c) Report the funded status at year-end and identify whether the plan is over- or under-funded.
 
 ### Conceptual
 

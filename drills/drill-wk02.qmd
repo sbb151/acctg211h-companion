@@ -1,0 +1,9 @@
+## Week 2 drills: certainty and linked statements {#sec-drill-wk02}
+
+Work individually with a calculator, check the key, and correct errors. Submit before Day 4; these drills are practice after Day 3's demonstration. Graded for completion. Do not use generative AI.
+
+1. A claim pays \$121 in two years. At 10%, calculate its value today, its value one year later before any payment, and first-year income.
+2. An all-equity model enterprise costs its present value and distributes certain net receipts of \$110 at the end of Year 1 and \$121 at the end of Year 2. The rate is 10%, terminal value is zero, and there are no other transactions. Calculate opening value, Year 1 closing value after distribution, and each year's economic income.
+3. In Problem 2, keep the Year 1 receipt as cash at year-end instead of distributing it. Give closing cash, the productive asset's value, total equity, and Year 1 income. Do not project a second-year return on the retained cash.
+4. Allocate Problem 2's acquisition cost evenly over its two years instead. Calculate annual depreciation and each year's accounting income. Does this choice change the given cash flows or initial economic value?
+5. A new organization receives \$50 from its owners and borrows \$30. It has done nothing else. Give cash, liabilities, equity, and income. Explain why an \$80 cash inflow is not \$80 of revenue.

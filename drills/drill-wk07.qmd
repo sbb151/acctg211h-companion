@@ -1,0 +1,19 @@
+## Drill Set {#sec-drill-wk07}
+
+Quick, single-skill reps to build mechanical fluency before the week's first class. Graded for **completion** — work each one by hand, then check it against the key that follows and re-do any you missed.
+
+1. *(Operating cash flow, indirect method.)* Net income is \$60,000. For the year: depreciation \$10,000; accounts receivable increased \$8,000; inventory decreased \$3,000; accounts payable increased \$5,000. Compute cash flow from operations.
+
+2. *(Classify the cash flows.)* Classify each as operating, investing, or financing: (a) cash paid to purchase equipment; (b) cash received from issuing stock; (c) cash collected from customers; (d) cash paid for dividends; (e) cash paid for interest; (f) cash received from selling a building.
+
+3. *(Direction of the adjustment.)* In the indirect method, state whether each is **added to** or **subtracted from** net income: (a) increase in accounts receivable; (b) decrease in prepaid expenses; (c) increase in accounts payable; (d) increase in inventory.
+
+4. *(Bad debt expense.)* Ending accounts receivable is \$200,000; the firm estimates 5% will be uncollectible. The Allowance for Doubtful Accounts has a \$3,000 credit balance before adjustment. Compute bad debt expense and record the adjusting entry.
+
+5. *(Write-off.)* The firm writes off a specific \$1,200 uncollectible account. Record the entry and state the effect on the net realizable value of receivables.
+
+6. *(Inventory — FIFO.)* Beginning inventory is 100 units at \$11. Purchases during the year are 200 units at \$12, then 100 units at \$15. The firm sells 250 units. Compute cost of goods sold and ending inventory under FIFO.
+
+7. *(Inventory — weighted average.)* Using the same data as Drill 6, compute cost of goods sold and ending inventory under the periodic weighted-average method.
+
+8. *(Lower of cost or net realizable value.)* Inventory is carried at a cost of \$40,000; its net realizable value is \$37,000. Record any required adjustment and state the resulting carrying value.

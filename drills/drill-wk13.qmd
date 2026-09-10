@@ -1,0 +1,19 @@
+## Drill Set {#sec-drill-wk13}
+
+Quick, single-skill reps to build mechanical fluency before the week's first class. Graded for **completion** — work each one by hand, then check it against the key that follows and re-do any you missed. Round dollar amounts to the nearest dollar; small differences from rounding present-value factors are acceptable.
+
+1. *(Payback, even cash flows.)* A project costs \$240,000 and generates \$60,000 per year. Compute the payback period.
+
+2. *(Payback, uneven cash flows.)* A project costs \$100,000 and generates \$30,000, \$40,000, \$50,000, and \$60,000 in years 1 through 4. Compute the payback period.
+
+3. *(Present value of a single sum.)* A project returns a single cash flow of \$50,000 at the end of year 3. At a 10% discount rate, compute its present value.
+
+4. *(NPV, annuity.)* A project costs \$75,000 and generates \$25,000 per year for four years. The discount rate is 10%. Compute the net present value.
+
+5. *(NPV, uneven cash flows.)* A project costs \$60,000 and generates \$20,000, \$30,000, and \$25,000 in years 1 through 3. The discount rate is 8%. Compute the net present value.
+
+6. *(IRR decision rule.)* A project has an internal rate of return of 9% and the firm's cost of capital is 11%. Should the project be accepted? At the cost of capital, is the project's NPV positive, negative, or zero?
+
+7. *(IRR, even cash flows.)* A project costs \$79,247 and returns \$25,000 per year for four years. Compute the annuity factor (cost ÷ annual cash flow), then identify the IRR given that the four-year annuity factor equals 3.1699 at 10%.
+
+8. *(Profitability index.)* A project requires an initial investment of \$50,000 and the present value of its future cash flows is \$58,000. Compute the profitability index and state the decision.

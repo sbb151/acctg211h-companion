@@ -1,0 +1,15 @@
+1. **Issue above par.** Dr Cash \$150,000 (10,000 × 15); Cr Common Stock \$10,000 (10,000 × 1 par); Cr Additional Paid-in Capital \$140,000.
+
+2. **Treasury stock.** Dr Treasury Stock \$18,000 (1,000 × 18); Cr Cash \$18,000.
+
+3. **Cash dividend.** (a) Declaration: Dr Retained Earnings (Dividends) \$100,000 (200,000 × 0.50); Cr Dividends Payable \$100,000. (b) Payment: Dr Dividends Payable \$100,000; Cr Cash \$100,000.
+
+4. **Basic EPS.** = (Net income − preferred dividends) ÷ weighted-average shares = (2,400,000 − 200,000) ÷ 1,000,000 = **\$2.20**.
+
+5. **Weighted-average shares.** = 800,000 + 240,000 × (6/12) = 800,000 + 120,000 = **920,000 shares**.
+
+6. **Diluted EPS.** Proceeds from exercise = 100,000 × \$20 = \$2,000,000. Shares repurchased at average price = 2,000,000 ÷ 25 = 80,000. Incremental (net new) shares = 100,000 − 80,000 = 20,000. Diluted shares = 1,000,000 + 20,000 = 1,020,000. Diluted EPS = 1,800,000 ÷ 1,020,000 = **\$1.76** (down from basic EPS of \$1.80).
+
+7. **Option expense.** Annual = 600,000 ÷ 3 = **\$200,000**. Entry each year: Dr Compensation Expense \$200,000; Cr Additional Paid-in Capital — Stock Options \$200,000.
+
+8. **RSU expense.** Total grant fair value = 12,000 × \$30 = \$360,000. Annual expense = 360,000 ÷ 4 = \$90,000. First calendar year is a half-year (July–December): 90,000 × 6/12 = **\$45,000**.

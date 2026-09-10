@@ -1,0 +1,17 @@
+## Drill Set {#sec-drill-wk12}
+
+Quick, single-skill reps to build mechanical fluency before the week's first class. Graded for **completion** — work each one by hand, then check it against the key that follows and re-do any you missed. Label each variance favorable (F) or unfavorable (U).
+
+1. *(Materials price variance.)* The standard price is \$5.00 per pound; the actual price is \$5.30 per pound; the actual quantity purchased is 8,000 pounds. Compute the direct-materials price variance.
+
+2. *(Materials quantity variance.)* The standard is 3 pounds per unit at \$5.00 per pound; 2,000 units are produced; actual usage is 6,300 pounds. Compute the direct-materials quantity variance.
+
+3. *(Labor rate variance.)* The standard rate is \$20.00 per hour; the actual rate is \$19.50 per hour; actual hours worked total 4,200. Compute the direct-labor rate variance.
+
+4. *(Labor efficiency variance.)* The standard is 2 hours per unit at \$20.00 per hour; 2,000 units are produced; actual hours total 4,200. Compute the direct-labor efficiency variance.
+
+5. *(Return on investment.)* A division reports operating income of \$600,000 and average operating assets of \$3,000,000. Compute ROI.
+
+6. *(Residual income.)* For the same division (operating income \$600,000; operating assets \$3,000,000), the required rate of return is 14%. Compute residual income.
+
+7. *(Economic value added.)* A firm has NOPAT of \$1,200,000, invested capital of \$8,000,000, and a weighted-average cost of capital of 10%. Compute EVA.

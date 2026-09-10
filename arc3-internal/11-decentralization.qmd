@@ -102,7 +102,7 @@ The widely discussed alternative, *activity-based costing* (ABC), attempts to mi
 
 ## The contribution-margin income statement and CVP
 
-The income statement format taught in Chapter 3 — revenues less expenses, with expenses organized by their financial-reporting category — is the *external* income statement format used in financial reports. For internal decision-making purposes, a different format is usually more useful. The *contribution-margin income statement* organizes expenses by their behavior (variable versus fixed) rather than by their reporting category, and produces a measure called the *contribution margin* that is central to internal-accounting analysis.
+The income statement format taught in @sec-first-accruals — revenues less expenses, with expenses organized by their financial-reporting category — is the *external* income statement format used in financial reports. For internal decision-making purposes, a different format is usually more useful. The *contribution-margin income statement* organizes expenses by their behavior (variable versus fixed) rather than by their reporting category, and produces a measure called the *contribution margin* that is central to internal-accounting analysis.
 
 The structure is:
 
@@ -181,6 +181,14 @@ The in-class activity for the second meeting of this week works through Boeing's
 4. Section 11.5 illustrated that the choice of overhead allocation base can shift reported profitability across divisions without changing the underlying operations. If the choice is, in this sense, partly arbitrary, why do firms allocate corporate overhead at all rather than report divisional profit before allocation?
 5. Boeing's high operating leverage produces a particular pattern of earnings volatility. Suppose Boeing's CFO proposes shifting toward a more variable cost structure (e.g., outsourcing more components, using more flexible labor arrangements). What are the costs and benefits of the proposed shift? Use the framework of Chapter 4 (moral hazard) and the framework of this chapter (cost behavior) to defend a position.
 
+{{< include ../drills/drill-wk11.qmd >}}
+
+::: {.callout-tip collapse="true"}
+## Drill Set — Self-Check Answers
+
+{{< include ../drills/key-wk11.qmd >}}
+:::
+
 ## Problems
 
 1. *(Mechanical, overhead allocation.)* Apex Manufacturing operates two divisions, Consumer and Industrial, with the data in Section 11.5. Corporate overhead is \$4,000,000. (a) Compute each division's operating profit under revenue-based allocation, direct-labor-hour-based allocation, and floor-space-based allocation. (b) Identify the division and base under which divisional operating profit is highest, and the combination under which it is lowest. (c) In one short paragraph, identify which allocation base you would defend and explain why.
@@ -209,5 +217,5 @@ The four readings below are the assigned readings for Week 11. You should read a
 ::: {.callout-tip}
 ## Where Arc III goes from here
 
-Chapter 11 has introduced the decentralization framework and the cost-behavior, cost-allocation, and transfer-pricing tools that support internal financial analysis. Chapter 12 turns to the performance-measurement question that arises whenever a central authority delegates decision authority to a local unit: how should the local unit's performance be evaluated? The framework of Chapter 4 (moral hazard and the LEN model) returns explicitly, with the additional refinement that performance measures are themselves design choices that produce predictable distortions in managerial behavior.
+Chapter 11 has introduced the decentralization framework and the cost-behavior, cost-allocation, and transfer-pricing tools that support internal financial analysis. Chapter 12 turns to the performance-measurement question that arises whenever a central authority delegates decision authority to a local unit: how should the local unit's performance be evaluated? The required moral-hazard intuition from Chapter 4 returns explicitly; its optional LEN extension provides a formal route, with the additional refinement that performance measures are themselves design choices that produce predictable distortions in managerial behavior.
 :::

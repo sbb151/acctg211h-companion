@@ -1,0 +1,21 @@
+## Drill Set {#sec-drill-wk09}
+
+Quick, single-skill reps to build mechanical fluency before the week's first class. Graded for **completion** — work each one by hand, then check it against the key that follows and re-do any you missed. Round dollar amounts to the nearest dollar; small differences from rounding present-value factors are acceptable.
+
+1. *(Premium or discount?)* A bond carries a 6% coupon and is issued when the market rate is 8%. Will it sell at a premium, a discount, or par? Over the bond's life, will interest expense be greater than, less than, or equal to the cash coupon?
+
+2. *(Issue price.)* Compute the issue price of a three-year, \$100,000 bond with a 6% annual coupon when the market rate is 8%. Use annual compounding.
+
+3. *(Effective-interest amortization.)* The bond in Drill 2 is issued at \$94,846. Under the effective-interest method, compute year-1 interest expense, the discount amortized, and the carrying value at the end of year 1.
+
+4. *(Issuance entry.)* Record the journal entry to issue the bond in Drill 2 (use the gross method, with a separate discount account).
+
+5. *(Bond at par.)* A \$200,000 bond with a 5% annual coupon is issued at par. Record (a) the issuance entry and (b) the first annual interest-payment entry.
+
+6. *(Lease liability.)* A four-year lease requires payments of \$10,000 at the end of each year; the discount rate is 6%. Compute the initial lease liability (equal to the right-of-use asset).
+
+7. *(Lease classification.)* State whether each indicates a **finance** lease under ASC 842: (a) ownership transfers to the lessee at the end of the term; (b) the lease term is nine months with no purchase option; (c) the term covers 90% of the asset's economic life; (d) the present value of payments is 97% of the asset's fair value.
+
+8. *(Interest-coverage covenant.)* A firm has EBIT of \$4,800,000 and interest expense of \$1,200,000. A covenant requires interest coverage of at least 3.0×. Compute the ratio and the covenant slack.
+
+9. *(Debt-to-EBITDA covenant.)* A firm has total debt of \$90 million and EBITDA of \$30 million. A covenant caps debt-to-EBITDA at 3.5×. Compute the ratio and state whether the covenant is satisfied.

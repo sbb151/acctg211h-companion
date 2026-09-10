@@ -1,0 +1,19 @@
+## Drill Set {#sec-drill-wk11}
+
+Quick, single-skill reps to build mechanical fluency before the week's first class. Graded for **completion** — work each one by hand, then check it against the key that follows and re-do any you missed.
+
+1. *(High-low method.)* At 10,000 units of activity total cost is \$80,000; at 6,000 units total cost is \$56,000. Compute (a) the variable cost per unit and (b) total fixed cost.
+
+2. *(Contribution margin.)* A product sells for \$40 and has a variable cost of \$25 per unit. Compute (a) the unit contribution margin and (b) the contribution-margin ratio.
+
+3. *(Break-even in units.)* Fixed costs are \$120,000 and the unit contribution margin is \$15. Compute the break-even point in units.
+
+4. *(Break-even in dollars.)* Fixed costs are \$120,000 and the contribution-margin ratio is 37.5%. Compute break-even sales dollars.
+
+5. *(Target profit.)* Using a unit contribution margin of \$15 and fixed costs of \$120,000, compute the number of units required to earn a target operating profit of \$45,000.
+
+6. *(Margin of safety.)* Budgeted sales are \$500,000 and break-even sales are \$320,000. Compute the margin of safety in dollars and as a percentage of sales.
+
+7. *(Contribution-margin income statement.)* A firm sells 11,000 units at \$40 each; variable cost is \$25 per unit; fixed costs are \$120,000. Prepare a contribution-margin income statement (sales, variable costs, contribution margin, fixed costs, operating income).
+
+8. *(Operating leverage.)* Using the contribution margin (\$165,000) and operating income (\$45,000) from Drill 7, compute the degree of operating leverage, and predict the percentage change in operating income if sales rise 10%.

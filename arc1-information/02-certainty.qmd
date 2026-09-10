@@ -1,0 +1,190 @@
+---
+description: "Build valuation, income, depreciation, and linked statements when future cash flows are publicly known."
+---
+
+# Value and Income Under Certainty {#sec-certainty}
+
+::: {.callout-note title="Your route through this chapter"}
+**Week 2 · Required:** the main text and Week 2 drills. Read through *A payment in the future* before the first meeting; finish the main text before the second. Allow 45–60 minutes to read and work examples, then 20 minutes for drills. You need percentages, multiplication, and division; a basic calculator is sufficient.
+
+You should be able to calculate present value, prepare linked statements, separate income from distributions, and compare economic depreciation with cost allocation. The residual-income extension is optional and is not on Quiz 1.
+:::
+
+## Remove one difficulty before adding another
+
+What would valuation and accounting look like if everyone knew future cash flows and the interest rate? For this chapter, assume there are no taxes or transaction costs and investors can borrow or lend at the same rate. Our small enterprise is financed entirely by owners. These are **model assumptions**, not descriptions of real businesses or requirements of GAAP.
+
+A number can change because time passes, even when nobody learns anything. Income can be positive without being surprising. Cash can be received without all of it being income. Scott develops this ideal-conditions approach [@scott2020, Chapter 2]; the numerical cases here are teaching examples.
+
+## A payment in the future
+
+Suppose an investment pays \$1,000 exactly two years from now. The annual interest rate is 5%. Investing \$100 today gives you \$105 after one year and \$110.25 after two. Interest in the second year is earned on the accumulated amount.
+
+Work backward to find the amount today that grows to \$1,000:
+
+$$
+PV_0=\frac{1{,}000}{(1.05)^2}=907.03.
+$$
+
+**Present value** is the value at a specified date of a future cash flow, calculated using a discount rate. The subscript 0 identifies today. One year from now the claim is worth
+
+$$
+PV_1=\frac{1{,}000}{1.05}=952.38.
+$$
+
+| Date | 0: acquisition | 1: one year later | 2: payment |
+|---|---:|---:|---:|
+| Value of remaining claim | \$907.03 | \$952.38 | \$0 after collection |
+| Cash received | — | \$0 | \$1,000 |
+
+The claim gains \$45.35 in Year 1 without a cash receipt. That is **accretion of the discount**: the payment is one year closer. It equals 5% of opening value, subject to rounding. At maturity, the \$1,000 receipt includes recovery of the investment, not just the final year's income.
+
+Why is present value the price in this model? If an identical certain payment could be obtained more cheaply by lending, buyers would choose lending. If the claim offered a better return than the borrowing cost, investors could borrow to acquire it. Under our trading assumptions, those opportunities prevent different prices for identical payments. This is a no-arbitrage argument; it depends on the relevant trades being possible.
+
+## The Campus Curb model: one operating asset
+
+A delivery business uses up productive resources. We create a simplified **Campus Curb model enterprise**, separate from the fuller operating-company case in @sec-standards.
+
+It owns one delivery asset. Net operating cash receipts, after cash operating costs, will be \$660 at the end of each of two years. The asset has no resale value after Year 2. The annual interest rate is 10%. All facts are publicly known. The enterprise buys the asset at its present value and immediately distributes each year's \$660 to owners. There are no further contributions, borrowing, or other activities.
+
+$$
+V_0=\frac{660}{1.10}+\frac{660}{(1.10)^2}
+=600+545.45=1{,}145.45.
+$$ {#eq-certain-value}
+
+Owners contribute \$1,145.45 cash; the enterprise exchanges it for the asset. Immediately afterward:
+
+| Opening balance sheet | Assets | Liabilities and equity |
+|---|---:|---:|
+| Delivery asset | \$1,145.45 | — |
+| Liabilities | — | \$0.00 |
+| Contributed equity | — | \$1,145.45 |
+| **Total** | **\$1,145.45** | **\$1,145.45** |
+
+The contribution is financing, not income. Purchasing the asset exchanges one resource for another. It does not create an immediate gain or loss in this benchmark.
+
+## The first year: cash, income, and capital recovery
+
+At the end of Year 1, only the second \$660 receipt remains. Its present value is \$600. The delivery asset's value falls from \$1,145.45 to \$600 as the first year's services are used.
+
+**Economic depreciation** is this decline in the productive asset's value in our certainty example:
+
+$$
+1{,}145.45-600=545.45.
+$$
+
+Economic income is net cash generated less the reduction in asset value:
+
+$$
+I_1=660-545.45=114.55.
+$$
+
+Equivalently, the owner's economic income is the distribution plus the change in the remaining investment's value:
+
+$$
+I_1=D_1+V_1-V_0=660+600-1{,}145.45=114.55.
+$$ {#eq-economic-income}
+
+Here $D_t$ is the distribution and $V_t$ is enterprise value **after** that distribution. There are no new contributions in this formula. A contribution must be excluded from income, just as we excluded the initial contribution.
+
+Of the \$660 received, \$114.55 is a return on the investment and the remainder is capital recovery. Income is also 10% of opening value: \$1,145.45 × 10% = \$114.55.
+
+::: {.callout-warning title="A distribution is not an expense"}
+Generating income and distributing cash are different events. If the enterprise instead kept the \$660 at year-end, it would have \$660 cash plus the \$600 asset. Total value would be \$1,260, with the same \$114.55 income. A distribution reduces cash and equity; it does not reduce income.
+:::
+
+## Four statements that tell one story
+
+These statements apply the present-value model. They are not a complete GAAP presentation.
+
+| Year 1 income statement | Amount |
+|---|---:|
+| Net operating receipts before economic depreciation | \$660.00 |
+| Economic depreciation | (545.45) |
+| **Economic income** | **\$114.55** |
+
+Net operating receipts keep this example small. A fuller income statement distinguishes revenues from individual operating expenses.
+
+| Year 1 changes in equity | Amount |
+|---|---:|
+| Equity immediately after acquisition | \$1,145.45 |
+| Add economic income | 114.55 |
+| Less distribution | (660.00) |
+| **Closing equity** | **\$600.00** |
+
+| Closing balance sheet, after distribution | Assets | Liabilities and equity |
+|---|---:|---:|
+| Cash | \$0.00 | — |
+| Delivery asset | 600.00 | — |
+| Liabilities | — | \$0.00 |
+| Equity | — | 600.00 |
+| **Total** | **\$600.00** | **\$600.00** |
+
+| Year 1 cash flows, measured after the initial acquisition | Amount |
+|---|---:|
+| Net cash from operations | \$660.00 |
+| New investing cash flows | 0.00 |
+| Distribution to owners | (660.00) |
+| **Change in cash** | **\$0.00** |
+
+The statements reconcile. Cash generated differs from income; income and distributions change equity; closing equity equals net assets. A zero change in cash does not imply zero income.
+
+## Complete the enterprise's life
+
+In Year 2 the asset produces its final \$660 and has no remaining value. Economic depreciation is \$600, income is \$60, and the distribution is \$660.
+
+| Item | Year 1 | Year 2 | Lifetime total |
+|---|---:|---:|---:|
+| Cash generated | \$660.00 | \$660.00 | \$1,320.00 |
+| Economic depreciation | 545.45 | 600.00 | 1,145.45 |
+| Economic income | 114.55 | 60.00 | 174.55 |
+| Closing asset after distribution | 600.00 | 0.00 | — |
+
+Lifetime income is receipts less the initial investment: \$1,320 − \$1,145.45 = \$174.55. Both annual incomes were knowable at acquisition. The income statements record performance but add no **new valuation information** to what everyone already knew.
+
+Records still document ownership claims and scheduled payments. It is the surprise and forecasting roles of income that disappear under these strong assumptions.
+
+## Change the convention, not the business
+
+Keep every cash flow unchanged, but allocate acquisition cost equally over two years. **Straight-line depreciation**, with zero residual value, is
+
+$$
+\frac{1{,}145.45}{2}\approx572.73\text{ per year}.
+$$
+
+Accounting income becomes approximately \$660 − \$572.73 = \$87.27 each year. Use unrounded calculations and adjust the final cent when presenting a complete rounded schedule.
+
+| Convention | Year 1 income | Year 1 closing asset | Year 2 income |
+|---|---:|---:|---:|
+| Present-value model | \$114.55 | \$600.00 | \$60.00 |
+| Equal allocation of acquisition cost | About \$87.27 | About \$572.73 | About \$87.27 |
+
+The convention changes reported income timing and carrying amounts. It does not change customer payments, productivity, or economic value in this example. Both conventions recognize the same lifetime cost.
+
+Later we ask whether a measure helps users predict cash flows, evaluate management, compare firms, or verify reports. Selecting the measure with the largest current profit is not a sufficient answer.
+
+## Check your understanding
+
+Explain why income can be positive when the productive asset falls in value; why a distribution can exceed income; why predictable income is not news; and why depreciation conventions can change income without changing cash flows.
+
+[Printable drill sheet](../drills/pdf/wk02-drills.pdf) · [Self-check key](../drills/pdf/wk02-drills-key.pdf)
+
+{{< include ../drills/drill-wk02.qmd >}}
+
+::: {.callout-note title="Drill answers" collapse="true"}
+{{< include ../drills/key-wk02.qmd >}}
+:::
+
+## Optional extension: residual income
+
+If owners require return $r$ on beginning book equity $B_{t-1}$, define **residual income** as accounting income after a charge for capital:
+
+$$
+RI_t=NI_t-rB_{t-1}.
+$$
+
+Under our present-value convention, income equals the required return and residual income is zero. Under equal cost allocation, first-year residual income is approximately −\$27.27 and second-year residual income is \$30. Their discounted sum is zero. Book equity plus discounted residual income gives the same initial valuation.
+
+More generally, under the appropriate clean-surplus relation between income, equity, and net owner distributions, and a terminal condition, value can be expressed using book equity and discounted expected future residual income. The formula $V=B+RI/r$ is a constant-perpetuity special case, not a general rule for valuing firms.
+
+Next, the final cash receipt becomes uncertain. Income will contain an expected return and unexpected news.

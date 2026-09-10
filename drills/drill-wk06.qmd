@@ -1,0 +1,15 @@
+## Drill Set {#sec-drill-wk06}
+
+Quick, single-skill reps to build mechanical fluency before the week's first class. Graded for **completion** — work each one by hand, then check it against the key that follows and re-do any you missed. Drills 1–4 cover revenue recognition (ASC 606); Drills 5–6 cover the abnormal-return mechanics from the chapter.
+
+1. *(Allocate the transaction price.)* A firm sells a bundle for \$900: a product with a standalone selling price of \$800 and a one-year service with a standalone selling price of \$400. Allocate the \$900 to the two performance obligations using relative standalone selling prices.
+
+2. *(Recognize over time.)* The service from Drill 1 is delivered evenly over twelve months. How much service revenue is recognized in the first two months?
+
+3. *(Sale with a contract liability.)* On January 1 the firm receives the \$900 cash for the bundle in Drill 1 and delivers the product immediately; the service has not yet been provided. Record (a) the January 1 entry and (b) the January 31 entry for one month of service.
+
+4. *(Right of return.)* A firm ships goods on December 28 for \$50,000; control transfers on shipment and the firm reliably estimates that 4% will be returned. How much revenue is recognized in December, and what refund liability is recorded?
+
+5. *(Abnormal return.)* A stock returns +3.2% on its earnings-announcement day. Its market-model parameters are $\alpha \approx 0$ and $\beta = 1.2$, and the market returned +1.5% that day. Compute the abnormal return.
+
+6. *(Cumulative abnormal return.)* Over a three-day event window a stock's daily abnormal returns are +0.6%, −0.2%, and +1.1%. Compute the cumulative abnormal return (CAR).

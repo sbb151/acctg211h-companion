@@ -1,0 +1,9 @@
+## Week 3 drills: uncertainty and news {#sec-drill-wk03}
+
+Use the stated risk-neutral model and a calculator. Complete after Day 5 and submit before Day 6; check and correct your work. Graded for completion; no generative AI.
+
+1. A claim pays \$154 or \$88 in one year, each with probability 0.5. Calculate expected cash and value at 10%. Compare with a certain \$121 payment on the same date.
+2. An all-equity enterprise distributes \$110 at the end of Year 1 and either \$154 or \$88 at the end of Year 2, with equal prior probabilities. The rate is 10%. The state is perfectly revealed at the end of Year 1. There is no terminal asset value, no debt, and no further investment. Calculate (a) initial value, (b) Year 1 closing asset and equity in each state, (c) Year 1 income in each state, (d) expected Year 1 income assessed at acquisition, and (e) the expected-return and news components of each outcome.
+3. If Problem 2's state is revealed only in Year 2 and no other news arrives in Year 1, what are Year 1 closing value and income? Explain what moved to a later period.
+4. At 5% for two years, compare a certain \$1,000 with a 90% chance of \$1,000 and a 10% chance of zero. How much value is lost? What change in the assumptions accounts for the difference in this calculation?
+5. An unbiased forecasting process sometimes produces estimates above realized cash and sometimes below. Does one low realization establish manipulation? State one piece of evidence you would seek about the original estimate.

@@ -1,0 +1,5 @@
+1. High: favorable **20**, unfavorable **5**. Low: favorable **15**, unfavorable **60**. Posterior high given favorable = 20/35 = **57.14%**. The prior is only 25%; a test's detection rate is not generally the posterior probability.
+2. Favorable: expected payoff **\$792**, value **\$720**. Unfavorable: expected payoff **\$528**, value **\$480**.
+3. Without the report, decline (\$600 value < \$700 price). With it, buy only after favorable news, giving expected benefit 0.5 × (720 − 700) = **\$10**. An \$8 fee leaves **\$2**; an \$11 fee leaves **−\$1**, so decline that information offer.
+4. Fixed pay: ordinary **\$40**, extra **\$10**; choose ordinary. Bonus: ordinary **\$52**, extra **\$54**; choose extra. Both chosen payoffs meet the \$40 outside option. These are two feasible contracts, not proof of global optimality.
+5. Respectively: **routine recognition; estimation; potentially costly signaling; misstatement** under the stated facts. Useful-life estimates may incorporate private knowledge; a warranty can reveal type under suitable incentives. Fixed contractual interest recognition need not involve private information.
