@@ -1,6 +1,6 @@
 ## Drill Set {#sec-drill-wk09}
 
-Quick, single-skill reps to build mechanical fluency before the week's first class. Graded for **completion** — work each one by hand, then check it against the key that follows and re-do any you missed. Round dollar amounts to the nearest dollar; small differences from rounding present-value factors are acceptable.
+**Required: 1–6, 8, 9. Due Sunday March 21, 2027, 11:59 p.m. Eastern, after both class meetings.** Graded for completion: attempt the required items yourself, check the key, and correct your work. No generative AI. Optional items: 7; optional items do not count toward completion or required assessment.
 
 1. *(Premium or discount?)* A bond carries a 6% coupon and is issued when the market rate is 8%. Will it sell at a premium, a discount, or par? Over the bond's life, will interest expense be greater than, less than, or equal to the cash coupon?
 
@@ -12,10 +12,10 @@ Quick, single-skill reps to build mechanical fluency before the week's first cla
 
 5. *(Bond at par.)* A \$200,000 bond with a 5% annual coupon is issued at par. Record (a) the issuance entry and (b) the first annual interest-payment entry.
 
-6. *(Lease liability.)* A four-year lease requires payments of \$10,000 at the end of each year; the discount rate is 6%. Compute the initial lease liability (equal to the right-of-use asset).
+6. *(Lease liability.)* Assume no prepayments, incentives, or other initial adjustments. A four-year lease requires payments of \$10,000 at the end of each year; the discount rate is 6%. Compute the initial lease liability (equal to the right-of-use asset).
 
-7. *(Lease classification.)* State whether each indicates a **finance** lease under ASC 842: (a) ownership transfers to the lessee at the end of the term; (b) the lease term is nine months with no purchase option; (c) the term covers 90% of the asset's economic life; (d) the present value of payments is 97% of the asset's fair value.
+7. **Optional.** *(Lease classification.)* Consider each feature in isolation under ASC 842. State whether it points to a finance-lease criterion; a feature alone may be insufficient to classify the entire lease: (a) ownership transfers to the lessee at the end of the term; (b) the lease term is nine months with no purchase option; (c) the term covers 90% of the asset's economic life; (d) the present value of payments is 97% of the asset's fair value.
 
-8. *(Interest-coverage covenant.)* A firm has EBIT of \$4,800,000 and interest expense of \$1,200,000. A covenant requires interest coverage of at least 3.0×. Compute the ratio and the covenant slack.
+8. *(Interest-coverage covenant.)* A firm has EBIT of \$4,800,000 and interest expense of \$1,200,000. The contract defines coverage as the supplied EBIT divided by the supplied interest expense and requires coverage of at least 3.0×. Compute the ratio and the covenant slack.
 
-9. *(Debt-to-EBITDA covenant.)* A firm has total debt of \$90 million and EBITDA of \$30 million. A covenant caps debt-to-EBITDA at 3.5×. Compute the ratio and state whether the covenant is satisfied.
+9. *(Debt-to-EBITDA covenant.)* Use these amounts as the contractually defined numerator and denominator, with no other adjustments. A firm has total debt of \$90 million and EBITDA of \$30 million. A covenant caps debt-to-EBITDA at 3.5×. Compute the ratio and state whether the covenant is satisfied.

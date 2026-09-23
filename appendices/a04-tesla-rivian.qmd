@@ -1,0 +1,98 @@
+---
+description: "Tesla and Rivian examples connecting information, statements, incentives, and investment decisions."
+---
+
+# Tesla and Rivian: Company Connections {#sec-company-connections}
+
+Tesla is our recurring company example; Rivian provides a useful comparison. These short connections transfer each chapter's ideas to familiar companies. The instructor selects prompts within existing class time. They do not add a full annual-report reading, a new submission, or facts to memorize for an exam.
+
+**Evidence rule:** the source card below contains reported observations. Prompts labeled **constructed** supply teaching assumptions, not either company's actual forecasts, contracts, unit costs, or employee behavior. Campus Curb remains the small linked model used to learn statement mechanics. Keep its balances separate from company observations.
+
+## Source card: a fixed annual-report snapshot {#company-source-card}
+
+Fiscal years end December 31. All amounts below are **USD millions**; parentheses indicate negative amounts. The figures come from the fiscal 2025 Forms 10-K, checked September 23, 2026. This fixed teaching snapshot is not a current stock recommendation or a point-in-time trading dataset.
+
+| Reported measure | Tesla 2024 | Tesla 2025 | Rivian 2024 | Rivian 2025 |
+|---|---:|---:|---:|---:|
+| Revenue | 97,690 | 94,827 | 4,970 | 5,387 |
+| Gross profit (loss) | 17,450 | 17,094 | (1,200) | 144 |
+| Operating income (loss) | 7,076 | 4,355 | (4,689) | (3,585) |
+| Consolidated net income (loss) | 7,153 | 3,855 | (4,746) | (3,626) |
+| Cash flow from operations (CFO) | 14,923 | 14,747 | (1,716) | (779) |
+| Total assets at year-end | 122,070 | 137,806 | 15,410 | 14,864 |
+
+Sources: [Tesla 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm), printed pp. 49, 50, 53; [Rivian 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1874178/000187417826000008/rivn-20251231.htm), printed pp. 74, 75, 77. These SEC links are public; no library subscription or WRDS account is needed. Read only the indicated statement/table when directed.
+
+Use consolidated net income when comparing with consolidated CFO. Common-stockholder income has a different scope and is the relevant numerator for basic EPS. Revenue, gross profit, operating income, net income, and CFO answer different questions. CFO excludes investing cash flows; it is not cash remaining after all investment needs.
+
+## Chapter 1: Who needs information? {#company-c01}
+
+Imagine applying to work for Tesla or supplying parts to Rivian. What report would change your decision? Identify one question about resources, one about obligations, and one about how management uses entrusted resources.
+
+**Constructed used-EV transfer:** a seller knows a used Tesla's battery condition and the buyer does not. Explain hidden information and selection. A future maintenance choice that a customer cannot observe instead involves hidden action. These hypothetical roles make no allegation about Tesla, Rivian, or a particular seller.
+
+## Chapter 2: Model value and reported assets {#company-c02}
+
+**Constructed:** a charging installation costs its model present value and pays 60 at each of two year-ends, then expires. Cash flows are certain, the rate is 10%, and every receipt is distributed. Compute opening value, value immediately after the first distribution, and first-year economic income. Explain why this does not prescribe either company's GAAP balance-sheet value.
+
+Self-check: opening value 104.13; remaining value 54.55; income 10.41. The first receipt includes both return of capital and income.
+
+## Chapter 3: News and uncertainty {#company-c03}
+
+**Constructed continuation:** the installation still pays 60 in year 1. Year-2 cash is now 80 or 40 with equal probabilities; everyone initially knows these probabilities. The state is learned just before the first distribution. Compare the two end-year-1 values and economic incomes. Does uncertainty by itself establish that someone has private information?
+
+Self-check: values 72.73/36.36; incomes 28.60/(7.77); expected income 10.41. These are teaching cash flows, not Tesla or Rivian guidance.
+
+## Chapter 4: Reports and incentives {#company-c04}
+
+**Constructed:** an EV service manager receives a bonus for completed jobs. Identify a potentially hidden action, a noisy outcome, and a verification method. Compare completed jobs with a measure that also considers verified repair quality. What behavior could the added measure distort? The exercise does not describe an actual company's compensation plan.
+
+## Chapter 5: What does a statement measure? {#company-c05}
+
+Use the source card to locate a stock measured at a date and a flow measured over a year. A prospective employee asks whether a large asset balance guarantees payroll can be met: what additional evidence would help? Keep conceptual definitions, recognition rules, measurement, and disclosure distinct. Continue using the small Campus Curb case for complete transaction-to-statement practice.
+
+## Chapter 6: News requires expectations {#company-c06}
+
+Tesla's annual revenue changes in the source card do not by themselves identify an earnings surprise or an abnormal stock return. What expectation, release timestamp, market comparison, and competing news would an announcement analysis need? Use the supplied Lab 1 returns to learn the calculation; do not describe those constructed returns as Tesla observations.
+
+## Chapter 7: Earnings and operating cash {#company-c07}
+
+For 2025, compute **CFO minus consolidated net income** for each company. Find at least one reconciliation category in the indicated cash-flow statement. Explain why the gap alone is not a measure of fraud or discretionary accruals. Explain why negative net income and less-negative CFO can coexist.
+
+Self-check: Tesla 10,892; Rivian 2,847. The full reconciliations include noncash adjustments and operating-asset/liability changes. No single adjustment should be assumed to explain the entire gap. These two-company observations do not reproduce Sloan's sample, earnings measure, or return test.
+
+## Chapter 8: Resources, estimates, and expenditure {#company-c08}
+
+Use either company's balance sheet to distinguish inventory from property, plant, and equipment. **Constructed transfer:** apply the chapter's machine example to equipment in a hypothetical EV workshop. Which costs prepare it for use? What evidence supports its life and impairment inputs? A company's expenditure does not by itself establish fair value or the present value of benefits. Do not apply one impairment rule to every asset.
+
+## Chapter 9: Financing and contract definitions {#company-c09}
+
+Imagine evaluating financing for a Rivian supplier. What contractual information would you request before calculating covenant slack? Keep the chapter's supplied definitions and numerical loan separate from any actual company's borrowing. A balance-sheet amount does not reveal every covenant, testing date, permitted adjustment, or remedy; a negative income figure is not itself a covenant violation.
+
+## Chapter 10: Whose earnings per share? {#company-c10}
+
+Tesla's 2025 statement reports net income attributable to common stockholders of **3,794 million** and weighted-average basic shares of **3,225 million**. Divide the matching amounts to reproduce basic EPS rounded to cents: **1.18**. The consolidated income figure in the source card is **3,855 million** and is not this EPS numerator. Source: Tesla Form 10-K, printed p. 50.
+
+For employee awards, use the chapter's simple equity-classified service-award assumptions. Do not treat that example as a reconstruction of an actual Tesla executive award. Explain why paying in equity can impose an economic cost even without a current cash payment.
+
+## Chapter 11: Gross profit is not contribution margin {#company-c11}
+
+Rivian moves from a gross loss of 1,200 in 2024 to gross profit of 144 in 2025 while reporting operating losses in both years. Compute the gross-profit change and reconcile 2025 gross profit to operating loss using operating expenses of 3,729. Source: Rivian Form 10-K, printed p. 75.
+
+Self-check: gross profit improves by 1,344; 144 minus 3,729 equals (3,585). Neither gross profit nor two years of revenue and operating income supplies the fixed/variable cost split needed for contribution-margin analysis. Use the constructed festival case for the mechanics, then identify the missing company information.
+
+## Chapter 12: Evaluate a manager's choices {#company-c12}
+
+**Constructed:** an EV service center is judged on jobs completed, cost, repair quality, and operating capital. Use the chapter's matched ROI/RI and variance examples to ask what the manager controls and what demand, parts quality, or equipment condition also affects. Name an independent check and a potential unintended response. A variance is a reason to investigate, not proof of low effort.
+
+## Chapter 13: Investment requires incremental cash flows {#company-c13}
+
+**Constructed:** Tesla or Rivian is considering a charging, service, or manufacturing project. Use the chapter's supplied cash flows and discount rate, not invented company forecasts. State the alternative, timing, opportunity costs, and information that a project sponsor might privately hold. Keep the same underlying states and costs when valuing flexibility. Growth, expenditure, or a prominent product announcement alone does not establish positive NPV.
+
+## Chapter 14: Familiar firms, precise policy claims {#company-c14}
+
+Use Tesla or Rivian to name a user and decision in the climate, equity-compensation, and sustainability debates. For a goodwill question, explicitly posit a hypothetical acquisition; do not invent an acquisition or goodwill balance. The common debate resolutions and rubrics remain authoritative. Separate a policy proposal, a reported fact, and a causal claim. A company's familiarity is not evidence that one side's argument is correct.
+
+## The empirical project remains a separate comparison
+
+The supplied project keeps its 12-retailer panel, common measurement rules, and 24 prediction pairs. Tesla and Rivian are classroom connections, not silently added observations or substitutes for the pre-specified sample. Explain what would need to change before transferring a retailer result to EV firms. No new data collection, programming, or student WRDS login is assigned.

@@ -24,6 +24,10 @@ Research briefs ask what a study compares, what its evidence supports, and what 
 
 Later chapters return to these ideas in capital markets, assets and liabilities, compensation, and decisions inside firms. The opening unit supplies the distinction between cash, accounting income, and value that those chapters use.
 
+## Familiar companies throughout the course
+
+[Tesla and Rivian company connections](appendices/a04-tesla-rivian.qmd) provide a common set of annual-report observations and short prompts for all 14 chapters. Tesla is the recurring example and Rivian the comparison. Constructed calculations remain clearly labeled; company facts are supplied when needed rather than assigned for memorization.
+
 ## What you will learn
 
 - Explain how information, uncertainty, and incentives affect cooperation and decisions.

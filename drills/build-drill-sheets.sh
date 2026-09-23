@@ -72,8 +72,6 @@ for wk in "${WEEKS[@]}"; do
   ws="_tmp_wk${wk}_student.qmd"
   cat > "$ws" <<EOF
 ---
-title: "ACCTG 211H — Mechanics Drill Set"
-subtitle: "${sub}"
 format:
   pdf:
     papersize: letter
@@ -81,9 +79,9 @@ format:
     fontsize: 11pt
 ---
 
-::: {.callout-note appearance="simple"}
-Graded for **completion**. Work each drill by hand, then check the answer key (posted separately) and re-do any you missed before the quiz.
-:::
+# ACCTG 211H — Mechanics Drill Set {.unnumbered}
+
+**${sub}**
 
 {{< include ${frag} >}}
 EOF
@@ -95,14 +93,16 @@ EOF
     wk_key="_tmp_wk${wk}_key.qmd"
     cat > "$wk_key" <<EOF
 ---
-title: "ACCTG 211H — Mechanics Drill Set (Answer Key)"
-subtitle: "${sub}"
 format:
   pdf:
     papersize: letter
     geometry: [top=1in, bottom=1in, left=1in, right=1in]
     fontsize: 11pt
 ---
+
+# ACCTG 211H — Mechanics Drill Set (Answer Key) {.unnumbered}
+
+**${sub}**
 
 {{< include ${frag} >}}
 

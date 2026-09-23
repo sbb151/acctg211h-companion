@@ -5,11 +5,17 @@ description: "Build valuation, income, depreciation, and linked statements when 
 # Value and Income Under Certainty {#sec-certainty}
 
 ::: {.callout-note title="Your route through this chapter"}
-**Week 2 · Required:** the main text and Week 2 drills. Read through *A payment in the future* before the first meeting; finish the main text before the second. Allow 45–60 minutes to read and work examples, then 20 minutes for drills. You need percentages, multiplication, and division; a basic calculator is sufficient.
+**Week 2 · Required:** the main text and Week 2 drills. Read through *A payment in the future* and answer reading questions 1–2 before the first meeting; finish the main text and questions 3–5 before the second. Allow 45–60 minutes to read and work examples, then 20 minutes for drills. You need percentages, multiplication, and division; a basic calculator is sufficient.
 
 You should be able to calculate present value, prepare linked statements, separate income from distributions, and compare economic depreciation with cost allocation. The residual-income extension is optional and is not on Quiz 1.
 :::
 
+
+<!-- company-context-start -->
+::: {.callout-tip title="Tesla and Rivian connection"}
+Use [the Chapter 2 company prompt](../appendices/a04-tesla-rivian.qmd#company-c02) when directed in class. Reported facts and constructed assumptions are labeled separately; this connection adds no separate submission.
+:::
+<!-- company-context-end -->
 ## Remove one difficulty before adding another
 
 What would valuation and accounting look like if everyone knew future cash flows and the interest rate? For this chapter, assume there are no taxes or transaction costs and investors can borrow or lend at the same rate. Our small enterprise is financed entirely by owners. These are **model assumptions**, not descriptions of real businesses or requirements of GAAP.
@@ -17,6 +23,8 @@ What would valuation and accounting look like if everyone knew future cash flows
 A number can change because time passes, even when nobody learns anything. Income can be positive without being surprising. Cash can be received without all of it being income. Scott develops this ideal-conditions approach [@scott2020, Chapter 2]; the numerical cases here are teaching examples.
 
 ## A payment in the future
+
+**Calculator warm-up.** A 10% annual return turns 100 into 100 × 1.10 = 110 after one year and 110 × 1.10 = 121 after two. To work backward from 121, divide by 1.10 twice. Writing $(1.10)^2$ means $1.10\times1.10$, not $1.10\times2$. Always count the years between the valuation date and the payment date.
 
 Suppose an investment pays \$1,000 exactly two years from now. The annual interest rate is 5%. Investing \$100 today gives you \$105 after one year and \$110.25 after two. Interest in the second year is earned on the accumulated amount.
 
@@ -87,10 +95,18 @@ $$ {#eq-economic-income}
 
 Here $D_t$ is the distribution and $V_t$ is enterprise value **after** that distribution. There are no new contributions in this formula. A contribution must be excluded from income, just as we excluded the initial contribution.
 
+**Keep dates and periods separate.** Asset value and equity describe what remains **at a date**; receipts, distributions, and income describe what happens **during a period**. In this all-equity model, enterprise value equals the value of all remaining assets, including any retained cash. It equals the delivery asset alone only when there is no other asset. We are using present values here; a later accounting carrying amount need not equal economic value.
+
 Of the \$660 received, \$114.55 is a return on the investment and the remainder is capital recovery. Income is also 10% of opening value: \$1,145.45 × 10% = \$114.55.
 
 ::: {.callout-warning title="A distribution is not an expense"}
 Generating income and distributing cash are different events. If the enterprise instead kept the \$660 at year-end, it would have \$660 cash plus the \$600 asset. Total value would be \$1,260, with the same \$114.55 income. A distribution reduces cash and equity; it does not reduce income.
+:::
+
+**Try a partial distribution.** Suppose Campus Curb distributes only \$400 of Year 1's receipt and keeps the rest as cash at the reporting instant. Find closing cash, total assets, equity, and income before opening the answer. Everything else is unchanged.
+
+::: {.callout-note title="Check the partial-distribution case" collapse="true"}
+Cash is \$260. The delivery asset is still worth \$600, so total assets and equity are \$860. Income is \$400 + \$860 − \$1,145.45 = \$114.55. Counting the full receipt as a distribution would count the retained \$260 twice. Changing the payout alone has not changed this year's income; future returns on retained cash are outside this reporting instant.
 :::
 
 ## Four statements that tell one story

@@ -13,7 +13,7 @@ The book is organized into four arcs, mirroring the course structure:
 - **Arc III — Contracting and Internal Information** (Chs. 11–13)
 - **Arc IV — Synthesis** (Ch. 14)
 
-Plus three appendices on the financial statement effects template (FSET), Python + WRDS in Colab quickstart, and a debits-and-credits cheat sheet.
+Plus four appendices: the financial statement effects template (FSET), optional Python + WRDS quickstart, debits and credits, and recurring Tesla/Rivian company connections.
 
 ## Building the book
 

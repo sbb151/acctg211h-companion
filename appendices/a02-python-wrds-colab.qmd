@@ -1,12 +1,14 @@
 # A2. Python + WRDS in Google Colab Quickstart {#sec-python-wrds .appendix}
 
-> *Reference appendix — to be drafted Summer 2026.*
+::: {.callout-note}
+## Optional reference, pending validation
 
-This appendix is a one-stop reference for the empirical labs. It assumes no prior experience with Python, WRDS, or empirical accounting research; it does not, however, repeat what is already in the lab notebooks themselves. Use this appendix as a complement to the lab walk-throughs.
+The required Weeks 6–10 labs use supplied published tables, paper, and a calculator. This appendix and the legacy notebooks are **not assigned prerequisites**. The code and access instructions below are legacy reference material and have not been validated for Spring 2027. Any later project that uses them needs a separately checked data route and starter materials.
+:::
 
 ## Why Python in Colab
 
-The labs are designed to run in [Google Colab](https://colab.research.google.com), Google's hosted Jupyter notebook environment. Colab is free, requires nothing more than a Penn State Google account, and runs in your browser — no local install required. It has the standard Python data-science stack (`pandas`, `numpy`, `matplotlib`, `scipy`, `statsmodels`) pre-installed, and the Wharton Research Data Services (WRDS) team maintains an official Python package, `wrds`, that connects directly to the WRDS PostgreSQL backend with a single line of code.
+The legacy coding examples were designed for [Google Colab](https://colab.research.google.com), Google's hosted Jupyter notebook environment. Colab is free, requires nothing more than a Penn State Google account, and runs in your browser — no local install required. It has the standard Python data-science stack (`pandas`, `numpy`, `matplotlib`, `scipy`, `statsmodels`) pre-installed, and the Wharton Research Data Services (WRDS) team maintains an official Python package, `wrds`, that connects directly to the WRDS PostgreSQL backend with a single line of code.
 
 ## Setting up your WRDS account
 
@@ -96,7 +98,7 @@ The labs use only a small subset of `pandas`. The operations you will need most 
 | Cross-tab of counts           | `df['col'].value_counts()`                        |
 | Drop missing values           | `df.dropna(subset=['col'])`                       |
 
-If you have not used `pandas` before, work through the [pandas Getting Started tutorials](https://pandas.pydata.org/docs/getting_started/intro_tutorials/) before Lab 1. One to two hours is enough.
+If you have not used `pandas` before, work through the [pandas Getting Started tutorials](https://pandas.pydata.org/docs/getting_started/intro_tutorials/) only if assigned in a separately supported later project; no preparation time has been piloted.
 
 ## Plotting
 
@@ -119,5 +121,5 @@ For more elegant defaults you may use `seaborn` (`import seaborn as sns; sns.set
 
 - Check the WRDS support documentation: [https://wrds-www.wharton.upenn.edu/pages/support/](https://wrds-www.wharton.upenn.edu/pages/support/)
 - Check the WRDS Python package documentation: [https://github.com/wharton/wrds](https://github.com/wharton/wrds)
-- Use the in-class WRDS lab session to ask the TA.
+- Ask the TA during any separately scheduled project support session.
 - GenAI tools are permitted on labs (with disclosure) and can be useful for `pandas` syntax and SQL questions.

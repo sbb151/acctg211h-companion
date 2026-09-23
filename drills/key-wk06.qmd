@@ -8,6 +8,6 @@
 
 4. **Right of return.** Revenue recognized = 50,000 × 96% = \$48,000; Refund liability = 50,000 × 4% = \$2,000.
 
-5. **Abnormal return.** Expected return = α + β·R_m = 0 + 1.2 × 1.5% = 1.8%. AR = 3.2% − 1.8% = **+1.4%**.
+5. **Abnormal return.** Expected return = $\alpha + \beta R_m$ = 0 + 1.2 × 1.5% = 1.8%. AR = 3.2% − 1.8% = **+1.4%**.
 
 6. **CAR.** CAR = 0.6% − 0.2% + 1.1% = **+1.5%**.

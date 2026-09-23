@@ -1,169 +1,96 @@
 ---
-description: "Four contested questions in financial reporting, the debate format, and a course retrospective."
+description: "Four bounded debates about disclosure, measurement and incentives, with a common evidence rubric."
 ---
 
 # Synthesis: The Capstone Debates {#sec-debates}
 
-## Where we have been
 
-The framework is finished. Across the previous thirteen chapters, the Companion has assembled a single integrated apparatus for thinking about financial and managerial accounting, anchored in information economics.
-
-Arc I began with users, decisions, and the distinction between shared uncertainty, hidden information, and hidden action. A certainty benchmark connected cash flows, value, and economic income; state-contingent outcomes and noisy reports then showed what changes when the future or the information is incomplete. Credibility and incentives motivated the FASB framework and the first accrual statements. The central question was what a report can establish for a decision-maker, and what additional evidence that person needs.
-
-Arc II asked how capital markets use the numbers the institutional infrastructure produces. Markets respond to earnings announcements [@ball1968; @beaver1968] but do not always price the components of earnings correctly [@sloan1996]; long-term asset measurement is a contested space where the relevance-faithfulness trade-off plays out [@holthausenwatts2001; @barthbeaverlandsman2001]; accounting plays a contracting role in debt agreements that is distinct from its capital-markets role [@smithwarner1979; @robertssufi2009]; and managers respond to the incentives created by their compensation contracts in measurable ways that produce predictable patterns in reported earnings [@healy1985; @burgstahlerdichev1997].
-
-Arc III turned inside the firm. The same framework that motivates external reporting motivates internal reporting: decentralization (i.e., the delegation of decision rights to local managers) creates the information conditions under which internal accounting becomes valuable [@hayek1945]; performance measurement is the design problem that arises once central authority delegates those rights [@holmstrommilgrom1991]; capital budgeting is the mechanism-design problem of allocating capital across divisions whose private information about project quality cannot be directly verified [@antleeppen1985].
-
-The framework is not a complete theory of accounting. It does not, in itself, settle the contested questions that practitioners and standard-setters wrestle with in their daily work. It does, however, provide a vocabulary and a set of analytical tools that can structure those wrestling matches. The capstone debates that occupy Weeks 14 and 15 of the course are designed to put the framework to work on a small set of currently contested questions in financial reporting.
-
-## How to argue both sides
-
-The debates that follow are not exercises in expressing personal opinions. They are exercises in steelmanning (i.e., constructing the strongest available version of a position one may not personally hold). The structure of each debate is identical, and we lay it out here so that the reader can use the same structure when preparing for class.
-
-For each contested question, the chapter walks through five elements in order.
-
-1. **The question.** Stated as a resolution, in a single sentence, with the contested term defined parenthetically where necessary.
-2. **The strongest argument for the affirmative.** Built from the framework — adverse selection, signaling, moral hazard, agency cost, decentralization, market efficiency — rather than from extemporaneous opinion.
-3. **The strongest argument for the negative.** Built from the same framework, drawing on the verifiability, political-economy, or contracting concerns the framework also articulates.
-4. **The kind of evidence that would resolve the disagreement, and what the empirical literature currently shows.** Most contested questions in accounting are contested precisely because the available evidence is incomplete or contradictory; we say so when that is the case.
-5. **A tentative conclusion, stated in hedged voice.** Not a verdict. The point is to model the calibrated-uncertainty posture that the rest of the Companion has tried to instill.
-
-The five-element structure is the analytical scaffold. The classroom format that wraps around it — opening arguments, cross-examination, rebuttal, audience question and answer, evaluation by non-presenting students — is described in Section 14.4 below. Both structures are designed to do the same thing: force each side to articulate its strongest case and to engage seriously with the strongest case for the opposing side.
-
-::: {.callout-note}
-## Why the random assignment matters
-
-Assigning positions randomly is a deliberate pedagogical choice. Students who are forced to argue for a position they personally find unpersuasive must do the work of constructing the best argument from a perspective they did not begin with. The resulting argument is, almost always, more careful and more rigorously grounded than the argument those same students would have produced if they had been assigned the position they already held. The exercise teaches that contested questions usually have more support on the side the student initially rejected than the student initially supposed, and that the case for the student's own initial view is often weaker than the student initially thought.
+<!-- company-context-start -->
+::: {.callout-tip title="Tesla and Rivian connection"}
+Use [the Chapter 14 company prompt](../appendices/a04-tesla-rivian.qmd#company-c14) when directed in class. Reported facts and constructed assumptions are labeled separately; this connection adds no separate submission.
 :::
+<!-- company-context-end -->
+## Required route and purpose
 
-## The four 2027 debate prompts
+Read this chapter and the short common brief for the debate you are preparing. No full paper or optional technical extension becomes required because it appears in a bibliography. The four debates occur April 20, April 22, April 27 and April 29, 2027.
 
-The four debate prompts for Spring 2027 are listed below. Each connects to specific chapters of the Companion, and the connections are noted explicitly so that students preparing their constructive arguments can locate the analytical tools they need. Each prompt is developed using the five-element structure introduced in Section 14.2.
+The course began with a user making a decision. Certainty linked cash flows to value; uncertainty and private information made that link harder. Accrual accounting addressed timing and measurement. Market evidence asked what reported numbers reveal. Internal accounting showed that reports also change choices. The debates bring those functions together.
 
-### 14.3.1 Debate 1: Mandatory climate disclosure
+For each claim, distinguish a model prediction, an observed association, a constructed example and a causal conclusion. The absence of a cash payment does not mean the absence of an economic cost. A numerical estimate does not remove uncertainty. A disclosure can both reveal information and change incentives.
 
-> **Resolved: Mandatory disclosure of climate-related financial information will improve capital allocation in the U.S. economy.**
+## An argument readers can evaluate
 
-**Framework anchors.** @sec-lemons (adverse selection), together with @sec-signaling (disclosure and credibility); Chapter 5 (the political economy of standard setting and the cost-benefit trade-off in mandatory regulation); Chapter 6 (capital-market consequences of new disclosure regimes).
+Name a user and decision. Explain the proposed mechanism using the course framework. Supply evidence appropriate to that claim, acknowledge an alternative explanation, and identify an observation that would change your conclusion. A precise conditional argument is better than a sweeping assertion supported by an unrelated paper.
 
-**The affirmative case.** If climate-related risks are economically material and currently asymmetrically known to issuers, the standard adverse-selection logic of @akerlof1970 — in which buyers who cannot distinguish high-quality from low-quality assets apply a pooled discount that drives the high-quality assets out of the market — implies that mandatory disclosure should reduce the climate-related lemons discount and reallocate capital toward firms with favorable climate exposures. The cross-country evidence in @daskehailleuzverdi2008, who study the capital-market effects of mandatory IFRS adoption and find liquidity improvements concentrated in countries with strong enforcement, is consistent with the more general proposition that mandatory disclosure regimes can produce measurable capital-market benefits when enforcement is credible.
+Both teams must address the strongest objection to their assigned position. Random assignment is a way to practice that discipline, not a request to adopt the position personally. Cite the actual source and the assigned passage; an AI-generated citation is not evidence.
 
-**The negative case.** Three concerns qualify the affirmative case. First, compliance costs of climate disclosure are large and are concentrated on issuers; the benefits are diffuse and may not exceed the costs, particularly for smaller firms whose climate footprint is itself small. Second, climate-related information is highly uncertain (i.e., the underlying quantities being disclosed are themselves estimates with wide confidence intervals), and may be more meaningfully provided through alternative channels — sustainability reports, third-party ratings, voluntary frameworks — than through mandatory SEC filings whose content is constrained by litigation risk. Third, the political-economy framework of @stigler1971, in which regulation is captured by the regulated industry, predicts that mandatory standards in newly-regulated areas often serve the interests of incumbent regulated parties who can shape the rules, which qualifies the case for mandatory adoption.
+## Debate 1: mandatory climate-related disclosure
 
-**What would resolve the disagreement.** A credible test would compare capital allocation outcomes — cost of capital, investment in climate-favored versus climate-unfavored firms, the cross-sectional pricing of climate risk — before and after a mandatory regime, ideally exploiting a regime that is exogenous to the firms it covers. The evidence on existing regimes (the EU CSRD, the California climate disclosure laws, the SEC's proposed rules) is mixed and is developing rapidly; no single study yet provides a clean read on the U.S. allocation question.
+**April 20. Resolved: A mandatory, standardized climate-related financial disclosure regime would improve capital allocation enough to justify its compliance costs.**
 
-**Tentative conclusion.** The theoretical case for mandatory climate disclosure is consistent with the adverse-selection framework, but is not equivalent to a case for any particular regime. Whether a particular set of rules will improve allocation depends on whether the rules require information that is verifiable, decision-useful, and material — three conditions that, as Chapter 5 makes clear, are difficult to satisfy simultaneously. The evidence is suggestive but not definitive.
+Consider economically material risks to the reporting organization, usable measurement, enforcement and burdens on firms of different sizes. The affirmative should explain how information changes a decision. The negative should compare the proposed regime with a feasible alternative, including costs of missing or inconsistent information.
 
-### 14.3.2 Debate 2: Annual fair-value remeasurement of goodwill
+This is a policy comparison, not a claim that a particular current rule has already produced measured benefits. The SEC adopted climate-disclosure rules in 2024, stayed them during litigation and proposed rescinding them in May 2026. A proposal to rescind is not a completed rescission. The dated institutional note must be rechecked before the debate. [SEC May 29, 2026 fact sheet](https://www.sec.gov/files/33-11421-fact-sheet.pdf).
 
-> **Resolved: Goodwill should be remeasured annually at fair value rather than tested for impairment.**
+The common brief supplies a **constructed** benefit/cost comparison. It cannot establish the effect of an actual rule. IFRS-adoption findings or stock-price associations are not direct experiments on the proposed climate policy.
 
-**Framework anchors.** Chapter 8 (the impairment-only model, the relevance-faithfulness trade-off, the empirical evidence on impairment timing); Chapter 5 (the standard-setting process and the qualitative characteristics framework).
+## Debate 2: goodwill measurement
 
-**The affirmative case.** The post-2001 impairment-only model has produced systematic delays in loss recognition and an accumulating overstatement of goodwill on U.S. balance sheets. @lisloan2017, who examine the timing of goodwill impairments under SFAS 142, document that impairments tend to lag economically observable declines in performance — consistent with the view that managers exercise discretion to delay loss recognition. Annual fair-value remeasurement would address the delay problem by removing the discretion in impairment timing and forcing recognition on a regular cycle. The relevance dimension of the relevance-faithfulness trade-off, articulated in @barthbeaverlandsman2001, supports a measurement basis that updates the carrying amount of goodwill to its current economic value.
+**April 22. Resolved: For a public company, acquired goodwill should be remeasured annually with both upward and downward changes recognized in income, instead of the current impairment model.**
 
-**The negative case.** The verifiability concern of Chapter 5 — articulated forcefully in @holthausenwatts2001, who argue that the value-relevance literature underweights the role of accounting in contracting and stewardship — cuts against annual remeasurement. Fair value of goodwill is highly subjective: it varies widely depending on assumptions about discount rates, expected cash flows, and comparable transactions. The verification structure of the impairment-only model, although flawed, at least requires the firm to defend the estimate against an objective trigger (an event-driven impairment indicator); an annual remeasurement model would require the firm to defend an unconstrained estimate against the auditor's professional judgment, which is a weaker discipline. The moral-hazard concern of Chapter 4 also bears on the question: where management has discretion over an unverifiable estimate that flows directly to earnings, the predictable response is the kind of opportunistic adjustment that @healy1985 and @burgstahlerdichev1997 document in other contexts.
+For this hypothetical proposal, remeasure only the acquired-goodwill component using an explicitly documented allocation of reporting-unit value; do not recognize new internally generated goodwill separately. This restriction does not solve the difficult problem of separating the acquired component from subsequently created value. Teams must address it.
 
-**What would resolve the disagreement.** A credible test would compare the predictive ability and contracting usefulness of carrying amounts under the two regimes. The impairment-only literature provides one half of the comparison; the other half does not yet exist for U.S. goodwill, because no U.S. regime has required annual remeasurement. The IFRS literature on annual remeasurement of other intangibles is partially informative but is not a clean analog.
+The required baseline is the public-company impairment model discussed in Chapter 8: goodwill is not routinely amortized, and impairment assessment occurs annually and between annual tests when qualifying circumstances arise. Eligible private-company/not-for-profit alternatives are outside this resolution. Annual impairment testing is not the same as unrestricted annual upward/downward remeasurement. [FASB ASU 2017-04](https://storage.fasb.org/ASU2017-04.pdf).
 
-**Tentative conclusion.** Both positions have framework support, and the framework alone does not resolve the question. The choice turns on an empirical judgment about which kind of measurement error is larger — the delay-and-bias error of the impairment-only model or the estimation-and-discretion error of annual remeasurement. The available evidence is consistent with the existence of both errors; it does not currently support a confident ranking between them.
+Compare delayed recognition with estimation uncertainty, managerial discretion, verification cost and implications for contracts. Do not promise that a fair-value estimate removes discretion or that an impairment-only carrying amount is an observable current value.
 
-### 14.3.3 Debate 3: Tax deductibility of stock-based compensation
+## Debate 3: share-based compensation and performance measures
 
-> **Resolved: Stock-based compensation distorts performance measurement and should not be tax-deductible.**
+**April 27. Resolved: A board should exclude expense for equity-classified employee service awards from its primary annual operating-performance measure.**
 
-**Framework anchors.** Chapter 10 (the ASC 718 framework and the empirical literature on earnings management around equity-grant timing); Chapter 12 (the multitasking framework on performance measurement). The tax angle adds an additional dimension that is touched on only indirectly in the Companion but that students are encouraged to engage with seriously.
+Use the simple service awards from Chapter 10: grant-date value is supplied, service is recognized over the specified period, and no forfeiture, modification, tax or diluted-EPS complication is required. The proposal changes the board's internal primary performance measure, not GAAP recognition.
 
-**The affirmative case.** The argument has two parts. First, stock-based compensation (SBC) is large enough that its accounting treatment has substantial consequences for performance measurement: if the recognition of SBC introduces predictable distortions, the tax system's deductibility of SBC compounds the distortion at an additional cost to the public fisc. Second, the empirical literature documents that SBC is concentrated in firms whose performance metrics are particularly susceptible to managerial influence. @bergstresserphilippon2006 find that the use of discretionary accruals is more pronounced in firms whose CEOs have a higher fraction of compensation tied to equity, and @heronlie2007 document patterns in option-grant timing consistent with backdating. Both findings are consistent with the more general proposition that equity compensation creates incentives to manage reported earnings — incentives that the tax deductibility of SBC subsidizes.
+Both sides must acknowledge that employee services have a cost even when payment is in shares. The affirmative can argue that a particular annual measure should separate compensation policy from operating execution, but must explain how the board will still hold decision-makers accountable for the cost. The negative can argue that exclusion rewards substitution toward stock pay or obscures resource use, but must consider whether supplementary measures address a real comparison problem. Assess a reconciled GAAP-to-adjusted measure and the incentives it creates.
 
-**The negative case.** Two counterarguments deserve serious engagement. First, SBC is a real economic cost — the chapter's pitfall callout in Section 10.7 makes this point — and denying tax deductibility would treat it differently from cash compensation, distorting the form-of-payment decision in ways that are themselves welfare-reducing. The multitasking framework of @holmstrommilgrom1991 implies that equity compensation has a legitimate role in aligning managerial incentives along dimensions that are difficult to measure directly; restricting its tax treatment would distort that alignment. Second, the performance-measurement distortions of SBC are, on this argument, a separate problem better addressed through governance and contracting reforms (e.g., clawbacks, vesting design, independent compensation committees) than through the tax system.
+This replaces the earlier tax-deductibility resolution. No tax-law or option-pricing prerequisite is added.
 
-**What would resolve the disagreement.** A clean test would compare firms' use of SBC, the quality of their reported earnings, and the allocation of compensation across forms under tax regimes that differ in the deductibility of SBC. Section 162(m) of the Internal Revenue Code, which limits the deductibility of executive compensation above $1 million, has been studied as a partial natural experiment; the existing evidence is mixed. No clean test of full versus partial deductibility of SBC is currently available in the U.S. setting.
+## Debate 4: hidden characteristics and hidden actions
 
-**Tentative conclusion.** The affirmative case rests on empirical claims about the distortion that the tax deductibility of SBC produces; the negative case rests on theoretical claims about the role of equity compensation in alignment. Both are reasonable. The framework does not provide a sharp answer because the question is fundamentally a comparative-institutions question (i.e., which combination of tax rules, accounting rules, and governance arrangements minimizes the joint cost of agency and reporting distortions). The available evidence is consistent with a meaningful distortion but does not pin down the magnitude.
+**April 29. Resolved: The principal benefit of mandatory sustainability reporting is improved accountability for hidden actions, rather than better information about hidden characteristics.**
 
-### 14.3.4 Debate 4: ESG reporting — adverse selection or moral hazard?
+Moral hazard is a form of information asymmetry. The distinction here is **hidden action versus hidden characteristics**, not moral hazard versus information. A report can affect both. Specify a setting, a stakeholder and an outcome before arguing which mechanism is primary.
 
-> **Resolved: Mandatory ESG reporting is a solution to a moral hazard problem, not an information asymmetry problem.**
+For example, emissions information might help a lender distinguish otherwise similar borrowers and might also help a board evaluate a manager's subsequent choices. External harm is not automatically hidden action: an observable externality can still motivate policy. Reporting alone may not change behavior unless users can act on what is learned.
 
-**Framework anchors.** @sec-lemons (adverse selection) and @sec-signaling (disclosure and credibility); Chapter 4 (moral hazard and the institutional response). The prompt is explicitly synthetic — it asks students to apply the conceptual distinction between the two underlying problems to a contested area of contemporary policy. The distinction matters because the two problems imply different institutional responses: adverse selection (i.e., a hidden-type problem) is addressed through disclosure of ex-ante characteristics, while moral hazard (i.e., a hidden-action problem) is addressed through contractual mechanisms that condition on ex-post performance.
+## Classroom format and preparation
 
-**The affirmative case.** The ESG concerns that mandatory reporting is intended to address — corporate behaviors with environmental and social externalities — are principally moral hazard problems. The firm's behavior, not the firm's type, is the relevant object of concern; investors and regulators want to influence corporate behavior, not merely sort firms by their underlying characteristics. The natural institutional response to a moral hazard problem is a contracting mechanism (regulation, taxation, liability), not a disclosure mandate. On this view, a disclosure regime that does not condition outcomes on behavior is a poor instrument for the underlying problem, and the political support for ESG disclosure reflects, in part, the lower political cost of disclosure relative to direct regulation.
+The instructor randomly assigns **eight speaking teams**, two per debate, separately from project groups. Each student belongs to one speaking team and contributes to its argument; other students serve as the audience on that date. Three audience members provide advisory evaluations. Publish the team roster and positions by March 30 so preparation time is equal.
 
-**The negative case.** ESG reporting addresses an adverse-selection problem in capital markets. Investors with social or environmental preferences cannot easily distinguish firms by their ex-ante characteristics; mandatory ESG reporting reduces the lemons discount such investors apply to firms whose ESG characteristics are unobserved. The argument is the same as the standard @akerlof1970 case for mandatory disclosure of any economically material attribute, applied to a particular class of investors. On this view, the institutional response is appropriately a disclosure mandate, not a behavioral mandate, and the question of whether to influence behavior is a separate question that should be settled separately.
+Each team sends its constructive argument to the instructor and opponent **48 hours before its debate**, as the syllabus requires. At a 9:05 a.m. class time, deadlines are April 18, April 20, April 25 and April 27 at 9:05 a.m. Eastern. Begin with independent reasoning; follow the syllabus's debate-specific AI rules. There is no additional late-unit individual essay.
 
-**What would resolve the disagreement.** The question is partly conceptual and partly empirical. The conceptual question is whether investors and regulators primarily seek to sort firms or to influence them; the empirical question is whether mandatory ESG disclosure, in practice, produces measurable changes in capital allocation (the adverse-selection prediction) or measurable changes in corporate behavior (the moral-hazard prediction). The early evidence on the EU regimes speaks to both predictions but does not yet provide a clean read on either.
+The first three meetings use a 60-minute debate: two 8-minute constructives, two 4-minute cross-examinations, two 5-minute rebuttals, two 3-minute conclusions, and 20 minutes of audience questions. Add a 5-minute opening, 7-minute evidence debrief and 3-minute exit note for a 75-minute meeting.
 
-**Tentative conclusion.** The two framings are not mutually exclusive — ESG reporting can serve both functions simultaneously. The interesting analytical question is which function it serves *primarily*, and the empirical evidence is currently insufficient to settle the question. Recognizing the distinction is itself the principal pedagogical payoff: students who can articulate why the two problems imply different institutional responses have internalized the central conceptual move of Arc I.
-
-## The classroom format
-
-The five-element analytical structure of Section 14.2 is the substance of each debate. The classroom format that wraps around it is described here.
-
-For each debate, the class is divided randomly into two groups. One group is assigned the *affirmative* position; the other is assigned the *negative* position. Group composition is determined by the instructor at random; students do not select their position based on their personal views.
-
-Each debate proceeds through six stages.
-
-1. **Constructive arguments.** Each team presents a structured opening argument supporting its position. Constructive arguments are due to both the opposing team and the instructor by email at least 48 hours before the scheduled debate, so that the opposing team can prepare rebuttals.
-2. **Cross-examination.** Each team has the opportunity to directly question the opposing team about the constructive argument. Cross-examination is timed and is intended to expose weaknesses in the opposing argument, not to score rhetorical points.
-3. **Rebuttal.** Each team responds to the opposing constructive argument and to the cross-examination, providing additional evidence and reasoning in support of its position.
-4. **Concluding statements.** Each team summarizes its position and identifies the central reasons the audience should find for it.
-5. **Audience question and answer.** Students from the rest of the class question both teams in the time remaining. The questions are unscripted; the answers are extemporaneous.
-6. **Evaluation.** Three non-presenting students, designated by the instructor before the debate, evaluate the performance of each team using a rubric distributed in advance.
-
-The format is rigorous but the goal is not adversarial. The point of the structure is to force each team to articulate the strongest version of its assigned position, and to engage seriously with the strongest version of the opposing position. Students who emerge from a well-run debate having argued for a position they did not initially hold are, on this account, the students who have learned the most.
+The final debate uses 45 minutes: two 6-minute constructives, two 3-minute cross-examinations, two 4-minute rebuttals, two 2-minute conclusions, and 15 minutes of audience questions. Add a 5-minute opening, 5-minute evidence debrief and 20-minute retrospective.
 
 ## Evaluation rubric
 
-Each debate is evaluated by three non-presenting students using the following rubric. The total score for each team is the sum of the component scores; the team with the higher total wins the debate.
+The debate category remains **15% of the course**. The instructor assigns the grade using this rubric; peer evaluations inform feedback. Winning the audience vote does not determine the grade.
 
-| Component                  | Maximum Score | What is being assessed |
-|----------------------------|---------------|-------------------------|
-| Strength of constructive argument | 25 | Quality of the framework, evidence, and reasoning offered in support of the assigned position |
-| Quality of cross-examination | 15 | The team's ability to identify and probe weaknesses in the opposing argument |
-| Quality of rebuttal | 25 | The team's response to the opposing argument and to the cross-examination |
-| Engagement with the framework | 25 | The team's use of the analytical tools developed in the Companion, with appropriate attention to evidence and counterargument |
-| Audience Q&A | 10 | The team's ability to engage thoughtfully with audience questions |
-| **Total** | **100** | |
+| Component | Points | Evidence of successful work |
+|---|---:|---|
+| Constructive argument | 25 | Defined decision, coherent mechanism, relevant evidence |
+| Cross-examination | 15 | Specific questions testing assumptions or source interpretation |
+| Rebuttal | 25 | Direct, fair response to the strongest objection |
+| Use of course framework | 25 | Accurate distinctions and calibrated causal claims |
+| Audience questions | 10 | Clear answers, acknowledged limits and useful clarification |
+| Total | 100 | |
 
-The "engagement with the framework" component is the largest single piece of the rubric. It rewards teams that ground their arguments in the analytical content of the course rather than in extemporaneous opinion or general rhetorical skill. A team whose constructive argument cites specific chapters of the Companion, engages with specific empirical findings from the assigned readings, and applies specific analytical tools — the relevance-faithfulness trade-off, the multitasking framework, the political-economy analysis of standard-setting — will outscore a team whose argument is rhetorically polished but framework-sparse.
+Within each component, full credit requires accuracy and support; roughly three-quarters indicates a sound argument with a material gap; half indicates partial understanding with weak support; minimal credit reflects unsupported or mistaken claims. The default is a shared team score, with contribution adjustments under the syllabus. Collect members' roles and the source list with the constructive.
 
-## Key takeaways
+## Project feedback and retrospective
 
-::: {.callout-important}
-## Key takeaways
+Project preliminary findings use a common **one-page gallery exhibit due April 18 at 11:59 p.m. Eastern**, before all final reports. Each team receives one assigned peer response and instructor feedback by April 22. The same opportunity applies to every group, independent of enrollment. Selected exhibits may inform discussion; no group waits until after its final report to receive its first feedback.
 
-- **Argue both sides, then take a position — in that order.** The discipline of the chapter is to construct the strongest case for the position one does not initially hold, then to evaluate the two cases side by side. Skipping the first step is the standard route to overconfident conclusions.
-- **Use the framework, not extemporaneous opinion.** Each debate is anchored in the same vocabulary the Companion has developed: adverse selection, signaling, moral hazard, agency cost, decentralization, market efficiency, and the verifiability-relevance trade-off. Arguments that do not draw on the framework should be treated with skepticism, including one's own.
-- **Most contested questions are contested because the evidence is incomplete.** The empirical literature on the four prompts is informative but not decisive; framework reasoning fills part of the gap, but only part. Calibrated uncertainty is the appropriate posture, not strong conviction in either direction.
-- **The conceptual distinctions matter institutionally.** Whether a problem is adverse selection or moral hazard determines whether the appropriate response is disclosure or contracting; whether a measurement issue is one of relevance or verifiability determines whether the appropriate response is fair value or historical cost. The same framework that classifies the problem also constrains the response.
-- **Standards are compromises, not solutions.** Chapter 5's central message is reinforced here: the rules accounting operates under are the compromises a well-meaning standard-setter could reach under political, verifiability, and cost-benefit constraints. They are revisable, and the revision process is itself part of the framework.
-- **The framework outlasts the course.** Agency theory in corporate finance, mechanism design in microeconomic theory, contract theory in organizational economics, and the institutional analysis of regulation in public finance all use versions of the same tools. The course ends; the tools do not.
-:::
+The project report is due **before class April 29**. It remains in its own 15% category. The final class's one-page retrospective is participation work: identify one durable insight, one revised belief supported by evidence, one topic that needed more time, and one change you would make to the course. It is not a substitute for the cumulative final.
 
-## A course retrospective
-
-Beyond the debates themselves, the final session of Week 15 includes a course retrospective in which the instructor and students collectively reflect on what the semester has produced. The retrospective is intended to reinforce the central organizing insight of the course: that financial and managerial accounting are unified by the information-economics framework rather than divided by the financial/managerial distinction.
-
-The retrospective is not a review session. It is the occasion at which students articulate, in their own words, the central insights they take from the semester. Students are asked to come prepared with a written one-page reflection addressing the following prompts.
-
-1. *What is the single insight from the semester that you expect to remember five years from now? Why?*
-2. *Which of the topics covered in the semester do you wish had been covered in greater depth? Why?*
-3. *Which of the topics covered in the semester do you wish had been covered in less depth? Why?*
-4. *If you were teaching ACCTG 211H next year, what one substantive change would you make to the course?*
-
-The reflections are graded as part of participation. They are also used to inform the design of the course in subsequent years; many of the changes between the 2025, 2026, and 2027 versions of the course originated in suggestions students made in their retrospective reflections.
-
-## What comes next, and what remains unsettled
-
-The semester ends here, but the framework does not. Students who continue in accounting (ACCTG 311, ACCTG 401, the upper-level electives) will encounter the institutional details of GAAP at much greater depth. Students who continue in finance, economics, or related fields will encounter many of the analytical tools developed in this course in different applications: agency theory in corporate finance, mechanism design in microeconomic theory, contract theory in organizational economics. Students who continue in industry will encounter the institutional infrastructure of accounting in the role of preparer, auditor, regulator, investor, or analyst — and the framework of this course is, in important respects, the same framework practitioners in those roles use to think about contested questions in their daily work.
-
-A great deal remains unsettled. Whether the impairment-only model for goodwill is preferable to annual remeasurement, whether mandatory climate disclosure will improve capital allocation, whether the tax treatment of stock-based compensation distorts performance measurement on net, whether ESG reporting is best understood as a response to adverse selection or to moral hazard — none of these questions has a confident answer in the contemporary literature, and the Companion has tried not to invent one. The honest posture, after fourteen chapters of framework-building, is to say what the framework rules out, what it leaves open, and where the next round of evidence is most likely to move the conversation.
-
-For students who want to go deeper, the academic literature in financial and managerial accounting is large, accessible, and continually evolving. The Sloan accrual anomaly [@sloan1996], the Burgstahler-Dichev discontinuity [@burgstahlerdichev1997], the Holthausen-Watts and Barth-Beaver-Landsman exchange on value relevance [@holthausenwatts2001; @barthbeaverlandsman2001], the Holmstrom-Milgrom multitasking framework [@holmstrommilgrom1991], and the Antle-Eppen capital-budgeting analysis [@antleeppen1985] are all alive in the contemporary literature and will continue to develop. The Companion's reading lists at the end of each chapter are designed as entry points; the bibliography contains the foundational papers that have shaped the field.
-
-::: {.callout-tip}
-## A final word
-
-The honors seminar is, almost by definition, an opportunity to engage with material at a depth and rigor that introductory courses cannot afford. ACCTG 211H is intended to be that opportunity for accounting. Students who have read this Companion carefully, completed the empirical labs, prepared seriously for the debates, and engaged with the academic literature have done something more than introductory accounting: they have done their first piece of analytical accounting work, in the broad sense of that phrase. The same tools used here are the tools the academic literature uses, the tools serious investors and analysts use, the tools regulators and standard-setters use. Use them well, and use them with the calibrated uncertainty the material deserves.
-:::
+Optional further reading can deepen any debate. Required assessment uses the chapter's distinctions and supplied briefs rather than technical knowledge from optional originals.

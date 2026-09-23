@@ -1,10 +1,10 @@
 ## Drill Set {#sec-drill-wk13}
 
-Quick, single-skill reps to build mechanical fluency before the week's first class. Graded for **completion** — work each one by hand, then check it against the key that follows and re-do any you missed. Round dollar amounts to the nearest dollar; small differences from rounding present-value factors are acceptable.
+**Required: 1–5. Optional: 6–8.** Complete the required items after instruction by **April 18, 2027, 11:59 p.m. Eastern**. Work individually by hand, check the key, and correct errors. Graded for completion; optional items are excluded from quizzes and the final.
 
-1. *(Payback, even cash flows.)* A project costs \$240,000 and generates \$60,000 per year. Compute the payback period.
+1. *(Payback, even cash flows.)* A project costs \$240,000 and generates \$60,000 per year. Compute the payback period assuming cash arrives uniformly within each year.
 
-2. *(Payback, uneven cash flows.)* A project costs \$100,000 and generates \$30,000, \$40,000, \$50,000, and \$60,000 in years 1 through 4. Compute the payback period.
+2. *(Payback, uneven cash flows.)* A project costs \$100,000 and generates \$30,000, \$40,000, \$50,000, and \$60,000 in years 1 through 4. Compute the payback period assuming cash arrives uniformly within each year.
 
 3. *(Present value of a single sum.)* A project returns a single cash flow of \$50,000 at the end of year 3. At a 10% discount rate, compute its present value.
 
@@ -12,8 +12,11 @@ Quick, single-skill reps to build mechanical fluency before the week's first cla
 
 5. *(NPV, uneven cash flows.)* A project costs \$60,000 and generates \$20,000, \$30,000, and \$25,000 in years 1 through 3. The discount rate is 8%. Compute the net present value.
 
-6. *(IRR decision rule.)* A project has an internal rate of return of 9% and the firm's cost of capital is 11%. Should the project be accepted? At the cost of capital, is the project's NPV positive, negative, or zero?
+6. *(Optional: IRR decision rule.)* Assume an initial outflow followed only by positive inflows. A project has an internal rate of return of 9% and the firm's cost of capital is 11%. Should the project be accepted? At the cost of capital, is the project's NPV positive, negative, or zero?
 
 7. *(IRR, even cash flows.)* A project costs \$79,247 and returns \$25,000 per year for four years. Compute the annuity factor (cost ÷ annual cash flow), then identify the IRR given that the four-year annuity factor equals 3.1699 at 10%.
 
 8. *(Profitability index.)* A project requires an initial investment of \$50,000 and the present value of its future cash flows is \$58,000. Compute the profitability index and state the decision.
+
+
+**Supplied factors:** 10%, year 3: 0.751315; 10%, four-year annuity: 3.169865. At 8%, years 1–3: 0.925926, 0.857339, 0.793832. Round final dollars; small factor-rounding differences are acceptable.

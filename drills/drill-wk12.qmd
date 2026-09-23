@@ -1,6 +1,8 @@
 ## Drill Set {#sec-drill-wk12}
 
-Quick, single-skill reps to build mechanical fluency before the week's first class. Graded for **completion** — work each one by hand, then check it against the key that follows and re-do any you missed. Label each variance favorable (F) or unfavorable (U).
+**Required: 1–2 and 5–6. Optional: 3–4 and 7.** Complete the required items after instruction by **April 11, 2027, 11:59 p.m. Eastern**. Work individually by hand, check the key, and correct errors. Graded for completion; optional items are excluded from quizzes and the final.
+
+Label variances favorable (F) or unfavorable (U). Items 1 and 2 use different quantities; do not add them as one total usage-cost variance.
 
 1. *(Materials price variance.)* The standard price is \$5.00 per pound; the actual price is \$5.30 per pound; the actual quantity purchased is 8,000 pounds. Compute the direct-materials price variance.
 

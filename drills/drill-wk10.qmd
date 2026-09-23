@@ -1,6 +1,6 @@
 ## Drill Set {#sec-drill-wk10}
 
-Quick, single-skill reps to build mechanical fluency before the week's first class. Graded for **completion** — work each one by hand, then check it against the key that follows and re-do any you missed.
+**Required: 1–5, 7, 8. Due Sunday March 28, 2027, 11:59 p.m. Eastern, after both class meetings.** Graded for completion: attempt the required items yourself, check the key, and correct your work. No generative AI. Optional items: 6; optional items do not count toward completion or required assessment.
 
 1. *(Issue stock above par.)* A firm issues 10,000 shares of \$1 par common stock for \$15 per share. Record the journal entry.
 
@@ -12,8 +12,8 @@ Quick, single-skill reps to build mechanical fluency before the week's first cla
 
 5. *(Weighted-average shares.)* A firm has 800,000 shares outstanding on January 1 and issues 240,000 additional shares on July 1. Compute the weighted-average shares outstanding for the year.
 
-6. *(Diluted EPS, treasury-stock method.)* A firm has net income of \$1,800,000 and 1,000,000 weighted-average shares. It has 100,000 options outstanding with a \$20 exercise price; the average market price is \$25. Compute diluted EPS.
+6. **Optional.** *(Diluted EPS, treasury-stock method.)* A firm has net income of \$1,800,000 and 1,000,000 weighted-average shares. It has 100,000 options outstanding with a \$20 exercise price; the average market price is \$25. Compute diluted EPS.
 
-7. *(Stock-based compensation expense.)* A firm grants options with a total grant-date fair value of \$600,000 that vest evenly over a three-year service period. Compute the annual compensation expense and record one year's entry.
+7. *(Stock-based compensation expense.)* Assume equity classification, a single cliff-vesting service condition, straight-line expense, no forfeitures, no modification or remeasurement, and no taxes. A firm grants options with a total grant-date fair value of \$600,000 that vest after three years of service beginning January 1. Compute the annual compensation expense and record one year's entry.
 
-8. *(RSU expense, partial year.)* A firm grants 12,000 restricted stock units on July 1 with a grant-date fair value of \$30 each, vesting evenly over four years. Compute the compensation expense for the first calendar year (July–December).
+8. *(RSU expense, partial year.)* Assume equity classification, a single cliff-vesting service condition, straight-line expense, no forfeitures, no modification or remeasurement, and no taxes. A firm grants 12,000 restricted stock units on July 1 with a grant-date fair value of \$30 each, vesting after four years of service beginning July 1. Compute the compensation expense for the first calendar year (July–December).

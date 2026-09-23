@@ -1,3 +1,5 @@
+**Required answers: 1–2 and 5–6. Other answers support optional practice.**
+
 1. **Materials price variance.** = (actual price − standard price) × actual quantity = (5.30 − 5.00) × 8,000 = **\$2,400 U**.
 
 2. **Materials quantity variance.** Standard quantity allowed = 2,000 × 3 = 6,000 lbs. Variance = (actual − standard) × standard price = (6,300 − 6,000) × 5.00 = **\$1,500 U**.

@@ -5,11 +5,17 @@ description: "Separate expected income from news, expected losses from priced ri
 # Value and Income Under Uncertainty {#sec-uncertainty}
 
 ::: {.callout-note title="Your route through this chapter"}
-**Week 3 · Required:** the main text and Week 3 drills. Read through *The same enterprise with an uncertain final receipt* before the first meeting; finish before the second. Allow 45–60 minutes for text and worked examples, plus 20 minutes for drills. Review @eq-economic-income if the distribution/value distinction is unfamiliar.
+**Week 3 · Required:** the main text and Week 3 drills. Read through *The same enterprise with an uncertain final receipt* and answer reading questions 1–3 before the first meeting; finish the main text and questions 4–5 before the second. Allow 45–60 minutes for text and worked examples, plus 20 minutes for drills. Review @eq-economic-income if the distribution/value distinction is unfamiliar.
 
 You should be able to compute expected payoffs, value our simplified uncertain enterprise, reconcile statements after news, and explain why a lower expected payoff is different from a risk premium. No calculus or statistical software is required.
 :::
 
+
+<!-- company-context-start -->
+::: {.callout-tip title="Tesla and Rivian connection"}
+Use [the Chapter 3 company prompt](../appendices/a04-tesla-rivian.qmd#company-c03) when directed in class. Reported facts and constructed assumptions are labeled separately; this connection adds no separate submission.
+:::
+<!-- company-context-end -->
 ## An uncertain outcome need not be private information
 
 Campus Curb's founders and investors might agree on the possible outcomes and their probabilities without knowing which will occur. This is uncertainty with **symmetric information**. It is different from a manager concealing a fact already known to her.
@@ -53,7 +59,7 @@ This is the same initial value as in the certainty case. We held the expected ca
 
 ## Separate the passage of time from news
 
-Before Year 1's state revelation, the expected value of the remaining receipt at the end of that year is \$660/1.10 = \$600. After revelation:
+At the end of Year 1, **after paying out the first receipt but just before learning the state**, only the Year 2 claim remains. Its expected value is \$660/1.10 = \$600. There is no retained cash to add. At the same date, immediately after revelation:
 
 $$
 V_{1,H}=\frac{880}{1.10}=800,
@@ -78,6 +84,15 @@ $$
 $$
 I_{1,L}=660+400-1{,}145.45=-85.45.
 $$
+
+::: {.callout-tip title="A repeatable method"}
+1. Mark the reporting date and list what is known **then**. Do not import news that arrives later.
+2. Value only the remaining cash flows, using their probabilities given that information. After the state is revealed here, the appropriate probability is 1 for the revealed outcome.
+3. Add any cash retained by the enterprise to find total ending value. Keep cash paid to owners separate.
+4. Calculate income as distributions plus ending value minus beginning value. To identify news, compare the remaining asset's values immediately before and after the report **at the same date**.
+
+Comparing 800 or 400 with the opening 1,145.45 would mix news with a year's operations and passage of time.
+:::
 
 Expected first-year income, assessed at time 0, remains \$114.55 because the positive and negative surprises average to zero. The expected value of an unexpected gain or loss is zero relative to the information used to form the expectation; realized gains and losses need not be zero.
 
@@ -145,6 +160,14 @@ Write two sentences before seeing data: one stating the model's prediction, and 
 ## Check your understanding
 
 If the state is revealed only in Year 2, and no other news arrives in Year 1, the Year 1 closing expected asset value remains \$600. Explain why the timing of information changes the timing of remeasurement income, even though the ultimate cash outcomes are unchanged. Then work the drills.
+
+Before the drills, change just the payout in the original high-state case: keep the \$660 receipt as cash until the reporting instant instead of distributing it. What are total assets and income? Does retaining cash remove the news component?
+
+::: {.callout-note title="Check timing and retained cash" collapse="true"}
+With delayed revelation, income is \$660 + \$600 − \$1,145.45 = \$114.55. There is no state news yet, so do not use the eventual 800 or 400 early.
+
+With high-state revelation and retained cash, assets are \$660 cash + \$800 remaining claim = \$1,460. Distributions are zero, so income is still \$314.55. The news component remains +\$200; retaining the receipt changes where the owner's wealth sits, not what was learned about the final payment.
+:::
 
 [Printable drill sheet](../drills/pdf/wk03-drills.pdf) · [Self-check key](../drills/pdf/wk03-drills-key.pdf)
 

@@ -13,6 +13,12 @@ description: "Learn from noisy reports, distinguish disclosure from costly signa
 Quiz 1 remains at the beginning of Day 8 and covers the required material in Chapters 1–3. This chapter's Bayesian updating and incentive calculations are practiced this week and assessed later.
 :::
 
+
+<!-- company-context-start -->
+::: {.callout-tip title="Tesla and Rivian connection"}
+Use [the Chapter 4 company prompt](../appendices/a04-tesla-rivian.qmd#company-c04) when directed in class. Reported facts and constructed assumptions are labeled separately; this connection adds no separate submission.
+:::
+<!-- company-context-end -->
 ## The report does not reveal everything
 
 In @sec-uncertainty, everyone learned the demand state perfectly at the end of Year 1. Now change that assumption. The true state remains unknown until Year 2, but a diagnostic report arrives at the end of Year 1. Keep the same cash flows: \$660 in Year 1 and either \$880 or \$440 in Year 2, with equal prior probabilities. Retain risk neutrality and the 10% rate.

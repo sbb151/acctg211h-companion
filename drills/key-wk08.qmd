@@ -1,10 +1,10 @@
-1. **Capitalized cost.** = 50,000 + 2,000 + 3,000 = **\$55,000**. The first year's insurance (\$1,500) is a period expense, not a cost of acquiring the asset.
+1. **Capitalized cost.** = 50,000 + 2,000 + 3,000 = **\$55,000**. The prepaid insurance (\$1,500) is a separate asset initially and becomes expense as coverage is consumed; it is not equipment cost.
 
 2. **Straight-line.** Annual depreciation = (55,000 − 5,000) ÷ 5 = \$10,000. Book value end of year 2 = 55,000 − 2 × 10,000 = **\$35,000**.
 
-3. **Double-declining-balance.** Rate = 2 ÷ 5 = 40%. Year 1 = 55,000 × 40% = **\$22,000**. Year 2 = (55,000 − 22,000) × 40% = 33,000 × 40% = **\$13,200**. (Salvage is ignored until the final years under DDB.)
+3. **Optional — Double-declining-balance.** Rate = 2 ÷ 5 = 40%. Year 1 = 55,000 × 40% = **\$22,000**. Year 2 = (55,000 − 22,000) × 40% = 33,000 × 40% = **\$13,200**. (Do not depreciate below the salvage value.)
 
-4. **Units-of-production.** Rate = (80,000 − 8,000) ÷ 180,000 = \$0.40 per unit. Year 1 = 30,000 × 0.40 = **\$12,000**.
+4. **Optional — Units-of-production.** Rate = (80,000 − 8,000) ÷ 180,000 = \$0.40 per unit. Year 1 = 30,000 × 0.40 = **\$12,000**.
 
 5. **Partial year.** Full-year depreciation = 24,000 ÷ 4 = \$6,000. October 1 to December 31 = 3 months: 6,000 × 3/12 = **\$1,500**.
 

@@ -1,10 +1,10 @@
 ## Drill Set {#sec-drill-wk07}
 
-Quick, single-skill reps to build mechanical fluency before the week's first class. Graded for **completion** — work each one by hand, then check it against the key that follows and re-do any you missed.
+**Required: 1–8. Due Sunday February 28, 2027, 11:59 p.m. Eastern, after both class meetings.** Graded for completion: attempt the required items yourself, check the key, and correct your work. No generative AI. All items are required.
 
 1. *(Operating cash flow, indirect method.)* Net income is \$60,000. For the year: depreciation \$10,000; accounts receivable increased \$8,000; inventory decreased \$3,000; accounts payable increased \$5,000. Compute cash flow from operations.
 
-2. *(Classify the cash flows.)* Classify each as operating, investing, or financing: (a) cash paid to purchase equipment; (b) cash received from issuing stock; (c) cash collected from customers; (d) cash paid for dividends; (e) cash paid for interest; (f) cash received from selling a building.
+2. *(Classify the cash flows.)* Under U.S. GAAP, classify each as operating, investing, or financing: (a) cash paid to purchase equipment; (b) cash received from issuing stock; (c) cash collected from customers; (d) cash paid for dividends; (e) cash paid for interest; (f) cash received from selling a building.
 
 3. *(Direction of the adjustment.)* In the indirect method, state whether each is **added to** or **subtracted from** net income: (a) increase in accounts receivable; (b) decrease in prepaid expenses; (c) increase in accounts payable; (d) increase in inventory.
 
@@ -16,4 +16,4 @@ Quick, single-skill reps to build mechanical fluency before the week's first cla
 
 7. *(Inventory — weighted average.)* Using the same data as Drill 6, compute cost of goods sold and ending inventory under the periodic weighted-average method.
 
-8. *(Lower of cost or net realizable value.)* Inventory is carried at a cost of \$40,000; its net realizable value is \$37,000. Record any required adjustment and state the resulting carrying value.
+8. *(Lower of cost or net realizable value.)* Assume FIFO inventory. Inventory is carried at a cost of \$40,000; its net realizable value is \$37,000. Record any required adjustment and state the resulting carrying value.

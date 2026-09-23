@@ -1,6 +1,6 @@
 1. **Premium or discount?** **Discount** — the coupon (6%) is below the market rate (8%), so investors will pay less than face. Interest expense will be **greater than** the cash coupon, because expense is the carrying amount times the 8% market rate.
 
-2. **Issue price.** Present value at 8%: coupons = 6,000 × annuity factor (2.5771) = \$15,463; face = 100,000 × PV factor (0.7938) = \$79,383. Issue price ≈ **\$94,846** (a \$5,154 discount).
+2. **Issue price.** Present value at 8%: coupons = 6,000 × annuity factor (2.577097) = \$15,463; face = 100,000 × PV factor (0.793832) = \$79,383. Issue price ≈ **\$94,846** (a \$5,154 discount).
 
 3. **Effective-interest amortization.** Year-1 interest expense = 94,846 × 8% = **\$7,588**. Cash coupon = \$6,000, so discount amortized = 7,588 − 6,000 = **\$1,588**. Carrying value end of year 1 = 94,846 + 1,588 = **\$96,434**.
 
@@ -10,7 +10,7 @@
 
 6. **Lease liability.** PV of \$10,000 for four years at 6% = 10,000 × annuity factor (3.4651) = **\$34,651**.
 
-7. **Lease classification.** (a) finance (ownership transfers); (b) not a finance lease — a short-term (≤12-month) lease; (c) finance (major part of economic life); (d) finance (PV is substantially all of fair value). Only (b) is not a finance lease.
+7. **Optional — Lease classification.** (a) ownership transfer points to finance classification; (b) a nine-month term alone does not establish or exclude finance classification, and the full contract and any short-term election matter; (c) 90% points to a major part of economic life; (d) 97% points to substantially all of fair value. These percentages illustrate judgments, not mandatory bright-line thresholds. Other relevant terms still need review.
 
 8. **Interest coverage.** Ratio = 4,800,000 ÷ 1,200,000 = **4.0×**. Slack = 4.0 − 3.0 = **1.0×** (in compliance).
 

@@ -82,3 +82,7 @@ the script.
 | 13 | `arc3-internal/13-capital-budgeting.qmd` | NPV, IRR, payback, profitability index |
 
 Week 1 uses discussion and simulation; Weeks 14–15 use debates and synthesis. Weeks 2–3 drills are due before Thursday after the Tuesday worked example; Weeks 4–5 are due Sunday after both meetings. See the opening-unit README for dates.
+
+Weeks 6–10 drills are due Sunday after both meetings, at 11:59 p.m. Eastern: February 21, February 28, March 7, March 21, and March 28, 2027. Required IDs are 1–6; 1–8; 1, 2, 5–9; 1–6, 8–9; and 1–5, 7–8, respectively. Other items retain their numbers but are optional.
+
+Weeks 11–13 required IDs are 2–5 and 7–8; 1–2 and 5–6; and 1–5, respectively. Due Sundays April 4, April 11, and April 18, 2027, at 11:59 p.m. Eastern, after both meetings. Other IDs are optional and excluded from quizzes/final. Week 13 includes supplied PV factors; IRR and PI are optional. Public self-check keys retain every original item number.

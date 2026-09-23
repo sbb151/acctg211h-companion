@@ -8,7 +8,7 @@
 
 5. **Weighted-average shares.** = 800,000 + 240,000 × (6/12) = 800,000 + 120,000 = **920,000 shares**.
 
-6. **Diluted EPS.** Proceeds from exercise = 100,000 × \$20 = \$2,000,000. Shares repurchased at average price = 2,000,000 ÷ 25 = 80,000. Incremental (net new) shares = 100,000 − 80,000 = 20,000. Diluted shares = 1,000,000 + 20,000 = 1,020,000. Diluted EPS = 1,800,000 ÷ 1,020,000 = **\$1.76** (down from basic EPS of \$1.80).
+6. **Optional — Diluted EPS.** Proceeds from exercise = 100,000 × \$20 = \$2,000,000. Shares repurchased at average price = 2,000,000 ÷ 25 = 80,000. Incremental (net new) shares = 100,000 − 80,000 = 20,000. Diluted shares = 1,000,000 + 20,000 = 1,020,000. Diluted EPS = 1,800,000 ÷ 1,020,000 = **\$1.76** (down from basic EPS of \$1.80).
 
 7. **Option expense.** Annual = 600,000 ÷ 3 = **\$200,000**. Entry each year: Dr Compensation Expense \$200,000; Cr Additional Paid-in Capital — Stock Options \$200,000.
 

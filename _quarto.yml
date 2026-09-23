@@ -56,6 +56,7 @@ book:
     - appendices/a01-fset.qmd
     - appendices/a02-python-wrds-colab.qmd
     - appendices/a03-debits-credits.qmd
+    - appendices/a04-tesla-rivian.qmd
 
 bibliography: references.bib
 

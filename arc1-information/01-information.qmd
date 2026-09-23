@@ -13,6 +13,12 @@ description: "Why entrust resources to someone who knows more than you? Informat
 You should be able to distinguish shared uncertainty, hidden information, and hidden action; explain a simple adverse-selection problem; and distinguish an internally consistent report from a credible one.
 :::
 
+
+<!-- company-context-start -->
+::: {.callout-tip title="Tesla and Rivian connection"}
+Use [the Chapter 1 company prompt](../appendices/a04-tesla-rivian.qmd#company-c01) when directed in class. Reported facts and constructed assumptions are labeled separately; this connection adds no separate submission.
+:::
+<!-- company-context-end -->
 ## Would you entrust your money to Campus Curb?
 
 Three students want to expand Campus Curb, a hypothetical campus delivery service. They ask you to invest. They know their delivery routes, repeat customers, damaged scooters, and unpaid bills. You have a pitch deck and a promise that the business is doing well.

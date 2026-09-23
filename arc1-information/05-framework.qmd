@@ -12,6 +12,12 @@ description: "Use the FASB framework to evaluate reporting choices, then build C
 You should be able to separate definition, recognition, measurement, and disclosure; explain the roles of the framework and GAAP; and prepare linked statements from basic transactions and adjustments.
 :::
 
+
+<!-- company-context-start -->
+::: {.callout-tip title="Tesla and Rivian connection"}
+Use [the Chapter 5 company prompt](../appendices/a04-tesla-rivian.qmd#company-c05) when directed in class. Reported facts and constructed assumptions are labeled separately; this connection adds no separate submission.
+:::
+<!-- company-context-end -->
 ## What report would you design?
 
 An investor asks Campus Curb for its value. A lender asks what resources will be available to repay a loan. Employees ask whether wages can be paid. A founder asks whether a bad result reflects her choices or circumstances beyond her control.

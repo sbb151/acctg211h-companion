@@ -1,6 +1,6 @@
 ## Drill Set {#sec-drill-wk06}
 
-Quick, single-skill reps to build mechanical fluency before the week's first class. Graded for **completion** — work each one by hand, then check it against the key that follows and re-do any you missed. Drills 1–4 cover revenue recognition (ASC 606); Drills 5–6 cover the abnormal-return mechanics from the chapter.
+**Required: 1–6. Due Sunday February 21, 2027, 11:59 p.m. Eastern, after both class meetings.** Graded for completion: attempt the required items yourself, check the key, and correct your work. No generative AI. All items are required.
 
 1. *(Allocate the transaction price.)* A firm sells a bundle for \$900: a product with a standalone selling price of \$800 and a one-year service with a standalone selling price of \$400. Allocate the \$900 to the two performance obligations using relative standalone selling prices.
 

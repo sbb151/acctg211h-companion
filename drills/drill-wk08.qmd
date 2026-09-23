@@ -1,21 +1,21 @@
 ## Drill Set {#sec-drill-wk08}
 
-Quick, single-skill reps to build mechanical fluency before the week's first class. Graded for **completion** — work each one by hand, then check it against the key that follows and re-do any you missed.
+**Required: 1, 2, 5, 6, 7, 8, 9. Due Sunday March 7, 2027, 11:59 p.m. Eastern, after both class meetings.** Graded for completion: attempt the required items yourself, check the key, and correct your work. No generative AI. Optional items: 3–4; optional items do not count toward completion or required assessment.
 
-1. *(Capitalized cost.)* A firm buys a machine: invoice price \$50,000, freight-in \$2,000, installation \$3,000, and the first year's insurance \$1,500. Compute the cost to be capitalized.
+1. *(Capitalized cost.)* A firm buys a machine: invoice price \$50,000, freight-in \$2,000, installation \$3,000, and prepaid insurance for the coming year \$1,500. Compute the cost to be capitalized.
 
 2. *(Straight-line depreciation.)* The machine costs \$55,000, has a \$5,000 salvage value, and a five-year useful life. Compute annual depreciation and the book value at the end of year 2.
 
-3. *(Double-declining-balance.)* For the same machine (cost \$55,000, salvage \$5,000, five-year life), compute depreciation expense for years 1 and 2 under the double-declining-balance method.
+3. **Optional.** *(Double-declining-balance.)* For the same machine (cost \$55,000, salvage \$5,000, five-year life), compute depreciation expense for years 1 and 2 under the double-declining-balance method.
 
-4. *(Units-of-production.)* A machine costs \$80,000, has an \$8,000 salvage value, and is expected to produce 180,000 units over its life. It produces 30,000 units in year 1. Compute year-1 depreciation.
+4. **Optional.** *(Units-of-production.)* A machine costs \$80,000, has an \$8,000 salvage value, and is expected to produce 180,000 units over its life. It produces 30,000 units in year 1. Compute year-1 depreciation.
 
-5. *(Partial-year depreciation.)* Equipment costing \$24,000 (no salvage, four-year life, straight-line) is purchased on October 1. Compute depreciation for the first partial calendar year.
+5. *(Partial-year depreciation.)* Equipment costing \$24,000 (no salvage, four-year life, straight-line) is purchased and ready for use on October 1. Compute depreciation for the first partial calendar year.
 
 6. *(Disposal.)* Equipment with a cost of \$40,000 and accumulated depreciation of \$30,000 is sold for \$7,000. Compute the gain or loss and record the journal entry.
 
-7. *(Impairment.)* A long-lived asset has a book value of \$120,000, estimated undiscounted future cash flows of \$110,000, and a fair value of \$95,000. Is the asset impaired, and if so, by how much?
+7. *(Impairment.)* Treat a held-and-used long-lived asset as the entire relevant asset group for this simplified U.S. GAAP case. First compare carrying amount with undiscounted cash flows; if not recoverable, write down to fair value. It has a book value of \$120,000, estimated undiscounted future cash flows of \$110,000, and a fair value of \$95,000. Is the asset impaired, and if so, by how much?
 
-8. *(Goodwill.)* An acquirer pays \$500,000 for a target whose identifiable net assets have a fair value of \$430,000. Compute goodwill.
+8. *(Goodwill.)* In a simplified acquisition of an entire business (no prior ownership or noncontrolling interest), an acquirer pays \$500,000 for a target whose identifiable net assets have a fair value of \$430,000. Compute goodwill.
 
-9. *(Intangible amortization.)* A patent is acquired for \$60,000 and has a remaining useful life of ten years. Compute annual amortization and the carrying value at the end of year 3.
+9. *(Intangible amortization.)* A patent is acquired for \$60,000 and has a remaining useful life of ten years, no residual value, and straight-line amortization. Compute annual amortization and the carrying value at the end of year 3.
