@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Debt present value, effective interest, lease obligations, and covenant calculations using actual contractual definitions.">
+
+<title>9&nbsp; Liabilities, Debt Covenants, and Conservatism – ACCTG 211H Companion</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../arc2-markets/10-equity-compensation.html" rel="next">
+<link href="../arc2-markets/08-long-term-assets.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../accessibility/course.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc2-markets/06-efficient-markets.html">Arc II — Markets and Measurement</a></li><li class="breadcrumb-item"><a href="../arc2-markets/09-liabilities.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">ACCTG 211H Companion</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/sbb151/acctg211h-companion" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: Reading, Practice, and Evidence</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc I — Information, Value, and Reporting</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/01-information.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Why Accounting? Information and Cooperation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/02-certainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Value and Income Under Certainty</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/03-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Value and Income Under Uncertainty</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/04-information-incentives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Information, Credibility, and Incentives</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/05-framework.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">From Economic Questions to Accounting Reports</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc II — Markets and Measurement</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/06-efficient-markets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Efficient Markets and the Information Content of Earnings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/07-accruals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cash Flows, Accruals, and Earnings Quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/08-long-term-assets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Long-Term Assets and Measurement Choice</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/09-liabilities.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/10-equity-compensation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Equity, Compensation, and Reporting Incentives</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc III — Contracting and Internal Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/11-decentralization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Decentralization and Cost Behavior</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/12-performance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Performance Measurement as Agency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/13-capital-budgeting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc IV — Synthesis</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc4-synthesis/14-debates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Synthesis: The Capstone Debates</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a01-fset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">A1. The Financial Statement Effects Template</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a02-python-wrds-colab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">A2. Python + WRDS in Google Colab Quickstart</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a03-debits-credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">A3. Debits and Credits</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a04-tesla-rivian.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Tesla and Rivian: Company Connections</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#an-obligation-and-the-incentives-around-it" id="toc-an-obligation-and-the-incentives-around-it" class="nav-link active" data-scroll-target="#an-obligation-and-the-incentives-around-it"><span class="header-section-number">9.1</span> An obligation and the incentives around it</a></li>
+  <li><a href="#price-a-bond-then-explain-its-interest-expense" id="toc-price-a-bond-then-explain-its-interest-expense" class="nav-link" data-scroll-target="#price-a-bond-then-explain-its-interest-expense"><span class="header-section-number">9.2</span> Price a bond, then explain its interest expense</a></li>
+  <li><a href="#a-lease-can-create-a-recognized-obligation" id="toc-a-lease-can-create-a-recognized-obligation" class="nav-link" data-scroll-target="#a-lease-can-create-a-recognized-obligation"><span class="header-section-number">9.3</span> A lease can create a recognized obligation</a></li>
+  <li><a href="#contract-a-and-contract-b-the-same-firm-different-compliance" id="toc-contract-a-and-contract-b-the-same-firm-different-compliance" class="nav-link" data-scroll-target="#contract-a-and-contract-b-the-same-firm-different-compliance"><span class="header-section-number">9.4</span> Contract A and Contract B: the same firm, different compliance</a></li>
+  <li><a href="#falling-performance-and-a-threshold" id="toc-falling-performance-and-a-threshold" class="nav-link" data-scroll-target="#falling-performance-and-a-threshold"><span class="header-section-number">9.5</span> Falling performance and a threshold</a></li>
+  <li><a href="#evidence-about-investment-and-creditor-control" id="toc-evidence-about-investment-and-creditor-control" class="nav-link" data-scroll-target="#evidence-about-investment-and-creditor-control"><span class="header-section-number">9.6</span> Evidence about investment and creditor control</a></li>
+  <li><a href="#why-a-contract-might-favor-cautious-measures" id="toc-why-a-contract-might-favor-cautious-measures" class="nav-link" data-scroll-target="#why-a-contract-might-favor-cautious-measures"><span class="header-section-number">9.7</span> Why a contract might favor cautious measures</a></li>
+  <li><a href="#sec-drill-wk09" id="toc-sec-drill-wk09" class="nav-link" data-scroll-target="#sec-drill-wk09"><span class="header-section-number">9.8</span> Drill Set</a></li>
+  <li><a href="#optional-extension-beyond-the-supplied-contract" id="toc-optional-extension-beyond-the-supplied-contract" class="nav-link" data-scroll-target="#optional-extension-beyond-the-supplied-contract"><span class="header-section-number">9.9</span> Optional extension: beyond the supplied contract</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc2-markets/09-liabilities.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc2-markets/06-efficient-markets.html">Arc II — Markets and Measurement</a></li><li class="breadcrumb-item"><a href="../arc2-markets/09-liabilities.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-liabilities" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Required route and preparation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Allow <strong>50 minutes</strong> for the chapter and examples. Bring Chapter 2 present value and Chapter 5’s liability definition. All numerical cases and contract clauses are constructed.</p>
+<p>Week 9 questions 1–3 are due before Tuesday March 16; 4–5 before Thursday March 18. Drills <strong>1–6, 8, 9</strong> are due Sunday March 21, 2027, 11:59 p.m. Eastern. Drill 7 and the final extension are optional. Quiz 3 on March 25 covers required Chapters 8–9. There is no Lab 4 submission.</p>
+</div>
+</div>
+<!-- company-context-start -->
+<div class="callout callout-style-default callout-tip callout-titled" title="Tesla and Rivian connection">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tesla and Rivian connection
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <a href="../appendices/a04-tesla-rivian.html#company-c09">the Chapter 9 company prompt</a> when directed in class. Reported facts and constructed assumptions are labeled separately; this connection adds no separate submission.</p>
+</div>
+</div>
+<!-- company-context-end -->
+<section id="an-obligation-and-the-incentives-around-it" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="an-obligation-and-the-incentives-around-it"><span class="header-section-number">9.1</span> An obligation and the incentives around it</h2>
+<p>A liability is a present obligation to transfer an economic benefit. Borrowing creates a repayment claim, even if management would prefer to use the cash elsewhere. Shareholders can benefit from risky projects or distributions while creditors bear part of the downside. Contracts can limit those choices, require information, and specify when creditors gain additional rights.</p>
+<p>An accounting amount is therefore useful both as information and as an input into an agreement. A lender may define “debt” or “earnings” differently from a financial-statement subtotal. Before calculating a covenant ratio, read its numerator, denominator, testing date, threshold, and remedies. A ratio rank among other firms supplies none of those terms.</p>
+</section>
+<section id="price-a-bond-then-explain-its-interest-expense" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="price-a-bond-then-explain-its-interest-expense"><span class="header-section-number">9.2</span> Price a bond, then explain its interest expense</h2>
+<p>A three-year bond promises annual coupons of 600 and principal of 10,000 at the end of Year 3. The market yield at issuance is 8%, with annual compounding and no issuance costs. Use the market rate to discount the promised cash flows:</p>
+<p><span class="math display">\[Price=\frac{600}{1.08}+\frac{600}{1.08^2}+\frac{10,600}{1.08^3}=9,484.58.\]</span></p>
+<p>The coupon rate is 600/10,000 = 6%. Since this is below the market yield, investors pay a <strong>discount</strong> to face value. Using the gross presentation, record <strong>Dr Cash 9,484.58; Dr Discount on bonds 515.42; Cr Bonds payable 10,000</strong>. The discount reduces the net carrying amount; it is not a separate resource.</p>
+<p>The effective-interest method applies the issuance yield to the opening carrying amount:</p>
+<div class="a11y-table-region" role="region" tabindex="0" aria-label="Scrollable data table">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Year 1 item</th>
+<th>Calculation</th>
+<th style="text-align: right;">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Interest expense</td>
+<td>9,484.58 × 8%</td>
+<td style="text-align: right;">758.77</td>
+</tr>
+<tr class="even">
+<td>Cash coupon</td>
+<td>10,000 × 6%</td>
+<td style="text-align: right;">600.00</td>
+</tr>
+<tr class="odd">
+<td>Discount amortization</td>
+<td>Expense − cash</td>
+<td style="text-align: right;">158.77</td>
+</tr>
+<tr class="even">
+<td>Ending carrying amount</td>
+<td>Opening amount + amortization</td>
+<td style="text-align: right;">9,643.35</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Record <strong>Dr Interest expense 758.77; Cr Cash 600; Cr Discount 158.77</strong>. Expense exceeds cash interest because part of the borrowing cost is the increase from discounted proceeds toward the principal ultimately repaid. Round consistently; small rounding differences are acceptable.</p>
+<p>At par, a 200,000 bond with a 5% coupon and 5% market yield starts at 200,000, with 10,000 annual cash interest and expense. With a coupon above the issuance market yield, the bond instead sells at a premium and expense is below its coupon. These exercises assume amortized cost and no subsequent modification, default, or fair-value election.</p>
+</section>
+<section id="a-lease-can-create-a-recognized-obligation" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="a-lease-can-create-a-recognized-obligation"><span class="header-section-number">9.3</span> A lease can create a recognized obligation</h2>
+<p>For our lease bridge, the lessee owes 1,000 at each of the next two year-ends and discounts at 10%. Assume no prepayments, incentives, initial direct costs, purchase options, or other initial adjustments:</p>
+<p><span class="math display">\[Lease\ liability=1,000/1.10+1,000/1.10^2=1,735.54.\]</span></p>
+<p>Record <strong>Dr Right-of-use asset 1,735.54; Cr Lease liability 1,735.54</strong>. The asset describes a right to use the underlying property for a period; it does not claim ownership of that property. Topic 842 generally places both operating and finance leases on a lessee’s balance sheet, subject to scope and elections such as the short-term exemption. Detailed classification and subsequent expense patterns are optional here. <a href="https://fasb.org/projects/current-projects/leases-398331">FASB leases overview</a>.</p>
+</section>
+<section id="contract-a-and-contract-b-the-same-firm-different-compliance" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="contract-a-and-contract-b-the-same-firm-different-compliance"><span class="header-section-number">9.4</span> Contract A and Contract B: the same firm, different compliance</h2>
+<p>The firm has bank loans 70, bonds 20, lease liabilities 10, EBITDA before permitted adjustments 24, and stock compensation 6, all in millions. EBITDA is an earnings subtotal before interest, taxes, depreciation, and amortization; <strong>adjusted EBITDA</strong> depends on which further adjustments a contract permits. Neither is automatically cash available to pay debt.</p>
+<p><strong>Contract A</strong> tests funded debt divided by trailing-twelve-month adjusted EBITDA at quarter-end, with a maximum of 3.50. Funded debt includes bank loans and bonds but excludes leases. Adjusted EBITDA adds stock compensation to the supplied 24 and permits no other add-backs. There are no waivers or cure rights in this numerical case.</p>
+<p>Debt = 70 + 20 = <strong>90</strong>; adjusted EBITDA = 24 + 6 = <strong>30</strong>; ratio = <strong>3.00</strong>. Define upper-limit ratio slack as <strong>maximum minus actual</strong>: 3.50 − 3.00 = <strong>+0.50</strong>, so the firm complies. Its debt headroom at fixed EBITDA is 3.50(30) − 90 = <strong>15 million</strong>, a different unit from ratio slack.</p>
+<p><strong>Contract B</strong> includes leases and prohibits the stock-compensation add-back, with the same limit. The ratio is 100/24 = <strong>4.17</strong> and slack is approximately <strong>−0.67</strong>: a violation under the supplied terms. Identical financial statements have produced different contractual conclusions.</p>
+<p>For a <strong>minimum</strong> interest-coverage test, reverse the subtraction: actual minus minimum. If defined EBIT is 4.8 million, defined interest is 1.2 million, and the minimum is 3.0, actual coverage is 4.0 and slack is <strong>+1.0</strong>. Define the sign before interpreting it.</p>
+</section>
+<section id="falling-performance-and-a-threshold" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="falling-performance-and-a-threshold"><span class="header-section-number">9.5</span> Falling performance and a threshold</h2>
+<p>Return to Contract A. EBITDA before its permitted adjustment falls to 19 and the add-back remains 6. Adjusted EBITDA is <strong>25</strong>; debt remains 90. The ratio becomes <strong>3.60</strong>, with slack <strong>−0.10</strong>.</p>
+<p>At fixed adjusted EBITDA, debt must fall to 3.50(25) = <strong>87.5</strong>. Repayment of <strong>2.5 million</strong> reaches the limit exactly. At fixed debt instead, adjusted EBITDA must reach 90/3.50 = <strong>25.7143 million</strong>. Those are separate scenarios, not two changes to combine.</p>
+<p>A violation can alter control or bargaining rights without causing immediate liquidation or bankruptcy. Actual outcomes depend on contract terms, timing, cure provisions, waivers, and renegotiation. A maintenance test is checked periodically; an incurrence test applies when a specified action is taken. Do not assume all loans or bonds contain the same tests.</p>
+</section>
+<section id="evidence-about-investment-and-creditor-control" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="evidence-about-investment-and-creditor-control"><span class="header-section-number">9.6</span> Evidence about investment and creditor control</h2>
+<p>Read the <strong>Chava–Roberts (2008) abstract</strong>, about 15 minutes with the case. <span class="citation" data-cites="chavaroberts2008">Chava and Roberts (<a href="../references.html#ref-chavaroberts2008" role="doc-biblioref">2008</a>)</span> study how covenant violations and the associated transfer of control rights affect investment, using a regression-discontinuity design. <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.2008.01391.x">Publisher abstract</a>.</p>
+<p>Weak demand could both reduce earnings and reduce desired investment. Merely comparing highly indebted firms with less indebted firms cannot distinguish that common cause from an effect of creditor control. A comparison close to each firm’s contractual threshold seeks more similar observations on either side. Its causal interpretation still depends on assumptions, including continuity of other determinants and no sorting that defeats comparability at the cutoff. The constructed calculations do not perform that research design, and no universal percentage effect is assigned.</p>
+</section>
+<section id="why-a-contract-might-favor-cautious-measures" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="why-a-contract-might-favor-cautious-measures"><span class="header-section-number">9.7</span> Why a contract might favor cautious measures</h2>
+<p>Recognizing losses promptly can give creditors an earlier opportunity to intervene; restricting uncertain gains can reduce premature distributions. This is a proposed contracting explanation for some forms of conservatism, not a universal FASB objective or permission to bias every estimate downward. Neutral reporting and the particular contract’s purpose require separate reasoning. Optional background is <span class="citation" data-cites="watts2003a">Watts (<a href="../references.html#ref-watts2003a" role="doc-biblioref">2003</a>)</span> and <span class="citation" data-cites="smithwarner1979">Smith and Warner (<a href="../references.html#ref-smithwarner1979" role="doc-biblioref">1979</a>)</span>; their full papers are not assigned this week.</p>
+<p>Use the five Canvas reading questions and class cases to explain the definitions and evidence limits. No separate covenant memo, database ranking, or additional chapter problem set is required.</p>
+</section>
+<section id="sec-drill-wk09" class="level2" data-number="9.8">
+<h2 data-number="9.8" class="anchored" data-anchor-id="sec-drill-wk09"><span class="header-section-number">9.8</span> Drill Set</h2>
+<p><strong>Required: 1–6, 8, 9. Due Sunday March 21, 2027, 11:59 p.m. Eastern, after both class meetings.</strong> Graded for completion: attempt the required items yourself, check the key, and correct your work. No generative AI. Optional items: 7; optional items do not count toward completion or required assessment.</p>
+<ol type="1">
+<li><p><em>(Premium or discount?)</em> A bond carries a 6% coupon and is issued when the market rate is 8%. Will it sell at a premium, a discount, or par? Over the bond’s life, will interest expense be greater than, less than, or equal to the cash coupon?</p></li>
+<li><p><em>(Issue price.)</em> Compute the issue price of a three-year, $100,000 bond with a 6% annual coupon when the market rate is 8%. Use annual compounding.</p></li>
+<li><p><em>(Effective-interest amortization.)</em> The bond in Drill 2 is issued at $94,846. Under the effective-interest method, compute year-1 interest expense, the discount amortized, and the carrying value at the end of year 1.</p></li>
+<li><p><em>(Issuance entry.)</em> Record the journal entry to issue the bond in Drill 2 (use the gross method, with a separate discount account).</p></li>
+<li><p><em>(Bond at par.)</em> A $200,000 bond with a 5% annual coupon is issued at par. Record (a) the issuance entry and (b) the first annual interest-payment entry.</p></li>
+<li><p><em>(Lease liability.)</em> Assume no prepayments, incentives, or other initial adjustments. A four-year lease requires payments of $10,000 at the end of each year; the discount rate is 6%. Compute the initial lease liability (equal to the right-of-use asset).</p></li>
+<li><p><strong>Optional.</strong> <em>(Lease classification.)</em> Consider each feature in isolation under ASC 842. State whether it points to a finance-lease criterion; a feature alone may be insufficient to classify the entire lease: (a) ownership transfers to the lessee at the end of the term; (b) the lease term is nine months with no purchase option; (c) the term covers 90% of the asset’s economic life; (d) the present value of payments is 97% of the asset’s fair value.</p></li>
+<li><p><em>(Interest-coverage covenant.)</em> A firm has EBIT of $4,800,000 and interest expense of $1,200,000. The contract defines coverage as the supplied EBIT divided by the supplied interest expense and requires coverage of at least 3.0×. Compute the ratio and the covenant slack.</p></li>
+<li><p><em>(Debt-to-EBITDA covenant.)</em> Use these amounts as the contractually defined numerator and denominator, with no other adjustments. A firm has total debt of $90 million and EBITDA of $30 million. A covenant caps debt-to-EBITDA at 3.5×. Compute the ratio and state whether the covenant is satisfied.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Drill Set — Self-Check Answers
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p><strong>Premium or discount?</strong> <strong>Discount</strong> — the coupon (6%) is below the market rate (8%), so investors will pay less than face. Interest expense will be <strong>greater than</strong> the cash coupon, because expense is the carrying amount times the 8% market rate.</p></li>
+<li><p><strong>Issue price.</strong> Present value at 8%: coupons = 6,000 × annuity factor (2.577097) = $15,463; face = 100,000 × PV factor (0.793832) = $79,383. Issue price ≈ <strong>$94,846</strong> (a $5,154 discount).</p></li>
+<li><p><strong>Effective-interest amortization.</strong> Year-1 interest expense = 94,846 × 8% = <strong>$7,588</strong>. Cash coupon = $6,000, so discount amortized = 7,588 − 6,000 = <strong>$1,588</strong>. Carrying value end of year 1 = 94,846 + 1,588 = <strong>$96,434</strong>.</p></li>
+<li><p><strong>Issuance entry (gross method).</strong> Dr Cash $94,846; Dr Discount on Bonds Payable $5,154; Cr Bonds Payable $100,000.</p></li>
+<li><p><strong>Bond at par.</strong> (a) Dr Cash $200,000; Cr Bonds Payable $200,000. (b) Dr Interest Expense $10,000 (200,000 × 5%); Cr Cash $10,000.</p></li>
+<li><p><strong>Lease liability.</strong> PV of $10,000 for four years at 6% = 10,000 × annuity factor (3.4651) = <strong>$34,651</strong>.</p></li>
+<li><p><strong>Optional — Lease classification.</strong> (a) ownership transfer points to finance classification; (b) a nine-month term alone does not establish or exclude finance classification, and the full contract and any short-term election matter; (c) 90% points to a major part of economic life; (d) 97% points to substantially all of fair value. These percentages illustrate judgments, not mandatory bright-line thresholds. Other relevant terms still need review.</p></li>
+<li><p><strong>Interest coverage.</strong> Ratio = 4,800,000 ÷ 1,200,000 = <strong>4.0×</strong>. Slack = 4.0 − 3.0 = <strong>1.0×</strong> (in compliance).</p></li>
+<li><p><strong>Debt-to-EBITDA.</strong> Ratio = 90 ÷ 30 = <strong>3.0×</strong>. Since 3.0× ≤ 3.5×, the covenant <strong>is satisfied</strong> (slack of 0.5×).</p></li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="optional-extension-beyond-the-supplied-contract" class="level2" data-number="9.9">
+<h2 data-number="9.9" class="anchored" data-anchor-id="optional-extension-beyond-the-supplied-contract"><span class="header-section-number">9.9</span> Optional extension: beyond the supplied contract</h2>
+<p>Lease classification requires the full set of relevant terms; a short term alone does not rule out every finance-lease criterion. Pension/OPEB accounting, contingent-liability recognition, and detailed lease schedules are outside required assessment. A later real-contract investigation must supply the agreement, amendments, actual testing dates, and definitions. Cross-sectional financial-ratio ranks cannot be relabeled contractual slack.</p>
+
+
+<!-- -->
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-chavaroberts2008" class="csl-entry" role="listitem">
+Chava, Sudheer, and Michael R. Roberts. 2008. <span>“How Does Financing Impact Investment? The Role of Debt Covenants.”</span> <em>The Journal of Finance</em> 63 (5): 2085–2121. <a href="https://doi.org/10.1111/j.1540-6261.2008.01391.x">https://doi.org/10.1111/j.1540-6261.2008.01391.x</a>.
+</div>
+<div id="ref-smithwarner1979" class="csl-entry" role="listitem">
+Smith, Clifford W., and Jerold B. Warner. 1979. <span>“On Financial Contracting: An Analysis of Bond Covenants.”</span> <em>Journal of Financial Economics</em> 7 (2): 117–61.
+</div>
+<div id="ref-watts2003a" class="csl-entry" role="listitem">
+Watts, Ross L. 2003. <span>“Conservatism in Accounting Part i: Explanations and Implications.”</span> <em>Accounting Horizons</em> 17 (3): 207–21.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<footer class="course-accessibility"><p><a href="https://www.psu.edu/accessibilitystatement">Penn State accessibility statement</a> · <a href="mailto:accessibility@psu.edu">Report an accessibility barrier to the Penn State IT Accessibility Team</a>. Include the page address and a description of the issue.</p></footer>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('main table').forEach(function (table) {
+    table.querySelectorAll('thead th').forEach(function (th) { th.scope = 'col'; });
+    table.querySelectorAll('tbody tr').forEach(function (row) {
+      var first = row.firstElementChild;
+      if (first && first.tagName === 'TD' && first.textContent.trim()) {
+        var th = document.createElement('th');
+        th.scope = 'row'; th.innerHTML = first.innerHTML;
+        th.style.cssText = first.style.cssText; th.style.fontWeight = 'normal';
+        first.replaceWith(th);
+      }
+    });
+    var region = table.closest('.a11y-table-region');
+    if (region && region.getAttribute('aria-label') === 'Scrollable data table') {
+      var section = table.closest('section');
+      var heading = section && section.querySelector('h1,h2,h3,h4,h5,h6');
+      if (heading) region.setAttribute('aria-label', heading.textContent.trim() + ' — data table');
+    }
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sbb151\.github\.io\/acctg211h-companion\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../arc2-markets/08-long-term-assets.html" class="pagination-link" aria-label="Long-Term Assets and Measurement Choice">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Long-Term Assets and Measurement Choice</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../arc2-markets/10-equity-compensation.html" class="pagination-link" aria-label="Equity, Compensation, and Reporting Incentives">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Equity, Compensation, and Reporting Incentives</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Debt present value, effective interest, lease obligations, and covenant calculations using actual contractual definitions."</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># Liabilities, Debt Covenants, and Conservatism {#sec-liabilities}</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Required route and preparation</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>Allow **50 minutes** for the chapter and examples. Bring Chapter 2 present value and Chapter 5's liability definition. All numerical cases and contract clauses are constructed.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Week 9 questions 1–3 are due before Tuesday March 16; 4–5 before Thursday March 18. Drills **1–6, 8, 9** are due Sunday March 21, 2027, 11:59 p.m. Eastern. Drill 7 and the final extension are optional. Quiz 3 on March 25 covers required Chapters 8–9. There is no Lab 4 submission.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- company-context-start --&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip title="Tesla and Rivian connection"}</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Use <span class="co">[</span><span class="ot">the Chapter 9 company prompt</span><span class="co">](../appendices/a04-tesla-rivian.qmd#company-c09)</span> when directed in class. Reported facts and constructed assumptions are labeled separately; this connection adds no separate submission.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- company-context-end --&gt;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## An obligation and the incentives around it</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>A liability is a present obligation to transfer an economic benefit. Borrowing creates a repayment claim, even if management would prefer to use the cash elsewhere. Shareholders can benefit from risky projects or distributions while creditors bear part of the downside. Contracts can limit those choices, require information, and specify when creditors gain additional rights.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>An accounting amount is therefore useful both as information and as an input into an agreement. A lender may define “debt” or “earnings” differently from a financial-statement subtotal. Before calculating a covenant ratio, read its numerator, denominator, testing date, threshold, and remedies. A ratio rank among other firms supplies none of those terms.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Price a bond, then explain its interest expense</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>A three-year bond promises annual coupons of 600 and principal of 10,000 at the end of Year 3. The market yield at issuance is 8%, with annual compounding and no issuance costs. Use the market rate to discount the promised cash flows:</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>$$Price=\frac{600}{1.08}+\frac{600}{1.08^2}+\frac{10,600}{1.08^3}=9,484.58.$$</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>The coupon rate is 600/10,000 = 6%. Since this is below the market yield, investors pay a **discount** to face value. Using the gross presentation, record **Dr Cash 9,484.58; Dr Discount on bonds 515.42; Cr Bonds payable 10,000**. The discount reduces the net carrying amount; it is not a separate resource.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>The effective-interest method applies the issuance yield to the opening carrying amount:</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>| Year 1 item | Calculation | Amount |</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>|---|---|---:|</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>| Interest expense | 9,484.58 × 8% | 758.77 |</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>| Cash coupon | 10,000 × 6% | 600.00 |</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>| Discount amortization | Expense − cash | 158.77 |</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>| Ending carrying amount | Opening amount + amortization | 9,643.35 |</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>Record **Dr Interest expense 758.77; Cr Cash 600; Cr Discount 158.77**. Expense exceeds cash interest because part of the borrowing cost is the increase from discounted proceeds toward the principal ultimately repaid. Round consistently; small rounding differences are acceptable.</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>At par, a 200,000 bond with a 5% coupon and 5% market yield starts at 200,000, with 10,000 annual cash interest and expense. With a coupon above the issuance market yield, the bond instead sells at a premium and expense is below its coupon. These exercises assume amortized cost and no subsequent modification, default, or fair-value election.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## A lease can create a recognized obligation</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>For our lease bridge, the lessee owes 1,000 at each of the next two year-ends and discounts at 10%. Assume no prepayments, incentives, initial direct costs, purchase options, or other initial adjustments:</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>$$Lease\ liability=1,000/1.10+1,000/1.10^2=1,735.54.$$</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>Record **Dr Right-of-use asset 1,735.54; Cr Lease liability 1,735.54**. The asset describes a right to use the underlying property for a period; it does not claim ownership of that property. Topic 842 generally places both operating and finance leases on a lessee's balance sheet, subject to scope and elections such as the short-term exemption. Detailed classification and subsequent expense patterns are optional here. <span class="co">[</span><span class="ot">FASB leases overview</span><span class="co">](https://fasb.org/projects/current-projects/leases-398331)</span>.</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contract A and Contract B: the same firm, different compliance</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>The firm has bank loans 70, bonds 20, lease liabilities 10, EBITDA before permitted adjustments 24, and stock compensation 6, all in millions. EBITDA is an earnings subtotal before interest, taxes, depreciation, and amortization; **adjusted EBITDA** depends on which further adjustments a contract permits. Neither is automatically cash available to pay debt.</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>**Contract A** tests funded debt divided by trailing-twelve-month adjusted EBITDA at quarter-end, with a maximum of 3.50. Funded debt includes bank loans and bonds but excludes leases. Adjusted EBITDA adds stock compensation to the supplied 24 and permits no other add-backs. There are no waivers or cure rights in this numerical case.</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>Debt = 70 + 20 = **90**; adjusted EBITDA = 24 + 6 = **30**; ratio = **3.00**. Define upper-limit ratio slack as **maximum minus actual**: 3.50 − 3.00 = **+0.50**, so the firm complies. Its debt headroom at fixed EBITDA is 3.50(30) − 90 = **15 million**, a different unit from ratio slack.</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>**Contract B** includes leases and prohibits the stock-compensation add-back, with the same limit. The ratio is 100/24 = **4.17** and slack is approximately **−0.67**: a violation under the supplied terms. Identical financial statements have produced different contractual conclusions.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>For a **minimum** interest-coverage test, reverse the subtraction: actual minus minimum. If defined EBIT is 4.8 million, defined interest is 1.2 million, and the minimum is 3.0, actual coverage is 4.0 and slack is **+1.0**. Define the sign before interpreting it.</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">## Falling performance and a threshold</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>Return to Contract A. EBITDA before its permitted adjustment falls to 19 and the add-back remains 6. Adjusted EBITDA is **25**; debt remains 90. The ratio becomes **3.60**, with slack **−0.10**.</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>At fixed adjusted EBITDA, debt must fall to 3.50(25) = **87.5**. Repayment of **2.5 million** reaches the limit exactly. At fixed debt instead, adjusted EBITDA must reach 90/3.50 = **25.7143 million**. Those are separate scenarios, not two changes to combine.</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>A violation can alter control or bargaining rights without causing immediate liquidation or bankruptcy. Actual outcomes depend on contract terms, timing, cure provisions, waivers, and renegotiation. A maintenance test is checked periodically; an incurrence test applies when a specified action is taken. Do not assume all loans or bonds contain the same tests.</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="fu">## Evidence about investment and creditor control</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>Read the **Chava–Roberts (2008) abstract**, about 15 minutes with the case. @chavaroberts2008 study how covenant violations and the associated transfer of control rights affect investment, using a regression-discontinuity design. <span class="co">[</span><span class="ot">Publisher abstract</span><span class="co">](https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.2008.01391.x)</span>.</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>Weak demand could both reduce earnings and reduce desired investment. Merely comparing highly indebted firms with less indebted firms cannot distinguish that common cause from an effect of creditor control. A comparison close to each firm's contractual threshold seeks more similar observations on either side. Its causal interpretation still depends on assumptions, including continuity of other determinants and no sorting that defeats comparability at the cutoff. The constructed calculations do not perform that research design, and no universal percentage effect is assigned.</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why a contract might favor cautious measures</span></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>Recognizing losses promptly can give creditors an earlier opportunity to intervene; restricting uncertain gains can reduce premature distributions. This is a proposed contracting explanation for some forms of conservatism, not a universal FASB objective or permission to bias every estimate downward. Neutral reporting and the particular contract's purpose require separate reasoning. Optional background is @watts2003a and @smithwarner1979; their full papers are not assigned this week.</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>Use the five Canvas reading questions and class cases to explain the definitions and evidence limits. No separate covenant memo, database ranking, or additional chapter problem set is required.</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>{{&lt; include ../drills/drill-wk09.qmd &gt;}}</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip collapse="true"}</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="fu">## Drill Set — Self-Check Answers</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>{{&lt; include ../drills/key-wk09.qmd &gt;}}</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="fu">## Optional extension: beyond the supplied contract</span></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>Lease classification requires the full set of relevant terms; a short term alone does not rule out every finance-lease criterion. Pension/OPEB accounting, contingent-liability recognition, and detailed lease schedules are outside required assessment. A later real-contract investigation must supply the agreement, amendments, actual testing dates, and definitions. Cross-sectional financial-ratio ranks cannot be relabeled contractual slack.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc2-markets/09-liabilities.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

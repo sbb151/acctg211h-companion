@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Asset cost, allocation, impairment, and the limits of interpreting modeled intangibles and market-to-book ratios.">
+
+<title>8&nbsp; Long-Term Assets and Measurement Choice – ACCTG 211H Companion</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../arc2-markets/09-liabilities.html" rel="next">
+<link href="../arc2-markets/07-accruals.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../accessibility/course.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc2-markets/06-efficient-markets.html">Arc II — Markets and Measurement</a></li><li class="breadcrumb-item"><a href="../arc2-markets/08-long-term-assets.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Long-Term Assets and Measurement Choice</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">ACCTG 211H Companion</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/sbb151/acctg211h-companion" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: Reading, Practice, and Evidence</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc I — Information, Value, and Reporting</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/01-information.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Why Accounting? Information and Cooperation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/02-certainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Value and Income Under Certainty</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/03-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Value and Income Under Uncertainty</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/04-information-incentives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Information, Credibility, and Incentives</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/05-framework.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">From Economic Questions to Accounting Reports</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc II — Markets and Measurement</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/06-efficient-markets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Efficient Markets and the Information Content of Earnings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/07-accruals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cash Flows, Accruals, and Earnings Quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/08-long-term-assets.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Long-Term Assets and Measurement Choice</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/09-liabilities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/10-equity-compensation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Equity, Compensation, and Reporting Incentives</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc III — Contracting and Internal Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/11-decentralization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Decentralization and Cost Behavior</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/12-performance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Performance Measurement as Agency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/13-capital-budgeting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc IV — Synthesis</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc4-synthesis/14-debates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Synthesis: The Capstone Debates</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a01-fset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">A1. The Financial Statement Effects Template</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a02-python-wrds-colab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">A2. Python + WRDS in Google Colab Quickstart</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a03-debits-credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">A3. Debits and Credits</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a04-tesla-rivian.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Tesla and Rivian: Company Connections</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-amount-helps-which-decision" id="toc-what-amount-helps-which-decision" class="nav-link active" data-scroll-target="#what-amount-helps-which-decision"><span class="header-section-number">8.1</span> What amount helps which decision?</a></li>
+  <li><a href="#equipment-cost-and-allocation" id="toc-equipment-cost-and-allocation" class="nav-link" data-scroll-target="#equipment-cost-and-allocation"><span class="header-section-number">8.2</span> Equipment: cost and allocation</a></li>
+  <li><a href="#disposal-and-impairment-answer-different-questions" id="toc-disposal-and-impairment-answer-different-questions" class="nav-link" data-scroll-target="#disposal-and-impairment-answer-different-questions"><span class="header-section-number">8.3</span> Disposal and impairment answer different questions</a></li>
+  <li><a href="#finite-life-intangibles-and-acquired-goodwill" id="toc-finite-life-intangibles-and-acquired-goodwill" class="nav-link" data-scroll-target="#finite-life-intangibles-and-acquired-goodwill"><span class="header-section-number">8.4</span> Finite-life intangibles and acquired goodwill</a></li>
+  <li><a href="#a-capitalization-model-is-sensitive-to-assumed-life" id="toc-a-capitalization-model-is-sensitive-to-assumed-life" class="nav-link" data-scroll-target="#a-capitalization-model-is-sensitive-to-assumed-life"><span class="header-section-number">8.5</span> A capitalization model is sensitive to assumed life</a></li>
+  <li><a href="#market-to-book-is-not-a-missing-assets-meter" id="toc-market-to-book-is-not-a-missing-assets-meter" class="nav-link" data-scroll-target="#market-to-book-is-not-a-missing-assets-meter"><span class="header-section-number">8.6</span> Market-to-book is not a missing-assets meter</a></li>
+  <li><a href="#what-can-price-associations-tell-standard-setters" id="toc-what-can-price-associations-tell-standard-setters" class="nav-link" data-scroll-target="#what-can-price-associations-tell-standard-setters"><span class="header-section-number">8.7</span> What can price associations tell standard setters?</a></li>
+  <li><a href="#sec-drill-wk08" id="toc-sec-drill-wk08" class="nav-link" data-scroll-target="#sec-drill-wk08"><span class="header-section-number">8.8</span> Drill Set</a></li>
+  <li><a href="#optional-extension-other-allocation-methods" id="toc-optional-extension-other-allocation-methods" class="nav-link" data-scroll-target="#optional-extension-other-allocation-methods"><span class="header-section-number">8.9</span> Optional extension: other allocation methods</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc2-markets/08-long-term-assets.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc2-markets/06-efficient-markets.html">Arc II — Markets and Measurement</a></li><li class="breadcrumb-item"><a href="../arc2-markets/08-long-term-assets.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Long-Term Assets and Measurement Choice</span></a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-lta" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Long-Term Assets and Measurement Choice</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Required route and preparation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Allow <strong>40 minutes</strong> for the chapter and examples. Bring the asset/expense distinction from Chapter 5. Read the equipment and acquired-intangibles sections before Tuesday March 2, and finish the sensitivity cases before Thursday March 4. All cases are constructed and independent.</p>
+<p>Week 8 questions 1–3 are due Tuesday; 4–5 Thursday. Required drills are <strong>1, 2, 5, 6, 7, 8, 9</strong>, due Sunday March 7, 2027, 11:59 p.m. Eastern. Items 3–4 are optional. Chapter 8 is excluded from March 4’s Quiz 2 and included in March 25’s Quiz 3. There is no Lab 3 submission or new spring-break assignment.</p>
+</div>
+</div>
+<!-- company-context-start -->
+<div class="callout callout-style-default callout-tip callout-titled" title="Tesla and Rivian connection">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tesla and Rivian connection
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <a href="../appendices/a04-tesla-rivian.html#company-c08">the Chapter 8 company prompt</a> when directed in class. Reported facts and constructed assumptions are labeled separately; this connection adds no separate submission.</p>
+</div>
+</div>
+<!-- company-context-end -->
+<section id="what-amount-helps-which-decision" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="what-amount-helps-which-decision"><span class="header-section-number">8.1</span> What amount helps which decision?</h2>
+<p>An asset is a present right to an economic benefit; recognition and measurement require additional analysis under the applicable standard. Spending money is not sufficient proof that a valuable asset exists. Nor does the absence of a recognized asset establish that the activity has no future benefit.</p>
+<p>Useful reporting needs both <strong>relevance and faithful representation</strong>, as discussed in Chapter 5. Historical cost does not own faithful representation, and fair value does not own relevance. A purchase invoice can be verifiable while accumulated cost poorly answers today’s resale question. A well-supported fair-value estimate can faithfully represent a relevant current measurement even though it is uncertain. Choosing a basis, estimating its inputs, and checking the evidence are distinct tasks.</p>
+<p>A donor deciding whether to fund replacement equipment and a lender estimating collateral proceeds may need different information. Ask what the recorded amount measures and what further evidence the decision needs.</p>
+</section>
+<section id="equipment-cost-and-allocation" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="equipment-cost-and-allocation"><span class="header-section-number">8.2</span> Equipment: cost and allocation</h2>
+<p>A community training center pays 12,000 for a machine, 1,000 for delivery, and 2,000 for installation. It also prepays 1,200 for next year’s insurance. Under the case assumptions, equipment cost is <strong>15,000</strong>; insurance is a separate prepaid asset, expensed as coverage is consumed. It is not part of equipment cost.</p>
+<p>The machine is ready for use immediately and has a four-year useful life and 3,000 residual value. Straight-line depreciation allocates the depreciable amount over the service period:</p>
+<p><span class="math display">\[Annual\ depreciation=(15,000-3,000)/4=3,000.\]</span></p>
+<p>Record <strong>Dr Depreciation expense 3,000; Cr Accumulated depreciation 3,000</strong>. The credit is a contra-asset, leaving original equipment cost visible. Cash does not change at this entry. After two full years the carrying amount is 15,000 − 6,000 = <strong>9,000</strong>. Depreciation allocates cost; it does not estimate a new resale price every year.</p>
+<p>For partial years, apply the stated convention. An asset ready for use October 1 with full-year depreciation of 6,000 has three months’ depreciation of <strong>1,500</strong> through December 31 under our monthly convention. Acquisition and readiness dates need not coincide in real cases.</p>
+</section>
+<section id="disposal-and-impairment-answer-different-questions" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="disposal-and-impairment-answer-different-questions"><span class="header-section-number">8.3</span> Disposal and impairment answer different questions</h2>
+<p>If the machine is sold after Year 2 for 8,000, proceeds are 1,000 below its 9,000 carrying amount. Record <strong>Dr Cash 8,000; Dr Accumulated depreciation 6,000; Dr Loss 1,000; Cr Equipment 15,000</strong>. Remove both original cost and accumulated depreciation. Comparing proceeds with original cost would overstate the loss.</p>
+<p>Now consider a <strong>separate alternative</strong>: the center keeps the machine, and an impairment review is warranted. Treat it as the entire relevant held-and-used asset group for this simplified ASC 360 exercise. Remaining undiscounted cash flows are 8,500 and fair value is 7,000. Apply the supplied two-step rule:</p>
+<ol type="1">
+<li><strong>Recoverability screen:</strong> carrying amount 9,000 exceeds undiscounted cash flows 8,500.</li>
+<li><strong>Loss measurement:</strong> write down to fair value 7,000, recognizing a <strong>2,000 loss</strong>.</li>
+</ol>
+<p>The 500 shortfall at the first step is not the measured loss. If undiscounted cash flows instead were 9,500, this screen would not trigger a loss, even with fair value below carrying amount. This held-and-used rule does not apply universally to goodwill, inventory, or assets held for sale. Real application requires the appropriate grouping and supported cash-flow estimates; the exercise supplies both. <a href="https://www.sec.gov/Archives/edgar/data/23194/000119312512493782/filename1.htm">SEC correspondence discussing ASC 360’s cash-flow screen</a>.</p>
+<p>The board should request evidence on condition, utilization, demand, maintenance, and replacement plans. “Management estimates it” is the start of the investigation, not its end.</p>
+</section>
+<section id="finite-life-intangibles-and-acquired-goodwill" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="finite-life-intangibles-and-acquired-goodwill"><span class="header-section-number">8.4</span> Finite-life intangibles and acquired goodwill</h2>
+<p>A separately acquired patent costs 60 and has a ten-year useful life, no residual value, and straight-line amortization. Annual expense is <strong>6</strong> and carrying amount after three years is <strong>42</strong>. Amortization is the corresponding cost-allocation term for this finite-life intangible.</p>
+<p>In a separate simplified business acquisition, an acquirer pays 500 for all of a business whose identifiable assets less assumed liabilities have acquisition-date fair value of 430. With no noncontrolling interest, prior ownership, or other complications, <strong>goodwill = 70</strong>. This residual is not the total value of all internally developed ideas, people, or reputation.</p>
+<p>Under the general U.S. GAAP goodwill model, goodwill is not amortized and is subject to impairment testing. Eligible private companies and not-for-profit entities can elect an alternative including amortization over ten years or a justified shorter life. Entity and election matter. Our goodwill drill asks only the acquisition calculation; no goodwill-impairment calculation is required. <a href="https://storage.fasb.org/ASU2017-04.pdf">FASB ASU 2017-04</a>, <a href="https://storage.fasb.org/ASU_2019-06.pdf">FASB ASU 2019-06</a>.</p>
+</section>
+<section id="a-capitalization-model-is-sensitive-to-assumed-life" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="a-capitalization-model-is-sensitive-to-assumed-life"><span class="header-section-number">8.5</span> A capitalization model is sensitive to assumed life</h2>
+<p>A startup expenses research spending of 90 at the end of Year 1, 120 at the end of Year 2, and 150 at the end of Year 3. An analyst separately constructs a hypothetical cost stock, with straight-line amortization starting in the year <strong>after</strong> each expenditure. This is neither a proposed universal recognition rule nor observed fair value.</p>
+<div class="a11y-table-region" role="region" tabindex="0" aria-label="Scrollable data table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Life assumption</th>
+<th style="text-align: right;">Y1 cohort left at end Y3</th>
+<th style="text-align: right;">Y2 cohort left</th>
+<th style="text-align: right;">Y3 cohort left</th>
+<th style="text-align: right;">Total stock</th>
+<th style="text-align: right;">Y3 amortization</th>
+<th style="text-align: right;">Y3 income increase versus expensing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3 years</td>
+<td style="text-align: right;">90(1/3) = 30</td>
+<td style="text-align: right;">120(2/3) = 80</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">260</td>
+<td style="text-align: right;">30 + 40 = 70</td>
+<td style="text-align: right;">150 − 70 = 80</td>
+</tr>
+<tr class="even">
+<td>5 years</td>
+<td style="text-align: right;">90(3/5) = 54</td>
+<td style="text-align: right;">120(4/5) = 96</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">18 + 24 = 42</td>
+<td style="text-align: right;">150 − 42 = 108</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Cash spending is identical in both rows. A longer assumed life changes the modeled balance and income without discovering an additional dollar of future benefit. Evidence on product success, customer retention, obsolescence, and useful life is needed before treating a cost stock as decision-useful.</p>
+</section>
+<section id="market-to-book-is-not-a-missing-assets-meter" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="market-to-book-is-not-a-missing-assets-meter"><span class="header-section-number">8.6</span> Market-to-book is not a missing-assets meter</h2>
+<p>An unrelated company has market equity of 900 and book equity of 300: market-to-book is <strong>3.0</strong>. Assume a 100 share repurchase reduces each by exactly 100, with no other change. The ratio becomes <strong>800/200 = 4.0</strong>, while the dollar gap stays 600. The exercise created no new intangible asset.</p>
+<p>Market equity reflects expectations about future distributions; book equity accumulates recognized transactions and measurements, including distributions. Expected growth, profitability, measurement choices, and distributions all affect their comparison. A high ratio cannot be read directly as the amount of omitted intangible assets. Ratios with very small or negative book equity need particular care.</p>
+</section>
+<section id="what-can-price-associations-tell-standard-setters" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="what-can-price-associations-tell-standard-setters"><span class="header-section-number">8.7</span> What can price associations tell standard setters?</h2>
+<p>Read only the paired <strong>Holthausen–Watts (2001) and Barth–Beaver–Landsman (2001) abstracts</strong>, about 15 minutes together, through library/Canvas links. <span class="citation" data-cites="holthausenwatts2001">Holthausen and Watts (<a href="../references.html#ref-holthausenwatts2001" role="doc-biblioref">2001</a>)</span> question the theoretical support for standard-setting inferences drawn from value-relevance studies; <span class="citation" data-cites="barthbeaverlandsman2001">Barth, Beaver, and Landsman (<a href="../references.html#ref-barthbeaverlandsman2001" role="doc-biblioref">2001</a>)</span> argue that this research can inform standard setters. These are methodological arguments. A price association alone does not settle recognition, measurement, implementation cost, or the needs of all report users.</p>
+<p>Use the class sensitivity and repurchase cases to identify what additional comparison would help. They are participation work, not another lab or take-home essay. The five packet reading questions are the only required written reading responses.</p>
+</section>
+<section id="sec-drill-wk08" class="level2" data-number="8.8">
+<h2 data-number="8.8" class="anchored" data-anchor-id="sec-drill-wk08"><span class="header-section-number">8.8</span> Drill Set</h2>
+<p><strong>Required: 1, 2, 5, 6, 7, 8, 9. Due Sunday March 7, 2027, 11:59 p.m. Eastern, after both class meetings.</strong> Graded for completion: attempt the required items yourself, check the key, and correct your work. No generative AI. Optional items: 3–4; optional items do not count toward completion or required assessment.</p>
+<ol type="1">
+<li><p><em>(Capitalized cost.)</em> A firm buys a machine: invoice price $50,000, freight-in $2,000, installation $3,000, and prepaid insurance for the coming year $1,500. Compute the cost to be capitalized.</p></li>
+<li><p><em>(Straight-line depreciation.)</em> The machine costs $55,000, has a $5,000 salvage value, and a five-year useful life. Compute annual depreciation and the book value at the end of year 2.</p></li>
+<li><p><strong>Optional.</strong> <em>(Double-declining-balance.)</em> For the same machine (cost $55,000, salvage $5,000, five-year life), compute depreciation expense for years 1 and 2 under the double-declining-balance method.</p></li>
+<li><p><strong>Optional.</strong> <em>(Units-of-production.)</em> A machine costs $80,000, has an $8,000 salvage value, and is expected to produce 180,000 units over its life. It produces 30,000 units in year 1. Compute year-1 depreciation.</p></li>
+<li><p><em>(Partial-year depreciation.)</em> Equipment costing $24,000 (no salvage, four-year life, straight-line) is purchased and ready for use on October 1. Compute depreciation for the first partial calendar year.</p></li>
+<li><p><em>(Disposal.)</em> Equipment with a cost of $40,000 and accumulated depreciation of $30,000 is sold for $7,000. Compute the gain or loss and record the journal entry.</p></li>
+<li><p><em>(Impairment.)</em> Treat a held-and-used long-lived asset as the entire relevant asset group for this simplified U.S. GAAP case. First compare carrying amount with undiscounted cash flows; if not recoverable, write down to fair value. It has a book value of $120,000, estimated undiscounted future cash flows of $110,000, and a fair value of $95,000. Is the asset impaired, and if so, by how much?</p></li>
+<li><p><em>(Goodwill.)</em> In a simplified acquisition of an entire business (no prior ownership or noncontrolling interest), an acquirer pays $500,000 for a target whose identifiable net assets have a fair value of $430,000. Compute goodwill.</p></li>
+<li><p><em>(Intangible amortization.)</em> A patent is acquired for $60,000 and has a remaining useful life of ten years, no residual value, and straight-line amortization. Compute annual amortization and the carrying value at the end of year 3.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Drill Set — Self-Check Answers
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p><strong>Capitalized cost.</strong> = 50,000 + 2,000 + 3,000 = <strong>$55,000</strong>. The prepaid insurance ($1,500) is a separate asset initially and becomes expense as coverage is consumed; it is not equipment cost.</p></li>
+<li><p><strong>Straight-line.</strong> Annual depreciation = (55,000 − 5,000) ÷ 5 = $10,000. Book value end of year 2 = 55,000 − 2 × 10,000 = <strong>$35,000</strong>.</p></li>
+<li><p><strong>Optional — Double-declining-balance.</strong> Rate = 2 ÷ 5 = 40%. Year 1 = 55,000 × 40% = <strong>$22,000</strong>. Year 2 = (55,000 − 22,000) × 40% = 33,000 × 40% = <strong>$13,200</strong>. (Do not depreciate below the salvage value.)</p></li>
+<li><p><strong>Optional — Units-of-production.</strong> Rate = (80,000 − 8,000) ÷ 180,000 = $0.40 per unit. Year 1 = 30,000 × 0.40 = <strong>$12,000</strong>.</p></li>
+<li><p><strong>Partial year.</strong> Full-year depreciation = 24,000 ÷ 4 = $6,000. October 1 to December 31 = 3 months: 6,000 × 3/12 = <strong>$1,500</strong>.</p></li>
+<li><p><strong>Disposal.</strong> Book value = 40,000 − 30,000 = $10,000. Proceeds $7,000 &lt; $10,000, so <strong>loss of $3,000</strong>. Entry: Dr Cash $7,000; Dr Accumulated Depreciation $30,000; Dr Loss on Disposal $3,000; Cr Equipment $40,000.</p></li>
+<li><p><strong>Impairment.</strong> Recoverability test: undiscounted cash flows $110,000 &lt; book value $120,000, so the asset <strong>is impaired</strong>. Impairment loss = book value − fair value = 120,000 − 95,000 = <strong>$25,000</strong>.</p></li>
+<li><p><strong>Goodwill.</strong> = 500,000 − 430,000 = <strong>$70,000</strong>.</p></li>
+<li><p><strong>Patent amortization.</strong> Annual = 60,000 ÷ 10 = $6,000. Carrying value end of year 3 = 60,000 − 3 × 6,000 = <strong>$42,000</strong>.</p></li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="optional-extension-other-allocation-methods" class="level2" data-number="8.9">
+<h2 data-number="8.9" class="anchored" data-anchor-id="optional-extension-other-allocation-methods"><span class="header-section-number">8.9</span> Optional extension: other allocation methods</h2>
+<p>Drill 3 uses double-declining balance: multiply opening carrying amount by twice the straight-line rate, without depreciating below residual value. Drill 4 uses units of production: allocate depreciable cost per estimated lifetime unit, then multiply by actual units. These methods and wider intangible-recognition exceptions are enrichment, excluded from required assessment. Before applying either method to a real entity, investigate the benefit pattern and applicable standard.</p>
+
+
+<!-- -->
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-barthbeaverlandsman2001" class="csl-entry" role="listitem">
+Barth, Mary E., William H. Beaver, and Wayne R. Landsman. 2001. <span>“The Relevance of the Value Relevance Literature for Financial Accounting Standard Setting: Another View.”</span> <em>Journal of Accounting and Economics</em> 31 (1–3): 77–104.
+</div>
+<div id="ref-holthausenwatts2001" class="csl-entry" role="listitem">
+Holthausen, Robert W., and Ross L. Watts. 2001. <span>“The Relevance of the Value-Relevance Literature for Financial Accounting Standard Setting.”</span> <em>Journal of Accounting and Economics</em> 31 (1–3): 3–75.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<footer class="course-accessibility"><p><a href="https://www.psu.edu/accessibilitystatement">Penn State accessibility statement</a> · <a href="mailto:accessibility@psu.edu">Report an accessibility barrier to the Penn State IT Accessibility Team</a>. Include the page address and a description of the issue.</p></footer>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('main table').forEach(function (table) {
+    table.querySelectorAll('thead th').forEach(function (th) { th.scope = 'col'; });
+    table.querySelectorAll('tbody tr').forEach(function (row) {
+      var first = row.firstElementChild;
+      if (first && first.tagName === 'TD' && first.textContent.trim()) {
+        var th = document.createElement('th');
+        th.scope = 'row'; th.innerHTML = first.innerHTML;
+        th.style.cssText = first.style.cssText; th.style.fontWeight = 'normal';
+        first.replaceWith(th);
+      }
+    });
+    var region = table.closest('.a11y-table-region');
+    if (region && region.getAttribute('aria-label') === 'Scrollable data table') {
+      var section = table.closest('section');
+      var heading = section && section.querySelector('h1,h2,h3,h4,h5,h6');
+      if (heading) region.setAttribute('aria-label', heading.textContent.trim() + ' — data table');
+    }
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sbb151\.github\.io\/acctg211h-companion\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../arc2-markets/07-accruals.html" class="pagination-link" aria-label="Cash Flows, Accruals, and Earnings Quality">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cash Flows, Accruals, and Earnings Quality</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../arc2-markets/09-liabilities.html" class="pagination-link" aria-label="Liabilities, Debt Covenants, and Conservatism">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Asset cost, allocation, impairment, and the limits of interpreting modeled intangibles and market-to-book ratios."</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># Long-Term Assets and Measurement Choice {#sec-lta}</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Required route and preparation</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>Allow **40 minutes** for the chapter and examples. Bring the asset/expense distinction from Chapter 5. Read the equipment and acquired-intangibles sections before Tuesday March 2, and finish the sensitivity cases before Thursday March 4. All cases are constructed and independent.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Week 8 questions 1–3 are due Tuesday; 4–5 Thursday. Required drills are **1, 2, 5, 6, 7, 8, 9**, due Sunday March 7, 2027, 11:59 p.m. Eastern. Items 3–4 are optional. Chapter 8 is excluded from March 4's Quiz 2 and included in March 25's Quiz 3. There is no Lab 3 submission or new spring-break assignment.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- company-context-start --&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip title="Tesla and Rivian connection"}</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Use <span class="co">[</span><span class="ot">the Chapter 8 company prompt</span><span class="co">](../appendices/a04-tesla-rivian.qmd#company-c08)</span> when directed in class. Reported facts and constructed assumptions are labeled separately; this connection adds no separate submission.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- company-context-end --&gt;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## What amount helps which decision?</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>An asset is a present right to an economic benefit; recognition and measurement require additional analysis under the applicable standard. Spending money is not sufficient proof that a valuable asset exists. Nor does the absence of a recognized asset establish that the activity has no future benefit.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Useful reporting needs both **relevance and faithful representation**, as discussed in Chapter 5. Historical cost does not own faithful representation, and fair value does not own relevance. A purchase invoice can be verifiable while accumulated cost poorly answers today's resale question. A well-supported fair-value estimate can faithfully represent a relevant current measurement even though it is uncertain. Choosing a basis, estimating its inputs, and checking the evidence are distinct tasks.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>A donor deciding whether to fund replacement equipment and a lender estimating collateral proceeds may need different information. Ask what the recorded amount measures and what further evidence the decision needs.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">## Equipment: cost and allocation</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>A community training center pays 12,000 for a machine, 1,000 for delivery, and 2,000 for installation. It also prepays 1,200 for next year's insurance. Under the case assumptions, equipment cost is **15,000**; insurance is a separate prepaid asset, expensed as coverage is consumed. It is not part of equipment cost.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>The machine is ready for use immediately and has a four-year useful life and 3,000 residual value. Straight-line depreciation allocates the depreciable amount over the service period:</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>$$Annual\ depreciation=(15,000-3,000)/4=3,000.$$</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>Record **Dr Depreciation expense 3,000; Cr Accumulated depreciation 3,000**. The credit is a contra-asset, leaving original equipment cost visible. Cash does not change at this entry. After two full years the carrying amount is 15,000 − 6,000 = **9,000**. Depreciation allocates cost; it does not estimate a new resale price every year.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>For partial years, apply the stated convention. An asset ready for use October 1 with full-year depreciation of 6,000 has three months' depreciation of **1,500** through December 31 under our monthly convention. Acquisition and readiness dates need not coincide in real cases.</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu">## Disposal and impairment answer different questions</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>If the machine is sold after Year 2 for 8,000, proceeds are 1,000 below its 9,000 carrying amount. Record **Dr Cash 8,000; Dr Accumulated depreciation 6,000; Dr Loss 1,000; Cr Equipment 15,000**. Remove both original cost and accumulated depreciation. Comparing proceeds with original cost would overstate the loss.</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>Now consider a **separate alternative**: the center keeps the machine, and an impairment review is warranted. Treat it as the entire relevant held-and-used asset group for this simplified ASC 360 exercise. Remaining undiscounted cash flows are 8,500 and fair value is 7,000. Apply the supplied two-step rule:</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Recoverability screen:** carrying amount 9,000 exceeds undiscounted cash flows 8,500.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Loss measurement:** write down to fair value 7,000, recognizing a **2,000 loss**.</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>The 500 shortfall at the first step is not the measured loss. If undiscounted cash flows instead were 9,500, this screen would not trigger a loss, even with fair value below carrying amount. This held-and-used rule does not apply universally to goodwill, inventory, or assets held for sale. Real application requires the appropriate grouping and supported cash-flow estimates; the exercise supplies both. <span class="co">[</span><span class="ot">SEC correspondence discussing ASC 360's cash-flow screen</span><span class="co">](https://www.sec.gov/Archives/edgar/data/23194/000119312512493782/filename1.htm)</span>.</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>The board should request evidence on condition, utilization, demand, maintenance, and replacement plans. “Management estimates it” is the start of the investigation, not its end.</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="fu">## Finite-life intangibles and acquired goodwill</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>A separately acquired patent costs 60 and has a ten-year useful life, no residual value, and straight-line amortization. Annual expense is **6** and carrying amount after three years is **42**. Amortization is the corresponding cost-allocation term for this finite-life intangible.</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>In a separate simplified business acquisition, an acquirer pays 500 for all of a business whose identifiable assets less assumed liabilities have acquisition-date fair value of 430. With no noncontrolling interest, prior ownership, or other complications, **goodwill = 70**. This residual is not the total value of all internally developed ideas, people, or reputation.</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>Under the general U.S. GAAP goodwill model, goodwill is not amortized and is subject to impairment testing. Eligible private companies and not-for-profit entities can elect an alternative including amortization over ten years or a justified shorter life. Entity and election matter. Our goodwill drill asks only the acquisition calculation; no goodwill-impairment calculation is required. <span class="co">[</span><span class="ot">FASB ASU 2017-04</span><span class="co">](https://storage.fasb.org/ASU2017-04.pdf)</span>, <span class="co">[</span><span class="ot">FASB ASU 2019-06</span><span class="co">](https://storage.fasb.org/ASU_2019-06.pdf)</span>.</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="fu">## A capitalization model is sensitive to assumed life</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>A startup expenses research spending of 90 at the end of Year 1, 120 at the end of Year 2, and 150 at the end of Year 3. An analyst separately constructs a hypothetical cost stock, with straight-line amortization starting in the year **after** each expenditure. This is neither a proposed universal recognition rule nor observed fair value.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>| Life assumption | Y1 cohort left at end Y3 | Y2 cohort left | Y3 cohort left | Total stock | Y3 amortization | Y3 income increase versus expensing |</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>|---|---:|---:|---:|---:|---:|---:|</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>| 3 years | 90(1/3) = 30 | 120(2/3) = 80 | 150 | 260 | 30 + 40 = 70 | 150 − 70 = 80 |</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>| 5 years | 90(3/5) = 54 | 120(4/5) = 96 | 150 | 300 | 18 + 24 = 42 | 150 − 42 = 108 |</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>Cash spending is identical in both rows. A longer assumed life changes the modeled balance and income without discovering an additional dollar of future benefit. Evidence on product success, customer retention, obsolescence, and useful life is needed before treating a cost stock as decision-useful.</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="fu">## Market-to-book is not a missing-assets meter</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>An unrelated company has market equity of 900 and book equity of 300: market-to-book is **3.0**. Assume a 100 share repurchase reduces each by exactly 100, with no other change. The ratio becomes **800/200 = 4.0**, while the dollar gap stays 600. The exercise created no new intangible asset.</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>Market equity reflects expectations about future distributions; book equity accumulates recognized transactions and measurements, including distributions. Expected growth, profitability, measurement choices, and distributions all affect their comparison. A high ratio cannot be read directly as the amount of omitted intangible assets. Ratios with very small or negative book equity need particular care.</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="fu">## What can price associations tell standard setters?</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>Read only the paired **Holthausen–Watts (2001) and Barth–Beaver–Landsman (2001) abstracts**, about 15 minutes together, through library/Canvas links. @holthausenwatts2001 question the theoretical support for standard-setting inferences drawn from value-relevance studies; @barthbeaverlandsman2001 argue that this research can inform standard setters. These are methodological arguments. A price association alone does not settle recognition, measurement, implementation cost, or the needs of all report users.</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>Use the class sensitivity and repurchase cases to identify what additional comparison would help. They are participation work, not another lab or take-home essay. The five packet reading questions are the only required written reading responses.</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>{{&lt; include ../drills/drill-wk08.qmd &gt;}}</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip collapse="true"}</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="fu">## Drill Set — Self-Check Answers</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>{{&lt; include ../drills/key-wk08.qmd &gt;}}</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="fu">## Optional extension: other allocation methods</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>Drill 3 uses double-declining balance: multiply opening carrying amount by twice the straight-line rate, without depreciating below residual value. Drill 4 uses units of production: allocate depreciable cost per estimated lifetime unit, then multiply by actual units. These methods and wider intangible-recognition exceptions are enrichment, excluded from required assessment. Before applying either method to a real entity, investigate the benefit pattern and applicable standard.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc2-markets/08-long-term-assets.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

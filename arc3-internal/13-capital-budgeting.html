@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Cash-flow timelines, NPV, flexibility and investment decisions with private information.">
+
+<title>13&nbsp; Capital Budgeting Under Asymmetric Information – ACCTG 211H Companion</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../arc4-synthesis/14-debates.html" rel="next">
+<link href="../arc3-internal/12-performance.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../accessibility/course.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc3-internal/11-decentralization.html">Arc III — Contracting and Internal Information</a></li><li class="breadcrumb-item"><a href="../arc3-internal/13-capital-budgeting.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">ACCTG 211H Companion</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/sbb151/acctg211h-companion" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: Reading, Practice, and Evidence</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc I — Information, Value, and Reporting</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/01-information.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Why Accounting? Information and Cooperation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/02-certainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Value and Income Under Certainty</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/03-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Value and Income Under Uncertainty</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/04-information-incentives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Information, Credibility, and Incentives</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/05-framework.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">From Economic Questions to Accounting Reports</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc II — Markets and Measurement</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/06-efficient-markets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Efficient Markets and the Information Content of Earnings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/07-accruals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cash Flows, Accruals, and Earnings Quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/08-long-term-assets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Long-Term Assets and Measurement Choice</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/09-liabilities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/10-equity-compensation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Equity, Compensation, and Reporting Incentives</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc III — Contracting and Internal Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/11-decentralization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Decentralization and Cost Behavior</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/12-performance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Performance Measurement as Agency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/13-capital-budgeting.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc IV — Synthesis</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc4-synthesis/14-debates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Synthesis: The Capstone Debates</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a01-fset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">A1. The Financial Statement Effects Template</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a02-python-wrds-colab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">A2. Python + WRDS in Google Colab Quickstart</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a03-debits-credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">A3. Debits and Credits</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a04-tesla-rivian.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Tesla and Rivian: Company Connections</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#start-with-incremental-cash-flows" id="toc-start-with-incremental-cash-flows" class="nav-link active" data-scroll-target="#start-with-incremental-cash-flows"><span class="header-section-number">13.1</span> Start with incremental cash flows</a></li>
+  <li><a href="#a-complete-project-and-a-sensitivity-check" id="toc-a-complete-project-and-a-sensitivity-check" class="nav-link" data-scroll-target="#a-complete-project-and-a-sensitivity-check"><span class="header-section-number">13.2</span> A complete project and a sensitivity check</a></li>
+  <li><a href="#flexibility-belongs-inside-the-valuation" id="toc-flexibility-belongs-inside-the-valuation" class="nav-link" data-scroll-target="#flexibility-belongs-inside-the-valuation"><span class="header-section-number">13.3</span> Flexibility belongs inside the valuation</a></li>
+  <li><a href="#information-changes-the-allocation-problem" id="toc-information-changes-the-allocation-problem" class="nav-link" data-scroll-target="#information-changes-the-allocation-problem"><span class="header-section-number">13.4</span> Information changes the allocation problem</a></li>
+  <li><a href="#sec-drill-wk13" id="toc-sec-drill-wk13" class="nav-link" data-scroll-target="#sec-drill-wk13"><span class="header-section-number">13.5</span> Drill Set</a></li>
+  <li><a href="#optional-extension-irr-and-profitability-index" id="toc-optional-extension-irr-and-profitability-index" class="nav-link" data-scroll-target="#optional-extension-irr-and-profitability-index"><span class="header-section-number">13.6</span> Optional extension: IRR and profitability index</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc3-internal/13-capital-budgeting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc3-internal/11-decentralization.html">Arc III — Contracting and Internal Information</a></li><li class="breadcrumb-item"><a href="../arc3-internal/13-capital-budgeting.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-capbudget" class="quarto-section-identifier"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Required route and preparation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Read through <strong>Information changes the allocation problem</strong> and work the examples. Week 13 questions 1–3 are due before Tuesday April 13; 4–5 before Thursday April 15. Required external reading is <strong>Graham–Harvey (2001) abstract</strong> and <strong>Antle–Eppen (1985) abstract</strong>, supported by the briefs below. Drills <strong>1–5</strong> are due Sunday April 18, 2027, 11:59 p.m. Eastern; 6–8 and the final extensions are optional. Quiz 4 on April 15 covers <strong>Chapters 10–12 only</strong>. This chapter’s required material is assessed on the cumulative final.</p>
+</div>
+</div>
+<!-- company-context-start -->
+<div class="callout callout-style-default callout-tip callout-titled" title="Tesla and Rivian connection">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tesla and Rivian connection
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <a href="../appendices/a04-tesla-rivian.html#company-c13">the Chapter 13 company prompt</a> when directed in class. Reported facts and constructed assumptions are labeled separately; this connection adds no separate submission.</p>
+</div>
+</div>
+<!-- company-context-end -->
+<section id="start-with-incremental-cash-flows" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="start-with-incremental-cash-flows"><span class="header-section-number">13.1</span> Start with incremental cash flows</h2>
+<p>A machine may make a department’s reported profit larger while destroying value. A worthwhile investment may lower its short-term ROI. Evaluate the cash flows that change when the organization accepts the project, including the timing of costs, benefits and any recovery at the end.</p>
+<p>For a constructed example, pay 100 now to receive 60 at the end of each of the next two years. The supplied discount rate is 10%; these are incremental after-tax cash flows with no other outlays or terminal proceeds.</p>
+<p><span class="math display">\[NPV=-100+\frac{60}{1.10}+\frac{60}{1.10^2}=4.132.\]</span></p>
+<p>The 100 is paid now and is not discounted. The first 60 has PV 54.545; the second has PV 49.587. Positive NPV means the project adds value under these cash-flow and discount-rate assumptions. Do not subtract depreciation as a second cash outlay when the equipment payment is already included. If taxes matter, their cash effects must be included; this course supplies them or explicitly ignores taxes.</p>
+<p>A sunk cost paid before today’s decision is not changed by that decision. The cash from selling an existing asset instead of using it is an opportunity cost. Working capital tied up initially and recovered at the end belongs in the timeline. State what is included, not merely a formula.</p>
+</section>
+<section id="a-complete-project-and-a-sensitivity-check" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="a-complete-project-and-a-sensitivity-check"><span class="header-section-number">13.2</span> A complete project and a sensitivity check</h2>
+<p>All amounts below are thousands of dollars. A project costs 1,500 now. The year-5 equipment/working-capital recovery is additional to that year’s operating cash flow. The supplied discount rate is 10%.</p>
+<div class="a11y-table-region" role="region" tabindex="0" aria-label="Scrollable data table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th style="text-align: right;">Operating cash</th>
+<th style="text-align: right;">Terminal recovery</th>
+<th style="text-align: right;">Total cash</th>
+<th style="text-align: right;">PV factor at 10%</th>
+<th style="text-align: right;">PV using unrounded factors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">−1,500</td>
+<td style="text-align: right;">1.000000</td>
+<td style="text-align: right;">−1,500.000</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">.909091</td>
+<td style="text-align: right;">363.636</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">.826446</td>
+<td style="text-align: right;">413.223</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">.751315</td>
+<td style="text-align: right;">375.657</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">.683013</td>
+<td style="text-align: right;">273.205</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: right;">.620921</td>
+<td style="text-align: right;">372.553</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>NPV is <strong>298.275 thousand</strong>, or about <strong>$298,275</strong>. At 15% it is <strong>$81,663</strong>; at 20% it is <strong>−$96,065</strong>. The changed rate changes the decision. It does not prove which rate is appropriate. The model needs a required return compatible with the cash-flow risks, currency and timing; students are given the rate rather than asked to estimate WACC.</p>
+<p>The <strong>payback period</strong> asks when undiscounted inflows recover the investment. Cumulative inflows after years 1–4 are 400, 900, 1,400 and 1,800. With cash arriving evenly during year 4, payback is 3 + 100/400 = <strong>3.25 years</strong>. Under strictly end-of-year receipts it is <strong>4 years</strong>. State the convention. Payback ignores time value and later cash flows, so it is not a replacement for NPV.</p>
+<p>The abstract of <span class="citation" data-cites="grahamharvey2001">Graham and Harvey (<a href="../references.html#ref-grahamharvey2001" role="doc-biblioref">2001</a>)</span> describes a survey of <strong>392 CFOs</strong> about financial practice. A survey can reveal reported practices and differences across respondents; it does not show that the most popular method is optimal or identify a causal effect of choosing that method. <a href="https://scholars.duke.edu/publication/774079">Author publication record</a>.</p>
+</section>
+<section id="flexibility-belongs-inside-the-valuation" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="flexibility-belongs-inside-the-valuation"><span class="header-section-number">13.3</span> Flexibility belongs inside the valuation</h2>
+<p>A rigid plan and a contingent plan must use the <strong>same states and payoffs</strong> if their difference is to measure flexibility. Consider a two-stage project, amounts in millions. Assume risk neutrality, a 10% discount rate, and no cash flows beyond those specified.</p>
+<p>Pay 4 now to learn at time 1 whether demand is strong or weak, each with probability .5. Commercialization at time 1 costs 8. Its cash payoff at time 2 is 16 in the strong state and 4 in the weak state.</p>
+<p>At time 1, commercialization NPV is −8+16/1.10 = <strong>6.545</strong> if strong and −8+4/1.10 = <strong>−4.364</strong> if weak. A flexible manager commercializes only if strong.</p>
+<div class="a11y-table-region" role="region" tabindex="0" aria-label="Scrollable data table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Policy after paying for research</th>
+<th style="text-align: right;">Value at time 0</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Must commercialize in either state</td>
+<td style="text-align: right;">−4 − 8/1.10 + [.5(16)+.5(4)]/1.10² = <strong>−3.008</strong></td>
+</tr>
+<tr class="even">
+<td>May decline commercialization after seeing demand</td>
+<td style="text-align: right;">−4 + .5[−8+16/1.10]/1.10 = <strong>−1.025</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The option to decline adds <strong>1.983 million</strong>, the present value of avoiding the weak-state loss. Both policies still have negative initial NPV, so the firm should decline the research investment if these are the only benefits. Valuable flexibility does not guarantee a valuable overall project.</p>
+<p>NPV is capable of valuing this contingent policy. A calculation that already conditions the follow-on cost on success already includes that flexibility; do not add it again. Uncertainty alone is not option value. Value comes from a useful future choice informed by what is learned.</p>
+</section>
+<section id="information-changes-the-allocation-problem" class="level2" data-number="13.4">
+<h2 data-number="13.4" class="anchored" data-anchor-id="information-changes-the-allocation-problem"><span class="header-section-number">13.4</span> Information changes the allocation problem</h2>
+<p>The center cannot evaluate projects well if managers have private information and gain from obtaining capital regardless of value. <span class="citation" data-cites="antleeppen1985">Antle and Eppen (<a href="../references.html#ref-antleeppen1985" role="doc-biblioref">1985</a>)</span> models a relationship among private information, organizational slack, rationing and cutoff rates above market rates. This establishes possibilities under a model’s assumptions, not a universal instruction to cut every request by 20%. <a href="https://pubsonline.informs.org/doi/10.1287/mnsc.31.2.163">Publisher abstract</a>.</p>
+<p>The in-class allocation game uses <strong>indivisible one-period projects</strong>, a fixed budget and privately known terminal cash. Terminal cash includes recovery of the investment. A project’s value is:</p>
+<p><span class="math display">\[NPV=-Investment+\frac{Terminal\ cash}{1.10}.\]</span></p>
+<p>For investment 40 and terminal cash 48, NPV is <strong>3.636</strong>, not 48−.10(40). If accounting profit were 8 and average capital 40 on a compatible one-period basis, RI would be 4; discounted RI is 4/1.10 = 3.636. These quantities have different timing and names.</p>
+<p>Managers in the game earn a bonus for funded capital; headquarters scores total NPV. The bonus therefore creates a reason to request funds even for a negative-NPV project. Headquarters must consider evidence and its verification cost. In a second round, one independently checked claim provides information before allocation. Compare outcomes with the feasible optimum, but do not interpret a few classroom rounds as an equilibrium estimate or a causal test of a general theory.</p>
+<p><strong>Self-check.</strong> With budget 60, indivisible project A costs 40 and has NPV 8; B costs 30 with NPV 7; C costs 30 with NPV 7. Fund <strong>B+C</strong>, NPV 14, rather than A alone. Ranking individual projects by absolute NPV misses the combination constraint.</p>
+</section>
+<section id="sec-drill-wk13" class="level2" data-number="13.5">
+<h2 data-number="13.5" class="anchored" data-anchor-id="sec-drill-wk13"><span class="header-section-number">13.5</span> Drill Set</h2>
+<p><strong>Required: 1–5. Optional: 6–8.</strong> Complete the required items after instruction by <strong>April 18, 2027, 11:59 p.m. Eastern</strong>. Work individually by hand, check the key, and correct errors. Graded for completion; optional items are excluded from quizzes and the final.</p>
+<ol type="1">
+<li><p><em>(Payback, even cash flows.)</em> A project costs $240,000 and generates $60,000 per year. Compute the payback period assuming cash arrives uniformly within each year.</p></li>
+<li><p><em>(Payback, uneven cash flows.)</em> A project costs $100,000 and generates $30,000, $40,000, $50,000, and $60,000 in years 1 through 4. Compute the payback period assuming cash arrives uniformly within each year.</p></li>
+<li><p><em>(Present value of a single sum.)</em> A project returns a single cash flow of $50,000 at the end of year 3. At a 10% discount rate, compute its present value.</p></li>
+<li><p><em>(NPV, annuity.)</em> A project costs $75,000 and generates $25,000 per year for four years. The discount rate is 10%. Compute the net present value.</p></li>
+<li><p><em>(NPV, uneven cash flows.)</em> A project costs $60,000 and generates $20,000, $30,000, and $25,000 in years 1 through 3. The discount rate is 8%. Compute the net present value.</p></li>
+<li><p><em>(Optional: IRR decision rule.)</em> Assume an initial outflow followed only by positive inflows. A project has an internal rate of return of 9% and the firm’s cost of capital is 11%. Should the project be accepted? At the cost of capital, is the project’s NPV positive, negative, or zero?</p></li>
+<li><p><em>(IRR, even cash flows.)</em> A project costs $79,247 and returns $25,000 per year for four years. Compute the annuity factor (cost ÷ annual cash flow), then identify the IRR given that the four-year annuity factor equals 3.1699 at 10%.</p></li>
+<li><p><em>(Profitability index.)</em> A project requires an initial investment of $50,000 and the present value of its future cash flows is $58,000. Compute the profitability index and state the decision.</p></li>
+</ol>
+<p><strong>Supplied factors:</strong> 10%, year 3: 0.751315; 10%, four-year annuity: 3.169865. At 8%, years 1–3: 0.925926, 0.857339, 0.793832. Round final dollars; small factor-rounding differences are acceptable.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Drill Set — Self-Check Answers
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Required answers: 1–5. Other answers support optional practice.</strong></p>
+<ol type="1">
+<li><p><strong>Payback, even.</strong> = 240,000 ÷ 60,000 = <strong>4.0 years</strong>.</p></li>
+<li><p><strong>Payback, uneven.</strong> Cumulative cash flow: year 1 = 30,000; year 2 = 70,000; year 3 = 120,000. The $100,000 cost is recovered during year 3: after year 2, $30,000 remains, and year 3 brings $50,000, so 30,000 ÷ 50,000 = 0.6. Payback = <strong>2.6 years</strong> under uniform intra-year receipts; if receipts arrive only at year-end, recovery occurs at the end of year 3.</p></li>
+<li><p><strong>PV of a single sum.</strong> = 50,000 ÷ 1.10³ = 50,000 ÷ 1.331 = <strong>$37,566</strong>.</p></li>
+<li><p><strong>NPV, annuity.</strong> Annuity factor (10%, 4 years) = 3.1699. PV of inflows = 25,000 × 3.1699 = $79,247. NPV = 79,247 − 75,000 = <strong>$4,247</strong>.</p></li>
+<li><p><strong>NPV, uneven.</strong> PVs at 8%: year 1 = 20,000 ÷ 1.08 = 18,519; year 2 = 30,000 ÷ 1.08² = 25,720; year 3 = 25,000 ÷ 1.08³ = 19,846. Sum ≈ 64,084. NPV = 64,084 − 60,000 = <strong>$4,084</strong>.</p></li>
+<li><p><strong>IRR rule.</strong> For the conventional cash-flow pattern specified, <strong>reject</strong> — the IRR (9%) is below the cost of capital (11%). At an 11% discount rate the NPV is <strong>negative</strong> (NPV equals zero only at the 9% IRR, and falls as the discount rate rises).</p></li>
+<li><p><strong>IRR, even.</strong> Annuity factor = 79,247 ÷ 25,000 = 3.1699. Because that equals the four-year annuity factor at 10%, the IRR = <strong>10%</strong>.</p></li>
+<li><p><strong>Profitability index.</strong> = PV of future cash flows ÷ initial investment = 58,000 ÷ 50,000 = <strong>1.16</strong>. Since PI &gt; 1.0, <strong>accept</strong> the project.</p></li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="optional-extension-irr-and-profitability-index" class="level2" data-number="13.6">
+<h2 data-number="13.6" class="anchored" data-anchor-id="optional-extension-irr-and-profitability-index"><span class="header-section-number">13.6</span> Optional extension: IRR and profitability index</h2>
+<p>IRR is a discount rate at which NPV equals zero. With one initial outflow followed only by positive inflows, a unique positive IRR, when it exists, can be compared with the compatible required return. The extended example’s IRR is <strong>17.178948%</strong>. For mutually exclusive projects, dollar NPV at the appropriate rate governs value; a smaller project can have a higher IRR but less NPV.</p>
+<p>Multiple sign changes permit multiple IRRs but do not ensure them. Cash flows −100, 230, −132 have IRRs <strong>10% and 20%</strong>. In contrast, −100, 400, −400 has NPV = −100(r−1)²/(1+r)² and only one distinct IRR, <strong>100%</strong>, a repeated root. Use the NPV at the required rate to avoid interpreting an arbitrary solver root as a decision rule.</p>
+<p>Profitability index is PV of future inflows divided by initial cost, or 1+NPV/cost for this simple structure. Under special divisible-project assumptions it can help allocate a limited budget. With indivisible projects, check feasible combinations. Formal option pricing, IRR solving, PI optimization, influence-cost models and the empirical diversification literature are optional, outside the final’s required scope.</p>
+
+
+<!-- -->
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-antleeppen1985" class="csl-entry" role="listitem">
+Antle, Rick, and Gary D. Eppen. 1985. <span>“Capital Rationing and Organizational Slack in Capital Budgeting.”</span> <em>Management Science</em> 31 (2): 163–74.
+</div>
+<div id="ref-grahamharvey2001" class="csl-entry" role="listitem">
+Graham, John R., and Campbell R. Harvey. 2001. <span>“The Theory and Practice of Corporate Finance: Evidence from the Field.”</span> <em>Journal of Financial Economics</em> 60 (2–3): 187–243.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<footer class="course-accessibility"><p><a href="https://www.psu.edu/accessibilitystatement">Penn State accessibility statement</a> · <a href="mailto:accessibility@psu.edu">Report an accessibility barrier to the Penn State IT Accessibility Team</a>. Include the page address and a description of the issue.</p></footer>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('main table').forEach(function (table) {
+    table.querySelectorAll('thead th').forEach(function (th) { th.scope = 'col'; });
+    table.querySelectorAll('tbody tr').forEach(function (row) {
+      var first = row.firstElementChild;
+      if (first && first.tagName === 'TD' && first.textContent.trim()) {
+        var th = document.createElement('th');
+        th.scope = 'row'; th.innerHTML = first.innerHTML;
+        th.style.cssText = first.style.cssText; th.style.fontWeight = 'normal';
+        first.replaceWith(th);
+      }
+    });
+    var region = table.closest('.a11y-table-region');
+    if (region && region.getAttribute('aria-label') === 'Scrollable data table') {
+      var section = table.closest('section');
+      var heading = section && section.querySelector('h1,h2,h3,h4,h5,h6');
+      if (heading) region.setAttribute('aria-label', heading.textContent.trim() + ' — data table');
+    }
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sbb151\.github\.io\/acctg211h-companion\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../arc3-internal/12-performance.html" class="pagination-link" aria-label="Performance Measurement as Agency">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Performance Measurement as Agency</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../arc4-synthesis/14-debates.html" class="pagination-link" aria-label="Synthesis: The Capstone Debates">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Synthesis: The Capstone Debates</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Cash-flow timelines, NPV, flexibility and investment decisions with private information."</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># Capital Budgeting Under Asymmetric Information {#sec-capbudget}</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Required route and preparation</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>Read through **Information changes the allocation problem** and work the examples. Week 13 questions 1–3 are due before Tuesday April 13; 4–5 before Thursday April 15. Required external reading is **Graham–Harvey (2001) abstract** and **Antle–Eppen (1985) abstract**, supported by the briefs below. Drills **1–5** are due Sunday April 18, 2027, 11:59 p.m. Eastern; 6–8 and the final extensions are optional. Quiz 4 on April 15 covers **Chapters 10–12 only**. This chapter's required material is assessed on the cumulative final.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- company-context-start --&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip title="Tesla and Rivian connection"}</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Use <span class="co">[</span><span class="ot">the Chapter 13 company prompt</span><span class="co">](../appendices/a04-tesla-rivian.qmd#company-c13)</span> when directed in class. Reported facts and constructed assumptions are labeled separately; this connection adds no separate submission.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- company-context-end --&gt;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Start with incremental cash flows</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>A machine may make a department's reported profit larger while destroying value. A worthwhile investment may lower its short-term ROI. Evaluate the cash flows that change when the organization accepts the project, including the timing of costs, benefits and any recovery at the end.</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>For a constructed example, pay 100 now to receive 60 at the end of each of the next two years. The supplied discount rate is 10%; these are incremental after-tax cash flows with no other outlays or terminal proceeds.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>$$NPV=-100+\frac{60}{1.10}+\frac{60}{1.10^2}=4.132.$$</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>The 100 is paid now and is not discounted. The first 60 has PV 54.545; the second has PV 49.587. Positive NPV means the project adds value under these cash-flow and discount-rate assumptions. Do not subtract depreciation as a second cash outlay when the equipment payment is already included. If taxes matter, their cash effects must be included; this course supplies them or explicitly ignores taxes.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>A sunk cost paid before today's decision is not changed by that decision. The cash from selling an existing asset instead of using it is an opportunity cost. Working capital tied up initially and recovered at the end belongs in the timeline. State what is included, not merely a formula.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">## A complete project and a sensitivity check</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>All amounts below are thousands of dollars. A project costs 1,500 now. The year-5 equipment/working-capital recovery is additional to that year's operating cash flow. The supplied discount rate is 10%.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>| Year | Operating cash | Terminal recovery | Total cash | PV factor at 10% | PV using unrounded factors |</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>|---|---:|---:|---:|---:|---:|</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>| 0 | 0 | 0 | −1,500 | 1.000000 | −1,500.000 |</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>| 1 | 400 | 0 | 400 | .909091 | 363.636 |</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>| 2 | 500 | 0 | 500 | .826446 | 413.223 |</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>| 3 | 500 | 0 | 500 | .751315 | 375.657 |</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>| 4 | 400 | 0 | 400 | .683013 | 273.205 |</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>| 5 | 300 | 300 | 600 | .620921 | 372.553 |</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>NPV is **298.275 thousand**, or about **$298,275**. At 15% it is **$81,663**; at 20% it is **−$96,065**. The changed rate changes the decision. It does not prove which rate is appropriate. The model needs a required return compatible with the cash-flow risks, currency and timing; students are given the rate rather than asked to estimate WACC.</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>The **payback period** asks when undiscounted inflows recover the investment. Cumulative inflows after years 1–4 are 400, 900, 1,400 and 1,800. With cash arriving evenly during year 4, payback is 3 + 100/400 = **3.25 years**. Under strictly end-of-year receipts it is **4 years**. State the convention. Payback ignores time value and later cash flows, so it is not a replacement for NPV.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>The abstract of @grahamharvey2001 describes a survey of **392 CFOs** about financial practice. A survey can reveal reported practices and differences across respondents; it does not show that the most popular method is optimal or identify a causal effect of choosing that method. <span class="co">[</span><span class="ot">Author publication record</span><span class="co">](https://scholars.duke.edu/publication/774079)</span>.</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="fu">## Flexibility belongs inside the valuation</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>A rigid plan and a contingent plan must use the **same states and payoffs** if their difference is to measure flexibility. Consider a two-stage project, amounts in millions. Assume risk neutrality, a 10% discount rate, and no cash flows beyond those specified.</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>Pay 4 now to learn at time 1 whether demand is strong or weak, each with probability .5. Commercialization at time 1 costs 8. Its cash payoff at time 2 is 16 in the strong state and 4 in the weak state.</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>At time 1, commercialization NPV is −8+16/1.10 = **6.545** if strong and −8+4/1.10 = **−4.364** if weak. A flexible manager commercializes only if strong.</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>| Policy after paying for research | Value at time 0 |</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>|---|---:|</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>| Must commercialize in either state | −4 − 8/1.10 + <span class="co">[</span><span class="ot">.5(16)+.5(4)</span><span class="co">]</span>/1.10² = **−3.008** |</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>| May decline commercialization after seeing demand | −4 + .5<span class="co">[</span><span class="ot">−8+16/1.10</span><span class="co">]</span>/1.10 = **−1.025** |</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>The option to decline adds **1.983 million**, the present value of avoiding the weak-state loss. Both policies still have negative initial NPV, so the firm should decline the research investment if these are the only benefits. Valuable flexibility does not guarantee a valuable overall project.</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>NPV is capable of valuing this contingent policy. A calculation that already conditions the follow-on cost on success already includes that flexibility; do not add it again. Uncertainty alone is not option value. Value comes from a useful future choice informed by what is learned.</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">## Information changes the allocation problem</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>The center cannot evaluate projects well if managers have private information and gain from obtaining capital regardless of value. @antleeppen1985 models a relationship among private information, organizational slack, rationing and cutoff rates above market rates. This establishes possibilities under a model's assumptions, not a universal instruction to cut every request by 20%. <span class="co">[</span><span class="ot">Publisher abstract</span><span class="co">](https://pubsonline.informs.org/doi/10.1287/mnsc.31.2.163)</span>.</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>The in-class allocation game uses **indivisible one-period projects**, a fixed budget and privately known terminal cash. Terminal cash includes recovery of the investment. A project's value is:</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>$$NPV=-Investment+\frac{Terminal\ cash}{1.10}.$$</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>For investment 40 and terminal cash 48, NPV is **3.636**, not 48−.10(40). If accounting profit were 8 and average capital 40 on a compatible one-period basis, RI would be 4; discounted RI is 4/1.10 = 3.636. These quantities have different timing and names.</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>Managers in the game earn a bonus for funded capital; headquarters scores total NPV. The bonus therefore creates a reason to request funds even for a negative-NPV project. Headquarters must consider evidence and its verification cost. In a second round, one independently checked claim provides information before allocation. Compare outcomes with the feasible optimum, but do not interpret a few classroom rounds as an equilibrium estimate or a causal test of a general theory.</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>**Self-check.** With budget 60, indivisible project A costs 40 and has NPV 8; B costs 30 with NPV 7; C costs 30 with NPV 7. Fund **B+C**, NPV 14, rather than A alone. Ranking individual projects by absolute NPV misses the combination constraint.</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>{{&lt; include ../drills/drill-wk13.qmd &gt;}}</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip collapse="true"}</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="fu">## Drill Set — Self-Check Answers</span></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>{{&lt; include ../drills/key-wk13.qmd &gt;}}</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="fu">## Optional extension: IRR and profitability index</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>IRR is a discount rate at which NPV equals zero. With one initial outflow followed only by positive inflows, a unique positive IRR, when it exists, can be compared with the compatible required return. The extended example's IRR is **17.178948%**. For mutually exclusive projects, dollar NPV at the appropriate rate governs value; a smaller project can have a higher IRR but less NPV.</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>Multiple sign changes permit multiple IRRs but do not ensure them. Cash flows −100, 230, −132 have IRRs **10% and 20%**. In contrast, −100, 400, −400 has NPV = −100(r−1)²/(1+r)² and only one distinct IRR, **100%**, a repeated root. Use the NPV at the required rate to avoid interpreting an arbitrary solver root as a decision rule.</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>Profitability index is PV of future inflows divided by initial cost, or 1+NPV/cost for this simple structure. Under special divisible-project assumptions it can help allocate a limited budget. With indivisible projects, check feasible combinations. Formal option pricing, IRR solving, PI optimization, influence-cost models and the empirical diversification literature are optional, outside the final's required scope.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc3-internal/13-capital-budgeting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

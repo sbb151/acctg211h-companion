@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Use the FASB framework to evaluate reporting choices, then build Campus Curb’s first accrual statements.">
+
+<title>5&nbsp; From Economic Questions to Accounting Reports – ACCTG 211H Companion</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../arc2-markets/06-efficient-markets.html" rel="next">
+<link href="../arc1-information/04-information-incentives.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../accessibility/course.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc1-information/01-information.html">Arc I — Information, Value, and Reporting</a></li><li class="breadcrumb-item"><a href="../arc1-information/05-framework.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">From Economic Questions to Accounting Reports</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">ACCTG 211H Companion</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/sbb151/acctg211h-companion" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface: Reading, Practice, and Evidence</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc I — Information, Value, and Reporting</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/01-information.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Why Accounting? Information and Cooperation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/02-certainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Value and Income Under Certainty</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/03-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Value and Income Under Uncertainty</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/04-information-incentives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Information, Credibility, and Incentives</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc1-information/05-framework.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">From Economic Questions to Accounting Reports</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc II — Markets and Measurement</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/06-efficient-markets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Efficient Markets and the Information Content of Earnings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/07-accruals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cash Flows, Accruals, and Earnings Quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/08-long-term-assets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Long-Term Assets and Measurement Choice</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/09-liabilities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Liabilities, Debt Covenants, and Conservatism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc2-markets/10-equity-compensation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Equity, Compensation, and Reporting Incentives</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc III — Contracting and Internal Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/11-decentralization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Decentralization and Cost Behavior</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/12-performance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Performance Measurement as Agency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc3-internal/13-capital-budgeting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capital Budgeting Under Asymmetric Information</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Arc IV — Synthesis</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../arc4-synthesis/14-debates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Synthesis: The Capstone Debates</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a01-fset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">A1. The Financial Statement Effects Template</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a02-python-wrds-colab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">A2. Python + WRDS in Google Colab Quickstart</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a03-debits-credits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">A3. Debits and Credits</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/a04-tesla-rivian.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Tesla and Rivian: Company Connections</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-report-would-you-design" id="toc-what-report-would-you-design" class="nav-link active" data-scroll-target="#what-report-would-you-design"><span class="header-section-number">5.1</span> What report would you design?</a></li>
+  <li><a href="#what-the-framework-contributes" id="toc-what-the-framework-contributes" class="nav-link" data-scroll-target="#what-the-framework-contributes"><span class="header-section-number">5.2</span> What the framework contributes</a></li>
+  <li><a href="#four-questions-that-should-not-be-collapsed-into-one" id="toc-four-questions-that-should-not-be-collapsed-into-one" class="nav-link" data-scroll-target="#four-questions-that-should-not-be-collapsed-into-one"><span class="header-section-number">5.3</span> Four questions that should not be collapsed into one</a>
+  <ul class="collapse">
+  <li><a href="#definition-what-kind-of-item-is-it" id="toc-definition-what-kind-of-item-is-it" class="nav-link" data-scroll-target="#definition-what-kind-of-item-is-it">Definition: what kind of item is it?</a></li>
+  <li><a href="#recognition-should-it-appear-in-the-statements" id="toc-recognition-should-it-appear-in-the-statements" class="nav-link" data-scroll-target="#recognition-should-it-appear-in-the-statements">Recognition: should it appear in the statements?</a></li>
+  <li><a href="#measurement-what-amount-and-what-subsequent-changes" id="toc-measurement-what-amount-and-what-subsequent-changes" class="nav-link" data-scroll-target="#measurement-what-amount-and-what-subsequent-changes">Measurement: what amount, and what subsequent changes?</a></li>
+  <li><a href="#presentation-and-disclosure-how-will-users-understand-it" id="toc-presentation-and-disclosure-how-will-users-understand-it" class="nav-link" data-scroll-target="#presentation-and-disclosure-how-will-users-understand-it">Presentation and disclosure: how will users understand it?</a></li>
+  </ul></li>
+  <li><a href="#a-reporting-choice-for-the-class" id="toc-a-reporting-choice-for-the-class" class="nav-link" data-scroll-target="#a-reporting-choice-for-the-class"><span class="header-section-number">5.4</span> A reporting choice for the class</a></li>
+  <li><a href="#sec-first-accruals" id="toc-sec-first-accruals" class="nav-link" data-scroll-target="#sec-first-accruals"><span class="header-section-number">5.5</span> Campus Curb’s first month: from cash records to accrual reports</a>
+  <ul class="collapse">
+  <li><a href="#accrual-accounting-asks-what-happened-during-the-period" id="toc-accrual-accounting-asks-what-happened-during-the-period" class="nav-link" data-scroll-target="#accrual-accounting-asks-what-happened-during-the-period">Accrual accounting asks what happened during the period</a></li>
+  <li><a href="#use-the-financial-statement-effects-template" id="toc-use-the-financial-statement-effects-template" class="nav-link" data-scroll-target="#use-the-financial-statement-effects-template">Use the financial statement effects template</a></li>
+  <li><a href="#prepare-the-statements" id="toc-prepare-the-statements" class="nav-link" data-scroll-target="#prepare-the-statements">Prepare the statements</a></li>
+  <li><a href="#ask-a-better-question-than-what-does-every-entry-signal" id="toc-ask-a-better-question-than-what-does-every-entry-signal" class="nav-link" data-scroll-target="#ask-a-better-question-than-what-does-every-entry-signal">Ask a better question than “what does every entry signal?”</a></li>
+  </ul></li>
+  <li><a href="#research-brief-why-use-accruals-when-cash-is-observable" id="toc-research-brief-why-use-accruals-when-cash-is-observable" class="nav-link" data-scroll-target="#research-brief-why-use-accruals-when-cash-is-observable"><span class="header-section-number">5.6</span> Research brief: why use accruals when cash is observable?</a></li>
+  <li><a href="#practice-and-transfer" id="toc-practice-and-transfer" class="nav-link" data-scroll-target="#practice-and-transfer"><span class="header-section-number">5.7</span> Practice and transfer</a></li>
+  <li><a href="#sec-drill-wk05" id="toc-sec-drill-wk05" class="nav-link" data-scroll-target="#sec-drill-wk05"><span class="header-section-number">5.8</span> Week 5 drills: accruals and statement connections</a></li>
+  <li><a href="#optional-extension-institutions-and-disagreement" id="toc-optional-extension-institutions-and-disagreement" class="nav-link" data-scroll-target="#optional-extension-institutions-and-disagreement"><span class="header-section-number">5.9</span> Optional extension: institutions and disagreement</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc1-information/05-framework.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../arc1-information/01-information.html">Arc I — Information, Value, and Reporting</a></li><li class="breadcrumb-item"><a href="../arc1-information/05-framework.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">From Economic Questions to Accounting Reports</span></a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-standards" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">From Economic Questions to Accounting Reports</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled" title="Your route through this chapter">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Your route through this chapter
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Week 5 · Required:</strong> read through <em>A reporting choice for the class</em> before Day 9; finish the Campus Curb example before Day 10. Allow 50–65 minutes for the chapter across the two meetings, 15–20 minutes for the selected framework paragraphs, and 25 minutes for Week 5 drills. Full conceptual-framework chapters and the closing extension are optional.</p>
+<p>You should be able to separate definition, recognition, measurement, and disclosure; explain the roles of the framework and GAAP; and prepare linked statements from basic transactions and adjustments.</p>
+</div>
+</div>
+<!-- company-context-start -->
+<div class="callout callout-style-default callout-tip callout-titled" title="Tesla and Rivian connection">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tesla and Rivian connection
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <a href="../appendices/a04-tesla-rivian.html#company-c05">the Chapter 5 company prompt</a> when directed in class. Reported facts and constructed assumptions are labeled separately; this connection adds no separate submission.</p>
+</div>
+</div>
+<!-- company-context-end -->
+<section id="what-report-would-you-design" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="what-report-would-you-design"><span class="header-section-number">5.1</span> What report would you design?</h2>
+<p>An investor asks Campus Curb for its value. A lender asks what resources will be available to repay a loan. Employees ask whether wages can be paid. A founder asks whether a bad result reflects her choices or circumstances beyond her control.</p>
+<p>In our ideal model, everyone agreed on the possible cash flows and how to value them. Real reporting involves incomplete evidence, different models, and incentives to influence the depiction. It also has to cover many transactions consistently across entities and periods.</p>
+<p>We could ask each user to negotiate a separate report, but doing so is costly. Common reporting conventions help users know what a number represents and compare it with other numbers. Those conventions also constrain some choices a preparer might otherwise make. They cannot make every report equally useful for every purpose.</p>
+<p>The <strong>Financial Accounting Standards Board (FASB)</strong> develops U.S. financial accounting standards. Its <strong>conceptual framework</strong> states concepts used to develop and evaluate standards. <strong>Generally accepted accounting principles (GAAP)</strong> supply the applicable accounting requirements; the FASB Accounting Standards Codification is the authoritative source of nongovernmental U.S. GAAP, with SEC requirements also relevant to SEC registrants. A concepts statement does not override an applicable standard <span class="citation" data-cites="fasb_concepts_status">(<a href="../references.html#ref-fasb_concepts_status" role="doc-biblioref">Financial Accounting Standards Board 2026</a>)</span>.</p>
+</section>
+<section id="what-the-framework-contributes" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="what-the-framework-contributes"><span class="header-section-number">5.2</span> What the framework contributes</h2>
+<p>For business reporting, the framework focuses on information useful to investors, lenders, and other creditors in resource decisions. It includes information about how management discharged its responsibilities. Reports help users estimate an entity’s value; they are not designed to show that value directly.</p>
+<p>Information needs <strong>relevance</strong> and <strong>faithful representation</strong>. Relevance includes predictive and confirmatory usefulness. Faithful representation concerns completeness, neutrality, and freedom from error in the depiction; it does not demand perfect foresight. Comparability, verifiability, timeliness, and understandability enhance usefulness, subject to a cost constraint <span class="citation" data-cites="fasb_cf">(<a href="../references.html#ref-fasb_cf" role="doc-biblioref">Financial Accounting Standards Board 2024b, OB2–7</a> and QC5–QC39)</span>.</p>
+<p>Apply those ideas to a scooter-life estimate. Does the estimate reflect usage evidence? Is the method explained? Has it been applied consistently? Can someone inspect the evidence and reproduce the calculation? Reporting five years because it increases income fails a different test from reporting five years because documented usage supports that estimate.</p>
+<p>Avoid a shortcut in which historical cost is always faithful and current value is always relevant. A carefully explained estimate can be faithfully represented; a precisely recorded irrelevant amount can still be unhelpful. The question is what phenomenon the report purports to depict and whether its depiction helps the specified decision.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Assigned framework selections">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Assigned framework selections
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use the FASB’s consolidated framework linked in the bibliography. Read <strong>OB4 and OB7; QC15–QC18; E16–E17 and E37–E38; RD4–RD7; M5–M8</strong>. These short selections address stewardship, valuation, estimates, definitions, recognition, and measurement. Do not read all five chapters for this week.</p>
+</div>
+</div>
+</section>
+<section id="four-questions-that-should-not-be-collapsed-into-one" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="four-questions-that-should-not-be-collapsed-into-one"><span class="header-section-number">5.3</span> Four questions that should not be collapsed into one</h2>
+<section id="definition-what-kind-of-item-is-it" class="level3">
+<h3 class="anchored" data-anchor-id="definition-what-kind-of-item-is-it">Definition: what kind of item is it?</h3>
+<p>The asset definition concerns an entity’s present right to an economic benefit; the liability definition concerns a present obligation to transfer an economic benefit. Equity is the residual after liabilities. Definitions identify kinds of items rather than a single required measurement <span class="citation" data-cites="fasb_elements2021">(<a href="../references.html#ref-fasb_elements2021" role="doc-biblioref">Financial Accounting Standards Board 2021</a>)</span>.</p>
+<p>An enforceable customer receivable can exist even if collection is uncertain. Uncertainty about the amount ultimately collected does not necessarily erase the present right. Conversely, hoping for future customers does not itself establish a present right to their future payments.</p>
+</section>
+<section id="recognition-should-it-appear-in-the-statements" class="level3">
+<h3 class="anchored" data-anchor-id="recognition-should-it-appear-in-the-statements">Recognition: should it appear in the statements?</h3>
+<p><strong>Recognition</strong> includes an item in the financial statements. The recognition chapter identifies criteria concerning an element definition, measurability, and faithful representation <span class="citation" data-cites="fasb_recognition2023">(<a href="../references.html#ref-fasb_recognition2023" role="doc-biblioref">Financial Accounting Standards Board 2023, RD4–7</a>)</span>. Meeting a definition is not the whole recognition analysis. For an actual transaction, the relevant GAAP requirements determine the treatment.</p>
+<p>Ask separately: <em>Does a resource or obligation exist? Does the accounting requirement call for recognition?</em> Treating every useful business attribute as a recognizable asset skips that distinction.</p>
+</section>
+<section id="measurement-what-amount-and-what-subsequent-changes" class="level3">
+<h3 class="anchored" data-anchor-id="measurement-what-amount-and-what-subsequent-changes">Measurement: what amount, and what subsequent changes?</h3>
+<p>The framework’s measurement chapter develops entry-price and exit-price systems. Entry-price accounting involves the acquisition or assumption price and subsequent allocations or adjustments; exit-price accounting involves remeasurement. The chapter also distinguishes market-participant and entity-specific perspectives <span class="citation" data-cites="fasb_measurement2024">(<a href="../references.html#ref-fasb_measurement2024" role="doc-biblioref">Financial Accounting Standards Board 2024a, M5–22</a>)</span>.</p>
+<p>Our prior present-value examples supplied entity cash flows under explicit assumptions. They were not instructions to label every discounted forecast “fair value.” A real measurement needs an identified attribute, perspective, date, and method.</p>
+</section>
+<section id="presentation-and-disclosure-how-will-users-understand-it" class="level3">
+<h3 class="anchored" data-anchor-id="presentation-and-disclosure-how-will-users-understand-it">Presentation and disclosure: how will users understand it?</h3>
+<p>A number in the statements and an explanation in the notes do different jobs. A delivery asset’s carrying amount does not tell users its estimated useful life or how that estimate was chosen. Reporting an estimate without explaining its basis can leave a reader unable to interpret it. Notes supplement the statements; they are not permission to omit an entry required by GAAP.</p>
+</section>
+</section>
+<section id="a-reporting-choice-for-the-class" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="a-reporting-choice-for-the-class"><span class="header-section-number">5.4</span> A reporting choice for the class</h2>
+<p>Campus Curb paid $3,600 for scooters. After one month their carrying amount under the supplied cost-allocation policy is $3,500. A documented offer to buy the used scooters is $3,200. The founders estimate $4,200 of discounted net cash flows from continuing to operate them. You have not yet assessed the forecasts’ assumptions or the offer’s terms.</p>
+<p>For a <strong>hypothetical standard-setting exercise</strong>, compare a cost-based report, a report using the proposed sale amount, and a report using the operating forecast. Each group represents an investor, lender, manager-evaluation committee, or preparer. Identify the decision, the attribute measured, supporting evidence, and information still needed. Propose a measurement policy and accompanying note.</p>
+<p>This exercise asks what a rule should achieve. It does not claim that the three amounts are interchangeable GAAP choices. In particular, operating value may include resources and activities beyond the scooters themselves, and an offer may not establish a market-participant fair value.</p>
+<p>Standards also affect incentives and impose costs. The political-economy perspective associated with <span class="citation" data-cites="wattszimmerman1978">Watts and Zimmerman (<a href="../references.html#ref-wattszimmerman1978" role="doc-biblioref">1978</a>)</span> encourages us to ask who benefits, who bears costs, and who participates in the process. It does not establish that every existing rule is optimal or that every disagreement is regulatory capture.</p>
+</section>
+<section id="sec-first-accruals" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="sec-first-accruals"><span class="header-section-number">5.5</span> Campus Curb’s first month: from cash records to accrual reports</h2>
+<p>We now leave the one-asset valuation model and use a <strong>new, self-contained operating-company case</strong>. This Campus Curb corporation starts December with zero balances. Do not carry any $660 receipts or $1,145.45 model values into it. Ignore taxes; all listed transactions are in dollars; there are no owner distributions. Treat the stated policies as the required accounting treatments for these elementary facts.</p>
+<div class="a11y-table-region" role="region" tabindex="0" aria-label="Scrollable data table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>December cash transaction</th>
+<th>Initial accounting</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Owners contribute $8,000.</td>
+<td>Increase cash and contributed equity.</td>
+</tr>
+<tr class="even">
+<td>Borrow $10,000 on December 1 at 6% annually. Principal is due in two years; interest is first paid after six months.</td>
+<td>Increase cash and notes payable.</td>
+</tr>
+<tr class="odd">
+<td>Buy scooters for $3,600 cash on December 1; place them in service immediately.</td>
+<td>Exchange cash for equipment.</td>
+</tr>
+<tr class="even">
+<td>Pay $3,000 for insurance covering December through February evenly.</td>
+<td>Exchange cash for prepaid insurance.</td>
+</tr>
+<tr class="odd">
+<td>Buy $1,200 of supplies for cash.</td>
+<td>Exchange cash for supplies.</td>
+</tr>
+<tr class="even">
+<td>Receive $5,000 for a nonrefundable stand-ready delivery subscription covering December through March evenly.</td>
+<td>Increase cash and a contract liability, called unearned revenue here.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Cash is now $15,200. That is not profit: it includes owner financing, borrowing, and payment for future service.</p>
+<section id="accrual-accounting-asks-what-happened-during-the-period" class="level3">
+<h3 class="anchored" data-anchor-id="accrual-accounting-asks-what-happened-during-the-period">Accrual accounting asks what happened during the period</h3>
+<p><strong>Accrual accounting</strong> recognizes the effects of activity and obligations in the appropriate periods even when cash moves at another time. It can require recording a payment first as a resource or obligation, and then recognizing its use or satisfaction. Other entries record activity before cash is collected or paid. Accruals need not all involve uncertain estimates.</p>
+<p>At December 31, these seven facts require adjustments:</p>
+<div class="a11y-table-region" role="region" tabindex="0" aria-label="Scrollable data table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fact and stated policy</th>
+<th style="text-align: right;">Amount</th>
+<th>Effect on net assets and income</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>One of the three insured months has elapsed.</td>
+<td style="text-align: right;">$1,000</td>
+<td>Reduce prepaid insurance; recognize insurance expense.</td>
+</tr>
+<tr class="even">
+<td>Scooters have a three-year useful life, zero residual value, and straight-line depreciation.</td>
+<td style="text-align: right;">100</td>
+<td>Increase accumulated depreciation; recognize depreciation expense.</td>
+</tr>
+<tr class="odd">
+<td>One of four subscription months has been provided evenly.</td>
+<td style="text-align: right;">1,250</td>
+<td>Reduce unearned revenue; recognize service revenue.</td>
+</tr>
+<tr class="even">
+<td>A count shows $300 of unused supplies.</td>
+<td style="text-align: right;">900</td>
+<td>Reduce supplies; recognize supplies expense.</td>
+</tr>
+<tr class="odd">
+<td>A separate completed delivery job has an undisputed $800 invoice, due in January; assume full collection.</td>
+<td style="text-align: right;">800</td>
+<td>Increase receivables; recognize service revenue.</td>
+</tr>
+<tr class="even">
+<td>Couriers earned $1,500 for December work, payable in January.</td>
+<td style="text-align: right;">1,500</td>
+<td>Increase wages payable; recognize wages expense.</td>
+</tr>
+<tr class="odd">
+<td>One month’s interest has accumulated on the December 1 loan.</td>
+<td style="text-align: right;">50</td>
+<td>Increase interest payable; recognize interest expense.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The interest is $10,000 × 6% × 1/12. It is owed because time passed under the contract. A missing bill does not remove the obligation. The depreciation estimate, in contrast, depends on assumptions about useful life and residual value. Both are accounting entries, but their evidentiary questions differ.</p>
+<p><strong>Accumulated depreciation</strong> is a contra-asset: it reduces equipment’s carrying amount while preserving the original equipment cost in the records. Increasing this contra-asset by $100 reduces net assets by $100.</p>
+</section>
+<section id="use-the-financial-statement-effects-template" class="level3">
+<h3 class="anchored" data-anchor-id="use-the-financial-statement-effects-template">Use the financial statement effects template</h3>
+<p>The <strong>FSET</strong> records each event’s effects on assets, liabilities, equity, income, and cash flows. Income is shown separately to explain its contribution to equity; do not add it to the accounting equation a second time. For example:</p>
+<div class="a11y-table-region" role="region" tabindex="0" aria-label="Scrollable data table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 13%">
+<col style="width: 18%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Adjustment</th>
+<th style="text-align: right;">Assets</th>
+<th style="text-align: right;">Liabilities</th>
+<th style="text-align: right;">Equity via income</th>
+<th>Income explanation</th>
+<th style="text-align: right;">Cash</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>December insurance</td>
+<td style="text-align: right;">−$1,000</td>
+<td style="text-align: right;">$0</td>
+<td style="text-align: right;">−$1,000</td>
+<td>Expense +$1,000</td>
+<td style="text-align: right;">$0</td>
+</tr>
+<tr class="even">
+<td>December subscription service</td>
+<td style="text-align: right;">$0</td>
+<td style="text-align: right;">−$1,250</td>
+<td style="text-align: right;">+$1,250</td>
+<td>Revenue +$1,250</td>
+<td style="text-align: right;">$0</td>
+</tr>
+<tr class="odd">
+<td>Interest accrued</td>
+<td style="text-align: right;">$0</td>
+<td style="text-align: right;">+$50</td>
+<td style="text-align: right;">−$50</td>
+<td>Expense +$50</td>
+<td style="text-align: right;">$0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Check that each row satisfies changes in assets = changes in liabilities + changes in equity. All seven adjustments have zero cash effect: the associated cash either moved earlier or will move later. <a href="../appendices/a01-fset.html">The FSET appendix</a> provides the complete worked template and the corresponding journal entries.</p>
+</section>
+<section id="prepare-the-statements" class="level3">
+<h3 class="anchored" data-anchor-id="prepare-the-statements">Prepare the statements</h3>
+<div class="a11y-table-region" role="region" tabindex="0" aria-label="Scrollable data table">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>December income statement</th>
+<th style="text-align: right;">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Subscription and delivery revenue</td>
+<td style="text-align: right;">$2,050</td>
+</tr>
+<tr class="even">
+<td>Insurance expense</td>
+<td style="text-align: right;">(1,000)</td>
+</tr>
+<tr class="odd">
+<td>Depreciation expense</td>
+<td style="text-align: right;">(100)</td>
+</tr>
+<tr class="even">
+<td>Supplies expense</td>
+<td style="text-align: right;">(900)</td>
+</tr>
+<tr class="odd">
+<td>Wages expense</td>
+<td style="text-align: right;">(1,500)</td>
+</tr>
+<tr class="even">
+<td>Interest expense</td>
+<td style="text-align: right;">(50)</td>
+</tr>
+<tr class="odd">
+<td><strong>Net loss</strong></td>
+<td style="text-align: right;"><strong>($1,500)</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="a11y-table-region" role="region" tabindex="0" aria-label="Scrollable data table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 28%">
+<col style="width: 21%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>December 31 balance sheet</th>
+<th style="text-align: right;">Amount</th>
+<th>Liabilities and equity</th>
+<th style="text-align: right;">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cash</td>
+<td style="text-align: right;">$15,200</td>
+<td>Notes payable</td>
+<td style="text-align: right;">$10,000</td>
+</tr>
+<tr class="even">
+<td>Accounts receivable</td>
+<td style="text-align: right;">800</td>
+<td>Unearned revenue</td>
+<td style="text-align: right;">3,750</td>
+</tr>
+<tr class="odd">
+<td>Supplies</td>
+<td style="text-align: right;">300</td>
+<td>Wages payable</td>
+<td style="text-align: right;">1,500</td>
+</tr>
+<tr class="even">
+<td>Prepaid insurance</td>
+<td style="text-align: right;">2,000</td>
+<td>Interest payable</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="odd">
+<td>Equipment</td>
+<td style="text-align: right;">3,600</td>
+<td>Total liabilities</td>
+<td style="text-align: right;"><strong>15,300</strong></td>
+</tr>
+<tr class="even">
+<td>Less accumulated depreciation</td>
+<td style="text-align: right;">(100)</td>
+<td>Contributed equity</td>
+<td style="text-align: right;">8,000</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: right;"></td>
+<td>Retained earnings (deficit)</td>
+<td style="text-align: right;">(1,500)</td>
+</tr>
+<tr class="even">
+<td><strong>Total assets</strong></td>
+<td style="text-align: right;"><strong>$21,800</strong></td>
+<td><strong>Total liabilities and equity</strong></td>
+<td style="text-align: right;"><strong>$21,800</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The equity statement explains $6,500 closing equity: zero opening balance + $8,000 contributions − $1,500 loss − zero distributions. Retained earnings records cumulative income less distributions in this simple case; it is not a separate bank account.</p>
+<div class="a11y-table-region" role="region" tabindex="0" aria-label="Scrollable data table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>December cash flows</th>
+<th style="text-align: right;">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Operating: subscription receipts less insurance and supplies payments</td>
+<td style="text-align: right;">$800</td>
+</tr>
+<tr class="even">
+<td>Investing: scooter purchase</td>
+<td style="text-align: right;">(3,600)</td>
+</tr>
+<tr class="odd">
+<td>Financing: contributions and borrowing</td>
+<td style="text-align: right;">18,000</td>
+</tr>
+<tr class="even">
+<td><strong>Increase in cash</strong></td>
+<td style="text-align: right;"><strong>$15,200</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The company has cash and a loss. That is not a contradiction: much of its cash came from financing and advance payment. Its future viability cannot be determined from one month’s loss or cash balance alone.</p>
+</section>
+<section id="ask-a-better-question-than-what-does-every-entry-signal" class="level3">
+<h3 class="anchored" data-anchor-id="ask-a-better-question-than-what-does-every-entry-signal">Ask a better question than “what does every entry signal?”</h3>
+<p>For each adjustment ask: <em>What economic event occurred? What amount belongs in this period? What evidence supports it? What uncertainty remains? Who could benefit from misstating it?</em></p>
+<p>A five-year scooter life would reduce monthly depreciation to $60, increasing current income by $40. Whether it is justified depends on evidence. Omitting the $50 interest because it has not been billed is not another equally acceptable estimate. Recording January wages before the work occurs would also require a basis beyond a desire to be conservative. Neutral reporting is not a contest to maximize or minimize profit.</p>
+</section>
+</section>
+<section id="research-brief-why-use-accruals-when-cash-is-observable" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="research-brief-why-use-accruals-when-cash-is-observable"><span class="header-section-number">5.6</span> Research brief: why use accruals when cash is observable?</h2>
+<p><span class="citation" data-cites="dechow1994">Dechow (<a href="../references.html#ref-dechow1994" role="doc-biblioref">1994</a>)</span> investigates when accrual earnings better reflect firm performance, using stock returns as a performance benchmark. The results support a role for accruals in addressing cash-flow timing and matching problems, with differences related to measurement intervals and operating circumstances. This motivates examining both cash and earnings rather than treating one as universally superior.</p>
+<p>For preparation, read the abstract and the chapter brief, not the full paper. Relate the research question to Campus Curb’s subscription and insurance. An association with returns does not establish that every accrual estimate is accurate or every reporting choice desirable. Later we will examine earnings persistence and interpretation in <a href="../arc2-markets/07-accruals.html" class="quarto-xref"><span>Chapter 7</span></a>.</p>
+</section>
+<section id="practice-and-transfer" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="practice-and-transfer"><span class="header-section-number">5.7</span> Practice and transfer</h2>
+<p><a href="../drills/pdf/wk05-drills.pdf">Printable drill sheet</a> · <a href="../drills/pdf/wk05-drills-key.pdf">Self-check key</a></p>
+</section>
+<section id="sec-drill-wk05" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="sec-drill-wk05"><span class="header-section-number">5.8</span> Week 5 drills: accruals and statement connections</h2>
+<p>Complete after Day 10 and submit Sunday, February 14, together with your end-of-unit memo. Work individually, check the key, and correct errors. Graded for completion; no generative AI. These drills introduce independent practice, not additional transactions in Campus Curb.</p>
+<ol type="1">
+<li>A company pays $1,200 for six months of insurance and initially records a prepaid asset. One month elapses. State the expense, remaining asset, and adjustment’s cash effect.</li>
+<li>A service provider receives $2,400 for four months of equally provided service and initially records a liability. After one month, state revenue, remaining liability, and the adjustment’s effect on equity.</li>
+<li>A $6,000 loan bears 8% annual interest. Three months pass without a payment or bill. Calculate interest expense and the related liability. Is recognizing it necessarily a private-information signal?</li>
+<li>A $2,400 asset has a four-year useful life, zero residual value, and straight-line depreciation. Calculate one month’s depreciation. State the effects on equipment cost, accumulated depreciation, net assets, income, and cash.</li>
+<li>An organization reports revenue of $3,000 and expenses of $2,200. Opening equity is $5,000; owners contribute $1,000 and receive $300 in distributions. Calculate income and closing equity.</li>
+<li>A company recognizes $500 of completed services on account and $300 of wages earned but unpaid. Give the combined effects on assets, liabilities, equity, income, and cash. Check the equation.</li>
+<li>Distinguish the following questions: does a present right exist; should it appear in the statements; at what amount should it be reported; what assumptions should a note explain? Can a concepts statement override an applicable GAAP standard?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Drill answers">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Drill answers
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Expense <strong>$200</strong>; prepaid asset <strong>$1,000</strong>; adjustment cash effect <strong>$0</strong>.</li>
+<li>Revenue <strong>$600</strong>; liability <strong>$1,800</strong>; equity increases <strong>$600</strong>. No cash moves in the adjustment.</li>
+<li>6,000 × 8% × 3/12 = <strong>$120</strong>, for both expense and interest payable. <strong>No</strong>: the contract and passage of time can determine it without private information.</li>
+<li>Depreciation <strong>$50</strong>. Equipment cost unchanged; accumulated depreciation increases $50; net assets and income decrease $50; cash unchanged.</li>
+<li>Income <strong>$800</strong>. Closing equity = 5,000 + 1,000 + 800 − 300 = <strong>$6,500</strong>. Contributions and distributions are not components of income.</li>
+<li>Assets <strong>+$500</strong>, liabilities <strong>+$300</strong>, equity and income <strong>+$200</strong>, cash <strong>$0</strong>. The equation holds: 500 = 300 + 200.</li>
+<li><strong>Definition, recognition, measurement, disclosure.</strong> A concepts statement does <strong>not</strong> override an applicable GAAP requirement.</li>
+</ol>
+</div>
+</div>
+</div>
+<p>For the end-of-unit memo, use the separate assignment in the class packet. It asks you to distinguish cash, income, value, and evidence in an unfamiliar organization. There is no additional essay hidden in this chapter.</p>
+</section>
+<section id="optional-extension-institutions-and-disagreement" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="optional-extension-institutions-and-disagreement"><span class="header-section-number">5.9</span> Optional extension: institutions and disagreement</h2>
+<p>Compare the decision usefulness of the reporting alternatives in the class exercise with their implementation costs and incentives. Who supplies the evidence? Who can verify it? Which users can obtain extra information privately? Would a uniform convention improve comparisons even if it is imperfect for one user?</p>
+<p>The IASB’s 2018 framework revision and FASB’s framework should be identified separately when comparing stewardship discussions. Both conceptual reasoning and evidence can inform standard setting, but neither turns every disputed measurement into a uniquely correct answer. The remainder of the book examines what users do with accounting numbers and where those numbers’ limits matter.</p>
+
+
+<!-- -->
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-dechow1994" class="csl-entry" role="listitem">
+Dechow, Patricia M. 1994. <span>“Accounting Earnings and Cash Flows as Measures of Firm Performance: The Role of Accounting Accruals.”</span> <em>Journal of Accounting and Economics</em> 18 (1): 3–42. <a href="https://doi.org/10.1016/0165-4101(94)90016-7">https://doi.org/10.1016/0165-4101(94)90016-7</a>.
+</div>
+<div id="ref-fasb_elements2021" class="csl-entry" role="listitem">
+Financial Accounting Standards Board. 2021. <span>“Concepts Statement No. 8, Chapter 4: Elements of Financial Statements.”</span> <a href="https://storage.fasb.org/Concepts_Statement_8-Chapter_4-Elements.pdf">https://storage.fasb.org/Concepts_Statement_8-Chapter_4-Elements.pdf</a>.
+</div>
+<div id="ref-fasb_recognition2023" class="csl-entry" role="listitem">
+———. 2023. <span>“Concepts Statement No. 8, Chapter 5: Recognition and Derecognition.”</span> <a href="https://storage.fasb.org/Concepts%20Statement%208%E2%80%94Chapter%205%E2%80%94Recognition%20and%20Derecognition.pdf">https://storage.fasb.org/Concepts%20Statement%208%E2%80%94Chapter%205%E2%80%94Recognition%20and%20Derecognition.pdf</a>.
+</div>
+<div id="ref-fasb_measurement2024" class="csl-entry" role="listitem">
+———. 2024a. <span>“Concepts Statement No. 8, Chapter 6: Measurement.”</span> <a href="https://storage.fasb.org/Concepts%20Statement%208%E2%80%94Chapter%206%E2%80%94Measurement.pdf">https://storage.fasb.org/Concepts%20Statement%208%E2%80%94Chapter%206%E2%80%94Measurement.pdf</a>.
+</div>
+<div id="ref-fasb_cf" class="csl-entry" role="listitem">
+———. 2024b. <span>“Conceptual Framework for Financial Reporting.”</span> <a href="https://storage.fasb.org/Conceptual%20Framework%20for%20Financial%20Reporting%20%28September%202024%29.pdf">https://storage.fasb.org/Conceptual%20Framework%20for%20Financial%20Reporting%20%28September%202024%29.pdf</a>.
+</div>
+<div id="ref-fasb_concepts_status" class="csl-entry" role="listitem">
+———. 2026. <span>“Non-Authoritative Concepts Statement No. 8.”</span> <a href="https://fasb.org/standards/concept-statements">https://fasb.org/standards/concept-statements</a>.
+</div>
+<div id="ref-wattszimmerman1978" class="csl-entry" role="listitem">
+Watts, Ross L., and Jerold L. Zimmerman. 1978. <span>“Towards a Positive Theory of the Determination of Accounting Standards.”</span> <em>The Accounting Review</em> 53 (1): 112–34.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<footer class="course-accessibility"><p><a href="https://www.psu.edu/accessibilitystatement">Penn State accessibility statement</a> · <a href="mailto:accessibility@psu.edu">Report an accessibility barrier to the Penn State IT Accessibility Team</a>. Include the page address and a description of the issue.</p></footer>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('main table').forEach(function (table) {
+    table.querySelectorAll('thead th').forEach(function (th) { th.scope = 'col'; });
+    table.querySelectorAll('tbody tr').forEach(function (row) {
+      var first = row.firstElementChild;
+      if (first && first.tagName === 'TD' && first.textContent.trim()) {
+        var th = document.createElement('th');
+        th.scope = 'row'; th.innerHTML = first.innerHTML;
+        th.style.cssText = first.style.cssText; th.style.fontWeight = 'normal';
+        first.replaceWith(th);
+      }
+    });
+    var region = table.closest('.a11y-table-region');
+    if (region && region.getAttribute('aria-label') === 'Scrollable data table') {
+      var section = table.closest('section');
+      var heading = section && section.querySelector('h1,h2,h3,h4,h5,h6');
+      if (heading) region.setAttribute('aria-label', heading.textContent.trim() + ' — data table');
+    }
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sbb151\.github\.io\/acctg211h-companion\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../arc1-information/04-information-incentives.html" class="pagination-link" aria-label="Information, Credibility, and Incentives">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Information, Credibility, and Incentives</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../arc2-markets/06-efficient-markets.html" class="pagination-link" aria-label="Efficient Markets and the Information Content of Earnings">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Efficient Markets and the Information Content of Earnings</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">aliases:</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">  - 05-standards.html</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Use the FASB framework to evaluate reporting choices, then build Campus Curb's first accrual statements."</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu"># From Economic Questions to Accounting Reports {#sec-standards}</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title="Your route through this chapter"}</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>**Week 5 · Required:** read through *A reporting choice for the class* before Day 9; finish the Campus Curb example before Day 10. Allow 50–65 minutes for the chapter across the two meetings, 15–20 minutes for the selected framework paragraphs, and 25 minutes for Week 5 drills. Full conceptual-framework chapters and the closing extension are optional.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>You should be able to separate definition, recognition, measurement, and disclosure; explain the roles of the framework and GAAP; and prepare linked statements from basic transactions and adjustments.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- company-context-start --&gt;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip title="Tesla and Rivian connection"}</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>Use <span class="co">[</span><span class="ot">the Chapter 5 company prompt</span><span class="co">](../appendices/a04-tesla-rivian.qmd#company-c05)</span> when directed in class. Reported facts and constructed assumptions are labeled separately; this connection adds no separate submission.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- company-context-end --&gt;</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## What report would you design?</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>An investor asks Campus Curb for its value. A lender asks what resources will be available to repay a loan. Employees ask whether wages can be paid. A founder asks whether a bad result reflects her choices or circumstances beyond her control.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>In our ideal model, everyone agreed on the possible cash flows and how to value them. Real reporting involves incomplete evidence, different models, and incentives to influence the depiction. It also has to cover many transactions consistently across entities and periods.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>We could ask each user to negotiate a separate report, but doing so is costly. Common reporting conventions help users know what a number represents and compare it with other numbers. Those conventions also constrain some choices a preparer might otherwise make. They cannot make every report equally useful for every purpose.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>The **Financial Accounting Standards Board (FASB)** develops U.S. financial accounting standards. Its **conceptual framework** states concepts used to develop and evaluate standards. **Generally accepted accounting principles (GAAP)** supply the applicable accounting requirements; the FASB Accounting Standards Codification is the authoritative source of nongovernmental U.S. GAAP, with SEC requirements also relevant to SEC registrants. A concepts statement does not override an applicable standard <span class="co">[</span><span class="ot">@fasb_concepts_status</span><span class="co">]</span>.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">## What the framework contributes</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>For business reporting, the framework focuses on information useful to investors, lenders, and other creditors in resource decisions. It includes information about how management discharged its responsibilities. Reports help users estimate an entity's value; they are not designed to show that value directly.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>Information needs **relevance** and **faithful representation**. Relevance includes predictive and confirmatory usefulness. Faithful representation concerns completeness, neutrality, and freedom from error in the depiction; it does not demand perfect foresight. Comparability, verifiability, timeliness, and understandability enhance usefulness, subject to a cost constraint <span class="co">[</span><span class="ot">@fasb_cf, OB2–OB7 and QC5–QC39</span><span class="co">]</span>.</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>Apply those ideas to a scooter-life estimate. Does the estimate reflect usage evidence? Is the method explained? Has it been applied consistently? Can someone inspect the evidence and reproduce the calculation? Reporting five years because it increases income fails a different test from reporting five years because documented usage supports that estimate.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>Avoid a shortcut in which historical cost is always faithful and current value is always relevant. A carefully explained estimate can be faithfully represented; a precisely recorded irrelevant amount can still be unhelpful. The question is what phenomenon the report purports to depict and whether its depiction helps the specified decision.</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title="Assigned framework selections"}</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>Use the FASB's consolidated framework linked in the bibliography. Read **OB4 and OB7; QC15–QC18; E16–E17 and E37–E38; RD4–RD7; M5–M8**. These short selections address stewardship, valuation, estimates, definitions, recognition, and measurement. Do not read all five chapters for this week.</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="fu">## Four questions that should not be collapsed into one</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="fu">### Definition: what kind of item is it?</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>The asset definition concerns an entity's present right to an economic benefit; the liability definition concerns a present obligation to transfer an economic benefit. Equity is the residual after liabilities. Definitions identify kinds of items rather than a single required measurement <span class="co">[</span><span class="ot">@fasb_elements2021</span><span class="co">]</span>.</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>An enforceable customer receivable can exist even if collection is uncertain. Uncertainty about the amount ultimately collected does not necessarily erase the present right. Conversely, hoping for future customers does not itself establish a present right to their future payments.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="fu">### Recognition: should it appear in the statements?</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>**Recognition** includes an item in the financial statements. The recognition chapter identifies criteria concerning an element definition, measurability, and faithful representation <span class="co">[</span><span class="ot">@fasb_recognition2023, RD4–RD7</span><span class="co">]</span>. Meeting a definition is not the whole recognition analysis. For an actual transaction, the relevant GAAP requirements determine the treatment.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>Ask separately: *Does a resource or obligation exist? Does the accounting requirement call for recognition?* Treating every useful business attribute as a recognizable asset skips that distinction.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="fu">### Measurement: what amount, and what subsequent changes?</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>The framework's measurement chapter develops entry-price and exit-price systems. Entry-price accounting involves the acquisition or assumption price and subsequent allocations or adjustments; exit-price accounting involves remeasurement. The chapter also distinguishes market-participant and entity-specific perspectives <span class="co">[</span><span class="ot">@fasb_measurement2024, M5–M22</span><span class="co">]</span>.</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>Our prior present-value examples supplied entity cash flows under explicit assumptions. They were not instructions to label every discounted forecast “fair value.” A real measurement needs an identified attribute, perspective, date, and method.</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu">### Presentation and disclosure: how will users understand it?</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>A number in the statements and an explanation in the notes do different jobs. A delivery asset's carrying amount does not tell users its estimated useful life or how that estimate was chosen. Reporting an estimate without explaining its basis can leave a reader unable to interpret it. Notes supplement the statements; they are not permission to omit an entry required by GAAP.</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="fu">## A reporting choice for the class</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>Campus Curb paid \$3,600 for scooters. After one month their carrying amount under the supplied cost-allocation policy is \$3,500. A documented offer to buy the used scooters is \$3,200. The founders estimate \$4,200 of discounted net cash flows from continuing to operate them. You have not yet assessed the forecasts' assumptions or the offer's terms.</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>For a **hypothetical standard-setting exercise**, compare a cost-based report, a report using the proposed sale amount, and a report using the operating forecast. Each group represents an investor, lender, manager-evaluation committee, or preparer. Identify the decision, the attribute measured, supporting evidence, and information still needed. Propose a measurement policy and accompanying note.</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>This exercise asks what a rule should achieve. It does not claim that the three amounts are interchangeable GAAP choices. In particular, operating value may include resources and activities beyond the scooters themselves, and an offer may not establish a market-participant fair value.</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>Standards also affect incentives and impose costs. The political-economy perspective associated with @wattszimmerman1978 encourages us to ask who benefits, who bears costs, and who participates in the process. It does not establish that every existing rule is optimal or that every disagreement is regulatory capture.</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="fu">## Campus Curb's first month: from cash records to accrual reports {#sec-first-accruals}</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>We now leave the one-asset valuation model and use a **new, self-contained operating-company case**. This Campus Curb corporation starts December with zero balances. Do not carry any \$660 receipts or \$1,145.45 model values into it. Ignore taxes; all listed transactions are in dollars; there are no owner distributions. Treat the stated policies as the required accounting treatments for these elementary facts.</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>| December cash transaction | Initial accounting |</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>|---|---|</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>| Owners contribute \$8,000. | Increase cash and contributed equity. |</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>| Borrow \$10,000 on December 1 at 6% annually. Principal is due in two years; interest is first paid after six months. | Increase cash and notes payable. |</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>| Buy scooters for \$3,600 cash on December 1; place them in service immediately. | Exchange cash for equipment. |</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>| Pay \$3,000 for insurance covering December through February evenly. | Exchange cash for prepaid insurance. |</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>| Buy \$1,200 of supplies for cash. | Exchange cash for supplies. |</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>| Receive \$5,000 for a nonrefundable stand-ready delivery subscription covering December through March evenly. | Increase cash and a contract liability, called unearned revenue here. |</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>Cash is now \$15,200. That is not profit: it includes owner financing, borrowing, and payment for future service.</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="fu">### Accrual accounting asks what happened during the period</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>**Accrual accounting** recognizes the effects of activity and obligations in the appropriate periods even when cash moves at another time. It can require recording a payment first as a resource or obligation, and then recognizing its use or satisfaction. Other entries record activity before cash is collected or paid. Accruals need not all involve uncertain estimates.</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>At December 31, these seven facts require adjustments:</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>| Fact and stated policy | Amount | Effect on net assets and income |</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>|---|---:|---|</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>| One of the three insured months has elapsed. | \$1,000 | Reduce prepaid insurance; recognize insurance expense. |</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>| Scooters have a three-year useful life, zero residual value, and straight-line depreciation. | 100 | Increase accumulated depreciation; recognize depreciation expense. |</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>| One of four subscription months has been provided evenly. | 1,250 | Reduce unearned revenue; recognize service revenue. |</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>| A count shows \$300 of unused supplies. | 900 | Reduce supplies; recognize supplies expense. |</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>| A separate completed delivery job has an undisputed \$800 invoice, due in January; assume full collection. | 800 | Increase receivables; recognize service revenue. |</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>| Couriers earned \$1,500 for December work, payable in January. | 1,500 | Increase wages payable; recognize wages expense. |</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>| One month's interest has accumulated on the December 1 loan. | 50 | Increase interest payable; recognize interest expense. |</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>The interest is \$10,000 × 6% × 1/12. It is owed because time passed under the contract. A missing bill does not remove the obligation. The depreciation estimate, in contrast, depends on assumptions about useful life and residual value. Both are accounting entries, but their evidentiary questions differ.</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>**Accumulated depreciation** is a contra-asset: it reduces equipment's carrying amount while preserving the original equipment cost in the records. Increasing this contra-asset by \$100 reduces net assets by \$100.</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="fu">### Use the financial statement effects template</span></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>The **FSET** records each event's effects on assets, liabilities, equity, income, and cash flows. Income is shown separately to explain its contribution to equity; do not add it to the accounting equation a second time. For example:</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>| Adjustment | Assets | Liabilities | Equity via income | Income explanation | Cash |</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>|---|---:|---:|---:|---|---:|</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>| December insurance | −\$1,000 | \$0 | −\$1,000 | Expense +\$1,000 | \$0 |</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>| December subscription service | \$0 | −\$1,250 | +\$1,250 | Revenue +\$1,250 | \$0 |</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>| Interest accrued | \$0 | +\$50 | −\$50 | Expense +\$50 | \$0 |</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>Check that each row satisfies changes in assets = changes in liabilities + changes in equity. All seven adjustments have zero cash effect: the associated cash either moved earlier or will move later. <span class="co">[</span><span class="ot">The FSET appendix</span><span class="co">](../appendices/a01-fset.qmd)</span> provides the complete worked template and the corresponding journal entries.</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="fu">### Prepare the statements</span></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>| December income statement | Amount |</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>|---|---:|</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>| Subscription and delivery revenue | \$2,050 |</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>| Insurance expense | (1,000) |</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>| Depreciation expense | (100) |</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>| Supplies expense | (900) |</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>| Wages expense | (1,500) |</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>| Interest expense | (50) |</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>| **Net loss** | **(\$1,500)** |</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>| December 31 balance sheet | Amount | Liabilities and equity | Amount |</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>|---|---:|---|---:|</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>| Cash | \$15,200 | Notes payable | \$10,000 |</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>| Accounts receivable | 800 | Unearned revenue | 3,750 |</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>| Supplies | 300 | Wages payable | 1,500 |</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>| Prepaid insurance | 2,000 | Interest payable | 50 |</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>| Equipment | 3,600 | Total liabilities | **15,300** |</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>| Less accumulated depreciation | (100) | Contributed equity | 8,000 |</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>| | | Retained earnings (deficit) | (1,500) |</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>| **Total assets** | **\$21,800** | **Total liabilities and equity** | **\$21,800** |</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>The equity statement explains \$6,500 closing equity: zero opening balance + \$8,000 contributions − \$1,500 loss − zero distributions. Retained earnings records cumulative income less distributions in this simple case; it is not a separate bank account.</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>| December cash flows | Amount |</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>|---|---:|</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>| Operating: subscription receipts less insurance and supplies payments | \$800 |</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>| Investing: scooter purchase | (3,600) |</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>| Financing: contributions and borrowing | 18,000 |</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>| **Increase in cash** | **\$15,200** |</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>The company has cash and a loss. That is not a contradiction: much of its cash came from financing and advance payment. Its future viability cannot be determined from one month's loss or cash balance alone.</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="fu">### Ask a better question than “what does every entry signal?”</span></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>For each adjustment ask: *What economic event occurred? What amount belongs in this period? What evidence supports it? What uncertainty remains? Who could benefit from misstating it?*</span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>A five-year scooter life would reduce monthly depreciation to \$60, increasing current income by \$40. Whether it is justified depends on evidence. Omitting the \$50 interest because it has not been billed is not another equally acceptable estimate. Recording January wages before the work occurs would also require a basis beyond a desire to be conservative. Neutral reporting is not a contest to maximize or minimize profit.</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="fu">## Research brief: why use accruals when cash is observable?</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>@dechow1994 investigates when accrual earnings better reflect firm performance, using stock returns as a performance benchmark. The results support a role for accruals in addressing cash-flow timing and matching problems, with differences related to measurement intervals and operating circumstances. This motivates examining both cash and earnings rather than treating one as universally superior.</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>For preparation, read the abstract and the chapter brief, not the full paper. Relate the research question to Campus Curb's subscription and insurance. An association with returns does not establish that every accrual estimate is accurate or every reporting choice desirable. Later we will examine earnings persistence and interpretation in @sec-accruals.</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a><span class="fu">## Practice and transfer</span></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Printable drill sheet</span><span class="co">](../drills/pdf/wk05-drills.pdf)</span> · <span class="co">[</span><span class="ot">Self-check key</span><span class="co">](../drills/pdf/wk05-drills-key.pdf)</span></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>{{&lt; include ../drills/drill-wk05.qmd &gt;}}</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title="Drill answers" collapse="true"}</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>{{&lt; include ../drills/key-wk05.qmd &gt;}}</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>For the end-of-unit memo, use the separate assignment in the class packet. It asks you to distinguish cash, income, value, and evidence in an unfamiliar organization. There is no additional essay hidden in this chapter.</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="fu">## Optional extension: institutions and disagreement</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>Compare the decision usefulness of the reporting alternatives in the class exercise with their implementation costs and incentives. Who supplies the evidence? Who can verify it? Which users can obtain extra information privately? Would a uniform convention improve comparisons even if it is imperfect for one user?</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>The IASB's 2018 framework revision and FASB's framework should be identified separately when comparing stewardship discussions. Both conceptual reasoning and evidence can inform standard setting, but neither turns every disputed measurement into a uniquely correct answer. The remainder of the book examines what users do with accounting numbers and where those numbers' limits matter.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sbb151/acctg211h-companion/edit/main/arc1-information/05-framework.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sbb151/acctg211h-companion/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
