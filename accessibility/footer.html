@@ -1,0 +1,23 @@
+<footer class="course-accessibility"><p><a href="https://www.psu.edu/accessibilitystatement">Penn State accessibility statement</a> · <a href="mailto:accessibility@psu.edu">Report an accessibility barrier to the Penn State IT Accessibility Team</a>. Include the page address and a description of the issue.</p></footer>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('main table').forEach(function (table) {
+    table.querySelectorAll('thead th').forEach(function (th) { th.scope = 'col'; });
+    table.querySelectorAll('tbody tr').forEach(function (row) {
+      var first = row.firstElementChild;
+      if (first && first.tagName === 'TD' && first.textContent.trim()) {
+        var th = document.createElement('th');
+        th.scope = 'row'; th.innerHTML = first.innerHTML;
+        th.style.cssText = first.style.cssText; th.style.fontWeight = 'normal';
+        first.replaceWith(th);
+      }
+    });
+    var region = table.closest('.a11y-table-region');
+    if (region && region.getAttribute('aria-label') === 'Scrollable data table') {
+      var section = table.closest('section');
+      var heading = section && section.querySelector('h1,h2,h3,h4,h5,h6');
+      if (heading) region.setAttribute('aria-label', heading.textContent.trim() + ' — data table');
+    }
+  });
+});
+</script>

@@ -65,6 +65,10 @@ format:
     theme:
       light: cosmo
       dark: darkly
+    css: accessibility/course.css
+    include-after-body: accessibility/footer.html
+    filters:
+      - accessibility/tables.lua
     toc: true
     toc-depth: 3
     code-fold: false

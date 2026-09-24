@@ -14,7 +14,7 @@
 
 7. **Contribution-margin income statement.**
 
-   | | |
+   | Income statement line | Amount (dollars) |
    |:---|---:|
    | Sales (11,000 × \$40) | 440,000 |
    | Variable costs (11,000 × \$25) | (275,000) |

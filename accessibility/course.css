@@ -1,0 +1,23 @@
+/* Shared accessibility adjustments; retain the existing Quarto themes and layout. */
+html { overflow-wrap: anywhere; }
+main.content, #quarto-content, .quarto-container, .page-columns { min-width: 0; }
+.header-section-number, .toc-section-number { color: inherit !important; }
+.a11y-table-region { max-width: 100%; overflow-x: auto; margin-block: 1rem; }
+.a11y-table-region table { margin-block: 0; }
+.a11y-table-region:focus-visible, a:focus-visible, button:focus-visible {
+  outline: 3px solid currentColor; outline-offset: 3px;
+}
+.references, .csl-entry, .csl-entry a { overflow-wrap: anywhere; word-break: normal; }
+pre { max-width: 100%; }
+.course-accessibility { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid currentColor; font-size: .95rem; }
+@media print { .a11y-table-region { overflow: visible; } }
+/* Inline code may wrap; preformatted code keeps its own horizontal scroll area. */
+p code, li code, dd code { white-space: break-spaces; overflow-wrap: anywhere; }
+/* Quarto navigation's muted labels need their own dark-theme contrast. */
+body.quarto-dark .nav-page-text,
+body.quarto-dark .nav-page-text span,
+body.quarto-dark .quarto-page-breadcrumbs a,
+body.quarto-dark .quarto-page-breadcrumbs a span,
+body.quarto-dark .code-tools-button {
+  color: #e6e6e6 !important;
+}
